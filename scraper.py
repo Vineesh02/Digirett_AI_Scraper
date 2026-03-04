@@ -20,7 +20,6 @@ logger = logging.getLogger(__name__)
 # ─────────────────────────────────────────────────────────────────────────────
 # Section definitions:
 #   (norwegian_label,  canonical_english,  stable_div_id)
-# The div IDs are confirmed from DevTools — they never change.
 # ─────────────────────────────────────────────────────────────────────────────
 SECTION_DEFS = [
     ("Siste dokumenter",
@@ -58,13 +57,64 @@ SECTION_DEFS = [
      "otherBases"),
 ]
 
-# Quick lookups
 _LABEL_UPPER_TO_DEF = {d[0].upper(): d for d in SECTION_DEFS}
 _DIV_ID_TO_DEF      = {d[2]: d       for d in SECTION_DEFS}
 
-# Backward-compat mapping used by old callers
 SECTION_MAP = {d[0].upper(): d[1] for d in SECTION_DEFS}
 SECTION_MAP.update({d[1]: d[1] for d in SECTION_DEFS})
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Document ID prefix → Lovdata path segment mapping
+# Used to construct #document/ URLs from short IDs like FOR-2002-11-15-1288
+# ─────────────────────────────────────────────────────────────────────────────
+_DOC_PREFIX_MAP = {
+    "LOV":  "NL/lov",
+    "FOR":  "SF/forskrift",
+    "AVT":  "NL/lov",        # treaty/agreement — fallback
+    "HR":   "HR",
+    "LB":   "LB",
+    "LG":   "LG",
+    "LE":   "LE",
+    "LA":   "LA",
+    "LF":   "LF",
+    "RG":   "RG",
+    "TOSLO": "TOSLO",
+    "NAV":  "NAV",
+    "KOFA": "KOFA",
+    "JD":   "JD",
+    "BFJR": "BFJR",
+}
+
+
+def _construct_doc_url(doc_ref: str) -> Optional[str]:
+    """
+    Construct a Lovdata #document/ URL from a short document reference.
+    E.g. 'FOR-2002-11-15-1288' -> '#document/SF/forskrift/2002-11-15-1288'
+         'LOV-1918-05-31-4'    -> '#document/NL/lov/1918-05-31-4'
+    """
+    if not doc_ref:
+        return None
+    doc_ref = doc_ref.strip()
+
+    # Already a full URL or fragment
+    if doc_ref.startswith("#document/") or doc_ref.startswith("http"):
+        return doc_ref
+
+    # Pattern: PREFIX-YYYY-MM-DD-NUM  or  PREFIX-YYYY-NUM
+    m = re.match(r"^([A-ZÆØÅ]+)-(.+)$", doc_ref, re.IGNORECASE)
+    if not m:
+        return None
+
+    prefix = m.group(1).upper()
+    rest   = m.group(2)
+
+    path = _DOC_PREFIX_MAP.get(prefix)
+    if path:
+        return f"#document/{path}/{rest}"
+
+    # Unknown prefix — use lowercase prefix as best guess
+    return f"#document/{prefix.lower()}/{rest}"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -102,12 +152,18 @@ class LovdataScraper:
     _SECTION_LINK_CSS   = "a.gwt-Anchor"
     _SECTION_LABEL_CSS  = "span.label"
 
+    # Advanced Search page selectors (confirmed from DevTools)
+    _SEARCH_WIDGET_CSS      = "div.searchResultWidget"
+    _RESULT_ITEM_CSS        = "a.placeHistoryItem"          # actual result links
+    _RESULT_COUNT_CSS       = "span#resultInfoNumberOfHits font"
+    _RESULT_COUNT_ALT_CSS   = "span.resultInfoValue#resultInfoNumberOfHits"
+
     def __init__(self, driver):
         self.driver = driver
         self.wait   = WebDriverWait(self.driver, config.TIMEOUT)
 
     # =========================================================================
-    # LOGIN — DO NOT CHANGE
+    # LOGIN
     # =========================================================================
     def login(self) -> bool:
         try:
@@ -130,6 +186,24 @@ class LovdataScraper:
             return True
         except Exception as e:
             logger.error("❌ Login failed: %s", e)
+            return False
+
+    # =========================================================================
+    # PAGE TYPE DETECTION
+    # =========================================================================
+
+    def _is_advanced_search_page(self) -> bool:
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, self._SEARCH_WIDGET_CSS)
+            return True
+        except NoSuchElementException:
+            return False
+
+    def _is_legal_area_page(self) -> bool:
+        try:
+            self.driver.find_element(By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
+            return True
+        except NoSuchElementException:
             return False
 
     # =========================================================================
@@ -161,7 +235,7 @@ class LovdataScraper:
         time.sleep(1)
 
     # =========================================================================
-    # TREE helpers  (unchanged — these work correctly)
+    # TREE helpers
     # =========================================================================
 
     def discover_legal_area_links(self) -> Dict[str, dict]:
@@ -231,15 +305,10 @@ class LovdataScraper:
                 pass
 
     # =========================================================================
-    # WAIT FOR RIGHT-PANEL TO LOAD
+    # WAIT FOR LEGAL AREA HEADER
     # =========================================================================
 
     def _wait_for_legal_area_header(self, timeout: int = 15) -> bool:
-        """
-        Wait for div.legal-area-header after a tree-node click.
-        This is the section navigation bar — its presence = page loaded.
-        Falls back to checking for div#saker (first section content div).
-        """
         try:
             WebDriverWait(self.driver, timeout).until(
                 EC.presence_of_element_located(
@@ -268,16 +337,10 @@ class LovdataScraper:
             return False
 
     # =========================================================================
-    # FIND SECTION LINKS in div.legal-area-header
+    # SECTION LINKS — legal area header
     # =========================================================================
 
     def _get_section_links(self) -> List[Tuple[str, str, str]]:
-        """
-        Returns list of (norwegian_label, canonical_english, div_id).
-        We store ONLY text/strings — never Selenium elements — so nothing
-        can go stale between sections.  We re-find the element fresh each
-        time we need to click it (see _click_section_tab).
-        """
         results = []
         seen_canonical: set = set()
 
@@ -322,7 +385,6 @@ class LovdataScraper:
                     continue
 
                 seen_canonical.add(canonical)
-                # Store STRINGS only — no element references
                 results.append((label_text, canonical, div_id))
                 logger.info(
                     "    ✓ Section: '%s'  →  %s  (div#%s)",
@@ -335,11 +397,6 @@ class LovdataScraper:
         return results
 
     def _click_section_tab(self, label_text: str) -> bool:
-        """
-        Re-find the section tab link FRESH each time and click it.
-        Never stores the element — always looks it up by span.label text.
-        This prevents StaleElementReferenceException between sections.
-        """
         try:
             header = self.driver.find_element(By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
             links  = header.find_elements(By.CSS_SELECTOR, self._SECTION_LINK_CSS)
@@ -368,203 +425,10 @@ class LovdataScraper:
         return False
 
     # =========================================================================
-    # FIND SECTION BLOCK
-    # =========================================================================
-    # From DevTools (confirmed):
-    #
-    #   div#saker  class="viewTitle ..."      ← heading div (NOT the grid)
-    #   div.gwt-Label                          ← subtitle text
-    #   div.x-grid-panel  tabindex="0"         ← ACTUAL document grid
-    #   table.x-btn.x-btn-noicon               ← "Vis alle (N)" button
-    #   div#lover  class="viewTitle ..."       ← next section heading
-    #
-    # The section id (#saker, #lover …) is on the HEADING div only.
-    # The grid and Vis-alle button are SIBLINGS that follow the heading.
-    # We must collect all siblings between this heading and the next one.
-    # =========================================================================
-
-    def _get_section_siblings(self, div_id: str) -> List:
-        """
-        Find the heading div by id (in JS, never passing element as arg),
-        then collect all following siblings up to the next viewTitle div.
-        Using document.getElementById() inside JS avoids StaleElementReferenceException
-        because we never hold a Python WebElement reference across DOM updates.
-        """
-        # Try the id and common variants
-        actual_id = None
-        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
-                       "third" + div_id.capitalize()):
-            try:
-                self.driver.find_element(By.ID, id_try)
-                actual_id = id_try
-                break
-            except NoSuchElementException:
-                continue
-
-        if actual_id is None:
-            logger.warning("    ⚠️  Heading div not found for id='%s'", div_id)
-            return []
-
-        try:
-            siblings = self.driver.execute_script("""
-                var heading = document.getElementById(arguments[0]);
-                if (!heading) return [];
-                var siblings = [];
-                var sibling = heading.nextElementSibling;
-                while (sibling) {
-                    if (sibling.classList.contains('viewTitle')) break;
-                    siblings.push(sibling);
-                    sibling = sibling.nextElementSibling;
-                }
-                return siblings;
-            """, actual_id)
-            return siblings or []
-        except Exception as e:
-            logger.debug("    _get_section_siblings JS error: %s", e)
-            return []
-
-    # =========================================================================
-    # CLICK "VIS ALLE" — find button among section siblings
-    # =========================================================================
-
-    def _click_vis_alle(self, div_id: str) -> Optional[int]:
-        """
-        Find and click the "Vis alle (N)" button using pure JS getElementById.
-        Never passes WebElement to JS — fully stale-proof.
-        """
-        total = None
-
-        # Try id variants
-        actual_id = None
-        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
-                       "third" + div_id.capitalize()):
-            try:
-                self.driver.find_element(By.ID, id_try)
-                actual_id = id_try
-                break
-            except NoSuchElementException:
-                continue
-
-        if actual_id is None:
-            logger.info("    ℹ️  No 'Vis alle' button found for div#%s", div_id)
-            return total
-
-        try:
-            result = self.driver.execute_script("""
-                var heading = document.getElementById(arguments[0]);
-                if (!heading) return null;
-                var sib = heading.nextElementSibling;
-                while (sib) {
-                    if (sib.classList.contains('viewTitle')) break;
-                    var txt = sib.innerText || sib.textContent || '';
-                    if (txt.toLowerCase().indexOf('vis alle') >= 0) {
-                        // Extract count
-                        var m = txt.match(/\((\d[\d\s]*)\)/);
-                        if (!m) m = txt.toLowerCase().match(/vis alle\s+(\d+)/);
-                        var count = m ? parseInt(m[1].replace(/\s/g,'')) : null;
-                        // Click the button or the element itself
-                        var btn = sib.querySelector('button');
-                        if (btn) btn.click(); else sib.click();
-                        return count;
-                    }
-                    sib = sib.nextElementSibling;
-                }
-                return null;
-            """, actual_id)
-
-            if result is not None:
-                total = int(result)
-                logger.info("    ✅ Vis alle clicked — expected=%s", total)
-                time.sleep(2.5)
-            else:
-                logger.info("    ℹ️  No 'Vis alle' button found for div#%s", div_id)
-
-        except Exception as e:
-            logger.debug("    _click_vis_alle JS error: %s", e)
-
-        return total
-
-    # =========================================================================
-    # CLICK NEXT PAGE — find toolbar in section siblings
-    # =========================================================================
-
-    def _click_next_page(self, div_id: str) -> bool:
-        """
-        Find and click the Next button using pure JS getElementById.
-        Fully stale-proof — no WebElement passed to JS.
-        Toolbar: table.x-toolbar-ct / tbody / tr[2] / td[3] / em / button
-        """
-        actual_id = None
-        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
-                       "third" + div_id.capitalize()):
-            try:
-                self.driver.find_element(By.ID, id_try)
-                actual_id = id_try
-                break
-            except NoSuchElementException:
-                continue
-
-        if actual_id is None:
-            logger.info("    ⏹  No toolbar found for div#%s", div_id)
-            return False
-
-        try:
-            result = self.driver.execute_script("""
-                var heading = document.getElementById(arguments[0]);
-                if (!heading) return 'no_heading';
-                var sib = heading.nextElementSibling;
-                while (sib) {
-                    if (sib.classList.contains('viewTitle')) break;
-                    // Find toolbar table in this sibling
-                    var toolbar = sib.matches('table.x-toolbar-ct') ? sib
-                                : sib.querySelector('table.x-toolbar-ct');
-                    if (toolbar) {
-                        var rows = toolbar.querySelectorAll('tbody tr');
-                        var btnRow = rows.length >= 2 ? rows[1] : rows[0];
-                        if (!btnRow) return 'no_btn_row';
-                        var tds = btnRow.querySelectorAll('td');
-                        // td[3] = Next (0-indexed: td[2])
-                        var nextTd = tds.length >= 3 ? tds[2] : null;
-                        if (!nextTd) return 'no_next_td';
-                        var cls = nextTd.className || '';
-                        if (cls.indexOf('disabled') >= 0) return 'disabled';
-                        var btn = nextTd.querySelector('button');
-                        if (!btn) return 'no_btn';
-                        if (btn.disabled) return 'disabled';
-                        btn.click();
-                        return 'clicked';
-                    }
-                    sib = sib.nextElementSibling;
-                }
-                return 'no_toolbar';
-            """, actual_id)
-
-            if result == 'clicked':
-                logger.info("    ➡️  Next page clicked")
-                time.sleep(2.0)
-                return True
-            elif result in ('disabled',):
-                logger.info("    ⏹  Next is disabled — last page")
-                return False
-            else:
-                logger.info("    ⏹  No Next button for div#%s (%s)", div_id, result)
-                return False
-
-        except Exception as e:
-            logger.debug("    _click_next_page JS error: %s", e)
-            return False
-
-    # =========================================================================
-    # COLLECT DOCUMENT LINKS — from x-grid-panel sibling of section heading
+    # LEGAL AREA PAGE — small section helpers
     # =========================================================================
 
     def _collect_links_in_section(self, div_id: str, seen: set) -> List[str]:
-        """
-        Collect searchResultLink hrefs using pure JS getElementById.
-        Confirmed link class from DevTools: a.searchResultLink
-        href format: #document/EUR/eur-2026-03-06
-        Fully stale-proof.
-        """
         new_urls = []
 
         actual_id = None
@@ -588,7 +452,6 @@ class LovdataScraper:
                 var sib = heading.nextElementSibling;
                 while (sib) {
                     if (sib.classList.contains('viewTitle')) break;
-                    // Collect searchResultLink anchors
                     var links = sib.querySelectorAll('a.searchResultLink, a[href*="#document/"]');
                     links.forEach(function(a) {
                         var h = (a.getAttribute('href') || '').split('?')[0].trim();
@@ -610,6 +473,395 @@ class LovdataScraper:
         return new_urls
 
     # =========================================================================
+    # VIS ALLE
+    # =========================================================================
+
+    def _click_vis_alle(self, div_id: str) -> Optional[int]:
+        actual_id = None
+        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
+                       "third" + div_id.capitalize()):
+            try:
+                self.driver.find_element(By.ID, id_try)
+                actual_id = id_try
+                break
+            except NoSuchElementException:
+                continue
+
+        if actual_id is None:
+            logger.info("    ℹ️  No 'Vis alle' button found for div#%s", div_id)
+            return None
+
+        try:
+            result = self.driver.execute_script("""
+                var heading = document.getElementById(arguments[0]);
+                if (!heading) return null;
+                var sib = heading.nextElementSibling;
+                while (sib) {
+                    if (sib.classList.contains('viewTitle')) break;
+                    var txt = sib.innerText || sib.textContent || '';
+                    if (txt.toLowerCase().indexOf('vis alle') >= 0) {
+                        var m = txt.match(/[(]([0-9][0-9 ]*)[)]/);
+                        if (!m) m = txt.toLowerCase().match(/vis alle [0-9]+/);
+                        var count = m ? parseInt(m[0].replace(/[^0-9]/g,'')) : null;
+                        var btn = sib.querySelector('button');
+                        if (btn) btn.click(); else sib.click();
+                        return count;
+                    }
+                    sib = sib.nextElementSibling;
+                }
+                return null;
+            """, actual_id)
+
+            if result is not None:
+                total = int(result)
+                logger.info("    ✅ Vis alle clicked — expected=%s", total)
+                time.sleep(3.0)
+                return total
+            else:
+                logger.info("    ℹ️  No 'Vis alle' button found for div#%s", div_id)
+                return None
+
+        except Exception as e:
+            logger.debug("    _click_vis_alle JS error: %s", e)
+            return None
+
+    # =========================================================================
+    # ADVANCED SEARCH PAGE
+    # =========================================================================
+
+    def _wait_for_advanced_search(self, timeout: int = 15) -> bool:
+        try:
+            WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located(
+                    (By.CSS_SELECTOR, self._SEARCH_WIDGET_CSS)
+                )
+            )
+            time.sleep(1.5)
+            logger.info("    ✅ Advanced Search page loaded")
+            return True
+        except TimeoutException:
+            logger.warning("    ⚠️  Advanced Search page did not load in %ss", timeout)
+            return False
+
+    def _get_advanced_search_total(self) -> Optional[int]:
+        for css in (self._RESULT_COUNT_CSS, self._RESULT_COUNT_ALT_CSS):
+            try:
+                el = self.driver.find_element(By.CSS_SELECTOR, css)
+                text = (el.text or "").strip().replace(" ", "").replace("\xa0", "")
+                if text.isdigit():
+                    total = int(text)
+                    logger.info("    📊 Advanced Search total: %s", total)
+                    return total
+            except NoSuchElementException:
+                continue
+
+        try:
+            container = self.driver.find_element(
+                By.CSS_SELECTOR, "div.gwt-HTML.numberOfHits"
+            )
+            text = (container.text or "").strip()
+            m = re.search(r"(\d[\d\s]+)", text)
+            if m:
+                total = int(m.group(1).replace(" ", ""))
+                logger.info("    📊 Advanced Search total (fallback): %s", total)
+                return total
+        except Exception:
+            pass
+
+        logger.warning("    ⚠️  Could not read Advanced Search total count")
+        return None
+
+    # =========================================================================
+    # ADVANCED SEARCH — collect URLs from placeHistoryItem links
+    # =========================================================================
+
+    def _collect_advanced_search_urls(
+        self, expected: Optional[int], max_pages: int = 500
+    ) -> List[str]:
+        """
+        Collect all document URLs from Advanced Search results.
+
+        The result links are <a class="placeHistoryItem"> elements.
+        They have NO href — navigation is GWT internal.
+        The document reference (e.g. FOR-2002-11-15-1288) is on the
+        second line of the link text.
+
+        Strategy:
+          1. Read all placeHistoryItem elements on the current page
+          2. Extract doc reference from text (line 2)
+          3. Construct #document/ URL via _construct_doc_url()
+          4. Click Next button to go to next results page
+          5. Repeat until all pages collected
+        """
+        all_urls: List[str] = []
+        seen:     set       = set()
+
+        # Read true total from page
+        page_total = self._get_advanced_search_total()
+        if page_total is not None:
+            expected = page_total
+
+        # Save search result page URL for fallback navigation
+        search_url = self.driver.current_url
+
+        page_num = 0
+        while page_num < max_pages:
+            # ── Collect items on current page ─────────────────────────
+            new_urls = self._extract_urls_from_result_items(seen)
+            all_urls.extend(new_urls)
+
+            logger.info(
+                "      page %s: +%s new  (total: %s / expected: %s)",
+                page_num + 1, len(new_urls), len(all_urls),
+                expected if expected else "?"
+            )
+
+            if expected and len(all_urls) >= expected:
+                logger.info("      ✅ All %s docs collected", expected)
+                break
+
+            if not new_urls and page_num > 0:
+                logger.info("      ⏹  No new URLs on page %s — stopping", page_num + 1)
+                break
+
+            # ── Try to click Next ─────────────────────────────────────
+            next_result = self._click_next_advanced_search()
+            if next_result == "clicked":
+                time.sleep(2.5)
+                page_num += 1
+            else:
+                logger.info("      ⏹  No more pages (%s)", next_result)
+                break
+
+        return all_urls
+
+    def _extract_urls_from_result_items(self, seen: set) -> List[str]:
+        """
+        Extract document URLs from placeHistoryItem elements on current page.
+
+        Each real result item has 2 lines of text:
+            Line 1: document title  (e.g. "Regulations on the Appeals Board for...")
+            Line 2: doc ref OR source name  (e.g. "FOR-2002-11-15-1288" or "Center for European Law")
+
+        Breadcrumb items have only 1 line ("My page", "Home", "Procurement", etc.)
+        and are skipped.
+
+        For items whose last line matches PREFIX-YYYY-... we construct the URL
+        directly (fast, no click needed).
+
+        For items whose last line does NOT match (e.g. articles with publisher name)
+        we click the item, capture window.location.hash, then navigate back to the
+        search results page.
+        """
+        # Save the current search results URL so we can return after clicking
+        search_url = self.driver.current_url
+
+        new_urls = []
+        try:
+            # Collect all item texts + indices first (avoids stale refs after click/back)
+            item_data = self.driver.execute_script("""
+                var items = document.querySelectorAll('a.placeHistoryItem');
+                var result = [];
+                items.forEach(function(a, i) {
+                    result.push({
+                        index: i,
+                        text: a.innerText || ''
+                    });
+                });
+                return result;
+            """)
+
+            if not item_data:
+                return new_urls
+
+            # Identify which indices are real docs (2+ lines) vs breadcrumbs (1 line)
+            doc_items = []
+            for item in item_data:
+                lines = [l.strip() for l in item["text"].split("\n") if l.strip()]
+                if len(lines) < 2:
+                    continue  # breadcrumb — skip
+                last_line = lines[-1]
+                doc_items.append({
+                    "index":     item["index"],
+                    "last_line": last_line,
+                    "title":     lines[0],
+                })
+
+            logger.debug("      %s real doc items on page", len(doc_items))
+
+            for doc in doc_items:
+                last_line = doc["last_line"]
+
+                # ── Fast path: standard doc ref (PREFIX-YYYY-...) ────────
+                if re.match(r"^[A-ZÆØÅ]+-\d{4}", last_line, re.IGNORECASE):
+                    url = _construct_doc_url(last_line)
+                    if url and url not in seen:
+                        seen.add(url)
+                        new_urls.append(url)
+                        logger.debug("      + (fast) %s", url)
+                    continue
+
+                # ── Slow path: click item, capture hash, go back ─────────
+                try:
+                    # Re-find items fresh (DOM may have changed)
+                    items_fresh = self.driver.find_elements(
+                        By.CSS_SELECTOR, self._RESULT_ITEM_CSS
+                    )
+                    if doc["index"] >= len(items_fresh):
+                        logger.debug(
+                            "      ⚠️  item index %s out of range", doc["index"]
+                        )
+                        continue
+
+                    target = items_fresh[doc["index"]]
+                    self.driver.execute_script("arguments[0].click();", target)
+                    time.sleep(1.5)
+
+                    # Capture the hash — gives us #document/EUR/eur-2026-03-06 etc.
+                    fragment = self.driver.execute_script(
+                        "return window.location.hash;"
+                    ) or ""
+                    fragment = fragment.strip()
+
+                    if fragment and fragment.startswith("#document/"):
+                        if fragment not in seen:
+                            seen.add(fragment)
+                            new_urls.append(fragment)
+                            logger.debug(
+                                "      + (click) %s  [%s]",
+                                fragment, doc["title"][:50]
+                            )
+                    else:
+                        logger.debug(
+                            "      ⚠️  No #document/ hash after clicking '%s': got '%s'",
+                            doc["title"][:50], fragment
+                        )
+
+                    # Navigate back to search results
+                    self.driver.get(search_url)
+                    try:
+                        WebDriverWait(self.driver, 10).until(
+                            EC.presence_of_element_located(
+                                (By.CSS_SELECTOR, self._SEARCH_WIDGET_CSS)
+                            )
+                        )
+                        time.sleep(1.0)
+                    except TimeoutException:
+                        logger.warning("      ⚠️  Search page did not reload after back")
+                        break
+
+                except StaleElementReferenceException:
+                    # Try to recover by reloading search page
+                    self.driver.get(search_url)
+                    time.sleep(2.0)
+                    continue
+                except Exception as e:
+                    logger.debug("      click-capture error: %s", e)
+                    try:
+                        self.driver.get(search_url)
+                        time.sleep(2.0)
+                    except Exception:
+                        pass
+                    continue
+
+        except Exception as e:
+            logger.debug("    _extract_urls_from_result_items error: %s", e)
+
+        return new_urls
+
+    def _click_next_advanced_search(self) -> str:
+        """
+        Click the Next button on the Advanced Search results page.
+        Structure confirmed from DevTools:
+          td.x-btn-mc > em > button.x-btn-text
+        The Next button is the last non-disabled x-btn-mc in the toolbar.
+        """
+        try:
+            result = self.driver.execute_script("""
+                var widget = document.querySelector('div.searchResultWidget');
+                if (!widget) return 'no_widget';
+
+                var toolbars = widget.querySelectorAll('table.x-toolbar-ct');
+                if (!toolbars.length) {
+                    toolbars = document.querySelectorAll('table.x-toolbar-ct');
+                }
+                if (!toolbars.length) return 'no_toolbar';
+
+                for (var t = 0; t < toolbars.length; t++) {
+                    var toolbar = toolbars[t];
+                    var rows = toolbar.querySelectorAll('tbody tr');
+                    var btnRow = rows.length >= 2 ? rows[1] : rows[0];
+                    if (!btnRow) continue;
+
+                    var btnCells = btnRow.querySelectorAll('td.x-btn-mc');
+                    if (!btnCells.length) continue;
+
+                    // Next button = last non-disabled x-btn-mc
+                    for (var i = btnCells.length - 1; i >= 0; i--) {
+                        var cell = btnCells[i];
+                        var btn = cell.querySelector('button.x-btn-text');
+                        if (!btn) continue;
+
+                        var parentTd = cell.parentElement;
+                        var tdCls = (parentTd ? parentTd.className : '') || '';
+                        if (tdCls.indexOf('disabled') >= 0) continue;
+                        if (btn.disabled) continue;
+                        if (btn.getAttribute('aria-disabled') === 'true') continue;
+                        if (i === 0 && btnCells.length > 1) continue;
+
+                        btn.click();
+                        return 'clicked';
+                    }
+                }
+                return 'no_next';
+            """)
+            return result or "no_next"
+        except Exception as e:
+            logger.debug("    _click_next_advanced_search error: %s", e)
+            return "error"
+
+    # =========================================================================
+    # NAVIGATE BACK TO LEGAL AREA PAGE
+    # =========================================================================
+
+    def _back_to_legal_area(self, legal_area_url: str) -> bool:
+        try:
+            self.driver.back()
+            time.sleep(2.0)
+
+            try:
+                WebDriverWait(self.driver, 10).until(
+                    EC.presence_of_element_located(
+                        (By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
+                    )
+                )
+                logger.info("    ↩️  Back to legal area page — tabs restored")
+                return True
+            except TimeoutException:
+                pass
+
+            logger.warning("    ⚠️  Back() failed — navigating directly to legal area")
+            self.driver.get(legal_area_url)
+            time.sleep(3.0)
+            return self._is_legal_area_page()
+
+        except Exception as e:
+            logger.error("    ❌ _back_to_legal_area failed: %s", e)
+            return False
+
+    # =========================================================================
+    # SMALL SECTION — no Vis alle
+    # =========================================================================
+
+    def _collect_small_section(self, div_id: str) -> Tuple[List[str], Optional[int]]:
+        seen: set = set()
+        urls = self._collect_links_in_section(div_id, seen)
+        logger.info(
+            "    ✅ Small section div#%s — collected %s URLs", div_id, len(urls)
+        )
+        return urls, None
+
+    # =========================================================================
     # MAIN ENTRY: collect all section URLs from the currently-loaded page
     # =========================================================================
 
@@ -617,13 +869,12 @@ class LovdataScraper:
         """
         MUST be called AFTER a tree node has been clicked and page has loaded.
         Never call driver.get() before this — it destroys dynamic content.
-
-        Processes ONE section fully before moving to the next.
-        Verifies URL count matches expected count for each section.
         """
         if not self._wait_for_legal_area_header():
             logger.error("❌ Page not ready — cannot collect sections")
             return []
+
+        legal_area_url = self.driver.current_url
 
         section_links = self._get_section_links()
         if not section_links:
@@ -646,11 +897,27 @@ class LovdataScraper:
                 s_idx, len(section_links), canonical
             )
 
-            seen: set            = set()
             section_urls: List[str] = []
+            expected:     Optional[int] = None
 
             try:
-                # ── 1. Re-find and click section tab FRESH (no stale refs) ──
+                # ── STEP 1: Ensure we are on the legal area page ──────
+                if not self._is_legal_area_page():
+                    logger.info("    ↩️  Not on legal area page — navigating back")
+                    if not self._back_to_legal_area(legal_area_url):
+                        logger.error(
+                            "    ❌ Could not return to legal area — skipping '%s'",
+                            canonical
+                        )
+                        results.append({
+                            "document_type":  canonical,
+                            "expected_count": None,
+                            "urls":           [],
+                        })
+                        continue
+                    time.sleep(1.0)
+
+                # ── STEP 2: Click the section tab ─────────────────────
                 if not self._click_section_tab(label):
                     logger.warning("    ⚠️  Could not click tab '%s' — skipping", label)
                     results.append({
@@ -661,11 +928,19 @@ class LovdataScraper:
                     continue
                 time.sleep(1.5)
 
-                # ── 2. Verify heading div exists ──────────────────────
-                try:
-                    self.driver.find_element(By.ID, div_id)
-                    logger.info("    ✅ Heading div#%s found", div_id)
-                except NoSuchElementException:
+                # ── STEP 3: Verify heading div exists ─────────────────
+                heading_found = False
+                for id_try in (div_id, div_id + "s", div_id + "Base",
+                               div_id + "Bases", "third" + div_id.capitalize()):
+                    try:
+                        self.driver.find_element(By.ID, id_try)
+                        heading_found = True
+                        logger.info("    ✅ Heading div#%s found", id_try)
+                        break
+                    except NoSuchElementException:
+                        continue
+
+                if not heading_found:
                     logger.warning(
                         "    ⚠️  Heading div#%s not found — skipping", div_id
                     )
@@ -676,43 +951,43 @@ class LovdataScraper:
                     })
                     continue
 
-                # ── 3. Click Vis alle → get total count ───────────────
-                expected = self._click_vis_alle(div_id)
+                # ── STEP 4: Check for Vis alle button ─────────────────
+                vis_alle_count = self._click_vis_alle(div_id)
 
-                # ── 4. Collect all documents — paginate until done ────
-                page_num = 0
-                while page_num < max_pages:
-                    before = len(seen)
+                if vis_alle_count is not None or self._is_advanced_search_page():
+                    expected = vis_alle_count
 
-                    new = self._collect_links_in_section(div_id, seen)
-                    section_urls.extend(new)
-                    after = len(seen)
+                    if not self._wait_for_advanced_search(timeout=15):
+                        logger.warning(
+                            "    ⚠️  Advanced Search did not load for '%s'", canonical
+                        )
+                        self._back_to_legal_area(legal_area_url)
+                        results.append({
+                            "document_type":  canonical,
+                            "expected_count": expected,
+                            "urls":           [],
+                        })
+                        continue
 
-                    logger.info(
-                        "      page %s: +%s new  (total: %s / expected: %s)",
-                        page_num + 1, after - before, after,
-                        expected if expected else "?"
+                    logger.info("    🔍 Advanced Search mode — collecting all pages")
+                    section_urls = self._collect_advanced_search_urls(
+                        expected=expected,
+                        max_pages=max_pages,
                     )
 
-                    if expected and after >= expected:
-                        logger.info(
-                            "      ✅ All %s docs collected for '%s'",
-                            expected, canonical
+                    logger.info("    ↩️  Returning to legal area page")
+                    if not self._back_to_legal_area(legal_area_url):
+                        logger.warning(
+                            "    ⚠️  Back failed — re-navigating to legal area URL"
                         )
-                        break
+                        self.driver.get(legal_area_url)
+                        time.sleep(3.0)
 
-                    if not self._click_next_page(div_id):
-                        break
+                else:
+                    logger.info("    📋 Small section mode — collecting directly")
+                    section_urls, expected = self._collect_small_section(div_id)
 
-                    time.sleep(0.5)
-
-                    if len(seen) == before:
-                        logger.info("      No new links after Next — stopping")
-                        break
-
-                    page_num += 1
-
-                # ── 5. Count verification ─────────────────────────────
+                # ── STEP 5: Verify count ──────────────────────────────
                 if expected and len(section_urls) != expected:
                     logger.warning(
                         "    ⚠️  COUNT MISMATCH '%s': expected=%s  collected=%s",
@@ -739,8 +1014,12 @@ class LovdataScraper:
                     "expected_count": None,
                     "urls":           section_urls,
                 })
+                try:
+                    if not self._is_legal_area_page():
+                        self._back_to_legal_area(legal_area_url)
+                except Exception:
+                    pass
 
-        # Summary
         total_collected = sum(len(r["urls"]) for r in results)
         logger.info(
             "\n    ════════════════════════════════════════════════\n"
@@ -754,7 +1033,6 @@ class LovdataScraper:
 
     # Backward-compat alias
     def collect_urls_by_section(self, area_url: str = "", max_pages: int = 500) -> List[dict]:
-        """area_url is ignored — content is read from the current page (SPA)."""
         return self.collect_urls_from_current_view(max_pages=max_pages)
 
     # =========================================================================
@@ -764,10 +1042,8 @@ class LovdataScraper:
     def scrape_content_from_url(self, doc_url: str) -> dict:
         """
         Navigate to a document URL and extract content.
-
-        Individual document pages use an iframe for rendering content.
-        The hidden LovdataPro utility iframe (0×0 px) is skipped.
-        We check iframe dimensions and only enter visible iframes.
+        Returns dict matching the XML format:
+          title, date, content, content_source
         """
         result = {
             "title":          "",
@@ -778,8 +1054,12 @@ class LovdataScraper:
 
         try:
             self.driver.switch_to.default_content()
+
+            # Normalise URL
             if doc_url.startswith("#"):
                 doc_url = "https://lovdata.no/pro/" + doc_url
+            elif not doc_url.startswith("http"):
+                doc_url = "https://lovdata.no/pro/" + doc_url.lstrip("/")
 
             self.driver.get(doc_url)
             try:
@@ -798,17 +1078,14 @@ class LovdataScraper:
 
             for idx, iframe in enumerate(iframes):
                 try:
-                    # Skip hidden utility iframes (width:0 / height:0)
                     style = (iframe.get_attribute("style") or "").lower()
                     if "width: 0" in style or "height: 0" in style:
-                        logger.debug("  ⏭️  Skip hidden iframe[%s]", idx)
                         continue
 
                     self.driver.switch_to.default_content()
                     self.driver.switch_to.frame(iframe)
                     time.sleep(1.0)
 
-                    # Title
                     title = ""
                     for sel in ["h1", ".tittel", "[class*='tittel']",
                                 ".navn", "span.bold", "[class*='title']"]:
@@ -822,7 +1099,6 @@ class LovdataScraper:
                         except Exception:
                             continue
 
-                    # Date
                     date = ""
                     for sel in [".dato", "[class*='dato']", ".ikraftdato",
                                 ".kunngjort", "[class*='kunngjort']",
@@ -838,7 +1114,6 @@ class LovdataScraper:
                         except Exception:
                             continue
 
-                    # Content (priority order)
                     content = ""
                     source  = ""
 
@@ -897,7 +1172,6 @@ class LovdataScraper:
                 finally:
                     self.driver.switch_to.default_content()
 
-            # Fallback: main window body
             if not best_content:
                 try:
                     best_content = self.driver.find_element(
