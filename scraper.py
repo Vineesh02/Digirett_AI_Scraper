@@ -1,39 +1,3 @@
-"""
-LOVDATA PRO SCRAPER
-
-Confirmed XPaths from user (id="x-auto-3752" is dynamic but STRUCTURE is fixed):
-  Show All : //*[@id="x-auto-3752"]/tbody/tr[2]/td[2]/em/button
-  Next      : //*[@id="x-auto-3752"]/tbody/tr[2]/td[3]/em/button
-
-The id "x-auto-NNNN" changes every page load — Ext JS regenerates all IDs.
-So we strip the ID and use the stable table structure directly:
-
-  Show All : //table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[2]/em/button
-  Next      : //table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[3]/em/button
-
-Each section on the page has its OWN toolbar table — so we find the toolbar
-that belongs to a specific section by scoping the search to that section's
-container element (x-panel).
-
-HOW SECTION SCOPING WORKS:
-  1. Each section (LOVER, FORSKRIFTER etc.) is rendered as an Ext JS x-panel.
-  2. Inside each x-panel there is a paging toolbar — a <table class="x-toolbar-ct">.
-  3. That toolbar has:
-       tr[1] = spacer row
-       tr[2] = actual toolbar buttons:
-                 td[1] = Prev button
-                 td[2] = "Vis alle (N)" button   ← Show All
-                 td[3] = Next button
-                 td[4] = separator
-                 td[5] = Last button
-                 td[6] = page info text
-  4. We find the section panel first (by its heading text), then find the
-     toolbar TABLE inside that panel, then click td[2]/em/button for Show All
-     and td[3]/em/button for Next.
-  5. Links are also collected from inside that panel only — so each section
-     gives its OWN count, not the global page total.
-"""
-
 import time
 import re
 import logging
@@ -46,37 +10,66 @@ from selenium.common.exceptions import (
     StaleElementReferenceException,
     NoSuchElementException,
     TimeoutException,
+    ElementNotInteractableException,
 )
 
 import config
 
 logger = logging.getLogger(__name__)
 
-# ---------------------------------------------------------------------------
-# Section label map  Norwegian → canonical English
-# ---------------------------------------------------------------------------
-SECTION_MAP = {
-    "SISTE DOKUMENTER":   "LATEST DOCUMENTS",
-    "LOVER":              "LAWS",
-    "FORSKRIFTER":        "REGULATIONS",
-    "AVGJØRELSER FRA HØYESTERETT":     "DECISIONS FROM THE SUPREME COURT",
-    "AVGJØRELSER FRA LAGMANNSRETTENE": "DECISIONS FROM THE COURTS OF APPEAL",
-    "AVGJØRELSER FRA TINGRETTENE":     "DECISIONS FROM THE DISTRICT COURTS",
-    "ARTIKLER":           "ARTICLES",
-    "DOKUMENTER FRA KLAGENEMNDA FOR OFFENTLIGE ANSKAFFELSER":
-        "DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD",
-    "DOKUMENTER FRA BYGGEBRANSJENS FAGLIG JURIDISKE RÅD":
-        "DOCUMENTS FROM THE CONSTRUCTION INDUSTRY'S PROFESSIONAL LEGAL COUNCIL",
-    "DOKUMENTER FRA JUSTISDEPARTEMENTET": "DOCUMENTS FROM THE MINISTRY OF JUSTICE",
-    "ANDRE DOKUMENTER":   "OTHER DOCUMENTS",
-    # English passthrough (page sometimes renders in English)
-    "LATEST DOCUMENTS":   "LATEST DOCUMENTS",
-    "LAWS":               "LAWS",
-    "REGULATIONS":        "REGULATIONS",
-    "ARTICLES":           "ARTICLES",
-    "OTHER DOCUMENTS":    "OTHER DOCUMENTS",
-}
+# ─────────────────────────────────────────────────────────────────────────────
+# Section definitions:
+#   (norwegian_label,  canonical_english,  stable_div_id)
+# The div IDs are confirmed from DevTools — they never change.
+# ─────────────────────────────────────────────────────────────────────────────
+SECTION_DEFS = [
+    ("Siste dokumenter",
+     "LATEST DOCUMENTS",
+     "saker"),
+    ("Lover",
+     "LAWS",
+     "lover"),
+    ("Forskrifter",
+     "REGULATIONS",
+     "forskrifter"),
+    ("Avgjørelser fra Høyesterett",
+     "DECISIONS FROM THE SUPREME COURT",
+     "hr"),
+    ("Avgjørelser fra lagmannsrettene",
+     "DECISIONS FROM THE COURTS OF APPEAL",
+     "lr"),
+    ("Avgjørelser fra tingrettene",
+     "DECISIONS FROM THE DISTRICT COURTS",
+     "tr"),
+    ("Artikler",
+     "ARTICLES",
+     "artikler"),
+    ("Dokumenter fra Klagenemnda for offentlige anskaffelser",
+     "DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD",
+     "kofa"),
+    ("Dokumenter fra Byggebransjens Faglig Juridiske Råd",
+     "DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL",
+     "bfjr"),
+    ("Dokumenter fra Justisdepartementet",
+     "DOCUMENTS FROM THE MINISTRY OF JUSTICE",
+     "jd"),
+    ("Andre dokumenter",
+     "OTHER DOCUMENTS",
+     "otherBases"),
+]
 
+# Quick lookups
+_LABEL_UPPER_TO_DEF = {d[0].upper(): d for d in SECTION_DEFS}
+_DIV_ID_TO_DEF      = {d[2]: d       for d in SECTION_DEFS}
+
+# Backward-compat mapping used by old callers
+SECTION_MAP = {d[0].upper(): d[1] for d in SECTION_DEFS}
+SECTION_MAP.update({d[1]: d[1] for d in SECTION_DEFS})
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Utility
+# ─────────────────────────────────────────────────────────────────────────────
 
 def _slugify(s: str) -> str:
     s = (s or "").strip()
@@ -100,41 +93,22 @@ def _extract_year_from_doc_url(url: str) -> Optional[int]:
     return None
 
 
-# ---------------------------------------------------------------------------
-# Scraper
-# ---------------------------------------------------------------------------
-
+# ─────────────────────────────────────────────────────────────────────────────
 class LovdataScraper:
 
-    # Stable CSS for tree — never use IDs
-    _NODE_TEXT_CSS = "span.x-tree3-node-text"
-    _EC_ICON_CSS   = "img.x-tree3-ec-icon"
-
-    # ── Toolbar XPath (structural, no ID) ────────────────────────────
-    # The confirmed XPath from user was:
-    #   //*[@id="x-auto-3752"]/tbody/tr[2]/td[2]/em/button   ← Show All
-    #   //*[@id="x-auto-3752"]/tbody/tr[2]/td[3]/em/button   ← Next
-    #
-    # "x-auto-3752" is a <table class="x-toolbar-ct">.
-    # We replace the id-based //*[@id="..."] with class-based selector:
-    #   .//table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[2]/em/button
-    #
-    # This is scoped INSIDE a section panel so it only hits that section's toolbar.
-
-    _SHOW_ALL_XPATH = ".//table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[2]/em/button"
-    _NEXT_XPATH     = ".//table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[3]/em/button"
-
-    # ── Section panel heading XPaths ─────────────────────────────────
-    # Each section heading is inside a panel header span
-    _PANEL_HEADING_CSS = "span.x-panel-header-text"
+    _NODE_TEXT_CSS      = "span.x-tree3-node-text"
+    _EC_ICON_CSS        = "img.x-tree3-ec-icon"
+    _SECTION_HEADER_CSS = "div.legal-area-header"
+    _SECTION_LINK_CSS   = "a.gwt-Anchor"
+    _SECTION_LABEL_CSS  = "span.label"
 
     def __init__(self, driver):
         self.driver = driver
         self.wait   = WebDriverWait(self.driver, config.TIMEOUT)
 
-    # ===================================================================
+    # =========================================================================
     # LOGIN — DO NOT CHANGE
-    # ===================================================================
+    # =========================================================================
     def login(self) -> bool:
         try:
             self.driver.get("https://lovdata.no/pro/auth/login")
@@ -158,9 +132,9 @@ class LovdataScraper:
             logger.error("❌ Login failed: %s", e)
             return False
 
-    # ===================================================================
+    # =========================================================================
     # NAVIGATION
-    # ===================================================================
+    # =========================================================================
 
     def go_to_legal_areas(self):
         self.driver.switch_to.default_content()
@@ -168,7 +142,6 @@ class LovdataScraper:
         self.wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         time.sleep(3)
 
-        # Click "Rettsområder" tab if visible
         try:
             for a in self.driver.find_elements(By.TAG_NAME, "a"):
                 if a.is_displayed() and "rettsområder" in (a.text or "").lower():
@@ -178,19 +151,18 @@ class LovdataScraper:
         except Exception:
             pass
 
-        # Wait for tree nodes — stable CSS, no ID
         try:
             self.wait.until(EC.presence_of_element_located(
                 (By.CSS_SELECTOR, self._NODE_TEXT_CSS)
             ))
             logger.info("✅ Tree nodes present")
         except TimeoutException:
-            logger.warning("⚠️ Tree nodes not found")
+            logger.warning("⚠️  Tree nodes not found")
         time.sleep(1)
 
-    # ===================================================================
-    # TREE — discover root nodes
-    # ===================================================================
+    # =========================================================================
+    # TREE helpers  (unchanged — these work correctly)
+    # =========================================================================
 
     def discover_legal_area_links(self) -> Dict[str, dict]:
         nodes = self.driver.find_elements(By.CSS_SELECTOR, self._NODE_TEXT_CSS)
@@ -258,331 +230,500 @@ class LovdataScraper:
             except Exception:
                 pass
 
-    # ===================================================================
-    # SECTION PANELS — find each section's x-panel container
-    # ===================================================================
+    # =========================================================================
+    # WAIT FOR RIGHT-PANEL TO LOAD
+    # =========================================================================
 
-    def _find_section_panels(self) -> List[Tuple[str, object]]:
+    def _wait_for_legal_area_header(self, timeout: int = 15) -> bool:
         """
-        Scan every possible heading element on the page.
-        Log ALL text found so we can see exactly what Lovdata renders.
-        Match against SECTION_MAP and return (canonical, panel_el) pairs.
-
-        Tries selectors in priority order:
-          1. span.x-panel-header-text   (standard Ext JS panel header)
-          2. div.x-panel-header         (the header div itself)
-          3. td.x-panel-header-noborder-left  (table-based header layout)
-          4. span[class*='header']      (any header span)
-          5. div[class*='header']       (any header div)
-          6. th, h1, h2, h3, h4        (generic headings)
-
-        For each match: walk up to the nearest x-panel ancestor to get
-        the full panel container (body + toolbar) for scoped link collection.
+        Wait for div.legal-area-header after a tree-node click.
+        This is the section navigation bar — its presence = page loaded.
+        Falls back to checking for div#saker (first section content div).
         """
-        found = []
-        seen  = set()
-
-        # All selectors to try — in priority order
-        selectors = [
-            "span.x-panel-header-text",
-            "div.x-panel-header",
-            "td.x-panel-header-noborder-left",
-            "span[class*='header-text']",
-            "div[class*='panel-header']",
-            "span[class*='header']",
-            "th", "h1", "h2", "h3", "h4",
-        ]
-
-        # Collect ALL visible text from ALL selectors — log everything
-        all_texts_seen = []
-
-        for sel in selectors:
-            try:
-                els = self.driver.find_elements(By.CSS_SELECTOR, sel)
-                for el in els:
-                    try:
-                        if not el.is_displayed():
-                            continue
-                        raw = re.sub(r"\s+", " ", (el.text or "").strip())
-                        if not raw or raw in all_texts_seen:
-                            continue
-                        all_texts_seen.append(raw)
-                    except Exception:
-                        continue
-            except Exception:
-                continue
-
-        # Log everything found so we can debug
-        logger.info("  🔍 All heading texts on page (%s total):", len(all_texts_seen))
-        for t in all_texts_seen:
-            upper = t.upper()
-            match = SECTION_MAP.get(upper, "—")
-            logger.info("      [%s] → map=%s", t[:80], match)
-
-        # Now do the actual matching pass
-        for sel in selectors:
-            try:
-                els = self.driver.find_elements(By.CSS_SELECTOR, sel)
-                for el in els:
-                    try:
-                        if not el.is_displayed():
-                            continue
-                        raw       = re.sub(r"\s+", " ", (el.text or "").strip())
-                        upper     = raw.upper()
-                        canonical = SECTION_MAP.get(upper)
-                        if not canonical or canonical in seen:
-                            continue
-
-                        # Walk up to nearest x-panel ancestor
-                        panel = None
-                        for ancestor_cls in [
-                            "x-panel",
-                            "x-grid-panel",
-                            "x-panel-noborder",
-                        ]:
-                            try:
-                                panel = el.find_element(
-                                    By.XPATH,
-                                    f"./ancestor::div[contains(@class,'{ancestor_cls}')][1]"
-                                )
-                                break
-                            except Exception:
-                                continue
-
-                        if panel is None:
-                            # No panel ancestor — use a wide parent div
-                            try:
-                                panel = el.find_element(By.XPATH, "./ancestor::div[3]")
-                            except Exception:
-                                panel = el
-
-                        seen.add(canonical)
-                        found.append((canonical, panel))
-                        logger.info(
-                            "    ✓ MATCHED: %-50s  selector=%s  panel_cls=%s",
-                            canonical, sel,
-                            (panel.get_attribute("class") or "")[:60]
-                        )
-
-                    except StaleElementReferenceException:
-                        continue
-            except Exception:
-                continue
-
-            # Stop scanning more selectors once we have a good set
-            if len(found) >= 3:
-                break
-
-        if not found:
-            logger.error(
-                "❌ No section panels matched. "
-                "The section headings above show what IS on the page. "
-                "Add the correct text to SECTION_MAP."
+        try:
+            WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located(
+                    (By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
+                )
             )
+            time.sleep(0.5)
+            logger.info("    ✅ div.legal-area-header present")
+            return True
+        except TimeoutException:
+            pass
 
-        return found
+        logger.warning(
+            "    ⚠️  div.legal-area-header not found in %ss — "
+            "trying fallback div#saker", timeout
+        )
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.ID, "saker"))
+            )
+            time.sleep(0.5)
+            logger.info("    ✅ Fallback: div#saker found")
+            return True
+        except TimeoutException:
+            logger.error("    ❌ Right-panel content did not load")
+            return False
 
-    # ===================================================================
-    # SHOW ALL — scoped to one section panel, structural XPath
-    # ===================================================================
+    # =========================================================================
+    # FIND SECTION LINKS in div.legal-area-header
+    # =========================================================================
 
-    def _click_show_all_in_panel(self, panel_el) -> Tuple[bool, Optional[int]]:
+    def _get_section_links(self) -> List[Tuple[str, str, str]]:
         """
-        Find the Show All button using the structural XPath (no ID):
-          .//table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[2]/em/button
+        Returns list of (norwegian_label, canonical_english, div_id).
+        We store ONLY text/strings — never Selenium elements — so nothing
+        can go stale between sections.  We re-find the element fresh each
+        time we need to click it (see _click_section_tab).
+        """
+        results = []
+        seen_canonical: set = set()
 
-        This is exactly the confirmed XPath with the dynamic ID stripped:
-          Original: //*[@id="x-auto-3752"]/tbody/tr[2]/td[2]/em/button
-          Stable  : //table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[2]/em/button
+        try:
+            header = self.driver.find_element(By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
+        except NoSuchElementException:
+            logger.error("    ❌ div.legal-area-header not found")
+            return results
 
-        Also reads the count from the button text: "Vis alle (168)"
+        links = header.find_elements(By.CSS_SELECTOR, self._SECTION_LINK_CSS)
+        logger.info("    Found %s anchor links in legal-area-header", len(links))
+
+        for link in links:
+            try:
+                try:
+                    label_text = link.find_element(
+                        By.CSS_SELECTOR, self._SECTION_LABEL_CSS
+                    ).text.strip()
+                except NoSuchElementException:
+                    label_text = (link.text or "").strip()
+
+                if not label_text:
+                    continue
+
+                upper = label_text.upper()
+                defn  = _LABEL_UPPER_TO_DEF.get(upper)
+
+                if not defn:
+                    for key, d in _LABEL_UPPER_TO_DEF.items():
+                        if key in upper or upper in key:
+                            defn = d
+                            break
+
+                if not defn:
+                    logger.debug("    ℹ️  No mapping for: '%s'", label_text)
+                    continue
+
+                canonical = defn[1]
+                div_id    = defn[2]
+
+                if canonical in seen_canonical:
+                    continue
+
+                seen_canonical.add(canonical)
+                # Store STRINGS only — no element references
+                results.append((label_text, canonical, div_id))
+                logger.info(
+                    "    ✓ Section: '%s'  →  %s  (div#%s)",
+                    label_text, canonical, div_id
+                )
+
+            except StaleElementReferenceException:
+                continue
+
+        return results
+
+    def _click_section_tab(self, label_text: str) -> bool:
+        """
+        Re-find the section tab link FRESH each time and click it.
+        Never stores the element — always looks it up by span.label text.
+        This prevents StaleElementReferenceException between sections.
+        """
+        try:
+            header = self.driver.find_element(By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
+            links  = header.find_elements(By.CSS_SELECTOR, self._SECTION_LINK_CSS)
+            for link in links:
+                try:
+                    try:
+                        lbl = link.find_element(
+                            By.CSS_SELECTOR, self._SECTION_LABEL_CSS
+                        ).text.strip()
+                    except NoSuchElementException:
+                        lbl = (link.text or "").strip()
+
+                    if lbl == label_text:
+                        self.driver.execute_script(
+                            "arguments[0].scrollIntoView({block:'center'});", link
+                        )
+                        time.sleep(0.2)
+                        self.driver.execute_script("arguments[0].click();", link)
+                        logger.info("    👆 Clicked section tab: '%s'", label_text)
+                        return True
+                except StaleElementReferenceException:
+                    continue
+        except Exception as e:
+            logger.debug("    _click_section_tab error: %s", e)
+        logger.warning("    ⚠️  Could not find section tab: '%s'", label_text)
+        return False
+
+    # =========================================================================
+    # FIND SECTION BLOCK
+    # =========================================================================
+    # From DevTools (confirmed):
+    #
+    #   div#saker  class="viewTitle ..."      ← heading div (NOT the grid)
+    #   div.gwt-Label                          ← subtitle text
+    #   div.x-grid-panel  tabindex="0"         ← ACTUAL document grid
+    #   table.x-btn.x-btn-noicon               ← "Vis alle (N)" button
+    #   div#lover  class="viewTitle ..."       ← next section heading
+    #
+    # The section id (#saker, #lover …) is on the HEADING div only.
+    # The grid and Vis-alle button are SIBLINGS that follow the heading.
+    # We must collect all siblings between this heading and the next one.
+    # =========================================================================
+
+    def _get_section_siblings(self, div_id: str) -> List:
+        """
+        Find the heading div by id (in JS, never passing element as arg),
+        then collect all following siblings up to the next viewTitle div.
+        Using document.getElementById() inside JS avoids StaleElementReferenceException
+        because we never hold a Python WebElement reference across DOM updates.
+        """
+        # Try the id and common variants
+        actual_id = None
+        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
+                       "third" + div_id.capitalize()):
+            try:
+                self.driver.find_element(By.ID, id_try)
+                actual_id = id_try
+                break
+            except NoSuchElementException:
+                continue
+
+        if actual_id is None:
+            logger.warning("    ⚠️  Heading div not found for id='%s'", div_id)
+            return []
+
+        try:
+            siblings = self.driver.execute_script("""
+                var heading = document.getElementById(arguments[0]);
+                if (!heading) return [];
+                var siblings = [];
+                var sibling = heading.nextElementSibling;
+                while (sibling) {
+                    if (sibling.classList.contains('viewTitle')) break;
+                    siblings.push(sibling);
+                    sibling = sibling.nextElementSibling;
+                }
+                return siblings;
+            """, actual_id)
+            return siblings or []
+        except Exception as e:
+            logger.debug("    _get_section_siblings JS error: %s", e)
+            return []
+
+    # =========================================================================
+    # CLICK "VIS ALLE" — find button among section siblings
+    # =========================================================================
+
+    def _click_vis_alle(self, div_id: str) -> Optional[int]:
+        """
+        Find and click the "Vis alle (N)" button using pure JS getElementById.
+        Never passes WebElement to JS — fully stale-proof.
         """
         total = None
 
-        try:
-            btn = panel_el.find_element(By.XPATH, self._SHOW_ALL_XPATH)
-            if btn.is_displayed() and btn.is_enabled():
-                # Read count from button text
-                btn_text = (btn.text or "").strip()
-                logger.info("    Show All button text: '%s'", btn_text)
-                m = re.search(r"\((\d+)\)", btn_text)
-                if m:
-                    total = int(m.group(1))
-
-                self.driver.execute_script(
-                    "arguments[0].scrollIntoView({block:'center'});", btn
-                )
-                time.sleep(0.3)
-                self.driver.execute_script("arguments[0].click();", btn)
-                logger.info("    ✅ Show All clicked — count=%s", total)
-                time.sleep(2.5)
-                return True, total
-
-        except NoSuchElementException:
-            logger.info("    ℹ️  No toolbar Show All button found in this panel")
-        except Exception as e:
-            logger.warning("    ⚠️ Show All click error: %s", e)
-
-        return False, total
-
-    # ===================================================================
-    # NEXT PAGE — scoped to one section panel, structural XPath
-    # ===================================================================
-
-    def _click_next_in_panel(self, panel_el) -> bool:
-        """
-        Find the Next button using the structural XPath (no ID):
-          .//table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[3]/em/button
-
-        Original confirmed: //*[@id="x-auto-3752"]/tbody/tr[2]/td[3]/em/button
-        Stable            : //table[contains(@class,'x-toolbar-ct')]/tbody/tr[2]/td[3]/em/button
-
-        Before clicking, check that the button is NOT disabled:
-          - no @disabled attribute
-          - parent <td> does not have class x-item-disabled
-        """
-        try:
-            btn = panel_el.find_element(By.XPATH, self._NEXT_XPATH)
-
-            # Check button itself
-            if btn.get_attribute("disabled"):
-                logger.info("    ⏹  Next button is disabled (last page)")
-                return False
-
-            # Check parent td for x-item-disabled
+        # Try id variants
+        actual_id = None
+        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
+                       "third" + div_id.capitalize()):
             try:
-                parent_td  = btn.find_element(By.XPATH, "./ancestor::td[1]")
-                parent_cls = parent_td.get_attribute("class") or ""
-                if "x-item-disabled" in parent_cls or "disabled" in parent_cls:
-                    logger.info("    ⏹  Next button td is disabled (last page)")
-                    return False
-            except Exception:
-                pass
+                self.driver.find_element(By.ID, id_try)
+                actual_id = id_try
+                break
+            except NoSuchElementException:
+                continue
 
-            if not btn.is_displayed():
+        if actual_id is None:
+            logger.info("    ℹ️  No 'Vis alle' button found for div#%s", div_id)
+            return total
+
+        try:
+            result = self.driver.execute_script("""
+                var heading = document.getElementById(arguments[0]);
+                if (!heading) return null;
+                var sib = heading.nextElementSibling;
+                while (sib) {
+                    if (sib.classList.contains('viewTitle')) break;
+                    var txt = sib.innerText || sib.textContent || '';
+                    if (txt.toLowerCase().indexOf('vis alle') >= 0) {
+                        // Extract count
+                        var m = txt.match(/\((\d[\d\s]*)\)/);
+                        if (!m) m = txt.toLowerCase().match(/vis alle\s+(\d+)/);
+                        var count = m ? parseInt(m[1].replace(/\s/g,'')) : null;
+                        // Click the button or the element itself
+                        var btn = sib.querySelector('button');
+                        if (btn) btn.click(); else sib.click();
+                        return count;
+                    }
+                    sib = sib.nextElementSibling;
+                }
+                return null;
+            """, actual_id)
+
+            if result is not None:
+                total = int(result)
+                logger.info("    ✅ Vis alle clicked — expected=%s", total)
+                time.sleep(2.5)
+            else:
+                logger.info("    ℹ️  No 'Vis alle' button found for div#%s", div_id)
+
+        except Exception as e:
+            logger.debug("    _click_vis_alle JS error: %s", e)
+
+        return total
+
+    # =========================================================================
+    # CLICK NEXT PAGE — find toolbar in section siblings
+    # =========================================================================
+
+    def _click_next_page(self, div_id: str) -> bool:
+        """
+        Find and click the Next button using pure JS getElementById.
+        Fully stale-proof — no WebElement passed to JS.
+        Toolbar: table.x-toolbar-ct / tbody / tr[2] / td[3] / em / button
+        """
+        actual_id = None
+        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
+                       "third" + div_id.capitalize()):
+            try:
+                self.driver.find_element(By.ID, id_try)
+                actual_id = id_try
+                break
+            except NoSuchElementException:
+                continue
+
+        if actual_id is None:
+            logger.info("    ⏹  No toolbar found for div#%s", div_id)
+            return False
+
+        try:
+            result = self.driver.execute_script("""
+                var heading = document.getElementById(arguments[0]);
+                if (!heading) return 'no_heading';
+                var sib = heading.nextElementSibling;
+                while (sib) {
+                    if (sib.classList.contains('viewTitle')) break;
+                    // Find toolbar table in this sibling
+                    var toolbar = sib.matches('table.x-toolbar-ct') ? sib
+                                : sib.querySelector('table.x-toolbar-ct');
+                    if (toolbar) {
+                        var rows = toolbar.querySelectorAll('tbody tr');
+                        var btnRow = rows.length >= 2 ? rows[1] : rows[0];
+                        if (!btnRow) return 'no_btn_row';
+                        var tds = btnRow.querySelectorAll('td');
+                        // td[3] = Next (0-indexed: td[2])
+                        var nextTd = tds.length >= 3 ? tds[2] : null;
+                        if (!nextTd) return 'no_next_td';
+                        var cls = nextTd.className || '';
+                        if (cls.indexOf('disabled') >= 0) return 'disabled';
+                        var btn = nextTd.querySelector('button');
+                        if (!btn) return 'no_btn';
+                        if (btn.disabled) return 'disabled';
+                        btn.click();
+                        return 'clicked';
+                    }
+                    sib = sib.nextElementSibling;
+                }
+                return 'no_toolbar';
+            """, actual_id)
+
+            if result == 'clicked':
+                logger.info("    ➡️  Next page clicked")
+                time.sleep(2.0)
+                return True
+            elif result in ('disabled',):
+                logger.info("    ⏹  Next is disabled — last page")
+                return False
+            else:
+                logger.info("    ⏹  No Next button for div#%s (%s)", div_id, result)
                 return False
 
-            self.driver.execute_script(
-                "arguments[0].scrollIntoView({block:'center'});", btn
-            )
-            self.driver.execute_script("arguments[0].click();", btn)
-            logger.info("    ➡️  Next page clicked")
-            time.sleep(2.0)
-            return True
-
-        except NoSuchElementException:
-            logger.info("    ⏹  No Next button found — end of section")
-            return False
         except Exception as e:
-            logger.warning("    ⚠️ Next click error: %s", e)
+            logger.debug("    _click_next_page JS error: %s", e)
             return False
 
-    # ===================================================================
-    # COLLECT LINKS — scoped to one section panel only
-    # ===================================================================
+    # =========================================================================
+    # COLLECT DOCUMENT LINKS — from x-grid-panel sibling of section heading
+    # =========================================================================
 
-    def _collect_links_in_panel(self, panel_el, seen: set) -> List[str]:
+    def _collect_links_in_section(self, div_id: str, seen: set) -> List[str]:
         """
-        Collect #document/ links from inside this section's panel only.
-        NOT from the whole page — that's what caused the 88/40 duplicates.
+        Collect searchResultLink hrefs using pure JS getElementById.
+        Confirmed link class from DevTools: a.searchResultLink
+        href format: #document/EUR/eur-2026-03-06
+        Fully stale-proof.
         """
         new_urls = []
+
+        actual_id = None
+        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
+                       "third" + div_id.capitalize()):
+            try:
+                self.driver.find_element(By.ID, id_try)
+                actual_id = id_try
+                break
+            except NoSuchElementException:
+                continue
+
+        if actual_id is None:
+            return new_urls
+
         try:
-            links = panel_el.find_elements(By.CSS_SELECTOR, "a[href*='#document/']")
-            for a in links:
-                try:
-                    href = (a.get_attribute("href") or "").split("?")[0].strip()
-                    if href and href not in seen:
-                        seen.add(href)
-                        new_urls.append(href)
-                except StaleElementReferenceException:
-                    continue
-        except Exception:
-            pass
+            hrefs = self.driver.execute_script("""
+                var heading = document.getElementById(arguments[0]);
+                if (!heading) return [];
+                var hrefs = [];
+                var sib = heading.nextElementSibling;
+                while (sib) {
+                    if (sib.classList.contains('viewTitle')) break;
+                    // Collect searchResultLink anchors
+                    var links = sib.querySelectorAll('a.searchResultLink, a[href*="#document/"]');
+                    links.forEach(function(a) {
+                        var h = (a.getAttribute('href') || '').split('?')[0].trim();
+                        if (h) hrefs.push(h);
+                    });
+                    sib = sib.nextElementSibling;
+                }
+                return hrefs;
+            """, actual_id)
+
+            for href in (hrefs or []):
+                if href and href not in seen:
+                    seen.add(href)
+                    new_urls.append(href)
+
+        except Exception as e:
+            logger.debug("    _collect_links_in_section JS error: %s", e)
+
         return new_urls
 
-    # ===================================================================
-    # MAIN: COLLECT URLs PER SECTION
-    # ===================================================================
+    # =========================================================================
+    # MAIN ENTRY: collect all section URLs from the currently-loaded page
+    # =========================================================================
 
-    def collect_urls_by_section(self, area_url: str, max_pages: int = 500) -> List[dict]:
+    def collect_urls_from_current_view(self, max_pages: int = 500) -> List[dict]:
         """
-        For each section panel on the legal-area page:
-          1. Find the panel by span.x-panel-header-text matching section name
-          2. Click Show All inside that panel (structural xpath, td[2])
-          3. Collect links inside that panel only
-          4. Click Next inside that panel (structural xpath, td[3]) to paginate
-          5. Stop when Next is disabled or no new links appear
+        MUST be called AFTER a tree node has been clicked and page has loaded.
+        Never call driver.get() before this — it destroys dynamic content.
 
-        This gives the CORRECT count per section, not a global page total.
+        Processes ONE section fully before moving to the next.
+        Verifies URL count matches expected count for each section.
         """
-        self.driver.get(area_url)
-        try:
-            self.wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
-        except TimeoutException:
-            pass
-        time.sleep(3)
-
-        panels = self._find_section_panels()
-
-        if not panels:
-            logger.error(
-                "❌ No section panels found. "
-                "Check that span.x-panel-header-text exists on this page."
-            )
+        if not self._wait_for_legal_area_header():
+            logger.error("❌ Page not ready — cannot collect sections")
             return []
+
+        section_links = self._get_section_links()
+        if not section_links:
+            logger.warning("    ⚠️  No section links found")
+            return []
+
+        logger.info(
+            "\n    ════════════════════════════════════════════════\n"
+            "    %s SECTIONS FOUND — processing one by one\n"
+            "    ════════════════════════════════════════════════",
+            len(section_links)
+        )
 
         results = []
 
-        for canonical, panel_el in panels:
-            logger.info("  ↳ Section: %s", canonical)
-            seen: set        = set()
+        for s_idx, (label, canonical, div_id) in enumerate(section_links, 1):
+
+            logger.info(
+                "\n    ── [%s/%s] %s ──",
+                s_idx, len(section_links), canonical
+            )
+
+            seen: set            = set()
             section_urls: List[str] = []
 
             try:
-                # Scroll section into view
-                self.driver.execute_script(
-                    "arguments[0].scrollIntoView({block:'center'});", panel_el
-                )
-                time.sleep(0.5)
+                # ── 1. Re-find and click section tab FRESH (no stale refs) ──
+                if not self._click_section_tab(label):
+                    logger.warning("    ⚠️  Could not click tab '%s' — skipping", label)
+                    results.append({
+                        "document_type":  canonical,
+                        "expected_count": None,
+                        "urls":           [],
+                    })
+                    continue
+                time.sleep(1.5)
 
-                # Click Show All — reads count from button text
-                _, expected = self._click_show_all_in_panel(panel_el)
+                # ── 2. Verify heading div exists ──────────────────────
+                try:
+                    self.driver.find_element(By.ID, div_id)
+                    logger.info("    ✅ Heading div#%s found", div_id)
+                except NoSuchElementException:
+                    logger.warning(
+                        "    ⚠️  Heading div#%s not found — skipping", div_id
+                    )
+                    results.append({
+                        "document_type":  canonical,
+                        "expected_count": None,
+                        "urls":           [],
+                    })
+                    continue
 
-                # Collect + paginate
+                # ── 3. Click Vis alle → get total count ───────────────
+                expected = self._click_vis_alle(div_id)
+
+                # ── 4. Collect all documents — paginate until done ────
                 page_num = 0
                 while page_num < max_pages:
                     before = len(seen)
-                    new    = self._collect_links_in_panel(panel_el, seen)
+
+                    new = self._collect_links_in_section(div_id, seen)
                     section_urls.extend(new)
-                    after  = len(seen)
+                    after = len(seen)
 
                     logger.info(
-                        "      page %s: +%s new (total in section: %s / expected: %s)",
-                        page_num + 1, after - before, after, expected
+                        "      page %s: +%s new  (total: %s / expected: %s)",
+                        page_num + 1, after - before, after,
+                        expected if expected else "?"
                     )
 
-                    # Stop if we have all expected docs
                     if expected and after >= expected:
-                        logger.info("      ✅ Collected all expected docs (%s)", expected)
+                        logger.info(
+                            "      ✅ All %s docs collected for '%s'",
+                            expected, canonical
+                        )
                         break
 
-                    # Try Next — scoped to this panel
-                    if not self._click_next_in_panel(panel_el):
+                    if not self._click_next_page(div_id):
                         break
 
-                    # If next click produced zero new links, stop
                     time.sleep(0.5)
+
                     if len(seen) == before:
                         logger.info("      No new links after Next — stopping")
                         break
 
                     page_num += 1
 
-                logger.info(
-                    "    ✅ %-55s expected=%-6s collected=%s",
-                    canonical, expected, len(section_urls)
-                )
+                # ── 5. Count verification ─────────────────────────────
+                if expected and len(section_urls) != expected:
+                    logger.warning(
+                        "    ⚠️  COUNT MISMATCH '%s': expected=%s  collected=%s",
+                        canonical, expected, len(section_urls)
+                    )
+                else:
+                    logger.info(
+                        "    ✅ COMPLETE '%s'  expected=%s  collected=%s",
+                        canonical, expected, len(section_urls)
+                    )
+
                 results.append({
                     "document_type":  canonical,
                     "expected_count": expected,
@@ -590,29 +731,43 @@ class LovdataScraper:
                 })
 
             except Exception as e:
-                logger.error("    ❌ Section '%s': %s", canonical, e, exc_info=True)
+                logger.error(
+                    "    ❌ Section '%s' crashed: %s", canonical, e, exc_info=True
+                )
                 results.append({
                     "document_type":  canonical,
                     "expected_count": None,
                     "urls":           section_urls,
                 })
 
+        # Summary
+        total_collected = sum(len(r["urls"]) for r in results)
+        logger.info(
+            "\n    ════════════════════════════════════════════════\n"
+            "    SECTION COLLECTION COMPLETE\n"
+            "    sections=%s  total_docs=%s\n"
+            "    ════════════════════════════════════════════════",
+            len(results), total_collected
+        )
+
         return results
 
-    # ===================================================================
-    # CONTENT SCRAPING — visit URL, extract from iframe
-    # ===================================================================
+    # Backward-compat alias
+    def collect_urls_by_section(self, area_url: str = "", max_pages: int = 500) -> List[dict]:
+        """area_url is ignored — content is read from the current page (SPA)."""
+        return self.collect_urls_from_current_view(max_pages=max_pages)
+
+    # =========================================================================
+    # CONTENT SCRAPING — visit individual document URL
+    # =========================================================================
 
     def scrape_content_from_url(self, doc_url: str) -> dict:
         """
-        Lovdata Pro is a hash-based SPA.
-        The actual document content renders inside an <iframe>.
+        Navigate to a document URL and extract content.
 
-        1. driver.get(url) — loads SPA shell
-        2. Wait 3s for iframe to render
-        3. Switch into each iframe, extract title + date + content
-        4. Keep the iframe with the longest content
-        5. Fallback: main window body text
+        Individual document pages use an iframe for rendering content.
+        The hidden LovdataPro utility iframe (0×0 px) is skipped.
+        We check iframe dimensions and only enter visible iframes.
         """
         result = {
             "title":          "",
@@ -623,6 +778,9 @@ class LovdataScraper:
 
         try:
             self.driver.switch_to.default_content()
+            if doc_url.startswith("#"):
+                doc_url = "https://lovdata.no/pro/" + doc_url
+
             self.driver.get(doc_url)
             try:
                 self.wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
@@ -636,10 +794,16 @@ class LovdataScraper:
             best_source  = ""
 
             iframes = self.driver.find_elements(By.TAG_NAME, "iframe")
-            logger.debug("  iframes: %s", len(iframes))
+            logger.debug("  iframes found: %s", len(iframes))
 
             for idx, iframe in enumerate(iframes):
                 try:
+                    # Skip hidden utility iframes (width:0 / height:0)
+                    style = (iframe.get_attribute("style") or "").lower()
+                    if "width: 0" in style or "height: 0" in style:
+                        logger.debug("  ⏭️  Skip hidden iframe[%s]", idx)
+                        continue
+
                     self.driver.switch_to.default_content()
                     self.driver.switch_to.frame(iframe)
                     time.sleep(1.0)
@@ -649,7 +813,9 @@ class LovdataScraper:
                     for sel in ["h1", ".tittel", "[class*='tittel']",
                                 ".navn", "span.bold", "[class*='title']"]:
                         try:
-                            t = self.driver.find_element(By.CSS_SELECTOR, sel).text.strip()
+                            t = self.driver.find_element(
+                                By.CSS_SELECTOR, sel
+                            ).text.strip()
                             if t and len(t) > 3:
                                 title = t
                                 break
@@ -663,21 +829,24 @@ class LovdataScraper:
                                 "[class*='date']", "time"]:
                         try:
                             el = self.driver.find_element(By.CSS_SELECTOR, sel)
-                            d  = (el.text or el.get_attribute("datetime") or "").strip()
+                            d  = (
+                                el.text or el.get_attribute("datetime") or ""
+                            ).strip()
                             if d:
                                 date = d
                                 break
                         except Exception:
                             continue
 
-                    # Content — priority order
+                    # Content (priority order)
                     content = ""
                     source  = ""
 
-                    # P1: raw <pre>/<code> = XML/text laws
                     for tag in ("pre", "code"):
                         try:
-                            t = self.driver.find_element(By.TAG_NAME, tag).text.strip()
+                            t = self.driver.find_element(
+                                By.TAG_NAME, tag
+                            ).text.strip()
                             if len(t) > 100:
                                 content = t
                                 source  = "xml_pre"
@@ -685,7 +854,6 @@ class LovdataScraper:
                         except Exception:
                             continue
 
-                    # P2: Lovdata document content divs
                     if not content:
                         for sel in [
                             "div.lov-content", "div.lovtekst",
@@ -697,7 +865,9 @@ class LovdataScraper:
                             "article", "main", "#content",
                         ]:
                             try:
-                                t = self.driver.find_element(By.CSS_SELECTOR, sel).text.strip()
+                                t = self.driver.find_element(
+                                    By.CSS_SELECTOR, sel
+                                ).text.strip()
                                 if len(t) > 200:
                                     content = t
                                     source  = "iframe_content"
@@ -705,10 +875,11 @@ class LovdataScraper:
                             except Exception:
                                 continue
 
-                    # P3: full iframe body
                     if not content:
                         try:
-                            t = self.driver.find_element(By.TAG_NAME, "body").text.strip()
+                            t = self.driver.find_element(
+                                By.TAG_NAME, "body"
+                            ).text.strip()
                             if len(t) > 50:
                                 content = t
                                 source  = "iframe_body"
@@ -726,7 +897,7 @@ class LovdataScraper:
                 finally:
                     self.driver.switch_to.default_content()
 
-            # If no iframe gave content, fallback to main window
+            # Fallback: main window body
             if not best_content:
                 try:
                     best_content = self.driver.find_element(
@@ -743,8 +914,10 @@ class LovdataScraper:
 
             logger.info(
                 "  📄 title='%s'  date='%s'  chars=%s  src=%s",
-                (best_title or "—")[:60], best_date or "—",
-                len(best_content), best_source
+                (best_title or "—")[:60],
+                best_date or "—",
+                len(best_content),
+                best_source,
             )
 
         except Exception as e:
