@@ -1,20 +1,29 @@
-"""
-XML FILE HANDLER
-Saves scraped document content as a structured .xml file locally.
-All metadata fields are always written — never empty tags for hierarchy.
-"""
-
 import os
+import re
 import hashlib
 import logging
+import uuid
 from datetime import datetime
 from pathlib import Path
 from typing import Optional, Tuple
 import xml.etree.ElementTree as ET
 
-import config
-
 logger = logging.getLogger(__name__)
+
+# Fields promoted to top-level XML elements (in preferred order).
+# Any page_meta key NOT in this list is appended after as a generic element.
+_TOP_FIELDS = [
+    "fulltittel",
+    "korttittel",
+    "dato",
+    "year",          # synthetic — derived from date/title/url/content
+    "ikraftdato",
+    "kunngjort",
+    "avdeling",
+    "myndighet",
+    "rettsomrade",
+    "status",
+]
 
 
 class XMLHandler:
@@ -25,11 +34,18 @@ class XMLHandler:
         local_folder: str,
     ) -> Tuple[Optional[str], Optional[int], Optional[str], Optional[str]]:
         """
-        Build a structured XML file from a scraped document dict and save locally.
+        Build and save XML for a scraped document.
 
         Required keys in document:
-          file_name, url, title, date, content, content_source,
-          legal_area_root, legal_area_branch, legal_area_leaf, document_type
+          file_name      - output filename  e.g. "EUR_eur-2026-03-06.xml"
+          url            - Pro URL          e.g. "https://lovdata.no/pro/#document/..."
+          document_type  - section label    e.g. "LAWS"
+          title          - best title from page
+          date           - date string from page
+          year           - int year (or None)
+          content        - full document text
+          content_source - where content came from
+          page_meta      - dict of fields scraped from the document page itself
 
         Returns:
           (file_path, file_size_bytes, md5_hash, content_preview_500chars)
@@ -38,70 +54,90 @@ class XMLHandler:
         try:
             Path(local_folder).mkdir(parents=True, exist_ok=True)
 
-            # ── Pull all fields — use "unknown" fallback never blank ──
-            file_name    = (document.get("file_name")    or "").strip()
-            source_url   = (document.get("url")          or "").strip()
-            title        = (document.get("title")        or "").strip()
-            date         = (document.get("date")         or "").strip()
-            root         = (document.get("legal_area_root")   or "unknown").strip()
-            branch       = (document.get("legal_area_branch") or "").strip()
-            leaf         = (document.get("legal_area_leaf")   or "").strip()
-            doc_type     = (document.get("document_type")     or "").strip()
-            content_src  = (document.get("content_source")    or "").strip()
-            content      = (document.get("content")           or "").strip()
+            file_name    = (document.get("file_name")      or "").strip()
+            pro_url      = (document.get("url")            or "").strip()
+            doc_type     = (document.get("document_type")  or "").strip()
+            title        = (document.get("title")          or "").strip()
+            date         = (document.get("date")           or "").strip()
+            year         = document.get("year")                         # int or None
+            content      = (document.get("content")        or "").strip()
+            content_src  = (document.get("content_source") or "").strip()
+            page_meta    = dict(document.get("page_meta")  or {})
 
             if not file_name:
                 logger.error("XMLHandler.save: file_name is empty")
                 return None, None, None, None
 
-            # ── Build XML tree ────────────────────────────────────────
+            # Merge title/date into page_meta if not already scraped from page
+            if title and "fulltittel" not in page_meta:
+                page_meta["fulltittel"] = title
+            if title and "korttittel" not in page_meta:
+                page_meta["korttittel"] = title
+            if date and "dato" not in page_meta:
+                page_meta["dato"] = date
+
+            # year is always written as a derived field
+            page_meta["year"] = str(year) if year is not None else "—"
+
+            doc_id = str(uuid.uuid4())[:8]
+
+            # ------------------------------------------------------------------
+            # Build XML tree
+            # ------------------------------------------------------------------
             root_el = ET.Element("document")
 
-            # ── metadata block ────────────────────────────────────────
             meta = ET.SubElement(root_el, "metadata")
+            ET.SubElement(meta, "id").text            = doc_id
+            ET.SubElement(meta, "url").text           = pro_url
+            ET.SubElement(meta, "scraped_at").text    = datetime.now().isoformat()
+            ET.SubElement(meta, "document_type").text = doc_type
 
-            ET.SubElement(meta, "file_name").text   = file_name
-            ET.SubElement(meta, "source_url").text  = source_url
-            ET.SubElement(meta, "title").text       = title if title   else "—"
-            ET.SubElement(meta, "date").text        = date  if date    else "—"
+            # Write known fields in a consistent order
+            written = set()
+            for field in _TOP_FIELDS:
+                val = page_meta.get(field, "")
+                ET.SubElement(meta, field).text = str(val) if val else "—"
+                written.add(field)
 
-            # Hierarchy — always written with clear labels
-            hierarchy = ET.SubElement(meta, "hierarchy")
-            ET.SubElement(hierarchy, "root").text   = root
-            ET.SubElement(hierarchy, "branch").text = branch if branch else "(none)"
-            ET.SubElement(hierarchy, "leaf").text   = leaf   if leaf   else "(none)"
+            # Write any extra fields the page happened to expose
+            for key, val in page_meta.items():
+                if key in written:
+                    continue
+                safe_key = _safe_tag(key)
+                if safe_key:
+                    ET.SubElement(meta, safe_key).text = str(val) if val else "—"
 
-            # Legacy flat fields kept for DB compatibility
-            ET.SubElement(meta, "legal_area_root").text   = root
-            ET.SubElement(meta, "legal_area_branch").text = branch if branch else ""
-            ET.SubElement(meta, "legal_area_leaf").text   = leaf   if leaf   else ""
+            ET.SubElement(meta, "content_source").text = content_src
 
-            ET.SubElement(meta, "document_type").text   = doc_type
-            ET.SubElement(meta, "content_source").text  = content_src
-            ET.SubElement(meta, "scraped_at").text       = datetime.now().isoformat()
+            # ------------------------------------------------------------------
+            # Content wrapped in CDATA so special chars never break the XML
+            # ------------------------------------------------------------------
+            ET.SubElement(root_el, "content")   # placeholder — replaced below
 
-            # ── content block ─────────────────────────────────────────
-            content_el = ET.SubElement(root_el, "content")
-            content_el.text = content
+            ET.indent(root_el, space="  ")
+            xml_str = ET.tostring(root_el, encoding="unicode", xml_declaration=False)
 
-            # ── Write file ────────────────────────────────────────────
+            cdata_block = f"<![CDATA[\n{content}\n]]>"
+            xml_str = xml_str.replace("<content />", f"<content>{cdata_block}</content>")
+            xml_str = xml_str.replace("<content/>",  f"<content>{cdata_block}</content>")
+
             file_path = os.path.join(local_folder, file_name)
-            tree = ET.ElementTree(root_el)
-            ET.indent(tree, space="  ")
-            tree.write(file_path, encoding="utf-8", xml_declaration=True)
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write("<?xml version='1.0' encoding='utf-8'?>\n")
+                f.write(xml_str)
 
             file_size       = os.path.getsize(file_path)
             file_hash       = XMLHandler._md5(file_path)
             content_preview = content[:500]
 
             logger.info(
-                "💾 XML saved: %s  root='%s'  branch='%s'  leaf='%s'  size=%sb",
-                file_path, root, branch or "(none)", leaf or "(none)", file_size
+                "XML saved: %s  size=%s bytes  page_meta=%s",
+                file_name, file_size, list(page_meta.keys()),
             )
             return file_path, file_size, file_hash, content_preview
 
         except Exception as e:
-            logger.error("❌ XMLHandler.save failed: %s", e, exc_info=True)
+            logger.error("XMLHandler.save failed: %s", e, exc_info=True)
             return None, None, None, None
 
     @staticmethod
@@ -111,3 +147,12 @@ class XMLHandler:
             for chunk in iter(lambda: f.read(8192), b""):
                 md5.update(chunk)
         return md5.hexdigest()
+
+
+def _safe_tag(name: str) -> str:
+    """Convert an arbitrary string to a valid XML tag name."""
+    name = re.sub(r"\s+", "_", name.strip())
+    name = re.sub(r"[^\w\-.]", "", name)
+    if name and name[0].isdigit():
+        name = "field_" + name
+    return name[:80]

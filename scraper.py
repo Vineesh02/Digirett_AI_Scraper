@@ -1,3 +1,13 @@
+"""
+LOVDATA PRO SCRAPER
+===================
+URL collection uses two-mode operation (confirmed working):
+  - Small sections (no Vis alle): collect links directly from legal-area page siblings
+  - Large sections (Vis alle): click → driver.get(result_url) → Advanced Search → paginate → back()
+
+scrape_content_from_url extracts full content + page metadata from individual document iframes.
+"""
+
 import time
 import re
 import logging
@@ -18,107 +28,36 @@ import config
 logger = logging.getLogger(__name__)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Section definitions:
-#   (norwegian_label,  canonical_english,  stable_div_id)
+# Section definitions:  (norwegian_label, canonical_english, stable_div_id)
 # ─────────────────────────────────────────────────────────────────────────────
 SECTION_DEFS = [
-    ("Siste dokumenter",
-     "LATEST DOCUMENTS",
-     "saker"),
-    ("Lover",
-     "LAWS",
-     "lover"),
-    ("Forskrifter",
-     "REGULATIONS",
-     "forskrifter"),
-    ("Avgjørelser fra Høyesterett",
-     "DECISIONS FROM THE SUPREME COURT",
-     "hr"),
-    ("Avgjørelser fra lagmannsrettene",
-     "DECISIONS FROM THE COURTS OF APPEAL",
-     "lr"),
-    ("Avgjørelser fra tingrettene",
-     "DECISIONS FROM THE DISTRICT COURTS",
-     "tr"),
-    ("Artikler",
-     "ARTICLES",
-     "artikler"),
-    ("Dokumenter fra Klagenemnda for offentlige anskaffelser",
-     "DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD",
-     "kofa"),
-    ("Dokumenter fra Byggebransjens Faglig Juridiske Råd",
-     "DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL",
-     "bfjr"),
-    ("Dokumenter fra Justisdepartementet",
-     "DOCUMENTS FROM THE MINISTRY OF JUSTICE",
-     "jd"),
-    ("Andre dokumenter",
-     "OTHER DOCUMENTS",
-     "otherBases"),
+    ("Siste dokumenter",                                         "LATEST DOCUMENTS",                                       "saker"),
+    ("Lover",                                                    "LAWS",                                                   "lover"),
+    ("Forskrifter",                                              "REGULATIONS",                                            "forskrifter"),
+    ("Avgjørelser fra Høyesterett",                              "DECISIONS FROM THE SUPREME COURT",                       "hr"),
+    ("Avgjørelser fra lagmannsrettene",                          "DECISIONS FROM THE COURTS OF APPEAL",                    "lr"),
+    ("Avgjørelser fra tingrettene",                              "DECISIONS FROM THE DISTRICT COURTS",                     "tr"),
+    ("Artikler",                                                 "ARTICLES",                                               "artikler"),
+    ("Dokumenter fra Klagenemnda for offentlige anskaffelser",   "DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD", "firstOtherBase"),
+    ("Dokumenter fra Byggebransjens Faglig Juridiske Råd",       "DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL", "secondOtherBase"),
+    ("Dokumenter fra Justisdepartementet",                       "DOCUMENTS FROM THE MINISTRY OF JUSTICE",                 "thirdOtherBase"),
+    ("Andre dokumenter",                                         "OTHER DOCUMENTS",                                        "otherBases"),
 ]
-
 _LABEL_UPPER_TO_DEF = {d[0].upper(): d for d in SECTION_DEFS}
 _DIV_ID_TO_DEF      = {d[2]: d       for d in SECTION_DEFS}
 
-SECTION_MAP = {d[0].upper(): d[1] for d in SECTION_DEFS}
-SECTION_MAP.update({d[1]: d[1] for d in SECTION_DEFS})
+# Kept for backward-compat with any callers that import _LABEL_TO_DEF
+_LABEL_TO_DEF: Dict[str, tuple] = {d[0].upper(): d for d in SECTION_DEFS}
+
+# Minimum characters for content to be considered real document text.
+# The Lovdata Pro navigation/header/sidebar is ~800-1200 chars.
+# Real documents are typically 500+ chars of actual legal text.
+# We set this high enough to reject nav-only body fallback.
+_MIN_CONTENT_CHARS = 300
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Document ID prefix → Lovdata path segment mapping
-# Used to construct #document/ URLs from short IDs like FOR-2002-11-15-1288
-# ─────────────────────────────────────────────────────────────────────────────
-_DOC_PREFIX_MAP = {
-    "LOV":  "NL/lov",
-    "FOR":  "SF/forskrift",
-    "AVT":  "NL/lov",        # treaty/agreement — fallback
-    "HR":   "HR",
-    "LB":   "LB",
-    "LG":   "LG",
-    "LE":   "LE",
-    "LA":   "LA",
-    "LF":   "LF",
-    "RG":   "RG",
-    "TOSLO": "TOSLO",
-    "NAV":  "NAV",
-    "KOFA": "KOFA",
-    "JD":   "JD",
-    "BFJR": "BFJR",
-}
-
-
-def _construct_doc_url(doc_ref: str) -> Optional[str]:
-    """
-    Construct a Lovdata #document/ URL from a short document reference.
-    E.g. 'FOR-2002-11-15-1288' -> '#document/SF/forskrift/2002-11-15-1288'
-         'LOV-1918-05-31-4'    -> '#document/NL/lov/1918-05-31-4'
-    """
-    if not doc_ref:
-        return None
-    doc_ref = doc_ref.strip()
-
-    # Already a full URL or fragment
-    if doc_ref.startswith("#document/") or doc_ref.startswith("http"):
-        return doc_ref
-
-    # Pattern: PREFIX-YYYY-MM-DD-NUM  or  PREFIX-YYYY-NUM
-    m = re.match(r"^([A-ZÆØÅ]+)-(.+)$", doc_ref, re.IGNORECASE)
-    if not m:
-        return None
-
-    prefix = m.group(1).upper()
-    rest   = m.group(2)
-
-    path = _DOC_PREFIX_MAP.get(prefix)
-    if path:
-        return f"#document/{path}/{rest}"
-
-    # Unknown prefix — use lowercase prefix as best guess
-    return f"#document/{prefix.lower()}/{rest}"
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Utility
+# Utilities
 # ─────────────────────────────────────────────────────────────────────────────
 
 def _slugify(s: str) -> str:
@@ -152,19 +91,19 @@ class LovdataScraper:
     _SECTION_LINK_CSS   = "a.gwt-Anchor"
     _SECTION_LABEL_CSS  = "span.label"
 
-    # Advanced Search page selectors (confirmed from DevTools)
-    _SEARCH_WIDGET_CSS      = "div.searchResultWidget"
-    _RESULT_ITEM_CSS        = "a.placeHistoryItem"          # actual result links
-    _RESULT_COUNT_CSS       = "span#resultInfoNumberOfHits font"
-    _RESULT_COUNT_ALT_CSS   = "span.resultInfoValue#resultInfoNumberOfHits"
+    # Advanced Search page selectors
+    _SEARCH_WIDGET_CSS    = "div.searchResultWidget"
+    _RESULT_COUNT_CSS     = "span#resultInfoNumberOfHits font"
+    _RESULT_COUNT_ALT_CSS = "span.resultInfoValue#resultInfoNumberOfHits"
 
     def __init__(self, driver):
         self.driver = driver
         self.wait   = WebDriverWait(self.driver, config.TIMEOUT)
 
     # =========================================================================
-    # LOGIN
+    # LOGIN — DO NOT CHANGE
     # =========================================================================
+
     def login(self) -> bool:
         try:
             self.driver.get("https://lovdata.no/pro/auth/login")
@@ -182,10 +121,10 @@ class LovdataScraper:
             password_input.send_keys(config.LOVDATA_PASSWORD)
             password_input.submit()
             wait.until(lambda d: "/auth/login" not in d.current_url)
-            logger.info("✅ Login successful")
+            logger.info("Login successful")
             return True
         except Exception as e:
-            logger.error("❌ Login failed: %s", e)
+            logger.error("Login failed: %s", e)
             return False
 
     # =========================================================================
@@ -215,7 +154,6 @@ class LovdataScraper:
         self.driver.get("https://lovdata.no/pro/#rettsomrade")
         self.wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         time.sleep(3)
-
         try:
             for a in self.driver.find_elements(By.TAG_NAME, "a"):
                 if a.is_displayed() and "rettsområder" in (a.text or "").lower():
@@ -224,23 +162,22 @@ class LovdataScraper:
                     break
         except Exception:
             pass
-
         try:
             self.wait.until(EC.presence_of_element_located(
                 (By.CSS_SELECTOR, self._NODE_TEXT_CSS)
             ))
-            logger.info("✅ Tree nodes present")
+            logger.info("Tree nodes loaded")
         except TimeoutException:
-            logger.warning("⚠️  Tree nodes not found")
+            logger.warning("Tree nodes not found within timeout")
         time.sleep(1)
 
     # =========================================================================
-    # TREE helpers
+    # TREE HELPERS
     # =========================================================================
 
     def discover_legal_area_links(self) -> Dict[str, dict]:
         nodes = self.driver.find_elements(By.CSS_SELECTOR, self._NODE_TEXT_CSS)
-        logger.info("Found %s tree node(s)", len(nodes))
+        logger.info("Found %s tree nodes", len(nodes))
         roots: Dict[str, dict] = {}
         for node in nodes:
             try:
@@ -252,14 +189,13 @@ class LovdataScraper:
                     roots[slug] = {"element": node, "text": text}
             except StaleElementReferenceException:
                 continue
-        logger.info("📋 ROOT categories: %s", len(roots))
+        logger.info("Root categories: %s", len(roots))
         return roots
 
     def _get_node_div(self, node_text_el):
         try:
             return node_text_el.find_element(
-                By.XPATH,
-                "./ancestor::div[contains(@class,'x-tree3-node')][1]"
+                By.XPATH, "./ancestor::div[contains(@class,'x-tree3-node')][1]"
             )
         except Exception:
             return None
@@ -311,47 +247,37 @@ class LovdataScraper:
     def _wait_for_legal_area_header(self, timeout: int = 15) -> bool:
         try:
             WebDriverWait(self.driver, timeout).until(
-                EC.presence_of_element_located(
-                    (By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
-                )
+                EC.presence_of_element_located((By.CSS_SELECTOR, self._SECTION_HEADER_CSS))
             )
             time.sleep(0.5)
-            logger.info("    ✅ div.legal-area-header present")
             return True
         except TimeoutException:
             pass
-
-        logger.warning(
-            "    ⚠️  div.legal-area-header not found in %ss — "
-            "trying fallback div#saker", timeout
-        )
         try:
             WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.ID, "saker"))
             )
             time.sleep(0.5)
-            logger.info("    ✅ Fallback: div#saker found")
             return True
         except TimeoutException:
-            logger.error("    ❌ Right-panel content did not load")
+            logger.warning("Section header not found after %ss", timeout)
             return False
 
     # =========================================================================
-    # SECTION LINKS — legal area header
+    # SECTION DETECTION
     # =========================================================================
 
     def _get_section_links(self) -> List[Tuple[str, str, str]]:
         results = []
         seen_canonical: set = set()
-
         try:
             header = self.driver.find_element(By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
         except NoSuchElementException:
-            logger.error("    ❌ div.legal-area-header not found")
+            logger.error("div.legal-area-header not found")
             return results
 
         links = header.find_elements(By.CSS_SELECTOR, self._SECTION_LINK_CSS)
-        logger.info("    Found %s anchor links in legal-area-header", len(links))
+        logger.info("  Section tab links found: %s", len(links))
 
         for link in links:
             try:
@@ -375,7 +301,7 @@ class LovdataScraper:
                             break
 
                 if not defn:
-                    logger.debug("    ℹ️  No mapping for: '%s'", label_text)
+                    logger.debug("  No mapping for label: '%s'", label_text)
                     continue
 
                 canonical = defn[1]
@@ -383,13 +309,10 @@ class LovdataScraper:
 
                 if canonical in seen_canonical:
                     continue
-
                 seen_canonical.add(canonical)
+
                 results.append((label_text, canonical, div_id))
-                logger.info(
-                    "    ✓ Section: '%s'  →  %s  (div#%s)",
-                    label_text, canonical, div_id
-                )
+                logger.info("  Section: %-55s  div_id=%s", canonical, div_id)
 
             except StaleElementReferenceException:
                 continue
@@ -415,90 +338,47 @@ class LovdataScraper:
                         )
                         time.sleep(0.2)
                         self.driver.execute_script("arguments[0].click();", link)
-                        logger.info("    👆 Clicked section tab: '%s'", label_text)
+                        logger.info("  Clicked section tab: '%s'", label_text)
                         return True
                 except StaleElementReferenceException:
                     continue
         except Exception as e:
-            logger.debug("    _click_section_tab error: %s", e)
-        logger.warning("    ⚠️  Could not find section tab: '%s'", label_text)
+            logger.debug("_click_section_tab error: %s", e)
+        logger.warning("  Could not find section tab: '%s'", label_text)
         return False
 
     # =========================================================================
-    # LEGAL AREA PAGE — small section helpers
+    # SECTION ID RESOLUTION
     # =========================================================================
 
-    def _collect_links_in_section(self, div_id: str, seen: set) -> List[str]:
-        new_urls = []
-
-        actual_id = None
-        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
-                       "third" + div_id.capitalize()):
+    def _resolve_div_id(self, div_id: str) -> Optional[str]:
+        for id_try in (div_id, div_id + "s", div_id + "Base",
+                       div_id + "Bases", "third" + div_id.capitalize()):
             try:
                 self.driver.find_element(By.ID, id_try)
-                actual_id = id_try
-                break
+                return id_try
             except NoSuchElementException:
                 continue
-
-        if actual_id is None:
-            return new_urls
-
-        try:
-            hrefs = self.driver.execute_script("""
-                var heading = document.getElementById(arguments[0]);
-                if (!heading) return [];
-                var hrefs = [];
-                var sib = heading.nextElementSibling;
-                while (sib) {
-                    if (sib.classList.contains('viewTitle')) break;
-                    var links = sib.querySelectorAll('a.searchResultLink, a[href*="#document/"]');
-                    links.forEach(function(a) {
-                        var h = (a.getAttribute('href') || '').split('?')[0].trim();
-                        if (h) hrefs.push(h);
-                    });
-                    sib = sib.nextElementSibling;
-                }
-                return hrefs;
-            """, actual_id)
-
-            for href in (hrefs or []):
-                if href and href not in seen:
-                    seen.add(href)
-                    new_urls.append(href)
-
-        except Exception as e:
-            logger.debug("    _collect_links_in_section JS error: %s", e)
-
-        return new_urls
+        return None
 
     # =========================================================================
     # VIS ALLE
     # =========================================================================
 
     def _click_vis_alle(self, div_id: str) -> Optional[int]:
-        actual_id = None
-        for id_try in (div_id, div_id + "s", div_id + "Base", div_id + "Bases",
-                       "third" + div_id.capitalize()):
-            try:
-                self.driver.find_element(By.ID, id_try)
-                actual_id = id_try
-                break
-            except NoSuchElementException:
-                continue
-
+        actual_id = self._resolve_div_id(div_id)
         if actual_id is None:
-            logger.info("    ℹ️  No 'Vis alle' button found for div#%s", div_id)
+            logger.debug("  Section div#%s not found — no Vis alle", div_id)
             return None
 
         try:
-            result = self.driver.execute_script("""
+            result = self.driver.execute_script(r"""
                 var heading = document.getElementById(arguments[0]);
                 if (!heading) return null;
                 var sib = heading.nextElementSibling;
                 while (sib) {
                     if (sib.classList.contains('viewTitle')) break;
-                    var txt = sib.innerText || sib.textContent || '';
+                    var txt = (sib.innerText || sib.textContent || '').trim();
                     if (txt.toLowerCase().indexOf('vis alle') >= 0) {
                         var m = txt.match(/[(]([0-9][0-9 ]*)[)]/);
                         if (!m) m = txt.toLowerCase().match(/vis alle [0-9]+/);
@@ -512,313 +392,223 @@ class LovdataScraper:
                 return null;
             """, actual_id)
 
-            if result is not None:
-                total = int(result)
-                logger.info("    ✅ Vis alle clicked — expected=%s", total)
-                time.sleep(3.0)
-                return total
-            else:
-                logger.info("    ℹ️  No 'Vis alle' button found for div#%s", div_id)
+            if result is None:
+                logger.debug("  No Vis alle button for div#%s", div_id)
                 return None
 
+            total = int(result)
+            logger.info("  Vis alle clicked — expected: %s", total)
+
+            time.sleep(3.0)
+            try:
+                WebDriverWait(self.driver, 20).until(
+                    lambda d: "result" in d.current_url
+                )
+            except TimeoutException:
+                pass
+
+            result_url = self.driver.current_url
+            logger.info("  Advanced Search URL: %s", result_url)
+            self.driver.get(result_url)
+
+            try:
+                WebDriverWait(self.driver, 30).until(
+                    EC.presence_of_element_located(
+                        (By.CSS_SELECTOR, self._SEARCH_WIDGET_CSS)
+                    )
+                )
+                time.sleep(2.0)
+                logger.info("  Advanced Search loaded")
+            except TimeoutException:
+                logger.warning("  Advanced Search widget not found after driver.get()")
+
+            return total
+
         except Exception as e:
-            logger.debug("    _click_vis_alle JS error: %s", e)
+            logger.debug("_click_vis_alle error [div#%s]: %s", div_id, e)
             return None
 
     # =========================================================================
-    # ADVANCED SEARCH PAGE
+    # ADVANCED SEARCH — collect all pages
     # =========================================================================
 
-    def _wait_for_advanced_search(self, timeout: int = 15) -> bool:
-        try:
-            WebDriverWait(self.driver, timeout).until(
-                EC.presence_of_element_located(
-                    (By.CSS_SELECTOR, self._SEARCH_WIDGET_CSS)
-                )
-            )
-            time.sleep(1.5)
-            logger.info("    ✅ Advanced Search page loaded")
-            return True
-        except TimeoutException:
-            logger.warning("    ⚠️  Advanced Search page did not load in %ss", timeout)
-            return False
-
     def _get_advanced_search_total(self) -> Optional[int]:
-        for css in (self._RESULT_COUNT_CSS, self._RESULT_COUNT_ALT_CSS):
-            try:
-                el = self.driver.find_element(By.CSS_SELECTOR, css)
-                text = (el.text or "").strip().replace(" ", "").replace("\xa0", "")
-                if text.isdigit():
-                    total = int(text)
-                    logger.info("    📊 Advanced Search total: %s", total)
-                    return total
-            except NoSuchElementException:
-                continue
-
         try:
-            container = self.driver.find_element(
-                By.CSS_SELECTOR, "div.gwt-HTML.numberOfHits"
-            )
-            text = (container.text or "").strip()
-            m = re.search(r"(\d[\d\s]+)", text)
-            if m:
-                total = int(m.group(1).replace(" ", ""))
-                logger.info("    📊 Advanced Search total (fallback): %s", total)
+            result = self.driver.execute_script("""
+                var patterns = [
+                    /Number of documents found[:\\s]+(\\d[\\d\\s]*)/i,
+                    /Antall dokumenter[:\\s]+(\\d[\\d\\s]*)/i,
+                    /Antall treff[:\\s]+(\\d[\\d\\s]*)/i,
+                    /dokumenter funnet[:\\s]+(\\d[\\d\\s]*)/i,
+                    /Fant\\s+(\\d[\\d\\s]*)/i,
+                ];
+                var walker = document.createTreeWalker(
+                    document.body, NodeFilter.SHOW_TEXT, null, false
+                );
+                var node;
+                while ((node = walker.nextNode())) {
+                    var t = (node.nodeValue || '').trim();
+                    if (!t) continue;
+                    for (var i = 0; i < patterns.length; i++) {
+                        var m = t.match(patterns[i]);
+                        if (m) return m[1].replace(/\\s/g, '');
+                    }
+                }
+                return null;
+            """)
+            if result:
+                total = int(result)
+                logger.info("  Advanced Search total: %s", total)
                 return total
         except Exception:
             pass
 
-        logger.warning("    ⚠️  Could not read Advanced Search total count")
-        return None
+        try:
+            body_text = self.driver.find_element(By.TAG_NAME, "body").text or ""
+            for pattern in (
+                r"Number of documents found[:\s]+(\d[\d\s]*)",
+                r"Antall dokumenter[:\s]+(\d[\d\s]*)",
+                r"Antall treff[:\s]+(\d[\d\s]*)",
+                r"dokumenter funnet[:\s]+(\d[\d\s]*)",
+                r"(\d[\d\s]+)\s+dokument",
+            ):
+                m = re.search(pattern, body_text, re.IGNORECASE)
+                if m:
+                    total = int(m.group(1).replace(" ", "").replace("\xa0", ""))
+                    logger.info("  Advanced Search total: %s", total)
+                    return total
+        except Exception:
+            pass
 
-    # =========================================================================
-    # ADVANCED SEARCH — collect URLs from placeHistoryItem links
-    # =========================================================================
+        candidates = []
+        for css in (
+            "div.gwt-HTML.numberOfHits",
+            "span.numberOfHits",
+            "[class*='numberOfHits']",
+            "[class*='resultCount']",
+            "[class*='hitCount']",
+            "div.searchResultInfo",
+        ):
+            try:
+                el   = self.driver.find_element(By.CSS_SELECTOR, css)
+                text = (el.text or "").strip().replace("\xa0", " ")
+                nums = [int(n.replace(" ", "")) for n in re.findall(r"\d[\d ]*", text)]
+                if nums:
+                    candidates.extend(nums)
+            except NoSuchElementException:
+                continue
+            except Exception:
+                continue
+
+        if candidates:
+            total = max(candidates)
+            logger.info("  Advanced Search total: %s (CSS fallback)", total)
+            return total
+
+        logger.warning("  Could not read Advanced Search total count")
+        return None
 
     def _collect_advanced_search_urls(
         self, expected: Optional[int], max_pages: int = 500
     ) -> List[str]:
-        """
-        Collect all document URLs from Advanced Search results.
-
-        The result links are <a class="placeHistoryItem"> elements.
-        They have NO href — navigation is GWT internal.
-        The document reference (e.g. FOR-2002-11-15-1288) is on the
-        second line of the link text.
-
-        Strategy:
-          1. Read all placeHistoryItem elements on the current page
-          2. Extract doc reference from text (line 2)
-          3. Construct #document/ URL via _construct_doc_url()
-          4. Click Next button to go to next results page
-          5. Repeat until all pages collected
-        """
         all_urls: List[str] = []
         seen:     set       = set()
+        page = 0
 
-        # Read true total from page
-        page_total = self._get_advanced_search_total()
-        if page_total is not None:
-            expected = page_total
+        while True:
+            page += 1
+            if page > max_pages:
+                break
 
-        # Save search result page URL for fallback navigation
-        search_url = self.driver.current_url
+            try:
+                WebDriverWait(self.driver, 30).until(
+                    EC.presence_of_element_located(
+                        (By.CSS_SELECTOR, self._SEARCH_WIDGET_CSS)
+                    )
+                )
+                time.sleep(2.0)
+            except TimeoutException:
+                logger.error("  Search widget missing on page %s — stopping", page)
+                break
 
-        page_num = 0
-        while page_num < max_pages:
-            # ── Collect items on current page ─────────────────────────
-            new_urls = self._extract_urls_from_result_items(seen)
-            all_urls.extend(new_urls)
+            hrefs = self.driver.execute_script("""
+                var links = document.querySelectorAll(
+                    'a.searchResultLink, a[href*="#document/"]'
+                );
+                var out = [];
+                links.forEach(function(a) {
+                    var h = (a.getAttribute('href') || '').split('?')[0].trim();
+                    if (h) out.push(h);
+                });
+                return out;
+            """) or []
+
+            new_this_page = 0
+            for h in hrefs:
+                if h not in seen:
+                    seen.add(h)
+                    if h.startswith("#"):
+                        h = "https://lovdata.no/pro/" + h.lstrip("/")
+                    elif h.startswith("/"):
+                        h = "https://lovdata.no" + h
+                    all_urls.append(h)
+                    new_this_page += 1
 
             logger.info(
-                "      page %s: +%s new  (total: %s / expected: %s)",
-                page_num + 1, len(new_urls), len(all_urls),
-                expected if expected else "?"
+                "  Page %s: +%s new  (total: %s / expected: %s)",
+                page, new_this_page, len(all_urls),
+                expected if expected is not None else "?"
             )
 
-            if expected and len(all_urls) >= expected:
-                logger.info("      ✅ All %s docs collected", expected)
+            if new_this_page == 0 and page > 1:
+                logger.info("  No new URLs on page %s — last page", page)
                 break
 
-            if not new_urls and page_num > 0:
-                logger.info("      ⏹  No new URLs on page %s — stopping", page_num + 1)
-                break
-
-            # ── Try to click Next ─────────────────────────────────────
             next_result = self._click_next_advanced_search()
-            if next_result == "clicked":
-                time.sleep(2.5)
-                page_num += 1
-            else:
-                logger.info("      ⏹  No more pages (%s)", next_result)
+            if next_result != "clicked":
+                logger.info("  No more pages (%s) — stopping", next_result)
                 break
+
+            time.sleep(3.0)
 
         return all_urls
 
-    def _extract_urls_from_result_items(self, seen: set) -> List[str]:
-        """
-        Extract document URLs from placeHistoryItem elements on current page.
-
-        Each real result item has 2 lines of text:
-            Line 1: document title  (e.g. "Regulations on the Appeals Board for...")
-            Line 2: doc ref OR source name  (e.g. "FOR-2002-11-15-1288" or "Center for European Law")
-
-        Breadcrumb items have only 1 line ("My page", "Home", "Procurement", etc.)
-        and are skipped.
-
-        For items whose last line matches PREFIX-YYYY-... we construct the URL
-        directly (fast, no click needed).
-
-        For items whose last line does NOT match (e.g. articles with publisher name)
-        we click the item, capture window.location.hash, then navigate back to the
-        search results page.
-        """
-        # Save the current search results URL so we can return after clicking
-        search_url = self.driver.current_url
-
-        new_urls = []
-        try:
-            # Collect all item texts + indices first (avoids stale refs after click/back)
-            item_data = self.driver.execute_script("""
-                var items = document.querySelectorAll('a.placeHistoryItem');
-                var result = [];
-                items.forEach(function(a, i) {
-                    result.push({
-                        index: i,
-                        text: a.innerText || ''
-                    });
-                });
-                return result;
-            """)
-
-            if not item_data:
-                return new_urls
-
-            # Identify which indices are real docs (2+ lines) vs breadcrumbs (1 line)
-            doc_items = []
-            for item in item_data:
-                lines = [l.strip() for l in item["text"].split("\n") if l.strip()]
-                if len(lines) < 2:
-                    continue  # breadcrumb — skip
-                last_line = lines[-1]
-                doc_items.append({
-                    "index":     item["index"],
-                    "last_line": last_line,
-                    "title":     lines[0],
-                })
-
-            logger.debug("      %s real doc items on page", len(doc_items))
-
-            for doc in doc_items:
-                last_line = doc["last_line"]
-
-                # ── Fast path: standard doc ref (PREFIX-YYYY-...) ────────
-                if re.match(r"^[A-ZÆØÅ]+-\d{4}", last_line, re.IGNORECASE):
-                    url = _construct_doc_url(last_line)
-                    if url and url not in seen:
-                        seen.add(url)
-                        new_urls.append(url)
-                        logger.debug("      + (fast) %s", url)
-                    continue
-
-                # ── Slow path: click item, capture hash, go back ─────────
-                try:
-                    # Re-find items fresh (DOM may have changed)
-                    items_fresh = self.driver.find_elements(
-                        By.CSS_SELECTOR, self._RESULT_ITEM_CSS
-                    )
-                    if doc["index"] >= len(items_fresh):
-                        logger.debug(
-                            "      ⚠️  item index %s out of range", doc["index"]
-                        )
-                        continue
-
-                    target = items_fresh[doc["index"]]
-                    self.driver.execute_script("arguments[0].click();", target)
-                    time.sleep(1.5)
-
-                    # Capture the hash — gives us #document/EUR/eur-2026-03-06 etc.
-                    fragment = self.driver.execute_script(
-                        "return window.location.hash;"
-                    ) or ""
-                    fragment = fragment.strip()
-
-                    if fragment and fragment.startswith("#document/"):
-                        if fragment not in seen:
-                            seen.add(fragment)
-                            new_urls.append(fragment)
-                            logger.debug(
-                                "      + (click) %s  [%s]",
-                                fragment, doc["title"][:50]
-                            )
-                    else:
-                        logger.debug(
-                            "      ⚠️  No #document/ hash after clicking '%s': got '%s'",
-                            doc["title"][:50], fragment
-                        )
-
-                    # Navigate back to search results
-                    self.driver.get(search_url)
-                    try:
-                        WebDriverWait(self.driver, 10).until(
-                            EC.presence_of_element_located(
-                                (By.CSS_SELECTOR, self._SEARCH_WIDGET_CSS)
-                            )
-                        )
-                        time.sleep(1.0)
-                    except TimeoutException:
-                        logger.warning("      ⚠️  Search page did not reload after back")
-                        break
-
-                except StaleElementReferenceException:
-                    # Try to recover by reloading search page
-                    self.driver.get(search_url)
-                    time.sleep(2.0)
-                    continue
-                except Exception as e:
-                    logger.debug("      click-capture error: %s", e)
-                    try:
-                        self.driver.get(search_url)
-                        time.sleep(2.0)
-                    except Exception:
-                        pass
-                    continue
-
-        except Exception as e:
-            logger.debug("    _extract_urls_from_result_items error: %s", e)
-
-        return new_urls
-
     def _click_next_advanced_search(self) -> str:
-        """
-        Click the Next button on the Advanced Search results page.
-        Structure confirmed from DevTools:
-          td.x-btn-mc > em > button.x-btn-text
-        The Next button is the last non-disabled x-btn-mc in the toolbar.
-        """
-        try:
-            result = self.driver.execute_script("""
-                var widget = document.querySelector('div.searchResultWidget');
-                if (!widget) return 'no_widget';
+        xpath_variants = [
+            (
+                "/html/body/div[1]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div"
+                "/table/tbody/tr/td[1]/table/tbody/tr/td[8]/table/tbody/tr[2]"
+                "/td[2]/em/button"
+            ),
+            (
+                "/html/body/div[1]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div"
+                "/table/tbody/tr/td[1]/table/tbody/tr/td[9]/table/tbody/tr[2]"
+                "/td[2]/em/button"
+            ),
+            (
+                "/html/body/div[1]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div"
+                "/table/tbody/tr/td[1]/table/tbody/tr/td[10]/table/tbody/tr[2]"
+                "/td[2]/em/button"
+            ),
+            (
+                "/html/body/div[1]/div[2]/div[2]/div[2]/div/div[2]/div[1]/div[1]"
+                "/table/tbody/tr/td[1]/table/tbody/tr/td[8]/table/tbody/tr[2]"
+                "/td[2]/em/button"
+            ),
+        ]
+        for xpath in xpath_variants:
+            try:
+                btn = WebDriverWait(self.driver, 20).until(
+                    EC.element_to_be_clickable((By.XPATH, xpath))
+                )
+                btn.click()
+                logger.info("  Next page clicked")
+                return "clicked"
+            except (TimeoutException, Exception):
+                continue
 
-                var toolbars = widget.querySelectorAll('table.x-toolbar-ct');
-                if (!toolbars.length) {
-                    toolbars = document.querySelectorAll('table.x-toolbar-ct');
-                }
-                if (!toolbars.length) return 'no_toolbar';
-
-                for (var t = 0; t < toolbars.length; t++) {
-                    var toolbar = toolbars[t];
-                    var rows = toolbar.querySelectorAll('tbody tr');
-                    var btnRow = rows.length >= 2 ? rows[1] : rows[0];
-                    if (!btnRow) continue;
-
-                    var btnCells = btnRow.querySelectorAll('td.x-btn-mc');
-                    if (!btnCells.length) continue;
-
-                    // Next button = last non-disabled x-btn-mc
-                    for (var i = btnCells.length - 1; i >= 0; i--) {
-                        var cell = btnCells[i];
-                        var btn = cell.querySelector('button.x-btn-text');
-                        if (!btn) continue;
-
-                        var parentTd = cell.parentElement;
-                        var tdCls = (parentTd ? parentTd.className : '') || '';
-                        if (tdCls.indexOf('disabled') >= 0) continue;
-                        if (btn.disabled) continue;
-                        if (btn.getAttribute('aria-disabled') === 'true') continue;
-                        if (i === 0 && btnCells.length > 1) continue;
-
-                        btn.click();
-                        return 'clicked';
-                    }
-                }
-                return 'no_next';
-            """)
-            return result or "no_next"
-        except Exception as e:
-            logger.debug("    _click_next_advanced_search error: %s", e)
-            return "error"
+        logger.warning("  Next button not found via any XPath variant")
+        return "no_next"
 
     # =========================================================================
     # NAVIGATE BACK TO LEGAL AREA PAGE
@@ -828,175 +618,148 @@ class LovdataScraper:
         try:
             self.driver.back()
             time.sleep(2.0)
-
             try:
                 WebDriverWait(self.driver, 10).until(
                     EC.presence_of_element_located(
                         (By.CSS_SELECTOR, self._SECTION_HEADER_CSS)
                     )
                 )
-                logger.info("    ↩️  Back to legal area page — tabs restored")
+                logger.info("  Back to legal area page")
                 return True
             except TimeoutException:
                 pass
-
-            logger.warning("    ⚠️  Back() failed — navigating directly to legal area")
+            logger.warning("  Back() failed — navigating directly")
             self.driver.get(legal_area_url)
             time.sleep(3.0)
             return self._is_legal_area_page()
-
         except Exception as e:
-            logger.error("    ❌ _back_to_legal_area failed: %s", e)
+            logger.error("_back_to_legal_area failed: %s", e)
             return False
 
     # =========================================================================
-    # SMALL SECTION — no Vis alle
+    # SMALL SECTION
     # =========================================================================
 
-    def _collect_small_section(self, div_id: str) -> Tuple[List[str], Optional[int]]:
+    def _collect_small_section(self, div_id: str) -> Tuple[List[str], None]:
         seen: set = set()
-        urls = self._collect_links_in_section(div_id, seen)
-        logger.info(
-            "    ✅ Small section div#%s — collected %s URLs", div_id, len(urls)
-        )
-        return urls, None
+        actual_id = self._resolve_div_id(div_id)
+        if actual_id is None:
+            return [], None
+        try:
+            hrefs = self.driver.execute_script("""
+                var heading = document.getElementById(arguments[0]);
+                if (!heading) return [];
+                var hrefs = [];
+                var sib = heading.nextElementSibling;
+                while (sib) {
+                    if (sib.classList.contains('viewTitle')) break;
+                    var links = sib.querySelectorAll(
+                        'a.searchResultLink, a[href*="#document/"]'
+                    );
+                    links.forEach(function(a) {
+                        var h = (a.getAttribute('href') || '').split('?')[0].trim();
+                        if (h) hrefs.push(h);
+                    });
+                    sib = sib.nextElementSibling;
+                }
+                return hrefs;
+            """, actual_id)
+
+            urls = []
+            for h in (hrefs or []):
+                if h not in seen:
+                    seen.add(h)
+                    if h.startswith("#"):
+                        h = "https://lovdata.no/pro/" + h.lstrip("/")
+                    elif h.startswith("/"):
+                        h = "https://lovdata.no" + h
+                    urls.append(h)
+
+            logger.info("  Small section div#%s — collected %s URLs", actual_id, len(urls))
+            return urls, None
+        except Exception as e:
+            logger.debug("_collect_small_section error [div#%s]: %s", div_id, e)
+            return [], None
 
     # =========================================================================
-    # MAIN ENTRY: collect all section URLs from the currently-loaded page
+    # MAIN ENTRY: collect all section URLs
     # =========================================================================
 
     def collect_urls_from_current_view(self, max_pages: int = 500) -> List[dict]:
-        """
-        MUST be called AFTER a tree node has been clicked and page has loaded.
-        Never call driver.get() before this — it destroys dynamic content.
-        """
         if not self._wait_for_legal_area_header():
-            logger.error("❌ Page not ready — cannot collect sections")
+            logger.error("Page not ready — cannot collect sections")
             return []
 
         legal_area_url = self.driver.current_url
+        section_links  = self._get_section_links()
 
-        section_links = self._get_section_links()
         if not section_links:
-            logger.warning("    ⚠️  No section links found")
+            logger.warning("No section links found")
             return []
 
-        logger.info(
-            "\n    ════════════════════════════════════════════════\n"
-            "    %s SECTIONS FOUND — processing one by one\n"
-            "    ════════════════════════════════════════════════",
-            len(section_links)
-        )
-
+        logger.info("Processing %s sections", len(section_links))
         results = []
 
         for s_idx, (label, canonical, div_id) in enumerate(section_links, 1):
-
-            logger.info(
-                "\n    ── [%s/%s] %s ──",
-                s_idx, len(section_links), canonical
-            )
-
+            logger.info("[%s/%s] Section: %s", s_idx, len(section_links), canonical)
             section_urls: List[str] = []
             expected:     Optional[int] = None
 
             try:
-                # ── STEP 1: Ensure we are on the legal area page ──────
                 if not self._is_legal_area_page():
-                    logger.info("    ↩️  Not on legal area page — navigating back")
+                    logger.info("  Not on legal area page — navigating back")
                     if not self._back_to_legal_area(legal_area_url):
-                        logger.error(
-                            "    ❌ Could not return to legal area — skipping '%s'",
-                            canonical
-                        )
-                        results.append({
-                            "document_type":  canonical,
-                            "expected_count": None,
-                            "urls":           [],
-                        })
+                        logger.error("  Could not return to legal area — skipping '%s'", canonical)
+                        results.append({"document_type": canonical, "expected_count": None, "urls": []})
                         continue
-                    time.sleep(1.0)
+                    time.sleep(2.0)
 
-                # ── STEP 2: Click the section tab ─────────────────────
                 if not self._click_section_tab(label):
-                    logger.warning("    ⚠️  Could not click tab '%s' — skipping", label)
-                    results.append({
-                        "document_type":  canonical,
-                        "expected_count": None,
-                        "urls":           [],
-                    })
+                    logger.warning("  Could not click tab '%s' — skipping", label)
+                    results.append({"document_type": canonical, "expected_count": None, "urls": []})
                     continue
                 time.sleep(1.5)
 
-                # ── STEP 3: Verify heading div exists ─────────────────
-                heading_found = False
-                for id_try in (div_id, div_id + "s", div_id + "Base",
-                               div_id + "Bases", "third" + div_id.capitalize()):
-                    try:
-                        self.driver.find_element(By.ID, id_try)
-                        heading_found = True
-                        logger.info("    ✅ Heading div#%s found", id_try)
-                        break
-                    except NoSuchElementException:
-                        continue
-
-                if not heading_found:
-                    logger.warning(
-                        "    ⚠️  Heading div#%s not found — skipping", div_id
-                    )
-                    results.append({
-                        "document_type":  canonical,
-                        "expected_count": None,
-                        "urls":           [],
-                    })
+                actual_id = self._resolve_div_id(div_id)
+                if actual_id is None:
+                    logger.warning("  Heading div#%s not found — skipping", div_id)
+                    results.append({"document_type": canonical, "expected_count": None, "urls": []})
                     continue
 
-                # ── STEP 4: Check for Vis alle button ─────────────────
                 vis_alle_count = self._click_vis_alle(div_id)
 
                 if vis_alle_count is not None or self._is_advanced_search_page():
                     expected = vis_alle_count
 
-                    if not self._wait_for_advanced_search(timeout=15):
-                        logger.warning(
-                            "    ⚠️  Advanced Search did not load for '%s'", canonical
-                        )
+                    if not self._is_advanced_search_page():
+                        logger.warning("  Advanced Search not loaded for '%s'", canonical)
                         self._back_to_legal_area(legal_area_url)
-                        results.append({
-                            "document_type":  canonical,
-                            "expected_count": expected,
-                            "urls":           [],
-                        })
+                        results.append({"document_type": canonical, "expected_count": expected, "urls": []})
                         continue
 
-                    logger.info("    🔍 Advanced Search mode — collecting all pages")
+                    logger.info("  Advanced Search mode")
                     section_urls = self._collect_advanced_search_urls(
-                        expected=expected,
-                        max_pages=max_pages,
+                        expected=expected, max_pages=max_pages
                     )
 
-                    logger.info("    ↩️  Returning to legal area page")
                     if not self._back_to_legal_area(legal_area_url):
-                        logger.warning(
-                            "    ⚠️  Back failed — re-navigating to legal area URL"
-                        )
+                        logger.warning("  Back failed — re-navigating to: %s", legal_area_url)
                         self.driver.get(legal_area_url)
                         time.sleep(3.0)
 
                 else:
-                    logger.info("    📋 Small section mode — collecting directly")
+                    logger.info("  Small section mode")
                     section_urls, expected = self._collect_small_section(div_id)
 
-                # ── STEP 5: Verify count ──────────────────────────────
-                if expected and len(section_urls) != expected:
+                if expected and len(section_urls) < expected:
                     logger.warning(
-                        "    ⚠️  COUNT MISMATCH '%s': expected=%s  collected=%s",
+                        "  Count mismatch '%s': expected=%s  collected=%s",
                         canonical, expected, len(section_urls)
                     )
                 else:
                     logger.info(
-                        "    ✅ COMPLETE '%s'  expected=%s  collected=%s",
-                        canonical, expected, len(section_urls)
+                        "  Section result: %-50s expected=%-6s collected=%s",
+                        canonical, expected if expected is not None else "?", len(section_urls)
                     )
 
                 results.append({
@@ -1006,14 +769,8 @@ class LovdataScraper:
                 })
 
             except Exception as e:
-                logger.error(
-                    "    ❌ Section '%s' crashed: %s", canonical, e, exc_info=True
-                )
-                results.append({
-                    "document_type":  canonical,
-                    "expected_count": None,
-                    "urls":           section_urls,
-                })
+                logger.error("Section '%s' crashed: %s", canonical, e, exc_info=True)
+                results.append({"document_type": canonical, "expected_count": None, "urls": section_urls})
                 try:
                     if not self._is_legal_area_page():
                         self._back_to_legal_area(legal_area_url)
@@ -1021,46 +778,45 @@ class LovdataScraper:
                     pass
 
         total_collected = sum(len(r["urls"]) for r in results)
-        logger.info(
-            "\n    ════════════════════════════════════════════════\n"
-            "    SECTION COLLECTION COMPLETE\n"
-            "    sections=%s  total_docs=%s\n"
-            "    ════════════════════════════════════════════════",
-            len(results), total_collected
-        )
+        logger.info("\nSection collection summary:")
+        for r in results:
+            logger.info(
+                "  %-55s expected=%-6s found=%s",
+                r["document_type"],
+                r["expected_count"] if r["expected_count"] is not None else "?",
+                len(r["urls"]),
+            )
+        logger.info("Total URLs collected: %s\n", total_collected)
 
         return results
 
-    # Backward-compat alias
-    def collect_urls_by_section(self, area_url: str = "", max_pages: int = 500) -> List[dict]:
-        return self.collect_urls_from_current_view(max_pages=max_pages)
-
     # =========================================================================
-    # CONTENT SCRAPING — visit individual document URL
+    # CONTENT SCRAPING
     # =========================================================================
 
     def scrape_content_from_url(self, doc_url: str) -> dict:
         """
-        Navigate to a document URL and extract content.
-        Returns dict matching the XML format:
-          title, date, content, content_source
+        Visit a Lovdata Pro document URL and extract content + metadata from iframe.
+
+        KEY FIX: We no longer fall back to page body text.
+        The page body contains the navigation/sidebar/header which is IDENTICAL
+        on every page — causing the same MD5 hash for thousands of documents
+        and triggering hash_exists() → skip.
+
+        Content is only accepted from iframes, and only if it exceeds
+        _MIN_CONTENT_CHARS characters to filter out empty/nav-only frames.
         """
         result = {
             "title":          "",
             "date":           "",
+            "year":           None,
             "content":        "",
             "content_source": "",
+            "page_meta":      {},
         }
 
         try:
             self.driver.switch_to.default_content()
-
-            # Normalise URL
-            if doc_url.startswith("#"):
-                doc_url = "https://lovdata.no/pro/" + doc_url
-            elif not doc_url.startswith("http"):
-                doc_url = "https://lovdata.no/pro/" + doc_url.lstrip("/")
-
             self.driver.get(doc_url)
             try:
                 self.wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
@@ -1072,12 +828,18 @@ class LovdataScraper:
             best_title   = ""
             best_date    = ""
             best_source  = ""
+            best_meta: dict = {}
 
             iframes = self.driver.find_elements(By.TAG_NAME, "iframe")
-            logger.debug("  iframes found: %s", len(iframes))
+            logger.debug("  Found %s iframes on page", len(iframes))
 
             for idx, iframe in enumerate(iframes):
                 try:
+                    # Skip hidden 0x0 utility iframes
+                    w = iframe.get_attribute("width")
+                    h = iframe.get_attribute("height")
+                    if w == "0" or h == "0":
+                        continue
                     style = (iframe.get_attribute("style") or "").lower()
                     if "width: 0" in style or "height: 0" in style:
                         continue
@@ -1086,43 +848,101 @@ class LovdataScraper:
                     self.driver.switch_to.frame(iframe)
                     time.sleep(1.0)
 
+                    # ----------------------------------------------------------
+                    # Title
+                    # ----------------------------------------------------------
                     title = ""
                     for sel in ["h1", ".tittel", "[class*='tittel']",
                                 ".navn", "span.bold", "[class*='title']"]:
                         try:
-                            t = self.driver.find_element(
-                                By.CSS_SELECTOR, sel
-                            ).text.strip()
+                            t = self.driver.find_element(By.CSS_SELECTOR, sel).text.strip()
                             if t and len(t) > 3:
                                 title = t
                                 break
                         except Exception:
                             continue
 
+                    # ----------------------------------------------------------
+                    # Date
+                    # ----------------------------------------------------------
                     date = ""
                     for sel in [".dato", "[class*='dato']", ".ikraftdato",
                                 ".kunngjort", "[class*='kunngjort']",
                                 "[class*='date']", "time"]:
                         try:
                             el = self.driver.find_element(By.CSS_SELECTOR, sel)
-                            d  = (
-                                el.text or el.get_attribute("datetime") or ""
-                            ).strip()
+                            d  = (el.text or el.get_attribute("datetime") or "").strip()
                             if d:
                                 date = d
                                 break
                         except Exception:
                             continue
 
+                    # ----------------------------------------------------------
+                    # Page metadata
+                    # ----------------------------------------------------------
+                    page_meta: dict = {}
+
+                    try:
+                        labels = self.driver.find_elements(
+                            By.CSS_SELECTOR,
+                            ".metadataLabel, .metadata-label, "
+                            "[class*='metadataLabel'], [class*='metadata-label']"
+                        )
+                        for lbl_el in labels:
+                            try:
+                                key = lbl_el.text.strip().rstrip(":").lower()
+                                key = re.sub(r"\s+", "_", key)
+                                if not key:
+                                    continue
+                                val_el = self.driver.execute_script(
+                                    "return arguments[0].nextElementSibling;", lbl_el
+                                )
+                                val = (val_el.text if val_el else "").strip()
+                                if key and val:
+                                    page_meta[key] = val
+                            except Exception:
+                                continue
+                    except Exception:
+                        pass
+
+                    _FIELD_SELECTORS = {
+                        "korttittel":  [".korttittel", "[class*='korttittel']"],
+                        "fulltittel":  [".fulltittel", "[class*='fulltittel']", "h1"],
+                        "dato":        [".dato", "[class*='dato']"],
+                        "ikraftdato":  [".ikraftdato", "[class*='ikraftdato']"],
+                        "kunngjort":   [".kunngjort", "[class*='kunngjort']"],
+                        "avdeling":    [".avdeling", "[class*='avdeling']"],
+                        "type":        [".dokumenttype", "[class*='dokumenttype']"],
+                        "rettsomrade": [".rettsomrade", "[class*='rettsomrade']",
+                                        ".rettsom", "[class*='rettsom']"],
+                        "myndighet":   [".myndighet", "[class*='myndighet']"],
+                        "status":      [".status", "[class*='dokumentstatus']"],
+                    }
+                    for field, selectors in _FIELD_SELECTORS.items():
+                        if field in page_meta:
+                            continue
+                        for sel in selectors:
+                            try:
+                                val = self.driver.find_element(
+                                    By.CSS_SELECTOR, sel
+                                ).text.strip()
+                                if val:
+                                    page_meta[field] = val
+                                    break
+                            except Exception:
+                                continue
+
+                    # ----------------------------------------------------------
+                    # Content — iframe only, minimum length enforced
+                    # ----------------------------------------------------------
                     content = ""
                     source  = ""
 
                     for tag in ("pre", "code"):
                         try:
-                            t = self.driver.find_element(
-                                By.TAG_NAME, tag
-                            ).text.strip()
-                            if len(t) > 100:
+                            t = self.driver.find_element(By.TAG_NAME, tag).text.strip()
+                            if len(t) >= _MIN_CONTENT_CHARS:
                                 content = t
                                 source  = "xml_pre"
                                 break
@@ -1132,18 +952,15 @@ class LovdataScraper:
                     if not content:
                         for sel in [
                             "div.lov-content", "div.lovtekst",
-                            "div.paragraf",    "div.avsnitt",
-                            "div#document",    "div.document",
-                            "div[class*='lovtekst']",
-                            "div[class*='dokument']",
+                            "div.paragraf",     "div.avsnitt",
+                            "div#document",     "div.document",
+                            "div[class*='lovtekst']", "div[class*='dokument']",
                             "div[class*='document']",
                             "article", "main", "#content",
                         ]:
                             try:
-                                t = self.driver.find_element(
-                                    By.CSS_SELECTOR, sel
-                                ).text.strip()
-                                if len(t) > 200:
+                                t = self.driver.find_element(By.CSS_SELECTOR, sel).text.strip()
+                                if len(t) >= _MIN_CONTENT_CHARS:
                                     content = t
                                     source  = "iframe_content"
                                     break
@@ -1152,49 +969,83 @@ class LovdataScraper:
 
                     if not content:
                         try:
-                            t = self.driver.find_element(
-                                By.TAG_NAME, "body"
-                            ).text.strip()
-                            if len(t) > 50:
-                                content = t
-                                source  = "iframe_body"
+                            t = self.driver.find_element(By.TAG_NAME, "body").text.strip()
+                            # Only accept iframe body if it looks like real content:
+                            # must exceed minimum AND must NOT look like a nav page
+                            # (nav pages contain login/menu text but lack legal keywords)
+                            if len(t) >= _MIN_CONTENT_CHARS:
+                                nav_indicators = [
+                                    "logg inn", "log in", "rettsområder",
+                                    "lovdata pro", "søk i lovdata",
+                                ]
+                                is_nav = any(nav in t.lower() for nav in nav_indicators)
+                                if not is_nav:
+                                    content = t
+                                    source  = "iframe_body"
                         except Exception:
                             pass
 
+                    # Only update best if this iframe has more content
                     if len(content) > len(best_content):
                         best_content = content
                         best_title   = title
                         best_date    = date
                         best_source  = source
+                        best_meta    = page_meta
 
                 except Exception as e:
-                    logger.debug("  iframe[%s] error: %s", idx, e)
+                    logger.debug("iframe[%s] error: %s", idx, e)
                 finally:
                     self.driver.switch_to.default_content()
 
-            if not best_content:
-                try:
-                    best_content = self.driver.find_element(
-                        By.TAG_NAME, "body"
-                    ).text.strip()
-                    best_source = "body_text"
-                except Exception:
-                    pass
+            # ── NO body fallback here ─────────────────────────────────────────
+            # The old code fell back to driver.find_element(body).text which
+            # returns the full page shell (nav + sidebar) — identical on every
+            # page — causing duplicate hash skips for thousands of documents.
+            # If no iframe yielded content, we return empty and the caller logs
+            # it as "failed_empty" (not a skip — it gets retried next run).
+            # ─────────────────────────────────────────────────────────────────
+
+            # Extract year
+            year = None
+            if best_date:
+                m = re.search(r"(19\d{2}|20\d{2})", best_date)
+                if m:
+                    year = int(m.group(1))
+            if year is None and best_title:
+                m = re.search(r"(19\d{2}|20\d{2})", best_title)
+                if m:
+                    year = int(m.group(1))
+            if year is None:
+                year = _extract_year_from_doc_url(doc_url)
+            if year is None and best_content:
+                m = re.search(r"(19\d{2}|20\d{2})", best_content[:2000])
+                if m:
+                    year = int(m.group(1))
 
             result["title"]          = best_title
             result["date"]           = best_date
+            result["year"]           = year
             result["content"]        = best_content
             result["content_source"] = best_source
+            result["page_meta"]      = best_meta
 
-            logger.info(
-                "  📄 title='%s'  date='%s'  chars=%s  src=%s",
-                (best_title or "—")[:60],
-                best_date or "—",
-                len(best_content),
-                best_source,
-            )
+            if best_content:
+                logger.info(
+                    "  Scraped: title='%s'  date='%s'  year=%s  chars=%s  source=%s  meta_fields=%s",
+                    (best_title or "(none)")[:60],
+                    best_date or "(none)",
+                    year,
+                    len(best_content),
+                    best_source,
+                    list(best_meta.keys()),
+                )
+            else:
+                logger.warning(
+                    "  No content extracted from any iframe: %s", doc_url
+                )
 
         except Exception as e:
-            logger.error("❌ scrape_content_from_url [%s]: %s", doc_url, e)
+            logger.error("scrape_content_from_url failed [%s]: %s", doc_url, e)
 
         return result

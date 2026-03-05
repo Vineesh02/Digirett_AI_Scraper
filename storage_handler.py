@@ -1,9 +1,14 @@
 """
 STORAGE HANDLER
-For each XML file in a batch:
-  1. Upload to Supabase Storage bucket
+===============
+Manages Supabase Storage uploads and metadata table inserts.
+
+Per-document flow:
+  1. Upload XML to Supabase Storage bucket
   2. Insert metadata row into Supabase table
-  3. Delete the local XML file
+  3. Delete local XML file
+
+Duplicate detection via file_name and file_hash before processing.
 """
 
 import os
@@ -23,28 +28,23 @@ class StorageHandler:
         )
         self.bucket = config.SUPABASE_BUCKET
         self.table  = config.SUPABASE_TABLE
-
-        logger.info("✓ Supabase bucket : %s", self.bucket)
-        logger.info("✓ Supabase table  : %s", self.table)
-        logger.info("✓ StorageHandler initialized")
+        logger.info("Storage handler initialised  bucket=%s  table=%s", self.bucket, self.table)
 
     # -------------------------------------------------------------------------
-    # Upload XML → bucket, then delete local file
+    # Upload
     # -------------------------------------------------------------------------
 
-    def upload_xml_and_delete_local(
-        self, local_path: str, bucket_path: str
-    ) -> str:
+    def upload_xml(self, local_path: str, bucket_path: str) -> str:
         """
-        Upload local XML file to Supabase Storage.
-        Delete local file on success.
-        Returns public URL or "" on failure.
+        Upload XML file to Supabase Storage.
+        Returns public URL on success, empty string on failure.
+        Does NOT delete the local file — caller decides when to delete.
         """
+        if not os.path.exists(local_path):
+            logger.error("Upload failed — file not found: %s", local_path)
+            return ""
+
         try:
-            if not os.path.exists(local_path):
-                logger.error("✗ File not found: %s", local_path)
-                return ""
-
             with open(local_path, "rb") as f:
                 data = f.read()
 
@@ -58,56 +58,64 @@ class StorageHandler:
             if isinstance(public_url, dict):
                 public_url = public_url.get("publicURL", public_url.get("publicUrl", ""))
 
-            # Delete local XML file after successful upload
-            os.remove(local_path)
-            logger.info("☁️  Uploaded & deleted: %s", bucket_path)
+            logger.info("Uploaded: %s", bucket_path)
             return public_url or ""
 
         except Exception as e:
-            logger.error("✗ Upload failed [%s]: %s", bucket_path, e)
+            logger.error("Upload failed [%s]: %s", bucket_path, e)
             return ""
 
     # -------------------------------------------------------------------------
-    # Insert metadata row
+    # Metadata insert
     # -------------------------------------------------------------------------
 
     def insert_metadata(self, metadata: dict) -> bool:
         """
-        Insert document metadata into Supabase table.
+        Insert document metadata row into Supabase table.
 
         Expected keys:
           file_name, file_hash, file_size,
           legal_area_root, legal_area_branch, legal_area_leaf,
           document_type, source_url, content_source,
-          content_preview, bucket_path, public_uri
+          bucket_path, public_uri
         """
         try:
-            insert_data = {
+            row = {
                 "file_name":         metadata["file_name"],
                 "file_hash":         metadata["file_hash"],
                 "file_size":         metadata.get("file_size"),
                 "legal_area_root":   metadata.get("legal_area_root",   ""),
                 "legal_area_branch": metadata.get("legal_area_branch", ""),
-                "legal_area_leaf":   metadata.get("legal_area_leaf"),      # None if no leaf
+                "legal_area_leaf":   metadata.get("legal_area_leaf"),       # None ok
                 "document_type":     metadata.get("document_type",     ""),
                 "source_url":        metadata.get("source_url",        ""),
-                "content_source":    metadata.get("content_source",    ""),
-                "content_preview":   metadata.get("content_preview",   ""),
                 "storage_path":      f"{self.bucket}/{metadata.get('bucket_path', '')}",
                 "public_uri":        metadata.get("public_uri",        ""),
             }
 
-            resp = self.client.table(self.table).insert(insert_data).execute()
+            resp = self.client.table(self.table).insert(row).execute()
             if resp.data:
-                logger.info("🧾 Metadata inserted: %s", metadata["file_name"])
+                logger.info("Metadata inserted: %s", metadata["file_name"])
                 return True
 
-            logger.error("✗ Insert returned no data: %s", resp)
+            logger.error("Metadata insert returned no data: %s", resp)
             return False
 
         except Exception as e:
-            logger.error("✗ insert_metadata failed [%s]: %s", metadata.get("file_name"), e)
+            logger.error("Metadata insert failed [%s]: %s", metadata.get("file_name"), e)
             return False
+
+    # -------------------------------------------------------------------------
+    # Delete local file
+    # -------------------------------------------------------------------------
+
+    def delete_local(self, local_path: str) -> None:
+        try:
+            if os.path.exists(local_path):
+                os.remove(local_path)
+                logger.debug("Local file deleted: %s", local_path)
+        except Exception as e:
+            logger.warning("Could not delete local file [%s]: %s", local_path, e)
 
     # -------------------------------------------------------------------------
     # Duplicate checks
@@ -145,13 +153,12 @@ class StorageHandler:
     # Cleanup empty local folders
     # -------------------------------------------------------------------------
 
-    def cleanup_empty_folders(self, base_dir: str):
+    def cleanup_empty_folders(self, base_dir: str) -> None:
         try:
             for root, dirs, files in os.walk(base_dir, topdown=False):
                 for d in dirs:
                     folder = os.path.join(root, d)
                     if not os.listdir(folder):
                         os.rmdir(folder)
-                        logger.debug("🗑️  Removed empty folder: %s", folder)
         except Exception as e:
-            logger.error("✗ cleanup_empty_folders failed: %s", e)
+            logger.error("cleanup_empty_folders failed: %s", e)

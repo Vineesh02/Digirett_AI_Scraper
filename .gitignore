@@ -4,3 +4,4 @@ __pycache__/
 logs/
 outputs/
 *.pyc
+scraped_xml/
