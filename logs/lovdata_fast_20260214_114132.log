@@ -1,0 +1,13 @@
+2026-02-14 11:41:37,898 - INFO - ================================================================================
+2026-02-14 11:41:37,898 - INFO - LOVDATA PRO SCRAPER - ULTRA-FAST MODE
+2026-02-14 11:41:37,899 - INFO - Target: 4,000 documents in 3-4 hours
+2026-02-14 11:41:37,899 - INFO - ================================================================================
+2026-02-14 11:41:37,900 - INFO - Year range: 2020-2026
+2026-02-14 11:41:37,900 - INFO - Batch upload: Every 50 files
+2026-02-14 11:41:37,901 - INFO - Parallel processing: True (workers: 3)
+2026-02-14 11:41:37,901 - INFO - Delay: 0.1s
+2026-02-14 11:41:37,902 - INFO - ================================================================================
+2026-02-14 11:41:43,461 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 11:41:43,474 - INFO - ✓ Database connected
+2026-02-14 11:41:43,475 - INFO - ====== WebDriver manager ======
+2026-02-14 11:41:46,147 - INFO - Get LATEST chromedriver version for google-chrome

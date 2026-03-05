@@ -1,0 +1,68 @@
+2026-02-14 19:34:46,239 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 19:34:46,240 - INFO - 🔐 Opening Lovdata login page...
+2026-02-14 19:34:53,303 - INFO - ✅ Login successful
+2026-02-14 19:34:53,304 - INFO - ======================================================================
+2026-02-14 19:34:53,304 - INFO - MODE: legal_areas_only
+2026-02-14 19:34:53,304 - INFO - ======================================================================
+2026-02-14 19:34:53,304 - INFO - 
+======================================================================
+2026-02-14 19:34:53,306 - INFO - ⚖️  SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 19:34:53,306 - INFO -    Discovering from: https://lovdata.no/pro/#rettsomrade
+2026-02-14 19:34:53,308 - INFO - ======================================================================
+2026-02-14 19:34:53,309 - INFO - 🔍 Discovering legal areas from https://lovdata.no/pro/#rettsomrade
+2026-02-14 19:34:58,467 - INFO - 📊 Found 264 total links on page
+2026-02-14 19:35:02,929 - INFO - ✅ Discovered 0 legal areas
+2026-02-14 19:35:02,931 - WARNING - ⚠️  No legal areas found. Possible reasons:
+2026-02-14 19:35:02,931 - WARNING -    1. Page structure has changed
+2026-02-14 19:35:02,931 - WARNING -    2. Page requires interaction to load areas
+2026-02-14 19:35:02,931 - WARNING -    3. Authentication issue
+2026-02-14 19:35:02,931 - WARNING -    4. Using fallback hardcoded list...
+2026-02-14 19:35:02,931 - INFO - ✅ Using fallback list with 28 legal areas
+2026-02-14 19:35:02,933 - INFO - 💾 Saved page source to: ./logs/legal_areas_page_debug.html
+2026-02-14 19:35:02,934 - INFO - 
+📊 Total legal areas discovered: 28
+2026-02-14 19:35:02,934 - INFO -    Max docs per area: 100
+
+2026-02-14 19:35:02,934 - INFO - 
+======================================================================
+2026-02-14 19:35:02,934 - INFO - [1/28] Labor_Law / Arbeidsrett
+2026-02-14 19:35:02,935 - INFO - ======================================================================
+2026-02-14 19:35:02,935 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 19:35:02,935 - INFO -    Area: Labor_Law (slug: arbeidsrett)
+2026-02-14 19:35:02,935 - INFO - 📂 Scraping legal area: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 19:35:08,881 - INFO - 📎 Found 43 documents in this legal area
+2026-02-14 19:35:08,881 - INFO - 🚀 Processing 43 documents from Labor_Law
+2026-02-14 19:35:08,882 - INFO - 
+   [1/43] Processing document...
+2026-02-14 19:35:21,060 - INFO - 📂 Category: Unknown_Source
+2026-02-14 19:35:21,061 - INFO - 📄 Subcategory: Unknown_Category
+2026-02-14 19:35:23,068 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2007-06-15-40.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:35:23,531 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2007-06-15-40.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:35:23,534 - INFO - 📁 Final Category: Unknown_Source
+2026-02-14 19:35:23,534 - INFO - 📄 Final Subcategory: Unknown_Category
+2026-02-14 19:35:23,615 - INFO - ✓ XML saved: ./scraped_xml\Unknown_Source\Unknown_Category\2007-06-15-40.xml
+2026-02-14 19:35:23,616 - ERROR - ❌ Error processing document: too many values to unpack (expected 3)
+2026-02-14 19:35:23,926 - INFO - 
+   [2/43] Processing document...
+2026-02-14 19:35:26,097 - INFO - 📂 Category: Unknown_Source
+2026-02-14 19:35:26,097 - INFO - 📄 Subcategory: Unknown_Category
+2026-02-14 19:35:26,481 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2025-03-28-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:35:26,867 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2025-03-28-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:35:26,868 - INFO - 📁 Final Category: Unknown_Source
+2026-02-14 19:35:26,868 - INFO - 📄 Final Subcategory: Unknown_Category
+2026-02-14 19:35:26,885 - INFO - ✓ XML saved: ./scraped_xml\Unknown_Source\Unknown_Category\2025-03-28-5.xml
+2026-02-14 19:35:26,885 - ERROR - ❌ Error processing document: too many values to unpack (expected 3)
+2026-02-14 19:35:27,187 - INFO - 
+   [3/43] Processing document...
+2026-02-14 19:35:27,335 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/b7a52f701d2dc96204b18c3cf7af7b5f
+2026-02-14 19:35:31,414 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=61309): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/b7a52f701d2dc96204b18c3cf7af7b5f
+2026-02-14 19:35:35,513 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=61309): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/b7a52f701d2dc96204b18c3cf7af7b5f
+2026-02-14 19:35:43,683 - INFO - 
+======================================================================
+2026-02-14 19:35:43,683 - INFO - SCRAPING SUMMARY
+2026-02-14 19:35:43,683 - INFO - ======================================================================
+2026-02-14 19:35:43,683 - INFO - ✅ Success: 0
+2026-02-14 19:35:43,683 - INFO - ❌ Failed: 2
+2026-02-14 19:35:43,683 - INFO - ⏭️  Skipped: 0
+2026-02-14 19:35:43,683 - INFO - ======================================================================
+

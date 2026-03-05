@@ -1,0 +1,56 @@
+2026-03-03 17:24:50,669 - INFO - ✓ Supabase bucket : legal_area
+2026-03-03 17:24:50,673 - INFO - ✓ Supabase table  : legal_area_metadata
+2026-03-03 17:24:50,673 - INFO - ✓ StorageHandler initialized
+2026-03-03 17:24:50,673 - INFO - ======================================================================
+2026-03-03 17:24:50,673 - INFO - ENV / CONFIG
+2026-03-03 17:24:50,676 - INFO -   SUPABASE_TABLE  : legal_area_metadata
+2026-03-03 17:24:50,676 - INFO -   SUPABASE_BUCKET : legal_area
+2026-03-03 17:24:50,676 - INFO -   BASE_DIR        : ./scraped_xml
+2026-03-03 17:24:50,676 - INFO -   TIMEOUT         : 30
+2026-03-03 17:24:50,676 - INFO -   HEADLESS        : False
+2026-03-03 17:24:50,676 - INFO -   YEAR RANGE      : 2000 – 2026
+2026-03-03 17:24:50,678 - INFO -   BATCH SIZE      : 10
+2026-03-03 17:24:50,678 - INFO - ======================================================================
+2026-03-03 17:24:55,794 - INFO - ✅ Login successful
+2026-03-03 17:25:00,932 - INFO - ✅ Tree nodes present
+2026-03-03 17:25:01,940 - INFO - Found 35 tree node(s)
+2026-03-03 17:25:02,203 - INFO - 📋 ROOT categories: 35
+2026-03-03 17:25:02,205 - INFO - 📊 Total ROOTs: 35
+2026-03-03 17:25:07,309 - INFO - ✅ Tree nodes present
+2026-03-03 17:25:08,316 - INFO - Found 35 tree node(s)
+2026-03-03 17:25:08,523 - INFO - 📋 ROOT categories: 35
+2026-03-03 17:25:08,523 - INFO - 
+======================================================================
+2026-03-03 17:25:08,525 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 17:25:08,525 - INFO - ======================================================================
+2026-03-03 17:25:10,305 - INFO -    Branch count: 5
+2026-03-03 17:25:15,423 - INFO - ✅ Tree nodes present
+2026-03-03 17:25:16,440 - INFO - Found 40 tree node(s)
+2026-03-03 17:25:16,686 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:25:17,802 - INFO -    [1/5] BRANCH: Anskaffelser
+2026-03-03 17:25:18,894 - INFO -       Leaf count: 0
+2026-03-03 17:25:18,902 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-03 17:25:18,902 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Anskaffelser
+2026-03-03 17:25:22,320 - INFO -   🔍 All heading texts on page (0 total):
+2026-03-03 17:25:22,704 - ERROR - ❌ No section panels matched. The section headings above show what IS on the page. Add the correct text to SECTION_MAP.
+2026-03-03 17:25:22,704 - ERROR - ❌ No section panels found. Check that span.x-panel-header-text exists on this page.
+2026-03-03 17:25:22,704 - WARNING -    ⚠️  No sections / URLs found.
+2026-03-03 17:25:27,831 - INFO - ✅ Tree nodes present
+2026-03-03 17:25:28,845 - INFO - Found 40 tree node(s)
+2026-03-03 17:25:29,095 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:25:30,197 - INFO -    [2/5] BRANCH: Avtaler
+2026-03-03 17:25:31,285 - INFO -       Leaf count: 0
+2026-03-03 17:25:31,290 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Avtaler'  leaf=''
+2026-03-03 17:25:31,290 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Avtaler
+2026-03-03 17:25:34,674 - INFO -   🔍 All heading texts on page (0 total):
+2026-03-03 17:25:35,057 - ERROR - ❌ No section panels matched. The section headings above show what IS on the page. Add the correct text to SECTION_MAP.
+2026-03-03 17:25:35,057 - ERROR - ❌ No section panels found. Check that span.x-panel-header-text exists on this page.
+2026-03-03 17:25:35,058 - WARNING -    ⚠️  No sections / URLs found.
+2026-03-03 17:25:40,179 - INFO - ✅ Tree nodes present
+2026-03-03 17:25:41,199 - INFO - Found 40 tree node(s)
+2026-03-03 17:25:41,451 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:25:42,551 - INFO -    [3/5] BRANCH: Boligoppføring
+2026-03-03 17:25:43,636 - INFO -       Leaf count: 0
+2026-03-03 17:25:43,642 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Boligoppføring'  leaf=''
+2026-03-03 17:25:43,642 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Boligoppforing
+2026-03-03 17:25:45,811 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/339992c5b28e5ec680e3c45b0e91323b

@@ -1,0 +1,125 @@
+2026-02-13 15:37:09,936 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-13 15:37:09,937 - INFO - ✓ Database connected
+2026-02-13 15:37:09,937 - INFO - ================================================================================
+2026-02-13 15:37:09,937 - INFO - COMPLETE FIX - ALL ISSUES
+2026-02-13 15:37:09,937 - INFO - ================================================================================
+2026-02-13 15:37:13,886 - INFO - 
+📝 Step 1/5: Fixing subcategories...
+2026-02-13 15:37:13,957 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=%2A "HTTP/1.1 200 OK"
+2026-02-13 15:37:13,970 - INFO - Retrieved 22 records
+2026-02-13 15:37:14,068 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.682 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,126 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.683 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,192 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.684 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,279 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.685 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,342 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.686 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,422 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.687 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,492 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.688 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,560 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.689 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,623 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.690 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,690 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.691 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,761 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.692 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,826 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.693 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,895 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.694 "HTTP/1.1 200 OK"
+2026-02-13 15:37:14,959 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.695 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,010 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.696 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,091 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.697 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,157 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.698 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,226 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.699 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,293 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.700 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,362 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.701 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,443 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.702 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,508 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.703 "HTTP/1.1 200 OK"
+2026-02-13 15:37:15,509 - INFO -   ✅ Fixed 22 subcategories
+2026-02-13 15:37:15,509 - INFO - 
+📝 Step 2/5: Fixing storage paths...
+2026-02-13 15:37:16,040 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=%2A "HTTP/1.1 200 OK"
+2026-02-13 15:37:16,050 - INFO - Retrieved 22 records
+2026-02-13 15:37:16,133 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.682 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:16,135 - ERROR -   ❌ Failed to update ID 682: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:16,191 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.683 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:16,194 - ERROR -   ❌ Failed to update ID 683: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:16,257 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.684 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:16,257 - ERROR -   ❌ Failed to update ID 684: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:16,536 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.685 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:16,552 - ERROR -   ❌ Failed to update ID 685: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:16,606 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.686 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:16,606 - ERROR -   ❌ Failed to update ID 686: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:16,917 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.687 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:16,917 - ERROR -   ❌ Failed to update ID 687: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:17,673 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.688 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:17,675 - ERROR -   ❌ Failed to update ID 688: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:18,653 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.689 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:18,656 - ERROR -   ❌ Failed to update ID 689: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,473 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.690 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,474 - ERROR -   ❌ Failed to update ID 690: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,548 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.691 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,549 - ERROR -   ❌ Failed to update ID 691: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,612 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.692 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,615 - ERROR -   ❌ Failed to update ID 692: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,675 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.693 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,677 - ERROR -   ❌ Failed to update ID 693: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,738 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.694 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,738 - ERROR -   ❌ Failed to update ID 694: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,793 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.695 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,793 - ERROR -   ❌ Failed to update ID 695: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,860 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.696 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,860 - ERROR -   ❌ Failed to update ID 696: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,923 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.697 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,925 - ERROR -   ❌ Failed to update ID 697: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:19,977 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.698 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:19,977 - ERROR -   ❌ Failed to update ID 698: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:20,039 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.699 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:20,041 - ERROR -   ❌ Failed to update ID 699: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:20,094 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.700 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:20,094 - ERROR -   ❌ Failed to update ID 700: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:20,160 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.701 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:20,160 - ERROR -   ❌ Failed to update ID 701: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:20,242 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.702 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:20,244 - ERROR -   ❌ Failed to update ID 702: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:20,294 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?id=eq.703 "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:20,304 - ERROR -   ❌ Failed to update ID 703: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_path' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:20,305 - INFO -   ✅ Fixed 0 storage paths
+2026-02-13 15:37:20,306 - INFO - 
+📝 Step 3/5: Fixing public URLs...
+2026-02-13 15:37:20,363 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=%2A "HTTP/1.1 200 OK"
+2026-02-13 15:37:20,373 - INFO - Retrieved 22 records
+2026-02-13 15:37:20,373 - INFO -   ✅ Fixed 0 public URLs
+2026-02-13 15:37:20,373 - INFO - 
+📝 Step 4/5: Fixing storage bucket...
+2026-02-13 15:37:20,426 - INFO - HTTP Request: PATCH https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?storage_bucket=is.null "HTTP/1.1 400 Bad Request"
+2026-02-13 15:37:20,426 - ERROR -   ❌ Failed to update storage_bucket: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'storage_bucket' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 15:37:20,437 - INFO - 
+📝 Step 5/5: Fixing file storage URIs...
+2026-02-13 15:37:20,493 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=%2A "HTTP/1.1 200 OK"
+2026-02-13 15:37:20,504 - INFO - Retrieved 22 records
+2026-02-13 15:37:20,504 - INFO -   ✅ Fixed 0 file storage URIs
+2026-02-13 15:37:20,505 - INFO - 
+🔍 Verifying fixes...
+2026-02-13 15:37:20,556 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=%2A "HTTP/1.1 200 OK"
+2026-02-13 15:37:20,571 - INFO - 
+  Total records: 22
+2026-02-13 15:37:20,572 - INFO -   NULL subcategory: 0
+2026-02-13 15:37:20,572 - INFO -   NULL storage_path: 22
+2026-02-13 15:37:20,572 - INFO -   NULL public_url: 22
+2026-02-13 15:37:20,572 - INFO -   NULL storage_bucket: 22
+2026-02-13 15:37:20,573 - INFO -   NULL file_storage_uri: 22
+2026-02-13 15:37:20,573 - WARNING - 
+  ⚠ Some NULL values remain. Check logs.
+2026-02-13 15:37:20,575 - INFO - 
+  Sample records:
+2026-02-13 15:37:20,575 - INFO -   1. hrsiv-hr-2026-226-u.xml
+2026-02-13 15:37:20,575 - INFO -      Category: Area_01_Labor_Law
+2026-02-13 15:37:20,575 - INFO -      Subcategory: Labor Law
+2026-02-13 15:37:20,576 - INFO -      Storage Path: None
+2026-02-13 15:37:20,576 - INFO -   2. hrsiv-hr-2026-248-u.xml
+2026-02-13 15:37:20,576 - INFO -      Category: Area_01_Labor_Law
+2026-02-13 15:37:20,576 - INFO -      Subcategory: Labor Law
+2026-02-13 15:37:20,577 - INFO -      Storage Path: None
+2026-02-13 15:37:20,577 - INFO -   3. hrsiv-hr-2026-260-u.xml
+2026-02-13 15:37:20,577 - INFO -      Category: Area_01_Labor_Law
+2026-02-13 15:37:20,578 - INFO -      Subcategory: Labor Law
+2026-02-13 15:37:20,578 - INFO -      Storage Path: None
+2026-02-13 15:37:20,578 - INFO - 
+================================================================================
+2026-02-13 15:37:20,578 - INFO - ✅ ALL FIXES COMPLETE!
+2026-02-13 15:37:20,580 - INFO - ================================================================================

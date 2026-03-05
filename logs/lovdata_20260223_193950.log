@@ -1,0 +1,22 @@
+2026-02-23 19:39:56,303 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-23 19:39:56,304 - INFO - 🔐 Opening Lovdata login page...
+2026-02-23 19:40:03,788 - INFO - ✅ Login successful
+2026-02-23 19:40:03,790 - INFO - ======================================================================
+2026-02-23 19:40:03,790 - INFO - MODE: sources_of_law
+2026-02-23 19:40:03,790 - INFO - ======================================================================
+2026-02-23 19:40:03,791 - INFO - 
+======================================================================
+2026-02-23 19:40:03,791 - INFO - ⚖️  SCRAPING SOURCES OF LAW
+2026-02-23 19:40:03,791 - INFO - ======================================================================
+
+2026-02-23 19:40:03,791 - INFO - 
+ Registry: Publication List (Government/Parliament since 1971)
+2026-02-23 19:40:03,791 - INFO -    https://lovdata.no/pro/#registry/chronological/PUBG
+2026-02-23 19:40:03,791 - INFO -    None
+2026-02-23 19:40:03,791 - INFO - 📂 Scraping registry index: https://lovdata.no/pro/#registry/chronological/PUBG
+2026-02-23 19:40:03,795 - INFO - 📂 Scraping registry index: 
+2026-02-23 19:40:03,795 - INFO - 📂 Scraping registry index: 34492
+2026-02-23 19:40:17,008 - INFO - Found 0 document URLs in chronological order in 2026
+2026-02-23 19:40:32,352 - INFO - Found 0 document URLs in chronological order in 2025
+2026-02-23 19:40:47,656 - INFO - Found 0 document URLs in chronological order in 2024
+2026-02-23 19:40:57,366 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/5b41ccac7d73510a3a8bc40d59278e70

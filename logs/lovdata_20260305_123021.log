@@ -1,0 +1,332 @@
+2026-03-05 12:30:30,981 - INFO - Storage handler initialised  bucket=legal_area  table=legal_area_metadata
+2026-03-05 12:30:30,983 - INFO - ======================================================================
+2026-03-05 12:30:30,984 - INFO - LOVDATA PRO SCRAPER
+2026-03-05 12:30:30,984 - INFO -   Table   : legal_area_metadata
+2026-03-05 12:30:30,985 - INFO -   Bucket  : legal_area
+2026-03-05 12:30:30,985 - INFO -   Base dir: ./scraped_xml
+2026-03-05 12:30:30,986 - INFO -   Timeout : 30
+2026-03-05 12:30:30,986 - INFO -   Headless: False
+2026-03-05 12:30:30,986 - INFO -   Years   : 2000 - 2026
+2026-03-05 12:30:30,987 - INFO -   Batch   : 10
+2026-03-05 12:30:30,987 - INFO - ======================================================================
+2026-03-05 12:30:38,578 - INFO - Login successful
+2026-03-05 12:30:43,775 - INFO - Tree nodes loaded
+2026-03-05 12:30:44,790 - INFO - Found 35 tree nodes
+2026-03-05 12:30:45,184 - INFO - Root categories: 35
+2026-03-05 12:30:45,185 - INFO - Total root categories: 35
+2026-03-05 12:30:50,379 - INFO - Tree nodes loaded
+2026-03-05 12:30:51,388 - INFO - Found 35 tree nodes
+2026-03-05 12:30:51,650 - INFO - Root categories: 35
+2026-03-05 12:30:51,650 - INFO - 
+2026-03-05 12:30:51,650 - INFO - ======================================================================
+2026-03-05 12:30:51,651 - INFO - [1/35] Root: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 12:30:51,651 - INFO - ======================================================================
+2026-03-05 12:30:53,638 - INFO -   Branches: 5
+2026-03-05 12:30:58,846 - INFO - Tree nodes loaded
+2026-03-05 12:30:59,865 - INFO - Found 40 tree nodes
+2026-03-05 12:31:00,436 - INFO - Root categories: 40
+2026-03-05 12:31:01,619 - INFO -   [1/5] Branch: Anskaffelser
+2026-03-05 12:31:02,747 - INFO -     Leaves: 0
+2026-03-05 12:31:02,748 - INFO - Scraping area  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-05 12:31:03,311 - INFO -   Section tab links found: 11
+2026-03-05 12:31:03,345 - INFO -   Section: LATEST DOCUMENTS                                         div_id=saker
+2026-03-05 12:31:03,373 - INFO -   Section: LAWS                                                     div_id=lover
+2026-03-05 12:31:03,404 - INFO -   Section: REGULATIONS                                              div_id=forskrifter
+2026-03-05 12:31:03,433 - INFO -   Section: DECISIONS FROM THE SUPREME COURT                         div_id=hr
+2026-03-05 12:31:03,460 - INFO -   Section: DECISIONS FROM THE COURTS OF APPEAL                      div_id=lr
+2026-03-05 12:31:03,485 - INFO -   Section: DECISIONS FROM THE DISTRICT COURTS                       div_id=tr
+2026-03-05 12:31:03,509 - INFO -   Section: ARTICLES                                                 div_id=artikler
+2026-03-05 12:31:03,541 - INFO -   Section: DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD   div_id=kofa
+2026-03-05 12:31:03,574 - INFO -   Section: DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL   div_id=bfjr
+2026-03-05 12:31:03,601 - INFO -   Section: DOCUMENTS FROM THE MINISTRY OF JUSTICE                   div_id=jd
+2026-03-05 12:31:03,628 - INFO -   Section: OTHER DOCUMENTS                                          div_id=otherBases
+2026-03-05 12:31:03,629 - INFO - Processing 11 sections
+2026-03-05 12:31:03,629 - INFO - [1/11] Section: LATEST DOCUMENTS
+2026-03-05 12:31:03,941 - INFO -   Clicked section tab: 'Siste dokumenter'
+2026-03-05 12:31:05,504 - INFO -   Small section mode
+2026-03-05 12:31:05,528 - INFO -   Small section div#saker — collected 10 URLs
+2026-03-05 12:31:05,528 - INFO -   Section result: LATEST DOCUMENTS                                   expected=?      collected=10
+2026-03-05 12:31:05,529 - INFO - [2/11] Section: LAWS
+2026-03-05 12:31:05,863 - INFO -   Clicked section tab: 'Lover'
+2026-03-05 12:31:07,421 - INFO -   Small section mode
+2026-03-05 12:31:07,446 - INFO -   Small section div#lover — collected 2 URLs
+2026-03-05 12:31:07,447 - INFO -   Section result: LAWS                                               expected=?      collected=2
+2026-03-05 12:31:07,448 - INFO - [3/11] Section: REGULATIONS
+2026-03-05 12:31:07,796 - INFO -   Clicked section tab: 'Forskrifter'
+2026-03-05 12:31:09,342 - INFO -   Vis alle clicked — expected: 16
+2026-03-05 12:31:12,360 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=2896
+2026-03-05 12:31:14,389 - INFO -   Advanced Search loaded
+2026-03-05 12:31:14,402 - INFO -   Advanced Search mode
+2026-03-05 12:31:14,452 - INFO -   Advanced Search total: 16
+2026-03-05 12:31:16,476 - INFO -   Page 1: +16 new  (total: 16 / expected: 16)
+2026-03-05 12:31:16,476 - INFO -   All 16 docs collected
+2026-03-05 12:31:28,794 - WARNING -   Back() failed — navigating directly
+2026-03-05 12:31:31,824 - INFO -   Section result: REGULATIONS                                        expected=16     collected=16
+2026-03-05 12:31:31,824 - INFO - [4/11] Section: DECISIONS FROM THE SUPREME COURT
+2026-03-05 12:31:32,188 - INFO -   Clicked section tab: 'Avgjørelser fra Høyesterett'
+2026-03-05 12:31:33,737 - INFO -   Vis alle clicked — expected: 16
+2026-03-05 12:31:36,759 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=3866
+2026-03-05 12:31:38,788 - INFO -   Advanced Search loaded
+2026-03-05 12:31:38,801 - INFO -   Advanced Search mode
+2026-03-05 12:31:38,848 - INFO -   Advanced Search total: 16
+2026-03-05 12:31:40,874 - INFO -   Page 1: +16 new  (total: 16 / expected: 16)
+2026-03-05 12:31:40,874 - INFO -   All 16 docs collected
+2026-03-05 12:31:53,198 - WARNING -   Back() failed — navigating directly
+2026-03-05 12:31:56,235 - INFO -   Section result: DECISIONS FROM THE SUPREME COURT                   expected=16     collected=16
+2026-03-05 12:31:56,236 - INFO - [5/11] Section: DECISIONS FROM THE COURTS OF APPEAL
+2026-03-05 12:31:56,654 - INFO -   Clicked section tab: 'Avgjørelser fra lagmannsrettene'
+2026-03-05 12:31:58,315 - INFO -   Advanced Search mode
+2026-03-05 12:31:58,351 - INFO -   Advanced Search total: 16
+2026-03-05 12:32:00,374 - INFO -   Page 1: +50 new  (total: 50 / expected: 16)
+2026-03-05 12:32:00,376 - INFO -   All 16 docs collected
+2026-03-05 12:32:02,417 - INFO -   Back to legal area page
+2026-03-05 12:32:02,418 - INFO -   Section result: DECISIONS FROM THE COURTS OF APPEAL                expected=?      collected=50
+2026-03-05 12:32:02,418 - INFO - [6/11] Section: DECISIONS FROM THE DISTRICT COURTS
+2026-03-05 12:32:02,854 - INFO -   Clicked section tab: 'Avgjørelser fra tingrettene'
+2026-03-05 12:32:04,405 - INFO -   Vis alle clicked — expected: 132
+2026-03-05 12:32:07,427 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=5690
+2026-03-05 12:32:09,453 - INFO -   Advanced Search loaded
+2026-03-05 12:32:09,468 - INFO -   Advanced Search mode
+2026-03-05 12:32:09,516 - INFO -   Advanced Search total: 132
+2026-03-05 12:32:11,537 - INFO -   Page 1: +50 new  (total: 50 / expected: 132)
+2026-03-05 12:32:11,712 - INFO -   Next page clicked
+2026-03-05 12:32:16,738 - INFO -   Page 2: +50 new  (total: 100 / expected: 132)
+2026-03-05 12:32:16,901 - INFO -   Next page clicked
+2026-03-05 12:32:21,928 - INFO -   Page 3: +32 new  (total: 132 / expected: 132)
+2026-03-05 12:32:21,930 - INFO -   All 132 docs collected
+2026-03-05 12:32:34,236 - WARNING -   Back() failed — navigating directly
+2026-03-05 12:32:37,267 - INFO -   Section result: DECISIONS FROM THE DISTRICT COURTS                 expected=132    collected=132
+2026-03-05 12:32:37,267 - INFO - [7/11] Section: ARTICLES
+2026-03-05 12:32:37,672 - INFO -   Clicked section tab: 'Artikler'
+2026-03-05 12:32:39,209 - INFO -   Vis alle clicked — expected: 44
+2026-03-05 12:32:42,228 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=6728
+2026-03-05 12:32:44,255 - INFO -   Advanced Search loaded
+2026-03-05 12:32:44,271 - INFO -   Advanced Search mode
+2026-03-05 12:32:44,321 - INFO -   Advanced Search total: 44
+2026-03-05 12:32:46,346 - INFO -   Page 1: +44 new  (total: 44 / expected: 44)
+2026-03-05 12:32:46,346 - INFO -   All 44 docs collected
+2026-03-05 12:32:58,655 - WARNING -   Back() failed — navigating directly
+2026-03-05 12:33:01,698 - INFO -   Section result: ARTICLES                                           expected=44     collected=44
+2026-03-05 12:33:01,698 - INFO - [8/11] Section: DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD
+2026-03-05 12:33:02,263 - INFO -   Clicked section tab: 'Dokumenter fra Klagenemnda for offentlige anskaffelser'
+2026-03-05 12:33:03,857 - WARNING -   Heading div#kofa not found — skipping
+2026-03-05 12:33:03,858 - INFO - [9/11] Section: DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL
+2026-03-05 12:33:04,437 - INFO -   Clicked section tab: 'Dokumenter fra Byggebransjens Faglig Juridiske Råd'
+2026-03-05 12:33:06,007 - WARNING -   Heading div#bfjr not found — skipping
+2026-03-05 12:33:06,008 - INFO - [10/11] Section: DOCUMENTS FROM THE MINISTRY OF JUSTICE
+2026-03-05 12:33:06,587 - INFO -   Clicked section tab: 'Dokumenter fra Justisdepartementet'
+2026-03-05 12:33:08,152 - WARNING -   Heading div#jd not found — skipping
+2026-03-05 12:33:08,153 - INFO - [11/11] Section: OTHER DOCUMENTS
+2026-03-05 12:33:08,684 - INFO -   Clicked section tab: 'Andre dokumenter'
+2026-03-05 12:33:10,219 - INFO -   Vis alle clicked — expected: 330
+2026-03-05 12:33:13,245 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=7651
+2026-03-05 12:33:15,280 - INFO -   Advanced Search loaded
+2026-03-05 12:33:15,293 - INFO -   Advanced Search mode
+2026-03-05 12:33:15,342 - INFO -   Advanced Search total: 330
+2026-03-05 12:33:17,370 - INFO -   Page 1: +50 new  (total: 50 / expected: 330)
+2026-03-05 12:33:17,758 - INFO -   Next page clicked
+2026-03-05 12:33:22,777 - INFO -   Page 2: +50 new  (total: 100 / expected: 330)
+2026-03-05 12:33:22,958 - INFO -   Next page clicked
+2026-03-05 12:33:27,987 - INFO -   Page 3: +50 new  (total: 150 / expected: 330)
+2026-03-05 12:33:28,152 - INFO -   Next page clicked
+2026-03-05 12:33:33,181 - INFO -   Page 4: +50 new  (total: 200 / expected: 330)
+2026-03-05 12:33:33,351 - INFO -   Next page clicked
+2026-03-05 12:33:38,374 - INFO -   Page 5: +50 new  (total: 250 / expected: 330)
+2026-03-05 12:33:38,565 - INFO -   Next page clicked
+2026-03-05 12:33:43,587 - INFO -   Page 6: +50 new  (total: 300 / expected: 330)
+2026-03-05 12:33:43,712 - INFO -   Next page clicked
+2026-03-05 12:33:48,744 - INFO -   Page 7: +30 new  (total: 330 / expected: 330)
+2026-03-05 12:33:48,744 - INFO -   All 330 docs collected
+2026-03-05 12:34:01,104 - WARNING -   Back() failed — navigating directly
+2026-03-05 12:34:04,135 - INFO -   Section result: OTHER DOCUMENTS                                    expected=330    collected=330
+2026-03-05 12:34:04,136 - INFO - 
+Section collection summary:
+2026-03-05 12:34:04,136 - INFO -   LATEST DOCUMENTS                                        expected=?      found=10
+2026-03-05 12:34:04,136 - INFO -   LAWS                                                    expected=?      found=2
+2026-03-05 12:34:04,138 - INFO -   REGULATIONS                                             expected=16     found=16
+2026-03-05 12:34:04,138 - INFO -   DECISIONS FROM THE SUPREME COURT                        expected=16     found=16
+2026-03-05 12:34:04,139 - INFO -   DECISIONS FROM THE COURTS OF APPEAL                     expected=?      found=50
+2026-03-05 12:34:04,139 - INFO -   DECISIONS FROM THE DISTRICT COURTS                      expected=132    found=132
+2026-03-05 12:34:04,139 - INFO -   ARTICLES                                                expected=44     found=44
+2026-03-05 12:34:04,140 - INFO -   DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  expected=?      found=0
+2026-03-05 12:34:04,140 - INFO -   DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL  expected=?      found=0
+2026-03-05 12:34:04,140 - INFO -   DOCUMENTS FROM THE MINISTRY OF JUSTICE                  expected=?      found=0
+2026-03-05 12:34:04,141 - INFO -   OTHER DOCUMENTS                                         expected=330    found=330
+2026-03-05 12:34:04,141 - INFO - Total URLs collected: 600
+
+2026-03-05 12:34:04,142 - INFO - 
+2026-03-05 12:34:04,142 - INFO - Section collection summary:
+2026-03-05 12:34:04,143 - INFO -   LATEST DOCUMENTS                                         expected=?       found=10
+2026-03-05 12:34:04,143 - INFO -   LAWS                                                     expected=?       found=2
+2026-03-05 12:34:04,145 - INFO -   REGULATIONS                                              expected=16      found=16
+2026-03-05 12:34:04,145 - INFO -   DECISIONS FROM THE SUPREME COURT                         expected=16      found=16
+2026-03-05 12:34:04,145 - INFO -   DECISIONS FROM THE COURTS OF APPEAL                      expected=?       found=50
+2026-03-05 12:34:04,145 - INFO -   DECISIONS FROM THE DISTRICT COURTS                       expected=132     found=132
+2026-03-05 12:34:04,145 - INFO -   ARTICLES                                                 expected=44      found=44
+2026-03-05 12:34:04,146 - INFO -   DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD   expected=?       found=0
+2026-03-05 12:34:04,146 - INFO -   DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL   expected=?       found=0
+2026-03-05 12:34:04,148 - INFO -   DOCUMENTS FROM THE MINISTRY OF JUSTICE                   expected=?       found=0
+2026-03-05 12:34:04,148 - INFO -   OTHER DOCUMENTS                                          expected=330     found=330
+2026-03-05 12:34:04,149 - INFO - Total URLs collected: 600
+2026-03-05 12:34:04,149 - INFO - 
+2026-03-05 12:34:04,152 - INFO - Processing 600 documents in batches of 10
+2026-03-05 12:34:05,251 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-03-06.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:05,303 - INFO -   [1/600] Scraping: https://lovdata.no/pro/#document/EUR/eur-2026-03-06
+2026-03-05 12:34:11,039 - INFO -   Scraped: title='EuroRett: Fortrinnsrett til konsesjonskontrakt i strid med k'  date='(none)'  year=2026  chars=7157  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:34:11,291 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.b9360105783996aee604790fc1b6adda&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:11,500 - INFO - XML saved: EUR_eur-2026-03-06.xml  size=8178 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:34:11,501 - INFO -   [1/600] Queued: EUR_eur-2026-03-06.xml                    type=LATEST DOCUMENTS
+2026-03-05 12:34:13,693 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-198508.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:13,697 - INFO -   [2/600] Scraping: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-198508
+2026-03-05 12:34:18,555 - INFO -   Scraped: title='TOSL-2025-198508'  date='(none)'  year=2025  chars=64069  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:34:18,756 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.47168ad5f1148b454f57d7febae93fa6&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:18,828 - INFO - XML saved: TRSIV_avgjorelse_tosl-2025-198508.xml  size=66444 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:34:18,828 - INFO -   [2/600] Queued: TRSIV_avgjorelse_tosl-2025-198508.xml     type=LATEST DOCUMENTS
+2026-03-05 12:34:21,028 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-180124.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:21,029 - INFO -   [3/600] Scraping: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-180124
+2026-03-05 12:34:39,799 - INFO -   Scraped: title='TOSL-2025-180124'  date='(none)'  year=2025  chars=42492  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:34:40,116 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.d9c1673b499db7d2f07340fd71ff7c77&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:40,140 - INFO - XML saved: TRSIV_avgjorelse_tosl-2025-180124.xml  size=44306 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:34:40,141 - INFO -   [3/600] Queued: TRSIV_avgjorelse_tosl-2025-180124.xml     type=LATEST DOCUMENTS
+2026-03-05 12:34:42,385 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-01-02.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:42,385 - INFO -   [4/600] Scraping: https://lovdata.no/pro/#document/EUR/eur-2026-01-02
+2026-03-05 12:34:47,232 - INFO -   Scraped: title='EuroRett: Om brudd på anskaffelsesregelverket var «tilstrekk'  date='(none)'  year=2025  chars=7488  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:34:47,581 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.12653d30d522417cf617d017eb90cb58&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:47,615 - INFO - XML saved: EUR_eur-2026-01-02.xml  size=8569 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:34:47,616 - INFO -   [4/600] Queued: EUR_eur-2026-01-02.xml                    type=LATEST DOCUMENTS
+2026-03-05 12:34:49,916 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.ROO_rundskriv_is-2026-9001.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:49,916 - INFO -   [5/600] Scraping: https://lovdata.no/pro/#document/ROO/rundskriv/is-2026-9001
+2026-03-05 12:34:56,602 - INFO -   Scraped: title='Helse- og omsorgstjenesteloven med kommentarer'  date='(none)'  year=2026  chars=265572  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:34:56,930 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.6385afb2af37ff97f374785736bd0648&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:57,074 - INFO - XML saved: ROO_rundskriv_is-2026-9001.xml  size=273700 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:34:57,075 - INFO -   [5/600] Queued: ROO_rundskriv_is-2026-9001.xml            type=LATEST DOCUMENTS
+2026-03-05 12:34:59,280 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-171257.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:34:59,281 - INFO -   [6/600] Scraping: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-171257
+2026-03-05 12:35:04,337 - INFO -   Scraped: title='LB-2025-171257'  date='(none)'  year=2025  chars=58084  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:35:04,632 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.4e59ca943d0cdff0b4bc0bb04b3fd9f3&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:04,667 - INFO - XML saved: LBSIV_avgjorelse_lb-2025-171257.xml  size=60255 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:35:04,667 - INFO -   [6/600] Queued: LBSIV_avgjorelse_lb-2025-171257.xml       type=LATEST DOCUMENTS
+2026-03-05 12:35:06,877 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.INNST_forarbeid_inns-38-l-202526.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:06,877 - INFO -   [7/600] Scraping: https://lovdata.no/pro/#document/INNST/forarbeid/inns-38-l-202526
+2026-03-05 12:35:11,930 - INFO -   Scraped: title='Innst. 38 L (2025–2026) Innstilling fra næringskomiteen om L'  date='(none)'  year=2025  chars=67596  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:35:13,188 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.1446a643f59c8900c2a62bfff46235e9&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:13,217 - INFO - XML saved: INNST_forarbeid_inns-38-l-202526.xml  size=70693 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:35:13,219 - INFO -   [7/600] Queued: INNST_forarbeid_inns-38-l-202526.xml      type=LATEST DOCUMENTS
+2026-03-05 12:35:15,441 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tsol-2025-181219.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:15,443 - INFO -   [8/600] Scraping: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tsol-2025-181219
+2026-03-05 12:35:20,402 - INFO -   Scraped: title='TSOL-2025-181219'  date='(none)'  year=2025  chars=72769  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:35:20,603 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.3dfba0f8f2abdb465e271aa00507c6ae&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:20,651 - INFO - XML saved: TRSIV_avgjorelse_tsol-2025-181219.xml  size=75321 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:35:20,652 - INFO -   [8/600] Queued: TRSIV_avgjorelse_tsol-2025-181219.xml     type=LATEST DOCUMENTS
+2026-03-05 12:35:22,835 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2025-20-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:22,836 - INFO -   [9/600] Scraping: https://lovdata.no/pro/#document/EUR/eur-2025-20-04
+2026-03-05 12:35:27,695 - INFO -   Scraped: title='Høyesterett om adgangen til å reservere konkurransen om kont'  date='(none)'  year=2025  chars=8681  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:35:27,895 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.0a42933a6ef3000a2dabc0c4b4610ecd&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:27,939 - INFO - XML saved: EUR_eur-2025-20-04.xml  size=9877 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:35:27,939 - INFO -   [9/600] Queued: EUR_eur-2025-20-04.xml                    type=LATEST DOCUMENTS
+2026-03-05 12:35:30,121 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-26330.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:30,123 - INFO -   [10/600] Scraping: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-26330
+2026-03-05 12:35:34,944 - INFO -   Scraped: title='LB-2025-26330'  date='(none)'  year=2025  chars=61339  source=iframe_body  meta_fields=['fulltittel']
+2026-03-05 12:35:35,122 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.df2e4d79e6d57edcb375ded613540295&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:35,163 - INFO - XML saved: LBSIV_avgjorelse_lb-2025-26330.xml  size=63606 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:35:35,163 - INFO -   [10/600] Queued: LBSIV_avgjorelse_lb-2025-26330.xml        type=LATEST DOCUMENTS
+2026-03-05 12:35:35,164 - INFO - 
+2026-03-05 12:35:35,164 - INFO - ----------------------------------------------------------------------
+2026-03-05 12:35:35,165 - INFO - Batch upload: 10 files
+2026-03-05 12:35:35,165 - INFO - ----------------------------------------------------------------------
+2026-03-05 12:35:35,165 - INFO -   [1/10] EUR_eur-2026-03-06.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2026-03-06.xml
+2026-03-05 12:35:36,090 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2026-03-06.xml "HTTP/2 200 OK"
+2026-03-05 12:35:36,097 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2026-03-06.xml
+2026-03-05 12:35:36,315 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:36,318 - ERROR - Metadata insert failed [EUR_eur-2026-03-06.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:36,319 - ERROR -   Metadata insert failed: EUR_eur-2026-03-06.xml
+2026-03-05 12:35:36,320 - INFO -   [2/10] TRSIV_avgjorelse_tosl-2025-198508.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tosl-2025-198508.xml
+2026-03-05 12:35:36,801 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tosl-2025-198508.xml "HTTP/2 200 OK"
+2026-03-05 12:35:36,802 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tosl-2025-198508.xml
+2026-03-05 12:35:36,978 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:36,980 - ERROR - Metadata insert failed [TRSIV_avgjorelse_tosl-2025-198508.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:36,980 - ERROR -   Metadata insert failed: TRSIV_avgjorelse_tosl-2025-198508.xml
+2026-03-05 12:35:36,981 - INFO -   [3/10] TRSIV_avgjorelse_tosl-2025-180124.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-03-05 12:35:37,268 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tosl-2025-180124.xml "HTTP/2 200 OK"
+2026-03-05 12:35:37,269 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-03-05 12:35:37,431 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:37,432 - ERROR - Metadata insert failed [TRSIV_avgjorelse_tosl-2025-180124.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:37,433 - ERROR -   Metadata insert failed: TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-03-05 12:35:37,434 - INFO -   [4/10] EUR_eur-2026-01-02.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2026-01-02.xml
+2026-03-05 12:35:37,709 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2026-01-02.xml "HTTP/2 200 OK"
+2026-03-05 12:35:37,710 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2026-01-02.xml
+2026-03-05 12:35:37,871 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:37,872 - ERROR - Metadata insert failed [EUR_eur-2026-01-02.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:37,872 - ERROR -   Metadata insert failed: EUR_eur-2026-01-02.xml
+2026-03-05 12:35:37,873 - INFO -   [5/10] ROO_rundskriv_is-2026-9001.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/ROO_rundskriv_is-2026-9001.xml
+2026-03-05 12:35:38,537 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/ROO_rundskriv_is-2026-9001.xml "HTTP/2 200 OK"
+2026-03-05 12:35:38,538 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/ROO_rundskriv_is-2026-9001.xml
+2026-03-05 12:35:38,698 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:38,699 - ERROR - Metadata insert failed [ROO_rundskriv_is-2026-9001.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:38,699 - ERROR -   Metadata insert failed: ROO_rundskriv_is-2026-9001.xml
+2026-03-05 12:35:38,700 - INFO -   [6/10] LBSIV_avgjorelse_lb-2025-171257.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/LBSIV_avgjorelse_lb-2025-171257.xml
+2026-03-05 12:35:39,000 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/LBSIV_avgjorelse_lb-2025-171257.xml "HTTP/2 200 OK"
+2026-03-05 12:35:39,002 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/LBSIV_avgjorelse_lb-2025-171257.xml
+2026-03-05 12:35:39,174 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:39,175 - ERROR - Metadata insert failed [LBSIV_avgjorelse_lb-2025-171257.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:39,176 - ERROR -   Metadata insert failed: LBSIV_avgjorelse_lb-2025-171257.xml
+2026-03-05 12:35:39,177 - INFO -   [7/10] INNST_forarbeid_inns-38-l-202526.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/INNST_forarbeid_inns-38-l-202526.xml
+2026-03-05 12:35:39,582 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/INNST_forarbeid_inns-38-l-202526.xml "HTTP/2 200 OK"
+2026-03-05 12:35:39,583 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/INNST_forarbeid_inns-38-l-202526.xml
+2026-03-05 12:35:39,747 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:39,748 - ERROR - Metadata insert failed [INNST_forarbeid_inns-38-l-202526.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:39,749 - ERROR -   Metadata insert failed: INNST_forarbeid_inns-38-l-202526.xml
+2026-03-05 12:35:39,749 - INFO -   [8/10] TRSIV_avgjorelse_tsol-2025-181219.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tsol-2025-181219.xml
+2026-03-05 12:35:40,196 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tsol-2025-181219.xml "HTTP/2 200 OK"
+2026-03-05 12:35:40,197 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/TRSIV_avgjorelse_tsol-2025-181219.xml
+2026-03-05 12:35:40,371 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:40,372 - ERROR - Metadata insert failed [TRSIV_avgjorelse_tsol-2025-181219.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:40,372 - ERROR -   Metadata insert failed: TRSIV_avgjorelse_tsol-2025-181219.xml
+2026-03-05 12:35:40,374 - INFO -   [9/10] EUR_eur-2025-20-04.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2025-20-04.xml
+2026-03-05 12:35:40,769 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2025-20-04.xml "HTTP/2 200 OK"
+2026-03-05 12:35:40,770 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/EUR_eur-2025-20-04.xml
+2026-03-05 12:35:40,942 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:40,943 - ERROR - Metadata insert failed [EUR_eur-2025-20-04.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:40,944 - ERROR -   Metadata insert failed: EUR_eur-2025-20-04.xml
+2026-03-05 12:35:40,945 - INFO -   [10/10] LBSIV_avgjorelse_lb-2025-26330.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/LBSIV_avgjorelse_lb-2025-26330.xml
+2026-03-05 12:35:41,216 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/LBSIV_avgjorelse_lb-2025-26330.xml "HTTP/2 200 OK"
+2026-03-05 12:35:41,218 - INFO - Uploaded: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/LBSIV_avgjorelse_lb-2025-26330.xml
+2026-03-05 12:35:41,381 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata "HTTP/1.1 400 Bad Request"
+2026-03-05 12:35:41,382 - ERROR - Metadata insert failed [LBSIV_avgjorelse_lb-2025-26330.xml]: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'legal_area_metadata' in the schema cache"}
+2026-03-05 12:35:41,383 - ERROR -   Metadata insert failed: LBSIV_avgjorelse_lb-2025-26330.xml
+2026-03-05 12:35:41,390 - INFO - Batch complete: 10 files processed
+2026-03-05 12:35:41,390 - INFO - ----------------------------------------------------------------------
+2026-03-05 12:35:41,390 - INFO - 
+2026-03-05 12:35:43,614 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2016-06-17-73.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:43,618 - INFO -   [11/600] Scraping: https://lovdata.no/pro/#document/NL/lov/2016-06-17-73
+2026-03-05 12:35:48,278 - INFO -   Scraped: title='Lov om offentlige anskaffelser (anskaffelsesloven)'  date='(none)'  year=2016  chars=230  source=iframe_content  meta_fields=['fulltittel']
+2026-03-05 12:35:48,496 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.932e81442d1c88878704ffb862af3df4&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:48,585 - INFO - XML saved: NL_lov_2016-06-17-73.xml  size=1008 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:35:48,586 - INFO -   [11/600] Queued: NL_lov_2016-06-17-73.xml                  type=LAWS
+2026-03-05 12:35:50,587 - INFO -   [12/600] Year 1999 out of range — skipping: NLO_lov_1999-07-16-69
+2026-03-05 12:35:52,769 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2002-11-15-1288.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:52,770 - INFO -   [13/600] Scraping: https://lovdata.no/pro/#document/SF/forskrift/2002-11-15-1288
+2026-03-05 12:35:57,425 - INFO -   Scraped: title='Forskrift om klagenemnd for offentlige anskaffelser'  date='(none)'  year=2002  chars=674  source=iframe_content  meta_fields=['fulltittel']
+2026-03-05 12:35:57,613 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.7200e8272b69e49161e3e34cdec2ec5a&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:57,652 - INFO - XML saved: SF_forskrift_2002-11-15-1288.xml  size=1475 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:35:57,653 - INFO -   [13/600] Queued: SF_forskrift_2002-11-15-1288.xml          type=REGULATIONS
+2026-03-05 12:35:59,829 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-974.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:35:59,830 - INFO -   [14/600] Scraping: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-974
+2026-03-05 12:36:04,549 - INFO -   Scraped: title='Forskrift om offentlige anskaffelser (anskaffelsesforskrifte'  date='(none)'  year=2016  chars=213  source=iframe_content  meta_fields=['fulltittel']
+2026-03-05 12:36:04,746 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.4b460483313439edee3731717b52d8e0&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:36:04,776 - INFO - XML saved: SF_forskrift_2016-08-12-974.xml  size=1059 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:36:04,776 - INFO -   [14/600] Queued: SF_forskrift_2016-08-12-974.xml           type=REGULATIONS
+2026-03-05 12:36:06,947 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-975.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:36:06,948 - INFO -   [15/600] Scraping: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-975
+2026-03-05 12:36:12,569 - INFO -   Scraped: title='Forskrift om innkjøpsregler i forsyningssektorene (forsyning'  date='(none)'  year=2016  chars=642  source=iframe_content  meta_fields=['fulltittel']
+2026-03-05 12:36:12,785 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e0f0a6fe1aa7b76b68e6e5e54f343867&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:36:12,802 - INFO - XML saved: SF_forskrift_2016-08-12-975.xml  size=1499 bytes  page_meta=['fulltittel', 'korttittel', 'year']
+2026-03-05 12:36:12,802 - INFO -   [15/600] Queued: SF_forskrift_2016-08-12-975.xml           type=REGULATIONS
+2026-03-05 12:36:14,975 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2008-02-08-112.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 12:36:14,976 - INFO -   [16/600] Scraping: https://lovdata.no/pro/#document/SF/forskrift/2008-02-08-112
+2026-03-05 12:36:16,620 - INFO - Flushing remaining 4 items
+2026-03-05 12:36:16,621 - INFO - 
+2026-03-05 12:36:16,621 - INFO - ----------------------------------------------------------------------
+2026-03-05 12:36:16,621 - INFO - Batch upload: 4 files
+2026-03-05 12:36:16,622 - INFO - ----------------------------------------------------------------------
+2026-03-05 12:36:16,622 - INFO -   [1/4] NL_lov_2016-06-17-73.xml -> Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/NL_lov_2016-06-17-73.xml

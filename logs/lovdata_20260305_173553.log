@@ -1,0 +1,26 @@
+2026-03-05 17:36:06,066 - INFO - Storage handler initialised  bucket=legal_area  table=legal_area_metadata
+2026-03-05 17:36:06,066 - INFO - ======================================================================
+2026-03-05 17:36:06,072 - INFO - LOVDATA PRO SCRAPER
+2026-03-05 17:36:06,072 - INFO -   Table   : legal_area_metadata
+2026-03-05 17:36:06,072 - INFO -   Bucket  : legal_area
+2026-03-05 17:36:06,073 - INFO -   Base dir: ./scraped_xml
+2026-03-05 17:36:06,073 - INFO -   Timeout : 30
+2026-03-05 17:36:06,073 - INFO -   Headless: False
+2026-03-05 17:36:06,074 - INFO -   Years   : 2000 - 2026
+2026-03-05 17:36:06,074 - INFO -   Batch   : 10
+2026-03-05 17:36:06,074 - INFO -   Max docs: 400
+2026-03-05 17:36:06,075 - INFO -   Target categories (2):
+2026-03-05 17:36:06,075 - INFO -     - Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 17:36:06,075 - INFO -     - Arbeidsrett
+2026-03-05 17:36:06,075 - INFO - ======================================================================
+2026-03-05 17:36:12,417 - INFO - Login successful
+2026-03-05 17:36:17,641 - INFO - Tree nodes loaded
+2026-03-05 17:36:18,666 - INFO - Found 35 tree nodes
+2026-03-05 17:36:19,043 - INFO - Root categories: 35
+2026-03-05 17:36:19,048 - INFO - Total root categories found in tree: 35
+2026-03-05 17:36:19,048 - INFO - Category filter active — 2/35 categories will be scraped:
+2026-03-05 17:36:19,048 - INFO -     ✓ Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 17:36:19,048 - INFO -     ✓ Arbeidsrett
+2026-03-05 17:36:19,048 - INFO -   Skipping 33 categories (assigned to other laptops)
+2026-03-05 17:36:19,050 - INFO - Will process 2 root categories
+2026-03-05 17:36:21,068 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/fea3da5a2a50e29a6cc0bd459665e5d2

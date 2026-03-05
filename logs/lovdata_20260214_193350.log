@@ -1,0 +1,29 @@
+2026-02-14 19:33:56,910 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 19:33:56,911 - INFO - 🔐 Opening Lovdata login page...
+2026-02-14 19:34:03,912 - INFO - ✅ Login successful
+2026-02-14 19:34:03,913 - INFO - ======================================================================
+2026-02-14 19:34:03,914 - INFO - MODE: legal_areas_only
+2026-02-14 19:34:03,914 - INFO - ======================================================================
+2026-02-14 19:34:03,915 - INFO - 
+======================================================================
+2026-02-14 19:34:03,915 - INFO - ⚖️  SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 19:34:03,916 - INFO -    Discovering from: https://lovdata.no/pro/#rettsomrade
+2026-02-14 19:34:03,917 - INFO - ======================================================================
+2026-02-14 19:34:03,918 - INFO - 🔍 Discovering legal areas from https://lovdata.no/pro/#rettsomrade
+2026-02-14 19:34:09,135 - INFO - 📊 Found 264 total links on page
+2026-02-14 19:34:14,210 - INFO - ✅ Discovered 0 legal areas
+2026-02-14 19:34:14,210 - WARNING - ⚠️  No legal areas found. Possible reasons:
+2026-02-14 19:34:14,212 - WARNING -    1. Page structure has changed
+2026-02-14 19:34:14,212 - WARNING -    2. Page requires interaction to load areas
+2026-02-14 19:34:14,212 - WARNING -    3. Authentication issue
+2026-02-14 19:34:14,216 - INFO - 💾 Saved page source to: ./logs/legal_areas_page_debug.html
+2026-02-14 19:34:14,216 - ERROR - ❌ No legal areas discovered!
+2026-02-14 19:34:16,461 - INFO - 
+======================================================================
+2026-02-14 19:34:16,461 - INFO - SCRAPING SUMMARY
+2026-02-14 19:34:16,462 - INFO - ======================================================================
+2026-02-14 19:34:16,462 - INFO - ✅ Success: 0
+2026-02-14 19:34:16,462 - INFO - ❌ Failed: 0
+2026-02-14 19:34:16,463 - INFO - ⏭️  Skipped: 0
+2026-02-14 19:34:16,463 - INFO - ======================================================================
+

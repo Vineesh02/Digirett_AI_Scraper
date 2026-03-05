@@ -1,0 +1,1263 @@
+2026-02-13 14:09:01,614 - INFO - ================================================================================
+2026-02-13 14:09:01,616 - INFO - LOVDATA PRO SCRAPER - COMPLETE VERSION WITH BATCH UPLOAD
+2026-02-13 14:09:01,616 - INFO - ================================================================================
+2026-02-13 14:09:01,616 - INFO - Batch upload size: 30 files
+2026-02-13 14:09:01,617 - INFO - Year range: 2000 - 2026
+2026-02-13 14:09:01,617 - INFO - ================================================================================
+2026-02-13 14:09:02,548 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-13 14:09:02,568 - INFO - ✓ Database connected
+2026-02-13 14:09:02,569 - INFO - ====== WebDriver manager ======
+2026-02-13 14:09:04,137 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-13 14:09:04,288 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-13 14:09:04,374 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-13 14:09:07,511 - INFO - ✓ Selenium browser started
+2026-02-13 14:09:07,511 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-13 14:09:07,684 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/bucket "HTTP/2 200 OK"
+2026-02-13 14:09:07,686 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-13 14:09:07,686 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-13 14:09:07,686 - INFO - 🔐 Logging in to Lovdata Pro...
+2026-02-13 14:09:14,527 - INFO -   Login URL   : https://lovdata.no/pro/auth/login
+2026-02-13 14:09:14,538 - INFO -   Login title : Lovdata
+2026-02-13 14:09:14,543 - INFO -   ✓ Found field: j_username
+2026-02-13 14:09:14,668 - INFO -   ✓ Username entered: katrine.lund.digirett@gmail.com
+2026-02-13 14:09:14,741 - INFO -   ✓ Password entered
+2026-02-13 14:09:18,908 - INFO -   ✓ Submit clicked – waiting for redirect...
+2026-02-13 14:09:24,916 - INFO -   URL after submit : https://lovdata.no/pro/#myPage
+2026-02-13 14:09:24,920 - INFO -   Title after submit: Min side - Lovdata Pro
+2026-02-13 14:09:24,920 - INFO - ✓ Login successful – navigating to Pro #myPage...
+2026-02-13 14:09:28,948 - INFO -   Final URL: https://lovdata.no/pro/#myPage
+2026-02-13 14:09:28,948 - INFO - ✓ READY: Lovdata Pro #myPage loaded
+2026-02-13 14:09:28,948 - INFO - 📋 MODE SELECTED: all
+2026-02-13 14:09:28,948 - INFO - ================================================================================
+2026-02-13 14:09:28,948 - INFO - SCRAPING SOURCES OF LAW
+2026-02-13 14:09:28,948 - INFO - ================================================================================
+2026-02-13 14:09:28,948 - INFO - 
+📁 Category: Laws and Regulations
+2026-02-13 14:09:28,948 - INFO -   📂 Subcategory: Active Laws (NL)
+2026-02-13 14:09:28,948 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-13 14:09:28,962 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 14:09:34,989 - INFO -   Sidebar years (0): []
+2026-02-13 14:09:34,989 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 14:09:38,013 - INFO -   📅 2026: 4 new links (total: 4)
+2026-02-13 14:09:41,043 - INFO -   📅 2025: 48 new links (total: 52)
+2026-02-13 14:09:41,043 - INFO - ✓ Total unique URLs collected: 40
+2026-02-13 14:09:41,043 - INFO -   ✓ Found 40 documents
+2026-02-13 14:09:41,043 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-04-10-8
+2026-02-13 14:09:47,106 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250410-0008.xml "HTTP/1.1 200 OK"
+2026-02-13 14:09:47,109 - INFO - ⊘ Already exists: nl-20250410-0008.xml
+2026-02-13 14:09:47,417 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-05-27-21
+2026-02-13 14:09:51,139 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0021.xml "HTTP/1.1 200 OK"
+2026-02-13 14:09:51,163 - INFO - ✓ Created XML: nl-20250527-0021.xml (52.68 KB)
+2026-02-13 14:09:51,252 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.8cfe70a4d1995f7d4bd36b2abae9febc "HTTP/1.1 200 OK"
+2026-02-13 14:09:51,348 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0021.xml "HTTP/1.1 200 OK"
+2026-02-13 14:09:51,456 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:09:51,456 - INFO - ✓ Saved to DB: nl-20250527-0021.xml
+2026-02-13 14:09:51,470 - INFO - ✓ [1/3000] Processed: nl-20250527-0021.xml
+2026-02-13 14:09:51,789 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-121
+2026-02-13 14:09:56,049 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0121.xml "HTTP/1.1 200 OK"
+2026-02-13 14:09:56,070 - INFO - ✓ Created XML: nl-20251222-0121.xml (28.05 KB)
+2026-02-13 14:09:56,136 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.9bc8cb334ae49e3b0be7eeccc1d5f5ca "HTTP/1.1 200 OK"
+2026-02-13 14:09:56,206 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0121.xml "HTTP/1.1 200 OK"
+2026-02-13 14:09:56,276 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:09:56,279 - INFO - ✓ Saved to DB: nl-20251222-0121.xml
+2026-02-13 14:09:56,279 - INFO - ✓ [2/3000] Processed: nl-20251222-0121.xml
+2026-02-13 14:09:56,581 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2026-02-06-2
+2026-02-13 14:10:00,336 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0002.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:00,336 - INFO - ⊘ Already exists: nl-20260206-0002.xml
+2026-02-13 14:10:00,650 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-105
+2026-02-13 14:10:04,663 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0105.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:04,675 - INFO - ⊘ Already exists: nl-20250620-0105.xml
+2026-02-13 14:10:04,982 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-35
+2026-02-13 14:10:08,635 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0035.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:08,637 - INFO - ⊘ Already exists: nl-20250620-0035.xml
+2026-02-13 14:10:08,951 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-111
+2026-02-13 14:10:13,126 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0111.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:13,129 - INFO - ⊘ Already exists: nl-20250620-0111.xml
+2026-02-13 14:10:13,440 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-40
+2026-02-13 14:10:18,442 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0040.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:18,445 - INFO - ⊘ Already exists: nl-20250620-0040.xml
+2026-02-13 14:10:18,753 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-06-26
+2026-02-13 14:10:22,353 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250606-0026.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:22,360 - INFO - ⊘ Already exists: nl-20250606-0026.xml
+2026-02-13 14:10:22,662 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-95
+2026-02-13 14:10:26,868 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0095.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:26,880 - INFO - ⊘ Already exists: nl-20250620-0095.xml
+2026-02-13 14:10:27,182 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-05-27-20
+2026-02-13 14:10:30,886 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0020.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:30,940 - INFO - ✓ Created XML: nl-20250527-0020.xml (51.95 KB)
+2026-02-13 14:10:31,006 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.08adfaaf33082ab1a3326ea609bff3e9 "HTTP/1.1 200 OK"
+2026-02-13 14:10:31,090 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0020.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:31,155 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:10:31,156 - INFO - ✓ Saved to DB: nl-20250527-0020.xml
+2026-02-13 14:10:31,156 - INFO - ✓ [3/3000] Processed: nl-20250527-0020.xml
+2026-02-13 14:10:31,469 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-66
+2026-02-13 14:10:35,671 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0066.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:35,706 - INFO - ✓ Created XML: nl-20250620-0066.xml (24.53 KB)
+2026-02-13 14:10:35,771 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.bc1cb48242c718c58f2b34f49f84c104 "HTTP/1.1 200 OK"
+2026-02-13 14:10:35,841 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0066.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:35,924 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:10:35,925 - INFO - ✓ Saved to DB: nl-20250620-0066.xml
+2026-02-13 14:10:35,927 - INFO - ✓ [4/3000] Processed: nl-20250620-0066.xml
+2026-02-13 14:10:36,230 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-38
+2026-02-13 14:10:39,857 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0038.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:39,900 - INFO - ✓ Created XML: nl-20250620-0038.xml (51.33 KB)
+2026-02-13 14:10:39,973 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.f9a0c1ebd941646b3b6a23279c9ae106 "HTTP/1.1 200 OK"
+2026-02-13 14:10:40,040 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0038.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:40,117 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:10:40,118 - INFO - ✓ Saved to DB: nl-20250620-0038.xml
+2026-02-13 14:10:40,119 - INFO - ✓ [5/3000] Processed: nl-20250620-0038.xml
+2026-02-13 14:10:40,421 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2026-02-06-3
+2026-02-13 14:10:44,268 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0003.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:44,268 - INFO - ⊘ Already exists: nl-20260206-0003.xml
+2026-02-13 14:10:44,582 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2026-02-06-4
+2026-02-13 14:10:48,179 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0004.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:48,179 - INFO - ⊘ Already exists: nl-20260206-0004.xml
+2026-02-13 14:10:48,482 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-102
+2026-02-13 14:10:52,437 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0102.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:52,441 - INFO - ⊘ Already exists: nl-20250620-0102.xml
+2026-02-13 14:10:52,745 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-104
+2026-02-13 14:10:57,244 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0104.xml "HTTP/1.1 200 OK"
+2026-02-13 14:10:57,251 - INFO - ⊘ Already exists: nl-20250620-0104.xml
+2026-02-13 14:10:57,551 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-05-27-18
+2026-02-13 14:11:01,182 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0018.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:01,200 - INFO - ⊘ Already exists: nl-20250527-0018.xml
+2026-02-13 14:11:01,516 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-04-10-9
+2026-02-13 14:11:06,858 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250410-0009.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:06,862 - INFO - ⊘ Already exists: nl-20250410-0009.xml
+2026-02-13 14:11:07,167 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-99
+2026-02-13 14:11:10,855 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0099.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:10,855 - INFO - ⊘ Already exists: nl-20250620-0099.xml
+2026-02-13 14:11:11,165 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-129
+2026-02-13 14:11:14,760 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0129.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:14,789 - INFO - ✓ Created XML: nl-20251222-0129.xml (17.94 KB)
+2026-02-13 14:11:14,857 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.c54841a335c8746067f64ac2b6e3808a "HTTP/1.1 200 OK"
+2026-02-13 14:11:14,926 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0129.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:14,993 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:11:14,993 - INFO - ✓ Saved to DB: nl-20251222-0129.xml
+2026-02-13 14:11:15,000 - INFO - ✓ [6/3000] Processed: nl-20251222-0129.xml
+2026-02-13 14:11:15,312 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-83
+2026-02-13 14:11:18,912 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0083.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:18,912 - INFO - ⊘ Already exists: nl-20250620-0083.xml
+2026-02-13 14:11:19,216 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-81
+2026-02-13 14:11:23,307 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0081.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:23,307 - INFO - ⊘ Already exists: nl-20250620-0081.xml
+2026-02-13 14:11:23,620 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-71
+2026-02-13 14:11:27,882 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0071.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:27,882 - INFO - ⊘ Already exists: nl-20250620-0071.xml
+2026-02-13 14:11:28,184 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-57
+2026-02-13 14:11:33,277 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0057.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:33,282 - INFO - ⊘ Already exists: nl-20250620-0057.xml
+2026-02-13 14:11:33,583 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-96
+2026-02-13 14:11:38,298 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0096.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:38,312 - INFO - ⊘ Already exists: nl-20250620-0096.xml
+2026-02-13 14:11:38,620 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-116
+2026-02-13 14:11:42,294 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0116.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:42,337 - INFO - ✓ Created XML: nl-20251222-0116.xml (51.73 KB)
+2026-02-13 14:11:42,424 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.db060816d818004a4e9cc3fed18dae71 "HTTP/1.1 200 OK"
+2026-02-13 14:11:42,521 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0116.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:42,604 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:11:42,606 - INFO - ✓ Saved to DB: nl-20251222-0116.xml
+2026-02-13 14:11:42,606 - INFO - ✓ [7/3000] Processed: nl-20251222-0116.xml
+2026-02-13 14:11:42,918 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-80
+2026-02-13 14:11:47,405 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0080.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:47,409 - INFO - ⊘ Already exists: nl-20250620-0080.xml
+2026-02-13 14:11:47,716 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-103
+2026-02-13 14:11:51,373 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0103.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:51,373 - INFO - ⊘ Already exists: nl-20250620-0103.xml
+2026-02-13 14:11:51,686 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-67
+2026-02-13 14:11:56,461 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0067.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:56,493 - INFO - ✓ Created XML: nl-20250620-0067.xml (52.63 KB)
+2026-02-13 14:11:56,556 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.0f8cb6f8d9dfe05db02caed4fa94a4f5 "HTTP/1.1 200 OK"
+2026-02-13 14:11:56,640 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0067.xml "HTTP/1.1 200 OK"
+2026-02-13 14:11:56,723 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:11:56,725 - INFO - ✓ Saved to DB: nl-20250620-0067.xml
+2026-02-13 14:11:56,727 - INFO - ✓ [8/3000] Processed: nl-20250620-0067.xml
+2026-02-13 14:11:57,036 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-126
+2026-02-13 14:12:00,669 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0126.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:00,674 - INFO - ⊘ Already exists: nl-20251222-0126.xml
+2026-02-13 14:12:00,983 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-39
+2026-02-13 14:12:04,903 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0039.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:04,903 - INFO - ⊘ Already exists: nl-20250620-0039.xml
+2026-02-13 14:12:05,217 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-125
+2026-02-13 14:12:09,081 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0125.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:09,090 - INFO - ⊘ Already exists: nl-20251222-0125.xml
+2026-02-13 14:12:09,399 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-03-28-5
+2026-02-13 14:12:13,042 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250328-0005.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:13,107 - INFO - ✓ Created XML: nl-20250328-0005.xml (51.04 KB)
+2026-02-13 14:12:13,172 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.cbcd35ec9eab612b5f03e37da8fd4f7d "HTTP/1.1 200 OK"
+2026-02-13 14:12:13,242 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250328-0005.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:13,326 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:12:13,327 - INFO - ✓ Saved to DB: nl-20250328-0005.xml
+2026-02-13 14:12:13,328 - INFO - ✓ [9/3000] Processed: nl-20250328-0005.xml
+2026-02-13 14:12:13,636 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-106
+2026-02-13 14:12:18,322 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0106.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:18,329 - INFO - ⊘ Already exists: nl-20250620-0106.xml
+2026-02-13 14:12:18,633 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-128
+2026-02-13 14:12:22,418 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0128.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:22,418 - INFO - ⊘ Already exists: nl-20251222-0128.xml
+2026-02-13 14:12:22,735 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-107
+2026-02-13 14:12:27,703 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0107.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:27,715 - INFO - ⊘ Already exists: nl-20250620-0107.xml
+2026-02-13 14:12:28,017 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-117
+2026-02-13 14:12:31,672 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0117.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:31,674 - INFO - ⊘ Already exists: nl-20251222-0117.xml
+2026-02-13 14:12:31,983 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-100
+2026-02-13 14:12:36,961 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0100.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:36,973 - INFO - ⊘ Already exists: nl-20250620-0100.xml
+2026-02-13 14:12:37,287 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-74
+2026-02-13 14:12:41,002 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0074.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:41,013 - INFO - ⊘ Already exists: nl-20250620-0074.xml
+2026-02-13 14:12:41,315 - INFO -   📂 Subcategory: Central Regulations (SF)
+2026-02-13 14:12:41,315 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-13 14:12:42,146 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 14:12:48,184 - INFO -   Sidebar years (0): []
+2026-02-13 14:12:48,184 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 14:12:51,221 - INFO -   📅 2026: 33 new links (total: 33)
+2026-02-13 14:12:54,242 - INFO -   📅 2025: 250 new links (total: 283)
+2026-02-13 14:12:54,242 - INFO - ✓ Total unique URLs collected: 40
+2026-02-13 14:12:54,242 - INFO -   ✓ Found 40 documents
+2026-02-13 14:12:54,242 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-07-04-1474
+2026-02-13 14:12:58,014 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250704-1474.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:58,056 - INFO - ✓ Created XML: sf-20250704-1474.xml (53.28 KB)
+2026-02-13 14:12:58,137 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.1a45f0c781eb802f783fea891cba0b6b "HTTP/1.1 200 OK"
+2026-02-13 14:12:58,192 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250704-1474.xml "HTTP/1.1 200 OK"
+2026-02-13 14:12:58,323 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:12:58,323 - INFO - ✓ Saved to DB: sf-20250704-1474.xml
+2026-02-13 14:12:58,323 - INFO - ✓ [10/3000] Processed: sf-20250704-1474.xml
+2026-02-13 14:12:58,634 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-10-24-2096
+2026-02-13 14:13:03,188 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251024-2096.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:03,224 - INFO - ✓ Created XML: sf-20251024-2096.xml (46.57 KB)
+2026-02-13 14:13:03,303 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a55c0a90ba73b9cb95cb022efb676309 "HTTP/1.1 200 OK"
+2026-02-13 14:13:03,360 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251024-2096.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:03,454 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:03,460 - INFO - ✓ Saved to DB: sf-20251024-2096.xml
+2026-02-13 14:13:03,460 - INFO - ✓ [11/3000] Processed: sf-20251024-2096.xml
+2026-02-13 14:13:03,768 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-07-01-1396
+2026-02-13 14:13:08,647 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250701-1396.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:08,682 - INFO - ✓ Created XML: sf-20250701-1396.xml (52.90 KB)
+2026-02-13 14:13:08,755 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.34707e45ded6f3c40c200db3d55669ce "HTTP/1.1 200 OK"
+2026-02-13 14:13:08,857 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250701-1396.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:08,925 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:08,925 - INFO - ✓ Saved to DB: sf-20250701-1396.xml
+2026-02-13 14:13:08,925 - INFO - ✓ [12/3000] Processed: sf-20250701-1396.xml
+2026-02-13 14:13:09,237 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-08-29-1747
+2026-02-13 14:13:12,912 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250829-1747.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:12,945 - INFO - ✓ Created XML: sf-20250829-1747.xml (52.34 KB)
+2026-02-13 14:13:13,024 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.6ab2701cf58638d5a61f98a02bb90ba2 "HTTP/1.1 200 OK"
+2026-02-13 14:13:13,105 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250829-1747.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:13,176 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:13,178 - INFO - ✓ Saved to DB: sf-20250829-1747.xml
+2026-02-13 14:13:13,178 - INFO - ✓ [13/3000] Processed: sf-20250829-1747.xml
+2026-02-13 14:13:13,486 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-08-20-1676
+2026-02-13 14:13:17,710 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250820-1676.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:17,710 - INFO - ⊘ Already exists: sf-20250820-1676.xml
+2026-02-13 14:13:18,019 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2026-01-16-55
+2026-02-13 14:13:21,723 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260116-0055.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:21,743 - INFO - ✓ Created XML: sf-20260116-0055.xml (20.66 KB)
+2026-02-13 14:13:21,841 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.4bbbdf0c1a61818b67cd62994310dfca "HTTP/1.1 200 OK"
+2026-02-13 14:13:21,940 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260116-0055.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:22,009 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:22,009 - INFO - ✓ Saved to DB: sf-20260116-0055.xml
+2026-02-13 14:13:22,009 - INFO - ✓ [14/3000] Processed: sf-20260116-0055.xml
+2026-02-13 14:13:22,319 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2026-02-03-128
+2026-02-13 14:13:26,522 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260203-0128.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:26,557 - INFO - ✓ Created XML: sf-20260203-0128.xml (51.45 KB)
+2026-02-13 14:13:26,625 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.6c8898d810272a2914bf8fbceaa547f9 "HTTP/1.1 200 OK"
+2026-02-13 14:13:26,727 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260203-0128.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:26,813 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:26,814 - INFO - ✓ Saved to DB: sf-20260203-0128.xml
+2026-02-13 14:13:26,815 - INFO - ✓ [15/3000] Processed: sf-20260203-0128.xml
+2026-02-13 14:13:27,121 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-15-2610
+2026-02-13 14:13:30,928 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251215-2610.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:30,962 - INFO - ✓ Created XML: sf-20251215-2610.xml (52.36 KB)
+2026-02-13 14:13:31,023 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a066f0cb4776f3d668c147ae5d91e183 "HTTP/1.1 200 OK"
+2026-02-13 14:13:31,092 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251215-2610.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:31,171 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:31,172 - INFO - ✓ Saved to DB: sf-20251215-2610.xml
+2026-02-13 14:13:31,174 - INFO - ✓ [16/3000] Processed: sf-20251215-2610.xml
+2026-02-13 14:13:31,476 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-03-14-450
+2026-02-13 14:13:35,146 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250314-0450.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:35,146 - INFO - ⊘ Already exists: sf-20250314-0450.xml
+2026-02-13 14:13:35,449 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2026-01-12-28
+2026-02-13 14:13:39,181 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260112-0028.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:39,221 - INFO - ✓ Created XML: sf-20260112-0028.xml (55.14 KB)
+2026-02-13 14:13:39,291 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.5f5a77af9405306ec720453935a5ff3a "HTTP/1.1 200 OK"
+2026-02-13 14:13:39,376 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260112-0028.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:39,447 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:39,447 - INFO - ✓ Saved to DB: sf-20260112-0028.xml
+2026-02-13 14:13:39,447 - INFO - ✓ [17/3000] Processed: sf-20260112-0028.xml
+2026-02-13 14:13:39,749 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-19-2784
+2026-02-13 14:13:43,393 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2784.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:43,435 - INFO - ✓ Created XML: sf-20251219-2784.xml (34.63 KB)
+2026-02-13 14:13:43,506 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.e8ba48082f6574e30acf46abfd719991 "HTTP/1.1 200 OK"
+2026-02-13 14:13:43,623 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2784.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:43,689 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:43,690 - INFO - ✓ Saved to DB: sf-20251219-2784.xml
+2026-02-13 14:13:43,690 - INFO - ✓ [18/3000] Processed: sf-20251219-2784.xml
+2026-02-13 14:13:44,003 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-08-2457
+2026-02-13 14:13:48,182 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251208-2457.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:48,201 - INFO - ✓ Created XML: sf-20251208-2457.xml (43.26 KB)
+2026-02-13 14:13:48,280 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.65679c45a405ad102c0fcab8f036629a "HTTP/1.1 200 OK"
+2026-02-13 14:13:48,343 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251208-2457.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:48,408 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:48,408 - INFO - ✓ Saved to DB: sf-20251208-2457.xml
+2026-02-13 14:13:48,408 - INFO - ✓ [19/3000] Processed: sf-20251208-2457.xml
+2026-02-13 14:13:48,719 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-09-15-1843
+2026-02-13 14:13:52,738 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250915-1843.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:52,766 - INFO - ✓ Created XML: sf-20250915-1843.xml (53.25 KB)
+2026-02-13 14:13:52,824 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.d5236371754a4fc82711685d14b9e1e0 "HTTP/1.1 200 OK"
+2026-02-13 14:13:52,904 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250915-1843.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:52,967 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:52,967 - INFO - ✓ Saved to DB: sf-20250915-1843.xml
+2026-02-13 14:13:52,967 - INFO - ✓ [20/3000] Processed: sf-20250915-1843.xml
+2026-02-13 14:13:53,273 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-02-28-375
+2026-02-13 14:13:57,882 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250228-0375.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:57,908 - INFO - ✓ Created XML: sf-20250228-0375.xml (52.69 KB)
+2026-02-13 14:13:57,971 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.66a1a0f50e2f618602635df627294375 "HTTP/1.1 200 OK"
+2026-02-13 14:13:58,044 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250228-0375.xml "HTTP/1.1 200 OK"
+2026-02-13 14:13:58,110 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:13:58,111 - INFO - ✓ Saved to DB: sf-20250228-0375.xml
+2026-02-13 14:13:58,112 - INFO - ✓ [21/3000] Processed: sf-20250228-0375.xml
+2026-02-13 14:13:58,418 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-11-07-2230
+2026-02-13 14:14:02,025 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251107-2230.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:02,050 - INFO - ✓ Created XML: sf-20251107-2230.xml (10.76 KB)
+2026-02-13 14:14:02,120 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.b2d2e8961f5425bf3d421ec798e6c621 "HTTP/1.1 200 OK"
+2026-02-13 14:14:02,202 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251107-2230.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:02,275 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:02,277 - INFO - ✓ Saved to DB: sf-20251107-2230.xml
+2026-02-13 14:14:02,278 - INFO - ✓ [22/3000] Processed: sf-20251107-2230.xml
+2026-02-13 14:14:02,583 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-06-27-1345
+2026-02-13 14:14:06,889 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250627-1345.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:06,918 - INFO - ✓ Created XML: sf-20250627-1345.xml (36.92 KB)
+2026-02-13 14:14:06,973 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.63a8a741eac6d32a775938ce952dce9c "HTTP/1.1 200 OK"
+2026-02-13 14:14:07,054 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250627-1345.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:07,122 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:07,126 - INFO - ✓ Saved to DB: sf-20250627-1345.xml
+2026-02-13 14:14:07,127 - INFO - ✓ [23/3000] Processed: sf-20250627-1345.xml
+2026-02-13 14:14:07,438 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-19-2729
+2026-02-13 14:14:11,527 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2729.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:11,546 - INFO - ✓ Created XML: sf-20251219-2729.xml (52.85 KB)
+2026-02-13 14:14:11,701 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.fd2f2701b86f102f88a04efdd0348377 "HTTP/1.1 200 OK"
+2026-02-13 14:14:11,765 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2729.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:11,833 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:11,837 - INFO - ✓ Saved to DB: sf-20251219-2729.xml
+2026-02-13 14:14:11,838 - INFO - ✓ [24/3000] Processed: sf-20251219-2729.xml
+2026-02-13 14:14:12,138 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-09-24-1915
+2026-02-13 14:14:16,194 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250924-1915.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:16,225 - INFO - ✓ Created XML: sf-20250924-1915.xml (7.53 KB)
+2026-02-13 14:14:16,293 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.c9c8f02dd61b88ed22527e567a24a2f7 "HTTP/1.1 200 OK"
+2026-02-13 14:14:16,360 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250924-1915.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:16,447 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:16,449 - INFO - ✓ Saved to DB: sf-20250924-1915.xml
+2026-02-13 14:14:16,449 - INFO - ✓ [25/3000] Processed: sf-20250924-1915.xml
+2026-02-13 14:14:16,761 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-05-2419
+2026-02-13 14:14:20,376 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251205-2419.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:20,398 - INFO - ✓ Created XML: sf-20251205-2419.xml (5.88 KB)
+2026-02-13 14:14:20,456 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.92338a02e73db681db6e913f520c60ac "HTTP/1.1 200 OK"
+2026-02-13 14:14:20,527 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251205-2419.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:20,596 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:20,604 - INFO - ✓ Saved to DB: sf-20251205-2419.xml
+2026-02-13 14:14:20,605 - INFO - ✓ [26/3000] Processed: sf-20251205-2419.xml
+2026-02-13 14:14:20,914 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-06-12-1280
+2026-02-13 14:14:24,687 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250612-1280.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:24,721 - INFO - ✓ Created XML: sf-20250612-1280.xml (52.10 KB)
+2026-02-13 14:14:24,792 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.b84c3324ae0f3db7315e2bdd60861635 "HTTP/1.1 200 OK"
+2026-02-13 14:14:24,878 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250612-1280.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:24,940 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:24,940 - INFO - ✓ Saved to DB: sf-20250612-1280.xml
+2026-02-13 14:14:24,940 - INFO - ✓ [27/3000] Processed: sf-20250612-1280.xml
+2026-02-13 14:14:25,252 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-02-13-284
+2026-02-13 14:14:28,987 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250213-0284.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:29,029 - INFO - ✓ Created XML: sf-20250213-0284.xml (51.93 KB)
+2026-02-13 14:14:29,091 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.45a5f76175b5b7fccdbafbb6b6098ca4 "HTTP/1.1 200 OK"
+2026-02-13 14:14:29,171 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250213-0284.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:29,242 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:29,242 - INFO - ✓ Saved to DB: sf-20250213-0284.xml
+2026-02-13 14:14:29,242 - INFO - ✓ [28/3000] Processed: sf-20250213-0284.xml
+2026-02-13 14:14:29,549 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-23-2895
+2026-02-13 14:14:33,765 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251223-2895.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:33,767 - INFO - ⊘ Already exists: sf-20251223-2895.xml
+2026-02-13 14:14:34,083 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-05-14-795
+2026-02-13 14:14:37,711 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250514-0795.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:37,731 - INFO - ✓ Created XML: sf-20250514-0795.xml (8.54 KB)
+2026-02-13 14:14:37,788 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a9b50674d9b1c25b1bd40f39ef25b1e0 "HTTP/1.1 200 OK"
+2026-02-13 14:14:37,859 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250514-0795.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:37,925 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:37,925 - INFO - ✓ Saved to DB: sf-20250514-0795.xml
+2026-02-13 14:14:37,925 - INFO - ✓ [29/3000] Processed: sf-20250514-0795.xml
+2026-02-13 14:14:38,229 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-19-2805
+2026-02-13 14:14:42,425 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2805.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:42,461 - INFO - ✓ Created XML: sf-20251219-2805.xml (52.25 KB)
+2026-02-13 14:14:42,527 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a454b0df981e88435711c6483509c78b "HTTP/1.1 200 OK"
+2026-02-13 14:14:42,527 - INFO - 📦 Uploading batch of 30 files...
+2026-02-13 14:14:43,156 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250527-0021.xml "HTTP/2 200 OK"
+2026-02-13 14:14:43,156 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20250527-0021.xml
+2026-02-13 14:14:43,158 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20250527-0021.xml
+2026-02-13 14:14:43,293 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0121.xml "HTTP/2 200 OK"
+2026-02-13 14:14:43,295 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0121.xml
+2026-02-13 14:14:43,295 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20251222-0121.xml
+2026-02-13 14:14:43,441 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250527-0020.xml "HTTP/2 200 OK"
+2026-02-13 14:14:43,441 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20250527-0020.xml
+2026-02-13 14:14:43,451 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20250527-0020.xml
+2026-02-13 14:14:43,585 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0066.xml "HTTP/2 200 OK"
+2026-02-13 14:14:43,585 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0066.xml
+2026-02-13 14:14:43,585 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20250620-0066.xml
+2026-02-13 14:14:43,740 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0038.xml "HTTP/2 200 OK"
+2026-02-13 14:14:43,740 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0038.xml
+2026-02-13 14:14:43,740 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20250620-0038.xml
+2026-02-13 14:14:43,887 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0129.xml "HTTP/2 200 OK"
+2026-02-13 14:14:43,888 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0129.xml
+2026-02-13 14:14:43,889 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20251222-0129.xml
+2026-02-13 14:14:44,087 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0116.xml "HTTP/2 200 OK"
+2026-02-13 14:14:44,087 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0116.xml
+2026-02-13 14:14:44,087 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20251222-0116.xml
+2026-02-13 14:14:44,269 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0067.xml "HTTP/2 200 OK"
+2026-02-13 14:14:44,271 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0067.xml
+2026-02-13 14:14:44,272 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20250620-0067.xml
+2026-02-13 14:14:44,453 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250328-0005.xml "HTTP/2 200 OK"
+2026-02-13 14:14:44,454 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20250328-0005.xml
+2026-02-13 14:14:44,455 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20250328-0005.xml
+2026-02-13 14:14:44,606 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250704-1474.xml "HTTP/2 200 OK"
+2026-02-13 14:14:44,606 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250704-1474.xml
+2026-02-13 14:14:44,607 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250704-1474.xml
+2026-02-13 14:14:44,784 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251024-2096.xml "HTTP/2 200 OK"
+2026-02-13 14:14:44,801 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251024-2096.xml
+2026-02-13 14:14:44,801 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251024-2096.xml
+2026-02-13 14:14:44,961 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250701-1396.xml "HTTP/2 200 OK"
+2026-02-13 14:14:44,962 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250701-1396.xml
+2026-02-13 14:14:44,965 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250701-1396.xml
+2026-02-13 14:14:45,105 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250829-1747.xml "HTTP/2 200 OK"
+2026-02-13 14:14:45,108 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250829-1747.xml
+2026-02-13 14:14:45,108 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250829-1747.xml
+2026-02-13 14:14:45,269 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20260116-0055.xml "HTTP/2 200 OK"
+2026-02-13 14:14:45,269 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20260116-0055.xml
+2026-02-13 14:14:45,282 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20260116-0055.xml
+2026-02-13 14:14:45,412 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20260203-0128.xml "HTTP/2 200 OK"
+2026-02-13 14:14:45,414 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20260203-0128.xml
+2026-02-13 14:14:45,415 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20260203-0128.xml
+2026-02-13 14:14:45,563 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251215-2610.xml "HTTP/2 200 OK"
+2026-02-13 14:14:45,564 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251215-2610.xml
+2026-02-13 14:14:45,565 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251215-2610.xml
+2026-02-13 14:14:45,723 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20260112-0028.xml "HTTP/2 200 OK"
+2026-02-13 14:14:45,724 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20260112-0028.xml
+2026-02-13 14:14:45,726 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20260112-0028.xml
+2026-02-13 14:14:45,857 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2784.xml "HTTP/2 200 OK"
+2026-02-13 14:14:45,859 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2784.xml
+2026-02-13 14:14:45,859 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251219-2784.xml
+2026-02-13 14:14:46,009 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251208-2457.xml "HTTP/2 200 OK"
+2026-02-13 14:14:46,009 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251208-2457.xml
+2026-02-13 14:14:46,009 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251208-2457.xml
+2026-02-13 14:14:46,157 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250915-1843.xml "HTTP/2 200 OK"
+2026-02-13 14:14:46,157 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250915-1843.xml
+2026-02-13 14:14:46,157 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250915-1843.xml
+2026-02-13 14:14:46,317 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250228-0375.xml "HTTP/2 200 OK"
+2026-02-13 14:14:46,318 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250228-0375.xml
+2026-02-13 14:14:46,319 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250228-0375.xml
+2026-02-13 14:14:46,468 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251107-2230.xml "HTTP/2 200 OK"
+2026-02-13 14:14:46,470 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251107-2230.xml
+2026-02-13 14:14:46,470 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251107-2230.xml
+2026-02-13 14:14:46,588 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250627-1345.xml "HTTP/2 200 OK"
+2026-02-13 14:14:46,588 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250627-1345.xml
+2026-02-13 14:14:46,588 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250627-1345.xml
+2026-02-13 14:14:46,758 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2729.xml "HTTP/2 200 OK"
+2026-02-13 14:14:46,758 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2729.xml
+2026-02-13 14:14:46,758 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251219-2729.xml
+2026-02-13 14:14:46,906 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250924-1915.xml "HTTP/2 200 OK"
+2026-02-13 14:14:46,910 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250924-1915.xml
+2026-02-13 14:14:46,911 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250924-1915.xml
+2026-02-13 14:14:47,058 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251205-2419.xml "HTTP/2 200 OK"
+2026-02-13 14:14:47,058 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251205-2419.xml
+2026-02-13 14:14:47,062 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251205-2419.xml
+2026-02-13 14:14:47,208 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250612-1280.xml "HTTP/2 200 OK"
+2026-02-13 14:14:47,208 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250612-1280.xml
+2026-02-13 14:14:47,208 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250612-1280.xml
+2026-02-13 14:14:47,472 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250213-0284.xml "HTTP/2 200 OK"
+2026-02-13 14:14:47,472 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250213-0284.xml
+2026-02-13 14:14:47,474 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250213-0284.xml
+2026-02-13 14:14:47,608 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250514-0795.xml "HTTP/2 200 OK"
+2026-02-13 14:14:47,608 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250514-0795.xml
+2026-02-13 14:14:47,613 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250514-0795.xml
+2026-02-13 14:14:47,805 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2805.xml "HTTP/2 200 OK"
+2026-02-13 14:14:47,805 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2805.xml
+2026-02-13 14:14:47,805 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251219-2805.xml
+2026-02-13 14:14:47,805 - INFO - ✓ Batch uploaded: 30 files (Total: 30)
+2026-02-13 14:14:47,936 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2805.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:48,020 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:48,021 - INFO - ✓ Saved to DB: sf-20251219-2805.xml
+2026-02-13 14:14:48,021 - INFO - ✓ [30/3000] Processed: sf-20251219-2805.xml
+2026-02-13 14:14:48,326 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-10-2852
+2026-02-13 14:14:52,507 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251210-2852.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:52,550 - INFO - ✓ Created XML: sf-20251210-2852.xml (21.72 KB)
+2026-02-13 14:14:52,644 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.7a87fccbcd2b3e312ae472f5b537f510 "HTTP/1.1 200 OK"
+2026-02-13 14:14:52,735 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251210-2852.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:52,831 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:14:52,833 - INFO - ✓ Saved to DB: sf-20251210-2852.xml
+2026-02-13 14:14:52,833 - INFO - ✓ [31/3000] Processed: sf-20251210-2852.xml
+2026-02-13 14:14:53,138 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-06-20-1158
+2026-02-13 14:14:56,724 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250620-1158.xml "HTTP/1.1 200 OK"
+2026-02-13 14:14:56,724 - INFO - ⊘ Already exists: sf-20250620-1158.xml
+2026-02-13 14:14:57,052 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-19-2806
+2026-02-13 14:15:01,255 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2806.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:01,286 - INFO - ✓ Created XML: sf-20251219-2806.xml (23.88 KB)
+2026-02-13 14:15:01,369 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.26e47c54b57325e76ebee829aad63a68 "HTTP/1.1 200 OK"
+2026-02-13 14:15:01,443 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2806.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:01,529 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:01,530 - INFO - ✓ Saved to DB: sf-20251219-2806.xml
+2026-02-13 14:15:01,530 - INFO - ✓ [32/3000] Processed: sf-20251219-2806.xml
+2026-02-13 14:15:01,843 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-06-22-1188
+2026-02-13 14:15:05,506 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250622-1188.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:05,549 - INFO - ✓ Created XML: sf-20250622-1188.xml (53.90 KB)
+2026-02-13 14:15:05,622 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.ba14610c61fbe3306a6296b60a6f4a83 "HTTP/1.1 200 OK"
+2026-02-13 14:15:05,689 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250622-1188.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:05,777 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:05,778 - INFO - ✓ Saved to DB: sf-20250622-1188.xml
+2026-02-13 14:15:05,779 - INFO - ✓ [33/3000] Processed: sf-20250622-1188.xml
+2026-02-13 14:15:06,084 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-03-14-466
+2026-02-13 14:15:09,881 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250314-0466.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:09,915 - INFO - ✓ Created XML: sf-20250314-0466.xml (53.95 KB)
+2026-02-13 14:15:10,000 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.98cb6ac09aa05810ad9e6d5b7b3fde78 "HTTP/1.1 200 OK"
+2026-02-13 14:15:10,074 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250314-0466.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:10,155 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:10,158 - INFO - ✓ Saved to DB: sf-20250314-0466.xml
+2026-02-13 14:15:10,158 - INFO - ✓ [34/3000] Processed: sf-20250314-0466.xml
+2026-02-13 14:15:10,461 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-22-2831
+2026-02-13 14:15:14,097 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251222-2831.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:14,132 - INFO - ✓ Created XML: sf-20251222-2831.xml (20.47 KB)
+2026-02-13 14:15:14,191 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.d0ee9bc93f87b88cdb33980a23bf12e9 "HTTP/1.1 200 OK"
+2026-02-13 14:15:14,276 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251222-2831.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:14,354 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:14,355 - INFO - ✓ Saved to DB: sf-20251222-2831.xml
+2026-02-13 14:15:14,356 - INFO - ✓ [35/3000] Processed: sf-20251222-2831.xml
+2026-02-13 14:15:14,666 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-19-2809
+2026-02-13 14:15:18,363 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2809.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:18,386 - INFO - ✓ Created XML: sf-20251219-2809.xml (53.06 KB)
+2026-02-13 14:15:18,442 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a59b9736e61ea120ad180240b6ec86d9 "HTTP/1.1 200 OK"
+2026-02-13 14:15:18,525 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251219-2809.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:18,599 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:18,599 - INFO - ✓ Saved to DB: sf-20251219-2809.xml
+2026-02-13 14:15:18,600 - INFO - ✓ [36/3000] Processed: sf-20251219-2809.xml
+2026-02-13 14:15:18,913 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-06-21-1437
+2026-02-13 14:15:23,162 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250621-1437.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:23,203 - INFO - ✓ Created XML: sf-20250621-1437.xml (11.55 KB)
+2026-02-13 14:15:23,275 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.4577f25aaa0df08e71b3cf6a4e8a5c0c "HTTP/1.1 200 OK"
+2026-02-13 14:15:23,343 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250621-1437.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:23,410 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:23,410 - INFO - ✓ Saved to DB: sf-20250621-1437.xml
+2026-02-13 14:15:23,420 - INFO - ✓ [37/3000] Processed: sf-20250621-1437.xml
+2026-02-13 14:15:23,734 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-10-24-2093
+2026-02-13 14:15:27,443 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251024-2093.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:27,482 - INFO - ✓ Created XML: sf-20251024-2093.xml (38.56 KB)
+2026-02-13 14:15:27,569 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.750786e8c7881145e4f5108a4f51cfbe "HTTP/1.1 200 OK"
+2026-02-13 14:15:27,660 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251024-2093.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:27,756 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:27,756 - INFO - ✓ Saved to DB: sf-20251024-2093.xml
+2026-02-13 14:15:27,756 - INFO - ✓ [38/3000] Processed: sf-20251024-2093.xml
+2026-02-13 14:15:28,068 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-03-18-523
+2026-02-13 14:15:32,243 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250318-0523.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:32,286 - INFO - ✓ Created XML: sf-20250318-0523.xml (52.25 KB)
+2026-02-13 14:15:32,356 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.2fc8c1fe6d5be591f049ba25a57f28b1 "HTTP/1.1 200 OK"
+2026-02-13 14:15:32,423 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250318-0523.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:32,497 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:32,499 - INFO - ✓ Saved to DB: sf-20250318-0523.xml
+2026-02-13 14:15:32,500 - INFO - ✓ [39/3000] Processed: sf-20250318-0523.xml
+2026-02-13 14:15:32,814 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-06-16-1701
+2026-02-13 14:15:36,715 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250616-1701.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:36,757 - INFO - ✓ Created XML: sf-20250616-1701.xml (53.43 KB)
+2026-02-13 14:15:36,823 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.bee7cf4979465b58c036a75393b4b959 "HTTP/1.1 200 OK"
+2026-02-13 14:15:36,905 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250616-1701.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:36,977 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:36,978 - INFO - ✓ Saved to DB: sf-20250616-1701.xml
+2026-02-13 14:15:36,979 - INFO - ✓ [40/3000] Processed: sf-20250616-1701.xml
+2026-02-13 14:15:37,286 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-04-03-594
+2026-02-13 14:15:41,463 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250403-0594.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:41,500 - INFO - ✓ Created XML: sf-20250403-0594.xml (12.63 KB)
+2026-02-13 14:15:41,555 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.72ff6e6cc6ea73c50d5878a10aeca1a9 "HTTP/1.1 200 OK"
+2026-02-13 14:15:41,626 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250403-0594.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:41,714 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:41,716 - INFO - ✓ Saved to DB: sf-20250403-0594.xml
+2026-02-13 14:15:41,716 - INFO - ✓ [41/3000] Processed: sf-20250403-0594.xml
+2026-02-13 14:15:42,032 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-02-2405
+2026-02-13 14:15:45,978 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251202-2405.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:46,022 - INFO - ✓ Created XML: sf-20251202-2405.xml (52.33 KB)
+2026-02-13 14:15:46,092 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.8371487367d4400bf33ab7fb5e598b82 "HTTP/1.1 200 OK"
+2026-02-13 14:15:46,172 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251202-2405.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:46,243 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:46,243 - INFO - ✓ Saved to DB: sf-20251202-2405.xml
+2026-02-13 14:15:46,249 - INFO - ✓ [42/3000] Processed: sf-20251202-2405.xml
+2026-02-13 14:15:46,555 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-06-26-1539
+2026-02-13 14:15:50,312 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250626-1539.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:50,337 - INFO - ✓ Created XML: sf-20250626-1539.xml (52.06 KB)
+2026-02-13 14:15:50,418 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.351b98ea66b7b8e75b4107ddb9335326 "HTTP/1.1 200 OK"
+2026-02-13 14:15:50,522 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20250626-1539.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:50,593 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:50,593 - INFO - ✓ Saved to DB: sf-20250626-1539.xml
+2026-02-13 14:15:50,593 - INFO - ✓ [43/3000] Processed: sf-20250626-1539.xml
+2026-02-13 14:15:50,905 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-12-2507
+2026-02-13 14:15:54,461 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251212-2507.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:54,493 - INFO - ✓ Created XML: sf-20251212-2507.xml (10.96 KB)
+2026-02-13 14:15:54,559 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.094f511e2376761a410478ec84160507 "HTTP/1.1 200 OK"
+2026-02-13 14:15:54,639 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251212-2507.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:54,724 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:54,725 - INFO - ✓ Saved to DB: sf-20251212-2507.xml
+2026-02-13 14:15:54,725 - INFO - ✓ [44/3000] Processed: sf-20251212-2507.xml
+2026-02-13 14:15:55,038 - INFO - 🔍 Scraping: https://lovdata.no/dokument/SF/forskrift/2025-12-01-2374
+2026-02-13 14:15:58,618 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251201-2374.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:58,661 - INFO - ✓ Created XML: sf-20251201-2374.xml (33.11 KB)
+2026-02-13 14:15:58,741 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.55cd190ec271867c0446e1124ca2021b "HTTP/1.1 200 OK"
+2026-02-13 14:15:58,810 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20251201-2374.xml "HTTP/1.1 200 OK"
+2026-02-13 14:15:58,894 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:15:58,894 - INFO - ✓ Saved to DB: sf-20251201-2374.xml
+2026-02-13 14:15:58,904 - INFO - ✓ [45/3000] Processed: sf-20251201-2374.xml
+2026-02-13 14:15:59,205 - INFO -   📂 Subcategory: Local Regulations (LF)
+2026-02-13 14:15:59,205 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-13 14:16:00,000 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 14:16:06,030 - INFO -   Sidebar years (0): []
+2026-02-13 14:16:06,030 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 14:16:09,073 - INFO -   📅 2026: 28 new links (total: 28)
+2026-02-13 14:16:12,147 - INFO -   📅 2025: 250 new links (total: 278)
+2026-02-13 14:16:12,147 - INFO - ✓ Total unique URLs collected: 40
+2026-02-13 14:16:12,147 - INFO -   ✓ Found 40 documents
+2026-02-13 14:16:12,150 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-12-2579
+2026-02-13 14:16:15,846 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2579.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:15,893 - INFO - ✓ Created XML: lf-20251212-2579.xml (30.85 KB)
+2026-02-13 14:16:15,958 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.6feca4ee4e45a06e9972f0d38d736074 "HTTP/1.1 200 OK"
+2026-02-13 14:16:16,026 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2579.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:16,107 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:16:16,107 - INFO - ✓ Saved to DB: lf-20251212-2579.xml
+2026-02-13 14:16:16,107 - INFO - ✓ [46/3000] Processed: lf-20251212-2579.xml
+2026-02-13 14:16:16,414 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-18-3023
+2026-02-13 14:16:20,451 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-3023.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:20,488 - INFO - ✓ Created XML: lf-20251218-3023.xml (62.44 KB)
+2026-02-13 14:16:20,560 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.aae136f13b016ac2d42170be9968ea15 "HTTP/1.1 200 OK"
+2026-02-13 14:16:20,627 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-3023.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:20,708 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:16:20,722 - INFO - ✓ Saved to DB: lf-20251218-3023.xml
+2026-02-13 14:16:20,722 - INFO - ✓ [47/3000] Processed: lf-20251218-3023.xml
+2026-02-13 14:16:21,030 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-12-2528
+2026-02-13 14:16:24,660 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2528.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:24,710 - INFO - ✓ Created XML: lf-20251212-2528.xml (45.04 KB)
+2026-02-13 14:16:24,777 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.75bd0ba87de478ab9e4ef60e07a57a09 "HTTP/1.1 200 OK"
+2026-02-13 14:16:24,855 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2528.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:24,924 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:16:24,924 - INFO - ✓ Saved to DB: lf-20251212-2528.xml
+2026-02-13 14:16:24,924 - INFO - ✓ [48/3000] Processed: lf-20251212-2528.xml
+2026-02-13 14:16:25,229 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-11-20-2312
+2026-02-13 14:16:43,287 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251120-2312.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:43,315 - INFO - ✓ Created XML: lf-20251120-2312.xml (51.47 KB)
+2026-02-13 14:16:43,372 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.7f265ac0d2c264c98b2d4b522834bbb5 "HTTP/1.1 200 OK"
+2026-02-13 14:16:43,441 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251120-2312.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:43,507 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:16:43,510 - INFO - ✓ Saved to DB: lf-20251120-2312.xml
+2026-02-13 14:16:43,510 - INFO - ✓ [49/3000] Processed: lf-20251120-2312.xml
+2026-02-13 14:16:43,818 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-11-27-2443
+2026-02-13 14:16:50,458 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251127-2443.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:50,510 - INFO - ✓ Created XML: lf-20251127-2443.xml (17.54 KB)
+2026-02-13 14:16:50,574 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.b97ec3e393f6ac24ce16ec2e93ce5c2a "HTTP/1.1 200 OK"
+2026-02-13 14:16:50,645 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251127-2443.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:50,711 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:16:50,711 - INFO - ✓ Saved to DB: lf-20251127-2443.xml
+2026-02-13 14:16:50,711 - INFO - ✓ [50/3000] Processed: lf-20251127-2443.xml
+2026-02-13 14:16:51,018 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-11-19-2315
+2026-02-13 14:16:55,484 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251119-2315.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:55,532 - INFO - ✓ Created XML: lf-20251119-2315.xml (51.62 KB)
+2026-02-13 14:16:55,588 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.38919ac11f28b6ce1af48d34ffd8fd42 "HTTP/1.1 200 OK"
+2026-02-13 14:16:55,641 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251119-2315.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:55,727 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:16:55,728 - INFO - ✓ Saved to DB: lf-20251119-2315.xml
+2026-02-13 14:16:55,728 - INFO - ✓ [51/3000] Processed: lf-20251119-2315.xml
+2026-02-13 14:16:56,038 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2026-02-05-161
+2026-02-13 14:16:59,612 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260205-0161.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:59,662 - INFO - ✓ Created XML: lf-20260205-0161.xml (9.83 KB)
+2026-02-13 14:16:59,725 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.72ccaa088b6c8c0ea66c3f1ea3342ac4 "HTTP/1.1 200 OK"
+2026-02-13 14:16:59,793 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260205-0161.xml "HTTP/1.1 200 OK"
+2026-02-13 14:16:59,883 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:16:59,884 - INFO - ✓ Saved to DB: lf-20260205-0161.xml
+2026-02-13 14:16:59,885 - INFO - ✓ [52/3000] Processed: lf-20260205-0161.xml
+2026-02-13 14:17:00,188 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-02-2398
+2026-02-13 14:17:05,477 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251202-2398.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:05,490 - INFO - ✓ Created XML: lf-20251202-2398.xml (18.31 KB)
+2026-02-13 14:17:05,574 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.b705177fff6e0ce42099b4a2e8849700 "HTTP/1.1 200 OK"
+2026-02-13 14:17:05,643 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251202-2398.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:05,730 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:05,731 - INFO - ✓ Saved to DB: lf-20251202-2398.xml
+2026-02-13 14:17:05,732 - INFO - ✓ [53/3000] Processed: lf-20251202-2398.xml
+2026-02-13 14:17:06,037 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2026-01-29-132
+2026-02-13 14:17:09,747 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260129-0132.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:09,761 - INFO - ✓ Created XML: lf-20260129-0132.xml (47.78 KB)
+2026-02-13 14:17:09,842 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.f6e7a27b4f07b66b5aa1129fe623f1e5 "HTTP/1.1 200 OK"
+2026-02-13 14:17:09,913 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260129-0132.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:09,990 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:09,990 - INFO - ✓ Saved to DB: lf-20260129-0132.xml
+2026-02-13 14:17:09,990 - INFO - ✓ [54/3000] Processed: lf-20260129-0132.xml
+2026-02-13 14:17:10,304 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-17-2944
+2026-02-13 14:17:14,536 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251217-2944.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:14,588 - INFO - ✓ Created XML: lf-20251217-2944.xml (32.95 KB)
+2026-02-13 14:17:14,658 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.7cc7a8e2a6c4282553aa90ca7e626ff4 "HTTP/1.1 200 OK"
+2026-02-13 14:17:14,740 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251217-2944.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:14,809 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:14,809 - INFO - ✓ Saved to DB: lf-20251217-2944.xml
+2026-02-13 14:17:14,809 - INFO - ✓ [55/3000] Processed: lf-20251217-2944.xml
+2026-02-13 14:17:15,117 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-18-2931
+2026-02-13 14:17:19,069 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2931.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:19,105 - INFO - ✓ Created XML: lf-20251218-2931.xml (65.58 KB)
+2026-02-13 14:17:19,176 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.5c4018ec6d71b53b0b2c27dc6cbef7ab "HTTP/1.1 200 OK"
+2026-02-13 14:17:19,259 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2931.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:19,337 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:19,339 - INFO - ✓ Saved to DB: lf-20251218-2931.xml
+2026-02-13 14:17:19,340 - INFO - ✓ [56/3000] Processed: lf-20251218-2931.xml
+2026-02-13 14:17:19,652 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-08-3027
+2026-02-13 14:17:24,054 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251208-3027.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:24,054 - INFO - ⊘ Already exists: lf-20251208-3027.xml
+2026-02-13 14:17:24,367 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-11-2635
+2026-02-13 14:17:28,213 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251211-2635.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:28,255 - INFO - ✓ Created XML: lf-20251211-2635.xml (66.66 KB)
+2026-02-13 14:17:28,326 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.62ffd9e27f78a7ec3309b683cfe56d75 "HTTP/1.1 200 OK"
+2026-02-13 14:17:28,393 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251211-2635.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:28,457 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:28,457 - INFO - ✓ Saved to DB: lf-20251211-2635.xml
+2026-02-13 14:17:28,457 - INFO - ✓ [57/3000] Processed: lf-20251211-2635.xml
+2026-02-13 14:17:28,769 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-15-2873
+2026-02-13 14:17:33,308 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251215-2873.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:33,347 - INFO - ✓ Created XML: lf-20251215-2873.xml (50.92 KB)
+2026-02-13 14:17:33,425 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.0034c4a29bd5ccba61f01f4e8cc56bca "HTTP/1.1 200 OK"
+2026-02-13 14:17:33,506 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251215-2873.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:33,578 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:33,579 - INFO - ✓ Saved to DB: lf-20251215-2873.xml
+2026-02-13 14:17:33,580 - INFO - ✓ [58/3000] Processed: lf-20251215-2873.xml
+2026-02-13 14:17:33,883 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-11-01-2223
+2026-02-13 14:17:37,525 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251101-2223.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:37,559 - INFO - ✓ Created XML: lf-20251101-2223.xml (10.61 KB)
+2026-02-13 14:17:37,624 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.8234815be201f23ca87f2acfc7cf1f83 "HTTP/1.1 200 OK"
+2026-02-13 14:17:37,708 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251101-2223.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:37,773 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:37,775 - INFO - ✓ Saved to DB: lf-20251101-2223.xml
+2026-02-13 14:17:37,775 - INFO - ✓ [59/3000] Processed: lf-20251101-2223.xml
+2026-02-13 14:17:38,083 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-18-2883
+2026-02-13 14:17:42,277 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2883.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:42,280 - INFO - ⊘ Already exists: lf-20251218-2883.xml
+2026-02-13 14:17:42,587 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-11-19-2480
+2026-02-13 14:17:46,230 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251119-2480.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:46,266 - INFO - ✓ Created XML: lf-20251119-2480.xml (52.31 KB)
+2026-02-13 14:17:46,340 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.904506e2d1cdef59a3426987871ddf29 "HTTP/1.1 200 OK"
+2026-02-13 14:17:46,340 - INFO - 📦 Uploading batch of 30 files...
+2026-02-13 14:17:46,671 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251210-2852.xml "HTTP/2 200 OK"
+2026-02-13 14:17:46,671 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251210-2852.xml
+2026-02-13 14:17:46,671 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251210-2852.xml
+2026-02-13 14:17:46,840 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2806.xml "HTTP/2 200 OK"
+2026-02-13 14:17:46,840 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2806.xml
+2026-02-13 14:17:46,842 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251219-2806.xml
+2026-02-13 14:17:47,053 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250622-1188.xml "HTTP/2 200 OK"
+2026-02-13 14:17:47,055 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250622-1188.xml
+2026-02-13 14:17:47,056 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250622-1188.xml
+2026-02-13 14:17:47,238 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250314-0466.xml "HTTP/2 200 OK"
+2026-02-13 14:17:47,238 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250314-0466.xml
+2026-02-13 14:17:47,240 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250314-0466.xml
+2026-02-13 14:17:47,389 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251222-2831.xml "HTTP/2 200 OK"
+2026-02-13 14:17:47,389 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251222-2831.xml
+2026-02-13 14:17:47,392 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251222-2831.xml
+2026-02-13 14:17:47,558 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2809.xml "HTTP/2 200 OK"
+2026-02-13 14:17:47,572 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251219-2809.xml
+2026-02-13 14:17:47,572 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251219-2809.xml
+2026-02-13 14:17:47,723 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250621-1437.xml "HTTP/2 200 OK"
+2026-02-13 14:17:47,725 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250621-1437.xml
+2026-02-13 14:17:47,726 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250621-1437.xml
+2026-02-13 14:17:47,873 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251024-2093.xml "HTTP/2 200 OK"
+2026-02-13 14:17:47,888 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251024-2093.xml
+2026-02-13 14:17:47,889 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251024-2093.xml
+2026-02-13 14:17:48,090 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250318-0523.xml "HTTP/2 200 OK"
+2026-02-13 14:17:48,091 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250318-0523.xml
+2026-02-13 14:17:48,092 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250318-0523.xml
+2026-02-13 14:17:48,241 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250616-1701.xml "HTTP/2 200 OK"
+2026-02-13 14:17:48,243 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250616-1701.xml
+2026-02-13 14:17:48,244 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250616-1701.xml
+2026-02-13 14:17:48,422 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250403-0594.xml "HTTP/2 200 OK"
+2026-02-13 14:17:48,422 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250403-0594.xml
+2026-02-13 14:17:48,437 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250403-0594.xml
+2026-02-13 14:17:48,588 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251202-2405.xml "HTTP/2 200 OK"
+2026-02-13 14:17:48,604 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251202-2405.xml
+2026-02-13 14:17:48,605 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251202-2405.xml
+2026-02-13 14:17:48,748 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20250626-1539.xml "HTTP/2 200 OK"
+2026-02-13 14:17:48,751 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20250626-1539.xml
+2026-02-13 14:17:48,752 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20250626-1539.xml
+2026-02-13 14:17:48,904 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251212-2507.xml "HTTP/2 200 OK"
+2026-02-13 14:17:48,906 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251212-2507.xml
+2026-02-13 14:17:48,906 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251212-2507.xml
+2026-02-13 14:17:49,042 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20251201-2374.xml "HTTP/2 200 OK"
+2026-02-13 14:17:49,042 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20251201-2374.xml
+2026-02-13 14:17:49,056 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20251201-2374.xml
+2026-02-13 14:17:49,264 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2579.xml "HTTP/2 200 OK"
+2026-02-13 14:17:49,265 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2579.xml
+2026-02-13 14:17:49,268 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251212-2579.xml
+2026-02-13 14:17:49,440 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-3023.xml "HTTP/2 200 OK"
+2026-02-13 14:17:49,441 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-3023.xml
+2026-02-13 14:17:49,443 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251218-3023.xml
+2026-02-13 14:17:49,589 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2528.xml "HTTP/2 200 OK"
+2026-02-13 14:17:49,589 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2528.xml
+2026-02-13 14:17:49,589 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251212-2528.xml
+2026-02-13 14:17:49,768 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251120-2312.xml "HTTP/2 200 OK"
+2026-02-13 14:17:49,768 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251120-2312.xml
+2026-02-13 14:17:49,769 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251120-2312.xml
+2026-02-13 14:17:49,904 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251127-2443.xml "HTTP/2 200 OK"
+2026-02-13 14:17:49,904 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251127-2443.xml
+2026-02-13 14:17:49,904 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251127-2443.xml
+2026-02-13 14:17:50,070 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251119-2315.xml "HTTP/2 200 OK"
+2026-02-13 14:17:50,070 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251119-2315.xml
+2026-02-13 14:17:50,070 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251119-2315.xml
+2026-02-13 14:17:50,272 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20260205-0161.xml "HTTP/2 200 OK"
+2026-02-13 14:17:50,275 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20260205-0161.xml
+2026-02-13 14:17:50,276 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20260205-0161.xml
+2026-02-13 14:17:50,472 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251202-2398.xml "HTTP/2 200 OK"
+2026-02-13 14:17:50,474 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251202-2398.xml
+2026-02-13 14:17:50,474 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251202-2398.xml
+2026-02-13 14:17:50,651 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20260129-0132.xml "HTTP/2 200 OK"
+2026-02-13 14:17:50,651 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20260129-0132.xml
+2026-02-13 14:17:50,651 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20260129-0132.xml
+2026-02-13 14:17:50,884 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251217-2944.xml "HTTP/2 200 OK"
+2026-02-13 14:17:50,884 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251217-2944.xml
+2026-02-13 14:17:50,884 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251217-2944.xml
+2026-02-13 14:17:51,090 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-2931.xml "HTTP/2 200 OK"
+2026-02-13 14:17:51,090 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-2931.xml
+2026-02-13 14:17:51,092 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251218-2931.xml
+2026-02-13 14:17:51,278 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251211-2635.xml "HTTP/2 200 OK"
+2026-02-13 14:17:51,278 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251211-2635.xml
+2026-02-13 14:17:51,281 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251211-2635.xml
+2026-02-13 14:17:51,443 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251215-2873.xml "HTTP/2 200 OK"
+2026-02-13 14:17:51,443 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251215-2873.xml
+2026-02-13 14:17:51,444 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251215-2873.xml
+2026-02-13 14:17:51,587 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251101-2223.xml "HTTP/2 200 OK"
+2026-02-13 14:17:51,587 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251101-2223.xml
+2026-02-13 14:17:51,587 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251101-2223.xml
+2026-02-13 14:17:51,771 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251119-2480.xml "HTTP/2 200 OK"
+2026-02-13 14:17:51,771 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251119-2480.xml
+2026-02-13 14:17:51,773 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251119-2480.xml
+2026-02-13 14:17:51,773 - INFO - ✓ Batch uploaded: 30 files (Total: 60)
+2026-02-13 14:17:51,923 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251119-2480.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:51,993 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:51,996 - INFO - ✓ Saved to DB: lf-20251119-2480.xml
+2026-02-13 14:17:51,996 - INFO - ✓ [60/3000] Processed: lf-20251119-2480.xml
+2026-02-13 14:17:52,307 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-08-2563
+2026-02-13 14:17:56,781 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251208-2563.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:56,819 - INFO - ✓ Created XML: lf-20251208-2563.xml (52.23 KB)
+2026-02-13 14:17:56,872 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.9f95996a5bf040f6d3d52c6fc81be882 "HTTP/1.1 200 OK"
+2026-02-13 14:17:56,957 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251208-2563.xml "HTTP/1.1 200 OK"
+2026-02-13 14:17:57,011 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:17:57,022 - INFO - ✓ Saved to DB: lf-20251208-2563.xml
+2026-02-13 14:17:57,022 - INFO - ✓ [61/3000] Processed: lf-20251208-2563.xml
+2026-02-13 14:17:57,329 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-16-2876
+2026-02-13 14:18:00,956 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251216-2876.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:00,998 - INFO - ✓ Created XML: lf-20251216-2876.xml (51.26 KB)
+2026-02-13 14:18:01,058 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.6200ba7515f9dffe1a6ccd01f3e3479c "HTTP/1.1 200 OK"
+2026-02-13 14:18:01,125 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251216-2876.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:01,196 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:01,196 - INFO - ✓ Saved to DB: lf-20251216-2876.xml
+2026-02-13 14:18:01,196 - INFO - ✓ [62/3000] Processed: lf-20251216-2876.xml
+2026-02-13 14:18:01,501 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-11-20-2661
+2026-02-13 14:18:05,284 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251120-2661.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:05,328 - INFO - ✓ Created XML: lf-20251120-2661.xml (53.80 KB)
+2026-02-13 14:18:05,390 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.357211e9d4cf86de0321f3ef5e64066f "HTTP/1.1 200 OK"
+2026-02-13 14:18:05,464 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251120-2661.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:05,541 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:05,543 - INFO - ✓ Saved to DB: lf-20251120-2661.xml
+2026-02-13 14:18:05,543 - INFO - ✓ [63/3000] Processed: lf-20251120-2661.xml
+2026-02-13 14:18:05,845 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-10-30-2154
+2026-02-13 14:18:09,473 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251030-2154.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:09,513 - INFO - ✓ Created XML: lf-20251030-2154.xml (52.17 KB)
+2026-02-13 14:18:09,574 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.5bc4333d220029156cb4d138d447a77a "HTTP/1.1 200 OK"
+2026-02-13 14:18:09,641 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251030-2154.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:09,708 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:09,708 - INFO - ✓ Saved to DB: lf-20251030-2154.xml
+2026-02-13 14:18:09,708 - INFO - ✓ [64/3000] Processed: lf-20251030-2154.xml
+2026-02-13 14:18:10,035 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-10-30-2157
+2026-02-13 14:18:13,621 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251030-2157.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:13,645 - INFO - ✓ Created XML: lf-20251030-2157.xml (8.89 KB)
+2026-02-13 14:18:13,709 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.2e3cda1feb71f4b8e239be147432ae01 "HTTP/1.1 200 OK"
+2026-02-13 14:18:13,776 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251030-2157.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:13,839 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:13,840 - INFO - ✓ Saved to DB: lf-20251030-2157.xml
+2026-02-13 14:18:13,841 - INFO - ✓ [65/3000] Processed: lf-20251030-2157.xml
+2026-02-13 14:18:14,144 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-12-2543
+2026-02-13 14:18:18,392 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2543.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:18,413 - INFO - ✓ Created XML: lf-20251212-2543.xml (45.45 KB)
+2026-02-13 14:18:18,480 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.5ecec76b25d7bab53db832724b59f4f4 "HTTP/1.1 200 OK"
+2026-02-13 14:18:18,544 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2543.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:18,627 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:18,627 - INFO - ✓ Saved to DB: lf-20251212-2543.xml
+2026-02-13 14:18:18,627 - INFO - ✓ [66/3000] Processed: lf-20251212-2543.xml
+2026-02-13 14:18:18,933 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-17-2998
+2026-02-13 14:18:22,559 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251217-2998.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:22,559 - INFO - ⊘ Already exists: lf-20251217-2998.xml
+2026-02-13 14:18:22,872 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-11-2603
+2026-02-13 14:18:27,082 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251211-2603.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:27,086 - INFO - ⊘ Already exists: lf-20251211-2603.xml
+2026-02-13 14:18:27,401 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-18-2967
+2026-02-13 14:18:31,124 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2967.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:31,172 - INFO - ✓ Created XML: lf-20251218-2967.xml (52.76 KB)
+2026-02-13 14:18:31,238 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.56821f7c381c1120eced1914fa517004 "HTTP/1.1 200 OK"
+2026-02-13 14:18:31,310 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2967.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:31,403 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:31,404 - INFO - ✓ Saved to DB: lf-20251218-2967.xml
+2026-02-13 14:18:31,404 - INFO - ✓ [67/3000] Processed: lf-20251218-2967.xml
+2026-02-13 14:18:31,707 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-17-2925
+2026-02-13 14:18:35,329 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251217-2925.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:35,361 - INFO - ✓ Created XML: lf-20251217-2925.xml (20.18 KB)
+2026-02-13 14:18:35,424 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.16182041c610f29c8624715590b33180 "HTTP/1.1 200 OK"
+2026-02-13 14:18:35,492 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251217-2925.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:35,560 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:35,560 - INFO - ✓ Saved to DB: lf-20251217-2925.xml
+2026-02-13 14:18:35,560 - INFO - ✓ [68/3000] Processed: lf-20251217-2925.xml
+2026-02-13 14:18:35,867 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-12-2516
+2026-02-13 14:18:39,528 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2516.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:39,582 - INFO - ✓ Created XML: lf-20251212-2516.xml (49.71 KB)
+2026-02-13 14:18:39,643 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.fd842df9635a082fd8a7be8189b24271 "HTTP/1.1 200 OK"
+2026-02-13 14:18:39,726 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2516.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:39,795 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:39,795 - INFO - ✓ Saved to DB: lf-20251212-2516.xml
+2026-02-13 14:18:39,800 - INFO - ✓ [69/3000] Processed: lf-20251212-2516.xml
+2026-02-13 14:18:40,112 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-16-2995
+2026-02-13 14:18:43,776 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251216-2995.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:43,826 - INFO - ✓ Created XML: lf-20251216-2995.xml (51.23 KB)
+2026-02-13 14:18:43,874 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.8e9b83d6ebef9d3d24fb713e9bec46ff "HTTP/1.1 200 OK"
+2026-02-13 14:18:43,957 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251216-2995.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:44,028 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:44,029 - INFO - ✓ Saved to DB: lf-20251216-2995.xml
+2026-02-13 14:18:44,029 - INFO - ✓ [70/3000] Processed: lf-20251216-2995.xml
+2026-02-13 14:18:44,335 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-02-3026
+2026-02-13 14:18:48,497 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251202-3026.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:48,534 - INFO - ✓ Created XML: lf-20251202-3026.xml (7.15 KB)
+2026-02-13 14:18:48,593 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.5adbf657ee7028220d422681834756e2 "HTTP/1.1 200 OK"
+2026-02-13 14:18:48,659 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251202-3026.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:48,735 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:48,735 - INFO - ✓ Saved to DB: lf-20251202-3026.xml
+2026-02-13 14:18:48,735 - INFO - ✓ [71/3000] Processed: lf-20251202-3026.xml
+2026-02-13 14:18:49,044 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-18-2703
+2026-02-13 14:18:52,650 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2703.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:52,688 - INFO - ✓ Created XML: lf-20251218-2703.xml (26.93 KB)
+2026-02-13 14:18:52,758 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.081ad3f937287f2235cc641ffcb9ef30 "HTTP/1.1 200 OK"
+2026-02-13 14:18:52,831 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2703.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:52,892 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:52,892 - INFO - ✓ Saved to DB: lf-20251218-2703.xml
+2026-02-13 14:18:52,900 - INFO - ✓ [72/3000] Processed: lf-20251218-2703.xml
+2026-02-13 14:18:53,205 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-10-30-2145
+2026-02-13 14:18:57,401 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251030-2145.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:57,419 - INFO - ✓ Created XML: lf-20251030-2145.xml (38.39 KB)
+2026-02-13 14:18:57,472 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.d63fbaf422ad60fbc9e524f25508443f "HTTP/1.1 200 OK"
+2026-02-13 14:18:57,541 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251030-2145.xml "HTTP/1.1 200 OK"
+2026-02-13 14:18:57,612 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:18:57,622 - INFO - ✓ Saved to DB: lf-20251030-2145.xml
+2026-02-13 14:18:57,622 - INFO - ✓ [73/3000] Processed: lf-20251030-2145.xml
+2026-02-13 14:18:57,934 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-04-2548
+2026-02-13 14:19:01,558 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251204-2548.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:01,594 - INFO - ✓ Created XML: lf-20251204-2548.xml (17.12 KB)
+2026-02-13 14:19:01,657 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a9cdfae7b1928fd175964b4d993945a3 "HTTP/1.1 200 OK"
+2026-02-13 14:19:01,732 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251204-2548.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:01,809 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:19:01,812 - INFO - ✓ Saved to DB: lf-20251204-2548.xml
+2026-02-13 14:19:01,812 - INFO - ✓ [74/3000] Processed: lf-20251204-2548.xml
+2026-02-13 14:19:02,122 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-18-3016
+2026-02-13 14:19:05,789 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-3016.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:05,789 - INFO - ⊘ Already exists: lf-20251218-3016.xml
+2026-02-13 14:19:06,101 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-15-2941
+2026-02-13 14:19:09,695 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251215-2941.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:09,735 - INFO - ✓ Created XML: lf-20251215-2941.xml (11.00 KB)
+2026-02-13 14:19:09,790 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.5b16a33c23b3a12300a50dd95954a940 "HTTP/1.1 200 OK"
+2026-02-13 14:19:09,859 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251215-2941.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:09,926 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:19:09,926 - INFO - ✓ Saved to DB: lf-20251215-2941.xml
+2026-02-13 14:19:09,926 - INFO - ✓ [75/3000] Processed: lf-20251215-2941.xml
+2026-02-13 14:19:10,228 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-09-3013
+2026-02-13 14:19:14,319 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251209-3013.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:14,352 - INFO - ✓ Created XML: lf-20251209-3013.xml (80.03 KB)
+2026-02-13 14:19:14,409 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.c22a7fb6127b88862f5c1b2d6ea9891f "HTTP/1.1 200 OK"
+2026-02-13 14:19:14,472 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251209-3013.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:14,542 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:19:14,547 - INFO - ✓ Saved to DB: lf-20251209-3013.xml
+2026-02-13 14:19:14,548 - INFO - ✓ [76/3000] Processed: lf-20251209-3013.xml
+2026-02-13 14:19:14,852 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-18-2795
+2026-02-13 14:19:19,040 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2795.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:19,059 - INFO - ✓ Created XML: lf-20251218-2795.xml (41.59 KB)
+2026-02-13 14:19:19,128 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.96b16fd50e5790fffbaf400c4905b9de "HTTP/1.1 200 OK"
+2026-02-13 14:19:19,191 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251218-2795.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:19,244 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:19:19,255 - INFO - ✓ Saved to DB: lf-20251218-2795.xml
+2026-02-13 14:19:19,256 - INFO - ✓ [77/3000] Processed: lf-20251218-2795.xml
+2026-02-13 14:19:19,563 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-10-28-2192
+2026-02-13 14:19:23,157 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251028-2192.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:23,157 - INFO - ⊘ Already exists: lf-20251028-2192.xml
+2026-02-13 14:19:23,468 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-12-12-2532
+2026-02-13 14:19:28,013 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2532.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:28,046 - INFO - ✓ Created XML: lf-20251212-2532.xml (52.59 KB)
+2026-02-13 14:19:28,110 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.dae9b8f9b4c0b72d8bb2730900b64b3a "HTTP/1.1 200 OK"
+2026-02-13 14:19:28,177 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251212-2532.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:28,241 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:19:28,244 - INFO - ✓ Saved to DB: lf-20251212-2532.xml
+2026-02-13 14:19:28,245 - INFO - ✓ [78/3000] Processed: lf-20251212-2532.xml
+2026-02-13 14:19:28,553 - INFO - 🔍 Scraping: https://lovdata.no/dokument/LF/forskrift/2025-11-12-2293
+2026-02-13 14:19:32,198 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251112-2293.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:32,242 - INFO - ✓ Created XML: lf-20251112-2293.xml (15.44 KB)
+2026-02-13 14:19:32,294 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.6b0b45290c41bedd65f4df8562b42e9b "HTTP/1.1 200 OK"
+2026-02-13 14:19:32,360 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20251112-2293.xml "HTTP/1.1 200 OK"
+2026-02-13 14:19:32,430 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 14:19:32,430 - INFO - ✓ Saved to DB: lf-20251112-2293.xml
+2026-02-13 14:19:32,433 - INFO - ✓ [79/3000] Processed: lf-20251112-2293.xml
+2026-02-13 14:19:32,747 - INFO - 
+📁 Category: Court Decisions
+2026-02-13 14:19:32,747 - INFO -   📂 Subcategory: Supreme Court (HR)
+2026-02-13 14:19:32,748 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/HR
+2026-02-13 14:19:33,622 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 14:19:39,649 - INFO -   Sidebar years (0): []
+2026-02-13 14:19:39,649 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 14:19:42,682 - WARNING -   📅 2026: 0 links found
+2026-02-13 14:19:45,708 - WARNING -   📅 2025: 0 links found
+2026-02-13 14:19:48,747 - WARNING -   📅 2024: 0 links found
+2026-02-13 14:19:51,778 - WARNING -   📅 2023: 0 links found
+2026-02-13 14:19:54,821 - WARNING -   📅 2022: 0 links found
+2026-02-13 14:19:57,861 - WARNING -   📅 2021: 0 links found
+2026-02-13 14:20:00,891 - WARNING -   📅 2020: 0 links found
+2026-02-13 14:21:01,582 - INFO - 🛑 Reached year 1999 < 2000, stopping registry scrape
+2026-02-13 14:21:01,582 - INFO - ✓ Total unique URLs collected: 0
+2026-02-13 14:21:01,582 - INFO -   ✓ Found 0 documents
+2026-02-13 14:21:01,582 - INFO -   📂 Subcategory: Appeal Court Decisions (LA)
+2026-02-13 14:21:01,590 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/LA
+2026-02-13 14:21:01,601 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 14:21:07,627 - INFO -   Sidebar years (0): []
+2026-02-13 14:21:07,627 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 14:21:10,649 - WARNING -   📅 2026: 0 links found
+2026-02-13 14:21:13,687 - WARNING -   📅 2025: 0 links found
+2026-02-13 14:21:16,724 - WARNING -   📅 2024: 0 links found
+2026-02-13 14:21:19,745 - WARNING -   📅 2023: 0 links found
+2026-02-13 14:21:22,760 - WARNING -   📅 2022: 0 links found
+2026-02-13 14:21:25,788 - WARNING -   📅 2021: 0 links found
+2026-02-13 14:21:28,820 - WARNING -   📅 2020: 0 links found
+2026-02-13 14:22:29,345 - INFO - 🛑 Reached year 1999 < 2000, stopping registry scrape
+2026-02-13 14:22:29,346 - INFO - ✓ Total unique URLs collected: 0
+2026-02-13 14:22:29,346 - INFO -   ✓ Found 0 documents
+2026-02-13 14:22:29,346 - INFO -   📂 Subcategory: Labor Court (LAR)
+2026-02-13 14:22:29,346 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/LAR
+2026-02-13 14:22:29,354 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 14:22:35,361 - INFO -   Sidebar years (0): []
+2026-02-13 14:22:35,364 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 14:22:38,388 - WARNING -   📅 2026: 0 links found
+2026-02-13 14:22:41,429 - WARNING -   📅 2025: 0 links found
+2026-02-13 14:22:44,452 - WARNING -   📅 2024: 0 links found
+2026-02-13 14:22:47,477 - WARNING -   📅 2023: 0 links found
+2026-02-13 14:22:50,510 - WARNING -   📅 2022: 0 links found
+2026-02-13 14:22:53,546 - WARNING -   📅 2021: 0 links found
+2026-02-13 14:22:56,575 - WARNING -   📅 2020: 0 links found
+2026-02-13 14:23:57,146 - INFO - 🛑 Reached year 1999 < 2000, stopping registry scrape
+2026-02-13 14:23:57,147 - INFO - ✓ Total unique URLs collected: 0
+2026-02-13 14:23:57,147 - INFO -   ✓ Found 0 documents
+2026-02-13 14:23:57,148 - INFO - 
+📁 Category: Preparatory Works
+2026-02-13 14:23:57,148 - INFO -   📂 Subcategory: Propositions (Prop)
+2026-02-13 14:23:57,149 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/PROP
+2026-02-13 14:23:57,161 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 14:24:03,173 - INFO -   Sidebar years (0): []
+2026-02-13 14:24:03,174 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 14:24:06,202 - WARNING -   📅 2026: 0 links found
+2026-02-13 14:24:09,221 - INFO -   📅 2025: 52 new links (total: 52)
+2026-02-13 14:24:09,221 - INFO - ✓ Total unique URLs collected: 40
+2026-02-13 14:24:09,223 - INFO -   ✓ Found 40 documents
+2026-02-13 14:24:09,223 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-fd-202526
+2026-02-13 14:24:13,471 - INFO - ⊘ Skipped (year None outside range): doc-2c680ecc51e6.xml
+2026-02-13 14:24:13,780 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-8-l-202526
+2026-02-13 14:24:17,862 - INFO - ⊘ Skipped (year None outside range): doc-31f6d9a36c7c.xml
+2026-02-13 14:24:18,171 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-fin-202526
+2026-02-13 14:24:22,219 - INFO - ⊘ Skipped (year None outside range): doc-aebad3864863.xml
+2026-02-13 14:24:22,524 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-nfd-202526
+2026-02-13 14:24:26,049 - INFO - ⊘ Skipped (year None outside range): doc-e8a566a6c569.xml
+2026-02-13 14:24:26,359 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-22-s-202526
+2026-02-13 14:24:29,842 - INFO - ⊘ Skipped (year None outside range): doc-78450400ba13.xml
+2026-02-13 14:24:30,143 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-10-l-202526
+2026-02-13 14:24:34,242 - INFO - ⊘ Skipped (year None outside range): doc-fd7978b3292d.xml
+2026-02-13 14:24:34,550 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-28-ls-202526
+2026-02-13 14:24:38,609 - INFO - ⊘ Skipped (year None outside range): doc-edf349f27c33.xml
+2026-02-13 14:24:38,921 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-kld-202526
+2026-02-13 14:24:42,985 - INFO - ⊘ Skipped (year None outside range): doc-2856b323657e.xml
+2026-02-13 14:24:43,289 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-ls-202526
+2026-02-13 14:24:46,772 - INFO - ⊘ Skipped (year None outside range): doc-91280da84199.xml
+2026-02-13 14:24:47,082 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-kdd-202526
+2026-02-13 14:24:50,638 - INFO - ⊘ Skipped (year None outside range): doc-34d7941a19e3.xml
+2026-02-13 14:24:50,952 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-14-s-202526
+2026-02-13 14:24:54,464 - INFO - ⊘ Skipped (year None outside range): doc-4afd6db3705b.xml
+2026-02-13 14:24:54,772 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-18-s-202526
+2026-02-13 14:24:59,016 - INFO - ⊘ Skipped (year None outside range): doc-e673575b05db.xml
+2026-02-13 14:24:59,326 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-7-l-202526
+2026-02-13 14:25:03,488 - INFO - ⊘ Skipped (year None outside range): doc-f76bd6ce6ec9.xml
+2026-02-13 14:25:03,792 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-aid-202526
+2026-02-13 14:25:07,389 - INFO - ⊘ Skipped (year None outside range): doc-b83f021033b5.xml
+2026-02-13 14:25:07,695 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-dfd-202526
+2026-02-13 14:25:11,827 - INFO - ⊘ Skipped (year None outside range): doc-496627a1395c.xml
+2026-02-13 14:25:12,130 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-3-l-202526
+2026-02-13 14:25:15,654 - INFO - ⊘ Skipped (year None outside range): doc-c265014a15c5.xml
+2026-02-13 14:25:15,959 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-jd-202526
+2026-02-13 14:25:19,448 - INFO - ⊘ Skipped (year None outside range): doc-4a8a42c20dc2.xml
+2026-02-13 14:25:19,757 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-21-s-202526
+2026-02-13 14:25:24,851 - INFO - ⊘ Skipped (year None outside range): doc-b08cb1614e2d.xml
+2026-02-13 14:25:25,162 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-9-l-202526
+2026-02-13 14:25:28,651 - INFO - ⊘ Skipped (year None outside range): doc-0409d0bb39a4.xml
+2026-02-13 14:25:28,956 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-kud-202526
+2026-02-13 14:25:33,018 - INFO - ⊘ Skipped (year None outside range): doc-650de6cee4ba.xml
+2026-02-13 14:25:33,327 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-12-s-202526
+2026-02-13 14:25:36,851 - INFO - ⊘ Skipped (year None outside range): doc-625cfd63576e.xml
+2026-02-13 14:25:37,161 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-23-s-202526
+2026-02-13 14:25:40,732 - INFO - ⊘ Skipped (year None outside range): doc-f4cf87c657ab.xml
+2026-02-13 14:25:41,035 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-27-l-202526
+2026-02-13 14:25:44,525 - INFO - ⊘ Skipped (year None outside range): doc-f81fd940d47d.xml
+2026-02-13 14:25:44,827 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-29-s-202526
+2026-02-13 14:25:48,369 - INFO - ⊘ Skipped (year None outside range): doc-fc50a89d98ff.xml
+2026-02-13 14:25:48,683 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-33-l-202526
+2026-02-13 14:25:52,214 - INFO - ⊘ Skipped (year None outside range): doc-f08ef6dba18e.xml
+2026-02-13 14:25:52,529 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-30-l-202526
+2026-02-13 14:25:56,026 - INFO - ⊘ Skipped (year None outside range): doc-28ad41a8c81a.xml
+2026-02-13 14:25:56,337 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-20-s-202526
+2026-02-13 14:25:59,833 - INFO - ⊘ Skipped (year None outside range): doc-c0fa2e3f90e1.xml
+2026-02-13 14:26:00,135 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-15-s-202526
+2026-02-13 14:26:03,598 - INFO - ⊘ Skipped (year None outside range): doc-d8563f693bd3.xml
+2026-02-13 14:26:03,900 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-25-s-202526
+2026-02-13 14:26:07,394 - INFO - ⊘ Skipped (year None outside range): doc-7a3c6c1f4f5a.xml
+2026-02-13 14:26:07,704 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-6-s-202526
+2026-02-13 14:26:11,191 - INFO - ⊘ Skipped (year None outside range): doc-83a18061603b.xml
+2026-02-13 14:26:11,492 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-16-s-202526
+2026-02-13 14:26:14,993 - INFO - ⊘ Skipped (year None outside range): doc-89a304fd2f1c.xml
+2026-02-13 14:26:15,307 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-gul-202526
+2026-02-13 14:26:18,810 - INFO - ⊘ Skipped (year None outside range): doc-7e32ca041444.xml
+2026-02-13 14:26:19,123 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-ud-202526
+2026-02-13 14:26:23,209 - INFO - ⊘ Skipped (year None outside range): doc-fc21c594e740.xml
+2026-02-13 14:26:23,509 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-sd-202526
+2026-02-13 14:26:27,342 - INFO - ⊘ Skipped (year None outside range): doc-0b57ae2634a6.xml
+2026-02-13 14:26:27,657 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-5-s-202526
+2026-02-13 14:26:31,130 - INFO - ⊘ Skipped (year None outside range): doc-548d9686ab68.xml
+2026-02-13 14:26:31,440 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-4-l-202526
+2026-02-13 14:26:34,940 - INFO - ⊘ Skipped (year None outside range): doc-67bff040d74d.xml
+2026-02-13 14:26:35,240 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-19-s-202526
+2026-02-13 14:26:38,701 - INFO - ⊘ Skipped (year None outside range): doc-f5ebf3c137e5.xml
+2026-02-13 14:26:39,008 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-1-kd-202526
+2026-02-13 14:26:42,546 - INFO - ⊘ Skipped (year None outside range): doc-6edb34f70cb5.xml
+2026-02-13 14:26:42,850 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-34-ls-202526
+2026-02-13 14:26:47,017 - INFO - ⊘ Skipped (year None outside range): doc-c784e3781650.xml
+2026-02-13 14:26:47,324 - INFO - 🔍 Scraping: https://lovdata.no/dokument/PROP/forarbeid/prop-24-s-202526
+2026-02-13 14:26:50,816 - INFO - ⊘ Skipped (year None outside range): doc-6322d42b0fbe.xml
+2026-02-13 14:26:51,127 - INFO -   📂 Subcategory: Official Reports (NOU)
+2026-02-13 14:26:51,127 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/NOU
+2026-02-13 14:26:51,936 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 14:26:57,955 - INFO -   Sidebar years (0): []
+2026-02-13 14:26:57,956 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 14:27:00,980 - INFO -   📅 2026: 2 new links (total: 2)
+2026-02-13 14:27:03,998 - INFO -   📅 2025: 11 new links (total: 13)
+2026-02-13 14:27:07,024 - INFO -   📅 2024: 24 new links (total: 37)
+2026-02-13 14:27:10,052 - INFO -   📅 2023: 30 new links (total: 67)
+2026-02-13 14:27:10,052 - INFO - ✓ Total unique URLs collected: 40
+2026-02-13 14:27:10,053 - INFO -   ✓ Found 40 documents
+2026-02-13 14:27:10,053 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-18
+2026-02-13 14:27:13,572 - INFO - ⊘ Skipped (year None outside range): doc-ecac80576505.xml
+2026-02-13 14:27:13,881 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-6
+2026-02-13 14:27:18,057 - INFO - ⊘ Skipped (year None outside range): doc-8bd0baccfedc.xml
+2026-02-13 14:27:18,364 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-1
+2026-02-13 14:27:21,963 - INFO - ⊘ Skipped (year None outside range): doc-410895c3e495.xml
+2026-02-13 14:27:22,265 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-19
+2026-02-13 14:27:25,819 - INFO - ⊘ Skipped (year None outside range): doc-469c8de16e6f.xml
+2026-02-13 14:27:26,131 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-9
+2026-02-13 14:27:30,069 - INFO - ⊘ Skipped (year None outside range): doc-1fc4713f2105.xml
+2026-02-13 14:27:30,370 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-17
+2026-02-13 14:27:34,558 - INFO - ⊘ Skipped (year None outside range): doc-b36f5fe6f6aa.xml
+2026-02-13 14:27:34,867 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-16
+2026-02-13 14:27:38,984 - INFO - ⊘ Skipped (year None outside range): doc-ef1a053f5f43.xml
+2026-02-13 14:27:39,293 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-5
+2026-02-13 14:27:42,802 - INFO - ⊘ Skipped (year None outside range): doc-1f7bbacf4f78.xml
+2026-02-13 14:27:43,112 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-23
+2026-02-13 14:27:47,210 - INFO - ⊘ Skipped (year None outside range): doc-2c837f1715f9.xml
+2026-02-13 14:27:47,516 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-21
+2026-02-13 14:27:51,181 - INFO - ⊘ Skipped (year None outside range): doc-2adc0f1edfed.xml
+2026-02-13 14:27:51,484 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-3
+2026-02-13 14:27:54,987 - INFO - ⊘ Skipped (year None outside range): doc-1c25c5426eb6.xml
+2026-02-13 14:27:55,291 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-9
+2026-02-13 14:27:59,402 - INFO - ⊘ Skipped (year None outside range): doc-5b4ee18edb9b.xml
+2026-02-13 14:27:59,714 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-13
+2026-02-13 14:28:03,232 - INFO - ⊘ Skipped (year None outside range): doc-87b6ef93ab6b.xml
+2026-02-13 14:28:03,536 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-15
+2026-02-13 14:28:07,630 - INFO - ⊘ Skipped (year None outside range): doc-3f78072da4cf.xml
+2026-02-13 14:28:07,942 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-29
+2026-02-13 14:28:11,463 - INFO - ⊘ Skipped (year None outside range): doc-4174fec9e0fb.xml
+2026-02-13 14:28:11,765 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-23
+2026-02-13 14:28:15,291 - INFO - ⊘ Skipped (year None outside range): doc-81b7bd286dee.xml
+2026-02-13 14:28:15,592 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2025-4
+2026-02-13 14:28:19,708 - INFO - ⊘ Skipped (year None outside range): doc-c3ad36fb4614.xml
+2026-02-13 14:28:20,023 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-18
+2026-02-13 14:28:23,531 - INFO - ⊘ Skipped (year None outside range): doc-b2e9d1f20b07.xml
+2026-02-13 14:28:23,838 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-15
+2026-02-13 14:28:28,037 - INFO - ⊘ Skipped (year None outside range): doc-39e3af13a103.xml
+2026-02-13 14:28:28,340 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2026-2
+2026-02-13 14:28:31,843 - INFO - ⊘ Skipped (year None outside range): doc-5849d4743457.xml
+2026-02-13 14:28:32,152 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-21
+2026-02-13 14:28:35,678 - INFO - ⊘ Skipped (year None outside range): doc-edec3ef34c30.xml
+2026-02-13 14:28:35,991 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-12
+2026-02-13 14:28:39,546 - INFO - ⊘ Skipped (year None outside range): doc-6545f7d2eb45.xml
+2026-02-13 14:28:39,856 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-28
+2026-02-13 14:28:43,374 - INFO - ⊘ Skipped (year None outside range): doc-04467d949e7c.xml
+2026-02-13 14:28:43,674 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-30
+2026-02-13 14:28:47,804 - INFO - ⊘ Skipped (year None outside range): doc-adac94be3202.xml
+2026-02-13 14:28:48,108 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2023-7
+2026-02-13 14:28:51,639 - INFO - ⊘ Skipped (year None outside range): doc-8ea04382ceed.xml
+2026-02-13 14:28:51,940 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NOU/forarbeid/nou-2024-8
+2026-02-13 14:28:53,825 - INFO - 📦 Flushing remaining files in batch...
+2026-02-13 14:28:53,826 - INFO - 📦 Flushing remaining 19 files...
+2026-02-13 14:28:53,826 - INFO - 📦 Uploading batch of 19 files...
+2026-02-13 14:28:54,449 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251208-2563.xml "HTTP/2 200 OK"
+2026-02-13 14:28:54,456 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251208-2563.xml
+2026-02-13 14:28:54,458 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251208-2563.xml
+2026-02-13 14:28:54,623 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251216-2876.xml "HTTP/2 200 OK"
+2026-02-13 14:28:54,625 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251216-2876.xml
+2026-02-13 14:28:54,626 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251216-2876.xml
+2026-02-13 14:28:54,808 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251120-2661.xml "HTTP/2 200 OK"
+2026-02-13 14:28:54,810 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251120-2661.xml
+2026-02-13 14:28:54,811 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251120-2661.xml
+2026-02-13 14:28:54,993 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251030-2154.xml "HTTP/2 200 OK"
+2026-02-13 14:28:54,994 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251030-2154.xml
+2026-02-13 14:28:54,996 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251030-2154.xml
+2026-02-13 14:28:55,183 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251030-2157.xml "HTTP/2 200 OK"
+2026-02-13 14:28:55,185 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251030-2157.xml
+2026-02-13 14:28:55,186 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251030-2157.xml
+2026-02-13 14:28:55,345 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2543.xml "HTTP/2 200 OK"
+2026-02-13 14:28:55,347 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2543.xml
+2026-02-13 14:28:55,349 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251212-2543.xml
+2026-02-13 14:28:55,534 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-2967.xml "HTTP/2 200 OK"
+2026-02-13 14:28:55,535 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-2967.xml
+2026-02-13 14:28:55,536 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251218-2967.xml
+2026-02-13 14:28:55,684 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251217-2925.xml "HTTP/2 200 OK"
+2026-02-13 14:28:55,686 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251217-2925.xml
+2026-02-13 14:28:55,687 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251217-2925.xml
+2026-02-13 14:28:55,841 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2516.xml "HTTP/2 200 OK"
+2026-02-13 14:28:55,842 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2516.xml
+2026-02-13 14:28:55,844 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251212-2516.xml
+2026-02-13 14:28:56,012 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251216-2995.xml "HTTP/2 200 OK"
+2026-02-13 14:28:56,014 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251216-2995.xml
+2026-02-13 14:28:56,015 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251216-2995.xml
+2026-02-13 14:28:56,147 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251202-3026.xml "HTTP/2 200 OK"
+2026-02-13 14:28:56,148 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251202-3026.xml
+2026-02-13 14:28:56,150 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251202-3026.xml
+2026-02-13 14:28:56,316 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-2703.xml "HTTP/2 200 OK"
+2026-02-13 14:28:56,316 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-2703.xml
+2026-02-13 14:28:56,317 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251218-2703.xml
+2026-02-13 14:28:56,460 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251030-2145.xml "HTTP/2 200 OK"
+2026-02-13 14:28:56,461 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251030-2145.xml
+2026-02-13 14:28:56,463 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251030-2145.xml
+2026-02-13 14:28:56,608 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251204-2548.xml "HTTP/2 200 OK"
+2026-02-13 14:28:56,608 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251204-2548.xml
+2026-02-13 14:28:56,609 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251204-2548.xml
+2026-02-13 14:28:56,757 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251215-2941.xml "HTTP/2 200 OK"
+2026-02-13 14:28:56,758 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251215-2941.xml
+2026-02-13 14:28:56,759 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251215-2941.xml
+2026-02-13 14:28:56,969 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251209-3013.xml "HTTP/2 200 OK"
+2026-02-13 14:28:56,992 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251209-3013.xml
+2026-02-13 14:28:56,999 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251209-3013.xml
+2026-02-13 14:28:57,153 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-2795.xml "HTTP/2 200 OK"
+2026-02-13 14:28:57,154 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251218-2795.xml
+2026-02-13 14:28:57,156 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251218-2795.xml
+2026-02-13 14:28:57,366 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2532.xml "HTTP/2 200 OK"
+2026-02-13 14:28:57,367 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251212-2532.xml
+2026-02-13 14:28:57,368 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251212-2532.xml
+2026-02-13 14:28:57,516 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Local_Regulations_LF/lf-20251112-2293.xml "HTTP/2 200 OK"
+2026-02-13 14:28:57,518 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/lf-20251112-2293.xml
+2026-02-13 14:28:57,519 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\lf-20251112-2293.xml
+2026-02-13 14:28:57,520 - INFO - ✓ Batch uploaded: 19 files (Total: 79)
+2026-02-13 14:28:57,521 - INFO - ✓ Uploaded 19 remaining files

@@ -1,0 +1,1238 @@
+2026-02-16 16:42:06,372 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-16 16:42:06,374 - INFO - 🔐 Opening Lovdata login page...
+2026-02-16 16:42:12,624 - INFO - ✅ Login successful
+2026-02-16 16:42:12,624 - INFO - ======================================================================
+2026-02-16 16:42:12,625 - INFO - MODE: legal_areas_only
+2026-02-16 16:42:12,625 - INFO - ======================================================================
+2026-02-16 16:42:12,626 - INFO - 
+======================================================================
+2026-02-16 16:42:12,626 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-02-16 16:42:12,626 - INFO -    Discovering ALL categories from Lovdata tree
+2026-02-16 16:42:12,627 - INFO - ======================================================================
+2026-02-16 16:42:12,627 - INFO - 📂 Navigating to Rettsområder section...
+2026-02-16 16:42:18,305 - INFO -    🖱️  Clicking Rettsområder tab...
+2026-02-16 16:42:18,786 - INFO -    ✅ Clicked: Rettsområder
+2026-02-16 16:42:28,794 - INFO -    🌍 Current URL: https://lovdata.no/pro/#rettsomrade
+2026-02-16 16:42:28,794 - INFO -    📜 Loading tree structure...
+2026-02-16 16:42:33,873 - INFO -    🔍 Finding category nodes in tree...
+2026-02-16 16:42:33,890 - INFO -    Found 35 total tree nodes
+2026-02-16 16:42:33,948 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-02-16 16:42:33,988 - INFO -    ✅ Found: Arbeidsrett
+2026-02-16 16:42:34,028 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-02-16 16:42:34,101 - INFO -    ✅ Found: Energirett
+2026-02-16 16:42:34,141 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-02-16 16:42:34,177 - INFO -    ✅ Found: EU/EØS-rett
+2026-02-16 16:42:34,241 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-02-16 16:42:34,282 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-02-16 16:42:34,313 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-02-16 16:42:34,354 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-02-16 16:42:34,398 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-02-16 16:42:34,437 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-02-16 16:42:34,482 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-02-16 16:42:34,534 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-02-16 16:42:34,582 - INFO -    ✅ Found: IKT- og medierett
+2026-02-16 16:42:34,618 - INFO -    ✅ Found: Immaterialrett
+2026-02-16 16:42:34,659 - INFO -    ✅ Found: Internasjonal rett
+2026-02-16 16:42:34,702 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-02-16 16:42:34,738 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-02-16 16:42:34,791 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-02-16 16:42:34,837 - INFO -    ✅ Found: Menneskerettigheter
+2026-02-16 16:42:34,880 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-02-16 16:42:34,931 - INFO -    ✅ Found: Næringsrett
+2026-02-16 16:42:34,979 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-02-16 16:42:35,020 - INFO -    ✅ Found: Samerett
+2026-02-16 16:42:35,080 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-02-16 16:42:35,117 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-02-16 16:42:35,166 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-02-16 16:42:35,218 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-02-16 16:42:35,284 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-02-16 16:42:35,336 - INFO -    ✅ Found: Strafferett
+2026-02-16 16:42:35,374 - INFO -    ✅ Found: Svalbard og biland
+2026-02-16 16:42:35,416 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-02-16 16:42:35,453 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-02-16 16:42:35,488 - INFO -    ✅ Found: Utlendingsrett
+2026-02-16 16:42:35,488 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-02-16 16:42:35,488 - INFO - 
+📊 Total legal areas discovered: 35
+
+2026-02-16 16:42:35,488 - INFO - 
+======================================================================
+2026-02-16 16:42:35,488 - INFO - [1/35] Anskaffelser_Avtaler_Bygg_Og_Entrepriser
+2026-02-16 16:42:35,488 - INFO - ======================================================================
+2026-02-16 16:42:35,488 - INFO -    Norwegian: Anskaffelser, avtaler, bygg og entrepriser
+2026-02-16 16:42:35,488 - INFO -    Slug: anskaffelser_avtaler_bygg_og_entrepriser
+2026-02-16 16:42:36,951 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Anskaffelser_Avtaler_Bygg_Og_Entrepriser&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,003 - INFO -    ✅ Category 'Anskaffelser_Avtaler_Bygg_Og_Entrepriser' already has 333+ documents - SKIPPING
+2026-02-16 16:42:37,003 - INFO - 
+======================================================================
+2026-02-16 16:42:37,003 - INFO - [2/35] Arbeidsrett
+2026-02-16 16:42:37,003 - INFO - ======================================================================
+2026-02-16 16:42:37,003 - INFO -    Norwegian: Arbeidsrett
+2026-02-16 16:42:37,003 - INFO -    Slug: arbeidsrett
+2026-02-16 16:42:37,082 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Arbeidsrett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,083 - INFO -    ✅ Category 'Arbeidsrett' already has 270+ documents - SKIPPING
+2026-02-16 16:42:37,087 - INFO - 
+======================================================================
+2026-02-16 16:42:37,087 - INFO - [3/35] Bank_Finans_Og_Regnskapsrett
+2026-02-16 16:42:37,087 - INFO - ======================================================================
+2026-02-16 16:42:37,087 - INFO -    Norwegian: Bank, finans og regnskapsrett
+2026-02-16 16:42:37,087 - INFO -    Slug: bank_finans_og_regnskapsrett
+2026-02-16 16:42:37,176 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Bank_Finans_Og_Regnskapsrett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,177 - INFO -    ✅ Category 'Bank_Finans_Og_Regnskapsrett' already has 367+ documents - SKIPPING
+2026-02-16 16:42:37,178 - INFO - 
+======================================================================
+2026-02-16 16:42:37,178 - INFO - [4/35] Energirett
+2026-02-16 16:42:37,178 - INFO - ======================================================================
+2026-02-16 16:42:37,178 - INFO -    Norwegian: Energirett
+2026-02-16 16:42:37,178 - INFO -    Slug: energirett
+2026-02-16 16:42:37,247 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Energirett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,248 - INFO -    ✅ Category 'Energirett' already has 323+ documents - SKIPPING
+2026-02-16 16:42:37,248 - INFO - 
+======================================================================
+2026-02-16 16:42:37,248 - INFO - [5/35] Erstatnings__Og_Forsikringsrett
+2026-02-16 16:42:37,248 - INFO - ======================================================================
+2026-02-16 16:42:37,248 - INFO -    Norwegian: Erstatnings- og forsikringsrett
+2026-02-16 16:42:37,249 - INFO -    Slug: erstatnings-_og_forsikringsrett
+2026-02-16 16:42:37,340 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Erstatnings__Og_Forsikringsrett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,342 - INFO -    ✅ Category 'Erstatnings__Og_Forsikringsrett' already has 422+ documents - SKIPPING
+2026-02-16 16:42:37,346 - INFO - 
+======================================================================
+2026-02-16 16:42:37,346 - INFO - [6/35] Eu_Eos_Rett
+2026-02-16 16:42:37,346 - INFO - ======================================================================
+2026-02-16 16:42:37,346 - INFO -    Norwegian: EU/EØS-rett
+2026-02-16 16:42:37,346 - INFO -    Slug: eu/eøs-rett
+2026-02-16 16:42:37,410 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Eu_Eos_Rett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,411 - INFO -    ✅ Category 'Eu_Eos_Rett' already has 202+ documents - SKIPPING
+2026-02-16 16:42:37,411 - INFO - 
+======================================================================
+2026-02-16 16:42:37,412 - INFO - [7/35] Familie__Person__Og_Barnerett
+2026-02-16 16:42:37,412 - INFO - ======================================================================
+2026-02-16 16:42:37,412 - INFO -    Norwegian: Familie-, person- og barnerett
+2026-02-16 16:42:37,412 - INFO -    Slug: familie-_person-_og_barnerett
+2026-02-16 16:42:37,494 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Familie__Person__Og_Barnerett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,494 - INFO -    ✅ Category 'Familie__Person__Og_Barnerett' already has 418+ documents - SKIPPING
+2026-02-16 16:42:37,495 - INFO - 
+======================================================================
+2026-02-16 16:42:37,496 - INFO - [8/35] Fast_Eiendoms_Rettsforhold
+2026-02-16 16:42:37,496 - INFO - ======================================================================
+2026-02-16 16:42:37,496 - INFO -    Norwegian: Fast eiendoms rettsforhold
+2026-02-16 16:42:37,496 - INFO -    Slug: fast_eiendoms_rettsforhold
+2026-02-16 16:42:37,565 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Fast_Eiendoms_Rettsforhold&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,565 - INFO -    ✅ Category 'Fast_Eiendoms_Rettsforhold' already has 416+ documents - SKIPPING
+2026-02-16 16:42:37,565 - INFO - 
+======================================================================
+2026-02-16 16:42:37,566 - INFO - [9/35] Fiskeri__Og_Fangstrett_Og_Havbruk
+2026-02-16 16:42:37,566 - INFO - ======================================================================
+2026-02-16 16:42:37,566 - INFO -    Norwegian: Fiskeri- og fangstrett og havbruk
+2026-02-16 16:42:37,566 - INFO -    Slug: fiskeri-_og_fangstrett_og_havbruk
+2026-02-16 16:42:37,661 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Fiskeri__Og_Fangstrett_Og_Havbruk&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,662 - INFO -    ✅ Category 'Fiskeri__Og_Fangstrett_Og_Havbruk' already has 183+ documents - SKIPPING
+2026-02-16 16:42:37,663 - INFO - 
+======================================================================
+2026-02-16 16:42:37,663 - INFO - [10/35] Forbruker__Kjops__Og_Konkurranserett
+2026-02-16 16:42:37,663 - INFO - ======================================================================
+2026-02-16 16:42:37,663 - INFO -    Norwegian: Forbruker-, kjøps- og konkurranserett
+2026-02-16 16:42:37,664 - INFO -    Slug: forbruker-_kjøps-_og_konkurranserett
+2026-02-16 16:42:37,739 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Forbruker__Kjops__Og_Konkurranserett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,739 - INFO -    ✅ Category 'Forbruker__Kjops__Og_Konkurranserett' already has 250+ documents - SKIPPING
+2026-02-16 16:42:37,740 - INFO - 
+======================================================================
+2026-02-16 16:42:37,740 - INFO - [11/35] Forvaltnings__Og_Kommunalrett
+2026-02-16 16:42:37,740 - INFO - ======================================================================
+2026-02-16 16:42:37,740 - INFO -    Norwegian: Forvaltnings- og kommunalrett
+2026-02-16 16:42:37,741 - INFO -    Slug: forvaltnings-_og_kommunalrett
+2026-02-16 16:42:37,834 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Forvaltnings__Og_Kommunalrett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,835 - INFO -    ✅ Category 'Forvaltnings__Og_Kommunalrett' already has 320+ documents - SKIPPING
+2026-02-16 16:42:37,835 - INFO - 
+======================================================================
+2026-02-16 16:42:37,836 - INFO - [12/35] Forurensninger_Klima_Og_Utslipp
+2026-02-16 16:42:37,836 - INFO - ======================================================================
+2026-02-16 16:42:37,836 - INFO -    Norwegian: Forurensninger, klima og utslipp
+2026-02-16 16:42:37,836 - INFO -    Slug: forurensninger_klima_og_utslipp
+2026-02-16 16:42:37,900 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Forurensninger_Klima_Og_Utslipp&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,902 - INFO -    ✅ Category 'Forurensninger_Klima_Og_Utslipp' already has 123+ documents - SKIPPING
+2026-02-16 16:42:37,902 - INFO - 
+======================================================================
+2026-02-16 16:42:37,902 - INFO - [13/35] Hms_Og_Beredskaps__Og_Sikkerhetsrett
+2026-02-16 16:42:37,902 - INFO - ======================================================================
+2026-02-16 16:42:37,902 - INFO -    Norwegian: HMS og beredskaps- og sikkerhetsrett
+2026-02-16 16:42:37,903 - INFO -    Slug: hms_og_beredskaps-_og_sikkerhetsrett
+2026-02-16 16:42:37,968 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Hms_Og_Beredskaps__Og_Sikkerhetsrett&limit=1 "HTTP/1.1 206 Partial Content"
+2026-02-16 16:42:37,969 - INFO -    ✅ Category 'Hms_Og_Beredskaps__Og_Sikkerhetsrett' already has 48+ documents - SKIPPING
+2026-02-16 16:42:37,970 - INFO - 
+======================================================================
+2026-02-16 16:42:37,970 - INFO - [14/35] Helse__Og_Omsorgsrett
+2026-02-16 16:42:37,971 - INFO - ======================================================================
+2026-02-16 16:42:37,971 - INFO -    Norwegian: Helse- og omsorgsrett
+2026-02-16 16:42:37,971 - INFO -    Slug: helse-_og_omsorgsrett
+2026-02-16 16:42:38,041 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Helse__Og_Omsorgsrett&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:42:38,041 - INFO - 📂 Scraping legal area: helse-_og_omsorgsrett
+2026-02-16 16:42:38,041 - INFO - 📂 Navigating to Rettsområder section...
+2026-02-16 16:42:44,393 - INFO -    🖱️  Clicking Rettsområder tab...
+2026-02-16 16:42:44,641 - INFO -    ✅ Clicked: Rettsområder
+2026-02-16 16:42:54,660 - INFO -    🌍 Current URL: https://lovdata.no/pro/#rettsomrade
+2026-02-16 16:42:54,660 - INFO -    📜 Loading tree structure...
+2026-02-16 16:42:59,745 - INFO -    🔍 Finding category nodes in tree...
+2026-02-16 16:42:59,759 - INFO -    Found 35 total tree nodes
+2026-02-16 16:42:59,808 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-02-16 16:42:59,866 - INFO -    ✅ Found: Arbeidsrett
+2026-02-16 16:42:59,912 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-02-16 16:42:59,957 - INFO -    ✅ Found: Energirett
+2026-02-16 16:43:00,010 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-02-16 16:43:00,093 - INFO -    ✅ Found: EU/EØS-rett
+2026-02-16 16:43:00,150 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-02-16 16:43:00,194 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-02-16 16:43:00,232 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-02-16 16:43:00,268 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-02-16 16:43:00,317 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-02-16 16:43:00,355 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-02-16 16:43:00,399 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-02-16 16:43:00,438 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-02-16 16:43:00,488 - INFO -    ✅ Found: IKT- og medierett
+2026-02-16 16:43:00,532 - INFO -    ✅ Found: Immaterialrett
+2026-02-16 16:43:00,575 - INFO -    ✅ Found: Internasjonal rett
+2026-02-16 16:43:00,615 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-02-16 16:43:00,657 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-02-16 16:43:00,705 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-02-16 16:43:00,749 - INFO -    ✅ Found: Menneskerettigheter
+2026-02-16 16:43:00,792 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-02-16 16:43:00,835 - INFO -    ✅ Found: Næringsrett
+2026-02-16 16:43:00,868 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-02-16 16:43:00,915 - INFO -    ✅ Found: Samerett
+2026-02-16 16:43:00,957 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-02-16 16:43:00,998 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-02-16 16:43:01,039 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-02-16 16:43:01,087 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-02-16 16:43:01,134 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-02-16 16:43:01,187 - INFO -    ✅ Found: Strafferett
+2026-02-16 16:43:01,231 - INFO -    ✅ Found: Svalbard og biland
+2026-02-16 16:43:01,266 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-02-16 16:43:01,302 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-02-16 16:43:01,341 - INFO -    ✅ Found: Utlendingsrett
+2026-02-16 16:43:01,341 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-02-16 16:43:01,341 - INFO -    🖱️  Clicking main category: Helse- og omsorgsrett
+2026-02-16 16:43:06,399 - INFO -    🔍 Checking for subcategories...
+2026-02-16 16:43:06,644 - INFO -    📋 Found 7 subcategories
+2026-02-16 16:43:06,644 - INFO - 
+   [1/7] Subcategory: Eldreomsorg
+2026-02-16 16:43:11,830 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 16:43:11,846 - INFO -    📄 Scroll round 1: 25 docs loaded
+2026-02-16 16:43:14,402 - INFO -    📄 Scroll round 2: 25 docs loaded
+2026-02-16 16:43:16,951 - INFO -    📄 Scroll round 3: 25 docs loaded
+2026-02-16 16:43:19,480 - INFO -    📄 Scroll round 4: 25 docs loaded
+2026-02-16 16:43:22,021 - INFO -    📄 Scroll round 5: 25 docs loaded
+2026-02-16 16:43:27,133 - INFO -    📄 Scroll round 6: 25 docs loaded
+2026-02-16 16:43:27,134 - INFO -    ✅ All documents loaded: 25 total
+2026-02-16 16:43:27,586 - INFO -       Found 25 documents in this subcategory
+2026-02-16 16:43:27,586 - INFO - 
+   [2/7] Subcategory: Helseforetak
+2026-02-16 16:43:32,722 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 16:43:32,743 - INFO -    📄 Scroll round 1: 108 docs loaded
+2026-02-16 16:43:35,291 - INFO -    📄 Scroll round 2: 108 docs loaded
+2026-02-16 16:43:37,824 - INFO -    📄 Scroll round 3: 108 docs loaded
+2026-02-16 16:43:40,369 - INFO -    📄 Scroll round 4: 108 docs loaded
+2026-02-16 16:43:42,916 - INFO -    📄 Scroll round 5: 108 docs loaded
+2026-02-16 16:43:48,019 - INFO -    📄 Scroll round 6: 108 docs loaded
+2026-02-16 16:43:48,019 - INFO -    ✅ All documents loaded: 108 total
+2026-02-16 16:43:51,453 - INFO -       Found 108 documents in this subcategory
+2026-02-16 16:43:51,454 - INFO - 
+   [3/7] Subcategory: Helsepersonell
+2026-02-16 16:43:56,666 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 16:43:56,692 - INFO -    📄 Scroll round 1: 102 docs loaded
+2026-02-16 16:43:59,255 - INFO -    📄 Scroll round 2: 102 docs loaded
+2026-02-16 16:44:01,815 - INFO -    📄 Scroll round 3: 102 docs loaded
+2026-02-16 16:44:04,355 - INFO -    📄 Scroll round 4: 102 docs loaded
+2026-02-16 16:44:06,897 - INFO -    📄 Scroll round 5: 102 docs loaded
+2026-02-16 16:44:11,966 - INFO -    📄 Scroll round 6: 102 docs loaded
+2026-02-16 16:44:11,966 - INFO -    ✅ All documents loaded: 102 total
+2026-02-16 16:44:13,939 - INFO -       Found 102 documents in this subcategory
+2026-02-16 16:44:13,939 - INFO - 
+   [4/7] Subcategory: Kommunehelsetjeneste
+2026-02-16 16:44:19,037 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 16:44:19,053 - INFO -    📄 Scroll round 1: 92 docs loaded
+2026-02-16 16:44:21,592 - INFO -    📄 Scroll round 2: 92 docs loaded
+2026-02-16 16:44:24,134 - INFO -    📄 Scroll round 3: 92 docs loaded
+2026-02-16 16:44:26,691 - INFO -    📄 Scroll round 4: 92 docs loaded
+2026-02-16 16:44:29,249 - INFO -    📄 Scroll round 5: 92 docs loaded
+2026-02-16 16:44:34,373 - INFO -    📄 Scroll round 6: 92 docs loaded
+2026-02-16 16:44:34,374 - INFO -    ✅ All documents loaded: 92 total
+2026-02-16 16:44:36,505 - INFO -       Found 92 documents in this subcategory
+2026-02-16 16:44:36,506 - INFO - 
+   [5/7] Subcategory: Legemidler. Apotek
+2026-02-16 16:44:41,625 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 16:44:41,644 - INFO -    📄 Scroll round 1: 91 docs loaded
+2026-02-16 16:44:44,187 - INFO -    📄 Scroll round 2: 91 docs loaded
+2026-02-16 16:44:46,729 - INFO -    📄 Scroll round 3: 91 docs loaded
+2026-02-16 16:44:49,259 - INFO -    📄 Scroll round 4: 91 docs loaded
+2026-02-16 16:44:51,794 - INFO -    📄 Scroll round 5: 91 docs loaded
+2026-02-16 16:44:56,899 - INFO -    📄 Scroll round 6: 91 docs loaded
+2026-02-16 16:44:56,899 - INFO -    ✅ All documents loaded: 91 total
+2026-02-16 16:44:59,746 - INFO -       Found 91 documents in this subcategory
+2026-02-16 16:44:59,746 - INFO - 
+   [6/7] Subcategory: Pasientrettigheter
+2026-02-16 16:45:04,856 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 16:45:04,875 - INFO -    📄 Scroll round 1: 111 docs loaded
+2026-02-16 16:45:07,421 - INFO -    📄 Scroll round 2: 111 docs loaded
+2026-02-16 16:45:09,972 - INFO -    📄 Scroll round 3: 111 docs loaded
+2026-02-16 16:45:12,537 - INFO -    📄 Scroll round 4: 111 docs loaded
+2026-02-16 16:45:15,093 - INFO -    📄 Scroll round 5: 111 docs loaded
+2026-02-16 16:45:20,178 - INFO -    📄 Scroll round 6: 111 docs loaded
+2026-02-16 16:45:20,178 - INFO -    ✅ All documents loaded: 111 total
+2026-02-16 16:45:22,514 - INFO -       Found 111 documents in this subcategory
+2026-02-16 16:45:22,515 - INFO - 
+   [7/7] Subcategory: Psykisk helsevern
+2026-02-16 16:45:27,593 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 16:45:27,598 - INFO -    📄 Scroll round 1: 87 docs loaded
+2026-02-16 16:45:30,142 - INFO -    📄 Scroll round 2: 87 docs loaded
+2026-02-16 16:45:32,673 - INFO -    📄 Scroll round 3: 87 docs loaded
+2026-02-16 16:45:35,218 - INFO -    📄 Scroll round 4: 87 docs loaded
+2026-02-16 16:45:37,766 - INFO -    📄 Scroll round 5: 87 docs loaded
+2026-02-16 16:45:42,872 - INFO -    📄 Scroll round 6: 87 docs loaded
+2026-02-16 16:45:42,875 - INFO -    ✅ All documents loaded: 87 total
+2026-02-16 16:45:45,299 - INFO -       Found 87 documents in this subcategory
+2026-02-16 16:45:45,305 - INFO -    ⚠️ Reached max docs limit (400)
+2026-02-16 16:45:45,306 - INFO - 
+   🎉 Total documents found: 408
+2026-02-16 16:45:45,308 - INFO - 🚀 Processing 400 documents
+2026-02-16 16:45:45,308 - INFO - 
+   [1/400] Processing document...
+2026-02-16 16:45:45,311 - INFO - 📄 Scraping document...
+2026-02-16 16:45:48,304 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.RDEP_rundskriv_h-2019-4.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:48,419 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\RDEP_rundskriv_h-2019-4.xml
+2026-02-16 16:45:48,493 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e8727155351c32b7d044797af662ce05&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:48,807 - INFO - 
+   [2/400] Processing document...
+2026-02-16 16:45:48,808 - INFO - 📄 Scraping document...
+2026-02-16 16:45:51,112 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PRE_forarbeid_pre-2019-06-25-878.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:51,232 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PRE_forarbeid_pre-2019-06-25-878.xml
+2026-02-16 16:45:51,306 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.611c52f579f2fa06a68c2725c5620ef3&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:51,623 - INFO - 
+   [3/400] Processing document...
+2026-02-16 16:45:51,623 - INFO - 📄 Scraping document...
+2026-02-16 16:45:53,830 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.INNST_forarbeid_inns-319-l-201617.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:53,853 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\INNST_forarbeid_inns-319-l-201617.xml
+2026-02-16 16:45:53,926 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.ac9dff5f80906a75a1da85a3fc73de64&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:54,237 - INFO - 
+   [4/400] Processing document...
+2026-02-16 16:45:54,239 - INFO - 📄 Scraping document...
+2026-02-16 16:45:56,649 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PROP_forarbeid_prop-65-l-201617.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:56,686 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PROP_forarbeid_prop-65-l-201617.xml
+2026-02-16 16:45:56,757 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e44a48bf3dd98cc5778648285eca0690&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:57,079 - INFO - 
+   [5/400] Processing document...
+2026-02-16 16:45:57,079 - INFO - 📄 Scraping document...
+2026-02-16 16:45:59,343 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.RDEP_rundskriv_q-2012-21.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:59,366 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\RDEP_rundskriv_q-2012-21.xml
+2026-02-16 16:45:59,442 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8f4634adc8a4b71fb8e510c07c8e9862&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:45:59,746 - INFO - 
+   [6/400] Processing document...
+2026-02-16 16:45:59,747 - INFO - 📄 Scraping document...
+2026-02-16 16:46:02,043 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.RDEP_rundskriv_h-2011-4.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:02,066 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\RDEP_rundskriv_h-2011-4.xml
+2026-02-16 16:46:02,147 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.ee8684729c52d6b8e0854da90e8c96b1&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:02,457 - INFO - 
+   [7/400] Processing document...
+2026-02-16 16:46:02,457 - INFO - 📄 Scraping document...
+2026-02-16 16:46:04,667 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_syse-a-2011-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:04,687 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_syse-a-2011-01.xml
+2026-02-16 16:46:04,765 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f2a25a07fc999a7d09dc786b5aa3db2a&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:05,079 - INFO - 
+   [8/400] Processing document...
+2026-02-16 16:46:05,079 - INFO - 📄 Scraping document...
+2026-02-16 16:46:07,322 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.RDEP_rundskriv_a-2007-28.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:07,345 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\RDEP_rundskriv_a-2007-28.xml
+2026-02-16 16:46:07,416 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.bf34c8224a09ce3e89588a7b6029b9a8&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:07,721 - INFO - 
+   [9/400] Processing document...
+2026-02-16 16:46:07,721 - INFO - 📄 Scraping document...
+2026-02-16 16:46:09,946 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.INNST_forarbeid_inns-o-76-200607.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:09,971 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\INNST_forarbeid_inns-o-76-200607.xml
+2026-02-16 16:46:10,046 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9ebc2192d3f209d36effd8cc7ee9eb47&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:10,351 - INFO - 
+   [10/400] Processing document...
+2026-02-16 16:46:10,351 - INFO - 📄 Scraping document...
+2026-02-16 16:46:12,621 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PROP_forarbeid_otprp-44-200607.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:12,664 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PROP_forarbeid_otprp-44-200607.xml
+2026-02-16 16:46:12,748 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c078afb77585ad3afe0b500314a689fa&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:12,751 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 16:46:13,200 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/RDEP_rundskriv_h-2019-4.xml "HTTP/2 200 OK"
+2026-02-16 16:46:13,207 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/RDEP_rundskriv_h-2019-4.xml
+2026-02-16 16:46:13,337 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:13,351 - INFO - 🧾 Metadata inserted: RDEP_rundskriv_h-2019-4.xml
+2026-02-16 16:46:13,501 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PRE_forarbeid_pre-2019-06-25-878.xml "HTTP/2 200 OK"
+2026-02-16 16:46:13,502 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PRE_forarbeid_pre-2019-06-25-878.xml
+2026-02-16 16:46:13,578 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:13,578 - INFO - 🧾 Metadata inserted: PRE_forarbeid_pre-2019-06-25-878.xml
+2026-02-16 16:46:13,737 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/INNST_forarbeid_inns-319-l-201617.xml "HTTP/2 200 OK"
+2026-02-16 16:46:13,743 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/INNST_forarbeid_inns-319-l-201617.xml
+2026-02-16 16:46:13,816 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:13,816 - INFO - 🧾 Metadata inserted: INNST_forarbeid_inns-319-l-201617.xml
+2026-02-16 16:46:13,984 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PROP_forarbeid_prop-65-l-201617.xml "HTTP/2 200 OK"
+2026-02-16 16:46:13,984 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PROP_forarbeid_prop-65-l-201617.xml
+2026-02-16 16:46:14,063 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:14,065 - INFO - 🧾 Metadata inserted: PROP_forarbeid_prop-65-l-201617.xml
+2026-02-16 16:46:14,226 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/RDEP_rundskriv_q-2012-21.xml "HTTP/2 200 OK"
+2026-02-16 16:46:14,227 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/RDEP_rundskriv_q-2012-21.xml
+2026-02-16 16:46:14,297 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:14,297 - INFO - 🧾 Metadata inserted: RDEP_rundskriv_q-2012-21.xml
+2026-02-16 16:46:14,477 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/RDEP_rundskriv_h-2011-4.xml "HTTP/2 200 OK"
+2026-02-16 16:46:14,479 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/RDEP_rundskriv_h-2011-4.xml
+2026-02-16 16:46:14,550 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:14,566 - INFO - 🧾 Metadata inserted: RDEP_rundskriv_h-2011-4.xml
+2026-02-16 16:46:14,725 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_syse-a-2011-01.xml "HTTP/2 200 OK"
+2026-02-16 16:46:14,729 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_syse-a-2011-01.xml
+2026-02-16 16:46:14,800 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:14,801 - INFO - 🧾 Metadata inserted: JUS_syse-a-2011-01.xml
+2026-02-16 16:46:14,964 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/RDEP_rundskriv_a-2007-28.xml "HTTP/2 200 OK"
+2026-02-16 16:46:14,966 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/RDEP_rundskriv_a-2007-28.xml
+2026-02-16 16:46:15,036 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:15,036 - INFO - 🧾 Metadata inserted: RDEP_rundskriv_a-2007-28.xml
+2026-02-16 16:46:15,178 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/INNST_forarbeid_inns-o-76-200607.xml "HTTP/2 200 OK"
+2026-02-16 16:46:15,183 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/INNST_forarbeid_inns-o-76-200607.xml
+2026-02-16 16:46:15,247 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:15,247 - INFO - 🧾 Metadata inserted: INNST_forarbeid_inns-o-76-200607.xml
+2026-02-16 16:46:15,417 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PROP_forarbeid_otprp-44-200607.xml "HTTP/2 200 OK"
+2026-02-16 16:46:15,424 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PROP_forarbeid_otprp-44-200607.xml
+2026-02-16 16:46:15,495 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:46:15,497 - INFO - 🧾 Metadata inserted: PROP_forarbeid_otprp-44-200607.xml
+2026-02-16 16:46:15,531 - INFO - ✅ Batch upload complete
+
+2026-02-16 16:46:15,842 - INFO - 
+   [11/400] Processing document...
+2026-02-16 16:46:15,857 - INFO - 📄 Scraping document...
+2026-02-16 16:46:18,079 - INFO - ⏭️  Skipping (year 1991 out of range)
+2026-02-16 16:46:18,380 - INFO - 
+   [12/400] Processing document...
+2026-02-16 16:46:18,380 - INFO - 📄 Scraping document...
+2026-02-16 16:46:20,954 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_ostenstad-bh-2006-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:21,190 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_ostenstad-bh-2006-01.xml
+2026-02-16 16:46:21,269 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b6058c0e201e8292215fec228097e228&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:21,586 - INFO - 
+   [13/400] Processing document...
+2026-02-16 16:46:21,624 - INFO - 📄 Scraping document...
+2026-02-16 16:46:24,012 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2006-7730.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:24,046 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2006-7730.xml
+2026-02-16 16:46:24,117 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.cd6c14b5d62fa8c6c3187389c119a37b&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:24,437 - INFO - 
+   [14/400] Processing document...
+2026-02-16 16:46:24,438 - INFO - 📄 Scraping document...
+2026-02-16 16:46:27,472 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SOMB_avgjorelse_somb-1997-18.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:27,522 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\SOMB_avgjorelse_somb-1997-18.xml
+2026-02-16 16:46:27,598 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.179dc0cb45d498b8fb59d61280984d41&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:27,903 - INFO - 
+   [15/400] Processing document...
+2026-02-16 16:46:27,904 - INFO - 📄 Scraping document...
+2026-02-16 16:46:30,292 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.INNST_forarbeid_inns-o-114-200405.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:30,342 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\INNST_forarbeid_inns-o-114-200405.xml
+2026-02-16 16:46:30,416 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2c0049d448271dfad2310c128db3317a&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:30,723 - INFO - 
+   [16/400] Processing document...
+2026-02-16 16:46:30,723 - INFO - 📄 Scraping document...
+2026-02-16 16:46:33,086 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-372-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:33,086 - INFO - ⏭️  Skipping existing: HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-16 16:46:33,396 - INFO - 
+   [17/400] Processing document...
+2026-02-16 16:46:33,397 - INFO - 📄 Scraping document...
+2026-02-16 16:46:35,757 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-11-183.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:35,761 - INFO - ⏭️  Skipping existing: LTI_forskrift_2026-02-11-183.xml
+2026-02-16 16:46:36,077 - INFO - 
+   [18/400] Processing document...
+2026-02-16 16:46:36,077 - INFO - 📄 Scraping document...
+2026-02-16 16:46:38,730 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-04-145.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:38,778 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LTI_forskrift_2026-02-04-145.xml
+2026-02-16 16:46:38,857 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.52a7cc1b7142ca9ab636451abbc605e6&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:39,172 - INFO - 
+   [19/400] Processing document...
+2026-02-16 16:46:39,173 - INFO - 📄 Scraping document...
+2026-02-16 16:46:41,573 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-04-144.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:41,610 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LTI_forskrift_2026-02-04-144.xml
+2026-02-16 16:46:41,712 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.83ee90eb334a8c158a4e291ac152feca&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:42,028 - INFO - 
+   [20/400] Processing document...
+2026-02-16 16:46:42,029 - INFO - 📄 Scraping document...
+2026-02-16 16:46:44,540 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.RDEP_rundskriv_g-2026-9001.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:44,550 - INFO - ⏭️  Skipping existing: RDEP_rundskriv_g-2026-9001.xml
+2026-02-16 16:46:44,863 - INFO - 
+   [21/400] Processing document...
+2026-02-16 16:46:44,864 - INFO - 📄 Scraping document...
+2026-02-16 16:46:47,551 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.ROO_rundskriv_is-2026-9001.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:47,566 - INFO - ⏭️  Skipping existing: ROO_rundskriv_is-2026-9001.xml
+2026-02-16 16:46:47,897 - INFO - 
+   [22/400] Processing document...
+2026-02-16 16:46:47,897 - INFO - 📄 Scraping document...
+2026-02-16 16:46:50,366 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2026-01-23-1.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:50,373 - INFO - ⏭️  Skipping existing: NL_lov_2026-01-23-1.xml
+2026-02-16 16:46:50,695 - INFO - 
+   [23/400] Processing document...
+2026-02-16 16:46:50,697 - INFO - 📄 Scraping document...
+2026-02-16 16:46:53,195 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_lov_2026-01-23-1.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:53,199 - INFO - ⏭️  Skipping existing: LTI_lov_2026-01-23-1.xml
+2026-02-16 16:46:53,510 - INFO - 
+   [24/400] Processing document...
+2026-02-16 16:46:53,511 - INFO - 📄 Scraping document...
+2026-02-16 16:46:55,802 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SOMB_avgjorelse_som-2025-3261.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:55,804 - INFO - ⏭️  Skipping existing: SOMB_avgjorelse_som-2025-3261.xml
+2026-02-16 16:46:56,111 - INFO - 
+   [25/400] Processing document...
+2026-02-16 16:46:56,111 - INFO - 📄 Scraping document...
+2026-02-16 16:46:58,362 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-01-06-7.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:58,387 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LTI_forskrift_2026-01-06-7.xml
+2026-02-16 16:46:58,461 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2447ee1ace9dedfc4501261470d7c320&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:46:58,778 - INFO - 
+   [26/400] Processing document...
+2026-02-16 16:46:58,778 - INFO - 📄 Scraping document...
+2026-02-16 16:47:00,980 - INFO - ⏭️  Skipping (year 1999 out of range)
+2026-02-16 16:47:01,280 - INFO - 
+   [27/400] Processing document...
+2026-02-16 16:47:01,280 - INFO - 📄 Scraping document...
+2026-02-16 16:47:03,433 - INFO - ⏭️  Skipping (year 1999 out of range)
+2026-02-16 16:47:03,746 - INFO - 
+   [28/400] Processing document...
+2026-02-16 16:47:03,746 - INFO - 📄 Scraping document...
+2026-02-16 16:47:06,024 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2001-06-15-93.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:06,046 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\NL_lov_2001-06-15-93.xml
+2026-02-16 16:47:06,114 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.33c28a785dba2ddc72da7947222bde8c&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:06,421 - INFO - 
+   [29/400] Processing document...
+2026-02-16 16:47:06,421 - INFO - 📄 Scraping document...
+2026-02-16 16:47:08,633 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2017-12-15-107.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:08,653 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\NL_lov_2017-12-15-107.xml
+2026-02-16 16:47:08,734 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b01e21c72c444c503b378f0dc7d03199&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:09,045 - INFO - 
+   [30/400] Processing document...
+2026-02-16 16:47:09,046 - INFO - 📄 Scraping document...
+2026-02-16 16:47:11,214 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 16:47:11,525 - INFO - 
+   [31/400] Processing document...
+2026-02-16 16:47:11,525 - INFO - 📄 Scraping document...
+2026-02-16 16:47:13,891 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2015-05-07-25.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:13,924 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\NL_lov_2015-05-07-25.xml
+2026-02-16 16:47:13,998 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3cdc890319596e712579c44cfd4738ba&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:13,998 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 16:47:14,201 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_ostenstad-bh-2006-01.xml "HTTP/2 200 OK"
+2026-02-16 16:47:14,201 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_ostenstad-bh-2006-01.xml
+2026-02-16 16:47:14,279 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:14,280 - INFO - 🧾 Metadata inserted: JUS_ostenstad-bh-2006-01.xml
+2026-02-16 16:47:14,450 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2006-7730.xml "HTTP/2 200 OK"
+2026-02-16 16:47:14,450 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2006-7730.xml
+2026-02-16 16:47:14,533 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:14,534 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2006-7730.xml
+2026-02-16 16:47:14,678 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/SOMB_avgjorelse_somb-1997-18.xml "HTTP/2 200 OK"
+2026-02-16 16:47:14,681 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/SOMB_avgjorelse_somb-1997-18.xml
+2026-02-16 16:47:14,751 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:14,754 - INFO - 🧾 Metadata inserted: SOMB_avgjorelse_somb-1997-18.xml
+2026-02-16 16:47:14,928 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/INNST_forarbeid_inns-o-114-200405.xml "HTTP/2 200 OK"
+2026-02-16 16:47:14,930 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/INNST_forarbeid_inns-o-114-200405.xml
+2026-02-16 16:47:15,007 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:15,008 - INFO - 🧾 Metadata inserted: INNST_forarbeid_inns-o-114-200405.xml
+2026-02-16 16:47:15,150 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LTI_forskrift_2026-02-04-145.xml "HTTP/2 200 OK"
+2026-02-16 16:47:15,151 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LTI_forskrift_2026-02-04-145.xml
+2026-02-16 16:47:15,218 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:15,218 - INFO - 🧾 Metadata inserted: LTI_forskrift_2026-02-04-145.xml
+2026-02-16 16:47:15,406 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LTI_forskrift_2026-02-04-144.xml "HTTP/2 200 OK"
+2026-02-16 16:47:15,406 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LTI_forskrift_2026-02-04-144.xml
+2026-02-16 16:47:15,480 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:15,482 - INFO - 🧾 Metadata inserted: LTI_forskrift_2026-02-04-144.xml
+2026-02-16 16:47:15,638 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LTI_forskrift_2026-01-06-7.xml "HTTP/2 200 OK"
+2026-02-16 16:47:15,640 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LTI_forskrift_2026-01-06-7.xml
+2026-02-16 16:47:15,719 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:15,723 - INFO - 🧾 Metadata inserted: LTI_forskrift_2026-01-06-7.xml
+2026-02-16 16:47:15,855 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/NL_lov_2001-06-15-93.xml "HTTP/2 200 OK"
+2026-02-16 16:47:15,857 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/NL_lov_2001-06-15-93.xml
+2026-02-16 16:47:15,931 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:15,932 - INFO - 🧾 Metadata inserted: NL_lov_2001-06-15-93.xml
+2026-02-16 16:47:16,082 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/NL_lov_2017-12-15-107.xml "HTTP/2 200 OK"
+2026-02-16 16:47:16,082 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/NL_lov_2017-12-15-107.xml
+2026-02-16 16:47:16,163 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:16,165 - INFO - 🧾 Metadata inserted: NL_lov_2017-12-15-107.xml
+2026-02-16 16:47:16,304 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/NL_lov_2015-05-07-25.xml "HTTP/2 200 OK"
+2026-02-16 16:47:16,306 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/NL_lov_2015-05-07-25.xml
+2026-02-16 16:47:16,382 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:47:16,383 - INFO - 🧾 Metadata inserted: NL_lov_2015-05-07-25.xml
+2026-02-16 16:47:16,407 - INFO - ✅ Batch upload complete
+
+2026-02-16 16:47:16,718 - INFO - 
+   [32/400] Processing document...
+2026-02-16 16:47:16,718 - INFO - 📄 Scraping document...
+2026-02-16 16:47:18,956 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2023-12-20-110.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:18,958 - INFO - ⏭️  Skipping existing: NL_lov_2023-12-20-110.xml
+2026-02-16 16:47:19,261 - INFO - 
+   [33/400] Processing document...
+2026-02-16 16:47:19,261 - INFO - 📄 Scraping document...
+2026-02-16 16:47:21,612 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-53.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:21,614 - INFO - ⏭️  Skipping existing: NL_lov_2017-06-16-53.xml
+2026-02-16 16:47:21,926 - INFO - 
+   [34/400] Processing document...
+2026-02-16 16:47:21,926 - INFO - 📄 Scraping document...
+2026-02-16 16:47:24,151 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-56.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:24,180 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\NL_lov_2017-06-16-56.xml
+2026-02-16 16:47:24,263 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8e78dd57e2193a40d37ee603494b1982&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:24,578 - INFO - 
+   [35/400] Processing document...
+2026-02-16 16:47:24,579 - INFO - 📄 Scraping document...
+2026-02-16 16:47:26,788 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2025-06-20-39.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:26,794 - INFO - ⏭️  Skipping existing: NL_lov_2025-06-20-39.xml
+2026-02-16 16:47:27,097 - INFO - 
+   [36/400] Processing document...
+2026-02-16 16:47:27,097 - INFO - 📄 Scraping document...
+2026-02-16 16:47:29,315 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2008-10-08-1130.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:29,319 - INFO - ⏭️  Skipping existing: SF_forskrift_2008-10-08-1130.xml
+2026-02-16 16:47:29,626 - INFO - 
+   [37/400] Processing document...
+2026-02-16 16:47:29,627 - INFO - 📄 Scraping document...
+2026-02-16 16:47:31,930 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2009-12-18-1839.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:31,937 - INFO - ⏭️  Skipping existing: SF_forskrift_2009-12-18-1839.xml
+2026-02-16 16:47:32,246 - INFO - 
+   [38/400] Processing document...
+2026-02-16 16:47:32,247 - INFO - 📄 Scraping document...
+2026-02-16 16:47:34,579 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2010-02-12-158.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:34,584 - INFO - ⏭️  Skipping existing: SF_forskrift_2010-02-12-158.xml
+2026-02-16 16:47:34,894 - INFO - 
+   [39/400] Processing document...
+2026-02-16 16:47:34,894 - INFO - 📄 Scraping document...
+2026-02-16 16:47:37,134 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2015-06-25-793.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:37,151 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\SF_forskrift_2015-06-25-793.xml
+2026-02-16 16:47:37,237 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.0b1f4e32093aba6c22c0658ff18d8a6b&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:37,546 - INFO - 
+   [40/400] Processing document...
+2026-02-16 16:47:37,547 - INFO - 📄 Scraping document...
+2026-02-16 16:47:39,758 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2019-03-01-168.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:39,766 - INFO - ⏭️  Skipping existing: SF_forskrift_2019-03-01-168.xml
+2026-02-16 16:47:40,076 - INFO - 
+   [41/400] Processing document...
+2026-02-16 16:47:40,076 - INFO - 📄 Scraping document...
+2026-02-16 16:47:42,309 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2000-12-21-1379.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:42,312 - INFO - ⏭️  Skipping existing: SF_forskrift_2000-12-21-1379.xml
+2026-02-16 16:47:42,626 - INFO - 
+   [42/400] Processing document...
+2026-02-16 16:47:42,626 - INFO - 📄 Scraping document...
+2026-02-16 16:47:44,847 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2011-12-16-1254.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:44,849 - INFO - ⏭️  Skipping existing: SF_forskrift_2011-12-16-1254.xml
+2026-02-16 16:47:45,163 - INFO - 
+   [43/400] Processing document...
+2026-02-16 16:47:45,163 - INFO - 📄 Scraping document...
+2026-02-16 16:47:47,485 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2010-11-22-1466.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:47,488 - INFO - ⏭️  Skipping existing: SF_forskrift_2010-11-22-1466.xml
+2026-02-16 16:47:47,795 - INFO - 
+   [44/400] Processing document...
+2026-02-16 16:47:47,796 - INFO - 📄 Scraping document...
+2026-02-16 16:47:50,128 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2007-12-21-1610.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:50,162 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\SF_forskrift_2007-12-21-1610.xml
+2026-02-16 16:47:50,246 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.bedf8115f9869be97c8ddb120b2ca114&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:50,549 - INFO - 
+   [45/400] Processing document...
+2026-02-16 16:47:50,552 - INFO - 📄 Scraping document...
+2026-02-16 16:47:52,852 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2005-12-19-1653.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:52,855 - INFO - ⏭️  Skipping existing: SF_forskrift_2005-12-19-1653.xml
+2026-02-16 16:47:53,160 - INFO - 
+   [46/400] Processing document...
+2026-02-16 16:47:53,160 - INFO - 📄 Scraping document...
+2026-02-16 16:47:55,488 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2023-1684-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:55,516 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSIV_avgjorelse_hr-2023-1684-u.xml
+2026-02-16 16:47:55,680 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8c009265fab3824c78b73df226d3ed3e&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:55,993 - INFO - 
+   [47/400] Processing document...
+2026-02-16 16:47:55,993 - INFO - 📄 Scraping document...
+2026-02-16 16:47:58,392 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2021-2471-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:58,430 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSIV_avgjorelse_hr-2021-2471-u.xml
+2026-02-16 16:47:58,522 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.26525e2ce79de4f9eb13ca5871070ce5&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:47:58,831 - INFO - 
+   [48/400] Processing document...
+2026-02-16 16:47:58,832 - INFO - 📄 Scraping document...
+2026-02-16 16:48:01,160 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2021-2389-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:01,181 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSIV_avgjorelse_hr-2021-2389-a.xml
+2026-02-16 16:48:01,343 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.66813f7238918675789fb102a01cf7a1&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:01,658 - INFO - 
+   [49/400] Processing document...
+2026-02-16 16:48:01,658 - INFO - 📄 Scraping document...
+2026-02-16 16:48:03,918 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2018-2452-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:03,948 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSTR_avgjorelse_hr-2018-2452-a.xml
+2026-02-16 16:48:04,021 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b7c6e2ef51062cd2ca3f13d85f4edd8c&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:04,346 - INFO - 
+   [50/400] Processing document...
+2026-02-16 16:48:04,347 - INFO - 📄 Scraping document...
+2026-02-16 16:48:06,758 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2014-236-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:06,783 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSIV_avgjorelse_hr-2014-236-u.xml
+2026-02-16 16:48:06,882 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2e7e4e7decf33fa4ed0c4c26ac8b26e3&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:07,196 - INFO - 
+   [51/400] Processing document...
+2026-02-16 16:48:07,196 - INFO - 📄 Scraping document...
+2026-02-16 16:48:09,494 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2013-2333-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:09,512 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSTR_avgjorelse_hr-2013-2333-a.xml
+2026-02-16 16:48:09,619 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1bd20014b1f5fecd7d4026a848636164&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:09,928 - INFO - 
+   [52/400] Processing document...
+2026-02-16 16:48:09,928 - INFO - 📄 Scraping document...
+2026-02-16 16:48:12,257 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2010-2203-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:12,288 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSIV_avgjorelse_hr-2010-2203-a.xml
+2026-02-16 16:48:12,406 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.60b854ce06415aead87d91a543a1e05e&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:12,414 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 16:48:13,080 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/NL_lov_2017-06-16-56.xml "HTTP/2 200 OK"
+2026-02-16 16:48:13,083 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/NL_lov_2017-06-16-56.xml
+2026-02-16 16:48:13,209 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:13,212 - INFO - 🧾 Metadata inserted: NL_lov_2017-06-16-56.xml
+2026-02-16 16:48:13,369 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/SF_forskrift_2015-06-25-793.xml "HTTP/2 200 OK"
+2026-02-16 16:48:13,371 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/SF_forskrift_2015-06-25-793.xml
+2026-02-16 16:48:13,462 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:13,465 - INFO - 🧾 Metadata inserted: SF_forskrift_2015-06-25-793.xml
+2026-02-16 16:48:13,600 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/SF_forskrift_2007-12-21-1610.xml "HTTP/2 200 OK"
+2026-02-16 16:48:13,600 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/SF_forskrift_2007-12-21-1610.xml
+2026-02-16 16:48:13,683 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:13,687 - INFO - 🧾 Metadata inserted: SF_forskrift_2007-12-21-1610.xml
+2026-02-16 16:48:13,863 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2023-1684-u.xml "HTTP/2 200 OK"
+2026-02-16 16:48:13,890 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2023-1684-u.xml
+2026-02-16 16:48:13,985 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:13,986 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2023-1684-u.xml
+2026-02-16 16:48:14,208 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2021-2471-u.xml "HTTP/2 200 OK"
+2026-02-16 16:48:14,208 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2021-2471-u.xml
+2026-02-16 16:48:14,327 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:14,330 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2021-2471-u.xml
+2026-02-16 16:48:14,516 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2021-2389-a.xml "HTTP/2 200 OK"
+2026-02-16 16:48:14,517 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2021-2389-a.xml
+2026-02-16 16:48:14,677 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:14,677 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2021-2389-a.xml
+2026-02-16 16:48:15,045 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSTR_avgjorelse_hr-2018-2452-a.xml "HTTP/2 200 OK"
+2026-02-16 16:48:15,047 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSTR_avgjorelse_hr-2018-2452-a.xml
+2026-02-16 16:48:15,142 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:15,147 - INFO - 🧾 Metadata inserted: HRSTR_avgjorelse_hr-2018-2452-a.xml
+2026-02-16 16:48:15,289 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2014-236-u.xml "HTTP/2 200 OK"
+2026-02-16 16:48:15,295 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2014-236-u.xml
+2026-02-16 16:48:15,388 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:15,389 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2014-236-u.xml
+2026-02-16 16:48:15,542 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSTR_avgjorelse_hr-2013-2333-a.xml "HTTP/2 200 OK"
+2026-02-16 16:48:15,543 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSTR_avgjorelse_hr-2013-2333-a.xml
+2026-02-16 16:48:15,623 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:15,626 - INFO - 🧾 Metadata inserted: HRSTR_avgjorelse_hr-2013-2333-a.xml
+2026-02-16 16:48:15,771 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2010-2203-a.xml "HTTP/2 200 OK"
+2026-02-16 16:48:15,771 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2010-2203-a.xml
+2026-02-16 16:48:15,877 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:48:15,877 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2010-2203-a.xml
+2026-02-16 16:48:15,897 - INFO - ✅ Batch upload complete
+
+2026-02-16 16:48:16,212 - INFO - 
+   [53/400] Processing document...
+2026-02-16 16:48:16,213 - INFO - 📄 Scraping document...
+2026-02-16 16:48:18,577 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2008-1927-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:18,602 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSTR_avgjorelse_hr-2008-1927-a.xml
+2026-02-16 16:48:18,698 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4606045fc6de3435eefcb46759ef2430&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:19,013 - INFO - 
+   [54/400] Processing document...
+2026-02-16 16:48:19,013 - INFO - 📄 Scraping document...
+2026-02-16 16:48:21,251 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2008-692-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:21,279 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\HRSIV_avgjorelse_hr-2008-692-a.xml
+2026-02-16 16:48:21,360 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.58e91ab82bc41c3e751070cb79a7be6c&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:21,660 - INFO - 
+   [55/400] Processing document...
+2026-02-16 16:48:21,661 - INFO - 📄 Scraping document...
+2026-02-16 16:48:24,023 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-82065.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:24,023 - INFO - ⏭️  Skipping existing: LBSIV_avgjorelse_lb-2025-82065.xml
+2026-02-16 16:48:24,329 - INFO - 
+   [56/400] Processing document...
+2026-02-16 16:48:24,330 - INFO - 📄 Scraping document...
+2026-02-16 16:48:26,616 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-8803.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:26,646 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LBSIV_avgjorelse_lb-2025-8803.xml
+2026-02-16 16:48:26,724 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f75057da340c82f2565d8aa5965ee75b&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:27,028 - INFO - 
+   [57/400] Processing document...
+2026-02-16 16:48:27,028 - INFO - 📄 Scraping document...
+2026-02-16 16:48:29,290 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LHSTR_avgjorelse_lh-2025-138955.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:29,294 - INFO - ⏭️  Skipping existing: LHSTR_avgjorelse_lh-2025-138955.xml
+2026-02-16 16:48:29,595 - INFO - 
+   [58/400] Processing document...
+2026-02-16 16:48:29,595 - INFO - 📄 Scraping document...
+2026-02-16 16:48:31,909 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSTR_avgjorelse_lg-2025-16475.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:31,927 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LGSTR_avgjorelse_lg-2025-16475.xml
+2026-02-16 16:48:32,016 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e6a554dc5aa5bb87751fb16685c95cae&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:32,328 - INFO - 
+   [59/400] Processing document...
+2026-02-16 16:48:32,329 - INFO - 📄 Scraping document...
+2026-02-16 16:48:34,707 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LESIV_avgjorelse_le-2024-154444.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:34,728 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LESIV_avgjorelse_le-2024-154444.xml
+2026-02-16 16:48:34,801 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f1a84c1b40f833f4bbeacbb2c92bde42&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:35,109 - INFO - 
+   [60/400] Processing document...
+2026-02-16 16:48:35,109 - INFO - 📄 Scraping document...
+2026-02-16 16:48:37,367 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2023-162614-2.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:37,370 - INFO - ⏭️  Skipping existing: LBSIV_avgjorelse_lb-2023-162614-2.xml
+2026-02-16 16:48:37,678 - INFO - 
+   [61/400] Processing document...
+2026-02-16 16:48:37,679 - INFO - 📄 Scraping document...
+2026-02-16 16:48:40,297 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LFSIV_avgjorelse_lf-2024-198112.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:40,335 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LFSIV_avgjorelse_lf-2024-198112.xml
+2026-02-16 16:48:40,399 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.bbb747841bec505bbbb6893c9cce69ac&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:40,712 - INFO - 
+   [62/400] Processing document...
+2026-02-16 16:48:40,712 - INFO - 📄 Scraping document...
+2026-02-16 16:48:43,215 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2024-173023.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:43,243 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LGSIV_avgjorelse_lg-2024-173023.xml
+2026-02-16 16:48:43,313 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a6ac99e09c948b592426298a98c5133f&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:43,630 - INFO - 
+   [63/400] Processing document...
+2026-02-16 16:48:43,632 - INFO - 📄 Scraping document...
+2026-02-16 16:48:46,039 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LFSIV_avgjorelse_lf-2025-2597.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:46,043 - INFO - ⏭️  Skipping existing: LFSIV_avgjorelse_lf-2025-2597.xml
+2026-02-16 16:48:46,352 - INFO - 
+   [64/400] Processing document...
+2026-02-16 16:48:46,352 - INFO - 📄 Scraping document...
+2026-02-16 16:48:48,766 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-61865.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:48,805 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\LBSIV_avgjorelse_lb-2025-61865.xml
+2026-02-16 16:48:48,871 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5456976623f023cd0c16423e052c2f3f&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:49,178 - INFO - 
+   [65/400] Processing document...
+2026-02-16 16:48:49,178 - INFO - 📄 Scraping document...
+2026-02-16 16:48:51,749 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-7889.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:51,755 - INFO - ⏭️  Skipping existing: TRSIV_avgjorelse_tosl-2025-7889.xml
+2026-02-16 16:48:52,070 - INFO - 
+   [66/400] Processing document...
+2026-02-16 16:48:52,071 - INFO - 📄 Scraping document...
+2026-02-16 16:48:57,231 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-175100.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:57,259 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSIV_avgjorelse_tosl-2025-175100.xml
+2026-02-16 16:48:57,343 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d99e986f490f265ed860b3962d21a9be&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:48:57,661 - INFO - 
+   [67/400] Processing document...
+2026-02-16 16:48:57,661 - INFO - 📄 Scraping document...
+2026-02-16 16:49:00,269 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tmha-2025-32856-2.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:00,318 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSTR_avgjorelse_tmha-2025-32856-2.xml
+2026-02-16 16:49:00,397 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e0e633535d21379d2bf8ed7242cc771e&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:00,400 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 16:49:00,632 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSTR_avgjorelse_hr-2008-1927-a.xml "HTTP/2 200 OK"
+2026-02-16 16:49:00,638 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSTR_avgjorelse_hr-2008-1927-a.xml
+2026-02-16 16:49:00,884 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:00,886 - INFO - 🧾 Metadata inserted: HRSTR_avgjorelse_hr-2008-1927-a.xml
+2026-02-16 16:49:01,049 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2008-692-a.xml "HTTP/2 200 OK"
+2026-02-16 16:49:01,051 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/HRSIV_avgjorelse_hr-2008-692-a.xml
+2026-02-16 16:49:01,124 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:01,125 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2008-692-a.xml
+2026-02-16 16:49:01,463 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LBSIV_avgjorelse_lb-2025-8803.xml "HTTP/2 200 OK"
+2026-02-16 16:49:01,464 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LBSIV_avgjorelse_lb-2025-8803.xml
+2026-02-16 16:49:01,542 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:01,570 - INFO - 🧾 Metadata inserted: LBSIV_avgjorelse_lb-2025-8803.xml
+2026-02-16 16:49:01,739 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LGSTR_avgjorelse_lg-2025-16475.xml "HTTP/2 200 OK"
+2026-02-16 16:49:01,741 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LGSTR_avgjorelse_lg-2025-16475.xml
+2026-02-16 16:49:01,823 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:01,824 - INFO - 🧾 Metadata inserted: LGSTR_avgjorelse_lg-2025-16475.xml
+2026-02-16 16:49:02,119 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LESIV_avgjorelse_le-2024-154444.xml "HTTP/2 200 OK"
+2026-02-16 16:49:02,121 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LESIV_avgjorelse_le-2024-154444.xml
+2026-02-16 16:49:02,198 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:02,198 - INFO - 🧾 Metadata inserted: LESIV_avgjorelse_le-2024-154444.xml
+2026-02-16 16:49:02,352 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LFSIV_avgjorelse_lf-2024-198112.xml "HTTP/2 200 OK"
+2026-02-16 16:49:02,352 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LFSIV_avgjorelse_lf-2024-198112.xml
+2026-02-16 16:49:02,433 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:02,435 - INFO - 🧾 Metadata inserted: LFSIV_avgjorelse_lf-2024-198112.xml
+2026-02-16 16:49:02,578 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LGSIV_avgjorelse_lg-2024-173023.xml "HTTP/2 200 OK"
+2026-02-16 16:49:02,582 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LGSIV_avgjorelse_lg-2024-173023.xml
+2026-02-16 16:49:02,652 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:02,652 - INFO - 🧾 Metadata inserted: LGSIV_avgjorelse_lg-2024-173023.xml
+2026-02-16 16:49:02,797 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/LBSIV_avgjorelse_lb-2025-61865.xml "HTTP/2 200 OK"
+2026-02-16 16:49:02,798 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/LBSIV_avgjorelse_lb-2025-61865.xml
+2026-02-16 16:49:02,872 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:02,873 - INFO - 🧾 Metadata inserted: LBSIV_avgjorelse_lb-2025-61865.xml
+2026-02-16 16:49:03,013 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_tosl-2025-175100.xml "HTTP/2 200 OK"
+2026-02-16 16:49:03,015 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_tosl-2025-175100.xml
+2026-02-16 16:49:03,093 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:03,095 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_tosl-2025-175100.xml
+2026-02-16 16:49:03,790 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSTR_avgjorelse_tmha-2025-32856-2.xml "HTTP/2 200 OK"
+2026-02-16 16:49:03,793 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSTR_avgjorelse_tmha-2025-32856-2.xml
+2026-02-16 16:49:03,869 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:03,870 - INFO - 🧾 Metadata inserted: TRSTR_avgjorelse_tmha-2025-32856-2.xml
+2026-02-16 16:49:03,915 - INFO - ✅ Batch upload complete
+
+2026-02-16 16:49:04,227 - INFO - 
+   [68/400] Processing document...
+2026-02-16 16:49:04,227 - INFO - 📄 Scraping document...
+2026-02-16 16:49:06,651 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tmha-2025-32856-1.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:06,689 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSTR_avgjorelse_tmha-2025-32856-1.xml
+2026-02-16 16:49:06,766 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.bcc8acc8bcabb881eaa2662675d9aa5d&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:07,075 - INFO - 
+   [69/400] Processing document...
+2026-02-16 16:49:07,075 - INFO - 📄 Scraping document...
+2026-02-16 16:49:09,592 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2024-122744.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:09,627 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSIV_avgjorelse_tosl-2024-122744.xml
+2026-02-16 16:49:09,705 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b5c36e99c6a1b61fd4925f8e77a94612&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:10,013 - INFO - 
+   [70/400] Processing document...
+2026-02-16 16:49:10,016 - INFO - 📄 Scraping document...
+2026-02-16 16:49:12,468 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_ttro-2024-55270.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:12,500 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSIV_avgjorelse_ttro-2024-55270.xml
+2026-02-16 16:49:12,586 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.818a21f144ed7fb3ed4e0a54457f0439&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:12,897 - INFO - 
+   [71/400] Processing document...
+2026-02-16 16:49:12,898 - INFO - 📄 Scraping document...
+2026-02-16 16:49:15,673 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_ttro-2024-11142.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:15,711 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSIV_avgjorelse_ttro-2024-11142.xml
+2026-02-16 16:49:15,819 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b6705194c18446b357247f1b4115c0ad&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:16,141 - INFO - 
+   [72/400] Processing document...
+2026-02-16 16:49:16,147 - INFO - 📄 Scraping document...
+2026-02-16 16:49:19,052 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2023-182378.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:19,084 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSIV_avgjorelse_tosl-2023-182378.xml
+2026-02-16 16:49:19,182 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9efbd2a770f72795f1d498102092912e&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:19,489 - INFO - 
+   [73/400] Processing document...
+2026-02-16 16:49:19,490 - INFO - 📄 Scraping document...
+2026-02-16 16:49:22,037 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_thod-2024-39742.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:22,087 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSIV_avgjorelse_thod-2024-39742.xml
+2026-02-16 16:49:22,159 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5dede9ac30d830bffe8de458c5a97875&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:22,473 - INFO - 
+   [74/400] Processing document...
+2026-02-16 16:49:22,475 - INFO - 📄 Scraping document...
+2026-02-16 16:49:25,072 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tsos-2024-61543.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:25,153 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\TRSTR_avgjorelse_tsos-2024-61543.xml
+2026-02-16 16:49:25,254 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.98809e3ceacae39923a47273b6bba9bf&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:25,567 - INFO - 
+   [75/400] Processing document...
+2026-02-16 16:49:25,567 - INFO - 📄 Scraping document...
+2026-02-16 16:49:28,036 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_kjellevold-a-2006-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:28,063 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_kjellevold-a-2006-01.xml
+2026-02-16 16:49:28,148 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.95ff23dc7c2ddf443eb52f57c05b34fd&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:28,460 - INFO - 
+   [76/400] Processing document...
+2026-02-16 16:49:28,461 - INFO - 📄 Scraping document...
+2026-02-16 16:49:31,082 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_jorstad-rg-2004-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:31,121 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_jorstad-rg-2004-01.xml
+2026-02-16 16:49:31,204 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c837ded122f68c80da000c189a2d582e&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:31,508 - INFO - 
+   [77/400] Processing document...
+2026-02-16 16:49:31,509 - INFO - 📄 Scraping document...
+2026-02-16 16:49:34,334 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_kjonstad-a-2009-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:34,465 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_kjonstad-a-2009-04.xml
+2026-02-16 16:49:34,554 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.7af0cddba54a3a6a6040791843ac173a&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:34,555 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 16:49:34,999 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSTR_avgjorelse_tmha-2025-32856-1.xml "HTTP/2 200 OK"
+2026-02-16 16:49:34,999 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSTR_avgjorelse_tmha-2025-32856-1.xml
+2026-02-16 16:49:35,094 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:35,096 - INFO - 🧾 Metadata inserted: TRSTR_avgjorelse_tmha-2025-32856-1.xml
+2026-02-16 16:49:35,253 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_tosl-2024-122744.xml "HTTP/2 200 OK"
+2026-02-16 16:49:35,253 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_tosl-2024-122744.xml
+2026-02-16 16:49:35,328 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:35,329 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_tosl-2024-122744.xml
+2026-02-16 16:49:35,733 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_ttro-2024-55270.xml "HTTP/2 200 OK"
+2026-02-16 16:49:35,735 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_ttro-2024-55270.xml
+2026-02-16 16:49:35,813 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:35,813 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_ttro-2024-55270.xml
+2026-02-16 16:49:36,248 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_ttro-2024-11142.xml "HTTP/2 200 OK"
+2026-02-16 16:49:36,307 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_ttro-2024-11142.xml
+2026-02-16 16:49:36,386 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:36,387 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_ttro-2024-11142.xml
+2026-02-16 16:49:36,702 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_tosl-2023-182378.xml "HTTP/2 200 OK"
+2026-02-16 16:49:36,704 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_tosl-2023-182378.xml
+2026-02-16 16:49:36,776 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:36,777 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_tosl-2023-182378.xml
+2026-02-16 16:49:37,197 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_thod-2024-39742.xml "HTTP/2 200 OK"
+2026-02-16 16:49:37,199 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSIV_avgjorelse_thod-2024-39742.xml
+2026-02-16 16:49:37,263 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:37,273 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_thod-2024-39742.xml
+2026-02-16 16:49:37,568 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/TRSTR_avgjorelse_tsos-2024-61543.xml "HTTP/2 200 OK"
+2026-02-16 16:49:37,661 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/TRSTR_avgjorelse_tsos-2024-61543.xml
+2026-02-16 16:49:37,731 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:37,732 - INFO - 🧾 Metadata inserted: TRSTR_avgjorelse_tsos-2024-61543.xml
+2026-02-16 16:49:37,926 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_kjellevold-a-2006-01.xml "HTTP/2 200 OK"
+2026-02-16 16:49:37,928 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_kjellevold-a-2006-01.xml
+2026-02-16 16:49:38,013 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:38,015 - INFO - 🧾 Metadata inserted: JUS_kjellevold-a-2006-01.xml
+2026-02-16 16:49:38,147 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_jorstad-rg-2004-01.xml "HTTP/2 200 OK"
+2026-02-16 16:49:38,149 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_jorstad-rg-2004-01.xml
+2026-02-16 16:49:38,216 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:38,218 - INFO - 🧾 Metadata inserted: JUS_jorstad-rg-2004-01.xml
+2026-02-16 16:49:38,369 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-2009-04.xml "HTTP/2 200 OK"
+2026-02-16 16:49:38,369 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-2009-04.xml
+2026-02-16 16:49:38,442 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:49:38,443 - INFO - 🧾 Metadata inserted: JUS_kjonstad-a-2009-04.xml
+2026-02-16 16:49:38,475 - INFO - ✅ Batch upload complete
+
+2026-02-16 16:49:38,776 - INFO - 
+   [78/400] Processing document...
+2026-02-16 16:49:38,776 - INFO - 📄 Scraping document...
+2026-02-16 16:49:41,035 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_kjonstad-a-2005-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:42,029 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_kjonstad-a-2005-04.xml
+2026-02-16 16:49:42,098 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4d69f882fc8ea16777880f5e97aed92d&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:42,408 - INFO - 
+   [79/400] Processing document...
+2026-02-16 16:49:42,408 - INFO - 📄 Scraping document...
+2026-02-16 16:49:45,321 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_jorstad-rg-2008-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:45,353 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_jorstad-rg-2008-01.xml
+2026-02-16 16:49:45,430 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9d01025287bd1b0efa6b6138f20856a3&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:45,735 - INFO - 
+   [80/400] Processing document...
+2026-02-16 16:49:45,735 - INFO - 📄 Scraping document...
+2026-02-16 16:49:47,971 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_ohnstad-b-2004-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:48,038 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_ohnstad-b-2004-01.xml
+2026-02-16 16:49:48,118 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.68bb0b95b5bd2580b25e4f9712aeb183&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:48,421 - INFO - 
+   [81/400] Processing document...
+2026-02-16 16:49:48,421 - INFO - 📄 Scraping document...
+2026-02-16 16:49:50,708 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_kjonstad-a-1986-02.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:50,725 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_kjonstad-a-1986-02.xml
+2026-02-16 16:49:50,793 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d07230bf01c89e45f1af897bf2bf234f&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:51,097 - INFO - 
+   [82/400] Processing document...
+2026-02-16 16:49:51,098 - INFO - 📄 Scraping document...
+2026-02-16 16:49:53,352 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_kjonstad-a-1985-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:53,378 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_kjonstad-a-1985-01.xml
+2026-02-16 16:49:53,452 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c990150f85a193e4722b9b6679b1d069&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:53,761 - INFO - 
+   [83/400] Processing document...
+2026-02-16 16:49:53,761 - INFO - 📄 Scraping document...
+2026-02-16 16:49:56,051 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_kjonstad-a-2004-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:56,073 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_kjonstad-a-2004-01.xml
+2026-02-16 16:49:56,150 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d5d831e6e2fb774dc527d92b9ddbcb45&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:56,462 - INFO - 
+   [84/400] Processing document...
+2026-02-16 16:49:56,463 - INFO - 📄 Scraping document...
+2026-02-16 16:49:58,811 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JUS_bernt-jf-2016-03.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:58,831 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JUS_bernt-jf-2016-03.xml
+2026-02-16 16:49:58,908 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e790f6b0865faabf21a133824f0c8429&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:49:59,212 - INFO - 
+   [85/400] Processing document...
+2026-02-16 16:49:59,212 - INFO - 📄 Scraping document...
+2026-02-16 16:50:01,455 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PGD_avgjorelse_pgd-2014-52.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:01,582 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PGD_avgjorelse_pgd-2014-52.xml
+2026-02-16 16:50:01,652 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1593cd3ebcb184ab517838dd963edb8c&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:01,960 - INFO - 
+   [86/400] Processing document...
+2026-02-16 16:50:01,960 - INFO - 📄 Scraping document...
+2026-02-16 16:50:04,277 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PGD_avgjorelse_pgd-2013-63.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:04,292 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PGD_avgjorelse_pgd-2013-63.xml
+2026-02-16 16:50:04,363 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4f95ae402140e9f16721ccb2b688c5e3&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:04,680 - INFO - 
+   [87/400] Processing document...
+2026-02-16 16:50:04,680 - INFO - 📄 Scraping document...
+2026-02-16 16:50:06,944 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PGD_avgjorelse_pgd-2010-48.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:06,959 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PGD_avgjorelse_pgd-2010-48.xml
+2026-02-16 16:50:07,031 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e7d3aab33804584b3c697dcb2990176e&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:07,031 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 16:50:07,254 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-2005-04.xml "HTTP/2 200 OK"
+2026-02-16 16:50:07,260 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-2005-04.xml
+2026-02-16 16:50:07,329 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:07,331 - INFO - 🧾 Metadata inserted: JUS_kjonstad-a-2005-04.xml
+2026-02-16 16:50:07,534 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_jorstad-rg-2008-01.xml "HTTP/2 200 OK"
+2026-02-16 16:50:07,540 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_jorstad-rg-2008-01.xml
+2026-02-16 16:50:07,612 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:07,755 - INFO - 🧾 Metadata inserted: JUS_jorstad-rg-2008-01.xml
+2026-02-16 16:50:07,979 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_ohnstad-b-2004-01.xml "HTTP/2 200 OK"
+2026-02-16 16:50:07,981 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_ohnstad-b-2004-01.xml
+2026-02-16 16:50:08,061 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:08,064 - INFO - 🧾 Metadata inserted: JUS_ohnstad-b-2004-01.xml
+2026-02-16 16:50:08,269 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-1986-02.xml "HTTP/2 200 OK"
+2026-02-16 16:50:08,270 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-1986-02.xml
+2026-02-16 16:50:08,372 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:08,372 - INFO - 🧾 Metadata inserted: JUS_kjonstad-a-1986-02.xml
+2026-02-16 16:50:08,520 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-1985-01.xml "HTTP/2 200 OK"
+2026-02-16 16:50:08,523 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-1985-01.xml
+2026-02-16 16:50:08,605 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:08,606 - INFO - 🧾 Metadata inserted: JUS_kjonstad-a-1985-01.xml
+2026-02-16 16:50:08,764 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-2004-01.xml "HTTP/2 200 OK"
+2026-02-16 16:50:08,766 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_kjonstad-a-2004-01.xml
+2026-02-16 16:50:08,837 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:08,838 - INFO - 🧾 Metadata inserted: JUS_kjonstad-a-2004-01.xml
+2026-02-16 16:50:08,980 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JUS_bernt-jf-2016-03.xml "HTTP/2 200 OK"
+2026-02-16 16:50:08,981 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JUS_bernt-jf-2016-03.xml
+2026-02-16 16:50:09,054 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:09,055 - INFO - 🧾 Metadata inserted: JUS_bernt-jf-2016-03.xml
+2026-02-16 16:50:09,199 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2014-52.xml "HTTP/2 200 OK"
+2026-02-16 16:50:09,199 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2014-52.xml
+2026-02-16 16:50:09,276 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:09,277 - INFO - 🧾 Metadata inserted: PGD_avgjorelse_pgd-2014-52.xml
+2026-02-16 16:50:09,427 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2013-63.xml "HTTP/2 200 OK"
+2026-02-16 16:50:09,428 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2013-63.xml
+2026-02-16 16:50:09,501 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:09,501 - INFO - 🧾 Metadata inserted: PGD_avgjorelse_pgd-2013-63.xml
+2026-02-16 16:50:09,669 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2010-48.xml "HTTP/2 200 OK"
+2026-02-16 16:50:09,669 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2010-48.xml
+2026-02-16 16:50:09,748 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:09,750 - INFO - 🧾 Metadata inserted: PGD_avgjorelse_pgd-2010-48.xml
+2026-02-16 16:50:09,789 - INFO - ✅ Batch upload complete
+
+2026-02-16 16:50:10,098 - INFO - 
+   [88/400] Processing document...
+2026-02-16 16:50:10,098 - INFO - 📄 Scraping document...
+2026-02-16 16:50:12,496 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PGD_avgjorelse_pgd-2009-78.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:13,238 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PGD_avgjorelse_pgd-2009-78.xml
+2026-02-16 16:50:13,319 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8ab5184d3b2eb865808f401698cd0346&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:13,621 - INFO - 
+   [89/400] Processing document...
+2026-02-16 16:50:13,621 - INFO - 📄 Scraping document...
+2026-02-16 16:50:15,856 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PGD_avgjorelse_pgd-2008-74.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:15,878 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PGD_avgjorelse_pgd-2008-74.xml
+2026-02-16 16:50:15,950 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4fecdbe590bf9173c60e3cdd0a68ffb2&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:16,256 - INFO - 
+   [90/400] Processing document...
+2026-02-16 16:50:16,257 - INFO - 📄 Scraping document...
+2026-02-16 16:50:18,511 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PGD_avgjorelse_pgd-2006-91.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:18,538 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PGD_avgjorelse_pgd-2006-91.xml
+2026-02-16 16:50:18,616 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b720483b42237e8347c0cbdf77c8a1d4&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:18,932 - INFO - 
+   [91/400] Processing document...
+2026-02-16 16:50:18,933 - INFO - 📄 Scraping document...
+2026-02-16 16:50:21,213 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PGD_avgjorelse_pgd-2005-42.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:21,238 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PGD_avgjorelse_pgd-2005-42.xml
+2026-02-16 16:50:21,310 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3d8884872a5cd617be09ae584a2e058a&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:21,613 - INFO - 
+   [92/400] Processing document...
+2026-02-16 16:50:21,613 - INFO - 📄 Scraping document...
+2026-02-16 16:50:24,095 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PGD_avgjorelse_pgd-2005-34.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:24,123 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\PGD_avgjorelse_pgd-2005-34.xml
+2026-02-16 16:50:24,196 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b79035c1c6a2d7024099aff39422e036&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:24,512 - INFO - 
+   [93/400] Processing document...
+2026-02-16 16:50:24,512 - INFO - 📄 Scraping document...
+2026-02-16 16:50:26,810 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2015-7630-2.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:26,831 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2015-7630-2.xml
+2026-02-16 16:50:26,903 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.6bba91bcfd8e44cccd447415f9ea96e3&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:27,213 - INFO - 
+   [94/400] Processing document...
+2026-02-16 16:50:27,213 - INFO - 📄 Scraping document...
+2026-02-16 16:50:29,454 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2015-4608.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:29,486 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2015-4608.xml
+2026-02-16 16:50:29,573 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e591a5750302ad73550821e5782b735a&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:29,878 - INFO - 
+   [95/400] Processing document...
+2026-02-16 16:50:29,879 - INFO - 📄 Scraping document...
+2026-02-16 16:50:33,227 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2013-4182.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:34,100 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2013-4182.xml
+2026-02-16 16:50:34,186 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f04300ea89142a6a767f894a2e126c41&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:34,488 - INFO - 
+   [96/400] Processing document...
+2026-02-16 16:50:34,488 - INFO - 📄 Scraping document...
+2026-02-16 16:50:36,958 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2010-11713.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:36,973 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2010-11713.xml
+2026-02-16 16:50:37,046 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.435d5e2689a2d16c81f50de55280dea1&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:37,350 - INFO - 
+   [97/400] Processing document...
+2026-02-16 16:50:37,350 - INFO - 📄 Scraping document...
+2026-02-16 16:50:39,623 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2010-7696.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:39,850 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2010-7696.xml
+2026-02-16 16:50:39,927 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1ce6b15da9f8bc827e6274533ab36341&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:39,930 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 16:50:47,607 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2009-78.xml "HTTP/2 200 OK"
+2026-02-16 16:50:47,616 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2009-78.xml
+2026-02-16 16:50:47,759 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:47,761 - INFO - 🧾 Metadata inserted: PGD_avgjorelse_pgd-2009-78.xml
+2026-02-16 16:50:47,912 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2008-74.xml "HTTP/2 200 OK"
+2026-02-16 16:50:47,914 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2008-74.xml
+2026-02-16 16:50:47,988 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:47,991 - INFO - 🧾 Metadata inserted: PGD_avgjorelse_pgd-2008-74.xml
+2026-02-16 16:50:48,133 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2006-91.xml "HTTP/2 200 OK"
+2026-02-16 16:50:48,133 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2006-91.xml
+2026-02-16 16:50:48,216 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:48,217 - INFO - 🧾 Metadata inserted: PGD_avgjorelse_pgd-2006-91.xml
+2026-02-16 16:50:48,364 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2005-42.xml "HTTP/2 200 OK"
+2026-02-16 16:50:48,366 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2005-42.xml
+2026-02-16 16:50:48,436 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:48,438 - INFO - 🧾 Metadata inserted: PGD_avgjorelse_pgd-2005-42.xml
+2026-02-16 16:50:48,576 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2005-34.xml "HTTP/2 200 OK"
+2026-02-16 16:50:48,577 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/PGD_avgjorelse_pgd-2005-34.xml
+2026-02-16 16:50:48,650 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:48,651 - INFO - 🧾 Metadata inserted: PGD_avgjorelse_pgd-2005-34.xml
+2026-02-16 16:50:48,894 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2015-7630-2.xml "HTTP/2 200 OK"
+2026-02-16 16:50:48,896 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2015-7630-2.xml
+2026-02-16 16:50:48,969 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:48,969 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2015-7630-2.xml
+2026-02-16 16:50:49,203 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2015-4608.xml "HTTP/2 200 OK"
+2026-02-16 16:50:49,205 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2015-4608.xml
+2026-02-16 16:50:49,285 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:49,286 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2015-4608.xml
+2026-02-16 16:50:49,446 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2013-4182.xml "HTTP/2 200 OK"
+2026-02-16 16:50:49,448 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2013-4182.xml
+2026-02-16 16:50:49,522 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:49,523 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2013-4182.xml
+2026-02-16 16:50:49,667 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-11713.xml "HTTP/2 200 OK"
+2026-02-16 16:50:49,669 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-11713.xml
+2026-02-16 16:50:49,751 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:49,756 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2010-11713.xml
+2026-02-16 16:50:49,901 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-7696.xml "HTTP/2 200 OK"
+2026-02-16 16:50:49,903 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-7696.xml
+2026-02-16 16:50:49,975 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:50:49,977 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2010-7696.xml
+2026-02-16 16:50:50,004 - INFO - ✅ Batch upload complete
+
+2026-02-16 16:50:50,304 - INFO - 
+   [98/400] Processing document...
+2026-02-16 16:50:50,305 - INFO - 📄 Scraping document...
+2026-02-16 16:50:52,802 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2010-5035.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:53,353 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2010-5035.xml
+2026-02-16 16:50:53,426 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.db3761550d73cd5690de876e4650a9fa&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:53,728 - INFO - 
+   [99/400] Processing document...
+2026-02-16 16:50:53,733 - INFO - 📄 Scraping document...
+2026-02-16 16:50:56,416 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2010-4739.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:58,408 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2010-4739.xml
+2026-02-16 16:50:58,534 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a958e4a132a965e07650247ae7006506&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:50:58,844 - INFO - 
+   [100/400] Processing document...
+2026-02-16 16:50:58,844 - INFO - 📄 Scraping document...
+2026-02-16 16:51:01,264 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2010-9381.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:51:01,302 - INFO - ✓ XML saved: ./scraped_xml\Helse__Og_Omsorgsrett\Unknown\JDLOV_avgjorelse_jdlov-2010-9381.xml
+2026-02-16 16:51:01,373 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.25f1dcd1942901542fe4b45062aa16e3&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 16:51:01,375 - INFO - 
+🔄 Restarting browser after 100 documents...
+2026-02-16 16:51:04,728 - INFO - ✅ Browser restarted successfully
+
+2026-02-16 16:51:05,040 - INFO - 
+   [101/400] Processing document...
+2026-02-16 16:51:05,040 - INFO - 📄 Scraping document...
+2026-02-16 16:51:09,128 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:51:13,177 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:51:17,235 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:51:21,314 - WARNING - ⚠️  Attempt 1/3 failed: HTTPConnectionPool(host='localhost', port=59731): Max retries exceeded with url: /session/43f948858f57022e10b6e30ba5b56410/timeouts (Caused by NewConnectionError("HTTPConnection(host='localhost', port
+2026-02-16 16:51:21,314 - INFO - 🔄 Retrying in 5 seconds...
+2026-02-16 16:51:30,377 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:51:34,451 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:51:38,517 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:51:42,582 - WARNING - ⚠️  Browser may be unstable, continuing anyway...
+2026-02-16 16:51:42,582 - INFO - 📄 Scraping document...
+2026-02-16 16:51:46,648 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:51:50,730 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:51:54,801 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:51:58,874 - WARNING - ⚠️  Attempt 2/3 failed: HTTPConnectionPool(host='localhost', port=59731): Max retries exceeded with url: /session/43f948858f57022e10b6e30ba5b56410/timeouts (Caused by NewConnectionError("HTTPConnection(host='localhost', port
+2026-02-16 16:51:58,875 - INFO - 🔄 Retrying in 5 seconds...
+2026-02-16 16:52:07,961 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:52:12,051 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:52:16,102 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:52:20,182 - WARNING - ⚠️  Browser may be unstable, continuing anyway...
+2026-02-16 16:52:20,182 - INFO - 📄 Scraping document...
+2026-02-16 16:52:24,234 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:52:28,322 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:52:32,398 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:52:36,464 - WARNING - ⚠️  Attempt 3/3 failed: HTTPConnectionPool(host='localhost', port=59731): Max retries exceeded with url: /session/43f948858f57022e10b6e30ba5b56410/timeouts (Caused by NewConnectionError("HTTPConnection(host='localhost', port
+2026-02-16 16:52:36,467 - ERROR - ❌ Failed to scrape after 3 attempts: https://lovdata.no/pro/#document/JDLOV/avgjorelse/jdlov-2010-8148
+2026-02-16 16:52:36,776 - INFO - 
+   [102/400] Processing document...
+2026-02-16 16:52:36,777 - INFO - 📄 Scraping document...
+2026-02-16 16:52:40,856 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:52:44,901 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:52:48,993 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/timeouts
+2026-02-16 16:52:53,102 - WARNING - ⚠️  Attempt 1/3 failed: HTTPConnectionPool(host='localhost', port=59731): Max retries exceeded with url: /session/43f948858f57022e10b6e30ba5b56410/timeouts (Caused by NewConnectionError("HTTPConnection(host='localhost', port
+2026-02-16 16:52:53,102 - INFO - 🔄 Retrying in 5 seconds...
+2026-02-16 16:53:02,195 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:53:06,272 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:53:10,338 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59731): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/43f948858f57022e10b6e30ba5b56410/url
+2026-02-16 16:53:14,386 - WARNING - ⚠️  Browser may be unstable, continuing anyway...
+2026-02-16 16:53:14,386 - INFO - 📄 Scraping document...
+2026-02-16 16:53:16,431 - INFO - 
+⬆️  Uploading batch (3 documents)
+2026-02-16 16:53:17,060 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-5035.xml "HTTP/2 200 OK"
+2026-02-16 16:53:17,075 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-5035.xml
+2026-02-16 16:53:17,290 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:53:17,339 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2010-5035.xml
+2026-02-16 16:53:17,483 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-4739.xml "HTTP/2 200 OK"
+2026-02-16 16:53:17,484 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-4739.xml
+2026-02-16 16:53:17,552 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:53:17,553 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2010-4739.xml
+2026-02-16 16:53:17,737 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-9381.xml "HTTP/2 200 OK"
+2026-02-16 16:53:17,739 - INFO - ☁️ Uploaded & deleted local: Helse__Og_Omsorgsrett/Unknown/JDLOV_avgjorelse_jdlov-2010-9381.xml
+2026-02-16 16:53:17,803 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 16:53:17,804 - INFO - 🧾 Metadata inserted: JDLOV_avgjorelse_jdlov-2010-9381.xml
+2026-02-16 16:53:17,833 - INFO - ✅ Batch upload complete
+

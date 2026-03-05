@@ -1,0 +1,56 @@
+2026-03-05 14:52:03,198 - INFO - Storage handler initialised  bucket=legal_area  table=legal_area_metadata
+2026-03-05 14:52:03,198 - INFO - ======================================================================
+2026-03-05 14:52:03,199 - INFO - LOVDATA PRO SCRAPER
+2026-03-05 14:52:03,199 - INFO -   Table   : legal_area_metadata
+2026-03-05 14:52:03,199 - INFO -   Bucket  : legal_area
+2026-03-05 14:52:03,199 - INFO -   Base dir: ./scraped_xml
+2026-03-05 14:52:03,200 - INFO -   Timeout : 30
+2026-03-05 14:52:03,200 - INFO -   Headless: False
+2026-03-05 14:52:03,200 - INFO -   Years   : 2000 - 2026
+2026-03-05 14:52:03,200 - INFO -   Batch   : 10
+2026-03-05 14:52:03,202 - INFO - ======================================================================
+2026-03-05 14:52:10,929 - INFO - Login successful
+2026-03-05 14:52:16,252 - INFO - Tree nodes loaded
+2026-03-05 14:52:17,278 - INFO - Found 35 tree nodes
+2026-03-05 14:52:17,654 - INFO - Root categories: 35
+2026-03-05 14:52:17,655 - INFO - Total root categories: 35
+2026-03-05 14:52:22,865 - INFO - Tree nodes loaded
+2026-03-05 14:52:23,892 - INFO - Found 35 tree nodes
+2026-03-05 14:52:24,497 - INFO - Root categories: 35
+2026-03-05 14:52:24,497 - INFO - 
+2026-03-05 14:52:24,497 - INFO - ======================================================================
+2026-03-05 14:52:24,497 - INFO - [1/35] Root: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 14:52:24,500 - INFO - ======================================================================
+2026-03-05 14:52:26,807 - INFO -   Branches: 5
+2026-03-05 14:52:32,186 - INFO - Tree nodes loaded
+2026-03-05 14:52:33,219 - INFO - Found 40 tree nodes
+2026-03-05 14:52:33,874 - INFO - Root categories: 40
+2026-03-05 14:52:35,543 - INFO -   [1/5] Branch: Anskaffelser
+2026-03-05 14:52:36,980 - INFO -     Leaves: 0
+2026-03-05 14:52:36,981 - INFO - Scraping area  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-05 14:52:37,558 - INFO -   Section tab links found: 11
+2026-03-05 14:52:37,607 - INFO -   Section: LATEST DOCUMENTS                                         div_id=saker
+2026-03-05 14:52:37,652 - INFO -   Section: LAWS                                                     div_id=lover
+2026-03-05 14:52:37,700 - INFO -   Section: REGULATIONS                                              div_id=forskrifter
+2026-03-05 14:52:37,736 - INFO -   Section: DECISIONS FROM THE SUPREME COURT                         div_id=hr
+2026-03-05 14:52:37,789 - INFO -   Section: DECISIONS FROM THE COURTS OF APPEAL                      div_id=lr
+2026-03-05 14:52:37,838 - INFO -   Section: DECISIONS FROM THE DISTRICT COURTS                       div_id=tr
+2026-03-05 14:52:37,880 - INFO -   Section: ARTICLES                                                 div_id=artikler
+2026-03-05 14:52:37,911 - INFO -   Section: DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD   div_id=firstOtherBase
+2026-03-05 14:52:37,941 - INFO -   Section: DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL   div_id=secondOtherBase
+2026-03-05 14:52:37,965 - INFO -   Section: DOCUMENTS FROM THE MINISTRY OF JUSTICE                   div_id=thirdOtherBase
+2026-03-05 14:52:37,995 - INFO -   Section: OTHER DOCUMENTS                                          div_id=otherBases
+2026-03-05 14:52:37,996 - INFO - Processing 11 sections
+2026-03-05 14:52:37,996 - INFO - [1/11] Section: LATEST DOCUMENTS
+2026-03-05 14:52:38,325 - INFO -   Clicked section tab: 'Siste dokumenter'
+2026-03-05 14:52:39,906 - INFO -   Small section mode
+2026-03-05 14:52:39,939 - INFO -   Small section div#saker — collected 10 URLs
+2026-03-05 14:52:39,939 - INFO -   Section result: LATEST DOCUMENTS                                   expected=?      collected=10
+2026-03-05 14:52:39,939 - INFO - [2/11] Section: LAWS
+2026-03-05 14:52:40,294 - INFO -   Clicked section tab: 'Lover'
+2026-03-05 14:52:41,856 - INFO -   Small section mode
+2026-03-05 14:52:41,887 - INFO -   Small section div#lover — collected 2 URLs
+2026-03-05 14:52:41,887 - INFO -   Section result: LAWS                                               expected=?      collected=2
+2026-03-05 14:52:41,890 - INFO - [3/11] Section: REGULATIONS
+2026-03-05 14:52:42,293 - INFO -   Clicked section tab: 'Forskrifter'
+2026-03-05 14:52:42,449 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/0e3d990dfa4a9293ce501d24f38294a8

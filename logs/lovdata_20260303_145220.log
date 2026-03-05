@@ -1,0 +1,98 @@
+2026-03-03 14:52:27,458 - INFO - ✓ Supabase table: legal_area_metadata
+2026-03-03 14:52:27,460 - INFO - ✓ Supabase bucket: legal_area
+2026-03-03 14:52:27,460 - INFO - ✓ Storage handler initialized
+2026-03-03 14:52:27,460 - INFO - ENV/CONFIG CHECK
+2026-03-03 14:52:27,461 - INFO - ✓ SUPABASE_TABLE: legal_area_metadata
+2026-03-03 14:52:27,461 - INFO - ✓ SUPABASE_BUCKET: legal_area
+2026-03-03 14:52:27,461 - INFO - ✓ TIMEOUT: 30
+2026-03-03 14:52:27,462 - INFO - ✓ HEADLESS: False
+2026-03-03 14:52:27,462 - INFO - ✓ YEAR RANGE: 2000–2026
+2026-03-03 14:52:27,463 - INFO - ✓ BATCH_UPLOAD_SIZE: 10
+2026-03-03 14:52:27,463 - INFO - ----------------------------------------------------------------------
+2026-03-03 14:52:27,463 - INFO - 🔐 Opening Lovdata login page...
+2026-03-03 14:52:32,879 - INFO - ✅ Login successful
+2026-03-03 14:52:32,880 - INFO - ======================================================================
+2026-03-03 14:52:32,880 - INFO - MODE: legal_areas_only
+2026-03-03 14:52:32,880 - INFO - ======================================================================
+2026-03-03 14:52:42,374 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 14:52:43,221 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 14:52:43,224 - INFO - 📊 Total ROOT discovered: 35
+2026-03-03 14:52:52,084 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 14:52:53,176 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 14:52:53,176 - INFO - 
+======================================================================
+2026-03-03 14:52:53,176 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 14:52:53,177 - INFO - ======================================================================
+2026-03-03 14:52:57,895 - INFO - 🔗 ROOT docs: 15
+2026-03-03 14:52:57,895 - INFO - ⏭️ Skipping (year out of range): 1918 | https://lovdata.no/pro/#document/NL/lov/1918-05-31-4
+2026-03-03 14:52:59,896 - INFO - ⏭️ Skipping (year out of range): 1989 | https://lovdata.no/pro/#document/NL/lov/1989-06-16-63
+2026-03-03 14:53:03,155 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-65.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:53:12,117 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2017-06-16-65
+2026-03-03 14:53:14,381 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2016-06-17-73.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:53:22,702 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2016-06-17-73
+2026-03-03 14:53:24,703 - INFO - ⏭️ Skipping (year out of range): 1997 | https://lovdata.no/pro/#document/NL/lov/1997-06-13-43
+2026-03-03 14:53:26,704 - INFO - ⏭️ Skipping (year out of range): None | https://lovdata.no/pro/#document/NL/lov/1687-04-15
+2026-03-03 14:53:29,166 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2003-06-06-38.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:53:37,493 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2003-06-06-38
+2026-03-03 14:53:39,495 - INFO - ⏭️ Skipping (year out of range): 1985 | https://lovdata.no/pro/#document/NL/lov/1985-06-21-80
+2026-03-03 14:53:41,771 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2024-06-21-42.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:53:50,095 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2024-06-21-42
+2026-03-03 14:53:52,380 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2012-05-25-27.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:54:00,707 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2012-05-25-27
+2026-03-03 14:54:02,967 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2020-04-17-29.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:54:11,285 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2020-04-17-29
+2026-03-03 14:54:13,286 - INFO - ⏭️ Skipping (year out of range): 1996 | https://lovdata.no/pro/#document/NL/lov/1996-03-22-16
+2026-03-03 14:54:15,517 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2025-12-22-129.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:54:23,857 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2025-12-22-129
+2026-03-03 14:54:25,859 - INFO - ⏭️ Skipping (year out of range): 1999 | https://lovdata.no/pro/#document/NLO/lov/1999-07-16-69
+2026-03-03 14:54:27,860 - INFO - ⏭️ Skipping (year out of range): 1952 | https://lovdata.no/pro/#document/NLO/lov/1952-06-28-3
+2026-03-03 14:54:39,958 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 14:54:40,677 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 14:54:40,678 - INFO - 
+======================================================================
+2026-03-03 14:54:40,678 - INFO - [2/35] ROOT: Arbeidsrett
+2026-03-03 14:54:40,678 - INFO - ======================================================================
+2026-03-03 14:54:45,450 - INFO - 🔗 ROOT docs: 50
+2026-03-03 14:54:45,840 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2005-06-17-62.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:54:54,230 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2005-06-17-62
+2026-03-03 14:54:56,240 - INFO - ⏭️ Skipping (year out of range): 1999 | https://lovdata.no/pro/#document/NL/lov/1999-07-02-64
+2026-03-03 14:54:58,471 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-51.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:55:06,796 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2017-06-16-51
+2026-03-03 14:55:09,052 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2009-12-18-131.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:55:17,480 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2009-12-18-131
+2026-03-03 14:55:19,692 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2007-02-16-9.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:55:28,178 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2007-02-16-9
+2026-03-03 14:55:30,405 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2006-06-16-20.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:55:38,734 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2006-06-16-20
+2026-03-03 14:55:40,736 - INFO - ⏭️ Skipping (year out of range): 1988 | https://lovdata.no/pro/#document/NL/lov/1988-04-29-21
+2026-03-03 14:55:42,967 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-50.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:55:51,312 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2017-06-16-50
+2026-03-03 14:55:53,549 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2004-12-10-76.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:56:01,862 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2004-12-10-76
+2026-03-03 14:56:04,321 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2012-06-22-43.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:56:12,670 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2012-06-22-43
+2026-03-03 14:56:14,920 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2012-01-27-9.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:56:23,264 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2012-01-27-9
+2026-03-03 14:56:25,721 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-67.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:56:34,072 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2017-06-16-67
+2026-03-03 14:56:36,073 - INFO - ⏭️ Skipping (year out of range): 1993 | https://lovdata.no/pro/#document/NL/lov/1993-06-04-58
+2026-03-03 14:56:38,324 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2013-06-21-102.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:56:46,839 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2013-06-21-102
+2026-03-03 14:56:48,840 - INFO - ⏭️ Skipping (year out of range): 1958 | https://lovdata.no/pro/#document/NL/lov/1958-07-18-2
+2026-03-03 14:56:50,841 - INFO - ⏭️ Skipping (year out of range): 1973 | https://lovdata.no/pro/#document/NL/lov/1973-12-14-61
+2026-03-03 14:56:52,842 - INFO - ⏭️ Skipping (year out of range): 1988 | https://lovdata.no/pro/#document/NL/lov/1988-05-06-22
+2026-03-03 14:56:54,843 - INFO - ⏭️ Skipping (year out of range): 1947 | https://lovdata.no/pro/#document/NL/lov/1947-04-26-1
+2026-03-03 14:56:57,090 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2015-02-13-9.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:57:05,479 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2015-02-13-9
+2026-03-03 14:57:07,696 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2019-12-20-84.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:57:16,022 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2019-12-20-84
+2026-03-03 14:57:18,281 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-69.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:57:26,656 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2017-06-16-69
+2026-03-03 14:57:28,658 - INFO - ⏭️ Skipping (year out of range): 1970 | https://lovdata.no/pro/#document/NL/lov/1970-04-17-21
+2026-03-03 14:57:30,659 - INFO - ⏭️ Skipping (year out of range): 1947 | https://lovdata.no/pro/#document/NL/lov/1947-12-05-1
+2026-03-03 14:57:32,660 - INFO - ⏭️ Skipping (year out of range): 1956 | https://lovdata.no/pro/#document/NL/lov/1956-12-21-1
+2026-03-03 14:57:34,661 - INFO - ⏭️ Skipping (year out of range): 1952 | https://lovdata.no/pro/#document/NL/lov/1952-11-21-3
+2026-03-03 14:57:36,943 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2023-12-20-110.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:57:45,292 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2023-12-20-110
+2026-03-03 14:57:47,521 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2021-05-21-42.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 14:57:55,844 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/b9a1e4e63fbbaf803abcecb21276dbc3

@@ -1,0 +1,144 @@
+2026-03-02 16:47:33,810 - INFO - ✓ Storage handler initialized (bucket: legal_area)
+2026-03-02 16:47:33,810 - INFO - 🔐 Opening Lovdata login page...
+2026-03-02 16:47:39,605 - INFO - ✅ Login successful
+2026-03-02 16:47:39,606 - INFO - ======================================================================
+2026-03-02 16:47:39,606 - INFO - MODE: legal_areas_only
+2026-03-02 16:47:39,606 - INFO - ======================================================================
+2026-03-02 16:47:39,607 - INFO - 
+======================================================================
+2026-03-02 16:47:39,607 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-03-02 16:47:39,607 - INFO -    Discovering ALL categories from Lovdata tree (3-level)
+2026-03-02 16:47:39,607 - INFO - ======================================================================
+2026-03-02 16:47:39,608 - INFO - 📂 Navigating to Rettsområder section...
+2026-03-02 16:47:45,535 - INFO -    ✅ Clicked: Rettsområder
+2026-03-02 16:48:00,614 - INFO -    Found 35 total tree nodes
+2026-03-02 16:48:00,683 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-02 16:48:00,752 - INFO -    ✅ Found: Arbeidsrett
+2026-03-02 16:48:00,810 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-03-02 16:48:00,866 - INFO -    ✅ Found: Energirett
+2026-03-02 16:48:00,940 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-03-02 16:48:01,008 - INFO -    ✅ Found: EU/EØS-rett
+2026-03-02 16:48:01,078 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-03-02 16:48:01,136 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-03-02 16:48:01,193 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-03-02 16:48:01,233 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-03-02 16:48:01,268 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-03-02 16:48:01,307 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-03-02 16:48:01,342 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-03-02 16:48:01,398 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-03-02 16:48:01,466 - INFO -    ✅ Found: IKT- og medierett
+2026-03-02 16:48:01,532 - INFO -    ✅ Found: Immaterialrett
+2026-03-02 16:48:01,584 - INFO -    ✅ Found: Internasjonal rett
+2026-03-02 16:48:01,648 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-03-02 16:48:01,714 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-03-02 16:48:01,787 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-03-02 16:48:01,871 - INFO -    ✅ Found: Menneskerettigheter
+2026-03-02 16:48:01,943 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-03-02 16:48:02,018 - INFO -    ✅ Found: Næringsrett
+2026-03-02 16:48:02,088 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-03-02 16:48:02,160 - INFO -    ✅ Found: Samerett
+2026-03-02 16:48:02,219 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-03-02 16:48:02,269 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-03-02 16:48:02,310 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-03-02 16:48:02,354 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-03-02 16:48:02,419 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-03-02 16:48:02,485 - INFO -    ✅ Found: Strafferett
+2026-03-02 16:48:02,555 - INFO -    ✅ Found: Svalbard og biland
+2026-03-02 16:48:02,603 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-03-02 16:48:02,667 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-03-02 16:48:02,738 - INFO -    ✅ Found: Utlendingsrett
+2026-03-02 16:48:02,738 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-03-02 16:48:02,738 - INFO - 
+📊 Total legal areas discovered: 35
+
+2026-03-02 16:48:02,738 - INFO - 
+======================================================================
+2026-03-02 16:48:02,738 - INFO - [1/35] ROOT: Anskaffelser_Avtaler_Bygg_Og_Entrepriser
+2026-03-02 16:48:02,738 - INFO - ======================================================================
+2026-03-02 16:48:02,738 - INFO -    Norwegian: Anskaffelser, avtaler, bygg og entrepriser  |  Slug: anskaffelser_avtaler_bygg_og_entrepriser
+2026-03-02 16:48:03,927 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Anskaffelser_Avtaler_Bygg_Og_Entrepriser&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:48:03,943 - WARNING -    ⚠️ Could not check category status: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:48:09,413 - INFO -    📋 5 branch(es) found under root
+2026-03-02 16:48:09,413 - INFO - 
+   [1/5] BRANCH: Anskaffelser
+2026-03-02 16:48:14,667 - INFO -    🖱️ Clicking 'Show all': Vis alle 16 forskriftene
+2026-03-02 16:48:17,697 - INFO -    📜 Scrolling to load all documents...
+2026-03-02 16:48:17,725 - INFO -    📄 Round 1: 16 docs
+2026-03-02 16:48:20,266 - INFO -    📄 Round 2: 16 docs
+2026-03-02 16:48:22,801 - INFO -    📄 Round 3: 16 docs
+2026-03-02 16:48:25,333 - INFO -    📄 Round 4: 16 docs
+2026-03-02 16:48:27,870 - INFO -    📄 Round 5: 16 docs
+2026-03-02 16:48:32,941 - INFO -    📄 Round 6: 16 docs
+2026-03-02 16:48:32,941 - INFO -    ✅ Loaded 16 documents total
+2026-03-02 16:48:32,997 - INFO -    📜 Scrolling to load all documents...
+2026-03-02 16:48:33,013 - INFO -    📄 Round 1: 16 docs
+2026-03-02 16:48:35,547 - INFO -    📄 Round 2: 16 docs
+2026-03-02 16:48:38,087 - INFO -    📄 Round 3: 16 docs
+2026-03-02 16:48:40,624 - INFO -    📄 Round 4: 16 docs
+2026-03-02 16:48:43,164 - INFO -    📄 Round 5: 16 docs
+2026-03-02 16:48:48,230 - INFO -    📄 Round 6: 16 docs
+2026-03-02 16:48:48,230 - INFO -    ✅ Loaded 16 documents total
+2026-03-02 16:48:48,464 - INFO -    📄 Page 1: 16 total URLs
+2026-03-02 16:48:48,536 - INFO -       🔗 16 document URLs (no leaves)
+2026-03-02 16:48:48,536 - INFO - 🚀 Processing 16 documents
+2026-03-02 16:48:48,536 - INFO - 
+   [1/16] Processing document...
+2026-03-02 16:48:48,540 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:48,840 - INFO - 
+   [2/16] Processing document...
+2026-03-02 16:48:48,840 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:49,142 - INFO - 
+   [3/16] Processing document...
+2026-03-02 16:48:49,142 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:49,443 - INFO - 
+   [4/16] Processing document...
+2026-03-02 16:48:49,443 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:49,745 - INFO - 
+   [5/16] Processing document...
+2026-03-02 16:48:49,745 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:50,047 - INFO - 
+   [6/16] Processing document...
+2026-03-02 16:48:50,047 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:50,348 - INFO - 
+   [7/16] Processing document...
+2026-03-02 16:48:50,349 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:50,650 - INFO - 
+   [8/16] Processing document...
+2026-03-02 16:48:50,652 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:50,954 - INFO - 
+   [9/16] Processing document...
+2026-03-02 16:48:50,954 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:51,256 - INFO - 
+   [10/16] Processing document...
+2026-03-02 16:48:51,265 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:51,571 - INFO - 
+   [11/16] Processing document...
+2026-03-02 16:48:51,571 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:51,873 - INFO - 
+   [12/16] Processing document...
+2026-03-02 16:48:51,873 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:52,175 - INFO - 
+   [13/16] Processing document...
+2026-03-02 16:48:52,176 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:52,478 - INFO - 
+   [14/16] Processing document...
+2026-03-02 16:48:52,478 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:52,779 - INFO - 
+   [15/16] Processing document...
+2026-03-02 16:48:52,779 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:53,081 - INFO - 
+   [16/16] Processing document...
+2026-03-02 16:48:53,081 - ERROR - ❌ Error processing document: name 'DOCUMENT_TYPE_MAP' is not defined
+2026-03-02 16:48:53,382 - INFO - 
+   [2/5] BRANCH: Avtaler
+2026-03-02 16:48:55,836 - INFO - 
+======================================================================
+2026-03-02 16:48:55,836 - INFO - SCRAPING SUMMARY
+2026-03-02 16:48:55,838 - INFO - ======================================================================
+2026-03-02 16:48:55,838 - INFO - ✅ Success: 0
+2026-03-02 16:48:55,839 - INFO - ❌ Failed: 16
+2026-03-02 16:48:55,839 - INFO - ⏭️  Skipped: 0
+2026-03-02 16:48:55,840 - INFO - ======================================================================
+

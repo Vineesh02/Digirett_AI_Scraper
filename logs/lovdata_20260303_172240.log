@@ -1,0 +1,101 @@
+2026-03-03 17:22:43,563 - INFO - ✓ Supabase bucket : legal_area
+2026-03-03 17:22:43,564 - INFO - ✓ Supabase table  : legal_area_metadata
+2026-03-03 17:22:43,565 - INFO - ✓ StorageHandler initialized
+2026-03-03 17:22:43,565 - INFO - ======================================================================
+2026-03-03 17:22:43,565 - INFO - ENV / CONFIG
+2026-03-03 17:22:43,565 - INFO -   SUPABASE_TABLE  : legal_area_metadata
+2026-03-03 17:22:43,565 - INFO -   SUPABASE_BUCKET : legal_area
+2026-03-03 17:22:43,565 - INFO -   BASE_DIR        : ./scraped_xml
+2026-03-03 17:22:43,565 - INFO -   TIMEOUT         : 30
+2026-03-03 17:22:43,565 - INFO -   HEADLESS        : False
+2026-03-03 17:22:43,565 - INFO -   YEAR RANGE      : 2000 – 2026
+2026-03-03 17:22:43,569 - INFO -   BATCH SIZE      : 10
+2026-03-03 17:22:43,569 - INFO - ======================================================================
+2026-03-03 17:22:49,264 - INFO - ✅ Login successful
+2026-03-03 17:22:54,419 - INFO - ✅ Tree nodes present
+2026-03-03 17:22:55,437 - INFO - Found 35 tree node(s)
+2026-03-03 17:22:55,710 - INFO - 📋 ROOT categories: 35
+2026-03-03 17:22:55,712 - INFO - 📊 Total ROOTs: 35
+2026-03-03 17:23:00,797 - INFO - ✅ Tree nodes present
+2026-03-03 17:23:01,807 - INFO - Found 35 tree node(s)
+2026-03-03 17:23:02,015 - INFO - 📋 ROOT categories: 35
+2026-03-03 17:23:02,015 - INFO - 
+======================================================================
+2026-03-03 17:23:02,015 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 17:23:02,015 - INFO - ======================================================================
+2026-03-03 17:23:03,692 - INFO -    Branch count: 5
+2026-03-03 17:23:08,825 - INFO - ✅ Tree nodes present
+2026-03-03 17:23:09,836 - INFO - Found 40 tree node(s)
+2026-03-03 17:23:10,126 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:23:11,229 - INFO -    [1/5] BRANCH: Anskaffelser
+2026-03-03 17:23:12,329 - INFO -       Leaf count: 0
+2026-03-03 17:23:12,336 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-03 17:23:12,337 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Anskaffelser
+2026-03-03 17:23:15,366 - INFO -   Panel headings found: 3
+2026-03-03 17:23:15,388 - WARNING -   ⚠️ No section panels found via span.x-panel-header-text
+2026-03-03 17:23:15,388 - ERROR - ❌ No section panels found. Check that span.x-panel-header-text exists on this page.
+2026-03-03 17:23:15,388 - WARNING -    ⚠️  No sections / URLs found.
+2026-03-03 17:23:20,512 - INFO - ✅ Tree nodes present
+2026-03-03 17:23:21,524 - INFO - Found 40 tree node(s)
+2026-03-03 17:23:21,810 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:23:22,907 - INFO -    [2/5] BRANCH: Avtaler
+2026-03-03 17:23:23,998 - INFO -       Leaf count: 0
+2026-03-03 17:23:24,003 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Avtaler'  leaf=''
+2026-03-03 17:23:24,003 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Avtaler
+2026-03-03 17:23:27,033 - INFO -   Panel headings found: 3
+2026-03-03 17:23:27,059 - WARNING -   ⚠️ No section panels found via span.x-panel-header-text
+2026-03-03 17:23:27,065 - ERROR - ❌ No section panels found. Check that span.x-panel-header-text exists on this page.
+2026-03-03 17:23:27,065 - WARNING -    ⚠️  No sections / URLs found.
+2026-03-03 17:23:32,176 - INFO - ✅ Tree nodes present
+2026-03-03 17:23:33,218 - INFO - Found 40 tree node(s)
+2026-03-03 17:23:33,502 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:23:34,604 - INFO -    [3/5] BRANCH: Boligoppføring
+2026-03-03 17:23:35,689 - INFO -       Leaf count: 0
+2026-03-03 17:23:35,692 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Boligoppføring'  leaf=''
+2026-03-03 17:23:35,693 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Boligoppforing
+2026-03-03 17:23:38,717 - INFO -   Panel headings found: 3
+2026-03-03 17:23:38,746 - WARNING -   ⚠️ No section panels found via span.x-panel-header-text
+2026-03-03 17:23:38,746 - ERROR - ❌ No section panels found. Check that span.x-panel-header-text exists on this page.
+2026-03-03 17:23:38,747 - WARNING -    ⚠️  No sections / URLs found.
+2026-03-03 17:23:43,869 - INFO - ✅ Tree nodes present
+2026-03-03 17:23:44,881 - INFO - Found 40 tree node(s)
+2026-03-03 17:23:45,188 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:23:46,293 - INFO -    [4/5] BRANCH: Byggesaksbehandling
+2026-03-03 17:23:47,394 - INFO -       Leaf count: 0
+2026-03-03 17:23:47,400 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Byggesaksbehandling'  leaf=''
+2026-03-03 17:23:47,401 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Byggesaksbehandling
+2026-03-03 17:23:50,424 - INFO -   Panel headings found: 3
+2026-03-03 17:23:50,447 - WARNING -   ⚠️ No section panels found via span.x-panel-header-text
+2026-03-03 17:23:50,447 - ERROR - ❌ No section panels found. Check that span.x-panel-header-text exists on this page.
+2026-03-03 17:23:50,448 - WARNING -    ⚠️  No sections / URLs found.
+2026-03-03 17:23:55,576 - INFO - ✅ Tree nodes present
+2026-03-03 17:23:56,586 - INFO - Found 40 tree node(s)
+2026-03-03 17:23:56,934 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:23:58,057 - INFO -    [5/5] BRANCH: Entrepriser
+2026-03-03 17:23:59,162 - INFO -       Leaf count: 0
+2026-03-03 17:23:59,167 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Entrepriser'  leaf=''
+2026-03-03 17:23:59,167 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Entrepriser
+2026-03-03 17:24:02,193 - INFO -   Panel headings found: 3
+2026-03-03 17:24:02,221 - WARNING -   ⚠️ No section panels found via span.x-panel-header-text
+2026-03-03 17:24:02,222 - ERROR - ❌ No section panels found. Check that span.x-panel-header-text exists on this page.
+2026-03-03 17:24:02,222 - WARNING -    ⚠️  No sections / URLs found.
+2026-03-03 17:24:07,341 - INFO - ✅ Tree nodes present
+2026-03-03 17:24:08,351 - INFO - Found 40 tree node(s)
+2026-03-03 17:24:08,693 - INFO - 📋 ROOT categories: 40
+2026-03-03 17:24:08,693 - INFO - 
+======================================================================
+2026-03-03 17:24:08,695 - INFO - [2/35] ROOT: Arbeidsrett
+2026-03-03 17:24:08,695 - INFO - ======================================================================
+2026-03-03 17:24:10,361 - INFO -    Branch count: 8
+2026-03-03 17:24:15,534 - INFO - ✅ Tree nodes present
+2026-03-03 17:24:16,557 - INFO - Found 48 tree node(s)
+2026-03-03 17:24:16,898 - INFO - 📋 ROOT categories: 48
+2026-03-03 17:24:18,005 - INFO -    [1/8] BRANCH: Ansettelse. Avskjed. Oppsigelse
+2026-03-03 17:24:19,114 - INFO -       Leaf count: 0
+2026-03-03 17:24:19,120 - INFO - 🔍 Scraping  root='Arbeidsrett'  branch='Ansettelse. Avskjed. Oppsigelse'  leaf=''
+2026-03-03 17:24:19,122 - INFO -    Area URL: https://lovdata.no/pro/#rettsomrade&id=Ansettelse
+2026-03-03 17:24:22,150 - INFO -   Panel headings found: 3
+2026-03-03 17:24:22,179 - WARNING -   ⚠️ No section panels found via span.x-panel-header-text
+2026-03-03 17:24:22,179 - ERROR - ❌ No section panels found. Check that span.x-panel-header-text exists on this page.
+2026-03-03 17:24:22,181 - WARNING -    ⚠️  No sections / URLs found.
+2026-03-03 17:24:24,726 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/4d9b8910de6719c9f229779615caa149

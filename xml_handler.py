@@ -10,18 +10,23 @@ import xml.etree.ElementTree as ET
 
 logger = logging.getLogger(__name__)
 
-# Fields promoted to top-level XML elements (in preferred order).
-# Any page_meta key NOT in this list is appended after as a generic element.
-_TOP_FIELDS = [
+# Fields written first in a fixed order if present.
+# Everything else from page_meta is written after automatically.
+_PRIORITY_FIELDS = [
     "fulltittel",
     "korttittel",
     "dato",
     "year",          # synthetic — derived from date/title/url/content
+    "departement",
+    "sist_endret",
     "ikraftdato",
+    "ikrafttredelse",
+    "endrer",
     "kunngjort",
     "avdeling",
     "myndighet",
     "rettsomrade",
+    "rettsomr_de",
     "status",
 ]
 
@@ -36,20 +41,8 @@ class XMLHandler:
         """
         Build and save XML for a scraped document.
 
-        Required keys in document:
-          file_name      - output filename  e.g. "EUR_eur-2026-03-06.xml"
-          url            - Pro URL          e.g. "https://lovdata.no/pro/#document/..."
-          document_type  - section label    e.g. "LAWS"
-          title          - best title from page
-          date           - date string from page
-          year           - int year (or None)
-          content        - full document text
-          content_source - where content came from
-          page_meta      - dict of fields scraped from the document page itself
-
-        Returns:
-          (file_path, file_size_bytes, md5_hash, content_preview_500chars)
-          All None on failure.
+        page_meta is written dynamically — every key found in the metadata
+        table on the page becomes an XML element. No fields are dropped.
         """
         try:
             Path(local_folder).mkdir(parents=True, exist_ok=True)
@@ -59,7 +52,7 @@ class XMLHandler:
             doc_type     = (document.get("document_type")  or "").strip()
             title        = (document.get("title")          or "").strip()
             date         = (document.get("date")           or "").strip()
-            year         = document.get("year")                         # int or None
+            year         = document.get("year")
             content      = (document.get("content")        or "").strip()
             content_src  = (document.get("content_source") or "").strip()
             page_meta    = dict(document.get("page_meta")  or {})
@@ -68,7 +61,7 @@ class XMLHandler:
                 logger.error("XMLHandler.save: file_name is empty")
                 return None, None, None, None
 
-            # Merge title/date into page_meta if not already scraped from page
+            # Fill in title/date from scraper fallbacks if table didn't have them
             if title and "fulltittel" not in page_meta:
                 page_meta["fulltittel"] = title
             if title and "korttittel" not in page_meta:
@@ -92,14 +85,14 @@ class XMLHandler:
             ET.SubElement(meta, "scraped_at").text    = datetime.now().isoformat()
             ET.SubElement(meta, "document_type").text = doc_type
 
-            # Write known fields in a consistent order
+            # Write priority fields first (if present in page_meta)
             written = set()
-            for field in _TOP_FIELDS:
-                val = page_meta.get(field, "")
-                ET.SubElement(meta, field).text = str(val) if val else "—"
-                written.add(field)
+            for field in _PRIORITY_FIELDS:
+                if field in page_meta:
+                    ET.SubElement(meta, field).text = str(page_meta[field]) or "—"
+                    written.add(field)
 
-            # Write any extra fields the page happened to expose
+            # Write ALL remaining page_meta fields — whatever the table had
             for key, val in page_meta.items():
                 if key in written:
                     continue
@@ -107,12 +100,10 @@ class XMLHandler:
                 if safe_key:
                     ET.SubElement(meta, safe_key).text = str(val) if val else "—"
 
-            ET.SubElement(meta, "content_source").text = content_src
-
             # ------------------------------------------------------------------
             # Content wrapped in CDATA so special chars never break the XML
             # ------------------------------------------------------------------
-            ET.SubElement(root_el, "content")   # placeholder — replaced below
+            ET.SubElement(root_el, "content")
 
             ET.indent(root_el, space="  ")
             xml_str = ET.tostring(root_el, encoding="unicode", xml_declaration=False)
@@ -131,7 +122,7 @@ class XMLHandler:
             content_preview = content[:500]
 
             logger.info(
-                "XML saved: %s  size=%s bytes  page_meta=%s",
+                "XML saved: %s  size=%s bytes  meta_fields=%s",
                 file_name, file_size, list(page_meta.keys()),
             )
             return file_path, file_size, file_hash, content_preview

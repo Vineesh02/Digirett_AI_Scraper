@@ -1,0 +1,17 @@
+2026-03-05 14:58:25,016 - INFO - Storage handler initialised  bucket=legal_area  table=legal_area_metadata
+2026-03-05 14:58:25,017 - INFO - ======================================================================
+2026-03-05 14:58:25,017 - INFO - LOVDATA PRO SCRAPER
+2026-03-05 14:58:25,019 - INFO -   Table   : legal_area_metadata
+2026-03-05 14:58:25,019 - INFO -   Bucket  : legal_area
+2026-03-05 14:58:25,020 - INFO -   Base dir: ./scraped_xml
+2026-03-05 14:58:25,020 - INFO -   Timeout : 30
+2026-03-05 14:58:25,020 - INFO -   Headless: False
+2026-03-05 14:58:25,021 - INFO -   Years   : 2000 - 2026
+2026-03-05 14:58:25,024 - INFO -   Batch   : 10
+2026-03-05 14:58:25,024 - INFO -   Max docs: 400
+2026-03-05 14:58:25,026 - INFO -   Target categories: ALL
+2026-03-05 14:58:25,027 - INFO - ======================================================================
+2026-03-05 14:58:32,383 - INFO - Login successful
+2026-03-05 14:58:37,635 - INFO - Tree nodes loaded
+2026-03-05 14:58:38,666 - INFO - Found 35 tree nodes
+2026-03-05 14:58:39,092 - INFO - Root categories: 35

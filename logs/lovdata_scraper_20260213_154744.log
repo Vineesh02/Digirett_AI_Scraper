@@ -1,0 +1,83 @@
+2026-02-13 15:47:49,354 - INFO - ================================================================================
+2026-02-13 15:47:49,355 - INFO - LOVDATA PRO SCRAPER - COMPLETE VERSION WITH BATCH UPLOAD
+2026-02-13 15:47:49,355 - INFO - ================================================================================
+2026-02-13 15:47:49,355 - INFO - Batch upload size: 30 files
+2026-02-13 15:47:49,356 - INFO - Year range: 2000 - 2026
+2026-02-13 15:47:49,356 - INFO - ================================================================================
+2026-02-13 15:47:50,221 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-13 15:47:50,235 - INFO - ✓ Database connected
+2026-02-13 15:47:50,235 - INFO - ====== WebDriver manager ======
+2026-02-13 15:47:52,084 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-13 15:47:52,171 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-13 15:47:52,248 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-13 15:47:54,788 - INFO - ✓ Selenium browser started
+2026-02-13 15:47:54,788 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-13 15:47:55,022 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/bucket "HTTP/2 200 OK"
+2026-02-13 15:47:55,029 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-13 15:47:55,029 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-13 15:47:55,029 - INFO - 🔐 Logging in to Lovdata Pro...
+2026-02-13 15:48:01,862 - INFO -   Login URL   : https://lovdata.no/pro/auth/login
+2026-02-13 15:48:01,874 - INFO -   Login title : Lovdata
+2026-02-13 15:48:01,889 - INFO -   ✓ Found field: j_username
+2026-02-13 15:48:01,996 - INFO -   ✓ Username entered: katrine.lund.digirett@gmail.com
+2026-02-13 15:48:02,080 - INFO -   ✓ Password entered
+2026-02-13 15:48:06,398 - INFO -   ✓ Submit clicked – waiting for redirect...
+2026-02-13 15:48:12,408 - INFO -   URL after submit : https://lovdata.no/pro/#myPage
+2026-02-13 15:48:12,411 - INFO -   Title after submit: Min side - Lovdata Pro
+2026-02-13 15:48:12,411 - INFO - ✓ Login successful – navigating to Pro #myPage...
+2026-02-13 15:48:16,427 - INFO -   Final URL: https://lovdata.no/pro/#myPage
+2026-02-13 15:48:16,427 - INFO - ✓ READY: Lovdata Pro #myPage loaded
+2026-02-13 15:48:16,427 - INFO - 📋 MODE SELECTED: all
+2026-02-13 15:48:16,427 - INFO - ================================================================================
+2026-02-13 15:48:16,427 - INFO - SCRAPING SOURCES OF LAW
+2026-02-13 15:48:16,427 - INFO - ================================================================================
+2026-02-13 15:48:16,427 - INFO - 
+📁 Category: Laws and Regulations
+2026-02-13 15:48:16,427 - INFO -   📂 Subcategory: Active Laws (NL)
+2026-02-13 15:48:16,432 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-13 15:48:16,445 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 15:48:22,454 - INFO -   Sidebar years (0): []
+2026-02-13 15:48:22,454 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 15:48:25,486 - INFO -   📅 2026: 4 new links (total: 4)
+2026-02-13 15:48:28,509 - INFO -   📅 2025: 48 new links (total: 52)
+2026-02-13 15:48:28,510 - INFO - ✓ Total unique URLs collected: 40
+2026-02-13 15:48:28,510 - INFO -   ✓ Found 40 documents
+2026-02-13 15:48:28,510 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-104
+2026-02-13 15:48:34,632 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0104.xml "HTTP/1.1 200 OK"
+2026-02-13 15:48:34,723 - INFO - ✓ Created XML: nl-20250620-0104.xml (51.68 KB)
+2026-02-13 15:48:34,806 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.92f6d4936d7b8c85611a160e04b8a7f6 "HTTP/1.1 200 OK"
+2026-02-13 15:48:34,903 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0104.xml "HTTP/1.1 200 OK"
+2026-02-13 15:48:35,008 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 15:48:35,008 - INFO - ✓ Saved to DB: nl-20250620-0104.xml
+2026-02-13 15:48:35,008 - INFO - ✓ [1/3000] Processed: nl-20250620-0104.xml
+2026-02-13 15:48:35,317 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-106
+2026-02-13 15:48:40,074 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0106.xml "HTTP/1.1 200 OK"
+2026-02-13 15:48:40,093 - INFO - ✓ Created XML: nl-20250620-0106.xml (54.43 KB)
+2026-02-13 15:48:40,166 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.4b3a5f2f523ed57b3298adeef54011f9 "HTTP/1.1 200 OK"
+2026-02-13 15:48:40,255 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0106.xml "HTTP/1.1 200 OK"
+2026-02-13 15:48:40,332 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 15:48:40,334 - INFO - ✓ Saved to DB: nl-20250620-0106.xml
+2026-02-13 15:48:40,334 - INFO - ✓ [2/3000] Processed: nl-20250620-0106.xml
+2026-02-13 15:48:40,646 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-116
+2026-02-13 15:48:44,356 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0116.xml "HTTP/1.1 200 OK"
+2026-02-13 15:48:44,375 - INFO - ✓ Created XML: nl-20251222-0116.xml (51.73 KB)
+2026-02-13 15:48:44,467 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a2eb708f2650ce9571cee1a0e1221457 "HTTP/1.1 200 OK"
+2026-02-13 15:48:44,564 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0116.xml "HTTP/1.1 200 OK"
+2026-02-13 15:48:44,655 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-13 15:48:44,657 - INFO - ✓ Saved to DB: nl-20251222-0116.xml
+2026-02-13 15:48:44,657 - INFO - ✓ [3/3000] Processed: nl-20251222-0116.xml
+2026-02-13 15:48:44,971 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-81
+2026-02-13 15:48:46,318 - INFO - 📦 Flushing remaining files in batch...
+2026-02-13 15:48:46,318 - INFO - 📦 Flushing remaining 3 files...
+2026-02-13 15:48:46,318 - INFO - 📦 Uploading batch of 3 files...
+2026-02-13 15:48:46,622 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0104.xml "HTTP/2 200 OK"
+2026-02-13 15:48:46,622 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0104.xml
+2026-02-13 15:48:46,631 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20250620-0104.xml
+2026-02-13 15:48:46,824 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0106.xml "HTTP/2 200 OK"
+2026-02-13 15:48:46,824 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0106.xml
+2026-02-13 15:48:46,827 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20250620-0106.xml
+2026-02-13 15:48:46,972 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0116.xml "HTTP/2 200 OK"
+2026-02-13 15:48:46,988 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0116.xml
+2026-02-13 15:48:46,988 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20251222-0116.xml
+2026-02-13 15:48:46,992 - INFO - ✓ Batch uploaded: 3 files (Total: 3)
+2026-02-13 15:48:46,992 - INFO - ✓ Uploaded 3 remaining files

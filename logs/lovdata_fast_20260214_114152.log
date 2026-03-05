@@ -1,0 +1,21 @@
+2026-02-14 11:41:55,608 - INFO - ================================================================================
+2026-02-14 11:41:55,609 - INFO - LOVDATA PRO SCRAPER - ULTRA-FAST MODE
+2026-02-14 11:41:55,610 - INFO - Target: 4,000 documents in 3-4 hours
+2026-02-14 11:41:55,610 - INFO - ================================================================================
+2026-02-14 11:41:55,610 - INFO - Year range: 2020-2026
+2026-02-14 11:41:55,611 - INFO - Batch upload: Every 50 files
+2026-02-14 11:41:55,611 - INFO - Parallel processing: True (workers: 3)
+2026-02-14 11:41:55,611 - INFO - Delay: 0.1s
+2026-02-14 11:41:55,612 - INFO - ================================================================================
+2026-02-14 11:41:58,964 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 11:41:58,968 - INFO - ✓ Database connected
+2026-02-14 11:41:58,969 - INFO - ====== WebDriver manager ======
+2026-02-14 11:42:00,748 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 11:42:06,175 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 11:42:09,247 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 11:42:13,213 - INFO - WebDriver version 144.0.7559.133 selected
+2026-02-14 11:42:13,220 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.133/win32/chromedriver-win32.zip
+2026-02-14 11:42:13,220 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.133/win32/chromedriver-win32.zip
+2026-02-14 11:42:14,324 - INFO - Driver downloading response is 200
+2026-02-14 11:42:37,053 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 11:42:38,626 - INFO - Driver has been saved in cache [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133]

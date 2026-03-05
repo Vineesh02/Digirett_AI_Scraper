@@ -1,0 +1,45 @@
+2026-03-03 16:08:19,925 - INFO - ✓ Supabase table: legal_area_metadata
+2026-03-03 16:08:19,926 - INFO - ✓ Supabase bucket: legal_area
+2026-03-03 16:08:19,926 - INFO - ✓ Storage handler initialized
+2026-03-03 16:08:19,926 - INFO - ENV/CONFIG CHECK
+2026-03-03 16:08:19,926 - INFO - ✓ SUPABASE_TABLE: legal_area_metadata
+2026-03-03 16:08:19,926 - INFO - ✓ SUPABASE_BUCKET: legal_area
+2026-03-03 16:08:19,928 - INFO - ✓ TIMEOUT: 30
+2026-03-03 16:08:19,928 - INFO - ✓ HEADLESS: False
+2026-03-03 16:08:19,928 - INFO - ✓ YEAR RANGE: 2000–2026
+2026-03-03 16:08:19,929 - INFO - ✓ BATCH_UPLOAD_SIZE: 10
+2026-03-03 16:08:19,929 - INFO - ----------------------------------------------------------------------
+2026-03-03 16:08:19,929 - INFO - 🔐 Opening Lovdata login page...
+2026-03-03 16:08:55,703 - ERROR - ❌ Login failed: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6f683aa55
+	0x7ff6f6598630
+	0x7ff6f632d75d
+	0x7ff6f638862e
+	0x7ff6f638893c
+	0x7ff6f63d8d87
+	0x7ff6f63d591c
+	0x7ff6f6379098
+	0x7ff6f6379f83
+	0x7ff6f6867810
+	0x7ff6f6861afd
+	0x7ff6f6882c1a
+	0x7ff6f65b3345
+	0x7ff6f65bb81c
+	0x7ff6f65a1924
+	0x7ff6f65a1ad6
+	0x7ff6f6587e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-03 16:08:55,707 - ERROR - ❌ LOGIN FAILED
+2026-03-03 16:08:57,925 - INFO - 
+======================================================================
+2026-03-03 16:08:57,926 - INFO - SCRAPING SUMMARY
+2026-03-03 16:08:57,926 - INFO - ======================================================================
+2026-03-03 16:08:57,927 - INFO - ✅ Success: 0
+2026-03-03 16:08:57,928 - INFO - ❌ Failed: 0
+2026-03-03 16:08:57,928 - INFO - ⏭️ Skipped: 0
+2026-03-03 16:08:57,929 - INFO - ======================================================================
+

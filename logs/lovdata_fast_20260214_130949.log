@@ -1,0 +1,48 @@
+2026-02-14 13:09:54,406 - INFO - ================================================================================
+2026-02-14 13:09:54,407 - INFO - LOVDATA PRO SCRAPER - ULTRA-FAST MODE
+2026-02-14 13:09:54,408 - INFO - ================================================================================
+2026-02-14 13:09:54,408 - INFO - Year range:   2020-2026
+2026-02-14 13:09:54,409 - INFO - Batch upload: Every 50 files
+2026-02-14 13:09:54,409 - INFO - Delay:        0.1s
+2026-02-14 13:09:54,409 - INFO - ================================================================================
+2026-02-14 13:09:55,067 - INFO - ✓ Database connected
+2026-02-14 13:09:55,067 - INFO - ====== WebDriver manager ======
+2026-02-14 13:09:56,749 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:09:56,864 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:09:57,007 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 13:09:57,008 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 13:09:57,009 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 13:09:58,386 - INFO - ✓ Browser started (UI visible mode)
+2026-02-14 13:09:58,386 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 13:09:58,606 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 13:09:58,606 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 13:09:58,607 - INFO - 🔐 Logging in...
+2026-02-14 13:10:13,558 - INFO - ✓ Login successful
+2026-02-14 13:10:13,559 - INFO - 📋 MODE: all
+
+2026-02-14 13:10:13,559 - INFO - ================================================================================
+2026-02-14 13:10:13,559 - INFO - SOURCES OF LAW
+2026-02-14 13:10:13,559 - INFO - ================================================================================
+2026-02-14 13:10:13,561 - INFO - ✓ 16 categories enabled
+
+2026-02-14 13:10:13,561 - INFO - 
+[1/16] Laws and Regulations → Active Laws (NL)
+2026-02-14 13:10:13,561 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 13:10:20,523 - INFO -   ✅ Found 5 documents
+2026-02-14 13:10:20,523 - INFO -   📄 5 documents found
+2026-02-14 13:10:38,584 - INFO - 
+[2/16] Laws and Regulations → Central Regulations (SF)
+2026-02-14 13:10:38,584 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 13:10:43,790 - INFO -   ✅ Found 33 documents
+2026-02-14 13:10:43,790 - INFO -   📄 30 documents found
+2026-02-14 13:11:42,797 - INFO - 
+[3/16] Laws and Regulations → Local Regulations (LF)
+2026-02-14 13:11:42,797 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 13:11:48,658 - INFO -   ✅ Found 29 documents
+2026-02-14 13:11:48,659 - INFO -   📄 29 documents found
+2026-02-14 13:12:46,407 - INFO - 
+[4/16] Laws and Regulations → Repealed Laws (NLO)
+2026-02-14 13:12:46,408 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 13:12:47,209 - INFO - 
+📦 Flushing remaining batch...
+2026-02-14 13:12:47,209 - INFO - ✓ Uploaded 0 files

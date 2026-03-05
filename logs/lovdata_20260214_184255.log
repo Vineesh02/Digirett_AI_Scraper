@@ -1,0 +1,5 @@
+2026-02-14 18:42:59,497 - INFO - ✓ Database connected
+2026-02-14 18:42:59,497 - INFO - ====== WebDriver manager ======
+2026-02-14 18:43:01,673 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 18:43:02,123 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 18:43:02,431 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache

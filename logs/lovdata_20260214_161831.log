@@ -1,0 +1,43 @@
+2026-02-14 16:18:38,161 - INFO - ✓ Database connected
+2026-02-14 16:18:38,161 - INFO - ====== WebDriver manager ======
+2026-02-14 16:18:40,619 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 16:18:42,625 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 16:18:49,227 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 16:18:49,227 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 16:18:49,227 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 16:18:51,036 - INFO - ✓ Browser started (headless mode)
+2026-02-14 16:18:51,038 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 16:18:58,737 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 16:18:58,737 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 16:18:58,737 - INFO - 🔐 Logging in...
+2026-02-14 16:22:04,477 - INFO - ✓ Login successful
+2026-02-14 16:22:04,477 - INFO - 
+======================================================================
+2026-02-14 16:22:04,479 - INFO - MODE: LEGAL_AREAS_ONLY
+2026-02-14 16:22:04,479 - INFO - ======================================================================
+
+2026-02-14 16:22:04,480 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 16:22:04,480 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 16:22:04,481 - INFO - 🔍 Discovering all legal areas...
+2026-02-14 16:22:09,550 - WARNING - ⚠️ No legal areas discovered!
+2026-02-14 16:22:09,550 - WARNING - No legal areas discovered!
+2026-02-14 16:22:09,550 - INFO - 
+📦 Flushing uploads...
+2026-02-14 16:22:09,550 - INFO -   ✓ 0 files flushed
+2026-02-14 16:22:11,864 - INFO - ✓ Browser closed
+2026-02-14 16:22:11,866 - INFO - 
+📊 Exporting Excel...
+2026-02-14 16:22:29,060 - ERROR - Error retrieving metadata: The read operation timed out
+2026-02-14 16:22:29,060 - WARNING -   No data to export
+2026-02-14 16:22:29,060 - INFO - 
+======================================================================
+2026-02-14 16:22:29,061 - INFO - FINAL SUMMARY
+2026-02-14 16:22:29,061 - INFO - ======================================================================
+2026-02-14 16:22:29,061 - INFO -   ✓ Saved   : 0
+2026-02-14 16:22:29,061 - INFO -   ✗ Failed  : 0
+2026-02-14 16:22:29,061 - INFO -   ⊘ Skipped : 0
+2026-02-14 16:22:29,061 - INFO -   📤 Uploaded: 0
+2026-02-14 16:22:29,061 - INFO -   📝 Total in DB: 0
+2026-02-14 16:22:29,061 - INFO - ======================================================================

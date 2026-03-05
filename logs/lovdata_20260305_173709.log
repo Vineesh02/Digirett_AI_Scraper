@@ -1,0 +1,377 @@
+2026-03-05 17:37:16,934 - INFO - Storage handler initialised  bucket=legal_area  table=legal_area_metadata
+2026-03-05 17:37:16,934 - INFO - ======================================================================
+2026-03-05 17:37:16,934 - INFO - LOVDATA PRO SCRAPER
+2026-03-05 17:37:16,934 - INFO -   Table   : legal_area_metadata
+2026-03-05 17:37:16,934 - INFO -   Bucket  : legal_area
+2026-03-05 17:37:16,938 - INFO -   Base dir: ./scraped_xml
+2026-03-05 17:37:16,940 - INFO -   Timeout : 30
+2026-03-05 17:37:16,941 - INFO -   Headless: False
+2026-03-05 17:37:16,941 - INFO -   Years   : 2000 - 2026
+2026-03-05 17:37:16,941 - INFO -   Batch   : 10
+2026-03-05 17:37:16,941 - INFO -   Max docs: 99999
+2026-03-05 17:37:16,942 - INFO -   Target categories (2):
+2026-03-05 17:37:16,942 - INFO -     - Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 17:37:16,942 - INFO -     - Arbeidsrett
+2026-03-05 17:37:16,942 - INFO - ======================================================================
+2026-03-05 17:37:24,414 - INFO - Login successful
+2026-03-05 17:37:29,703 - INFO - Tree nodes loaded
+2026-03-05 17:37:30,718 - INFO - Found 35 tree nodes
+2026-03-05 17:37:31,053 - INFO - Root categories: 35
+2026-03-05 17:37:31,053 - INFO - Total root categories found in tree: 35
+2026-03-05 17:37:31,053 - INFO - Category filter active — 2/35 categories will be scraped:
+2026-03-05 17:37:31,055 - INFO -     ✓ Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 17:37:31,055 - INFO -     ✓ Arbeidsrett
+2026-03-05 17:37:31,055 - INFO -   Skipping 33 categories (assigned to other laptops)
+2026-03-05 17:37:31,055 - INFO - Will process 2 root categories
+2026-03-05 17:37:36,236 - INFO - Tree nodes loaded
+2026-03-05 17:37:37,246 - INFO - Found 35 tree nodes
+2026-03-05 17:37:37,501 - INFO - Root categories: 35
+2026-03-05 17:37:37,501 - INFO - 
+2026-03-05 17:37:37,501 - INFO - ======================================================================
+2026-03-05 17:37:37,501 - INFO - [1/2] Root: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 17:37:37,501 - INFO - ======================================================================
+2026-03-05 17:37:39,503 - INFO -   Branches: 5
+2026-03-05 17:37:44,673 - INFO - Tree nodes loaded
+2026-03-05 17:37:45,693 - INFO - Found 40 tree nodes
+2026-03-05 17:37:46,340 - INFO - Root categories: 40
+2026-03-05 17:37:47,597 - INFO -   [1/5] Branch: Anskaffelser
+2026-03-05 17:37:48,826 - INFO -     Leaves: 0
+2026-03-05 17:37:48,827 - INFO - Scraping area  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-05 17:37:49,413 - INFO -   Section tab links found: 11
+2026-03-05 17:37:49,450 - INFO -   Section: LATEST DOCUMENTS                                         div_id=saker
+2026-03-05 17:37:49,483 - INFO -   Section: LAWS                                                     div_id=lover
+2026-03-05 17:37:49,513 - INFO -   Section: REGULATIONS                                              div_id=forskrifter
+2026-03-05 17:37:49,540 - INFO -   Section: DECISIONS FROM THE SUPREME COURT                         div_id=hr
+2026-03-05 17:37:49,566 - INFO -   Section: DECISIONS FROM THE COURTS OF APPEAL                      div_id=lr
+2026-03-05 17:37:49,591 - INFO -   Section: DECISIONS FROM THE DISTRICT COURTS                       div_id=tr
+2026-03-05 17:37:49,617 - INFO -   Section: ARTICLES                                                 div_id=artikler
+2026-03-05 17:37:49,642 - INFO -   Section: DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD   div_id=firstOtherBase
+2026-03-05 17:37:49,659 - INFO -   Section: DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL   div_id=secondOtherBase
+2026-03-05 17:37:49,684 - INFO -   Section: DOCUMENTS FROM THE MINISTRY OF JUSTICE                   div_id=thirdOtherBase
+2026-03-05 17:37:49,726 - INFO -   Section: OTHER DOCUMENTS                                          div_id=otherBases
+2026-03-05 17:37:49,726 - INFO - Processing 11 sections
+2026-03-05 17:37:49,728 - INFO - [1/11] Section: LATEST DOCUMENTS
+2026-03-05 17:37:50,066 - INFO -   Clicked section tab: 'Siste dokumenter'
+2026-03-05 17:37:51,630 - INFO -   Small section mode
+2026-03-05 17:37:51,649 - INFO -   Small section div#saker — collected 10 URLs
+2026-03-05 17:37:51,649 - INFO -   Section result: LATEST DOCUMENTS                                   expected=?      collected=10
+2026-03-05 17:37:51,649 - INFO - [2/11] Section: LAWS
+2026-03-05 17:37:51,969 - INFO -   Clicked section tab: 'Lover'
+2026-03-05 17:37:53,525 - INFO -   Small section mode
+2026-03-05 17:37:53,560 - INFO -   Small section div#lover — collected 2 URLs
+2026-03-05 17:37:53,560 - INFO -   Section result: LAWS                                               expected=?      collected=2
+2026-03-05 17:37:53,560 - INFO - [3/11] Section: REGULATIONS
+2026-03-05 17:37:53,867 - INFO -   Clicked section tab: 'Forskrifter'
+2026-03-05 17:37:55,432 - INFO -   Vis alle clicked — expected: 16
+2026-03-05 17:37:58,460 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=2896
+2026-03-05 17:38:00,509 - INFO -   Advanced Search loaded
+2026-03-05 17:38:00,529 - INFO -   Advanced Search mode
+2026-03-05 17:38:02,563 - INFO -   Page 1: +16 new  (total: 16 / expected: 16)
+2026-03-05 17:38:02,775 - INFO -   Next page clicked
+2026-03-05 17:38:07,798 - INFO -   Page 2: +0 new  (total: 16 / expected: 16)
+2026-03-05 17:38:07,799 - INFO -   No new URLs on page 2 — last page
+2026-03-05 17:38:20,200 - WARNING -   Back() failed — navigating directly
+2026-03-05 17:38:23,244 - INFO -   Section result: REGULATIONS                                        expected=16     collected=16
+2026-03-05 17:38:23,244 - INFO - [4/11] Section: DECISIONS FROM THE SUPREME COURT
+2026-03-05 17:38:23,699 - INFO -   Clicked section tab: 'Avgjørelser fra Høyesterett'
+2026-03-05 17:38:25,270 - INFO -   Vis alle clicked — expected: 16
+2026-03-05 17:38:28,301 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=3886
+2026-03-05 17:38:30,340 - INFO -   Advanced Search loaded
+2026-03-05 17:38:30,361 - INFO -   Advanced Search mode
+2026-03-05 17:38:32,396 - INFO -   Page 1: +16 new  (total: 16 / expected: 16)
+2026-03-05 17:38:32,605 - INFO -   Next page clicked
+2026-03-05 17:38:37,635 - INFO -   Page 2: +0 new  (total: 16 / expected: 16)
+2026-03-05 17:38:37,635 - INFO -   No new URLs on page 2 — last page
+2026-03-05 17:38:50,017 - WARNING -   Back() failed — navigating directly
+2026-03-05 17:38:53,062 - INFO -   Section result: DECISIONS FROM THE SUPREME COURT                   expected=16     collected=16
+2026-03-05 17:38:53,063 - INFO - [5/11] Section: DECISIONS FROM THE COURTS OF APPEAL
+2026-03-05 17:38:53,536 - INFO -   Clicked section tab: 'Avgjørelser fra lagmannsrettene'
+2026-03-05 17:38:55,244 - INFO -   Advanced Search mode
+2026-03-05 17:38:57,272 - INFO -   Page 1: +50 new  (total: 50 / expected: ?)
+2026-03-05 17:38:57,474 - INFO -   Next page clicked
+2026-03-05 17:39:02,492 - INFO -   Page 2: +50 new  (total: 100 / expected: ?)
+2026-03-05 17:39:02,696 - INFO -   Next page clicked
+2026-03-05 17:39:07,730 - INFO -   Page 3: +50 new  (total: 150 / expected: ?)
+2026-03-05 17:39:07,973 - INFO -   Next page clicked
+2026-03-05 17:39:13,013 - INFO -   Page 4: +18 new  (total: 168 / expected: ?)
+2026-03-05 17:39:13,204 - INFO -   Next page clicked
+2026-03-05 17:39:18,239 - INFO -   Page 5: +0 new  (total: 168 / expected: ?)
+2026-03-05 17:39:18,240 - INFO -   No new URLs on page 5 — last page
+2026-03-05 17:39:20,284 - INFO -   Back to legal area page
+2026-03-05 17:39:20,284 - INFO -   Section result: DECISIONS FROM THE COURTS OF APPEAL                expected=?      collected=168
+2026-03-05 17:39:20,285 - INFO - [6/11] Section: DECISIONS FROM THE DISTRICT COURTS
+2026-03-05 17:39:20,718 - INFO -   Clicked section tab: 'Avgjørelser fra tingrettene'
+2026-03-05 17:39:22,289 - INFO -   Vis alle clicked — expected: 132
+2026-03-05 17:39:25,321 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=5846
+2026-03-05 17:39:27,360 - INFO -   Advanced Search loaded
+2026-03-05 17:39:27,380 - INFO -   Advanced Search mode
+2026-03-05 17:39:29,417 - INFO -   Page 1: +50 new  (total: 50 / expected: 132)
+2026-03-05 17:39:29,671 - INFO -   Next page clicked
+2026-03-05 17:39:34,716 - INFO -   Page 2: +50 new  (total: 100 / expected: 132)
+2026-03-05 17:39:34,969 - INFO -   Next page clicked
+2026-03-05 17:39:40,011 - INFO -   Page 3: +32 new  (total: 132 / expected: 132)
+2026-03-05 17:39:40,172 - INFO -   Next page clicked
+2026-03-05 17:39:45,198 - INFO -   Page 4: +0 new  (total: 132 / expected: 132)
+2026-03-05 17:39:45,198 - INFO -   No new URLs on page 4 — last page
+2026-03-05 17:39:57,631 - WARNING -   Back() failed — navigating directly
+2026-03-05 17:40:00,663 - INFO -   Section result: DECISIONS FROM THE DISTRICT COURTS                 expected=132    collected=132
+2026-03-05 17:40:00,671 - INFO - [7/11] Section: ARTICLES
+2026-03-05 17:40:01,108 - INFO -   Clicked section tab: 'Artikler'
+2026-03-05 17:40:02,658 - INFO -   Vis alle clicked — expected: 44
+2026-03-05 17:40:05,696 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=6865
+2026-03-05 17:40:07,744 - INFO -   Advanced Search loaded
+2026-03-05 17:40:07,765 - INFO -   Advanced Search mode
+2026-03-05 17:40:09,803 - INFO -   Page 1: +44 new  (total: 44 / expected: 44)
+2026-03-05 17:40:09,963 - INFO -   Next page clicked
+2026-03-05 17:40:14,982 - INFO -   Page 2: +0 new  (total: 44 / expected: 44)
+2026-03-05 17:40:14,984 - INFO -   No new URLs on page 2 — last page
+2026-03-05 17:40:27,421 - WARNING -   Back() failed — navigating directly
+2026-03-05 17:40:30,467 - INFO -   Section result: ARTICLES                                           expected=44     collected=44
+2026-03-05 17:40:30,467 - INFO - [8/11] Section: DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD
+2026-03-05 17:40:31,025 - INFO -   Clicked section tab: 'Dokumenter fra Klagenemnda for offentlige anskaffelser'
+2026-03-05 17:40:32,575 - INFO -   Vis alle clicked — expected: 2532
+2026-03-05 17:40:35,588 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=7788
+2026-03-05 17:40:37,620 - INFO -   Advanced Search loaded
+2026-03-05 17:40:37,640 - INFO -   Advanced Search mode
+2026-03-05 17:40:39,674 - INFO -   Page 1: +50 new  (total: 50 / expected: 2532)
+2026-03-05 17:40:39,928 - INFO -   Next page clicked
+2026-03-05 17:40:44,961 - INFO -   Page 2: +50 new  (total: 100 / expected: 2532)
+2026-03-05 17:40:45,169 - INFO -   Next page clicked
+2026-03-05 17:40:50,203 - INFO -   Page 3: +50 new  (total: 150 / expected: 2532)
+2026-03-05 17:40:50,447 - INFO -   Next page clicked
+2026-03-05 17:40:55,488 - INFO -   Page 4: +50 new  (total: 200 / expected: 2532)
+2026-03-05 17:40:55,636 - INFO -   Next page clicked
+2026-03-05 17:41:00,653 - INFO -   Page 5: +50 new  (total: 250 / expected: 2532)
+2026-03-05 17:41:00,912 - INFO -   Next page clicked
+2026-03-05 17:41:05,950 - INFO -   Page 6: +50 new  (total: 300 / expected: 2532)
+2026-03-05 17:41:06,155 - INFO -   Next page clicked
+2026-03-05 17:41:11,190 - INFO -   Page 7: +50 new  (total: 350 / expected: 2532)
+2026-03-05 17:41:11,413 - INFO -   Next page clicked
+2026-03-05 17:41:16,440 - INFO -   Page 8: +50 new  (total: 400 / expected: 2532)
+2026-03-05 17:41:16,580 - INFO -   Next page clicked
+2026-03-05 17:41:21,607 - INFO -   Page 9: +50 new  (total: 450 / expected: 2532)
+2026-03-05 17:41:21,764 - INFO -   Next page clicked
+2026-03-05 17:41:26,803 - INFO -   Page 10: +50 new  (total: 500 / expected: 2532)
+2026-03-05 17:41:27,031 - INFO -   Next page clicked
+2026-03-05 17:41:32,065 - INFO -   Page 11: +50 new  (total: 550 / expected: 2532)
+2026-03-05 17:41:32,250 - INFO -   Next page clicked
+2026-03-05 17:41:37,286 - INFO -   Page 12: +50 new  (total: 600 / expected: 2532)
+2026-03-05 17:41:37,499 - INFO -   Next page clicked
+2026-03-05 17:41:42,535 - INFO -   Page 13: +50 new  (total: 650 / expected: 2532)
+2026-03-05 17:41:42,771 - INFO -   Next page clicked
+2026-03-05 17:41:47,808 - INFO -   Page 14: +50 new  (total: 700 / expected: 2532)
+2026-03-05 17:41:48,027 - INFO -   Next page clicked
+2026-03-05 17:41:53,056 - INFO -   Page 15: +50 new  (total: 750 / expected: 2532)
+2026-03-05 17:41:53,273 - INFO -   Next page clicked
+2026-03-05 17:41:58,308 - INFO -   Page 16: +50 new  (total: 800 / expected: 2532)
+2026-03-05 17:41:58,532 - INFO -   Next page clicked
+2026-03-05 17:42:03,558 - INFO -   Page 17: +50 new  (total: 850 / expected: 2532)
+2026-03-05 17:42:03,771 - INFO -   Next page clicked
+2026-03-05 17:42:08,798 - INFO -   Page 18: +50 new  (total: 900 / expected: 2532)
+2026-03-05 17:42:09,002 - INFO -   Next page clicked
+2026-03-05 17:42:14,034 - INFO -   Page 19: +50 new  (total: 950 / expected: 2532)
+2026-03-05 17:42:14,213 - INFO -   Next page clicked
+2026-03-05 17:42:19,237 - INFO -   Page 20: +50 new  (total: 1000 / expected: 2532)
+2026-03-05 17:42:19,377 - INFO -   Next page clicked
+2026-03-05 17:42:24,410 - INFO -   Page 21: +50 new  (total: 1050 / expected: 2532)
+2026-03-05 17:42:24,625 - INFO -   Next page clicked
+2026-03-05 17:42:29,667 - INFO -   Page 22: +50 new  (total: 1100 / expected: 2532)
+2026-03-05 17:42:29,912 - INFO -   Next page clicked
+2026-03-05 17:42:34,952 - INFO -   Page 23: +50 new  (total: 1150 / expected: 2532)
+2026-03-05 17:42:35,223 - INFO -   Next page clicked
+2026-03-05 17:42:40,257 - INFO -   Page 24: +50 new  (total: 1200 / expected: 2532)
+2026-03-05 17:42:40,448 - INFO -   Next page clicked
+2026-03-05 17:42:45,486 - INFO -   Page 25: +50 new  (total: 1250 / expected: 2532)
+2026-03-05 17:42:45,735 - INFO -   Next page clicked
+2026-03-05 17:42:50,763 - INFO -   Page 26: +50 new  (total: 1300 / expected: 2532)
+2026-03-05 17:42:50,989 - INFO -   Next page clicked
+2026-03-05 17:42:56,029 - INFO -   Page 27: +50 new  (total: 1350 / expected: 2532)
+2026-03-05 17:42:56,269 - INFO -   Next page clicked
+2026-03-05 17:43:01,312 - INFO -   Page 28: +50 new  (total: 1400 / expected: 2532)
+2026-03-05 17:43:01,505 - INFO -   Next page clicked
+2026-03-05 17:43:06,547 - INFO -   Page 29: +50 new  (total: 1450 / expected: 2532)
+2026-03-05 17:43:06,781 - INFO -   Next page clicked
+2026-03-05 17:43:11,827 - INFO -   Page 30: +50 new  (total: 1500 / expected: 2532)
+2026-03-05 17:43:12,043 - INFO -   Next page clicked
+2026-03-05 17:43:17,076 - INFO -   Page 31: +50 new  (total: 1550 / expected: 2532)
+2026-03-05 17:43:17,188 - INFO -   Next page clicked
+2026-03-05 17:43:22,228 - INFO -   Page 32: +50 new  (total: 1600 / expected: 2532)
+2026-03-05 17:43:22,371 - INFO -   Next page clicked
+2026-03-05 17:43:27,418 - INFO -   Page 33: +50 new  (total: 1650 / expected: 2532)
+2026-03-05 17:43:27,568 - INFO -   Next page clicked
+2026-03-05 17:43:32,608 - INFO -   Page 34: +50 new  (total: 1700 / expected: 2532)
+2026-03-05 17:43:32,781 - INFO -   Next page clicked
+2026-03-05 17:43:37,803 - INFO -   Page 35: +50 new  (total: 1750 / expected: 2532)
+2026-03-05 17:43:37,976 - INFO -   Next page clicked
+2026-03-05 17:43:43,012 - INFO -   Page 36: +50 new  (total: 1800 / expected: 2532)
+2026-03-05 17:43:43,180 - INFO -   Next page clicked
+2026-03-05 17:43:48,223 - INFO -   Page 37: +50 new  (total: 1850 / expected: 2532)
+2026-03-05 17:43:48,463 - INFO -   Next page clicked
+2026-03-05 17:43:53,504 - INFO -   Page 38: +50 new  (total: 1900 / expected: 2532)
+2026-03-05 17:43:53,726 - INFO -   Next page clicked
+2026-03-05 17:43:58,759 - INFO -   Page 39: +50 new  (total: 1950 / expected: 2532)
+2026-03-05 17:43:58,977 - INFO -   Next page clicked
+2026-03-05 17:44:04,015 - INFO -   Page 40: +50 new  (total: 2000 / expected: 2532)
+2026-03-05 17:44:04,265 - INFO -   Next page clicked
+2026-03-05 17:44:09,319 - INFO -   Page 41: +50 new  (total: 2050 / expected: 2532)
+2026-03-05 17:44:09,546 - INFO -   Next page clicked
+2026-03-05 17:44:14,582 - INFO -   Page 42: +50 new  (total: 2100 / expected: 2532)
+2026-03-05 17:44:14,814 - INFO -   Next page clicked
+2026-03-05 17:44:19,838 - INFO -   Page 43: +50 new  (total: 2150 / expected: 2532)
+2026-03-05 17:44:20,049 - INFO -   Next page clicked
+2026-03-05 17:44:25,083 - INFO -   Page 44: +50 new  (total: 2200 / expected: 2532)
+2026-03-05 17:44:25,304 - INFO -   Next page clicked
+2026-03-05 17:44:30,362 - INFO -   Page 45: +50 new  (total: 2250 / expected: 2532)
+2026-03-05 17:44:30,653 - INFO -   Next page clicked
+2026-03-05 17:44:35,677 - INFO -   Page 46: +50 new  (total: 2300 / expected: 2532)
+2026-03-05 17:44:35,914 - INFO -   Next page clicked
+2026-03-05 17:44:40,929 - INFO -   Page 47: +50 new  (total: 2350 / expected: 2532)
+2026-03-05 17:44:41,155 - INFO -   Next page clicked
+2026-03-05 17:44:46,182 - INFO -   Page 48: +50 new  (total: 2400 / expected: 2532)
+2026-03-05 17:44:46,339 - INFO -   Next page clicked
+2026-03-05 17:44:51,370 - INFO -   Page 49: +50 new  (total: 2450 / expected: 2532)
+2026-03-05 17:44:51,620 - INFO -   Next page clicked
+2026-03-05 17:44:56,651 - INFO -   Page 50: +50 new  (total: 2500 / expected: 2532)
+2026-03-05 17:44:56,883 - INFO -   Next page clicked
+2026-03-05 17:45:01,918 - INFO -   Page 51: +32 new  (total: 2532 / expected: 2532)
+2026-03-05 17:45:02,135 - INFO -   Next page clicked
+2026-03-05 17:45:07,172 - INFO -   Page 52: +0 new  (total: 2532 / expected: 2532)
+2026-03-05 17:45:07,172 - INFO -   No new URLs on page 52 — last page
+2026-03-05 17:45:19,551 - WARNING -   Back() failed — navigating directly
+2026-03-05 17:45:22,588 - INFO -   Section result: DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD expected=2532   collected=2532
+2026-03-05 17:45:22,588 - INFO - [9/11] Section: DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL
+2026-03-05 17:45:23,188 - INFO -   Clicked section tab: 'Dokumenter fra Byggebransjens Faglig Juridiske Råd'
+2026-03-05 17:45:24,759 - INFO -   Vis alle clicked — expected: 659
+2026-03-05 17:45:27,785 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=11351
+2026-03-05 17:45:29,828 - INFO -   Advanced Search loaded
+2026-03-05 17:45:29,839 - INFO -   Advanced Search mode
+2026-03-05 17:45:31,867 - INFO -   Page 1: +50 new  (total: 50 / expected: 659)
+2026-03-05 17:45:32,073 - INFO -   Next page clicked
+2026-03-05 17:45:37,107 - INFO -   Page 2: +50 new  (total: 100 / expected: 659)
+2026-03-05 17:45:37,341 - INFO -   Next page clicked
+2026-03-05 17:45:42,367 - INFO -   Page 3: +50 new  (total: 150 / expected: 659)
+2026-03-05 17:45:42,584 - INFO -   Next page clicked
+2026-03-05 17:45:47,618 - INFO -   Page 4: +50 new  (total: 200 / expected: 659)
+2026-03-05 17:45:47,768 - INFO -   Next page clicked
+2026-03-05 17:45:52,805 - INFO -   Page 5: +50 new  (total: 250 / expected: 659)
+2026-03-05 17:45:53,054 - INFO -   Next page clicked
+2026-03-05 17:45:58,090 - INFO -   Page 6: +50 new  (total: 300 / expected: 659)
+2026-03-05 17:45:58,285 - INFO -   Next page clicked
+2026-03-05 17:46:03,319 - INFO -   Page 7: +50 new  (total: 350 / expected: 659)
+2026-03-05 17:46:03,525 - INFO -   Next page clicked
+2026-03-05 17:46:08,554 - INFO -   Page 8: +50 new  (total: 400 / expected: 659)
+2026-03-05 17:46:08,676 - INFO -   Next page clicked
+2026-03-05 17:46:13,700 - INFO -   Page 9: +50 new  (total: 450 / expected: 659)
+2026-03-05 17:46:13,928 - INFO -   Next page clicked
+2026-03-05 17:46:18,944 - INFO -   Page 10: +50 new  (total: 500 / expected: 659)
+2026-03-05 17:46:19,170 - INFO -   Next page clicked
+2026-03-05 17:46:24,205 - INFO -   Page 11: +50 new  (total: 550 / expected: 659)
+2026-03-05 17:46:24,438 - INFO -   Next page clicked
+2026-03-05 17:46:29,471 - INFO -   Page 12: +50 new  (total: 600 / expected: 659)
+2026-03-05 17:46:29,675 - INFO -   Next page clicked
+2026-03-05 17:46:34,719 - INFO -   Page 13: +50 new  (total: 650 / expected: 659)
+2026-03-05 17:46:34,939 - INFO -   Next page clicked
+2026-03-05 17:46:39,961 - INFO -   Page 14: +9 new  (total: 659 / expected: 659)
+2026-03-05 17:46:40,149 - INFO -   Next page clicked
+2026-03-05 17:46:45,176 - INFO -   Page 15: +0 new  (total: 659 / expected: 659)
+2026-03-05 17:46:45,176 - INFO -   No new URLs on page 15 — last page
+2026-03-05 17:46:57,621 - WARNING -   Back() failed — navigating directly
+2026-03-05 17:47:00,661 - INFO -   Section result: DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL expected=659    collected=659
+2026-03-05 17:47:00,661 - INFO - [10/11] Section: DOCUMENTS FROM THE MINISTRY OF JUSTICE
+2026-03-05 17:47:01,223 - INFO -   Clicked section tab: 'Dokumenter fra Justisdepartementet'
+2026-03-05 17:47:02,805 - INFO -   Small section mode
+2026-03-05 17:47:02,831 - INFO -   Small section div#thirdOtherBase — collected 6 URLs
+2026-03-05 17:47:02,832 - INFO -   Section result: DOCUMENTS FROM THE MINISTRY OF JUSTICE             expected=?      collected=6
+2026-03-05 17:47:02,832 - INFO - [11/11] Section: OTHER DOCUMENTS
+2026-03-05 17:47:03,529 - INFO -   Clicked section tab: 'Andre dokumenter'
+2026-03-05 17:47:05,086 - INFO -   Vis alle clicked — expected: 330
+2026-03-05 17:47:08,106 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=12930
+2026-03-05 17:47:10,129 - INFO -   Advanced Search loaded
+2026-03-05 17:47:10,148 - INFO -   Advanced Search mode
+2026-03-05 17:47:12,180 - INFO -   Page 1: +50 new  (total: 50 / expected: 330)
+2026-03-05 17:47:12,405 - INFO -   Next page clicked
+2026-03-05 17:47:17,449 - INFO -   Page 2: +50 new  (total: 100 / expected: 330)
+2026-03-05 17:47:17,708 - INFO -   Next page clicked
+2026-03-05 17:47:22,746 - INFO -   Page 3: +50 new  (total: 150 / expected: 330)
+2026-03-05 17:47:22,974 - INFO -   Next page clicked
+2026-03-05 17:47:28,013 - INFO -   Page 4: +50 new  (total: 200 / expected: 330)
+2026-03-05 17:47:28,245 - INFO -   Next page clicked
+2026-03-05 17:47:33,283 - INFO -   Page 5: +50 new  (total: 250 / expected: 330)
+2026-03-05 17:47:33,489 - INFO -   Next page clicked
+2026-03-05 17:47:38,520 - INFO -   Page 6: +50 new  (total: 300 / expected: 330)
+2026-03-05 17:47:38,636 - INFO -   Next page clicked
+2026-03-05 17:47:43,670 - INFO -   Page 7: +30 new  (total: 330 / expected: 330)
+2026-03-05 17:47:43,823 - INFO -   Next page clicked
+2026-03-05 17:47:48,843 - INFO -   Page 8: +0 new  (total: 330 / expected: 330)
+2026-03-05 17:47:48,843 - INFO -   No new URLs on page 8 — last page
+2026-03-05 17:48:01,252 - WARNING -   Back() failed — navigating directly
+2026-03-05 17:48:04,292 - INFO -   Section result: OTHER DOCUMENTS                                    expected=330    collected=330
+2026-03-05 17:48:04,293 - INFO - 
+Section collection summary:
+2026-03-05 17:48:04,293 - INFO -   LATEST DOCUMENTS                                        expected=?      found=10
+2026-03-05 17:48:04,293 - INFO -   LAWS                                                    expected=?      found=2
+2026-03-05 17:48:04,293 - INFO -   REGULATIONS                                             expected=16     found=16
+2026-03-05 17:48:04,293 - INFO -   DECISIONS FROM THE SUPREME COURT                        expected=16     found=16
+2026-03-05 17:48:04,293 - INFO -   DECISIONS FROM THE COURTS OF APPEAL                     expected=?      found=168
+2026-03-05 17:48:04,293 - INFO -   DECISIONS FROM THE DISTRICT COURTS                      expected=132    found=132
+2026-03-05 17:48:04,293 - INFO -   ARTICLES                                                expected=44     found=44
+2026-03-05 17:48:04,295 - INFO -   DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  expected=2532   found=2532
+2026-03-05 17:48:04,295 - INFO -   DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL  expected=659    found=659
+2026-03-05 17:48:04,295 - INFO -   DOCUMENTS FROM THE MINISTRY OF JUSTICE                  expected=?      found=6
+2026-03-05 17:48:04,295 - INFO -   OTHER DOCUMENTS                                         expected=330    found=330
+2026-03-05 17:48:04,295 - INFO - Total URLs collected: 3915
+
+2026-03-05 17:48:04,296 - INFO - 
+2026-03-05 17:48:04,296 - INFO - Section collection summary:
+2026-03-05 17:48:04,296 - INFO -   LATEST DOCUMENTS                                         expected=?       found=10
+2026-03-05 17:48:04,296 - INFO -   LAWS                                                     expected=?       found=2
+2026-03-05 17:48:04,296 - INFO -   REGULATIONS                                              expected=16      found=16
+2026-03-05 17:48:04,296 - INFO -   DECISIONS FROM THE SUPREME COURT                         expected=16      found=16
+2026-03-05 17:48:04,296 - INFO -   DECISIONS FROM THE COURTS OF APPEAL                      expected=?       found=168
+2026-03-05 17:48:04,296 - INFO -   DECISIONS FROM THE DISTRICT COURTS                       expected=132     found=132
+2026-03-05 17:48:04,298 - INFO -   ARTICLES                                                 expected=44      found=44
+2026-03-05 17:48:04,298 - INFO -   DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD   expected=2532    found=2532
+2026-03-05 17:48:04,298 - INFO -   DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL   expected=659     found=659
+2026-03-05 17:48:04,299 - INFO -   DOCUMENTS FROM THE MINISTRY OF JUSTICE                   expected=?       found=6
+2026-03-05 17:48:04,299 - INFO -   OTHER DOCUMENTS                                          expected=330     found=330
+2026-03-05 17:48:04,299 - INFO - Total URLs collected (before dedup): 3915
+2026-03-05 17:48:04,300 - INFO - 
+2026-03-05 17:48:04,309 - INFO - After dedup: 3905 unique URLs (10 cross-section duplicates removed)
+2026-03-05 17:48:04,309 - INFO - Processing 3905 documents in batches of 10
+2026-03-05 17:48:05,085 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-03-06.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:05,108 - INFO -   [1/3905] SKIP (already in Supabase): EUR_eur-2026-03-06.xml
+2026-03-05 17:48:07,334 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-198508.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:07,340 - INFO -   [2/3905] SKIP (already in Supabase): TRSIV_avgjorelse_tosl-2025-198508.xml
+2026-03-05 17:48:09,687 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-180124.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:09,687 - INFO -   [3/3905] SKIP (already in Supabase): TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-03-05 17:48:11,940 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-01-02.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:11,940 - INFO -   [4/3905] SKIP (already in Supabase): EUR_eur-2026-01-02.xml
+2026-03-05 17:48:14,198 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.ROO_rundskriv_is-2026-9001.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:14,198 - INFO -   [5/3905] SKIP (already in Supabase): ROO_rundskriv_is-2026-9001.xml
+2026-03-05 17:48:16,450 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-171257.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:16,450 - INFO -   [6/3905] SKIP (already in Supabase): LBSIV_avgjorelse_lb-2025-171257.xml
+2026-03-05 17:48:18,642 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.INNST_forarbeid_inns-38-l-202526.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:18,657 - INFO -   [7/3905] SKIP (already in Supabase): INNST_forarbeid_inns-38-l-202526.xml
+2026-03-05 17:48:20,955 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tsol-2025-181219.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:20,958 - INFO -   [8/3905] SKIP (already in Supabase): TRSIV_avgjorelse_tsol-2025-181219.xml
+2026-03-05 17:48:23,136 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2025-20-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:23,136 - INFO -   [9/3905] SKIP (already in Supabase): EUR_eur-2025-20-04.xml
+2026-03-05 17:48:25,321 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-26330.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:25,321 - INFO -   [10/3905] SKIP (already in Supabase): LBSIV_avgjorelse_lb-2025-26330.xml
+2026-03-05 17:48:27,611 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2016-06-17-73.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:27,611 - INFO -   [11/3905] SKIP (already in Supabase): NL_lov_2016-06-17-73.xml
+2026-03-05 17:48:29,858 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NLO_lov_1999-07-16-69.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:29,858 - INFO -   [12/3905] SKIP (already in Supabase): NLO_lov_1999-07-16-69.xml
+2026-03-05 17:48:32,114 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2002-11-15-1288.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:32,114 - INFO -   [13/3905] SKIP (already in Supabase): SF_forskrift_2002-11-15-1288.xml
+2026-03-05 17:48:34,366 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-974.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:34,368 - INFO -   [14/3905] SKIP (already in Supabase): SF_forskrift_2016-08-12-974.xml
+2026-03-05 17:48:36,611 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-975.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:36,621 - INFO -   [15/3905] SKIP (already in Supabase): SF_forskrift_2016-08-12-975.xml
+2026-03-05 17:48:38,822 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2008-02-08-112.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:38,822 - INFO -   [16/3905] SKIP (already in Supabase): SF_forskrift_2008-02-08-112.xml
+2026-03-05 17:48:41,128 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2013-10-04-1185.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:41,131 - INFO -   [17/3905] SKIP (already in Supabase): SF_forskrift_2013-10-04-1185.xml
+2026-03-05 17:48:43,484 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-12-17-1708.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-05 17:48:43,486 - INFO -   [18/3905] SKIP (already in Supabase): SF_forskrift_2016-12-17-1708.xml
+2026-03-05 17:48:44,437 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/e0d6ac5c111c2b972293adc514037d11

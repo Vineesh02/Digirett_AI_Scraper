@@ -1,0 +1,1157 @@
+2026-02-14 14:16:44,613 - INFO - ✓ Database connected
+2026-02-14 14:16:44,613 - INFO - ====== WebDriver manager ======
+2026-02-14 14:16:46,551 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 14:16:48,084 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 14:16:48,901 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 14:16:48,901 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 14:16:48,901 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 14:16:50,113 - INFO - ✓ Browser started (headless mode)
+2026-02-14 14:16:50,113 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 14:16:51,018 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 14:16:51,018 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 14:16:51,019 - INFO - 🔐 Logging in...
+2026-02-14 14:17:16,176 - INFO - ✓ Login successful
+2026-02-14 14:17:16,177 - INFO - 
+======================================================================
+2026-02-14 14:17:16,179 - INFO - MODE: ALL
+2026-02-14 14:17:16,179 - INFO - ======================================================================
+
+2026-02-14 14:17:16,180 - INFO - 
+📚 SCRAPING SOURCES OF LAW
+2026-02-14 14:17:16,180 - INFO -   Total categories: 16
+2026-02-14 14:17:16,184 - INFO -   Max per category: 150
+
+2026-02-14 14:17:16,184 - INFO - [1/16] Laws and Regulations > Active Laws (NL)
+2026-02-14 14:17:16,184 - INFO -   📁 01_Laws_and_Regulations/Active_Laws_NL
+2026-02-14 14:17:16,186 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 14:17:16,188 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 14:17:16,188 - INFO -   → Checking chronological index...
+2026-02-14 14:17:23,577 - INFO -   ✅ Found 5 documents
+2026-02-14 14:17:23,577 - INFO -     Found 5 documents
+2026-02-14 14:17:23,577 - INFO -   → Checking alphabetical index...
+2026-02-14 14:17:31,523 - INFO -   ✅ Found 70 documents
+2026-02-14 14:17:31,523 - INFO -     Found 70 documents
+2026-02-14 14:17:31,523 - INFO -   📄 Total unique URLs from both indexes: 75
+2026-02-14 14:17:31,523 - INFO -   📄 75 URLs found
+2026-02-14 14:17:53,968 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\doc-d826ff6dfb2c.xml
+2026-02-14 14:17:54,568 - INFO - ✓ Saved to DB: doc-d826ff6dfb2c.xml
+2026-02-14 14:17:54,571 - INFO -   ✓ [1] 01_Laws_and_Regulations/Active_Laws_NL/doc-d826ff6dfb2c.xml
+2026-02-14 14:18:22,485 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\doc-52240b42b944.xml
+2026-02-14 14:18:22,941 - INFO - ✓ Saved to DB: doc-52240b42b944.xml
+2026-02-14 14:18:22,941 - INFO -   ✓ [2] 01_Laws_and_Regulations/Active_Laws_NL/doc-52240b42b944.xml
+2026-02-14 14:20:26,371 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\doc-2cf7d6acc4ca.xml
+2026-02-14 14:20:26,813 - INFO - ✓ Saved to DB: doc-2cf7d6acc4ca.xml
+2026-02-14 14:20:26,814 - INFO -   ✓ [3] 01_Laws_and_Regulations/Active_Laws_NL/doc-2cf7d6acc4ca.xml
+2026-02-14 14:20:55,643 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\doc-d515d44eec10.xml
+2026-02-14 14:20:55,899 - INFO - ✓ Saved to DB: doc-d515d44eec10.xml
+2026-02-14 14:20:55,900 - INFO -   ✓ [4] 01_Laws_and_Regulations/Active_Laws_NL/doc-d515d44eec10.xml
+2026-02-14 14:21:05,842 - INFO -   ✅ 4 new docs saved
+
+2026-02-14 14:21:05,843 - INFO - [2/16] Laws and Regulations > Central Regulations (SF)
+2026-02-14 14:21:05,844 - INFO -   📁 01_Laws_and_Regulations/Central_Regulations_SF
+2026-02-14 14:21:05,845 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 14:21:05,845 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 14:21:05,846 - INFO -   → Checking chronological index...
+2026-02-14 14:21:14,459 - INFO -   ✅ Found 33 documents
+2026-02-14 14:21:14,460 - INFO -     Found 33 documents
+2026-02-14 14:21:14,460 - INFO -   → Checking alphabetical index...
+2026-02-14 14:21:20,411 - INFO -   ✅ Found 181 documents
+2026-02-14 14:21:20,412 - INFO -     Found 181 documents
+2026-02-14 14:21:20,412 - INFO -   📄 Total unique URLs from both indexes: 150
+2026-02-14 14:21:20,412 - INFO -   📄 150 URLs found
+2026-02-14 14:21:45,778 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-5055e15e65fd.xml
+2026-02-14 14:21:45,993 - INFO - ✓ Saved to DB: doc-5055e15e65fd.xml
+2026-02-14 14:21:45,994 - INFO -   ✓ [5] 01_Laws_and_Regulations/Central_Regulations_SF/doc-5055e15e65fd.xml
+2026-02-14 14:22:04,102 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-732aa70b3bd9.xml
+2026-02-14 14:22:04,318 - INFO - ✓ Saved to DB: doc-732aa70b3bd9.xml
+2026-02-14 14:22:04,319 - INFO -   ✓ [6] 01_Laws_and_Regulations/Central_Regulations_SF/doc-732aa70b3bd9.xml
+2026-02-14 14:22:14,266 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-0f7e7a220842.xml
+2026-02-14 14:22:14,817 - INFO - ✓ Saved to DB: doc-0f7e7a220842.xml
+2026-02-14 14:22:14,818 - INFO -   ✓ [7] 01_Laws_and_Regulations/Central_Regulations_SF/doc-0f7e7a220842.xml
+2026-02-14 14:22:29,627 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-254eda6482db.xml
+2026-02-14 14:22:29,904 - INFO - ✓ Saved to DB: doc-254eda6482db.xml
+2026-02-14 14:22:29,906 - INFO -   ✓ [8] 01_Laws_and_Regulations/Central_Regulations_SF/doc-254eda6482db.xml
+2026-02-14 14:22:38,022 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-5402a0c0a817.xml
+2026-02-14 14:22:38,209 - INFO - ✓ Saved to DB: doc-5402a0c0a817.xml
+2026-02-14 14:22:38,209 - INFO -   ✓ [9] 01_Laws_and_Regulations/Central_Regulations_SF/doc-5402a0c0a817.xml
+2026-02-14 14:22:48,571 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-514d925c5a44.xml
+2026-02-14 14:22:49,051 - INFO - ✓ Saved to DB: doc-514d925c5a44.xml
+2026-02-14 14:22:49,051 - INFO -   ✓ [10] 01_Laws_and_Regulations/Central_Regulations_SF/doc-514d925c5a44.xml
+2026-02-14 14:22:59,831 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-983dad6c1563.xml
+2026-02-14 14:23:00,620 - INFO - ✓ Saved to DB: doc-983dad6c1563.xml
+2026-02-14 14:23:00,621 - INFO -   ✓ [11] 01_Laws_and_Regulations/Central_Regulations_SF/doc-983dad6c1563.xml
+2026-02-14 14:23:18,107 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-707f5f97c3f6.xml
+2026-02-14 14:23:18,391 - INFO - ✓ Saved to DB: doc-707f5f97c3f6.xml
+2026-02-14 14:23:18,391 - INFO -   ✓ [12] 01_Laws_and_Regulations/Central_Regulations_SF/doc-707f5f97c3f6.xml
+2026-02-14 14:23:41,496 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-b1e8a514d200.xml
+2026-02-14 14:23:41,808 - INFO - ✓ Saved to DB: doc-b1e8a514d200.xml
+2026-02-14 14:23:41,808 - INFO -   ✓ [13] 01_Laws_and_Regulations/Central_Regulations_SF/doc-b1e8a514d200.xml
+2026-02-14 14:23:44,178 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-91e13f1fb46c.xml
+2026-02-14 14:23:44,854 - INFO - ✓ Saved to DB: doc-91e13f1fb46c.xml
+2026-02-14 14:23:44,855 - INFO -   ✓ [14] 01_Laws_and_Regulations/Central_Regulations_SF/doc-91e13f1fb46c.xml
+2026-02-14 14:23:47,349 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-7e06970fc7aa.xml
+2026-02-14 14:23:47,623 - INFO - ✓ Saved to DB: doc-7e06970fc7aa.xml
+2026-02-14 14:23:47,624 - INFO -   ✓ [15] 01_Laws_and_Regulations/Central_Regulations_SF/doc-7e06970fc7aa.xml
+2026-02-14 14:23:49,905 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-f1f1bc4bc4fd.xml
+2026-02-14 14:23:50,599 - INFO - ✓ Saved to DB: doc-f1f1bc4bc4fd.xml
+2026-02-14 14:23:50,600 - INFO -   ✓ [16] 01_Laws_and_Regulations/Central_Regulations_SF/doc-f1f1bc4bc4fd.xml
+2026-02-14 14:24:35,614 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-5030a0e6c6ef.xml
+2026-02-14 14:24:36,158 - INFO - ✓ Saved to DB: doc-5030a0e6c6ef.xml
+2026-02-14 14:24:36,160 - INFO -   ✓ [17] 01_Laws_and_Regulations/Central_Regulations_SF/doc-5030a0e6c6ef.xml
+2026-02-14 14:24:44,703 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-fa5032657153.xml
+2026-02-14 14:24:45,180 - INFO - ✓ Saved to DB: doc-fa5032657153.xml
+2026-02-14 14:24:45,181 - INFO -   ✓ [18] 01_Laws_and_Regulations/Central_Regulations_SF/doc-fa5032657153.xml
+2026-02-14 14:24:47,559 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-3265ead4ad72.xml
+2026-02-14 14:24:47,832 - INFO - ✓ Saved to DB: doc-3265ead4ad72.xml
+2026-02-14 14:24:47,833 - INFO -   ✓ [19] 01_Laws_and_Regulations/Central_Regulations_SF/doc-3265ead4ad72.xml
+2026-02-14 14:24:50,094 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-7c5e226e3b97.xml
+2026-02-14 14:24:50,499 - INFO - ✓ Saved to DB: doc-7c5e226e3b97.xml
+2026-02-14 14:24:50,499 - INFO -   ✓ [20] 01_Laws_and_Regulations/Central_Regulations_SF/doc-7c5e226e3b97.xml
+2026-02-14 14:24:52,678 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-5d2ea5a16950.xml
+2026-02-14 14:24:52,976 - INFO - ✓ Saved to DB: doc-5d2ea5a16950.xml
+2026-02-14 14:24:52,977 - INFO -   ✓ [21] 01_Laws_and_Regulations/Central_Regulations_SF/doc-5d2ea5a16950.xml
+2026-02-14 14:24:55,349 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-5ae9ade8a7de.xml
+2026-02-14 14:24:55,616 - INFO - ✓ Saved to DB: doc-5ae9ade8a7de.xml
+2026-02-14 14:24:55,617 - INFO -   ✓ [22] 01_Laws_and_Regulations/Central_Regulations_SF/doc-5ae9ade8a7de.xml
+2026-02-14 14:25:17,463 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-5c2b0615d85b.xml
+2026-02-14 14:25:17,733 - INFO - ✓ Saved to DB: doc-5c2b0615d85b.xml
+2026-02-14 14:25:17,733 - INFO -   ✓ [23] 01_Laws_and_Regulations/Central_Regulations_SF/doc-5c2b0615d85b.xml
+2026-02-14 14:25:35,395 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-15a77ea5eb12.xml
+2026-02-14 14:25:35,861 - INFO - ✓ Saved to DB: doc-15a77ea5eb12.xml
+2026-02-14 14:25:35,861 - INFO -   ✓ [24] 01_Laws_and_Regulations/Central_Regulations_SF/doc-15a77ea5eb12.xml
+2026-02-14 14:26:10,666 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-9640fb8060a3.xml
+2026-02-14 14:26:10,879 - INFO - ✓ Saved to DB: doc-9640fb8060a3.xml
+2026-02-14 14:26:10,880 - INFO -   ✓ [25] 01_Laws_and_Regulations/Central_Regulations_SF/doc-9640fb8060a3.xml
+2026-02-14 14:26:21,468 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-ef51025cb3c7.xml
+2026-02-14 14:26:21,834 - INFO - ✓ Saved to DB: doc-ef51025cb3c7.xml
+2026-02-14 14:26:21,835 - INFO -   ✓ [26] 01_Laws_and_Regulations/Central_Regulations_SF/doc-ef51025cb3c7.xml
+2026-02-14 14:27:48,732 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2008-12-22-1620: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=144.0.7559.134)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb490
+	0x9ab863
+	0x9ab595
+	0x9a96a8
+	0x9a9dba
+	0x9bef1e
+	0xa45e84
+	0xa281bc
+	0xa45341
+	0xa27f56
+	0x9f96c9
+	0x9fa484
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0xbcd848
+	0xbcda12
+	0xbb75fa
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:49,881 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/1986-02-21-540: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:50,198 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/1995-01-01-100: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:50,515 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2009-07-10-998: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:50,833 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2002-12-13-1497: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:51,139 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/1990-09-28-778: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:51,447 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2018-05-30-777: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:51,758 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2006-10-11-1148: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:52,067 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/1957-10-18-9092: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:52,379 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2011-10-20-1039: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:52,693 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2005-12-28-1706: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:53,008 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2026-01-28-125: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:53,315 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2013-08-19-1000: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:53,627 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/1981-03-06-8867: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:53,938 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2002-03-01-213: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:54,248 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2025-04-05-619: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:54,557 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2026-01-12-26: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:54,869 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2017-12-13-2100: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:55,181 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2002-07-05-715: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:55,493 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/2025-12-19-2786: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:55,804 - ERROR - ✗ Doc error https://lovdata.no/dokument/SF/forskrift/1985-04-10-838: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,115 - INFO -   ✅ 22 new docs saved
+
+2026-02-14 14:27:56,115 - INFO - [3/16] Laws and Regulations > Local Regulations (LF)
+2026-02-14 14:27:56,115 - INFO -   📁 01_Laws_and_Regulations/Local_Regulations_LF
+2026-02-14 14:27:56,116 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 14:27:56,116 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 14:27:56,116 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,118 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,118 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,118 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,118 - INFO - [4/16] Laws and Regulations > Repealed Laws (NLO)
+2026-02-14 14:27:56,120 - INFO -   📁 01_Laws_and_Regulations/Repealed_Laws_NLO
+2026-02-14 14:27:56,120 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 14:27:56,120 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 14:27:56,120 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,122 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,123 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,123 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,123 - INFO - [5/16] Laws and Regulations > Emergency Laws (NLE)
+2026-02-14 14:27:56,123 - INFO -   📁 01_Laws_and_Regulations/Emergency_Laws_NLE
+2026-02-14 14:27:56,123 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NLE
+2026-02-14 14:27:56,124 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLE
+2026-02-14 14:27:56,124 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,125 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,127 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,127 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,127 - INFO - [6/16] Laws and Regulations > Repealed Regulations (SFO)
+2026-02-14 14:27:56,127 - INFO -   📁 01_Laws_and_Regulations/Repealed_Regulations_SFO
+2026-02-14 14:27:56,128 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/SFO
+2026-02-14 14:27:56,128 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SFO
+2026-02-14 14:27:56,128 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,130 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,131 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,131 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,131 - INFO - [7/16] Laws and Regulations > Repealed Local (LFO)
+2026-02-14 14:27:56,132 - INFO -   📁 01_Laws_and_Regulations/Repealed_Local_LFO
+2026-02-14 14:27:56,132 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LFO
+2026-02-14 14:27:56,132 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LFO
+2026-02-14 14:27:56,132 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,135 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,136 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,136 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,136 - INFO - [8/16] Court Decisions > Supreme Court (HR)
+2026-02-14 14:27:56,136 - INFO -   📁 02_Court_Decisions/Supreme_Court_HR
+2026-02-14 14:27:56,137 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/HR
+2026-02-14 14:27:56,137 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/HR
+2026-02-14 14:27:56,137 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,139 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,140 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,140 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,140 - INFO - [9/16] Court Decisions > Appeal Court (LA)
+2026-02-14 14:27:56,140 - INFO -   📁 02_Court_Decisions/Appeal_Court_LA
+2026-02-14 14:27:56,142 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LA
+2026-02-14 14:27:56,142 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LA
+2026-02-14 14:27:56,142 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,144 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,144 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,144 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,145 - INFO - [10/16] Court Decisions > Appeal Court (LB)
+2026-02-14 14:27:56,145 - INFO -   📁 02_Court_Decisions/Appeal_Court_LB
+2026-02-14 14:27:56,145 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LB
+2026-02-14 14:27:56,145 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LB
+2026-02-14 14:27:56,145 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,150 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,151 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,152 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,152 - INFO - [11/16] Court Decisions > Labor Court (LAR)
+2026-02-14 14:27:56,152 - INFO -   📁 02_Court_Decisions/Labor_Court_LAR
+2026-02-14 14:27:56,152 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LAR
+2026-02-14 14:27:56,152 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LAR
+2026-02-14 14:27:56,153 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,154 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,156 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,156 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,156 - INFO - [12/16] Preparatory Works > Propositions (Prop)
+2026-02-14 14:27:56,156 - INFO -   📁 03_Preparatory_Works/Propositions_Prop
+2026-02-14 14:27:56,157 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/PROP
+2026-02-14 14:27:56,157 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/PROP
+2026-02-14 14:27:56,157 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,159 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,160 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,161 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,162 - INFO - [13/16] Preparatory Works > Official Reports (NOU)
+2026-02-14 14:27:56,162 - INFO -   📁 03_Preparatory_Works/Official_Reports_NOU
+2026-02-14 14:27:56,162 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NOU
+2026-02-14 14:27:56,162 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NOU
+2026-02-14 14:27:56,163 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,165 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,166 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,166 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,167 - INFO - [14/16] Preparatory Works > Recommendations (Innst)
+2026-02-14 14:27:56,167 - INFO -   📁 03_Preparatory_Works/Recommendations_Innst
+2026-02-14 14:27:56,167 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/INNST
+2026-02-14 14:27:56,167 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/INNST
+2026-02-14 14:27:56,167 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,169 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,170 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,170 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,171 - INFO - [15/16] Circulars and Statements > Guidance (RUN)
+2026-02-14 14:27:56,171 - INFO -   📁 05_Circulars_Statements/Guidance_RUN
+2026-02-14 14:27:56,171 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/RUN
+2026-02-14 14:27:56,172 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/RUN
+2026-02-14 14:27:56,172 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,174 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,175 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,175 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,175 - INFO - [16/16] International > Treaties (TRAK)
+2026-02-14 14:27:56,175 - INFO -   📁 07_International/Treaties_TRAK
+2026-02-14 14:27:56,176 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/TRAK
+2026-02-14 14:27:56,176 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/TRAK
+2026-02-14 14:27:56,176 - INFO -   → Checking chronological index...
+2026-02-14 14:27:56,178 - ERROR - ✗ Registry error: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,179 - INFO -   📄 0 URLs found
+2026-02-14 14:27:56,179 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:27:56,179 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 14:27:56,179 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 14:27:56,181 - INFO - 🔍 Discovering all legal areas...
+2026-02-14 14:27:56,182 - ERROR - ✗ Failed to discover legal areas: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xbc5093
+	0xbc50d4
+	0x9bb2ce
+	0x9f8957
+	0xa28076
+	0xa23dc1
+	0xa232c2
+	0x98e26b
+	0x98e80e
+	0x98eced
+	0xe17e34
+	0xe130c9
+	0xe30add
+	0xbddb38
+	0xbe58ad
+	0x98dde9
+	0x98d430
+	0xf69aaf
+	0x75e97ba9
+	0x7762c3ab
+	0x7762c32f
+
+2026-02-14 14:27:56,183 - WARNING - No legal areas discovered!
+2026-02-14 14:27:56,183 - INFO - 
+📦 Flushing uploads...
+2026-02-14 14:27:56,183 - INFO - 📦 Flushing remaining 26 files...
+2026-02-14 14:27:56,184 - INFO - 📦 Uploading batch of 26 files...

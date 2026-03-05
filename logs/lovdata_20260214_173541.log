@@ -1,0 +1,78 @@
+2026-02-14 17:35:46,643 - INFO - ✓ Database connected
+2026-02-14 17:35:46,643 - INFO - ====== WebDriver manager ======
+2026-02-14 17:35:46,757 - INFO - [driver] ChromeDriver (WDM cache): C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 17:35:48,051 - INFO - [driver] Browser started (explicit path)
+2026-02-14 17:35:48,051 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 17:35:48,792 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 17:35:48,792 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 17:35:48,792 - INFO - Logging in…
+2026-02-14 17:36:06,345 - INFO - Login successful
+2026-02-14 17:36:06,346 - INFO - 
+======================================================================
+2026-02-14 17:36:06,346 - INFO - MODE: LEGAL_AREAS_ONLY
+2026-02-14 17:36:06,346 - INFO - ======================================================================
+
+2026-02-14 17:36:06,346 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 17:36:06,346 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 17:36:06,350 - INFO - Discovering all legal areas…
+2026-02-14 17:36:11,412 - INFO -   JS strategy: 0 areas found
+2026-02-14 17:36:11,545 - INFO -   BeautifulSoup strategy: 0 areas found
+2026-02-14 17:36:11,545 - WARNING -   Dynamic discovery failed — using Norwegian slug table
+2026-02-14 17:36:11,545 - INFO -   Slug-table fallback: 40 areas
+2026-02-14 17:36:11,545 - INFO - Discovered 40 legal areas
+2026-02-14 17:36:11,545 - INFO -   1. Arbeidsrett  →  https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 17:36:11,545 - INFO -   2. Arbeidsmiljo  →  https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 17:36:11,545 - INFO -   3. Trygderett  →  https://lovdata.no/pro/#rettsomrade/trygderett
+2026-02-14 17:36:11,545 - INFO -   4. Erstatningsrett  →  https://lovdata.no/pro/#rettsomrade/erstatningsrett
+2026-02-14 17:36:11,545 - INFO -   5. Familierett  →  https://lovdata.no/pro/#rettsomrade/familierett
+2026-02-14 17:36:11,545 - INFO -   6. Arverett  →  https://lovdata.no/pro/#rettsomrade/arverett
+2026-02-14 17:36:11,545 - INFO -   7. Avtalerett  →  https://lovdata.no/pro/#rettsomrade/avtalerett
+2026-02-14 17:36:11,545 - INFO -   8. Kontraktsrett  →  https://lovdata.no/pro/#rettsomrade/kontraktsrett
+2026-02-14 17:36:11,545 - INFO -   9. Kjopsrett  →  https://lovdata.no/pro/#rettsomrade/kjopsrett
+2026-02-14 17:36:11,549 - INFO -   10. Eiendomsrett  →  https://lovdata.no/pro/#rettsomrade/eiendomsrett
+2026-02-14 17:36:11,549 - INFO -   … and 30 more
+2026-02-14 17:36:11,549 - INFO - 
+📊 Total legal areas discovered: 40
+2026-02-14 17:36:11,549 - INFO -   Max docs per area: 100
+
+2026-02-14 17:36:11,550 - INFO - 
+======================================================================
+2026-02-14 17:36:11,550 - INFO - [1/40] Arbeidsrett
+2026-02-14 17:36:11,550 - INFO - ======================================================================
+2026-02-14 17:36:11,550 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 17:36:11,552 - INFO - Legal area: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 17:36:15,701 - INFO -   Main area: Du har ennå ikke tatt i bruk varslingsfunksjonen. Søk frem en lov/lovparagraf via hurtigsøk og klikk på varslingsklokken for å opprette en varsling.
+2026-02-14 17:36:15,714 - INFO -   Found 0 potential subcategory headers
+2026-02-14 17:36:15,714 - INFO -   No subcategories — scrolling entire page
+2026-02-14 17:36:19,160 - INFO -   Collected 43 document URLs
+2026-02-14 17:36:19,160 - INFO -   📁 Category: Legal_Areas/Du_Har_Ennaa_Ikke_Tatt_I_Bruk_Varslingsfunksjonen_Soek_Frem_En_Lovlovparagraf_Via_Hurtigsoek_Og_Klikk_Paa_Varslingsklokken_For_Aa_Opprette_En_Varsling
+2026-02-14 17:36:19,166 - INFO -   📂 Found 1 document categories
+
+2026-02-14 17:36:19,166 - INFO -   → Main (43 docs)
+2026-02-14 17:36:19,166 - INFO -     Path: Legal_Areas/Du_Har_Ennaa_Ikke_Tatt_I_Bruk_Varslingsfunksjonen_Soek_Frem_En_Lovlovparagraf_Via_Hurtigsoek_Og_Klikk_Paa_Varslingsklokken_For_Aa_Opprette_En_Varsling/Main
+2026-02-14 17:38:17,776 - INFO -     ✅ 0 saved
+
+2026-02-14 17:38:17,776 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 17:38:17,776 - INFO - 
+======================================================================
+2026-02-14 17:38:17,776 - INFO - [2/40] Arbeidsmiljo
+2026-02-14 17:38:17,776 - INFO - ======================================================================
+2026-02-14 17:38:17,776 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 17:38:17,776 - INFO - Legal area: https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 17:38:23,674 - INFO -   Main area: Du har ennå ikke tatt i bruk varslingsfunksjonen. Søk frem en lov/lovparagraf via hurtigsøk og klikk på varslingsklokken for å opprette en varsling.
+2026-02-14 17:38:23,679 - INFO -   Found 0 potential subcategory headers
+2026-02-14 17:38:23,684 - INFO -   No subcategories — scrolling entire page
+2026-02-14 17:38:27,068 - INFO -   Collected 43 document URLs
+2026-02-14 17:38:27,068 - INFO -   📁 Category: Legal_Areas/Du_Har_Ennaa_Ikke_Tatt_I_Bruk_Varslingsfunksjonen_Soek_Frem_En_Lovlovparagraf_Via_Hurtigsoek_Og_Klikk_Paa_Varslingsklokken_For_Aa_Opprette_En_Varsling
+2026-02-14 17:38:27,068 - INFO -   📂 Found 1 document categories
+
+2026-02-14 17:38:27,068 - INFO -   → Main (43 docs)
+2026-02-14 17:38:27,079 - INFO -     Path: Legal_Areas/Du_Har_Ennaa_Ikke_Tatt_I_Bruk_Varslingsfunksjonen_Soek_Frem_En_Lovlovparagraf_Via_Hurtigsoek_Og_Klikk_Paa_Varslingsklokken_For_Aa_Opprette_En_Varsling/Main
+2026-02-14 17:39:10,178 - WARNING - 
+⚠️ Interrupted by user
+2026-02-14 17:39:10,179 - INFO - 
+📦 Flushing uploads...
+2026-02-14 17:39:10,180 - INFO -   ✓ 0 files flushed
+2026-02-14 17:39:10,259 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/b7a96b792748fdc7e7497b665a100633

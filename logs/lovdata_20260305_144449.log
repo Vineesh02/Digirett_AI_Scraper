@@ -1,0 +1,104 @@
+2026-03-05 14:44:56,724 - INFO - Storage handler initialised  bucket=legal_area  table=legal_area_metadata
+2026-03-05 14:44:56,725 - INFO - ======================================================================
+2026-03-05 14:44:56,725 - INFO - LOVDATA PRO SCRAPER
+2026-03-05 14:44:56,726 - INFO -   Table   : legal_area_metadata
+2026-03-05 14:44:56,726 - INFO -   Bucket  : legal_area
+2026-03-05 14:44:56,726 - INFO -   Base dir: ./scraped_xml
+2026-03-05 14:44:56,727 - INFO -   Timeout : 30
+2026-03-05 14:44:56,728 - INFO -   Headless: False
+2026-03-05 14:44:56,728 - INFO -   Years   : 2000 - 2026
+2026-03-05 14:44:56,728 - INFO -   Batch   : 10
+2026-03-05 14:44:56,729 - INFO - ======================================================================
+2026-03-05 14:45:05,131 - INFO - Login successful
+2026-03-05 14:45:10,374 - INFO - Tree nodes loaded
+2026-03-05 14:45:11,389 - INFO - Found 35 tree nodes
+2026-03-05 14:45:11,910 - INFO - Root categories: 35
+2026-03-05 14:45:11,911 - INFO - Total root categories: 35
+2026-03-05 14:45:17,176 - INFO - Tree nodes loaded
+2026-03-05 14:45:18,198 - INFO - Found 35 tree nodes
+2026-03-05 14:45:18,813 - INFO - Root categories: 35
+2026-03-05 14:45:18,814 - INFO - 
+2026-03-05 14:45:18,814 - INFO - ======================================================================
+2026-03-05 14:45:18,814 - INFO - [1/35] Root: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 14:45:18,815 - INFO - ======================================================================
+2026-03-05 14:45:20,697 - INFO -   Branches: 5
+2026-03-05 14:45:26,061 - INFO - Tree nodes loaded
+2026-03-05 14:45:27,092 - INFO - Found 40 tree nodes
+2026-03-05 14:45:27,765 - INFO - Root categories: 40
+2026-03-05 14:45:28,956 - INFO -   [1/5] Branch: Anskaffelser
+2026-03-05 14:45:30,165 - INFO -     Leaves: 0
+2026-03-05 14:45:30,165 - INFO - Scraping area  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-05 14:45:30,739 - INFO -   Section tab links found: 11
+2026-03-05 14:45:30,770 - INFO -   Section: LATEST DOCUMENTS                                         div_id=saker
+2026-03-05 14:45:30,799 - INFO -   Section: LAWS                                                     div_id=lover
+2026-03-05 14:45:30,830 - INFO -   Section: REGULATIONS                                              div_id=forskrifter
+2026-03-05 14:45:30,858 - INFO -   Section: DECISIONS FROM THE SUPREME COURT                         div_id=hr
+2026-03-05 14:45:30,883 - INFO -   Section: DECISIONS FROM THE COURTS OF APPEAL                      div_id=lr
+2026-03-05 14:45:30,917 - INFO -   Section: DECISIONS FROM THE DISTRICT COURTS                       div_id=tr
+2026-03-05 14:45:30,951 - INFO -   Section: ARTICLES                                                 div_id=artikler
+2026-03-05 14:45:30,983 - INFO -   Section: DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD   div_id=firstOtherBase
+2026-03-05 14:45:31,023 - INFO -   Section: DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL   div_id=secondOtherBase
+2026-03-05 14:45:31,058 - INFO -   Section: DOCUMENTS FROM THE MINISTRY OF JUSTICE                   div_id=thirdOtherBase
+2026-03-05 14:45:31,092 - INFO -   Section: OTHER DOCUMENTS                                          div_id=otherBases
+2026-03-05 14:45:31,092 - INFO - Processing 11 sections
+2026-03-05 14:45:31,092 - INFO - [1/11] Section: LATEST DOCUMENTS
+2026-03-05 14:45:31,408 - INFO -   Clicked section tab: 'Siste dokumenter'
+2026-03-05 14:45:32,958 - INFO -   Small section mode
+2026-03-05 14:45:32,976 - INFO -   Small section div#saker — collected 10 URLs
+2026-03-05 14:45:32,976 - INFO -   Section result: LATEST DOCUMENTS                                   expected=?      collected=10
+2026-03-05 14:45:32,976 - INFO - [2/11] Section: LAWS
+2026-03-05 14:45:33,287 - INFO -   Clicked section tab: 'Lover'
+2026-03-05 14:45:34,878 - INFO -   Small section mode
+2026-03-05 14:45:34,907 - INFO -   Small section div#lover — collected 2 URLs
+2026-03-05 14:45:34,913 - INFO -   Section result: LAWS                                               expected=?      collected=2
+2026-03-05 14:45:34,913 - INFO - [3/11] Section: REGULATIONS
+2026-03-05 14:45:35,283 - INFO -   Clicked section tab: 'Forskrifter'
+2026-03-05 14:45:36,831 - INFO -   Vis alle clicked — expected: 16
+2026-03-05 14:45:39,846 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=2896
+2026-03-05 14:45:41,872 - INFO -   Advanced Search loaded
+2026-03-05 14:45:41,891 - INFO -   Advanced Search mode
+2026-03-05 14:45:43,923 - INFO -   Page 1: +16 new  (total: 16 / expected: 16)
+2026-03-05 14:45:44,131 - INFO -   Next page clicked
+2026-03-05 14:45:49,165 - INFO -   Page 2: +0 new  (total: 16 / expected: 16)
+2026-03-05 14:45:49,166 - INFO -   No new URLs on page 2 — last page
+2026-03-05 14:46:01,662 - WARNING -   Back() failed — navigating directly
+2026-03-05 14:46:04,706 - INFO -   Section result: REGULATIONS                                        expected=16     collected=16
+2026-03-05 14:46:04,706 - INFO - [4/11] Section: DECISIONS FROM THE SUPREME COURT
+2026-03-05 14:46:05,167 - INFO -   Clicked section tab: 'Avgjørelser fra Høyesterett'
+2026-03-05 14:46:06,721 - INFO -   Vis alle clicked — expected: 16
+2026-03-05 14:46:09,751 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=3886
+2026-03-05 14:46:11,789 - INFO -   Advanced Search loaded
+2026-03-05 14:46:11,810 - INFO -   Advanced Search mode
+2026-03-05 14:46:13,842 - INFO -   Page 1: +16 new  (total: 16 / expected: 16)
+2026-03-05 14:46:14,018 - INFO -   Next page clicked
+2026-03-05 14:46:19,041 - INFO -   Page 2: +0 new  (total: 16 / expected: 16)
+2026-03-05 14:46:19,042 - INFO -   No new URLs on page 2 — last page
+2026-03-05 14:46:31,466 - WARNING -   Back() failed — navigating directly
+2026-03-05 14:46:34,506 - INFO -   Section result: DECISIONS FROM THE SUPREME COURT                   expected=16     collected=16
+2026-03-05 14:46:34,506 - INFO - [5/11] Section: DECISIONS FROM THE COURTS OF APPEAL
+2026-03-05 14:46:34,978 - INFO -   Clicked section tab: 'Avgjørelser fra lagmannsrettene'
+2026-03-05 14:46:36,641 - INFO -   Advanced Search mode
+2026-03-05 14:46:38,671 - INFO -   Page 1: +50 new  (total: 50 / expected: ?)
+2026-03-05 14:46:38,897 - INFO -   Next page clicked
+2026-03-05 14:46:43,938 - INFO -   Page 2: +50 new  (total: 100 / expected: ?)
+2026-03-05 14:46:44,165 - INFO -   Next page clicked
+2026-03-05 14:46:49,196 - INFO -   Page 3: +50 new  (total: 150 / expected: ?)
+2026-03-05 14:46:49,390 - INFO -   Next page clicked
+2026-03-05 14:46:54,428 - INFO -   Page 4: +18 new  (total: 168 / expected: ?)
+2026-03-05 14:46:54,599 - INFO -   Next page clicked
+2026-03-05 14:46:59,631 - INFO -   Page 5: +0 new  (total: 168 / expected: ?)
+2026-03-05 14:46:59,632 - INFO -   No new URLs on page 5 — last page
+2026-03-05 14:47:01,707 - INFO -   Back to legal area page
+2026-03-05 14:47:01,707 - INFO -   Section result: DECISIONS FROM THE COURTS OF APPEAL                expected=?      collected=168
+2026-03-05 14:47:01,708 - INFO - [6/11] Section: DECISIONS FROM THE DISTRICT COURTS
+2026-03-05 14:47:02,253 - INFO -   Clicked section tab: 'Avgjørelser fra tingrettene'
+2026-03-05 14:47:03,822 - INFO -   Vis alle clicked — expected: 132
+2026-03-05 14:47:06,851 - INFO -   Advanced Search URL: https://lovdata.no/pro/#result&id=5846
+2026-03-05 14:47:08,898 - INFO -   Advanced Search loaded
+2026-03-05 14:47:08,915 - INFO -   Advanced Search mode
+2026-03-05 14:47:10,947 - INFO -   Page 1: +50 new  (total: 50 / expected: 132)
+2026-03-05 14:47:11,133 - INFO -   Next page clicked
+2026-03-05 14:47:16,170 - INFO -   Page 2: +50 new  (total: 100 / expected: 132)
+2026-03-05 14:47:16,389 - INFO -   Next page clicked
+2026-03-05 14:47:21,419 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/ce2be04d1cf71f65398c516f11be2a0b
+2026-03-05 14:47:25,504 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=64387): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/ce2be04d1cf71f65398c516f11be2a0b

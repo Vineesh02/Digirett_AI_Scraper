@@ -1,0 +1,102 @@
+2026-02-14 19:37:57,226 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 19:37:57,228 - INFO - 🔐 Opening Lovdata login page...
+2026-02-14 19:38:03,124 - INFO - ✅ Login successful
+2026-02-14 19:38:03,125 - INFO - ======================================================================
+2026-02-14 19:38:03,125 - INFO - MODE: legal_areas_only
+2026-02-14 19:38:03,125 - INFO - ======================================================================
+2026-02-14 19:38:03,125 - INFO - 
+======================================================================
+2026-02-14 19:38:03,125 - INFO - ⚖️  SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 19:38:03,127 - INFO -    Discovering from: https://lovdata.no/pro/#rettsomrade
+2026-02-14 19:38:03,129 - INFO - ======================================================================
+2026-02-14 19:38:03,129 - INFO - 🔍 Discovering legal areas from https://lovdata.no/pro/#rettsomrade
+2026-02-14 19:38:08,362 - INFO - 📊 Found 264 total links on page
+2026-02-14 19:38:13,820 - INFO - ✅ Discovered 0 legal areas
+2026-02-14 19:38:13,820 - WARNING - ⚠️  No legal areas found. Possible reasons:
+2026-02-14 19:38:13,821 - WARNING -    1. Page structure has changed
+2026-02-14 19:38:13,821 - WARNING -    2. Page requires interaction to load areas
+2026-02-14 19:38:13,821 - WARNING -    3. Authentication issue
+2026-02-14 19:38:13,821 - WARNING -    4. Using fallback hardcoded list...
+2026-02-14 19:38:13,822 - INFO - ✅ Using fallback list with 28 legal areas
+2026-02-14 19:38:13,823 - INFO - 💾 Saved page source to: ./logs/legal_areas_page_debug.html
+2026-02-14 19:38:13,823 - INFO - 
+📊 Total legal areas discovered: 28
+2026-02-14 19:38:13,823 - INFO -    Max docs per area: 100
+
+2026-02-14 19:38:13,823 - INFO - 
+======================================================================
+2026-02-14 19:38:13,823 - INFO - [1/28] Labor_Law / Arbeidsrett
+2026-02-14 19:38:13,823 - INFO - ======================================================================
+2026-02-14 19:38:13,823 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 19:38:13,823 - INFO -    Area: Labor_Law (slug: arbeidsrett)
+2026-02-14 19:38:13,823 - INFO - 📂 Scraping legal area: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 19:38:19,661 - INFO - 📎 Found 43 documents in this legal area
+2026-02-14 19:38:19,661 - INFO - 🚀 Processing 43 documents from Labor_Law
+2026-02-14 19:38:19,661 - INFO - 
+   [1/43] Processing document...
+2026-02-14 19:38:28,210 - INFO - 📂 Category: RettsområderForside
+2026-02-14 19:38:28,210 - INFO - 📄 Subcategory: Reindriftsloven §44LOV-2007-06-15-40
+2026-02-14 19:38:29,089 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2007-06-15-40.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:38:29,289 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2007-06-15-40.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:38:29,297 - INFO - 📁 Final Category: RettsområderForside
+2026-02-14 19:38:29,297 - INFO - 📄 Final Subcategory: Reindriftsloven §44LOV-2007-06-15-40
+2026-02-14 19:38:29,341 - INFO - ✓ XML saved: ./scraped_xml\RettsområderForside\Reindriftsloven §44LOV-2007-06-15-40\2007-06-15-40.xml
+2026-02-14 19:38:29,341 - ERROR - ❌ Error processing document: too many values to unpack (expected 3)
+2026-02-14 19:38:29,647 - INFO - 
+   [2/43] Processing document...
+2026-02-14 19:38:31,840 - INFO - 📂 Category: RettsområderForside
+2026-02-14 19:38:31,840 - INFO - 📄 Subcategory: Reindriftsloven §44LOV-2007-06-15-40
+2026-02-14 19:38:32,161 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2025-03-28-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:38:32,310 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2025-03-28-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:38:32,315 - INFO - 📁 Final Category: RettsområderForside
+2026-02-14 19:38:32,315 - INFO - 📄 Final Subcategory: Reindriftsloven §44LOV-2007-06-15-40
+2026-02-14 19:38:32,350 - INFO - ✓ XML saved: ./scraped_xml\RettsområderForside\Reindriftsloven §44LOV-2007-06-15-40\2025-03-28-5.xml
+2026-02-14 19:38:32,355 - ERROR - ❌ Error processing document: too many values to unpack (expected 3)
+2026-02-14 19:38:32,661 - INFO - 
+   [3/43] Processing document...
+2026-02-14 19:38:34,825 - INFO - 📂 Category: Reindriftsloven §44LOV-2007-06-15-40
+2026-02-14 19:38:34,826 - INFO - 📄 Subcategory: Lov om Statens kommisjon ...LOV-2025-03-28-5
+2026-02-14 19:38:34,954 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2007-06-15-40.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:38:35,105 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.2007-06-15-40.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:38:35,107 - INFO - 📁 Final Category: Reindriftsloven §44LOV-2007-06-15-40
+2026-02-14 19:38:35,108 - INFO - 📄 Final Subcategory: Lov om Statens kommisjon ...LOV-2025-03-28-5
+2026-02-14 19:38:35,147 - INFO - ✓ XML saved: ./scraped_xml\Reindriftsloven §44LOV-2007-06-15-40\Lov om Statens kommisjon ...LOV-2025-03-28-5\2007-06-15-40.xml
+2026-02-14 19:38:35,147 - ERROR - ❌ Error processing document: too many values to unpack (expected 3)
+2026-02-14 19:38:35,455 - INFO - 
+   [4/43] Processing document...
+2026-02-14 19:38:37,660 - INFO - 📂 Category: Lov om Statens kommisjon ...LOV-2025-03-28-5
+2026-02-14 19:38:37,660 - INFO - 📄 Subcategory: Reindriftsloven §9LOV-2007-06-15-40
+2026-02-14 19:38:37,784 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.hr-2026-373-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:38:37,941 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.hr-2026-373-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 19:38:37,941 - INFO - 📁 Final Category: Lov om Statens kommisjon ...LOV-2025-03-28-5
+2026-02-14 19:38:37,941 - INFO - 📄 Final Subcategory: Reindriftsloven §9LOV-2007-06-15-40
+2026-02-14 19:38:37,965 - INFO - ✓ XML saved: ./scraped_xml\Lov om Statens kommisjon ...LOV-2025-03-28-5\Reindriftsloven §9LOV-2007-06-15-40\hr-2026-373-a.xml
+2026-02-14 19:38:37,965 - ERROR - ❌ Error processing document: too many values to unpack (expected 3)
+2026-02-14 19:38:38,271 - INFO - 
+   [5/43] Processing document...
+2026-02-14 19:38:58,338 - ERROR - ❌ Error scraping https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2026-372-a: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff626dff3d5
+	0x7ff626dff430
+	0x7ff626ba10bd
+	0x7ff626bfc2fe
+	0x7ff626bfc60c
+	0x7ff626c4d187
+	0x7ff626c49d08
+	0x7ff626becb0c
+	0x7ff626beda53
+	0x7ff6270db470
+	0x7ff6270d586d
+	0x7ff6270f621a
+	0x7ff626e1b235
+	0x7ff626e23a5c
+	0x7ff626e08844
+	0x7ff626e089f6
+	0x7ff626deeb87
+	0x7ffa9152259d
+	0x7ffa938caf78
+
+2026-02-14 19:38:58,657 - INFO - 
+   [6/43] Processing document...
+2026-02-14 19:39:14,547 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/e34d875999a75b3b358f3f5c3974a654

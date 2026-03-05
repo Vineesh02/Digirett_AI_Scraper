@@ -1,0 +1,120 @@
+2026-03-03 13:07:23,216 - INFO - ✓ Supabase table: legal_area_metadata
+2026-03-03 13:07:23,217 - INFO - ✓ Supabase bucket: legal_area
+2026-03-03 13:07:23,217 - INFO - ✓ Storage handler initialized (bucket: legal_area)
+2026-03-03 13:07:23,218 - INFO - 🔐 Opening Lovdata login page...
+2026-03-03 13:07:30,245 - INFO - ✅ Login successful
+2026-03-03 13:07:30,246 - INFO - ======================================================================
+2026-03-03 13:07:30,246 - INFO - MODE: legal_areas_only
+2026-03-03 13:07:30,246 - INFO - ======================================================================
+2026-03-03 13:07:30,248 - INFO - 
+======================================================================
+2026-03-03 13:07:30,250 - INFO - ⚖️  SCRAPING LEGAL AREAS (reliable traversal: root → branch → leaf)
+2026-03-03 13:07:30,251 - INFO - ======================================================================
+2026-03-03 13:07:41,276 - INFO - 📂 Navigating to Rettsområder section...
+2026-03-03 13:07:47,561 - INFO -    ✅ Clicked: Rettsområder
+2026-03-03 13:08:02,668 - INFO -    Found 35 total tree nodes
+2026-03-03 13:08:02,737 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 13:08:02,781 - INFO -    ✅ Found: Arbeidsrett
+2026-03-03 13:08:02,837 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-03-03 13:08:02,888 - INFO -    ✅ Found: Energirett
+2026-03-03 13:08:02,931 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-03-03 13:08:02,977 - INFO -    ✅ Found: EU/EØS-rett
+2026-03-03 13:08:03,027 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-03-03 13:08:03,089 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-03-03 13:08:03,149 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-03-03 13:08:03,207 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-03-03 13:08:03,262 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-03-03 13:08:03,331 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-03-03 13:08:03,388 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-03-03 13:08:03,445 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-03-03 13:08:03,501 - INFO -    ✅ Found: IKT- og medierett
+2026-03-03 13:08:03,552 - INFO -    ✅ Found: Immaterialrett
+2026-03-03 13:08:03,603 - INFO -    ✅ Found: Internasjonal rett
+2026-03-03 13:08:03,653 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-03-03 13:08:03,698 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-03-03 13:08:03,744 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-03-03 13:08:03,789 - INFO -    ✅ Found: Menneskerettigheter
+2026-03-03 13:08:03,833 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-03-03 13:08:03,877 - INFO -    ✅ Found: Næringsrett
+2026-03-03 13:08:03,909 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-03-03 13:08:03,949 - INFO -    ✅ Found: Samerett
+2026-03-03 13:08:03,986 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-03-03 13:08:04,016 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-03-03 13:08:04,052 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-03-03 13:08:04,091 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-03-03 13:08:04,137 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-03-03 13:08:04,181 - INFO -    ✅ Found: Strafferett
+2026-03-03 13:08:04,222 - INFO -    ✅ Found: Svalbard og biland
+2026-03-03 13:08:04,279 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-03-03 13:08:04,328 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-03-03 13:08:04,381 - INFO -    ✅ Found: Utlendingsrett
+2026-03-03 13:08:04,381 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-03-03 13:08:04,381 - INFO - 📊 Total ROOT areas discovered: 35
+2026-03-03 13:08:04,381 - INFO - 
+======================================================================
+2026-03-03 13:08:04,383 - INFO - [1/35] ROOT: Anskaffelser_Avtaler_Bygg_Og_Entrepriser
+2026-03-03 13:08:04,383 - INFO - ======================================================================
+2026-03-03 13:08:06,082 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=id&legal_area_root=eq.Anskaffelser_Avtaler_Bygg_Og_Entrepriser&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 13:23:29,317 - INFO - 🔗 ROOT docs: 15
+2026-03-03 13:23:29,341 - INFO - 🚀 Processing 15 documents
+2026-03-03 13:23:29,341 - INFO - 
+   [1/15] Processing document...
+2026-03-03 13:23:29,954 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:31,962 - INFO - 
+   [2/15] Processing document...
+2026-03-03 13:23:32,763 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:34,764 - INFO - 
+   [3/15] Processing document...
+2026-03-03 13:23:34,937 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:36,938 - INFO - 
+   [4/15] Processing document...
+2026-03-03 13:23:37,110 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:39,111 - INFO - 
+   [5/15] Processing document...
+2026-03-03 13:23:39,330 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:41,332 - INFO - 
+   [6/15] Processing document...
+2026-03-03 13:23:41,475 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:43,477 - INFO - 
+   [7/15] Processing document...
+2026-03-03 13:23:43,650 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:45,656 - INFO - 
+   [8/15] Processing document...
+2026-03-03 13:23:45,781 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:47,784 - INFO - 
+   [9/15] Processing document...
+2026-03-03 13:23:47,920 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:49,925 - INFO - 
+   [10/15] Processing document...
+2026-03-03 13:23:50,059 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:52,065 - INFO - 
+   [11/15] Processing document...
+2026-03-03 13:23:52,211 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:54,212 - INFO - 
+   [12/15] Processing document...
+2026-03-03 13:23:54,348 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:56,350 - INFO - 
+   [13/15] Processing document...
+2026-03-03 13:23:56,517 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:23:58,519 - INFO - 
+   [14/15] Processing document...
+2026-03-03 13:23:58,682 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:24:00,683 - INFO - 
+   [15/15] Processing document...
+2026-03-03 13:24:00,857 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 13:24:02,866 - INFO - 
+======================================================================
+2026-03-03 13:24:02,867 - INFO - [2/35] ROOT: Arbeidsrett
+2026-03-03 13:24:02,867 - INFO - ======================================================================
+2026-03-03 13:24:04,264 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=id&legal_area_root=eq.Arbeidsrett&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 13:24:07,209 - INFO - 
+======================================================================
+2026-03-03 13:24:07,209 - INFO - SCRAPING SUMMARY
+2026-03-03 13:24:07,209 - INFO - ======================================================================
+2026-03-03 13:24:07,209 - INFO - ✅ Success: 0
+2026-03-03 13:24:07,209 - INFO - ❌ Failed: 15
+2026-03-03 13:24:07,215 - INFO - ⏭️  Skipped: 0
+2026-03-03 13:24:07,215 - INFO - ======================================================================
+

@@ -1,0 +1,822 @@
+2026-02-14 23:24:20,890 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 23:24:20,890 - INFO - 🔐 Opening Lovdata login page...
+2026-02-14 23:24:25,777 - INFO - ✅ Login successful
+2026-02-14 23:24:25,777 - INFO - ======================================================================
+2026-02-14 23:24:25,777 - INFO - MODE: legal_areas_only
+2026-02-14 23:24:25,779 - INFO - ======================================================================
+2026-02-14 23:24:25,779 - INFO - 
+======================================================================
+2026-02-14 23:24:25,779 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-02-14 23:24:25,781 - INFO -    Using fallback list from config.LEGAL_AREA_TRANSLATIONS
+2026-02-14 23:24:25,783 - INFO - ======================================================================
+2026-02-14 23:24:25,783 - INFO - 📂 Loading legal areas from config.py...
+2026-02-14 23:24:25,783 - INFO - 📋 Loaded 38 legal areas
+2026-02-14 23:24:25,783 - INFO - 
+📊 Total legal areas: 38
+
+2026-02-14 23:24:25,783 - INFO - 
+======================================================================
+2026-02-14 23:24:25,786 - INFO - [1/38] Labor_Law
+2026-02-14 23:24:25,786 - INFO - ======================================================================
+2026-02-14 23:24:25,786 - INFO -    Norwegian: arbeidsrett
+2026-02-14 23:24:25,786 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 23:24:25,788 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 23:24:33,815 - INFO -    📜 Scrolling to load documents...
+2026-02-14 23:24:44,915 - INFO -    📎 Found 43 documents
+2026-02-14 23:24:44,915 - INFO - 🚀 Processing 43 documents
+2026-02-14 23:24:44,916 - INFO - 
+   [1/43] Processing document...
+2026-02-14 23:24:44,916 - INFO - 📄 Scraping document...
+2026-02-14 23:24:48,013 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A744.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:24:48,073 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-14 23:24:48,309 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c911800b4df24f18e3de40c6eca25570&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:24:48,613 - INFO - 
+   [2/43] Processing document...
+2026-02-14 23:24:48,614 - INFO - 📄 Scraping document...
+2026-02-14 23:24:55,798 - ERROR - Metadata exists check failed: The read operation timed out
+2026-02-14 23:24:55,823 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-14 23:24:56,098 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4d82bc4a66e00f4ae8492eb392a2844d&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:24:56,414 - INFO - 
+   [3/43] Processing document...
+2026-02-14 23:24:56,415 - INFO - 📄 Scraping document...
+2026-02-14 23:24:58,955 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A79.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:24:58,987 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-14 23:24:59,192 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9d3aadccedc47311ce7dce9881f37d5f&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:24:59,499 - INFO - 
+   [4/43] Processing document...
+2026-02-14 23:24:59,499 - INFO - 📄 Scraping document...
+2026-02-14 23:25:01,924 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-373-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:01,952 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-14 23:25:02,164 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.cab541a4d15a5bcaf6127c021de3af44&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:02,480 - INFO - 
+   [5/43] Processing document...
+2026-02-14 23:25:02,481 - INFO - 📄 Scraping document...
+2026-02-14 23:25:04,790 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-372-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:04,841 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-14 23:25:04,997 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2d13bb4645272bc7c69d358164f4047a&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:05,303 - INFO - 
+   [6/43] Processing document...
+2026-02-14 23:25:05,303 - INFO - 📄 Scraping document...
+2026-02-14 23:25:07,645 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-359-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:07,684 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-14 23:25:07,862 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a4916992cda1bd6fbe82336f5fba9b8c&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:08,178 - INFO - 
+   [7/43] Processing document...
+2026-02-14 23:25:08,178 - INFO - 📄 Scraping document...
+2026-02-14 23:25:10,484 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-346-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:10,520 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-14 23:25:10,681 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8a5a12a70e6d3301e7f45b4ff8b5592d&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:10,988 - INFO - 
+   [8/43] Processing document...
+2026-02-14 23:25:10,988 - INFO - 📄 Scraping document...
+2026-02-14 23:25:13,267 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-344-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:13,295 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-14 23:25:13,449 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4d520fddd9f00e7c2f36d80cacfc6b69&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:13,760 - INFO - 
+   [9/43] Processing document...
+2026-02-14 23:25:13,760 - INFO - 📄 Scraping document...
+2026-02-14 23:25:16,076 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-339-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:16,099 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-14 23:25:16,283 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8c1edad2732f11c7c28270d615da1f14&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:16,587 - INFO - 
+   [10/43] Processing document...
+2026-02-14 23:25:16,588 - INFO - 📄 Scraping document...
+2026-02-14 23:25:18,863 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-334-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:18,899 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-14 23:25:19,055 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e93e771ff375b246ec0f2c8df9bbbfeb&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:19,056 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:25:19,344 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/NL_lov_2007-06-15-40_C2_A744.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:19,347 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:19,504 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/NL_lov_2025-03-28-5.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:19,506 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:19,663 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/NL_lov_2007-06-15-40_C2_A79.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:19,665 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:19,814 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-373-a.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:19,814 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:19,980 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-372-a.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:19,980 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:20,119 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-359-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:20,119 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:20,300 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-346-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:20,304 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:20,450 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-344-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:20,450 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:20,603 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-339-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:20,603 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:20,766 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-334-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:20,766 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:20,766 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:25:21,079 - INFO - 
+   [11/43] Processing document...
+2026-02-14 23:25:21,079 - INFO - 📄 Scraping document...
+2026-02-14 23:25:23,346 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-333-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:23,403 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-14 23:25:23,561 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3647a62c08079bfcde82f80276f8d63d&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:23,869 - INFO - 
+   [12/43] Processing document...
+2026-02-14 23:25:23,869 - INFO - 📄 Scraping document...
+2026-02-14 23:25:26,165 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-312-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:26,202 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-14 23:25:26,366 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.7f329dbe8e4c1e31bbb193f5e565a634&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:26,671 - INFO - 
+   [13/43] Processing document...
+2026-02-14 23:25:26,672 - INFO - 📄 Scraping document...
+2026-02-14 23:25:29,027 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-296-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:29,055 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-14 23:25:29,213 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.804bbf8a834a6c0c01f04f72d6715411&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:29,529 - INFO - 
+   [14/43] Processing document...
+2026-02-14 23:25:29,529 - INFO - 📄 Scraping document...
+2026-02-14 23:25:31,827 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2025-49402.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:31,847 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-14 23:25:31,988 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.57bd0943f7792e847b862f91c25a2e46&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:32,298 - INFO - 
+   [15/43] Processing document...
+2026-02-14 23:25:32,300 - INFO - 📄 Scraping document...
+2026-02-14 23:25:34,628 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-18220.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:34,671 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-14 23:25:34,820 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4be7bc6d054ae277a1a242b89c714732&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:35,123 - INFO - 
+   [16/43] Processing document...
+2026-02-14 23:25:35,124 - INFO - 📄 Scraping document...
+2026-02-14 23:25:37,484 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-181309.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:37,518 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-14 23:25:37,664 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1f0bd0ed20d3b131c265811559eb93d7&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:37,968 - INFO - 
+   [17/43] Processing document...
+2026-02-14 23:25:37,969 - INFO - 📄 Scraping document...
+2026-02-14 23:25:40,285 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-103123.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:40,319 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-14 23:25:40,475 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.66d9d0c6d011c18a9b3df5009e4a0bdd&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:40,785 - INFO - 
+   [18/43] Processing document...
+2026-02-14 23:25:40,786 - INFO - 📄 Scraping document...
+2026-02-14 23:25:43,149 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSTR_avgjorelse_lb-2025-101938.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:43,183 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-14 23:25:43,324 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.62f40306c6e1479537cd154ce9fb65f4&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:43,635 - INFO - 
+   [19/43] Processing document...
+2026-02-14 23:25:43,635 - INFO - 📄 Scraping document...
+2026-02-14 23:25:45,999 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LHSIV_avgjorelse_lh-2026-8272.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:46,033 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-14 23:25:46,182 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.29fdd45ee6464868d624037b47445f2b&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:46,485 - INFO - 
+   [20/43] Processing document...
+2026-02-14 23:25:46,485 - INFO - 📄 Scraping document...
+2026-02-14 23:25:48,867 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LHSTR_avgjorelse_lh-2025-188441.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:48,902 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-14 23:25:49,031 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f6721fb6726df320392371c514a7f296&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:49,033 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:25:49,349 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-333-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:49,351 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:49,534 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-312-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:49,535 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:49,684 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-296-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:49,686 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:49,854 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2025-49402.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:49,856 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:50,015 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-18220.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:50,017 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:50,144 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LBSIV_avgjorelse_lb-2025-181309.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:50,147 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:50,329 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LBSIV_avgjorelse_lb-2025-103123.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:50,330 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:50,474 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LBSTR_avgjorelse_lb-2025-101938.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:50,476 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:50,665 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LHSIV_avgjorelse_lh-2026-8272.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:50,665 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:50,867 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LHSTR_avgjorelse_lh-2025-188441.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:25:50,869 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:25:50,873 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:25:51,180 - INFO - 
+   [21/43] Processing document...
+2026-02-14 23:25:51,182 - INFO - 📄 Scraping document...
+2026-02-14 23:25:53,516 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-16764.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:53,553 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-14 23:25:53,709 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.82c888e995621e1ef26c6eb105db1a75&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:54,030 - INFO - 
+   [22/43] Processing document...
+2026-02-14 23:25:54,038 - INFO - 📄 Scraping document...
+2026-02-14 23:25:56,420 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-5180.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:56,450 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-14 23:25:56,604 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1a0f2891e752f0f91adf909e29a774ac&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:56,914 - INFO - 
+   [23/43] Processing document...
+2026-02-14 23:25:56,914 - INFO - 📄 Scraping document...
+2026-02-14 23:25:59,237 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LESIV_avgjorelse_le-2025-196437.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:59,267 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-14 23:25:59,415 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.0782e82a7451dfa46fc145e32a717de8&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:25:59,733 - INFO - 
+   [24/43] Processing document...
+2026-02-14 23:25:59,734 - INFO - 📄 Scraping document...
+2026-02-14 23:26:02,072 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tnet-2025-201859.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:02,125 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-14 23:26:02,265 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.615f1cdc1f046484614c026b8e4ae292&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:02,569 - INFO - 
+   [25/43] Processing document...
+2026-02-14 23:26:02,570 - INFO - 📄 Scraping document...
+2026-02-14 23:26:04,866 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_thrd-2025-147974.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:04,909 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-14 23:26:05,085 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.68e4b77484091b515a07d75361f6d5b3&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:05,398 - INFO - 
+   [26/43] Processing document...
+2026-02-14 23:26:05,398 - INFO - 📄 Scraping document...
+2026-02-14 23:26:07,724 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_thrd-2025-179533.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:07,753 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-14 23:26:07,901 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.08a1df264a921e1b2f97d9415b7f5033&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:08,214 - INFO - 
+   [27/43] Processing document...
+2026-02-14 23:26:08,215 - INFO - 📄 Scraping document...
+2026-02-14 23:26:10,556 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-206996.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:10,591 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-14 23:26:10,768 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e0f24d0e5d78ee32d4f9de7a5300910e&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:11,081 - INFO - 
+   [28/43] Processing document...
+2026-02-14 23:26:11,081 - INFO - 📄 Scraping document...
+2026-02-14 23:26:13,444 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tosl-2025-46750.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:13,470 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-14 23:26:13,626 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f4852bc6b8c7ac04a4936c724e2a6663&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:13,928 - INFO - 
+   [29/43] Processing document...
+2026-02-14 23:26:13,928 - INFO - 📄 Scraping document...
+2026-02-14 23:26:16,288 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-180124.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:16,313 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-14 23:26:16,455 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.493f197f93c86bd35209ba6b1a620cde&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:16,769 - INFO - 
+   [30/43] Processing document...
+2026-02-14 23:26:16,770 - INFO - 📄 Scraping document...
+2026-02-14 23:26:19,055 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-3971.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:19,084 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-14 23:26:19,216 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.464908becd7b6d6d4a3ec4a7562be4dd&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:19,216 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:26:19,570 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-16764.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:19,570 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:19,749 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-5180.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:19,766 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:19,933 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LESIV_avgjorelse_le-2025-196437.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:19,933 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:20,096 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tnet-2025-201859.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:20,096 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:20,328 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_thrd-2025-147974.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:20,331 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:20,490 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_thrd-2025-179533.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:20,491 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:20,664 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-206996.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:20,665 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:20,800 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tosl-2025-46750.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:20,800 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:20,999 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-180124.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:21,001 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:21,164 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-3971.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:21,166 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:21,169 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:26:21,480 - INFO - 
+   [31/43] Processing document...
+2026-02-14 23:26:21,481 - INFO - 📄 Scraping document...
+2026-02-14 23:26:23,804 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tvov-2025-54083.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:23,819 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-14 23:26:24,006 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.816d2bae4ce520477b7ff6a42110694c&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:24,335 - INFO - 
+   [32/43] Processing document...
+2026-02-14 23:26:24,335 - INFO - 📄 Scraping document...
+2026-02-14 23:26:26,678 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-195280.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:26,723 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-14 23:26:26,865 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8c7f2618ec5a4206b9fe01c6bfefd94b&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:27,179 - INFO - 
+   [33/43] Processing document...
+2026-02-14 23:26:27,179 - INFO - 📄 Scraping document...
+2026-02-14 23:26:29,475 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tgud-2025-196990.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:29,517 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-14 23:26:29,678 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a0cc71f216be5d77acb8f64b1648aec9&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:30,007 - INFO - 
+   [34/43] Processing document...
+2026-02-14 23:26:30,007 - INFO - 📄 Scraping document...
+2026-02-14 23:26:32,311 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-13-200.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:32,354 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-200.xml
+2026-02-14 23:26:32,512 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a4f94a98856c8612c4c8816c3c992a7d&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:32,823 - INFO - 
+   [35/43] Processing document...
+2026-02-14 23:26:32,823 - INFO - 📄 Scraping document...
+2026-02-14 23:26:35,114 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-199.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:35,154 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-199.xml
+2026-02-14 23:26:35,314 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.0886f9db1b4f5afeedb0598056984c63&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:35,626 - INFO - 
+   [36/43] Processing document...
+2026-02-14 23:26:35,626 - INFO - 📄 Scraping document...
+2026-02-14 23:26:37,932 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-01-21-198.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:37,968 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-01-21-198.xml
+2026-02-14 23:26:38,114 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.ee1572bd451ef49f8dec0313af489055&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:38,424 - INFO - 
+   [37/43] Processing document...
+2026-02-14 23:26:38,424 - INFO - 📄 Scraping document...
+2026-02-14 23:26:40,819 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-13-197.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:40,850 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-197.xml
+2026-02-14 23:26:41,014 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.68bc698975521bebd86a2058b5c16f88&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:41,322 - INFO - 
+   [38/43] Processing document...
+2026-02-14 23:26:41,322 - INFO - 📄 Scraping document...
+2026-02-14 23:26:43,657 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_lov_2026-02-13-6.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:43,687 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_lov_2026-02-13-6.xml
+2026-02-14 23:26:43,831 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3285ee3c9ec38caa69496c4723854f1c&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:44,143 - INFO - 
+   [39/43] Processing document...
+2026-02-14 23:26:44,143 - INFO - 📄 Scraping document...
+2026-02-14 23:26:51,310 - ERROR - Metadata exists check failed: The read operation timed out
+2026-02-14 23:26:51,343 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_lov_2026-02-13-5.xml
+2026-02-14 23:26:51,734 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.49a9536264e55cf9bbb2b9049f2dd0d9&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:52,034 - INFO - 
+   [40/43] Processing document...
+2026-02-14 23:26:52,034 - INFO - 📄 Scraping document...
+2026-02-14 23:26:54,338 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-196.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:54,344 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-196.xml
+2026-02-14 23:26:54,497 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.7e209b6fcf11f964aaa74957a5147cec&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:54,497 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:26:54,758 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tvov-2025-54083.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:54,758 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:54,925 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-195280.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:54,928 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:55,133 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tgud-2025-196990.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:55,135 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:55,267 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-13-200.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:55,280 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:55,435 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-12-199.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:55,436 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:55,614 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-01-21-198.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:55,616 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:55,784 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-13-197.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:55,786 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:55,933 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_lov_2026-02-13-6.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:55,933 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:56,068 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_lov_2026-02-13-5.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:56,075 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:56,198 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-12-196.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:26:56,207 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:26:56,210 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:26:56,513 - INFO - 
+   [41/43] Processing document...
+2026-02-14 23:26:56,515 - INFO - 📄 Scraping document...
+2026-02-14 23:26:58,842 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-195.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:58,888 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-195.xml
+2026-02-14 23:26:59,031 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.0d1866b642f0cb5acd622d6134e70f6e&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:26:59,337 - INFO - 
+   [42/43] Processing document...
+2026-02-14 23:26:59,337 - INFO - 📄 Scraping document...
+2026-02-14 23:27:01,662 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-11-194.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:01,690 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-11-194.xml
+2026-02-14 23:27:01,848 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.96e2dcc81e2b4847f6745e2b35da738f&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:02,156 - INFO - 
+   [43/43] Processing document...
+2026-02-14 23:27:02,156 - INFO - 📄 Scraping document...
+2026-02-14 23:27:04,467 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-09-193.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:04,505 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-09-193.xml
+2026-02-14 23:27:04,680 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5017f71e1f859dc45bcad00b69fce01b&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:04,982 - INFO - 
+✅ Completed area: Labor_Law
+2026-02-14 23:27:04,983 - INFO - 
+======================================================================
+2026-02-14 23:27:04,983 - INFO - [2/38] Work_Environment
+2026-02-14 23:27:04,983 - INFO - ======================================================================
+2026-02-14 23:27:04,983 - INFO -    Norwegian: arbeidsmiljo
+2026-02-14 23:27:04,983 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 23:27:04,983 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 23:27:13,028 - INFO -    📜 Scrolling to load documents...
+2026-02-14 23:27:24,805 - INFO -    📎 Found 43 documents
+2026-02-14 23:27:24,805 - INFO - 🚀 Processing 43 documents
+2026-02-14 23:27:24,807 - INFO - 
+   [1/43] Processing document...
+2026-02-14 23:27:24,807 - INFO - 📄 Scraping document...
+2026-02-14 23:27:27,703 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A744.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:27,738 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-14 23:27:27,894 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.02080ea5701c7b5f0eb7b11e2ed93443&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:28,198 - INFO - 
+   [2/43] Processing document...
+2026-02-14 23:27:28,198 - INFO - 📄 Scraping document...
+2026-02-14 23:27:35,386 - ERROR - Metadata exists check failed: The read operation timed out
+2026-02-14 23:27:35,441 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\NL_lov_2025-03-28-5.xml
+2026-02-14 23:27:35,794 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.6432515ece5ddd3d7bfce750cd352ce3&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:36,101 - INFO - 
+   [3/43] Processing document...
+2026-02-14 23:27:36,101 - INFO - 📄 Scraping document...
+2026-02-14 23:27:38,731 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A79.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:38,769 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-14 23:27:38,962 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8559b229c1027dcae2978ac31c79790f&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:39,270 - INFO - 
+   [4/43] Processing document...
+2026-02-14 23:27:39,270 - INFO - 📄 Scraping document...
+2026-02-14 23:27:41,645 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-373-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:41,674 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-14 23:27:41,846 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.da0bb01afb86a719d570497c5ad28aa9&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:42,152 - INFO - 
+   [5/43] Processing document...
+2026-02-14 23:27:42,152 - INFO - 📄 Scraping document...
+2026-02-14 23:27:44,514 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-372-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:44,549 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-14 23:27:44,702 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e46165980fa2ae5d8da06ced42539d70&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:45,015 - INFO - 
+   [6/43] Processing document...
+2026-02-14 23:27:45,016 - INFO - 📄 Scraping document...
+2026-02-14 23:27:47,378 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-359-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:47,406 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-14 23:27:47,585 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4bb384b8fa5ded26f48c7678517c9920&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:47,897 - INFO - 
+   [7/43] Processing document...
+2026-02-14 23:27:47,897 - INFO - 📄 Scraping document...
+2026-02-14 23:27:50,223 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-346-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:50,251 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-14 23:27:50,419 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.48c3cab07719b78d4362f617282bcb36&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:50,420 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:27:50,721 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-12-195.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:50,721 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:50,921 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-11-194.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:50,930 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:51,125 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-09-193.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:51,126 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:51,302 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/NL_lov_2007-06-15-40_C2_A744.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:51,303 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:51,506 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/NL_lov_2025-03-28-5.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:51,507 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:51,678 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/NL_lov_2007-06-15-40_C2_A79.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:51,679 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:51,866 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSTR_avgjorelse_hr-2026-373-a.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:51,866 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:52,015 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSIV_avgjorelse_hr-2026-372-a.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:52,015 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:52,205 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSTR_avgjorelse_hr-2026-359-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:52,206 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:52,417 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSIV_avgjorelse_hr-2026-346-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:27:52,418 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:27:52,421 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:27:52,725 - INFO - 
+   [8/43] Processing document...
+2026-02-14 23:27:52,725 - INFO - 📄 Scraping document...
+2026-02-14 23:27:55,100 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-344-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:55,129 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-14 23:27:55,379 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.6e9287eac1ee9d57b90a493fa72ee3a2&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:55,688 - INFO - 
+   [9/43] Processing document...
+2026-02-14 23:27:55,689 - INFO - 📄 Scraping document...
+2026-02-14 23:27:58,067 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-339-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:58,095 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-14 23:27:58,285 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a440a12844b5a5240975bf48324e9af3&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:27:58,600 - INFO - 
+   [10/43] Processing document...
+2026-02-14 23:27:58,600 - INFO - 📄 Scraping document...
+2026-02-14 23:28:00,949 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-334-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:00,976 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-14 23:28:01,155 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4c22db532385aeed06f53eaa324f6964&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:01,463 - INFO - 
+   [11/43] Processing document...
+2026-02-14 23:28:01,464 - INFO - 📄 Scraping document...
+2026-02-14 23:28:03,837 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-333-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:03,867 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-14 23:28:04,052 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.85a1e837b03c06157005f863290e8f92&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:04,358 - INFO - 
+   [12/43] Processing document...
+2026-02-14 23:28:04,358 - INFO - 📄 Scraping document...
+2026-02-14 23:28:06,727 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-312-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:06,752 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-14 23:28:07,068 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e343861767fdd1ed6ef6fed7f0864874&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:07,378 - INFO - 
+   [13/43] Processing document...
+2026-02-14 23:28:07,378 - INFO - 📄 Scraping document...
+2026-02-14 23:28:09,735 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-296-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:09,762 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-14 23:28:09,924 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a392f1fbd4a77d2217e8e5bfe6126b98&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:10,241 - INFO - 
+   [14/43] Processing document...
+2026-02-14 23:28:10,241 - INFO - 📄 Scraping document...
+2026-02-14 23:28:12,683 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2025-49402.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:12,722 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-14 23:28:12,867 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.db7d0a5adc0fedb78e2fed6afbc8841b&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:13,177 - INFO - 
+   [15/43] Processing document...
+2026-02-14 23:28:13,178 - INFO - 📄 Scraping document...
+2026-02-14 23:28:15,492 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-18220.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:15,522 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-14 23:28:15,705 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c4c0c833ee6fa47ecd6402eec850a948&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:16,012 - INFO - 
+   [16/43] Processing document...
+2026-02-14 23:28:16,012 - INFO - 📄 Scraping document...
+2026-02-14 23:28:18,309 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-181309.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:18,330 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-14 23:28:18,490 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3b916f095fa4113971d1452459ccea6e&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:18,799 - INFO - 
+   [17/43] Processing document...
+2026-02-14 23:28:18,800 - INFO - 📄 Scraping document...
+2026-02-14 23:28:21,117 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-103123.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:21,141 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-14 23:28:21,327 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3aa21d1f37675cc82b977c575405742e&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:21,328 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:28:21,869 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSTR_avgjorelse_hr-2026-344-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:21,870 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:22,061 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSIV_avgjorelse_hr-2026-339-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:22,064 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:22,348 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSIV_avgjorelse_hr-2026-334-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:22,349 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:22,648 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSTR_avgjorelse_hr-2026-333-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:22,649 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:22,819 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSTR_avgjorelse_hr-2026-312-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:22,831 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:23,013 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/HRSIV_avgjorelse_hr-2026-296-u.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:23,014 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:23,184 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LGSIV_avgjorelse_lg-2025-49402.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:23,189 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:23,347 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LGSIV_avgjorelse_lg-2026-18220.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:23,348 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:23,500 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LBSIV_avgjorelse_lb-2025-181309.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:23,519 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:23,683 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LBSIV_avgjorelse_lb-2025-103123.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:23,686 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:23,690 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:28:23,992 - INFO - 
+   [18/43] Processing document...
+2026-02-14 23:28:23,993 - INFO - 📄 Scraping document...
+2026-02-14 23:28:26,338 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSTR_avgjorelse_lb-2025-101938.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:26,363 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-14 23:28:26,502 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.487977d0943b9dc984ab838095613f26&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:26,806 - INFO - 
+   [19/43] Processing document...
+2026-02-14 23:28:26,807 - INFO - 📄 Scraping document...
+2026-02-14 23:28:29,168 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LHSIV_avgjorelse_lh-2026-8272.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:29,187 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-14 23:28:29,334 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.59b9f0e3c49a1fb543c0e335f7c98943&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:29,643 - INFO - 
+   [20/43] Processing document...
+2026-02-14 23:28:29,643 - INFO - 📄 Scraping document...
+2026-02-14 23:28:32,086 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LHSTR_avgjorelse_lh-2025-188441.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:32,126 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-14 23:28:32,266 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8d6d1041bd9255a772da3c131403d1dd&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:32,568 - INFO - 
+   [21/43] Processing document...
+2026-02-14 23:28:32,568 - INFO - 📄 Scraping document...
+2026-02-14 23:28:34,894 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-16764.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:34,918 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-14 23:28:35,085 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.de48538871829ebb5b3f0255db0dc7e5&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:35,393 - INFO - 
+   [22/43] Processing document...
+2026-02-14 23:28:35,394 - INFO - 📄 Scraping document...
+2026-02-14 23:28:37,763 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-5180.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:37,800 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-14 23:28:37,944 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3ac8bc61053801c7d03e878615baebaf&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:38,256 - INFO - 
+   [23/43] Processing document...
+2026-02-14 23:28:38,256 - INFO - 📄 Scraping document...
+2026-02-14 23:28:40,605 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LESIV_avgjorelse_le-2025-196437.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:40,632 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-14 23:28:40,803 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.63627b2e39a27ff3b43c15d5d5b9f249&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:41,113 - INFO - 
+   [24/43] Processing document...
+2026-02-14 23:28:41,114 - INFO - 📄 Scraping document...
+2026-02-14 23:28:43,504 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tnet-2025-201859.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:43,533 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-14 23:28:43,667 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e527e673e986eb7fe4b105a43ebbece7&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:43,980 - INFO - 
+   [25/43] Processing document...
+2026-02-14 23:28:43,980 - INFO - 📄 Scraping document...
+2026-02-14 23:28:46,337 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_thrd-2025-147974.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:46,363 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-14 23:28:46,526 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9c846e3f960b687209b735ed04d8ddd0&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:46,833 - INFO - 
+   [26/43] Processing document...
+2026-02-14 23:28:46,834 - INFO - 📄 Scraping document...
+2026-02-14 23:28:49,175 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_thrd-2025-179533.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:49,206 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-14 23:28:49,349 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.dd31869a9dd5d61d3ebceb03aa38d4ce&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:49,662 - INFO - 
+   [27/43] Processing document...
+2026-02-14 23:28:49,662 - INFO - 📄 Scraping document...
+2026-02-14 23:28:52,046 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-206996.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:52,074 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-14 23:28:52,245 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d2f9fc36e85eb8600db480e2fe6f2620&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:52,247 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:28:52,557 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LBSTR_avgjorelse_lb-2025-101938.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:52,560 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:52,739 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LHSIV_avgjorelse_lh-2026-8272.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:52,741 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:52,965 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LHSTR_avgjorelse_lh-2025-188441.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:52,967 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:53,195 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LGSIV_avgjorelse_lg-2026-16764.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:53,196 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:53,379 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LGSIV_avgjorelse_lg-2026-5180.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:53,381 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:53,539 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LESIV_avgjorelse_le-2025-196437.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:53,541 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:53,688 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSTR_avgjorelse_tnet-2025-201859.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:53,691 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:53,856 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSTR_avgjorelse_thrd-2025-147974.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:53,858 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:54,024 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSTR_avgjorelse_thrd-2025-179533.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:54,025 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:54,226 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSIV_avgjorelse_tosl-2025-206996.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:28:54,228 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:28:54,234 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:28:54,541 - INFO - 
+   [28/43] Processing document...
+2026-02-14 23:28:54,542 - INFO - 📄 Scraping document...
+2026-02-14 23:28:56,979 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tosl-2025-46750.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:57,002 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-14 23:28:57,250 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.0b635aa85659861ef0eb253ea394a6c7&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:28:57,560 - INFO - 
+   [29/43] Processing document...
+2026-02-14 23:28:57,561 - INFO - 📄 Scraping document...
+2026-02-14 23:29:00,031 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-180124.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:00,067 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-14 23:29:00,408 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9d0c04a173d5e89228e4474e84d9713b&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:00,723 - INFO - 
+   [30/43] Processing document...
+2026-02-14 23:29:00,724 - INFO - 📄 Scraping document...
+2026-02-14 23:29:04,493 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-3971.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:04,534 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-14 23:29:04,731 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.08d772aaac56b59c0052dc2071cfd28b&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:05,037 - INFO - 
+   [31/43] Processing document...
+2026-02-14 23:29:05,037 - INFO - 📄 Scraping document...
+2026-02-14 23:29:07,842 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tvov-2025-54083.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:07,871 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-14 23:29:08,175 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.50101b597e32d148ff2e50acdb768914&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:08,491 - INFO - 
+   [32/43] Processing document...
+2026-02-14 23:29:08,491 - INFO - 📄 Scraping document...
+2026-02-14 23:29:10,895 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-195280.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:10,922 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-14 23:29:11,065 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3e2ab895dbcb14707e31c997810c4267&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:11,379 - INFO - 
+   [33/43] Processing document...
+2026-02-14 23:29:11,380 - INFO - 📄 Scraping document...
+2026-02-14 23:29:13,808 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tgud-2025-196990.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:13,853 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-14 23:29:13,993 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.80ebac8b73c90e1f6fb9ce6300888560&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:14,296 - INFO - 
+   [34/43] Processing document...
+2026-02-14 23:29:14,296 - INFO - 📄 Scraping document...
+2026-02-14 23:29:16,620 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-13-200.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:16,648 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_forskrift_2026-02-13-200.xml
+2026-02-14 23:29:16,838 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.24a2dd2365eb2552beda9f2ec9a0764e&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:17,153 - INFO - 
+   [35/43] Processing document...
+2026-02-14 23:29:17,155 - INFO - 📄 Scraping document...
+2026-02-14 23:29:19,532 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-199.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:19,557 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_forskrift_2026-02-12-199.xml
+2026-02-14 23:29:19,706 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.49b61d40f77e480beeae996cc20d984f&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:20,009 - INFO - 
+   [36/43] Processing document...
+2026-02-14 23:29:20,009 - INFO - 📄 Scraping document...
+2026-02-14 23:29:22,376 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-01-21-198.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:22,402 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_forskrift_2026-01-21-198.xml
+2026-02-14 23:29:22,549 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.403079bcb821ca7791c091b5a34aec36&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:22,855 - INFO - 
+   [37/43] Processing document...
+2026-02-14 23:29:22,855 - INFO - 📄 Scraping document...
+2026-02-14 23:29:25,167 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-13-197.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:25,192 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_forskrift_2026-02-13-197.xml
+2026-02-14 23:29:25,380 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9766b129bc9104a6795f02996bd054ce&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:25,382 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:29:25,738 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSTR_avgjorelse_tosl-2025-46750.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:25,739 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:25,922 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSIV_avgjorelse_tosl-2025-180124.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:25,922 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:26,067 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSIV_avgjorelse_tosl-2025-3971.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:26,074 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:26,255 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSIV_avgjorelse_tvov-2025-54083.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:26,255 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:26,425 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSIV_avgjorelse_tosl-2025-195280.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:26,426 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:26,671 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/TRSTR_avgjorelse_tgud-2025-196990.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:26,671 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:26,860 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_forskrift_2026-02-13-200.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:26,861 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:27,022 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_forskrift_2026-02-12-199.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:27,022 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:27,175 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_forskrift_2026-01-21-198.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:27,177 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:27,331 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_forskrift_2026-02-13-197.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:29:27,333 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:29:27,338 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:29:27,650 - INFO - 
+   [38/43] Processing document...
+2026-02-14 23:29:27,650 - INFO - 📄 Scraping document...
+2026-02-14 23:29:29,965 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_lov_2026-02-13-6.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:29,987 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_lov_2026-02-13-6.xml
+2026-02-14 23:29:30,132 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.862fe91339b5d3d4ac0c488ffa45007b&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:30,440 - INFO - 
+   [39/43] Processing document...
+2026-02-14 23:29:30,441 - INFO - 📄 Scraping document...
+2026-02-14 23:29:33,450 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_lov_2026-02-13-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:33,489 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_lov_2026-02-13-5.xml
+2026-02-14 23:29:33,647 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b52c8d641737ab140f1efc058f12abb8&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:33,952 - INFO - 
+   [40/43] Processing document...
+2026-02-14 23:29:33,952 - INFO - 📄 Scraping document...
+2026-02-14 23:29:36,295 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-196.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:36,325 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_forskrift_2026-02-12-196.xml
+2026-02-14 23:29:36,478 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.041a81230120a98c176bda75a9d3af04&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:36,786 - INFO - 
+   [41/43] Processing document...
+2026-02-14 23:29:36,786 - INFO - 📄 Scraping document...
+2026-02-14 23:29:39,145 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-195.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:39,175 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_forskrift_2026-02-12-195.xml
+2026-02-14 23:29:39,336 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e798e0709cd23af340a065f502d1fa2f&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:39,650 - INFO - 
+   [42/43] Processing document...
+2026-02-14 23:29:39,650 - INFO - 📄 Scraping document...
+2026-02-14 23:29:41,976 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-11-194.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:42,003 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_forskrift_2026-02-11-194.xml
+2026-02-14 23:29:42,179 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c21a8ec749432379123cce6db3ed05f8&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:42,486 - INFO - 
+   [43/43] Processing document...
+2026-02-14 23:29:42,487 - INFO - 📄 Scraping document...
+2026-02-14 23:29:44,880 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-09-193.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:44,902 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\LTI_forskrift_2026-02-09-193.xml
+2026-02-14 23:29:45,044 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b9f66eb9b8ad19578c03c80c081b538f&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:29:45,347 - INFO - 
+✅ Completed area: Work_Environment
+2026-02-14 23:29:45,347 - INFO - 
+======================================================================
+2026-02-14 23:29:45,348 - INFO - [3/38] Social_Security_Law
+2026-02-14 23:29:45,348 - INFO - ======================================================================
+2026-02-14 23:29:45,348 - INFO -    Norwegian: trygderett
+2026-02-14 23:29:45,349 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/trygderett
+2026-02-14 23:29:45,349 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/trygderett
+2026-02-14 23:29:53,368 - INFO -    📜 Scrolling to load documents...
+2026-02-14 23:30:05,311 - INFO -    📎 Found 43 documents
+2026-02-14 23:30:05,311 - INFO - 🚀 Processing 43 documents
+2026-02-14 23:30:05,312 - INFO - 
+   [1/43] Processing document...
+2026-02-14 23:30:05,313 - INFO - 📄 Scraping document...
+2026-02-14 23:30:07,819 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A744.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:07,854 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Social_Security_Law\Social_Security_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-14 23:30:08,007 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e61de69ac0d8f19b3ec09fa4e670d76e&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:08,308 - INFO - 
+   [2/43] Processing document...
+2026-02-14 23:30:08,308 - INFO - 📄 Scraping document...
+2026-02-14 23:30:10,948 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2025-03-28-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:10,979 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Social_Security_Law\Social_Security_Law\NL_lov_2025-03-28-5.xml
+2026-02-14 23:30:11,234 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.647f42702dedfdc454d6650e563ef38e&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:11,538 - INFO - 
+   [3/43] Processing document...
+2026-02-14 23:30:11,538 - INFO - 📄 Scraping document...
+2026-02-14 23:30:13,950 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A79.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:13,980 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Social_Security_Law\Social_Security_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-14 23:30:14,136 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.01d9b763efb28c2c832796666a343080&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:14,450 - INFO - 
+   [4/43] Processing document...
+2026-02-14 23:30:14,450 - INFO - 📄 Scraping document...
+2026-02-14 23:30:16,870 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-373-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:16,892 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Social_Security_Law\Social_Security_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-14 23:30:17,065 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.6b9d83cd950c9740e3ca181309abaa6e&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:17,067 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-14 23:30:17,440 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_lov_2026-02-13-6.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:17,441 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:17,608 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_lov_2026-02-13-5.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:17,609 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:17,786 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_forskrift_2026-02-12-196.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:17,787 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:18,096 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_forskrift_2026-02-12-195.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:18,128 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:18,368 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_forskrift_2026-02-11-194.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:18,369 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:18,715 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Work_Environment/Work_Environment/LTI_forskrift_2026-02-09-193.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:18,717 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:18,957 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Social_Security_Law/Social_Security_Law/NL_lov_2007-06-15-40_C2_A744.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:18,958 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:19,220 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Social_Security_Law/Social_Security_Law/NL_lov_2025-03-28-5.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:19,222 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:19,395 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Social_Security_Law/Social_Security_Law/NL_lov_2007-06-15-40_C2_A79.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:19,455 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:19,614 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Social_Security_Law/Social_Security_Law/HRSTR_avgjorelse_hr-2026-373-a.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:19,615 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:19,622 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:30:19,925 - INFO - 
+   [5/43] Processing document...
+2026-02-14 23:30:19,925 - INFO - 📄 Scraping document...
+2026-02-14 23:30:22,407 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-372-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:22,432 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Social_Security_Law\Social_Security_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-14 23:30:22,606 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.77b5e10f2eb69f6cc9f555afcaaadea0&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:30:22,918 - INFO - 
+   [6/43] Processing document...
+2026-02-14 23:30:22,919 - INFO - 📄 Scraping document...
+2026-02-14 23:30:24,427 - INFO - 
+⬆️  Uploading batch (1 documents)
+2026-02-14 23:30:24,736 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Social_Security_Law/Social_Security_Law/HRSIV_avgjorelse_hr-2026-372-a.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:30:24,737 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:30:24,741 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:30:28,833 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=50577): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/ef7e2ced01f69399043f1df267441ae0

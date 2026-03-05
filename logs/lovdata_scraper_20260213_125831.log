@@ -1,0 +1,442 @@
+2026-02-13 12:58:35,082 - INFO - ================================================================================
+2026-02-13 12:58:35,082 - INFO - LOVDATA PRO SCRAPER - COMPLETE VERSION WITH BATCH UPLOAD
+2026-02-13 12:58:35,097 - INFO - ================================================================================
+2026-02-13 12:58:35,097 - INFO - Batch upload size: 30 files
+2026-02-13 12:58:35,098 - INFO - Year range: 2000 - 2026
+2026-02-13 12:58:35,098 - INFO - ================================================================================
+2026-02-13 12:58:36,329 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-13 12:58:36,345 - INFO - ✓ Database connected
+2026-02-13 12:58:36,345 - INFO - ====== WebDriver manager ======
+2026-02-13 12:58:39,073 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-13 12:58:39,380 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-13 12:58:39,466 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-13 12:58:42,873 - INFO - ✓ Selenium browser started
+2026-02-13 12:58:43,163 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/bucket "HTTP/2 200 OK"
+2026-02-13 12:58:43,262 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/bucket "HTTP/2 400 Bad Request"
+2026-02-13 12:58:43,264 - WARNING - Bucket check failed (may already exist): {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 12:58:43,264 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-13 12:58:43,264 - INFO - 🔐 Logging in to Lovdata Pro...
+2026-02-13 12:58:49,996 - INFO -   Login URL   : https://lovdata.no/pro/auth/login
+2026-02-13 12:58:50,013 - INFO -   Login title : Lovdata
+2026-02-13 12:58:50,027 - INFO -   ✓ Found field: j_username
+2026-02-13 12:58:50,146 - INFO -   ✓ Username entered: katrine.lund.digirett@gmail.com
+2026-02-13 12:58:50,236 - INFO -   ✓ Password entered
+2026-02-13 12:58:54,436 - INFO -   ✓ Submit clicked – waiting for redirect...
+2026-02-13 12:59:00,456 - INFO -   URL after submit : https://lovdata.no/pro/#myPage
+2026-02-13 12:59:00,460 - INFO -   Title after submit: Min side - Lovdata Pro
+2026-02-13 12:59:00,460 - INFO - ✓ Login successful – navigating to Pro #myPage...
+2026-02-13 12:59:04,477 - INFO -   Final URL: https://lovdata.no/pro/#myPage
+2026-02-13 12:59:04,477 - INFO - ✓ READY: Lovdata Pro #myPage loaded
+2026-02-13 12:59:04,485 - INFO - 📋 MODE SELECTED: all
+2026-02-13 12:59:04,485 - INFO - ================================================================================
+2026-02-13 12:59:04,485 - INFO - SCRAPING SOURCES OF LAW
+2026-02-13 12:59:04,485 - INFO - ================================================================================
+2026-02-13 12:59:04,485 - INFO - 
+📁 Category: Laws and Regulations
+2026-02-13 12:59:04,485 - INFO -   📂 Subcategory: Active Laws (NL)
+2026-02-13 12:59:04,485 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-13 12:59:04,494 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 12:59:10,509 - INFO -   Sidebar years (0): []
+2026-02-13 12:59:10,509 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 12:59:13,542 - INFO -   📅 2026: 4 new links (total: 4)
+2026-02-13 12:59:16,583 - INFO -   📅 2025: 48 new links (total: 52)
+2026-02-13 12:59:16,583 - INFO - ✓ Total unique URLs collected: 40
+2026-02-13 12:59:16,583 - INFO -   ✓ Found 40 documents
+2026-02-13 12:59:16,583 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-103
+2026-02-13 12:59:22,618 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0103.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:22,669 - INFO - ✓ Created XML: nl-20250620-0103.xml (51.28 KB)
+2026-02-13 12:59:22,743 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.073707e3a6531e788eee52cdac6bfce1 "HTTP/1.1 200 OK"
+2026-02-13 12:59:22,818 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0103.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:22,930 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:22,937 - ERROR - ✗ DB insert failed for nl-20250620-0103.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:22,938 - INFO - ✓ [1/3000] Processed: nl-20250620-0103.xml
+2026-02-13 12:59:23,249 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-100
+2026-02-13 12:59:27,779 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0100.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:27,809 - INFO - ✓ Created XML: nl-20250620-0100.xml (51.43 KB)
+2026-02-13 12:59:27,883 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a412062de0d58c1fcdb3f6f13de017e9 "HTTP/1.1 200 OK"
+2026-02-13 12:59:27,957 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0100.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:28,026 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:28,028 - ERROR - ✗ DB insert failed for nl-20250620-0100.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:28,029 - INFO - ✓ [2/3000] Processed: nl-20250620-0100.xml
+2026-02-13 12:59:28,330 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-03-28-4
+2026-02-13 12:59:31,889 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250328-0004.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:31,913 - INFO - ✓ Created XML: nl-20250328-0004.xml (8.10 KB)
+2026-02-13 12:59:31,989 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.93028f5d588e91684bd2302fdbc8aa86 "HTTP/1.1 200 OK"
+2026-02-13 12:59:32,066 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250328-0004.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:32,148 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:32,149 - ERROR - ✗ DB insert failed for nl-20250328-0004.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:32,150 - INFO - ✓ [3/3000] Processed: nl-20250328-0004.xml
+2026-02-13 12:59:32,455 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2026-02-06-2
+2026-02-13 12:59:37,045 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0002.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:37,089 - INFO - ✓ Created XML: nl-20260206-0002.xml (52.33 KB)
+2026-02-13 12:59:37,166 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.7b2c84d92b5c1a68cd3b39df57dd643d "HTTP/1.1 200 OK"
+2026-02-13 12:59:37,234 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0002.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:37,311 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:37,315 - ERROR - ✗ DB insert failed for nl-20260206-0002.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:37,315 - INFO - ✓ [4/3000] Processed: nl-20260206-0002.xml
+2026-02-13 12:59:37,627 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-80
+2026-02-13 12:59:41,234 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0080.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:41,252 - INFO - ✓ Created XML: nl-20250620-0080.xml (18.36 KB)
+2026-02-13 12:59:41,320 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.585291c7e71e99e0451c57e4c2f5b43e "HTTP/1.1 200 OK"
+2026-02-13 12:59:41,395 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0080.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:41,468 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:41,468 - ERROR - ✗ DB insert failed for nl-20250620-0080.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:41,468 - INFO - ✓ [5/3000] Processed: nl-20250620-0080.xml
+2026-02-13 12:59:41,781 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-104
+2026-02-13 12:59:45,513 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0104.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:45,554 - INFO - ✓ Created XML: nl-20250620-0104.xml (51.68 KB)
+2026-02-13 12:59:45,658 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.88dc1d2752c3802af5c1037f57eb0f4b "HTTP/1.1 200 OK"
+2026-02-13 12:59:45,744 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0104.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:45,816 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:45,817 - ERROR - ✗ DB insert failed for nl-20250620-0104.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:45,818 - INFO - ✓ [6/3000] Processed: nl-20250620-0104.xml
+2026-02-13 12:59:46,125 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-105
+2026-02-13 12:59:49,766 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0105.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:49,792 - INFO - ✓ Created XML: nl-20250620-0105.xml (52.36 KB)
+2026-02-13 12:59:49,866 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.f43ba5efda7134c1323be0bc4abf64d3 "HTTP/1.1 200 OK"
+2026-02-13 12:59:49,950 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0105.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:50,028 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:50,029 - ERROR - ✗ DB insert failed for nl-20250620-0105.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:50,030 - INFO - ✓ [7/3000] Processed: nl-20250620-0105.xml
+2026-02-13 12:59:50,343 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-44
+2026-02-13 12:59:54,094 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0044.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:54,128 - INFO - ✓ Created XML: nl-20250620-0044.xml (51.85 KB)
+2026-02-13 12:59:54,216 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.011e27c29433e5197afb066eb3ffa480 "HTTP/1.1 200 OK"
+2026-02-13 12:59:54,335 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0044.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:54,424 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:54,425 - ERROR - ✗ DB insert failed for nl-20250620-0044.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:54,426 - INFO - ✓ [8/3000] Processed: nl-20250620-0044.xml
+2026-02-13 12:59:54,740 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-128
+2026-02-13 12:59:59,359 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0128.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:59,392 - INFO - ✓ Created XML: nl-20251222-0128.xml (52.05 KB)
+2026-02-13 12:59:59,481 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.59cf427f83697047a36ca4de65763452 "HTTP/1.1 200 OK"
+2026-02-13 12:59:59,570 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0128.xml "HTTP/1.1 200 OK"
+2026-02-13 12:59:59,668 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 12:59:59,669 - ERROR - ✗ DB insert failed for nl-20251222-0128.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 12:59:59,671 - INFO - ✓ [9/3000] Processed: nl-20251222-0128.xml
+2026-02-13 12:59:59,981 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-111
+2026-02-13 13:00:03,642 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0111.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:03,676 - INFO - ✓ Created XML: nl-20250620-0111.xml (28.72 KB)
+2026-02-13 13:00:03,746 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.659d58b7e0fa48e38afce951d3241733 "HTTP/1.1 200 OK"
+2026-02-13 13:00:03,817 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0111.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:03,885 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:03,886 - ERROR - ✗ DB insert failed for nl-20250620-0111.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:03,886 - INFO - ✓ [10/3000] Processed: nl-20250620-0111.xml
+2026-02-13 13:00:04,197 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-10-33
+2026-02-13 13:00:08,740 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250610-0033.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:08,759 - INFO - ✓ Created XML: nl-20250610-0033.xml (52.39 KB)
+2026-02-13 13:00:08,827 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.cdff5cb093325058b03ebd7af228eefb "HTTP/1.1 200 OK"
+2026-02-13 13:00:08,907 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250610-0033.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:08,978 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:08,979 - ERROR - ✗ DB insert failed for nl-20250610-0033.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:08,979 - INFO - ✓ [11/3000] Processed: nl-20250610-0033.xml
+2026-02-13 13:00:09,288 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-71
+2026-02-13 13:00:13,542 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0071.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:13,560 - INFO - ✓ Created XML: nl-20250620-0071.xml (52.54 KB)
+2026-02-13 13:00:13,640 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.3e5611165aaf1ef176c79e88ba23974b "HTTP/1.1 200 OK"
+2026-02-13 13:00:13,725 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0071.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:13,840 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:13,841 - ERROR - ✗ DB insert failed for nl-20250620-0071.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:13,841 - INFO - ✓ [12/3000] Processed: nl-20250620-0071.xml
+2026-02-13 13:00:14,144 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-74
+2026-02-13 13:00:18,417 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0074.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:18,437 - INFO - ✓ Created XML: nl-20250620-0074.xml (51.91 KB)
+2026-02-13 13:00:18,518 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.b6de149a2d9e3a96f1833a430b23fb51 "HTTP/1.1 200 OK"
+2026-02-13 13:00:18,590 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0074.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:18,663 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:18,664 - ERROR - ✗ DB insert failed for nl-20250620-0074.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:18,664 - INFO - ✓ [13/3000] Processed: nl-20250620-0074.xml
+2026-02-13 13:00:18,979 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-67
+2026-02-13 13:00:23,548 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0067.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:23,600 - INFO - ✓ Created XML: nl-20250620-0067.xml (52.63 KB)
+2026-02-13 13:00:23,670 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.d1f9685652712ab7d06cb4ed1ae8bc38 "HTTP/1.1 200 OK"
+2026-02-13 13:00:23,735 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0067.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:23,810 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:23,811 - ERROR - ✗ DB insert failed for nl-20250620-0067.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:23,811 - INFO - ✓ [14/3000] Processed: nl-20250620-0067.xml
+2026-02-13 13:00:24,126 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-99
+2026-02-13 13:00:28,668 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0099.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:28,695 - INFO - ✓ Created XML: nl-20250620-0099.xml (52.79 KB)
+2026-02-13 13:00:28,768 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.99c15cb1e13dc0db2c7fa3cf3190a289 "HTTP/1.1 200 OK"
+2026-02-13 13:00:28,834 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0099.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:28,907 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:28,909 - ERROR - ✗ DB insert failed for nl-20250620-0099.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:28,909 - INFO - ✓ [15/3000] Processed: nl-20250620-0099.xml
+2026-02-13 13:00:29,214 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-10-30
+2026-02-13 13:00:33,416 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250610-0030.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:33,436 - INFO - ✓ Created XML: nl-20250610-0030.xml (14.53 KB)
+2026-02-13 13:00:33,519 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.2988a83379837d7711fa514047be5f46 "HTTP/1.1 200 OK"
+2026-02-13 13:00:33,597 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250610-0030.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:33,676 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:33,676 - ERROR - ✗ DB insert failed for nl-20250610-0030.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:33,677 - INFO - ✓ [16/3000] Processed: nl-20250610-0030.xml
+2026-02-13 13:00:33,981 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-05-27-18
+2026-02-13 13:00:38,273 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0018.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:38,303 - INFO - ✓ Created XML: nl-20250527-0018.xml (43.50 KB)
+2026-02-13 13:00:38,377 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.f156429b235ee2c5b9d08b07ab7a8a88 "HTTP/1.1 200 OK"
+2026-02-13 13:00:38,447 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0018.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:38,512 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:38,513 - ERROR - ✗ DB insert failed for nl-20250527-0018.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:38,513 - INFO - ✓ [17/3000] Processed: nl-20250527-0018.xml
+2026-02-13 13:00:38,814 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-40
+2026-02-13 13:00:45,650 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0040.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:45,688 - INFO - ✓ Created XML: nl-20250620-0040.xml (55.07 KB)
+2026-02-13 13:00:45,764 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.8cf80a56ec69b5e25ccb9c5c93303f9a "HTTP/1.1 200 OK"
+2026-02-13 13:00:45,836 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0040.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:45,900 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:45,902 - ERROR - ✗ DB insert failed for nl-20250620-0040.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:45,902 - INFO - ✓ [18/3000] Processed: nl-20250620-0040.xml
+2026-02-13 13:00:46,217 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-04-10-9
+2026-02-13 13:00:50,136 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250410-0009.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:50,165 - INFO - ✓ Created XML: nl-20250410-0009.xml (52.44 KB)
+2026-02-13 13:00:50,230 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.70b4b04608a6741a2fd99b694a9697c8 "HTTP/1.1 200 OK"
+2026-02-13 13:00:50,297 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250410-0009.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:50,371 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:50,372 - ERROR - ✗ DB insert failed for nl-20250410-0009.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:50,372 - INFO - ✓ [19/3000] Processed: nl-20250410-0009.xml
+2026-02-13 13:00:50,680 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-117
+2026-02-13 13:00:54,274 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0117.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:54,300 - INFO - ✓ Created XML: nl-20251222-0117.xml (28.81 KB)
+2026-02-13 13:00:54,365 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.6d1154c685f719fd7ad4ca068824228f "HTTP/1.1 200 OK"
+2026-02-13 13:00:54,428 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0117.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:54,511 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:54,512 - ERROR - ✗ DB insert failed for nl-20251222-0117.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:54,512 - INFO - ✓ [20/3000] Processed: nl-20251222-0117.xml
+2026-02-13 13:00:54,822 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-84
+2026-02-13 13:00:59,038 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0084.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:59,083 - INFO - ✓ Created XML: nl-20250620-0084.xml (13.69 KB)
+2026-02-13 13:00:59,161 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.6af3c225c9641cb5b7e47e4e4575e58b "HTTP/1.1 200 OK"
+2026-02-13 13:00:59,235 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0084.xml "HTTP/1.1 200 OK"
+2026-02-13 13:00:59,302 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:00:59,303 - ERROR - ✗ DB insert failed for nl-20250620-0084.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:00:59,303 - INFO - ✓ [21/3000] Processed: nl-20250620-0084.xml
+2026-02-13 13:00:59,612 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2026-02-06-4
+2026-02-13 13:01:03,755 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0004.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:03,784 - INFO - ✓ Created XML: nl-20260206-0004.xml (15.53 KB)
+2026-02-13 13:01:03,852 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.8781999cc570def8a90ea678af2f0957 "HTTP/1.1 200 OK"
+2026-02-13 13:01:03,918 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0004.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:03,985 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:03,986 - ERROR - ✗ DB insert failed for nl-20260206-0004.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:03,986 - INFO - ✓ [22/3000] Processed: nl-20260206-0004.xml
+2026-02-13 13:01:04,299 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-106
+2026-02-13 13:01:08,214 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0106.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:08,255 - INFO - ✓ Created XML: nl-20250620-0106.xml (54.43 KB)
+2026-02-13 13:01:08,332 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.20d127a218f6eea90755b189777f91a1 "HTTP/1.1 200 OK"
+2026-02-13 13:01:08,407 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0106.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:08,473 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:08,475 - ERROR - ✗ DB insert failed for nl-20250620-0106.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:08,475 - INFO - ✓ [23/3000] Processed: nl-20250620-0106.xml
+2026-02-13 13:01:08,775 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-102
+2026-02-13 13:01:13,442 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0102.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:13,472 - INFO - ✓ Created XML: nl-20250620-0102.xml (53.76 KB)
+2026-02-13 13:01:13,538 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.db2ba5c5e23864997006574d4ceef3e3 "HTTP/1.1 200 OK"
+2026-02-13 13:01:13,621 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0102.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:13,730 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:13,731 - ERROR - ✗ DB insert failed for nl-20250620-0102.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:13,732 - INFO - ✓ [24/3000] Processed: nl-20250620-0102.xml
+2026-02-13 13:01:14,039 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-83
+2026-02-13 13:01:17,693 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0083.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:17,723 - INFO - ✓ Created XML: nl-20250620-0083.xml (51.92 KB)
+2026-02-13 13:01:17,791 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.0bb1064aff37689b9b950e25c9c768d7 "HTTP/1.1 200 OK"
+2026-02-13 13:01:17,907 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0083.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:17,975 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:17,976 - ERROR - ✗ DB insert failed for nl-20250620-0083.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:17,976 - INFO - ✓ [25/3000] Processed: nl-20250620-0083.xml
+2026-02-13 13:01:18,288 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-02-28-2
+2026-02-13 13:01:22,486 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250228-0002.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:22,508 - INFO - ✓ Created XML: nl-20250228-0002.xml (50.15 KB)
+2026-02-13 13:01:22,577 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.1581cd01424ee13c8912d4c68427b413 "HTTP/1.1 200 OK"
+2026-02-13 13:01:22,649 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250228-0002.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:22,718 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:22,719 - ERROR - ✗ DB insert failed for nl-20250228-0002.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:22,719 - INFO - ✓ [26/3000] Processed: nl-20250228-0002.xml
+2026-02-13 13:01:23,023 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-05-27-21
+2026-02-13 13:01:27,646 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0021.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:27,669 - INFO - ✓ Created XML: nl-20250527-0021.xml (52.68 KB)
+2026-02-13 13:01:27,738 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.179de6dd1e7107c0dfbb7ea1ee6b0db8 "HTTP/1.1 200 OK"
+2026-02-13 13:01:27,814 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250527-0021.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:27,886 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:27,887 - ERROR - ✗ DB insert failed for nl-20250527-0021.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:27,887 - INFO - ✓ [27/3000] Processed: nl-20250527-0021.xml
+2026-02-13 13:01:28,193 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-75
+2026-02-13 13:01:31,850 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0075.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:31,877 - INFO - ✓ Created XML: nl-20250620-0075.xml (19.63 KB)
+2026-02-13 13:01:31,951 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.df85da6e8eb7f53d99b5bdb482008ab1 "HTTP/1.1 200 OK"
+2026-02-13 13:01:32,041 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0075.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:32,107 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:32,108 - ERROR - ✗ DB insert failed for nl-20250620-0075.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:32,109 - INFO - ✓ [28/3000] Processed: nl-20250620-0075.xml
+2026-02-13 13:01:32,417 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-129
+2026-02-13 13:01:36,625 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0129.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:36,647 - INFO - ✓ Created XML: nl-20251222-0129.xml (17.94 KB)
+2026-02-13 13:01:36,721 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.86927dfddc4fa282700a2fd7ba5985e8 "HTTP/1.1 200 OK"
+2026-02-13 13:01:36,794 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0129.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:36,865 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:36,867 - ERROR - ✗ DB insert failed for nl-20251222-0129.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:36,867 - INFO - ✓ [29/3000] Processed: nl-20251222-0129.xml
+2026-02-13 13:01:37,181 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-35
+2026-02-13 13:01:40,785 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0035.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:40,802 - INFO - ✓ Created XML: nl-20250620-0035.xml (20.06 KB)
+2026-02-13 13:01:40,876 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.6c6c81d7878bc3aa0d4b667109f0b40b "HTTP/1.1 200 OK"
+2026-02-13 13:01:40,878 - INFO - 📦 Uploading batch of 30 files...
+2026-02-13 13:01:41,084 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0103.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:41,085 - ERROR - ✗ Upload failed for nl-20250620-0103.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:41,189 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0100.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:41,190 - ERROR - ✗ Upload failed for nl-20250620-0100.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:41,326 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250328-0004.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:41,327 - ERROR - ✗ Upload failed for nl-20250328-0004.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:41,491 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20260206-0002.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:41,492 - ERROR - ✗ Upload failed for nl-20260206-0002.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:41,608 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0080.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:41,609 - ERROR - ✗ Upload failed for nl-20250620-0080.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:41,752 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0104.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:41,754 - ERROR - ✗ Upload failed for nl-20250620-0104.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:41,883 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0105.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:41,884 - ERROR - ✗ Upload failed for nl-20250620-0105.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:41,975 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0044.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:41,976 - ERROR - ✗ Upload failed for nl-20250620-0044.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,107 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0128.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,108 - ERROR - ✗ Upload failed for nl-20251222-0128.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,206 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0111.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,207 - ERROR - ✗ Upload failed for nl-20250620-0111.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,303 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250610-0033.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,304 - ERROR - ✗ Upload failed for nl-20250610-0033.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,412 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0071.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,413 - ERROR - ✗ Upload failed for nl-20250620-0071.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,521 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0074.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,522 - ERROR - ✗ Upload failed for nl-20250620-0074.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,613 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0067.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,614 - ERROR - ✗ Upload failed for nl-20250620-0067.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,718 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0099.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,720 - ERROR - ✗ Upload failed for nl-20250620-0099.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,816 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250610-0030.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,817 - ERROR - ✗ Upload failed for nl-20250610-0030.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:42,927 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250527-0018.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:42,928 - ERROR - ✗ Upload failed for nl-20250527-0018.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,103 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0040.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,103 - ERROR - ✗ Upload failed for nl-20250620-0040.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,233 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250410-0009.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,234 - ERROR - ✗ Upload failed for nl-20250410-0009.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,337 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0117.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,338 - ERROR - ✗ Upload failed for nl-20251222-0117.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,433 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0084.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,434 - ERROR - ✗ Upload failed for nl-20250620-0084.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,537 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20260206-0004.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,538 - ERROR - ✗ Upload failed for nl-20260206-0004.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,643 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0106.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,645 - ERROR - ✗ Upload failed for nl-20250620-0106.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,750 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0102.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,751 - ERROR - ✗ Upload failed for nl-20250620-0102.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,846 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0083.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,848 - ERROR - ✗ Upload failed for nl-20250620-0083.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:43,952 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250228-0002.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:43,954 - ERROR - ✗ Upload failed for nl-20250228-0002.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:44,064 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250527-0021.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:44,066 - ERROR - ✗ Upload failed for nl-20250527-0021.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:44,159 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0075.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:44,160 - ERROR - ✗ Upload failed for nl-20250620-0075.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:44,233 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0129.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:44,234 - ERROR - ✗ Upload failed for nl-20251222-0129.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:44,318 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0035.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:01:44,319 - ERROR - ✗ Upload failed for nl-20250620-0035.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:01:44,319 - INFO - ✓ Batch uploaded: 30 files (Total: 0)
+2026-02-13 13:01:44,394 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0035.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:44,461 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:44,462 - ERROR - ✗ DB insert failed for nl-20250620-0035.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:44,463 - INFO - ✓ [30/3000] Processed: nl-20250620-0035.xml
+2026-02-13 13:01:44,771 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-04-25-12
+2026-02-13 13:01:49,438 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250425-0012.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:49,483 - INFO - ✓ Created XML: nl-20250425-0012.xml (51.90 KB)
+2026-02-13 13:01:49,558 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.a3ccc1ae263abfcebff80077edc8fe29 "HTTP/1.1 200 OK"
+2026-02-13 13:01:49,635 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250425-0012.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:49,721 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:49,722 - ERROR - ✗ DB insert failed for nl-20250425-0012.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:49,722 - INFO - ✓ [31/3000] Processed: nl-20250425-0012.xml
+2026-02-13 13:01:50,026 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-66
+2026-02-13 13:01:53,600 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0066.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:53,621 - INFO - ✓ Created XML: nl-20250620-0066.xml (24.53 KB)
+2026-02-13 13:01:53,701 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.799caba55a206c05881d43614e3e41bd "HTTP/1.1 200 OK"
+2026-02-13 13:01:53,777 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0066.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:53,873 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:53,874 - ERROR - ✗ DB insert failed for nl-20250620-0066.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:53,874 - INFO - ✓ [32/3000] Processed: nl-20250620-0066.xml
+2026-02-13 13:01:54,187 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-116
+2026-02-13 13:01:58,509 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0116.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:58,534 - INFO - ✓ Created XML: nl-20251222-0116.xml (51.73 KB)
+2026-02-13 13:01:58,607 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.1b0f85744c4e1b0a108aba556d339511 "HTTP/1.1 200 OK"
+2026-02-13 13:01:58,685 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0116.xml "HTTP/1.1 200 OK"
+2026-02-13 13:01:58,767 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:01:58,769 - ERROR - ✗ DB insert failed for nl-20251222-0116.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:01:58,769 - INFO - ✓ [33/3000] Processed: nl-20251222-0116.xml
+2026-02-13 13:01:59,083 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-57
+2026-02-13 13:02:02,886 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0057.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:02,907 - INFO - ✓ Created XML: nl-20250620-0057.xml (51.43 KB)
+2026-02-13 13:02:02,972 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.7d442849d2fd733f8868bcba87765a1c "HTTP/1.1 200 OK"
+2026-02-13 13:02:03,043 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0057.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:03,117 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:02:03,119 - ERROR - ✗ DB insert failed for nl-20250620-0057.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:02:03,120 - INFO - ✓ [34/3000] Processed: nl-20250620-0057.xml
+2026-02-13 13:02:03,421 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-125
+2026-02-13 13:02:07,648 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0125.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:07,685 - INFO - ✓ Created XML: nl-20251222-0125.xml (15.76 KB)
+2026-02-13 13:02:07,751 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.41b73c4eb14b859bb0807c05404a6ceb "HTTP/1.1 200 OK"
+2026-02-13 13:02:07,812 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0125.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:07,881 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:02:07,882 - ERROR - ✗ DB insert failed for nl-20251222-0125.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:02:07,882 - INFO - ✓ [35/3000] Processed: nl-20251222-0125.xml
+2026-02-13 13:02:08,188 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-12-22-115
+2026-02-13 13:02:11,798 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0115.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:11,829 - INFO - ✓ Created XML: nl-20251222-0115.xml (16.54 KB)
+2026-02-13 13:02:11,901 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.9e470b1b4392e7d6d3e3383563292cf1 "HTTP/1.1 200 OK"
+2026-02-13 13:02:11,982 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20251222-0115.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:12,049 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:02:12,050 - ERROR - ✗ DB insert failed for nl-20251222-0115.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:02:12,050 - INFO - ✓ [36/3000] Processed: nl-20251222-0115.xml
+2026-02-13 13:02:12,361 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2026-02-06-3
+2026-02-13 13:02:16,985 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0003.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:17,027 - INFO - ✓ Created XML: nl-20260206-0003.xml (53.88 KB)
+2026-02-13 13:02:17,087 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.03af028e620573f525991190e874abd7 "HTTP/1.1 200 OK"
+2026-02-13 13:02:17,162 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0003.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:17,231 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:02:17,232 - ERROR - ✗ DB insert failed for nl-20260206-0003.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:02:17,233 - INFO - ✓ [37/3000] Processed: nl-20260206-0003.xml
+2026-02-13 13:02:17,538 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-03-28-5
+2026-02-13 13:02:21,210 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250328-0005.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:21,234 - INFO - ✓ Created XML: nl-20250328-0005.xml (51.04 KB)
+2026-02-13 13:02:21,300 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.5d7e60a46cc80e5732527841ab1c6f22 "HTTP/1.1 200 OK"
+2026-02-13 13:02:21,367 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250328-0005.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:21,449 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:02:21,451 - ERROR - ✗ DB insert failed for nl-20250328-0005.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:02:21,452 - INFO - ✓ [38/3000] Processed: nl-20250328-0005.xml
+2026-02-13 13:02:21,764 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-96
+2026-02-13 13:02:25,543 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0096.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:25,563 - INFO - ✓ Created XML: nl-20250620-0096.xml (52.22 KB)
+2026-02-13 13:02:25,629 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_hash=eq.3c509caf7f467172c212e9a6b7cfd662 "HTTP/1.1 200 OK"
+2026-02-13 13:02:25,692 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20250620-0096.xml "HTTP/1.1 200 OK"
+2026-02-13 13:02:25,755 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-13 13:02:25,756 - ERROR - ✗ DB insert failed for nl-20250620-0096.xml: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'content_preview' column of 'lovdata_metadata' in the schema cache"}
+2026-02-13 13:02:25,756 - INFO - ✓ [39/3000] Processed: nl-20250620-0096.xml
+2026-02-13 13:02:26,069 - INFO - 🔍 Scraping: https://lovdata.no/dokument/NL/lov/2025-06-20-107
+2026-02-13 13:02:29,695 - INFO - 📦 Flushing remaining files in batch...
+2026-02-13 13:02:29,695 - INFO - 📦 Flushing remaining 9 files...
+2026-02-13 13:02:29,697 - INFO - 📦 Uploading batch of 9 files...
+2026-02-13 13:02:29,882 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250425-0012.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:29,884 - ERROR - ✗ Upload failed for nl-20250425-0012.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:29,973 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0066.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:29,974 - ERROR - ✗ Upload failed for nl-20250620-0066.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:30,093 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0116.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:30,094 - ERROR - ✗ Upload failed for nl-20251222-0116.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:30,175 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0057.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:30,176 - ERROR - ✗ Upload failed for nl-20250620-0057.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:30,260 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0125.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:30,261 - ERROR - ✗ Upload failed for nl-20251222-0125.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:30,372 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20251222-0115.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:30,373 - ERROR - ✗ Upload failed for nl-20251222-0115.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:30,467 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20260206-0003.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:30,468 - ERROR - ✗ Upload failed for nl-20260206-0003.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:30,577 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250328-0005.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:30,578 - ERROR - ✗ Upload failed for nl-20250328-0005.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:30,665 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Active_Laws_NL/nl-20250620-0096.xml "HTTP/2 400 Bad Request"
+2026-02-13 13:02:30,666 - ERROR - ✗ Upload failed for nl-20250620-0096.xml: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-13 13:02:30,666 - INFO - ✓ Batch uploaded: 9 files (Total: 0)
+2026-02-13 13:02:30,666 - INFO - ✓ Uploaded 9 remaining files

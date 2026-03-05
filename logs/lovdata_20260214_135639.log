@@ -1,0 +1,8 @@
+2026-02-14 13:56:43,506 - INFO - ✓ Database connected
+2026-02-14 13:56:43,508 - INFO - ====== WebDriver manager ======
+2026-02-14 13:56:45,596 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:56:45,849 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:56:46,036 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 13:56:46,036 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 13:56:46,036 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 13:56:47,561 - INFO - ✓ Browser started (headless mode)

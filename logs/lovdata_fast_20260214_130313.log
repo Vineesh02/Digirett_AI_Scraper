@@ -1,0 +1,225 @@
+2026-02-14 13:03:17,037 - INFO - ================================================================================
+2026-02-14 13:03:17,038 - INFO - LOVDATA PRO SCRAPER - ULTRA-FAST MODE
+2026-02-14 13:03:17,038 - INFO - ================================================================================
+2026-02-14 13:03:17,038 - INFO - Year range:   2020-2026
+2026-02-14 13:03:17,040 - INFO - Batch upload: Every 50 files
+2026-02-14 13:03:17,040 - INFO - Delay:        0.1s
+2026-02-14 13:03:17,040 - INFO - ================================================================================
+2026-02-14 13:03:17,845 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:03:17,855 - INFO - ✓ Database connected
+2026-02-14 13:03:17,855 - INFO - ====== WebDriver manager ======
+2026-02-14 13:03:20,029 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:03:20,355 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:03:20,493 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 13:03:20,494 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 13:03:20,495 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 13:03:21,971 - INFO - ✓ Browser started (UI visible mode)
+2026-02-14 13:03:21,972 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 13:03:22,410 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/bucket "HTTP/2 200 OK"
+2026-02-14 13:03:22,411 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 13:03:22,411 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 13:03:22,411 - INFO - 🔐 Logging in...
+2026-02-14 13:03:40,742 - INFO - ✓ Login successful
+2026-02-14 13:03:40,742 - INFO - 📋 MODE: all
+
+2026-02-14 13:03:40,742 - INFO - ================================================================================
+2026-02-14 13:03:40,742 - INFO - SOURCES OF LAW
+2026-02-14 13:03:40,742 - INFO - ================================================================================
+2026-02-14 13:03:40,742 - INFO - ✓ 16 categories enabled
+
+2026-02-14 13:03:40,742 - INFO - 
+[1/16] Laws and Regulations → Active Laws (NL)
+2026-02-14 13:03:40,742 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 13:03:45,508 - INFO -   ✅ Found 5 documents
+2026-02-14 13:03:45,508 - INFO -   📄 5 documents found
+2026-02-14 13:03:48,849 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0004.xml&subcategory=eq.Active_Laws_NL&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:03:50,742 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260123-0001.xml&subcategory=eq.Active_Laws_NL&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:03:52,853 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0002.xml&subcategory=eq.Active_Laws_NL&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:03:54,985 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0003.xml&subcategory=eq.Active_Laws_NL&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:03:56,912 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260213-0006.xml&subcategory=eq.Active_Laws_NL&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:03:57,024 - INFO - 
+[2/16] Laws and Regulations → Central Regulations (SF)
+2026-02-14 13:03:57,024 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 13:04:02,083 - INFO -   ✅ Found 33 documents
+2026-02-14 13:04:02,083 - INFO -   📄 30 documents found
+2026-02-14 13:04:04,200 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:04,849 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:05,100 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260128-0107.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:05,659 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:05,781 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260127-0093.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:06,337 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:06,483 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260116-0055.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:07,082 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:07,205 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260112-0026.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:07,761 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:07,886 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260204-0164.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:08,478 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:08,620 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260123-0083.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:09,131 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:09,246 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260204-0163.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:09,821 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:09,945 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260114-0044.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:10,472 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:10,626 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260210-0178.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:11,192 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:11,319 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260107-0012.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:11,972 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:12,134 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260105-0005.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:12,833 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:13,026 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260129-0108.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:13,211 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260112-0023.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:13,281 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20260112-0023.xml
+2026-02-14 13:04:13,384 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260112-0023.xml "HTTP/1.1 200 OK"
+2026-02-14 13:04:13,531 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-14 13:04:13,533 - INFO - ✓ Saved to DB: sf-20260112-0023.xml
+2026-02-14 13:04:13,533 - INFO -   ✓ Saved: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20260112-0023.xml
+2026-02-14 13:04:14,234 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:14,366 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260112-0028.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:14,995 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:15,120 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260204-0143.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:15,851 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:16,178 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260105-0013.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:16,261 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260105-0004.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:17,326 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:17,439 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260128-0149.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:18,013 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:18,140 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260115-0047.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:18,685 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:18,810 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260204-0165.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:19,733 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:20,095 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260121-0071.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:20,126 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260123-0081.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:20,180 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20260123-0081.xml
+2026-02-14 13:04:20,280 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260123-0081.xml "HTTP/1.1 200 OK"
+2026-02-14 13:04:20,391 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-14 13:04:20,394 - INFO - ✓ Saved to DB: sf-20260123-0081.xml
+2026-02-14 13:04:20,394 - INFO -   ✓ Saved: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20260123-0081.xml
+2026-02-14 13:04:21,423 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:21,445 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:21,593 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260128-0125.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:23,016 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:23,059 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:23,179 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260115-0048.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:23,180 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260206-0147.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:24,486 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:24,669 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260107-0015.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:25,526 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:25,575 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:25,678 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260121-0091.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:25,718 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260113-0031.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:26,645 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260112-0024.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:27,374 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.sf-20260203-0130.xml&subcategory=eq.Central_Regulations_SF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:27,378 - INFO - 
+[3/16] Laws and Regulations → Local Regulations (LF)
+2026-02-14 13:04:27,378 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 13:04:33,665 - INFO -   ✅ Found 29 documents
+2026-02-14 13:04:33,665 - INFO -   📄 29 documents found
+2026-02-14 13:04:35,673 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:36,246 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:36,484 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260204-0136.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:37,046 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:37,176 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260114-0089.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:37,778 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:37,914 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260209-0189.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:38,543 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:38,704 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260205-0159.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:39,277 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:39,431 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260209-0188.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:39,997 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:40,146 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260205-0158.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:40,688 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:40,869 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260121-0065.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:41,540 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:41,783 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260129-0146.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:41,930 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260114-0035.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:43,745 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:43,765 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:43,929 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260203-0133.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:44,524 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:44,665 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260203-0156.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:45,241 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:45,398 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260202-0152.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:45,949 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:46,088 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260113-0051.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:46,680 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:46,806 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260120-0184.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:47,450 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:47,598 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260210-0190.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:48,185 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:48,330 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260113-0052.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:48,918 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:49,058 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260203-0154.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:49,607 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:50,020 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260202-0153.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:50,121 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260129-0117.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:51,156 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:51,186 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:51,323 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260205-0186.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:51,872 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:51,986 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260129-0122.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:52,522 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:52,638 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260205-0155.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:53,242 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:53,383 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260205-0161.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:54,034 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:54,167 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260205-0187.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:54,721 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:54,851 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260129-0132.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:55,459 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:55,601 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260122-0078.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:56,194 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:04:56,341 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260122-0135.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:56,588 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260204-0185.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:57,400 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lf-20260128-0151.xml&subcategory=eq.Local_Regulations_LF&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:04:57,406 - INFO - 
+[4/16] Laws and Regulations → Repealed Laws (NLO)
+2026-02-14 13:04:57,408 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 13:05:03,082 - INFO -   ✅ Found 1 documents
+2026-02-14 13:05:03,083 - INFO -   📄 1 documents found
+2026-02-14 13:05:05,813 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nlo-20250523-0015.xml&subcategory=eq.Repealed_Laws_NLO&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:05:05,928 - INFO - 
+[5/16] Laws and Regulations → Emergency Laws (NLE)
+2026-02-14 13:05:05,928 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLE
+2026-02-14 13:05:11,561 - INFO -   ✅ Found 3 documents
+2026-02-14 13:05:11,562 - INFO -   📄 3 documents found
+2026-02-14 13:05:14,806 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nle-20250527-0021.xml&subcategory=eq.Emergency_Laws_NLE&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:05:16,812 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nle-20250620-0057.xml&subcategory=eq.Emergency_Laws_NLE&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:05:18,823 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nle-20250610-0033.xml&subcategory=eq.Emergency_Laws_NLE&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 13:05:18,931 - INFO - 
+[6/16] Laws and Regulations → Repealed Regulations (SFO)
+2026-02-14 13:05:18,931 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SFO
+2026-02-14 13:05:22,405 - INFO - 
+📦 Flushing remaining batch...
+2026-02-14 13:05:22,406 - INFO - 📦 Flushing remaining 2 files...
+2026-02-14 13:05:22,406 - INFO - 📦 Uploading batch of 2 files...
+2026-02-14 13:05:23,092 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20260112-0023.xml "HTTP/2 200 OK"
+2026-02-14 13:05:23,094 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20260112-0023.xml
+2026-02-14 13:05:23,095 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20260112-0023.xml
+2026-02-14 13:05:25,015 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/01_Laws_and_Regulations/Central_Regulations_SF/sf-20260123-0081.xml "HTTP/2 200 OK"
+2026-02-14 13:05:25,016 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/sf-20260123-0081.xml
+2026-02-14 13:05:25,018 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\sf-20260123-0081.xml
+2026-02-14 13:05:25,019 - INFO - ✓ Batch uploaded: 2 files (Total: 2)
+2026-02-14 13:05:25,019 - INFO - ✓ Uploaded 2 files
+2026-02-14 13:05:29,113 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59152): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/b00ada45e667cc76e92af42f362e9aef
+2026-02-14 13:05:33,193 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59152): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/b00ada45e667cc76e92af42f362e9aef
+2026-02-14 13:05:37,290 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=59152): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/b00ada45e667cc76e92af42f362e9aef
+2026-02-14 13:05:45,484 - INFO - ✓ Browser closed
+2026-02-14 13:05:45,485 - INFO - 
+================================================================================
+2026-02-14 13:05:45,486 - INFO - 📊 EXCEL EXPORT
+2026-02-14 13:05:45,486 - INFO - ================================================================================
+2026-02-14 13:05:45,815 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=%2A "HTTP/1.1 200 OK"
+2026-02-14 13:05:45,831 - INFO - Retrieved 596 records
+2026-02-14 13:05:45,831 - INFO -   ✓ Using ExcelExporter.export()
+2026-02-14 13:05:45,873 - ERROR -   ✗ export() failed: module 'config' has no attribute 'EXCEL_DIR'
+2026-02-14 13:05:45,873 - ERROR - ✗ Excel export failed
+2026-02-14 13:05:45,874 - INFO - 
+================================================================================
+2026-02-14 13:05:45,874 - INFO - SUMMARY
+2026-02-14 13:05:45,874 - INFO - ================================================================================
+2026-02-14 13:05:45,874 - INFO - ✓ Success:   2
+2026-02-14 13:05:45,876 - INFO - ✗ Failed:    0
+2026-02-14 13:05:45,876 - INFO - ⊘ Skipped:   66
+2026-02-14 13:05:45,876 - INFO - 📤 Uploaded: 2
+2026-02-14 13:05:45,876 - INFO - 📝 TOTAL:    2
+2026-02-14 13:05:45,877 - INFO - ================================================================================

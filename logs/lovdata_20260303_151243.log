@@ -1,0 +1,61 @@
+2026-03-03 15:12:48,087 - INFO - ✓ Supabase table: legal_area_metadata
+2026-03-03 15:12:48,088 - INFO - ✓ Supabase bucket: legal_area
+2026-03-03 15:12:48,088 - INFO - ✓ Storage handler initialized
+2026-03-03 15:12:48,089 - INFO - ENV/CONFIG CHECK
+2026-03-03 15:12:48,090 - INFO - ✓ SUPABASE_TABLE: legal_area_metadata
+2026-03-03 15:12:48,090 - INFO - ✓ SUPABASE_BUCKET: legal_area
+2026-03-03 15:12:48,090 - INFO - ✓ TIMEOUT: 30
+2026-03-03 15:12:48,091 - INFO - ✓ HEADLESS: False
+2026-03-03 15:12:48,091 - INFO - ✓ YEAR RANGE: 2000–2026
+2026-03-03 15:12:48,091 - INFO - ✓ BATCH_UPLOAD_SIZE: 10
+2026-03-03 15:12:48,092 - INFO - ----------------------------------------------------------------------
+2026-03-03 15:12:48,093 - INFO - 🔐 Opening Lovdata login page...
+2026-03-03 15:12:53,500 - INFO - ✅ Login successful
+2026-03-03 15:12:53,500 - INFO - ======================================================================
+2026-03-03 15:12:53,501 - INFO - MODE: legal_areas_only
+2026-03-03 15:12:53,501 - INFO - ======================================================================
+2026-03-03 15:13:02,344 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 15:13:03,201 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 15:13:03,201 - INFO - 📊 Total ROOT discovered: 35
+2026-03-03 15:13:12,158 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 15:13:12,628 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 15:13:12,628 - INFO - 
+======================================================================
+2026-03-03 15:13:12,628 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 15:13:12,628 - INFO - ======================================================================
+2026-03-03 15:13:17,015 - INFO - 🔗 ROOT docs: 15
+2026-03-03 15:13:17,016 - INFO - ⏭️ Skipping (year out of range): 1918 | https://lovdata.no/pro/#document/NL/lov/1918-05-31-4
+2026-03-03 15:13:19,017 - INFO - ⏭️ Skipping (year out of range): 1989 | https://lovdata.no/pro/#document/NL/lov/1989-06-16-63
+2026-03-03 15:13:21,972 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-65.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:14:20,208 - ERROR - ❌ PDF download failed (exception): Message: 
+ | doc=https://lovdata.no/pro/#document/NL/lov/2017-06-16-65
+2026-03-03 15:14:20,212 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2017-06-16-65
+2026-03-03 15:14:23,700 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2016-06-17-73.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:15:21,543 - ERROR - ❌ PDF download failed (exception): Message: 
+ | doc=https://lovdata.no/pro/#document/NL/lov/2016-06-17-73
+2026-03-03 15:15:21,553 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2016-06-17-73
+2026-03-03 15:15:23,556 - INFO - ⏭️ Skipping (year out of range): 1997 | https://lovdata.no/pro/#document/NL/lov/1997-06-13-43
+2026-03-03 15:15:25,558 - INFO - ⏭️ Skipping (year out of range): None | https://lovdata.no/pro/#document/NL/lov/1687-04-15
+2026-03-03 15:15:28,109 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2003-06-06-38.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:16:25,788 - ERROR - ❌ PDF download failed (exception): Message: 
+ | doc=https://lovdata.no/pro/#document/NL/lov/2003-06-06-38
+2026-03-03 15:16:25,791 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2003-06-06-38
+2026-03-03 15:16:27,792 - INFO - ⏭️ Skipping (year out of range): 1985 | https://lovdata.no/pro/#document/NL/lov/1985-06-21-80
+2026-03-03 15:16:30,051 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2024-06-21-42.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:17:27,821 - ERROR - ❌ PDF download failed (exception): Message: 
+ | doc=https://lovdata.no/pro/#document/NL/lov/2024-06-21-42
+2026-03-03 15:17:27,824 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2024-06-21-42
+2026-03-03 15:17:30,426 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2012-05-25-27.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:18:28,220 - ERROR - ❌ PDF download failed (exception): Message: 
+ | doc=https://lovdata.no/pro/#document/NL/lov/2012-05-25-27
+2026-03-03 15:18:28,223 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2012-05-25-27
+2026-03-03 15:18:30,588 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2020-04-17-29.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:19:28,340 - ERROR - ❌ PDF download failed (exception): Message: 
+ | doc=https://lovdata.no/pro/#document/NL/lov/2020-04-17-29
+2026-03-03 15:19:28,342 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2020-04-17-29
+2026-03-03 15:19:30,344 - INFO - ⏭️ Skipping (year out of range): 1996 | https://lovdata.no/pro/#document/NL/lov/1996-03-22-16
+2026-03-03 15:19:32,975 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2025-12-22-129.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:20:08,507 - ERROR - ❌ Modal print button not clickable: https://lovdata.no/pro/#document/NL/lov/2025-12-22-129
+2026-03-03 15:20:08,507 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2025-12-22-129
+2026-03-03 15:20:10,508 - INFO - ⏭️ Skipping (year out of range): 1999 | https://lovdata.no/pro/#document/NLO/lov/1999-07-16-69
+2026-03-03 15:20:12,029 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/d9a12159fd1198b5804d8d5e0ca39435

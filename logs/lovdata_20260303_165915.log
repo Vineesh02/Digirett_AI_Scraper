@@ -1,0 +1,881 @@
+2026-03-03 16:59:21,890 - INFO - ✓ Supabase bucket : legal_area
+2026-03-03 16:59:21,890 - INFO - ✓ Supabase table  : legal_area_metadata
+2026-03-03 16:59:21,890 - INFO - ✓ StorageHandler initialized
+2026-03-03 16:59:21,890 - INFO - ======================================================================
+2026-03-03 16:59:21,890 - INFO - ENV / CONFIG
+2026-03-03 16:59:21,890 - INFO -   SUPABASE_TABLE  : legal_area_metadata
+2026-03-03 16:59:21,890 - INFO -   SUPABASE_BUCKET : legal_area
+2026-03-03 16:59:21,890 - INFO -   BASE_DIR        : ./scraped_xml
+2026-03-03 16:59:21,897 - INFO -   TIMEOUT         : 30
+2026-03-03 16:59:21,897 - INFO -   HEADLESS        : False
+2026-03-03 16:59:21,897 - INFO -   YEAR RANGE      : 2000 – 2026
+2026-03-03 16:59:21,899 - INFO -   BATCH SIZE      : 10
+2026-03-03 16:59:21,899 - INFO - ======================================================================
+2026-03-03 16:59:28,942 - INFO - ✅ Login successful
+2026-03-03 17:00:04,192 - WARNING - ⚠️ Tree container not found by ID, falling back to CSS
+2026-03-03 17:00:05,231 - INFO - Found 35 tree node(s)
+2026-03-03 17:00:05,469 - INFO - 📋 ROOT categories discovered: 35
+2026-03-03 17:00:05,470 - INFO - 📊 Total ROOTs: 35
+2026-03-03 17:00:40,888 - WARNING - ⚠️ Tree container not found by ID, falling back to CSS
+2026-03-03 17:00:41,931 - INFO - Found 35 tree node(s)
+2026-03-03 17:00:42,144 - INFO - 📋 ROOT categories discovered: 35
+2026-03-03 17:00:42,144 - INFO - 
+======================================================================
+2026-03-03 17:00:42,146 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 17:00:42,146 - INFO - ======================================================================
+2026-03-03 17:00:43,507 - INFO -    Branch count: 5
+2026-03-03 17:01:18,985 - WARNING - ⚠️ Tree container not found by ID, falling back to CSS
+2026-03-03 17:01:20,013 - INFO - Found 40 tree node(s)
+2026-03-03 17:01:20,312 - INFO - 📋 ROOT categories discovered: 40
+2026-03-03 17:01:21,396 - INFO -    [1/5] BRANCH: Anskaffelser
+2026-03-03 17:01:22,504 - INFO -       Leaf count: 0
+2026-03-03 17:01:22,504 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-03 17:01:23,289 - INFO - 📑 Sections found: ['LATEST DOCUMENTS', 'LAWS', 'REGULATIONS', 'DECISIONS FROM THE SUPREME COURT', 'DECISIONS FROM THE COURTS OF APPEAL', 'DECISIONS FROM THE DISTRICT COURTS', 'ARTICLES', 'DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD', "DOCUMENTS FROM THE CONSTRUCTION INDUSTRY'S PROFESSIONAL LEGAL COUNCIL", 'DOCUMENTS FROM THE MINISTRY OF JUSTICE', 'OTHER DOCUMENTS']
+2026-03-03 17:01:23,289 - INFO -   ↳ Collecting section: LATEST DOCUMENTS
+2026-03-03 17:01:27,539 - INFO -     ✅ LATEST DOCUMENTS                                        expected=None   collected=88
+2026-03-03 17:01:27,539 - INFO -   ↳ Collecting section: LAWS
+2026-03-03 17:01:31,798 - INFO -     ✅ LAWS                                                    expected=None   collected=88
+2026-03-03 17:01:31,798 - INFO -   ↳ Collecting section: REGULATIONS
+2026-03-03 17:01:36,089 - INFO -     ✅ REGULATIONS                                             expected=None   collected=88
+2026-03-03 17:01:36,089 - INFO -   ↳ Collecting section: DECISIONS FROM THE SUPREME COURT
+2026-03-03 17:01:40,422 - INFO -     ✅ DECISIONS FROM THE SUPREME COURT                        expected=None   collected=88
+2026-03-03 17:01:40,422 - INFO -   ↳ Collecting section: DECISIONS FROM THE COURTS OF APPEAL
+2026-03-03 17:01:44,752 - INFO -     ✅ DECISIONS FROM THE COURTS OF APPEAL                     expected=None   collected=88
+2026-03-03 17:01:44,752 - INFO -   ↳ Collecting section: DECISIONS FROM THE DISTRICT COURTS
+2026-03-03 17:01:49,100 - INFO -     ✅ DECISIONS FROM THE DISTRICT COURTS                      expected=None   collected=88
+2026-03-03 17:01:49,100 - INFO -   ↳ Collecting section: ARTICLES
+2026-03-03 17:01:53,442 - INFO -     ✅ ARTICLES                                                expected=None   collected=88
+2026-03-03 17:01:53,447 - INFO -   ↳ Collecting section: DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD
+2026-03-03 17:01:57,921 - INFO -     ✅ DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  expected=None   collected=88
+2026-03-03 17:01:57,925 - INFO -   ↳ Collecting section: DOCUMENTS FROM THE CONSTRUCTION INDUSTRY'S PROFESSIONAL LEGAL COUNCIL
+2026-03-03 17:02:02,271 - INFO -     ✅ DOCUMENTS FROM THE CONSTRUCTION INDUSTRY'S PROFESSIONAL LEGAL COUNCIL expected=None   collected=88
+2026-03-03 17:02:02,272 - INFO -   ↳ Collecting section: DOCUMENTS FROM THE MINISTRY OF JUSTICE
+2026-03-03 17:02:06,625 - INFO -     ✅ DOCUMENTS FROM THE MINISTRY OF JUSTICE                  expected=None   collected=88
+2026-03-03 17:02:06,625 - INFO -   ↳ Collecting section: OTHER DOCUMENTS
+2026-03-03 17:02:11,077 - INFO -     ✅ OTHER DOCUMENTS                                         expected=None   collected=88
+2026-03-03 17:02:11,078 - INFO -    📂 SECTION | LATEST DOCUMENTS                                        | expected=None  | found=88
+2026-03-03 17:02:12,345 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-03-06.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:12,349 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/EUR/eur-2026-03-06
+2026-03-03 17:02:14,395 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.0b30c21c394fafe81bb1cca43728830d&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:14,465 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\EUR_eur-2026-03-06.xml  (1991 bytes)
+2026-03-03 17:02:14,473 - INFO - ✅ Queued [1/10] EUR_eur-2026-03-06.xml                   type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:16,647 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-198508.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:16,648 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-198508
+2026-03-03 17:02:18,592 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.5dcd5cef7395ec8f0e20a6245781262d&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:18,614 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-198508.xml  (2710 bytes)
+2026-03-03 17:02:18,614 - INFO - ✅ Queued [2/10] TRSIV_avgjorelse_tosl-2025-198508.xml    type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:20,799 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-180124.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:20,799 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-180124
+2026-03-03 17:02:22,784 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.40a4ccb48b1b2010652dc5315187d3ec&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:22,804 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-180124.xml  (2122 bytes)
+2026-03-03 17:02:22,804 - INFO - ✅ Queued [3/10] TRSIV_avgjorelse_tosl-2025-180124.xml    type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:24,972 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-01-02.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:24,973 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/EUR/eur-2026-01-02
+2026-03-03 17:02:26,907 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.40a4ccb48b1b2010652dc5315187d3ec&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:26,924 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\EUR_eur-2026-01-02.xml  (2092 bytes)
+2026-03-03 17:02:26,924 - INFO - ✅ Queued [4/10] EUR_eur-2026-01-02.xml                   type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:29,088 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.ROO_rundskriv_is-2026-9001.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:29,089 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/ROO/rundskriv/is-2026-9001
+2026-03-03 17:02:31,077 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.40a4ccb48b1b2010652dc5315187d3ec&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:31,095 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\ROO_rundskriv_is-2026-9001.xml  (2108 bytes)
+2026-03-03 17:02:31,096 - INFO - ✅ Queued [5/10] ROO_rundskriv_is-2026-9001.xml           type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:33,250 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-171257.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:33,257 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-171257
+2026-03-03 17:02:35,299 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.40a4ccb48b1b2010652dc5315187d3ec&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:35,318 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LBSIV_avgjorelse_lb-2025-171257.xml  (2118 bytes)
+2026-03-03 17:02:35,318 - INFO - ✅ Queued [6/10] LBSIV_avgjorelse_lb-2025-171257.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:37,498 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.INNST_forarbeid_inns-38-l-202526.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:37,500 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/INNST/forarbeid/inns-38-l-202526
+2026-03-03 17:02:39,534 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.17a9a91fec7cc733b005503afe26026b&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:39,549 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\INNST_forarbeid_inns-38-l-202526.xml  (2947 bytes)
+2026-03-03 17:02:39,549 - INFO - ✅ Queued [7/10] INNST_forarbeid_inns-38-l-202526.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:41,713 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tsol-2025-181219.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:41,715 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tsol-2025-181219
+2026-03-03 17:02:43,733 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.19010fb1911f42fb9f3ac57a84528efa&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:43,751 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tsol-2025-181219.xml  (3159 bytes)
+2026-03-03 17:02:43,751 - INFO - ✅ Queued [8/10] TRSIV_avgjorelse_tsol-2025-181219.xml    type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:45,925 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2025-20-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:45,925 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/EUR/eur-2025-20-04
+2026-03-03 17:02:47,781 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.7999186f1c3baba6a902a742be355931&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:47,802 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\EUR_eur-2025-20-04.xml  (737 bytes)
+2026-03-03 17:02:47,802 - INFO - ✅ Queued [9/10] EUR_eur-2025-20-04.xml                   type=LATEST DOCUMENTS                    source=html_text
+2026-03-03 17:02:49,974 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-26330.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:49,975 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-26330
+2026-03-03 17:02:51,975 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.51553a6a975378f9816086939f3885ba&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:51,992 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LBSIV_avgjorelse_lb-2025-26330.xml  (2797 bytes)
+2026-03-03 17:02:51,993 - INFO - ✅ Queued [10/10] LBSIV_avgjorelse_lb-2025-26330.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:02:51,993 - INFO - 
+2026-03-03 17:02:51,993 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:02:51,993 - INFO - ⬆️  BATCH UPLOAD — 10 XML files
+2026-03-03 17:02:51,994 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:02:51,994 - INFO -   [1/10] Uploading: EUR_eur-2026-03-06.xml
+2026-03-03 17:02:52,466 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/EUR_eur-2026-03-06.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:52,466 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/EUR_eur-2026-03-06.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:52,466 - ERROR -   ❌ Upload failed — skipping metadata: EUR_eur-2026-03-06.xml
+2026-03-03 17:02:52,468 - INFO -   [2/10] Uploading: TRSIV_avgjorelse_tosl-2025-198508.xml
+2026-03-03 17:02:52,701 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-198508.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:52,701 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-198508.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:52,701 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tosl-2025-198508.xml
+2026-03-03 17:02:52,705 - INFO -   [3/10] Uploading: TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-03-03 17:02:52,944 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-180124.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:52,945 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-180124.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:52,946 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-03-03 17:02:52,946 - INFO -   [4/10] Uploading: EUR_eur-2026-01-02.xml
+2026-03-03 17:02:53,167 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/EUR_eur-2026-01-02.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:53,167 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/EUR_eur-2026-01-02.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:53,167 - ERROR -   ❌ Upload failed — skipping metadata: EUR_eur-2026-01-02.xml
+2026-03-03 17:02:53,167 - INFO -   [5/10] Uploading: ROO_rundskriv_is-2026-9001.xml
+2026-03-03 17:02:53,354 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/ROO_rundskriv_is-2026-9001.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:53,355 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/ROO_rundskriv_is-2026-9001.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:53,355 - ERROR -   ❌ Upload failed — skipping metadata: ROO_rundskriv_is-2026-9001.xml
+2026-03-03 17:02:53,355 - INFO -   [6/10] Uploading: LBSIV_avgjorelse_lb-2025-171257.xml
+2026-03-03 17:02:53,564 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2025-171257.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:53,564 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2025-171257.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:53,566 - ERROR -   ❌ Upload failed — skipping metadata: LBSIV_avgjorelse_lb-2025-171257.xml
+2026-03-03 17:02:53,566 - INFO -   [7/10] Uploading: INNST_forarbeid_inns-38-l-202526.xml
+2026-03-03 17:02:53,732 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/INNST_forarbeid_inns-38-l-202526.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:53,732 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/INNST_forarbeid_inns-38-l-202526.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:53,732 - ERROR -   ❌ Upload failed — skipping metadata: INNST_forarbeid_inns-38-l-202526.xml
+2026-03-03 17:02:53,732 - INFO -   [8/10] Uploading: TRSIV_avgjorelse_tsol-2025-181219.xml
+2026-03-03 17:02:53,931 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tsol-2025-181219.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:53,931 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tsol-2025-181219.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:53,931 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tsol-2025-181219.xml
+2026-03-03 17:02:53,937 - INFO -   [9/10] Uploading: EUR_eur-2025-20-04.xml
+2026-03-03 17:02:54,119 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/EUR_eur-2025-20-04.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:54,120 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/EUR_eur-2025-20-04.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:54,120 - ERROR -   ❌ Upload failed — skipping metadata: EUR_eur-2025-20-04.xml
+2026-03-03 17:02:54,121 - INFO -   [10/10] Uploading: LBSIV_avgjorelse_lb-2025-26330.xml
+2026-03-03 17:02:54,323 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2025-26330.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:02:54,325 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2025-26330.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:02:54,325 - ERROR -   ❌ Upload failed — skipping metadata: LBSIV_avgjorelse_lb-2025-26330.xml
+2026-03-03 17:02:54,328 - INFO - ✅ Batch complete — all 10 files uploaded & local copies removed
+2026-03-03 17:02:54,328 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:02:54,328 - INFO - 
+2026-03-03 17:02:56,548 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2016-06-17-73.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:56,562 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/NL/lov/2016-06-17-73
+2026-03-03 17:02:58,532 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.c820463e3da70dd34a5d84e642c210c1&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:02:58,554 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\NL_lov_2016-06-17-73.xml  (3146 bytes)
+2026-03-03 17:02:58,554 - INFO - ✅ Queued [1/10] NL_lov_2016-06-17-73.xml                 type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:00,556 - INFO - ⏭️  Year 1999 out of range — skip: https://lovdata.no/pro/#document/NLO/lov/1999-07-16-69
+2026-03-03 17:03:02,715 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2002-11-15-1288.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:02,715 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2002-11-15-1288
+2026-03-03 17:03:04,682 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e77bd8c5c1a375e1e0a24efcb55378a3&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:04,706 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2002-11-15-1288.xml  (3078 bytes)
+2026-03-03 17:03:04,706 - INFO - ✅ Queued [2/10] SF_forskrift_2002-11-15-1288.xml         type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:06,865 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-974.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:06,865 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-974
+2026-03-03 17:03:08,819 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.59d6530985a894cf58ce884fa7261303&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:08,837 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2016-08-12-974.xml  (3371 bytes)
+2026-03-03 17:03:08,838 - INFO - ✅ Queued [3/10] SF_forskrift_2016-08-12-974.xml          type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:10,993 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-975.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:10,993 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-975
+2026-03-03 17:03:13,192 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.4173d89116cbbc04c6b698d3375eeb23&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:13,217 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2016-08-12-975.xml  (2391 bytes)
+2026-03-03 17:03:13,218 - INFO - ✅ Queued [4/10] SF_forskrift_2016-08-12-975.xml          type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:15,387 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2008-02-08-112.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:15,387 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2008-02-08-112
+2026-03-03 17:03:17,371 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e83538561237fadd079fcfe04a4eec4f&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:17,392 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2008-02-08-112.xml  (3031 bytes)
+2026-03-03 17:03:17,392 - INFO - ✅ Queued [5/10] SF_forskrift_2008-02-08-112.xml          type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:19,546 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2013-10-04-1185.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:19,546 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2013-10-04-1185
+2026-03-03 17:03:21,580 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.593b1f74f4bc7086ab2abf89b9e8249b&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:21,596 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2013-10-04-1185.xml  (3454 bytes)
+2026-03-03 17:03:21,596 - INFO - ✅ Queued [6/10] SF_forskrift_2013-10-04-1185.xml         type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:23,748 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-12-17-1708.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:23,761 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2016-12-17-1708
+2026-03-03 17:03:25,568 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.4112b492af741df35a9399dac6a9a8ed&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:25,588 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2016-12-17-1708.xml  (730 bytes)
+2026-03-03 17:03:25,588 - INFO - ✅ Queued [7/10] SF_forskrift_2016-12-17-1708.xml         type=LATEST DOCUMENTS                    source=html_text
+2026-03-03 17:03:27,594 - INFO - ⏭️  Year 1992 out of range — skip: https://lovdata.no/pro/#document/SF/forskrift/1992-12-04-910
+2026-03-03 17:03:29,756 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2019-04-01-444.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:29,757 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2019-04-01-444
+2026-03-03 17:03:31,757 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e7c985dc521c792dd4c080c90a860519&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:31,773 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2019-04-01-444.xml  (2674 bytes)
+2026-03-03 17:03:31,774 - INFO - ✅ Queued [8/10] SF_forskrift_2019-04-01-444.xml          type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:33,938 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2022-12-20-2384.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:33,939 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2022-12-20-2384
+2026-03-03 17:03:35,756 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.aa70b029fe12b2ed07cfbfbfe0a5a428&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:35,770 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2022-12-20-2384.xml  (730 bytes)
+2026-03-03 17:03:35,771 - INFO - ✅ Queued [9/10] SF_forskrift_2022-12-20-2384.xml         type=LATEST DOCUMENTS                    source=html_text
+2026-03-03 17:03:37,933 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-978.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:37,933 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-978
+2026-03-03 17:03:39,895 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.c9204fca99261b8db5c8f0b2cfdcd8f0&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:39,909 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\SF_forskrift_2016-08-12-978.xml  (2471 bytes)
+2026-03-03 17:03:39,910 - INFO - ✅ Queued [10/10] SF_forskrift_2016-08-12-978.xml          type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:39,910 - INFO - 
+2026-03-03 17:03:39,910 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:03:39,910 - INFO - ⬆️  BATCH UPLOAD — 10 XML files
+2026-03-03 17:03:39,910 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:03:39,911 - INFO -   [1/10] Uploading: NL_lov_2016-06-17-73.xml
+2026-03-03 17:03:40,434 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/NL_lov_2016-06-17-73.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:40,435 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/NL_lov_2016-06-17-73.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:40,436 - ERROR -   ❌ Upload failed — skipping metadata: NL_lov_2016-06-17-73.xml
+2026-03-03 17:03:40,436 - INFO -   [2/10] Uploading: SF_forskrift_2002-11-15-1288.xml
+2026-03-03 17:03:40,634 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2002-11-15-1288.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:40,635 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2002-11-15-1288.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:40,635 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2002-11-15-1288.xml
+2026-03-03 17:03:40,636 - INFO -   [3/10] Uploading: SF_forskrift_2016-08-12-974.xml
+2026-03-03 17:03:40,830 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2016-08-12-974.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:40,831 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2016-08-12-974.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:40,831 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2016-08-12-974.xml
+2026-03-03 17:03:40,831 - INFO -   [4/10] Uploading: SF_forskrift_2016-08-12-975.xml
+2026-03-03 17:03:41,045 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2016-08-12-975.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:41,046 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2016-08-12-975.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:41,047 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2016-08-12-975.xml
+2026-03-03 17:03:41,047 - INFO -   [5/10] Uploading: SF_forskrift_2008-02-08-112.xml
+2026-03-03 17:03:41,237 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2008-02-08-112.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:41,239 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2008-02-08-112.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:41,239 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2008-02-08-112.xml
+2026-03-03 17:03:41,239 - INFO -   [6/10] Uploading: SF_forskrift_2013-10-04-1185.xml
+2026-03-03 17:03:41,631 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2013-10-04-1185.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:41,634 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2013-10-04-1185.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:41,634 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2013-10-04-1185.xml
+2026-03-03 17:03:41,634 - INFO -   [7/10] Uploading: SF_forskrift_2016-12-17-1708.xml
+2026-03-03 17:03:41,837 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2016-12-17-1708.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:41,837 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2016-12-17-1708.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:41,838 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2016-12-17-1708.xml
+2026-03-03 17:03:41,838 - INFO -   [8/10] Uploading: SF_forskrift_2019-04-01-444.xml
+2026-03-03 17:03:42,009 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2019-04-01-444.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:42,009 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2019-04-01-444.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:42,009 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2019-04-01-444.xml
+2026-03-03 17:03:42,009 - INFO -   [9/10] Uploading: SF_forskrift_2022-12-20-2384.xml
+2026-03-03 17:03:42,218 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2022-12-20-2384.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:42,219 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2022-12-20-2384.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:42,219 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2022-12-20-2384.xml
+2026-03-03 17:03:42,219 - INFO -   [10/10] Uploading: SF_forskrift_2016-08-12-978.xml
+2026-03-03 17:03:42,408 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2016-08-12-978.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:03:42,408 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/SF_forskrift_2016-08-12-978.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:03:42,408 - ERROR -   ❌ Upload failed — skipping metadata: SF_forskrift_2016-08-12-978.xml
+2026-03-03 17:03:42,408 - INFO - ✅ Batch complete — all 10 files uploaded & local copies removed
+2026-03-03 17:03:42,408 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:03:42,408 - INFO - 
+2026-03-03 17:03:44,579 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2025-2425-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:44,582 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2025-2425-a
+2026-03-03 17:03:46,531 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.6003ccc6a80b04c4fb1449dd0ad03611&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:46,547 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2025-2425-a.xml  (2405 bytes)
+2026-03-03 17:03:46,547 - INFO - ✅ Queued [1/10] HRSIV_avgjorelse_hr-2025-2425-a.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:48,712 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2025-1196-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:48,713 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2025-1196-u
+2026-03-03 17:03:50,716 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.ca3d0e4d27a24523776680920eaa757a&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:50,732 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2025-1196-u.xml  (2647 bytes)
+2026-03-03 17:03:50,732 - INFO - ✅ Queued [2/10] HRSIV_avgjorelse_hr-2025-1196-u.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:52,896 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2025-1098-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:52,897 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2025-1098-a
+2026-03-03 17:03:54,856 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.029ecd30c65ff2bae01a4eb6515c6ca3&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:54,870 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2025-1098-a.xml  (2791 bytes)
+2026-03-03 17:03:54,870 - INFO - ✅ Queued [3/10] HRSIV_avgjorelse_hr-2025-1098-a.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:03:57,034 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2024-1807-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:57,035 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2024-1807-u
+2026-03-03 17:03:58,975 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.7fee1aa2f1a903cb18184476243f0ae0&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:03:59,000 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2024-1807-u.xml  (2390 bytes)
+2026-03-03 17:03:59,002 - INFO - ✅ Queued [4/10] HRSIV_avgjorelse_hr-2024-1807-u.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:01,191 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2023-206-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:01,192 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2023-206-a
+2026-03-03 17:04:03,140 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.9110fda5d0297bb5a36381347428cb85&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:03,161 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2023-206-a.xml  (2585 bytes)
+2026-03-03 17:04:03,161 - INFO - ✅ Queued [5/10] HRSIV_avgjorelse_hr-2023-206-a.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:05,324 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2022-1964-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:05,327 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2022-1964-a
+2026-03-03 17:04:07,303 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.4b136ce926782a73113162e979302591&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:07,322 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2022-1964-a.xml  (2650 bytes)
+2026-03-03 17:04:07,322 - INFO - ✅ Queued [6/10] HRSIV_avgjorelse_hr-2022-1964-a.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:09,485 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2019-1801-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:09,486 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2019-1801-a
+2026-03-03 17:04:11,491 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.ef8384d4e444bf53aca3de29b0d318b4&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:11,507 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2019-1801-a.xml  (2955 bytes)
+2026-03-03 17:04:11,507 - INFO - ✅ Queued [7/10] HRSIV_avgjorelse_hr-2019-1801-a.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:13,685 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2018-1736-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:13,686 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2018-1736-u
+2026-03-03 17:04:15,738 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.4910b4ea8be3f61d8e659875dfc1f40d&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:15,756 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2018-1736-u.xml  (2392 bytes)
+2026-03-03 17:04:15,756 - INFO - ✅ Queued [8/10] HRSIV_avgjorelse_hr-2018-1736-u.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:17,921 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2012-2126-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:17,922 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2012-2126-a
+2026-03-03 17:04:19,867 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.ec6c923eb510be7a4e5ffe8c46469dac&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:19,882 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2012-2126-a.xml  (2394 bytes)
+2026-03-03 17:04:19,882 - INFO - ✅ Queued [9/10] HRSIV_avgjorelse_hr-2012-2126-a.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:22,039 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2008-2134-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:22,040 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2008-2134-a
+2026-03-03 17:04:24,066 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.0c95ce83df6b428b679ae769870af98a&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:24,083 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\HRSIV_avgjorelse_hr-2008-2134-a.xml  (2350 bytes)
+2026-03-03 17:04:24,084 - INFO - ✅ Queued [10/10] HRSIV_avgjorelse_hr-2008-2134-a.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:24,084 - INFO - 
+2026-03-03 17:04:24,084 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:04:24,084 - INFO - ⬆️  BATCH UPLOAD — 10 XML files
+2026-03-03 17:04:24,084 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:04:24,084 - INFO -   [1/10] Uploading: HRSIV_avgjorelse_hr-2025-2425-a.xml
+2026-03-03 17:04:24,336 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2025-2425-a.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:24,337 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2025-2425-a.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:24,339 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2025-2425-a.xml
+2026-03-03 17:04:24,339 - INFO -   [2/10] Uploading: HRSIV_avgjorelse_hr-2025-1196-u.xml
+2026-03-03 17:04:24,543 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2025-1196-u.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:24,544 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2025-1196-u.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:24,544 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2025-1196-u.xml
+2026-03-03 17:04:24,544 - INFO -   [3/10] Uploading: HRSIV_avgjorelse_hr-2025-1098-a.xml
+2026-03-03 17:04:24,721 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2025-1098-a.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:24,722 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2025-1098-a.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:24,722 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2025-1098-a.xml
+2026-03-03 17:04:24,722 - INFO -   [4/10] Uploading: HRSIV_avgjorelse_hr-2024-1807-u.xml
+2026-03-03 17:04:24,900 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2024-1807-u.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:24,901 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2024-1807-u.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:24,901 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2024-1807-u.xml
+2026-03-03 17:04:24,901 - INFO -   [5/10] Uploading: HRSIV_avgjorelse_hr-2023-206-a.xml
+2026-03-03 17:04:25,120 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2023-206-a.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:25,120 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2023-206-a.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:25,121 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2023-206-a.xml
+2026-03-03 17:04:25,121 - INFO -   [6/10] Uploading: HRSIV_avgjorelse_hr-2022-1964-a.xml
+2026-03-03 17:04:25,315 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2022-1964-a.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:25,315 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2022-1964-a.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:25,315 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2022-1964-a.xml
+2026-03-03 17:04:25,315 - INFO -   [7/10] Uploading: HRSIV_avgjorelse_hr-2019-1801-a.xml
+2026-03-03 17:04:25,522 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2019-1801-a.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:25,524 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2019-1801-a.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:25,524 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2019-1801-a.xml
+2026-03-03 17:04:25,524 - INFO -   [8/10] Uploading: HRSIV_avgjorelse_hr-2018-1736-u.xml
+2026-03-03 17:04:25,684 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2018-1736-u.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:25,684 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2018-1736-u.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:25,684 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2018-1736-u.xml
+2026-03-03 17:04:25,684 - INFO -   [9/10] Uploading: HRSIV_avgjorelse_hr-2012-2126-a.xml
+2026-03-03 17:04:25,886 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2012-2126-a.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:25,886 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2012-2126-a.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:25,886 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2012-2126-a.xml
+2026-03-03 17:04:25,886 - INFO -   [10/10] Uploading: HRSIV_avgjorelse_hr-2008-2134-a.xml
+2026-03-03 17:04:26,076 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2008-2134-a.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:04:26,077 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/HRSIV_avgjorelse_hr-2008-2134-a.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:04:26,077 - ERROR -   ❌ Upload failed — skipping metadata: HRSIV_avgjorelse_hr-2008-2134-a.xml
+2026-03-03 17:04:26,078 - INFO - ✅ Batch complete — all 10 files uploaded & local copies removed
+2026-03-03 17:04:26,078 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:04:26,079 - INFO - 
+2026-03-03 17:04:28,245 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LHSIV_avgjorelse_lh-2025-7215.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:28,247 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LHSIV/avgjorelse/lh-2025-7215
+2026-03-03 17:04:30,258 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.b474fbd5b894788453454605452d8be9&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:30,286 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LHSIV_avgjorelse_lh-2025-7215.xml  (2811 bytes)
+2026-03-03 17:04:30,286 - INFO - ✅ Queued [1/10] LHSIV_avgjorelse_lh-2025-7215.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:32,445 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LESIV_avgjorelse_le-2024-178582.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:32,446 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LESIV/avgjorelse/le-2024-178582
+2026-03-03 17:04:34,378 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.49f4d1959873f7b35a11c0db8d375109&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:34,397 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LESIV_avgjorelse_le-2024-178582.xml  (2564 bytes)
+2026-03-03 17:04:34,397 - INFO - ✅ Queued [2/10] LESIV_avgjorelse_le-2024-178582.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:36,591 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-54223.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:36,591 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-54223
+2026-03-03 17:04:38,581 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.61df00813b20294129cdad2417ad1e70&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:38,604 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LBSIV_avgjorelse_lb-2025-54223.xml  (2722 bytes)
+2026-03-03 17:04:38,604 - INFO - ✅ Queued [3/10] LBSIV_avgjorelse_lb-2025-54223.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:40,781 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2024-174779.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:40,782 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2024-174779
+2026-03-03 17:04:42,764 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.77c0f1c58ea2ffda2d348aace3cb2f37&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:42,782 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LBSIV_avgjorelse_lb-2024-174779.xml  (2757 bytes)
+2026-03-03 17:04:42,782 - INFO - ✅ Queued [4/10] LBSIV_avgjorelse_lb-2024-174779.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:44,971 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2024-36676.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:44,974 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2024-36676
+2026-03-03 17:04:46,965 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e3cecd8943b4a2ca8fa37519b2db3ba4&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:46,979 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LBSIV_avgjorelse_lb-2024-36676.xml  (2760 bytes)
+2026-03-03 17:04:46,979 - INFO - ✅ Queued [5/10] LBSIV_avgjorelse_lb-2024-36676.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:49,134 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LASIV_avgjorelse_la-2024-140531.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:49,134 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LASIV/avgjorelse/la-2024-140531
+2026-03-03 17:04:51,115 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e419f60b6dc2729a0e68ba8ecb01aa23&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:51,133 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LASIV_avgjorelse_la-2024-140531.xml  (2943 bytes)
+2026-03-03 17:04:51,133 - INFO - ✅ Queued [6/10] LASIV_avgjorelse_la-2024-140531.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:53,292 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LHSIV_avgjorelse_lh-2024-10855.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:53,293 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LHSIV/avgjorelse/lh-2024-10855
+2026-03-03 17:04:55,285 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.f55294b88607940ac6d4f596f6b977d4&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:55,306 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LHSIV_avgjorelse_lh-2024-10855.xml  (2618 bytes)
+2026-03-03 17:04:55,306 - INFO - ✅ Queued [7/10] LHSIV_avgjorelse_lh-2024-10855.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:04:57,473 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2024-117052.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:57,473 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2024-117052
+2026-03-03 17:04:59,496 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.2e36bded1b14e60f2e11965464a23691&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:04:59,514 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LBSIV_avgjorelse_lb-2024-117052.xml  (2662 bytes)
+2026-03-03 17:04:59,515 - INFO - ✅ Queued [8/10] LBSIV_avgjorelse_lb-2024-117052.xml      type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:01,677 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-122510.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:01,677 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-122510
+2026-03-03 17:05:03,701 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.7b10d2097a63cd5d922e0bb9f60832b0&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:03,721 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-122510.xml  (2370 bytes)
+2026-03-03 17:05:03,721 - INFO - ✅ Queued [9/10] TRSIV_avgjorelse_tosl-2025-122510.xml    type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:05,880 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-88304.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:05,897 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-88304
+2026-03-03 17:05:07,875 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.b6a9fdd6bf7ff02fafdf1d0256622f45&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:07,891 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-88304.xml  (2401 bytes)
+2026-03-03 17:05:07,891 - INFO - ✅ Queued [10/10] TRSIV_avgjorelse_tosl-2025-88304.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:07,891 - INFO - 
+2026-03-03 17:05:07,891 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:05:07,891 - INFO - ⬆️  BATCH UPLOAD — 10 XML files
+2026-03-03 17:05:07,906 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:05:07,906 - INFO -   [1/10] Uploading: LHSIV_avgjorelse_lh-2025-7215.xml
+2026-03-03 17:05:08,437 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LHSIV_avgjorelse_lh-2025-7215.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:08,437 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LHSIV_avgjorelse_lh-2025-7215.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:08,437 - ERROR -   ❌ Upload failed — skipping metadata: LHSIV_avgjorelse_lh-2025-7215.xml
+2026-03-03 17:05:08,437 - INFO -   [2/10] Uploading: LESIV_avgjorelse_le-2024-178582.xml
+2026-03-03 17:05:08,672 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LESIV_avgjorelse_le-2024-178582.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:08,672 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LESIV_avgjorelse_le-2024-178582.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:08,674 - ERROR -   ❌ Upload failed — skipping metadata: LESIV_avgjorelse_le-2024-178582.xml
+2026-03-03 17:05:08,674 - INFO -   [3/10] Uploading: LBSIV_avgjorelse_lb-2025-54223.xml
+2026-03-03 17:05:08,861 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2025-54223.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:08,862 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2025-54223.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:08,862 - ERROR -   ❌ Upload failed — skipping metadata: LBSIV_avgjorelse_lb-2025-54223.xml
+2026-03-03 17:05:08,862 - INFO -   [4/10] Uploading: LBSIV_avgjorelse_lb-2024-174779.xml
+2026-03-03 17:05:09,064 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2024-174779.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:09,064 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2024-174779.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:09,064 - ERROR -   ❌ Upload failed — skipping metadata: LBSIV_avgjorelse_lb-2024-174779.xml
+2026-03-03 17:05:09,064 - INFO -   [5/10] Uploading: LBSIV_avgjorelse_lb-2024-36676.xml
+2026-03-03 17:05:09,279 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2024-36676.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:09,279 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2024-36676.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:09,279 - ERROR -   ❌ Upload failed — skipping metadata: LBSIV_avgjorelse_lb-2024-36676.xml
+2026-03-03 17:05:09,279 - INFO -   [6/10] Uploading: LASIV_avgjorelse_la-2024-140531.xml
+2026-03-03 17:05:09,502 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LASIV_avgjorelse_la-2024-140531.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:09,502 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LASIV_avgjorelse_la-2024-140531.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:09,502 - ERROR -   ❌ Upload failed — skipping metadata: LASIV_avgjorelse_la-2024-140531.xml
+2026-03-03 17:05:09,502 - INFO -   [7/10] Uploading: LHSIV_avgjorelse_lh-2024-10855.xml
+2026-03-03 17:05:09,729 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LHSIV_avgjorelse_lh-2024-10855.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:09,729 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LHSIV_avgjorelse_lh-2024-10855.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:09,729 - ERROR -   ❌ Upload failed — skipping metadata: LHSIV_avgjorelse_lh-2024-10855.xml
+2026-03-03 17:05:09,740 - INFO -   [8/10] Uploading: LBSIV_avgjorelse_lb-2024-117052.xml
+2026-03-03 17:05:09,926 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2024-117052.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:09,927 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/LBSIV_avgjorelse_lb-2024-117052.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:09,928 - ERROR -   ❌ Upload failed — skipping metadata: LBSIV_avgjorelse_lb-2024-117052.xml
+2026-03-03 17:05:09,928 - INFO -   [9/10] Uploading: TRSIV_avgjorelse_tosl-2025-122510.xml
+2026-03-03 17:05:10,129 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-122510.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:10,129 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-122510.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:10,135 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tosl-2025-122510.xml
+2026-03-03 17:05:10,135 - INFO -   [10/10] Uploading: TRSIV_avgjorelse_tosl-2025-88304.xml
+2026-03-03 17:05:10,311 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-88304.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:10,312 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-88304.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:10,312 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tosl-2025-88304.xml
+2026-03-03 17:05:10,314 - INFO - ✅ Batch complete — all 10 files uploaded & local copies removed
+2026-03-03 17:05:10,315 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:05:10,315 - INFO - 
+2026-03-03 17:05:12,468 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-82137.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:12,475 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-82137
+2026-03-03 17:05:14,637 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.cca8b54d53da36afce138eec0045c720&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:14,660 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-82137.xml  (2995 bytes)
+2026-03-03 17:05:14,660 - INFO - ✅ Queued [1/10] TRSIV_avgjorelse_tosl-2025-82137.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:16,860 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-71061.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:16,860 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-71061
+2026-03-03 17:05:18,871 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.797f040d0f9202f5ddc1c5f776913958&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:18,888 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-71061.xml  (3261 bytes)
+2026-03-03 17:05:18,888 - INFO - ✅ Queued [2/10] TRSIV_avgjorelse_tosl-2025-71061.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:21,073 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-65581.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:21,073 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-65581
+2026-03-03 17:05:23,080 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.d65498ce2bd0d4be944920abee0767dd&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:23,090 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-65581.xml  (2587 bytes)
+2026-03-03 17:05:23,090 - INFO - ✅ Queued [3/10] TRSIV_avgjorelse_tosl-2025-65581.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:25,262 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-82320.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:25,263 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-82320
+2026-03-03 17:05:27,281 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.5f1269946aa7f751a7ad5ec1256771a2&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:27,297 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-82320.xml  (3291 bytes)
+2026-03-03 17:05:27,298 - INFO - ✅ Queued [4/10] TRSIV_avgjorelse_tosl-2025-82320.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:29,467 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tsos-2025-57056.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:29,468 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tsos-2025-57056
+2026-03-03 17:05:31,472 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.c657959bb5da28ed9e50834ef91d9496&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:31,485 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tsos-2025-57056.xml  (3070 bytes)
+2026-03-03 17:05:31,485 - INFO - ✅ Queued [5/10] TRSIV_avgjorelse_tsos-2025-57056.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:33,644 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_graver-hp-2005-05.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:33,646 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/graver-hp-2005-05
+2026-03-03 17:05:35,667 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.0c0bcad14716beea7f4f907150360bc5&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:35,680 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_graver-hp-2005-05.xml  (2863 bytes)
+2026-03-03 17:05:35,680 - INFO - ✅ Queued [6/10] JUS_graver-hp-2005-05.xml                type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:37,839 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_goller-m-2011-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:37,839 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/goller-m-2011-01
+2026-03-03 17:05:39,857 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.33b1124d98df46991de8eedcfbabc462&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:39,875 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_goller-m-2011-01.xml  (2918 bytes)
+2026-03-03 17:05:39,875 - INFO - ✅ Queued [7/10] JUS_goller-m-2011-01.xml                 type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:42,034 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_fredriksen-hh-2010-08.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:42,035 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/fredriksen-hh-2010-08
+2026-03-03 17:05:44,063 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.6044efd3d1deb8cd11d7d083355552b9&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:44,080 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_fredriksen-hh-2010-08.xml  (2815 bytes)
+2026-03-03 17:05:44,080 - INFO - ✅ Queued [8/10] JUS_fredriksen-hh-2010-08.xml            type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:46,240 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_kruger-k-2002-02.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:46,242 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/kruger-k-2002-02
+2026-03-03 17:05:48,221 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.aeda2d68998a331b7645308459a26b91&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:48,240 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_kruger-k-2002-02.xml  (3170 bytes)
+2026-03-03 17:05:48,240 - INFO - ✅ Queued [9/10] JUS_kruger-k-2002-02.xml                 type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:05:50,397 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_kruger-k-2001-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:50,399 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/kruger-k-2001-04
+2026-03-03 17:05:52,233 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.ecb14a00393c1c908b64c38ab1daca66&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:52,263 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_kruger-k-2001-04.xml  (741 bytes)
+2026-03-03 17:05:52,264 - INFO - ✅ Queued [10/10] JUS_kruger-k-2001-04.xml                 type=LATEST DOCUMENTS                    source=html_text
+2026-03-03 17:05:52,264 - INFO - 
+2026-03-03 17:05:52,264 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:05:52,265 - INFO - ⬆️  BATCH UPLOAD — 10 XML files
+2026-03-03 17:05:52,265 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:05:52,265 - INFO -   [1/10] Uploading: TRSIV_avgjorelse_tosl-2025-82137.xml
+2026-03-03 17:05:52,766 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-82137.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:52,767 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-82137.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:52,767 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tosl-2025-82137.xml
+2026-03-03 17:05:52,767 - INFO -   [2/10] Uploading: TRSIV_avgjorelse_tosl-2025-71061.xml
+2026-03-03 17:05:52,960 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-71061.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:52,961 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-71061.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:52,961 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tosl-2025-71061.xml
+2026-03-03 17:05:52,962 - INFO -   [3/10] Uploading: TRSIV_avgjorelse_tosl-2025-65581.xml
+2026-03-03 17:05:53,129 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-65581.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:53,131 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-65581.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:53,132 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tosl-2025-65581.xml
+2026-03-03 17:05:53,132 - INFO -   [4/10] Uploading: TRSIV_avgjorelse_tosl-2025-82320.xml
+2026-03-03 17:05:53,321 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-82320.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:53,322 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tosl-2025-82320.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:53,323 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tosl-2025-82320.xml
+2026-03-03 17:05:53,323 - INFO -   [5/10] Uploading: TRSIV_avgjorelse_tsos-2025-57056.xml
+2026-03-03 17:05:53,531 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tsos-2025-57056.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:53,531 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/TRSIV_avgjorelse_tsos-2025-57056.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:53,532 - ERROR -   ❌ Upload failed — skipping metadata: TRSIV_avgjorelse_tsos-2025-57056.xml
+2026-03-03 17:05:53,532 - INFO -   [6/10] Uploading: JUS_graver-hp-2005-05.xml
+2026-03-03 17:05:53,729 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_graver-hp-2005-05.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:53,731 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_graver-hp-2005-05.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:53,731 - ERROR -   ❌ Upload failed — skipping metadata: JUS_graver-hp-2005-05.xml
+2026-03-03 17:05:53,731 - INFO -   [7/10] Uploading: JUS_goller-m-2011-01.xml
+2026-03-03 17:05:53,912 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_goller-m-2011-01.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:53,913 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_goller-m-2011-01.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:53,913 - ERROR -   ❌ Upload failed — skipping metadata: JUS_goller-m-2011-01.xml
+2026-03-03 17:05:53,914 - INFO -   [8/10] Uploading: JUS_fredriksen-hh-2010-08.xml
+2026-03-03 17:05:54,103 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_fredriksen-hh-2010-08.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:54,104 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_fredriksen-hh-2010-08.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:54,104 - ERROR -   ❌ Upload failed — skipping metadata: JUS_fredriksen-hh-2010-08.xml
+2026-03-03 17:05:54,104 - INFO -   [9/10] Uploading: JUS_kruger-k-2002-02.xml
+2026-03-03 17:05:54,261 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_kruger-k-2002-02.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:54,262 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_kruger-k-2002-02.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:54,262 - ERROR -   ❌ Upload failed — skipping metadata: JUS_kruger-k-2002-02.xml
+2026-03-03 17:05:54,262 - INFO -   [10/10] Uploading: JUS_kruger-k-2001-04.xml
+2026-03-03 17:05:54,425 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_kruger-k-2001-04.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:05:54,426 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_kruger-k-2001-04.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:05:54,426 - ERROR -   ❌ Upload failed — skipping metadata: JUS_kruger-k-2001-04.xml
+2026-03-03 17:05:54,427 - INFO - ✅ Batch complete — all 10 files uploaded & local copies removed
+2026-03-03 17:05:54,427 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:05:54,428 - INFO - 
+2026-03-03 17:05:56,584 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_kruger-k-2010-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:56,586 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/kruger-k-2010-04
+2026-03-03 17:05:58,615 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.c28d15e60c653547b3b59bbe89cfa8ec&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:05:58,629 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_kruger-k-2010-04.xml  (3031 bytes)
+2026-03-03 17:05:58,630 - INFO - ✅ Queued [1/10] JUS_kruger-k-2010-04.xml                 type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:00,795 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_weltzien-k-2008-03.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:00,796 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/weltzien-k-2008-03
+2026-03-03 17:06:02,914 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.1f816fdb8b5a04c96f05ae798fc92e01&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:02,931 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_weltzien-k-2008-03.xml  (3238 bytes)
+2026-03-03 17:06:02,931 - INFO - ✅ Queued [2/10] JUS_weltzien-k-2008-03.xml               type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:05,094 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_graver-hp-2005-02.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:05,095 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/graver-hp-2005-02
+2026-03-03 17:06:07,179 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.74e9ed0681938cf7eb09a26092559d9c&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:07,201 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_graver-hp-2005-02.xml  (2994 bytes)
+2026-03-03 17:06:07,201 - INFO - ✅ Queued [3/10] JUS_graver-hp-2005-02.xml                type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:09,378 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_weltzien-k-2009-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:09,379 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/weltzien-k-2009-01
+2026-03-03 17:06:11,475 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.95c301dd2ca76ad6fe2679ca273d43cd&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:11,493 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_weltzien-k-2009-01.xml  (2630 bytes)
+2026-03-03 17:06:11,493 - INFO - ✅ Queued [4/10] JUS_weltzien-k-2009-01.xml               type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:13,652 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JUS_kruger-k-2007-02.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:13,654 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JUS/kruger-k-2007-02
+2026-03-03 17:06:15,702 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.b6aea013846a8e0d07affdc6ddcfac97&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:15,717 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JUS_kruger-k-2007-02.xml  (4091 bytes)
+2026-03-03 17:06:15,717 - INFO - ✅ Queued [5/10] JUS_kruger-k-2007-02.xml                 type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:17,880 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-1001.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:17,881 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-1001
+2026-03-03 17:06:19,871 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.08560b0b689372df0b19863379ec1212&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:19,898 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-1001.xml  (2687 bytes)
+2026-03-03 17:06:19,898 - INFO - ✅ Queued [6/10] KOFA_avgjorelse_kofa-2025-1001.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:22,058 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-1435.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:22,061 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-1435
+2026-03-03 17:06:24,067 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e2839c406dd5bb7597e1d909669d349d&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:24,088 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-1435.xml  (2677 bytes)
+2026-03-03 17:06:24,089 - INFO - ✅ Queued [7/10] KOFA_avgjorelse_kofa-2025-1435.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:26,256 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-1433.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:26,257 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-1433
+2026-03-03 17:06:28,232 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.3ef42de3f35db4b5ccdabc6059c14632&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:28,262 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-1433.xml  (2627 bytes)
+2026-03-03 17:06:28,262 - INFO - ✅ Queued [8/10] KOFA_avgjorelse_kofa-2025-1433.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:30,417 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-1440.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:30,417 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-1440
+2026-03-03 17:06:32,417 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.62f1bd73ec547252d6c06aac7df7e0ba&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:32,438 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-1440.xml  (2757 bytes)
+2026-03-03 17:06:32,438 - INFO - ✅ Queued [9/10] KOFA_avgjorelse_kofa-2025-1440.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:34,595 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-1015.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:34,596 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-1015
+2026-03-03 17:06:36,599 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.b13c4582091a0cd0810db4b531e5e1bc&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:36,621 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-1015.xml  (2680 bytes)
+2026-03-03 17:06:36,621 - INFO - ✅ Queued [10/10] KOFA_avgjorelse_kofa-2025-1015.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:36,621 - INFO - 
+2026-03-03 17:06:36,621 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:06:36,621 - INFO - ⬆️  BATCH UPLOAD — 10 XML files
+2026-03-03 17:06:36,621 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:06:36,621 - INFO -   [1/10] Uploading: JUS_kruger-k-2010-04.xml
+2026-03-03 17:06:36,855 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_kruger-k-2010-04.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:36,855 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_kruger-k-2010-04.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:36,855 - ERROR -   ❌ Upload failed — skipping metadata: JUS_kruger-k-2010-04.xml
+2026-03-03 17:06:36,855 - INFO -   [2/10] Uploading: JUS_weltzien-k-2008-03.xml
+2026-03-03 17:06:37,072 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_weltzien-k-2008-03.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:37,075 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_weltzien-k-2008-03.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:37,075 - ERROR -   ❌ Upload failed — skipping metadata: JUS_weltzien-k-2008-03.xml
+2026-03-03 17:06:37,075 - INFO -   [3/10] Uploading: JUS_graver-hp-2005-02.xml
+2026-03-03 17:06:37,280 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_graver-hp-2005-02.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:37,281 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_graver-hp-2005-02.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:37,281 - ERROR -   ❌ Upload failed — skipping metadata: JUS_graver-hp-2005-02.xml
+2026-03-03 17:06:37,282 - INFO -   [4/10] Uploading: JUS_weltzien-k-2009-01.xml
+2026-03-03 17:06:37,484 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_weltzien-k-2009-01.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:37,484 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_weltzien-k-2009-01.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:37,484 - ERROR -   ❌ Upload failed — skipping metadata: JUS_weltzien-k-2009-01.xml
+2026-03-03 17:06:37,495 - INFO -   [5/10] Uploading: JUS_kruger-k-2007-02.xml
+2026-03-03 17:06:37,679 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_kruger-k-2007-02.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:37,681 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JUS_kruger-k-2007-02.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:37,681 - ERROR -   ❌ Upload failed — skipping metadata: JUS_kruger-k-2007-02.xml
+2026-03-03 17:06:37,681 - INFO -   [6/10] Uploading: KOFA_avgjorelse_kofa-2025-1001.xml
+2026-03-03 17:06:37,864 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1001.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:37,864 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1001.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:37,864 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-1001.xml
+2026-03-03 17:06:37,864 - INFO -   [7/10] Uploading: KOFA_avgjorelse_kofa-2025-1435.xml
+2026-03-03 17:06:38,066 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1435.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:38,066 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1435.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:38,073 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-1435.xml
+2026-03-03 17:06:38,073 - INFO -   [8/10] Uploading: KOFA_avgjorelse_kofa-2025-1433.xml
+2026-03-03 17:06:38,287 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1433.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:38,288 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1433.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:38,290 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-1433.xml
+2026-03-03 17:06:38,290 - INFO -   [9/10] Uploading: KOFA_avgjorelse_kofa-2025-1440.xml
+2026-03-03 17:06:38,512 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1440.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:38,514 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1440.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:38,514 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-1440.xml
+2026-03-03 17:06:38,515 - INFO -   [10/10] Uploading: KOFA_avgjorelse_kofa-2025-1015.xml
+2026-03-03 17:06:38,703 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1015.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:06:38,704 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1015.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:06:38,705 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-1015.xml
+2026-03-03 17:06:38,706 - INFO - ✅ Batch complete — all 10 files uploaded & local copies removed
+2026-03-03 17:06:38,707 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:06:38,707 - INFO - 
+2026-03-03 17:06:40,866 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-979.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:40,866 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-979
+2026-03-03 17:06:42,864 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.4c5aab7446faa6e4c9d478f735d0d86b&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:42,882 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-979.xml  (2616 bytes)
+2026-03-03 17:06:42,882 - INFO - ✅ Queued [1/10] KOFA_avgjorelse_kofa-2025-979.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:45,046 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-946.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:45,047 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-946
+2026-03-03 17:06:47,087 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.074a2ad8ab9253d8a574e342bd3a0a0d&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:47,105 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-946.xml  (2616 bytes)
+2026-03-03 17:06:47,105 - INFO - ✅ Queued [2/10] KOFA_avgjorelse_kofa-2025-946.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:49,269 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2024-1733.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:49,271 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2024-1733
+2026-03-03 17:06:51,365 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.294985e49ae76c0b2f743351fc13a674&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:51,384 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2024-1733.xml  (2749 bytes)
+2026-03-03 17:06:51,384 - INFO - ✅ Queued [3/10] KOFA_avgjorelse_kofa-2024-1733.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:53,559 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-796.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:53,559 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-796
+2026-03-03 17:06:55,555 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.76c721328f9f435233995c7fbe7a75eb&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:55,570 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-796.xml  (2584 bytes)
+2026-03-03 17:06:55,570 - INFO - ✅ Queued [4/10] KOFA_avgjorelse_kofa-2025-796.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:06:57,738 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.KOFA_avgjorelse_kofa-2025-1084.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:57,739 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/KOFA/avgjorelse/kofa-2025-1084
+2026-03-03 17:06:59,748 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.63d3acfe002f4e382029012e4f24b771&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:06:59,767 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\KOFA_avgjorelse_kofa-2025-1084.xml  (2666 bytes)
+2026-03-03 17:06:59,767 - INFO - ✅ Queued [5/10] KOFA_avgjorelse_kofa-2025-1084.xml       type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:01,958 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2025-695.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:01,958 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2025-695
+2026-03-03 17:07:03,947 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.6a3f4d1c1498b033fd165fdd974525fb&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:03,965 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2025-695.xml  (2650 bytes)
+2026-03-03 17:07:03,966 - INFO - ✅ Queued [6/10] BFJR_avgjorelse_bfjr-2025-695.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:06,133 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2025-693.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:06,133 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2025-693
+2026-03-03 17:07:08,156 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.527e533b29761ee2b28f2b37bb83aa5d&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:08,176 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2025-693.xml  (2798 bytes)
+2026-03-03 17:07:08,176 - INFO - ✅ Queued [7/10] BFJR_avgjorelse_bfjr-2025-693.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:10,345 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2025-692.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:10,347 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2025-692
+2026-03-03 17:07:12,430 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.c538c84659b59fe7ce2504cfcb89a2ea&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:12,460 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2025-692.xml  (2651 bytes)
+2026-03-03 17:07:12,460 - INFO - ✅ Queued [8/10] BFJR_avgjorelse_bfjr-2025-692.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:14,625 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2025-691.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:14,625 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2025-691
+2026-03-03 17:07:16,599 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.76879baa8ce67e91454c05e023daea47&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:16,613 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2025-691.xml  (2820 bytes)
+2026-03-03 17:07:16,613 - INFO - ✅ Queued [9/10] BFJR_avgjorelse_bfjr-2025-691.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:18,778 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2024-689.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:18,779 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2024-689
+2026-03-03 17:07:20,865 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.88a48d537b2da1e3460d2bdd5b080735&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:20,888 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2024-689.xml  (2661 bytes)
+2026-03-03 17:07:20,888 - INFO - ✅ Queued [10/10] BFJR_avgjorelse_bfjr-2024-689.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:20,896 - INFO - 
+2026-03-03 17:07:20,896 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:07:20,896 - INFO - ⬆️  BATCH UPLOAD — 10 XML files
+2026-03-03 17:07:20,897 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:07:20,897 - INFO -   [1/10] Uploading: KOFA_avgjorelse_kofa-2025-979.xml
+2026-03-03 17:07:21,463 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-979.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:21,465 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-979.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:21,466 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-979.xml
+2026-03-03 17:07:21,466 - INFO -   [2/10] Uploading: KOFA_avgjorelse_kofa-2025-946.xml
+2026-03-03 17:07:21,692 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-946.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:21,693 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-946.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:21,693 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-946.xml
+2026-03-03 17:07:21,694 - INFO -   [3/10] Uploading: KOFA_avgjorelse_kofa-2024-1733.xml
+2026-03-03 17:07:21,878 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2024-1733.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:21,879 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2024-1733.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:21,879 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2024-1733.xml
+2026-03-03 17:07:21,880 - INFO -   [4/10] Uploading: KOFA_avgjorelse_kofa-2025-796.xml
+2026-03-03 17:07:22,053 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-796.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:22,053 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-796.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:22,053 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-796.xml
+2026-03-03 17:07:22,053 - INFO -   [5/10] Uploading: KOFA_avgjorelse_kofa-2025-1084.xml
+2026-03-03 17:07:22,233 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1084.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:22,235 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/KOFA_avgjorelse_kofa-2025-1084.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:22,235 - ERROR -   ❌ Upload failed — skipping metadata: KOFA_avgjorelse_kofa-2025-1084.xml
+2026-03-03 17:07:22,235 - INFO -   [6/10] Uploading: BFJR_avgjorelse_bfjr-2025-695.xml
+2026-03-03 17:07:22,437 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2025-695.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:22,438 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2025-695.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:22,439 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2025-695.xml
+2026-03-03 17:07:22,439 - INFO -   [7/10] Uploading: BFJR_avgjorelse_bfjr-2025-693.xml
+2026-03-03 17:07:22,619 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2025-693.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:22,619 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2025-693.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:22,619 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2025-693.xml
+2026-03-03 17:07:22,628 - INFO -   [8/10] Uploading: BFJR_avgjorelse_bfjr-2025-692.xml
+2026-03-03 17:07:22,819 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2025-692.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:22,821 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2025-692.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:22,822 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2025-692.xml
+2026-03-03 17:07:22,822 - INFO -   [9/10] Uploading: BFJR_avgjorelse_bfjr-2025-691.xml
+2026-03-03 17:07:23,019 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2025-691.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:23,019 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2025-691.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:23,019 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2025-691.xml
+2026-03-03 17:07:23,029 - INFO -   [10/10] Uploading: BFJR_avgjorelse_bfjr-2024-689.xml
+2026-03-03 17:07:23,232 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-689.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:07:23,232 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-689.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:07:23,232 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2024-689.xml
+2026-03-03 17:07:23,238 - INFO - ✅ Batch complete — all 10 files uploaded & local copies removed
+2026-03-03 17:07:23,238 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:07:23,238 - INFO - 
+2026-03-03 17:07:25,403 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2024-690.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:25,403 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2024-690
+2026-03-03 17:07:27,427 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.c2dc4aa004e9bf4123afb6f6bbffa6d6&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:27,440 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2024-690.xml  (2434 bytes)
+2026-03-03 17:07:27,440 - INFO - ✅ Queued [1/10] BFJR_avgjorelse_bfjr-2024-690.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:29,599 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2024-688.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:29,599 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2024-688
+2026-03-03 17:07:31,600 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.ecaaac41efe45f4568f201347f70c76f&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:31,620 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2024-688.xml  (2664 bytes)
+2026-03-03 17:07:31,620 - INFO - ✅ Queued [2/10] BFJR_avgjorelse_bfjr-2024-688.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:33,780 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2024-686.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:33,780 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2024-686
+2026-03-03 17:07:35,776 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.c90917eb405fb89fa33b99a97e2eecc0&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:35,786 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2024-686.xml  (2816 bytes)
+2026-03-03 17:07:35,786 - INFO - ✅ Queued [3/10] BFJR_avgjorelse_bfjr-2024-686.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:37,951 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2024-685.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:37,951 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2024-685
+2026-03-03 17:07:39,952 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e61c98de2321cac17b2e8908c254bddb&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:39,968 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2024-685.xml  (2662 bytes)
+2026-03-03 17:07:39,969 - INFO - ✅ Queued [4/10] BFJR_avgjorelse_bfjr-2024-685.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:42,133 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.BFJR_avgjorelse_bfjr-2024-684.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:42,133 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/BFJR/avgjorelse/bfjr-2024-684
+2026-03-03 17:07:44,150 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.7c9d52403676e4511b61b0930513e560&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:44,162 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\BFJR_avgjorelse_bfjr-2024-684.xml  (2646 bytes)
+2026-03-03 17:07:44,162 - INFO - ✅ Queued [5/10] BFJR_avgjorelse_bfjr-2024-684.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:46,320 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2012-6272.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:46,321 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JDLOV/avgjorelse/jdlov-2012-6272
+2026-03-03 17:07:48,296 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e2c613582df325b077f0b830d02e0bf9&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:48,301 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JDLOV_avgjorelse_jdlov-2012-6272.xml  (2679 bytes)
+2026-03-03 17:07:48,301 - INFO - ✅ Queued [6/10] JDLOV_avgjorelse_jdlov-2012-6272.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:50,531 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2010-5859.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:50,533 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JDLOV/avgjorelse/jdlov-2010-5859
+2026-03-03 17:07:52,574 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.70b498b9bbfd6f8c8186f2dd54e977c1&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:52,591 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JDLOV_avgjorelse_jdlov-2010-5859.xml  (2690 bytes)
+2026-03-03 17:07:52,592 - INFO - ✅ Queued [7/10] JDLOV_avgjorelse_jdlov-2010-5859.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:54,783 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2010-8882.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:54,783 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JDLOV/avgjorelse/jdlov-2010-8882
+2026-03-03 17:07:56,875 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.4f53032e4cd396b14a54a8b92810c3f8&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:56,886 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JDLOV_avgjorelse_jdlov-2010-8882.xml  (2546 bytes)
+2026-03-03 17:07:56,886 - INFO - ✅ Queued [8/10] JDLOV_avgjorelse_jdlov-2010-8882.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:07:59,070 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2008-7049.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:07:59,073 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JDLOV/avgjorelse/jdlov-2008-7049
+2026-03-03 17:08:01,044 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.cfc1ba7a73bb8dfa1476b85dae3221ee&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:01,058 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JDLOV_avgjorelse_jdlov-2008-7049.xml  (2505 bytes)
+2026-03-03 17:08:01,058 - INFO - ✅ Queued [9/10] JDLOV_avgjorelse_jdlov-2008-7049.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:08:03,217 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2008-2965.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:03,217 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JDLOV/avgjorelse/jdlov-2008-2965
+2026-03-03 17:08:05,214 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e42c4e96fb87b5d6f2079a839d6d465f&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:05,262 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JDLOV_avgjorelse_jdlov-2008-2965.xml  (3011 bytes)
+2026-03-03 17:08:05,262 - INFO - ✅ Queued [10/10] JDLOV_avgjorelse_jdlov-2008-2965.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:08:05,262 - INFO - 
+2026-03-03 17:08:05,263 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:08:05,263 - INFO - ⬆️  BATCH UPLOAD — 10 XML files
+2026-03-03 17:08:05,264 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:08:05,264 - INFO -   [1/10] Uploading: BFJR_avgjorelse_bfjr-2024-690.xml
+2026-03-03 17:08:05,532 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-690.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:05,533 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-690.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:05,533 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2024-690.xml
+2026-03-03 17:08:05,534 - INFO -   [2/10] Uploading: BFJR_avgjorelse_bfjr-2024-688.xml
+2026-03-03 17:08:05,779 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-688.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:05,780 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-688.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:05,780 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2024-688.xml
+2026-03-03 17:08:05,782 - INFO -   [3/10] Uploading: BFJR_avgjorelse_bfjr-2024-686.xml
+2026-03-03 17:08:05,962 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-686.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:05,963 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-686.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:05,963 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2024-686.xml
+2026-03-03 17:08:05,963 - INFO -   [4/10] Uploading: BFJR_avgjorelse_bfjr-2024-685.xml
+2026-03-03 17:08:06,160 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-685.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:06,161 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-685.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:06,162 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2024-685.xml
+2026-03-03 17:08:06,162 - INFO -   [5/10] Uploading: BFJR_avgjorelse_bfjr-2024-684.xml
+2026-03-03 17:08:06,378 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-684.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:06,379 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/BFJR_avgjorelse_bfjr-2024-684.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:06,380 - ERROR -   ❌ Upload failed — skipping metadata: BFJR_avgjorelse_bfjr-2024-684.xml
+2026-03-03 17:08:06,380 - INFO -   [6/10] Uploading: JDLOV_avgjorelse_jdlov-2012-6272.xml
+2026-03-03 17:08:06,611 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2012-6272.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:06,612 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2012-6272.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:06,612 - ERROR -   ❌ Upload failed — skipping metadata: JDLOV_avgjorelse_jdlov-2012-6272.xml
+2026-03-03 17:08:06,612 - INFO -   [7/10] Uploading: JDLOV_avgjorelse_jdlov-2010-5859.xml
+2026-03-03 17:08:06,802 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2010-5859.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:06,803 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2010-5859.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:06,804 - ERROR -   ❌ Upload failed — skipping metadata: JDLOV_avgjorelse_jdlov-2010-5859.xml
+2026-03-03 17:08:06,804 - INFO -   [8/10] Uploading: JDLOV_avgjorelse_jdlov-2010-8882.xml
+2026-03-03 17:08:06,987 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2010-8882.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:06,988 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2010-8882.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:06,988 - ERROR -   ❌ Upload failed — skipping metadata: JDLOV_avgjorelse_jdlov-2010-8882.xml
+2026-03-03 17:08:06,988 - INFO -   [9/10] Uploading: JDLOV_avgjorelse_jdlov-2008-7049.xml
+2026-03-03 17:08:07,170 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2008-7049.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:07,171 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2008-7049.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:07,171 - ERROR -   ❌ Upload failed — skipping metadata: JDLOV_avgjorelse_jdlov-2008-7049.xml
+2026-03-03 17:08:07,171 - INFO -   [10/10] Uploading: JDLOV_avgjorelse_jdlov-2008-2965.xml
+2026-03-03 17:08:07,417 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/legal_area/Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2008-2965.xml "HTTP/2 400 Bad Request"
+2026-03-03 17:08:07,417 - ERROR - ✗ Upload failed [Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/leaf/JDLOV_avgjorelse_jdlov-2008-2965.xml]: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-03-03 17:08:07,419 - ERROR -   ❌ Upload failed — skipping metadata: JDLOV_avgjorelse_jdlov-2008-2965.xml
+2026-03-03 17:08:07,419 - INFO - ✅ Batch complete — all 10 files uploaded & local copies removed
+2026-03-03 17:08:07,419 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:08:07,419 - INFO - 
+2026-03-03 17:08:09,584 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.JDLOV_avgjorelse_jdlov-2004-7043.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:09,585 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/JDLOV/avgjorelse/jdlov-2004-7043
+2026-03-03 17:08:11,565 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.f369cd9547f601c4cbe3ad80ff1cbde8&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:11,584 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\JDLOV_avgjorelse_jdlov-2004-7043.xml  (2569 bytes)
+2026-03-03 17:08:11,584 - INFO - ✅ Queued [1/10] JDLOV_avgjorelse_jdlov-2004-7043.xml     type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:08:13,746 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LTI_forskrift_2025-12-18-2656.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:13,747 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LTI/forskrift/2025-12-18-2656
+2026-03-03 17:08:15,747 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.afbad2c648bffd3d17486a091c05511a&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:15,770 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LTI_forskrift_2025-12-18-2656.xml  (2557 bytes)
+2026-03-03 17:08:15,770 - INFO - ✅ Queued [2/10] LTI_forskrift_2025-12-18-2656.xml        type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:08:17,940 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2025-19-01.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:17,941 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/EUR/eur-2025-19-01
+2026-03-03 17:08:19,957 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.cdb8e6b80b0b7bedf837dcb8ffda2c41&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:19,970 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\EUR_eur-2025-19-01.xml  (2579 bytes)
+2026-03-03 17:08:19,971 - INFO - ✅ Queued [3/10] EUR_eur-2025-19-01.xml                   type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:08:22,123 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.RDEP_rundskriv_h-2025-9001.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:22,123 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/RDEP/rundskriv/h-2025-9001
+2026-03-03 17:08:24,320 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.f06019705b0c0576b4429619163c2258&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:24,339 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\RDEP_rundskriv_h-2025-9001.xml  (2489 bytes)
+2026-03-03 17:08:24,339 - INFO - ✅ Queued [4/10] RDEP_rundskriv_h-2025-9001.xml           type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:08:26,498 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2025-14-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:26,499 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/EUR/eur-2025-14-04
+2026-03-03 17:08:28,567 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.91f32a0af39a1dcab1bc1929cc1ebfcb&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:28,586 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\EUR_eur-2025-14-04.xml  (2616 bytes)
+2026-03-03 17:08:28,586 - INFO - ✅ Queued [5/10] EUR_eur-2025-14-04.xml                   type=LATEST DOCUMENTS                    source=body_text
+2026-03-03 17:08:30,746 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LTI_forskrift_2025-09-17-2010.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:30,747 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/LTI/forskrift/2025-09-17-2010
+2026-03-03 17:08:32,587 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.abe2e419d9b91dab4bd5f6bd0cf69969&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:32,609 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\LTI_forskrift_2025-09-17-2010.xml  (756 bytes)
+2026-03-03 17:08:32,611 - INFO - ✅ Queued [6/10] LTI_forskrift_2025-09-17-2010.xml        type=LATEST DOCUMENTS                    source=html_text
+2026-03-03 17:08:34,613 - INFO -    📂 SECTION | LAWS                                                    | expected=None  | found=88
+2026-03-03 17:08:34,764 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-03-06.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:34,764 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/EUR/eur-2026-03-06
+2026-03-03 17:08:36,754 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.e6f667a4ca24123e9a3b1e33d16c18ee&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:36,773 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\EUR_eur-2026-03-06.xml  (2651 bytes)
+2026-03-03 17:08:36,773 - INFO - ✅ Queued [7/10] EUR_eur-2026-03-06.xml                   type=LAWS                                source=body_text
+2026-03-03 17:08:38,938 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-198508.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:38,939 - INFO - 🌐 Visiting: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-198508
+2026-03-03 17:08:40,948 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_hash&file_hash=eq.78cadc0c840435d2a564ef9808bed619&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 17:08:40,962 - INFO - 💾 Saved XML: scraped_xml\Anskaffelser_avtaler_bygg_og_entrepriser\Anskaffelser\leaf\TRSIV_avgjorelse_tosl-2025-198508.xml  (3143 bytes)
+2026-03-03 17:08:40,962 - INFO - ✅ Queued [8/10] TRSIV_avgjorelse_tosl-2025-198508.xml    type=LAWS                                source=body_text
+2026-03-03 17:08:43,130 - INFO - 🔄 Flushing remaining batch (8 items) …
+2026-03-03 17:08:43,130 - INFO - 
+2026-03-03 17:08:43,130 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:08:43,130 - INFO - ⬆️  BATCH UPLOAD — 8 XML files
+2026-03-03 17:08:43,130 - INFO - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-03 17:08:43,130 - INFO -   [1/8] Uploading: JDLOV_avgjorelse_jdlov-2004-7043.xml

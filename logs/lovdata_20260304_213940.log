@@ -1,0 +1,238 @@
+2026-03-04 21:39:48,453 - INFO - ✓ Supabase bucket : legal_area
+2026-03-04 21:39:48,454 - INFO - ✓ Supabase table  : legal_area_metadata
+2026-03-04 21:39:48,455 - INFO - ✓ StorageHandler initialized
+2026-03-04 21:40:17,155 - WARNING - ⚠️  scraper_claims table not found — parallel claim tracking disabled. Create it with:  CREATE TABLE scraper_claims (area_key TEXT PRIMARY KEY, claimed_by TEXT, claimed_at TIMESTAMPTZ, status TEXT);
+2026-03-04 21:40:17,155 - INFO - ======================================================================
+2026-03-04 21:40:17,155 - INFO - ENV / CONFIG
+2026-03-04 21:40:17,165 - INFO -   WORKER ID       : c30b4612
+2026-03-04 21:40:17,165 - INFO -   SUPABASE_TABLE  : legal_area_metadata
+2026-03-04 21:40:17,167 - INFO -   SUPABASE_BUCKET : legal_area
+2026-03-04 21:40:17,170 - INFO -   BASE_DIR        : ./scraped_xml
+2026-03-04 21:40:17,171 - INFO -   TIMEOUT         : 30
+2026-03-04 21:40:17,171 - INFO -   HEADLESS        : False
+2026-03-04 21:40:17,171 - INFO -   YEAR RANGE      : 2000 – 2026
+2026-03-04 21:40:17,172 - INFO -   BATCH SIZE      : 10
+2026-03-04 21:40:17,172 - INFO - ======================================================================
+2026-03-04 21:40:53,637 - INFO - ✅ Login successful
+2026-03-04 21:40:59,206 - INFO - ✅ Tree nodes present
+2026-03-04 21:41:00,254 - INFO - Found 35 tree node(s)
+2026-03-04 21:41:00,932 - INFO - 📋 ROOT categories: 35
+2026-03-04 21:41:00,932 - INFO - 📊 Total ROOTs: 35
+2026-03-04 21:41:06,183 - INFO - ✅ Tree nodes present
+2026-03-04 21:41:07,219 - INFO - Found 35 tree node(s)
+2026-03-04 21:41:07,800 - INFO - 📋 ROOT categories: 35
+2026-03-04 21:41:07,800 - INFO - 
+======================================================================
+2026-03-04 21:41:07,800 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-04 21:41:07,800 - INFO - ======================================================================
+2026-03-04 21:41:09,888 - INFO -    Branch count: 5
+2026-03-04 21:41:15,253 - INFO - ✅ Tree nodes present
+2026-03-04 21:41:16,273 - INFO - Found 40 tree node(s)
+2026-03-04 21:41:16,750 - INFO - 📋 ROOT categories: 40
+2026-03-04 21:41:17,895 - INFO -    [1/5] BRANCH: Anskaffelser
+2026-03-04 21:41:19,597 - INFO -       Leaf count: 0
+2026-03-04 21:41:19,597 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-04 21:41:20,654 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=claimed_by%2Cclaimed_at%2Cstatus&area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_ "HTTP/1.1 404 Not Found"
+2026-03-04 21:41:20,656 - WARNING - ⚠️  Claim check failed ({'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}) — proceeding anyway: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_
+2026-03-04 21:41:21,173 - INFO -     ✅ div.legal-area-header present
+2026-03-04 21:41:21,229 - INFO -     Found 11 anchor links in legal-area-header
+2026-03-04 21:41:21,273 - INFO -     ✓ Section: 'Siste dokumenter'  →  LATEST DOCUMENTS  (div#saker)
+2026-03-04 21:41:21,299 - INFO -     ✓ Section: 'Lover'  →  LAWS  (div#lover)
+2026-03-04 21:41:21,331 - INFO -     ✓ Section: 'Forskrifter'  →  REGULATIONS  (div#forskrifter)
+2026-03-04 21:41:21,360 - INFO -     ✓ Section: 'Avgjørelser fra Høyesterett'  →  DECISIONS FROM THE SUPREME COURT  (div#hr)
+2026-03-04 21:41:21,390 - INFO -     ✓ Section: 'Avgjørelser fra lagmannsrettene'  →  DECISIONS FROM THE COURTS OF APPEAL  (div#lr)
+2026-03-04 21:41:21,417 - INFO -     ✓ Section: 'Avgjørelser fra tingrettene'  →  DECISIONS FROM THE DISTRICT COURTS  (div#tr)
+2026-03-04 21:41:21,441 - INFO -     ✓ Section: 'Artikler'  →  ARTICLES  (div#artikler)
+2026-03-04 21:41:21,465 - INFO -     ✓ Section: 'Dokumenter fra Klagenemnda for offentlige anskaffelser'  →  DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  (div#kofa)
+2026-03-04 21:41:21,493 - INFO -     ✓ Section: 'Dokumenter fra Byggebransjens Faglig Juridiske Råd'  →  DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL  (div#bfjr)
+2026-03-04 21:41:21,520 - INFO -     ✓ Section: 'Dokumenter fra Justisdepartementet'  →  DOCUMENTS FROM THE MINISTRY OF JUSTICE  (div#jd)
+2026-03-04 21:41:21,550 - INFO -     ✓ Section: 'Andre dokumenter'  →  OTHER DOCUMENTS  (div#otherBases)
+2026-03-04 21:41:21,551 - INFO - 
+    ════════════════════════════════════════════════
+    11 SECTIONS FOUND — processing one by one
+    ════════════════════════════════════════════════
+2026-03-04 21:41:21,552 - INFO - 
+    ── [1/11] LATEST DOCUMENTS ──
+2026-03-04 21:41:21,840 - INFO -     👆 Clicked section tab: 'Siste dokumenter'
+2026-03-04 21:41:23,363 - INFO -     ✅ Heading div#saker found
+2026-03-04 21:41:23,396 - INFO -     ℹ️  No 'Vis alle' button found for div#saker
+2026-03-04 21:41:23,428 - INFO -     📋 Small section mode — collecting directly
+2026-03-04 21:41:23,462 - INFO -     ✅ Small section div#saker — collected 10 URLs
+2026-03-04 21:41:23,462 - INFO -     ✅ COMPLETE 'LATEST DOCUMENTS'  expected=None  collected=10
+2026-03-04 21:41:23,462 - INFO - 
+    ── [2/11] LAWS ──
+2026-03-04 21:41:23,844 - INFO -     👆 Clicked section tab: 'Lover'
+2026-03-04 21:41:25,366 - INFO -     ✅ Heading div#lover found
+2026-03-04 21:41:25,393 - INFO -     ℹ️  No 'Vis alle' button found for div#lover
+2026-03-04 21:41:25,414 - INFO -     📋 Small section mode — collecting directly
+2026-03-04 21:41:25,445 - INFO -     ✅ Small section div#lover — collected 2 URLs
+2026-03-04 21:41:25,445 - INFO -     ✅ COMPLETE 'LAWS'  expected=None  collected=2
+2026-03-04 21:41:25,445 - INFO - 
+    ── [3/11] REGULATIONS ──
+2026-03-04 21:41:25,843 - INFO -     👆 Clicked section tab: 'Forskrifter'
+2026-03-04 21:41:27,370 - INFO -     ✅ Heading div#forskrifter found
+2026-03-04 21:41:27,412 - INFO -     ✅ Vis alle clicked — expected=16 (will redirect to Advanced Search)
+2026-03-04 21:41:34,441 - INFO -     ✅ Advanced Search page loaded
+2026-03-04 21:41:34,441 - INFO -     🔍 Advanced Search mode — collecting all pages
+2026-03-04 21:41:34,515 - INFO -     📊 Advanced Search total count: 16
+2026-03-04 21:41:34,532 - INFO -       page 1: +16 new  (total: 16 / expected: 16)
+2026-03-04 21:41:34,532 - INFO -       ✅ All 16 docs collected
+2026-03-04 21:41:34,536 - INFO -     ↩️  Returning to legal area page
+2026-03-04 21:41:36,649 - INFO -     ↩️  Back to legal area page — tabs restored
+2026-03-04 21:41:36,650 - INFO -     ✅ COMPLETE 'REGULATIONS'  expected=16  collected=16
+2026-03-04 21:41:36,651 - INFO - 
+    ── [4/11] DECISIONS FROM THE SUPREME COURT ──
+2026-03-04 21:41:37,002 - INFO -     👆 Clicked section tab: 'Avgjørelser fra Høyesterett'
+2026-03-04 21:41:38,527 - INFO -     ✅ Heading div#hr found
+2026-03-04 21:41:38,572 - INFO -     ✅ Vis alle clicked — expected=16 (will redirect to Advanced Search)
+2026-03-04 21:41:45,608 - INFO -     ✅ Advanced Search page loaded
+2026-03-04 21:41:45,608 - INFO -     🔍 Advanced Search mode — collecting all pages
+2026-03-04 21:41:45,780 - INFO -     📊 Advanced Search total count: 16
+2026-03-04 21:41:45,792 - INFO -       page 1: +16 new  (total: 16 / expected: 16)
+2026-03-04 21:41:45,792 - INFO -       ✅ All 16 docs collected
+2026-03-04 21:41:45,793 - INFO -     ↩️  Returning to legal area page
+2026-03-04 21:41:47,820 - INFO -     ↩️  Back to legal area page — tabs restored
+2026-03-04 21:41:47,820 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE SUPREME COURT'  expected=16  collected=16
+2026-03-04 21:41:47,820 - INFO - 
+    ── [5/11] DECISIONS FROM THE COURTS OF APPEAL ──
+2026-03-04 21:41:48,310 - INFO -     👆 Clicked section tab: 'Avgjørelser fra lagmannsrettene'
+2026-03-04 21:41:49,832 - INFO -     ✅ Heading div#lr found
+2026-03-04 21:41:49,881 - INFO -     ℹ️  No 'Vis alle' button found for div#lr
+2026-03-04 21:41:52,054 - INFO -     ✅ Advanced Search page loaded
+2026-03-04 21:41:52,055 - INFO -     🔍 Advanced Search mode — collecting all pages
+2026-03-04 21:41:52,108 - INFO -     📊 Advanced Search total count: 168
+2026-03-04 21:41:52,120 - INFO -       page 1: +50 new  (total: 50 / expected: 168)
+2026-03-04 21:41:55,194 - INFO -       page 2: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:41:58,221 - INFO -       page 3: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:01,250 - INFO -       page 4: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:04,280 - INFO -       page 5: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:07,296 - INFO -       page 6: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:10,331 - INFO -       page 7: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:13,356 - INFO -       page 8: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:16,386 - INFO -       page 9: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:19,411 - INFO -       page 10: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:22,437 - INFO -       page 11: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:25,473 - INFO -       page 12: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:28,501 - INFO -       page 13: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:31,530 - INFO -       page 14: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:34,558 - INFO -       page 15: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:37,584 - INFO -       page 16: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:40,616 - INFO -       page 17: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:43,650 - INFO -       page 18: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:46,680 - INFO -       page 19: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:49,701 - INFO -       page 20: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:52,731 - INFO -       page 21: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:55,757 - INFO -       page 22: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:42:58,791 - INFO -       page 23: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:01,816 - INFO -       page 24: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:04,841 - INFO -       page 25: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:07,867 - INFO -       page 26: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:10,892 - INFO -       page 27: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:13,913 - INFO -       page 28: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:16,935 - INFO -       page 29: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:19,958 - INFO -       page 30: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:22,983 - INFO -       page 31: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:26,011 - INFO -       page 32: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:29,041 - INFO -       page 33: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:32,065 - INFO -       page 34: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:35,091 - INFO -       page 35: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:38,112 - INFO -       page 36: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:41,142 - INFO -       page 37: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:44,165 - INFO -       page 38: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:47,202 - INFO -       page 39: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:50,228 - INFO -       page 40: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:53,260 - INFO -       page 41: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:56,284 - INFO -       page 42: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:43:59,307 - INFO -       page 43: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:02,329 - INFO -       page 44: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:05,346 - INFO -       page 45: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:08,365 - INFO -       page 46: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:11,387 - INFO -       page 47: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:14,411 - INFO -       page 48: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:17,440 - INFO -       page 49: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:20,469 - INFO -       page 50: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:23,488 - INFO -       page 51: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:26,507 - INFO -       page 52: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:29,531 - INFO -       page 53: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:32,555 - INFO -       page 54: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:35,586 - INFO -       page 55: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:38,617 - INFO -       page 56: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:41,651 - INFO -       page 57: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:44,695 - INFO -       page 58: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:47,720 - INFO -       page 59: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:50,855 - INFO -       page 60: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:53,881 - INFO -       page 61: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:56,911 - INFO -       page 62: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:44:59,947 - INFO -       page 63: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:02,976 - INFO -       page 64: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:06,008 - INFO -       page 65: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:09,034 - INFO -       page 66: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:12,060 - INFO -       page 67: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:15,090 - INFO -       page 68: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:18,126 - INFO -       page 69: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:21,156 - INFO -       page 70: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:24,190 - INFO -       page 71: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:27,216 - INFO -       page 72: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:30,251 - INFO -       page 73: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:33,282 - INFO -       page 74: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:36,307 - INFO -       page 75: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:39,330 - INFO -       page 76: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:42,355 - INFO -       page 77: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:45,380 - INFO -       page 78: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:48,410 - INFO -       page 79: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:51,445 - INFO -       page 80: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:54,477 - INFO -       page 81: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:45:57,506 - INFO -       page 82: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:00,533 - INFO -       page 83: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:03,564 - INFO -       page 84: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:06,598 - INFO -       page 85: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:09,630 - INFO -       page 86: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:12,656 - INFO -       page 87: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:15,675 - INFO -       page 88: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:18,694 - INFO -       page 89: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:21,722 - INFO -       page 90: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:24,744 - INFO -       page 91: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:27,778 - INFO -       page 92: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:30,794 - INFO -       page 93: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:33,819 - INFO -       page 94: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:36,842 - INFO -       page 95: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:39,867 - INFO -       page 96: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:42,886 - INFO -       page 97: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:45,912 - INFO -       page 98: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:48,936 - INFO -       page 99: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:51,962 - INFO -       page 100: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:54,985 - INFO -       page 101: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:46:58,009 - INFO -       page 102: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:01,031 - INFO -       page 103: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:04,056 - INFO -       page 104: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:07,090 - INFO -       page 105: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:10,109 - INFO -       page 106: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:13,135 - INFO -       page 107: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:16,163 - INFO -       page 108: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:19,188 - INFO -       page 109: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:22,218 - INFO -       page 110: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:25,247 - INFO -       page 111: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:28,272 - INFO -       page 112: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:31,294 - INFO -       page 113: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:34,315 - INFO -       page 114: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:37,343 - INFO -       page 115: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:40,372 - INFO -       page 116: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:43,407 - INFO -       page 117: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:46,455 - INFO -       page 118: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:49,488 - INFO -       page 119: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:52,520 - INFO -       page 120: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:55,550 - INFO -       page 121: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:47:58,570 - INFO -       page 122: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:01,595 - INFO -       page 123: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:04,625 - INFO -       page 124: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:07,654 - INFO -       page 125: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:10,679 - INFO -       page 126: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:13,713 - INFO -       page 127: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:16,739 - INFO -       page 128: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:19,765 - INFO -       page 129: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:22,800 - INFO -       page 130: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:25,834 - INFO -       page 131: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:28,867 - INFO -       page 132: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:31,895 - INFO -       page 133: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:34,915 - INFO -       page 134: +0 new  (total: 50 / expected: 168)
+2026-03-04 21:48:37,949 - INFO -       page 135: +0 new  (total: 50 / expected: 168)

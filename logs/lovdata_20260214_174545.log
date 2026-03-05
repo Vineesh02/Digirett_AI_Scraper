@@ -1,0 +1,71 @@
+2026-02-14 17:45:48,132 - INFO - ✓ Database connected
+2026-02-14 17:45:48,132 - INFO - ====== WebDriver manager ======
+2026-02-14 17:45:48,195 - INFO - [driver] ChromeDriver (WDM cache): C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 17:45:49,547 - INFO - [driver] Browser started (explicit path)
+2026-02-14 17:45:49,548 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 17:45:50,022 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 17:45:50,022 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 17:45:50,022 - INFO - 🔐 Logging in…
+2026-02-14 17:46:08,033 - INFO - ✓ Login successful
+2026-02-14 17:46:08,034 - INFO - 
+======================================================================
+2026-02-14 17:46:08,034 - INFO - MODE: LEGAL_AREAS_ONLY
+2026-02-14 17:46:08,034 - INFO - ======================================================================
+
+2026-02-14 17:46:08,035 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 17:46:08,035 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 17:46:08,035 - INFO - 🔍 Discovering all legal areas…
+2026-02-14 17:46:13,385 - INFO -   JS strategy: 0 areas found
+2026-02-14 17:46:13,496 - INFO -   BS4 strategy: 0 areas found
+2026-02-14 17:46:13,497 - WARNING -   Dynamic discovery failed — using Norwegian slug table
+2026-02-14 17:46:13,497 - INFO -   Slug-table: 40 areas
+2026-02-14 17:46:13,497 - INFO - ✓ Discovered 40 legal areas
+2026-02-14 17:46:13,498 - INFO -   1. Arbeidsrett  →  https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 17:46:13,498 - INFO -   2. Arbeidsmiljø  →  https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 17:46:13,499 - INFO -   3. Trygderett  →  https://lovdata.no/pro/#rettsomrade/trygderett
+2026-02-14 17:46:13,499 - INFO -   4. Erstatningsrett  →  https://lovdata.no/pro/#rettsomrade/erstatningsrett
+2026-02-14 17:46:13,499 - INFO -   5. Familierett  →  https://lovdata.no/pro/#rettsomrade/familierett
+2026-02-14 17:46:13,500 - INFO -   6. Arverett  →  https://lovdata.no/pro/#rettsomrade/arverett
+2026-02-14 17:46:13,500 - INFO -   7. Avtalerett  →  https://lovdata.no/pro/#rettsomrade/avtalerett
+2026-02-14 17:46:13,500 - INFO -   8. Kontraktsrett  →  https://lovdata.no/pro/#rettsomrade/kontraktsrett
+2026-02-14 17:46:13,502 - INFO -   9. Kjøpsrett  →  https://lovdata.no/pro/#rettsomrade/kjopsrett
+2026-02-14 17:46:13,502 - INFO -   10. Eiendomsrett  →  https://lovdata.no/pro/#rettsomrade/eiendomsrett
+2026-02-14 17:46:13,502 - INFO -   … and 30 more
+2026-02-14 17:46:13,502 - INFO - 
+📊 Total legal areas discovered: 40
+2026-02-14 17:46:13,502 - INFO -   Max docs per area: 100
+
+2026-02-14 17:46:13,502 - INFO - 
+======================================================================
+2026-02-14 17:46:13,502 - INFO - [1/40] Arbeidsrett
+2026-02-14 17:46:13,505 - INFO - ======================================================================
+2026-02-14 17:46:13,505 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 17:46:13,541 - INFO - ⚖️  Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 17:46:38,360 - WARNING -   ⚠️  Area content did not appear — page may not have loaded correctly
+2026-02-14 17:46:40,411 - INFO -   📁 Area title: Min side
+2026-02-14 17:46:40,422 - INFO -   📂 0 subcategory headers found
+2026-02-14 17:46:40,422 - INFO -   📄 No subcategories — scrolling entire page
+2026-02-14 17:46:44,624 - INFO -   Collected 43 document URLs
+2026-02-14 17:46:44,624 - INFO -   Collected 43 docs from page scroll
+2026-02-14 17:46:44,624 - INFO -   📁 Category: Legal_Areas/Min_Side
+2026-02-14 17:46:44,629 - INFO -   📂 Found 1 document categories
+
+2026-02-14 17:46:44,629 - INFO -   → Main (43 docs)
+2026-02-14 17:46:44,629 - INFO -     Path: Legal_Areas/Min_Side/Main
+2026-02-14 17:48:24,652 - INFO -     ✅ 0 saved
+
+2026-02-14 17:48:24,653 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 17:48:24,653 - INFO - 
+======================================================================
+2026-02-14 17:48:24,655 - INFO - [2/40] Arbeidsmiljø
+2026-02-14 17:48:24,655 - INFO - ======================================================================
+2026-02-14 17:48:24,655 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 17:48:24,684 - INFO - ⚖️  Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 17:48:38,054 - WARNING - 
+⚠️ Interrupted by user
+2026-02-14 17:48:38,055 - INFO - 
+📦 Flushing uploads...
+2026-02-14 17:48:38,056 - INFO -   ✓ 0 files flushed
+2026-02-14 17:48:38,131 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/37cb33e48fbde1b3233dfa00dc7e8d20

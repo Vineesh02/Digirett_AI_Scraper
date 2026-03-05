@@ -1,0 +1,73 @@
+2026-02-16 01:27:11,794 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-16 01:27:11,794 - INFO - 🔐 Opening Lovdata login page...
+2026-02-16 01:27:21,237 - INFO - ✅ Login successful
+2026-02-16 01:27:21,238 - INFO - ======================================================================
+2026-02-16 01:27:21,238 - INFO - MODE: legal_areas_only
+2026-02-16 01:27:21,239 - INFO - ======================================================================
+2026-02-16 01:27:21,239 - INFO - 
+======================================================================
+2026-02-16 01:27:21,239 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-02-16 01:27:21,239 - INFO -    Using fallback list from config.LEGAL_AREA_TRANSLATIONS
+2026-02-16 01:27:21,239 - INFO - ======================================================================
+2026-02-16 01:27:21,239 - INFO - 📂 Loading legal areas from config.py...
+2026-02-16 01:27:21,240 - INFO - 📋 Loaded 38 legal areas
+2026-02-16 01:27:21,240 - INFO - 
+📊 Total legal areas: 38
+
+2026-02-16 01:27:21,241 - INFO - 
+======================================================================
+2026-02-16 01:27:21,241 - INFO - [1/38] Labor_Law
+2026-02-16 01:27:21,241 - INFO - ======================================================================
+2026-02-16 01:27:21,241 - INFO -    Norwegian: arbeidsrett
+2026-02-16 01:27:21,241 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-16 01:27:21,241 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-16 01:27:21,242 - INFO -    🔄 Strategy 1: Direct navigation to full URL
+2026-02-16 01:27:29,262 - INFO -    🌍 After Strategy 1: https://lovdata.no/pro/#myPage
+2026-02-16 01:27:29,262 - WARNING -    ⚠️ Strategy 1 failed, trying Strategy 2...
+2026-02-16 01:27:29,265 - INFO -    🔄 Strategy 2: Looking for menu item: arbeidsrett
+2026-02-16 01:27:29,871 - INFO -    🌍 After Strategy 2: https://lovdata.no/pro/#myPage
+2026-02-16 01:27:29,871 - WARNING -    ⚠️ Strategy 2 failed, trying Strategy 3 (JavaScript force)...
+2026-02-16 01:27:35,941 - INFO -    Attempt 1: Current hash = #myPage
+2026-02-16 01:27:41,998 - INFO -    Attempt 2: Current hash = #myPage
+2026-02-16 01:27:48,060 - INFO -    Attempt 3: Current hash = #myPage
+2026-02-16 01:27:54,143 - INFO -    Attempt 4: Current hash = #myPage
+2026-02-16 01:28:00,225 - INFO -    Attempt 5: Current hash = #myPage
+2026-02-16 01:28:00,226 - ERROR -    ❌ All strategies failed - cannot navigate to https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-16 01:28:00,228 - ERROR -    Final URL: https://lovdata.no/pro/#myPage
+2026-02-16 01:28:00,228 - WARNING - ⚠️  No documents found
+2026-02-16 01:28:00,230 - INFO - 
+======================================================================
+2026-02-16 01:28:00,230 - INFO - [2/38] Work_Environment
+2026-02-16 01:28:00,230 - INFO - ======================================================================
+2026-02-16 01:28:00,230 - INFO -    Norwegian: arbeidsmiljo
+2026-02-16 01:28:00,230 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-16 01:28:00,230 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-16 01:28:00,230 - INFO -    🔄 Strategy 1: Direct navigation to full URL
+2026-02-16 01:28:08,246 - INFO -    🌍 After Strategy 1: https://lovdata.no/pro/#myPage
+2026-02-16 01:28:08,250 - WARNING -    ⚠️ Strategy 1 failed, trying Strategy 2...
+2026-02-16 01:28:08,250 - INFO -    🔄 Strategy 2: Looking for menu item: arbeidsmiljo
+2026-02-16 01:28:09,241 - INFO -    🌍 After Strategy 2: https://lovdata.no/pro/#myPage
+2026-02-16 01:28:09,241 - WARNING -    ⚠️ Strategy 2 failed, trying Strategy 3 (JavaScript force)...
+2026-02-16 01:28:15,303 - INFO -    Attempt 1: Current hash = #myPage
+2026-02-16 01:28:21,369 - INFO -    Attempt 2: Current hash = #myPage
+2026-02-16 01:28:27,440 - INFO -    Attempt 3: Current hash = #myPage
+2026-02-16 01:28:33,495 - INFO -    Attempt 4: Current hash = #myPage
+2026-02-16 01:28:39,555 - INFO -    Attempt 5: Current hash = #myPage
+2026-02-16 01:28:39,555 - ERROR -    ❌ All strategies failed - cannot navigate to https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-16 01:28:39,560 - ERROR -    Final URL: https://lovdata.no/pro/#myPage
+2026-02-16 01:28:39,560 - WARNING - ⚠️  No documents found
+2026-02-16 01:28:39,561 - INFO - 
+======================================================================
+2026-02-16 01:28:39,561 - INFO - [3/38] Social_Security_Law
+2026-02-16 01:28:39,561 - INFO - ======================================================================
+2026-02-16 01:28:39,561 - INFO -    Norwegian: trygderett
+2026-02-16 01:28:39,561 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/trygderett
+2026-02-16 01:28:39,561 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/trygderett
+2026-02-16 01:28:39,562 - INFO -    🔄 Strategy 1: Direct navigation to full URL
+2026-02-16 01:28:47,583 - INFO -    🌍 After Strategy 1: https://lovdata.no/pro/#myPage
+2026-02-16 01:28:47,583 - WARNING -    ⚠️ Strategy 1 failed, trying Strategy 2...
+2026-02-16 01:28:47,583 - INFO -    🔄 Strategy 2: Looking for menu item: trygderett
+2026-02-16 01:28:48,188 - INFO -    🌍 After Strategy 2: https://lovdata.no/pro/#myPage
+2026-02-16 01:28:48,188 - WARNING -    ⚠️ Strategy 2 failed, trying Strategy 3 (JavaScript force)...
+2026-02-16 01:28:54,269 - INFO -    Attempt 1: Current hash = #myPage
+2026-02-16 01:28:58,445 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/155e5307894777ca9b120f51c26db1d4

@@ -1,0 +1,31 @@
+2026-02-14 17:45:02,383 - INFO - ✓ Database connected
+2026-02-14 17:45:02,383 - INFO - ====== WebDriver manager ======
+2026-02-14 17:45:02,513 - INFO - [driver] ChromeDriver (WDM cache): C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 17:45:05,664 - INFO - [driver] Browser started (explicit path)
+2026-02-14 17:45:05,665 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 17:45:06,378 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 17:45:06,378 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 17:45:06,378 - INFO - 🔐 Logging in…
+2026-02-14 17:45:25,064 - INFO - ✓ Login successful
+2026-02-14 17:45:25,065 - INFO - 
+======================================================================
+2026-02-14 17:45:25,065 - INFO - MODE: ALL
+2026-02-14 17:45:25,066 - INFO - ======================================================================
+
+2026-02-14 17:45:25,067 - INFO - 
+📚 SCRAPING SOURCES OF LAW
+2026-02-14 17:45:25,068 - INFO -   Total categories: 16
+2026-02-14 17:45:25,068 - INFO -   Max per category: 150
+
+2026-02-14 17:45:25,068 - INFO - [1/16] Laws and Regulations > Active Laws (NL)
+2026-02-14 17:45:25,069 - INFO -   📁 01_Laws_and_Regulations/Active_Laws_NL
+2026-02-14 17:45:25,069 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 17:45:25,070 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 17:45:32,525 - INFO -   Collected 5 document URLs
+2026-02-14 17:45:32,525 - INFO -   Chronological: 5 docs
+2026-02-14 17:45:32,996 - WARNING - 
+⚠️ Interrupted by user
+2026-02-14 17:45:32,996 - INFO - 
+📦 Flushing uploads...
+2026-02-14 17:45:32,997 - INFO -   ✓ 0 files flushed
+2026-02-14 17:45:33,140 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/8c675d44a0f7d334cd6d1443ec37f322

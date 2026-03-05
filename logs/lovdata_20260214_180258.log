@@ -1,0 +1,39 @@
+2026-02-14 18:03:08,055 - INFO - ✓ Database connected
+2026-02-14 18:03:08,055 - INFO - ====== WebDriver manager ======
+2026-02-14 18:03:09,548 - INFO - [driver] Started with: C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 18:03:09,549 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 18:03:09,883 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 18:03:09,883 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 18:03:09,883 - INFO - Logging in…
+2026-02-14 18:03:29,651 - INFO - Login successful
+2026-02-14 18:03:29,652 - INFO - 
+======================================================================
+2026-02-14 18:03:29,652 - INFO - MODE: LEGAL_AREAS_ONLY
+2026-02-14 18:03:29,652 - INFO - ======================================================================
+
+2026-02-14 18:03:29,652 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 18:03:29,654 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 18:03:29,654 - INFO - Ready to scrape 39 legal areas (English names)
+2026-02-14 18:03:29,654 - INFO -   1. Labor_Law (slug: arbeidsrett)
+2026-02-14 18:03:29,654 - INFO -   2. Work_Environment (slug: arbeidsmiljo)
+2026-02-14 18:03:29,655 - INFO -   3. Social_Security_Law (slug: trygderett)
+2026-02-14 18:03:29,655 - INFO -   4. Tort_Law (slug: erstatningsrett)
+2026-02-14 18:03:29,655 - INFO -   5. Family_Law (slug: familierett)
+2026-02-14 18:03:29,655 - INFO -   … and 34 more
+2026-02-14 18:03:29,656 - INFO - 
+📊 Total legal areas discovered: 39
+2026-02-14 18:03:29,656 - INFO -   Max docs per area: 100
+
+2026-02-14 18:03:29,656 - INFO - 
+======================================================================
+2026-02-14 18:03:29,656 - INFO - [1/39] Labor_Law
+2026-02-14 18:03:29,656 - INFO - ======================================================================
+2026-02-14 18:03:29,656 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 18:03:29,656 - INFO -   Area: Labor_Law (slug: arbeidsrett)
+2026-02-14 18:11:07,904 - WARNING - 
+⚠️ Interrupted by user
+2026-02-14 18:11:07,935 - INFO - 
+📦 Flushing uploads...
+2026-02-14 18:11:07,938 - INFO -   ✓ 0 files flushed

@@ -1,0 +1,143 @@
+2026-02-14 12:53:34,321 - INFO - ================================================================================
+2026-02-14 12:53:34,322 - INFO - LOVDATA PRO SCRAPER - ULTRA-FAST MODE
+2026-02-14 12:53:34,322 - INFO - ================================================================================
+2026-02-14 12:53:34,324 - INFO - Year range:   2020-2026
+2026-02-14 12:53:34,324 - INFO - Batch upload: Every 50 files
+2026-02-14 12:53:34,324 - INFO - Delay:        0.1s
+2026-02-14 12:53:34,325 - INFO - ================================================================================
+2026-02-14 12:53:35,499 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 12:53:35,510 - INFO - ✓ Database connected
+2026-02-14 12:53:35,511 - INFO - ====== WebDriver manager ======
+2026-02-14 12:53:39,146 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 12:53:39,471 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 12:53:39,693 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 12:53:39,695 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 12:53:39,697 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 12:53:41,485 - INFO - ✓ Browser started (UI visible mode)
+2026-02-14 12:53:41,486 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 12:53:41,826 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/bucket "HTTP/2 200 OK"
+2026-02-14 12:53:41,830 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 12:53:41,831 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 12:53:41,831 - INFO - 🔐 Logging in...
+2026-02-14 12:54:01,034 - INFO - ✓ Login successful
+2026-02-14 12:54:01,034 - INFO - 📋 MODE: legal_areas_only
+
+2026-02-14 12:54:01,034 - INFO - 
+================================================================================
+2026-02-14 12:54:01,034 - INFO - LEGAL AREAS
+2026-02-14 12:54:01,036 - INFO - ================================================================================
+2026-02-14 12:54:01,036 - INFO - ✓ 10 areas enabled
+
+2026-02-14 12:54:01,037 - INFO - 
+[1/10] Labor Law
+2026-02-14 12:54:01,037 - INFO -   📁 category    = Legal_Areas
+2026-02-14 12:54:01,037 - INFO -   📂 subcategory = Labor_Law
+2026-02-14 12:54:01,037 - INFO -   🔗 URL: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 12:54:01,037 - INFO - 📖 Registry: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 12:54:04,691 - INFO -   ✅ Found 43 documents
+2026-02-14 12:54:04,697 - INFO -   📄 25 documents found
+2026-02-14 12:54:10,458 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trstr-thrd-2025-179533.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:13,111 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-373-a.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:15,468 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-618cf87b7aa2.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:17,259 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-296-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:19,214 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-feb2d62062af.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:20,985 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-333-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:23,870 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lbsiv-lb-2025-103123.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:28,815 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-339-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:30,681 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-312-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:35,511 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-50318811f99b.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:37,473 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-636cd3045713.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:39,288 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-5e0a026a8d07.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:41,069 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-334-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:43,564 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-b323be65031c.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:45,422 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-a9982207148b.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:47,287 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lgsiv-lg-2026-5180.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:51,790 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lbstr-lb-2025-101938.xml "HTTP/1.1 200 OK"
+2026-02-14 12:54:53,683 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trstr-thrd-2025-147974.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:02,166 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trsiv-tosl-2025-180124.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:08,641 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-346-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:08,770 - INFO - 
+[2/10] Corporate Law
+2026-02-14 12:55:08,771 - INFO -   📁 category    = Legal_Areas
+2026-02-14 12:55:08,771 - INFO -   📂 subcategory = Company_Law
+2026-02-14 12:55:08,771 - INFO -   🔗 URL: https://lovdata.no/pro/#rettsomrade/selskapsrett
+2026-02-14 12:55:08,773 - INFO - 📖 Registry: https://lovdata.no/pro/#rettsomrade/selskapsrett
+2026-02-14 12:55:13,399 - INFO -   ✅ Found 43 documents
+2026-02-14 12:55:13,401 - INFO -   📄 25 documents found
+2026-02-14 12:55:14,891 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trstr-thrd-2025-179533.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:16,389 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-373-a.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:17,840 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-618cf87b7aa2.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:19,330 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-296-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:20,900 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-feb2d62062af.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:22,425 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-333-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:24,030 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lbsiv-lb-2025-103123.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:27,180 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-339-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:28,771 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-312-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:31,553 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-50318811f99b.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:32,998 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-636cd3045713.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:34,463 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-5e0a026a8d07.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:35,918 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-334-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:37,403 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-b323be65031c.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:38,904 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-a9982207148b.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:40,360 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lgsiv-lg-2026-5180.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:43,528 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lbstr-lb-2025-101938.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:45,129 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trstr-thrd-2025-147974.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:51,746 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trsiv-tosl-2025-180124.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:55,815 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-346-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:55:55,923 - INFO - 
+[3/10] Contract Law
+2026-02-14 12:55:55,924 - INFO -   📁 category    = Legal_Areas
+2026-02-14 12:55:55,925 - INFO -   📂 subcategory = Kontraktsrett
+2026-02-14 12:55:55,925 - INFO -   🔗 URL: https://lovdata.no/pro/#rettsomrade/kontraktsrett
+2026-02-14 12:55:55,925 - INFO - 📖 Registry: https://lovdata.no/pro/#rettsomrade/kontraktsrett
+2026-02-14 12:56:01,026 - INFO -   ✅ Found 43 documents
+2026-02-14 12:56:01,027 - INFO -   📄 25 documents found
+2026-02-14 12:56:02,460 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trstr-thrd-2025-179533.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:04,086 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-373-a.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:05,527 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-618cf87b7aa2.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:07,021 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-296-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:08,441 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-feb2d62062af.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:09,884 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-333-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:11,432 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lbsiv-lb-2025-103123.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:14,607 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-339-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:16,058 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-312-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:18,835 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-50318811f99b.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:20,247 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-636cd3045713.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:21,630 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-5e0a026a8d07.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:23,062 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-334-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:24,619 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-b323be65031c.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:26,004 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-a9982207148b.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:27,491 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lgsiv-lg-2026-5180.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:30,649 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lbstr-lb-2025-101938.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:32,150 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trstr-thrd-2025-147974.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:38,452 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trsiv-tosl-2025-180124.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:42,743 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-346-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:42,855 - INFO - 
+[4/10] Accounting
+2026-02-14 12:56:42,855 - INFO -   📁 category    = Legal_Areas
+2026-02-14 12:56:42,857 - INFO -   📂 subcategory = Regnskapsrett
+2026-02-14 12:56:42,857 - INFO -   🔗 URL: https://lovdata.no/pro/#rettsomrade/regnskapsrett
+2026-02-14 12:56:42,857 - INFO - 📖 Registry: https://lovdata.no/pro/#rettsomrade/regnskapsrett
+2026-02-14 12:56:47,359 - INFO -   ✅ Found 43 documents
+2026-02-14 12:56:47,359 - INFO -   📄 25 documents found
+2026-02-14 12:56:48,767 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.trstr-thrd-2025-179533.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:50,249 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-373-a.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:51,662 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-618cf87b7aa2.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:53,062 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-296-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:54,509 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-feb2d62062af.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:55,908 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-333-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:56:57,412 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lbsiv-lb-2025-103123.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:00,496 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-339-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:01,927 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrstr-hr-2026-312-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:04,715 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-50318811f99b.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:06,127 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-636cd3045713.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:07,531 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-5e0a026a8d07.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:08,969 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.hrsiv-hr-2026-334-u.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:10,429 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-b323be65031c.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:11,846 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.doc-a9982207148b.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:13,253 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lgsiv-lg-2026-5180.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:16,407 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.lbstr-lb-2025-101938.xml "HTTP/1.1 200 OK"
+2026-02-14 12:57:17,271 - INFO - 
+📦 Flushing remaining batch...
+2026-02-14 12:57:17,274 - INFO - ✓ Uploaded 0 files
+2026-02-14 12:57:17,401 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/a935e645049d46f3a3a175be319fa45b

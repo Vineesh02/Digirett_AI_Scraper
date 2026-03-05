@@ -1,0 +1,31 @@
+2026-02-23 19:36:16,972 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-23 19:36:16,973 - INFO - 🔐 Opening Lovdata login page...
+2026-02-23 19:36:23,630 - INFO - ✅ Login successful
+2026-02-23 19:36:23,632 - INFO - ======================================================================
+2026-02-23 19:36:23,632 - INFO - MODE: sources_of_law
+2026-02-23 19:36:23,632 - INFO - ======================================================================
+2026-02-23 19:36:23,632 - INFO - 
+======================================================================
+2026-02-23 19:36:23,632 - INFO - ⚖️  SCRAPING SOURCES OF LAW
+2026-02-23 19:36:23,632 - INFO - ======================================================================
+
+2026-02-23 19:36:23,635 - INFO - 
+ Registry: Publication List (Government/Parliament since 1971)
+2026-02-23 19:36:23,635 - INFO -     https://lovdata.no/pro/#registry/chronological/PUBG
+2026-02-23 19:36:23,635 - INFO -    None
+2026-02-23 19:36:23,635 - INFO - 📂 Scraping registry index:  https://lovdata.no/pro/#registry/chronological/PUBG
+2026-02-23 19:36:23,636 - INFO - 📂 Scraping registry index: 
+2026-02-23 19:36:23,636 - INFO - 📂 Scraping registry index: 34492
+2026-02-23 19:36:36,884 - INFO - Found 0 document URLs in chronological order in 2026
+2026-02-23 19:36:52,151 - INFO - Found 0 document URLs in chronological order in 2025
+2026-02-23 19:37:07,441 - INFO - Found 0 document URLs in chronological order in 2024
+2026-02-23 19:37:22,749 - INFO - Found 0 document URLs in chronological order in 2023
+2026-02-23 19:37:37,993 - INFO - Found 0 document URLs in chronological order in 2022
+2026-02-23 19:37:53,256 - INFO - Found 0 document URLs in chronological order in 2021
+2026-02-23 19:38:08,591 - INFO - Found 0 document URLs in chronological order in 2020
+2026-02-23 19:38:23,862 - INFO - Found 0 document URLs in chronological order in 2019
+2026-02-23 19:38:39,236 - INFO - Found 0 document URLs in chronological order in 2018
+2026-02-23 19:38:54,459 - INFO - Found 0 document URLs in chronological order in 2017
+2026-02-23 19:39:09,761 - INFO - Found 0 document URLs in chronological order in 2016
+2026-02-23 19:39:25,019 - INFO - Found 0 document URLs in chronological order in 2015
+2026-02-23 19:39:38,441 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/e0992d6766d1918bc00ba5e7445b64f9

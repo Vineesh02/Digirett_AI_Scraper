@@ -1,0 +1,635 @@
+2026-02-16 02:09:39,539 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-16 02:09:39,539 - INFO - 🔐 Opening Lovdata login page...
+2026-02-16 02:09:44,053 - INFO - ✅ Login successful
+2026-02-16 02:09:44,054 - INFO - ======================================================================
+2026-02-16 02:09:44,054 - INFO - MODE: legal_areas_only
+2026-02-16 02:09:44,054 - INFO - ======================================================================
+2026-02-16 02:09:44,054 - INFO - 
+======================================================================
+2026-02-16 02:09:44,054 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-02-16 02:09:44,054 - INFO -    Using fallback list from config.LEGAL_AREA_TRANSLATIONS
+2026-02-16 02:09:44,055 - INFO - ======================================================================
+2026-02-16 02:09:44,055 - INFO - 📂 Loading legal areas from config.py...
+2026-02-16 02:09:44,055 - INFO - 📋 Loaded 38 legal areas
+2026-02-16 02:09:44,056 - INFO - 
+📊 Total legal areas: 38
+
+2026-02-16 02:09:44,056 - INFO - 
+======================================================================
+2026-02-16 02:09:44,056 - INFO - [1/38] Labor_Law
+2026-02-16 02:09:44,056 - INFO - ======================================================================
+2026-02-16 02:09:44,056 - INFO -    Norwegian: arbeidsrett
+2026-02-16 02:09:44,056 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-16 02:09:44,057 - INFO - 📂 Scraping legal area: arbeidsrett
+2026-02-16 02:09:44,057 - INFO - 📂 Navigating to Rettsområder section...
+2026-02-16 02:09:49,572 - INFO -    🖱️  Clicking Rettsområder tab...
+2026-02-16 02:09:49,737 - INFO -    ✅ Clicked: Rettsområder
+2026-02-16 02:09:59,755 - INFO -    🌍 Current URL: https://lovdata.no/pro/#rettsomrade
+2026-02-16 02:09:59,755 - INFO -    📜 Loading tree structure...
+2026-02-16 02:10:04,831 - INFO -    🔍 Finding category nodes in tree...
+2026-02-16 02:10:04,848 - INFO -    Found 35 tree nodes
+2026-02-16 02:10:04,921 - INFO -    ✅ Found: entreprise - Anskaffelser, avtaler, bygg og entrepriser
+2026-02-16 02:10:04,982 - INFO -    ✅ Found: arbeidsrett - Arbeidsrett
+2026-02-16 02:10:05,024 - INFO -    ✅ Found: regnskapsrett - Bank, finans og regnskapsrett
+2026-02-16 02:10:05,072 - INFO -    ✅ Found: energirett - Energirett
+2026-02-16 02:10:05,168 - INFO -    ✅ Found: barnerett - Familie-, person- og barnerett
+2026-02-16 02:10:05,254 - INFO -    ✅ Found: konkurranserett - Forbruker-, kjøps- og konkurranserett
+2026-02-16 02:10:05,372 - INFO -    ✅ Found: medierett - IKT- og medierett
+2026-02-16 02:10:05,417 - INFO -    ✅ Found: immaterialrett - Immaterialrett
+2026-02-16 02:10:05,607 - INFO -    ✅ Found: trygderett - Pensjons- og trygderett
+2026-02-16 02:10:05,754 - INFO -    ✅ Found: straffeprosess - Sivil- og straffeprosess
+2026-02-16 02:10:05,798 - INFO -    ✅ Found: strafferett - Strafferett
+2026-02-16 02:10:05,906 - INFO -    ✅ Found: utlendingsrett - Utlendingsrett
+2026-02-16 02:10:05,906 - INFO - 
+   📋 Total discovered: 12 legal areas
+
+2026-02-16 02:10:05,906 - INFO -    🖱️  Clicking tree node: Arbeidsrett
+2026-02-16 02:10:13,964 - INFO -    🌍 After click: https://lovdata.no/pro/#rettsomrade&id=Arbeidsrett
+2026-02-16 02:10:13,983 - INFO -    ✅ Found 179 initial documents
+2026-02-16 02:10:18,990 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 02:10:19,020 - INFO -    📄 Scroll round 1: 179 docs loaded
+2026-02-16 02:10:21,559 - INFO -    📄 Scroll round 2: 179 docs loaded
+2026-02-16 02:10:24,102 - INFO -    📄 Scroll round 3: 179 docs loaded
+2026-02-16 02:10:26,656 - INFO -    📄 Scroll round 4: 179 docs loaded
+2026-02-16 02:10:29,231 - INFO -    📄 Scroll round 5: 179 docs loaded
+2026-02-16 02:10:34,324 - INFO -    📄 Scroll round 6: 179 docs loaded
+2026-02-16 02:10:34,324 - INFO -    ✅ All documents loaded: 179 total
+2026-02-16 02:10:35,806 - INFO -    🎉 Finished. Found 100 documents.
+2026-02-16 02:10:35,809 - INFO - 🚀 Processing 100 documents
+2026-02-16 02:10:35,809 - INFO - 
+   [1/100] Processing document...
+2026-02-16 02:10:35,809 - INFO - 📄 Scraping document...
+2026-02-16 02:10:38,955 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-372-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:39,035 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-16 02:10:39,188 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d62f17922b5cb40c87021db730e348e4&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:39,497 - INFO - 
+   [2/100] Processing document...
+2026-02-16 02:10:39,498 - INFO - 📄 Scraping document...
+2026-02-16 02:10:41,775 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.DIN_avgjorelse_din-2024-1090.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:41,829 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\DIN_avgjorelse_din-2024-1090.xml
+2026-02-16 02:10:41,967 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.57d3a5ba076f8e37640e2e180ce540bc&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:42,270 - INFO - 
+   [3/100] Processing document...
+2026-02-16 02:10:42,270 - INFO - 📄 Scraping document...
+2026-02-16 02:10:45,175 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.PROP_forarbeid_prop-35-l-202526.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:45,221 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\PROP_forarbeid_prop-35-l-202526.xml
+2026-02-16 02:10:45,355 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.34c6c71aae2514cbd7a73bccace2d21a&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:45,662 - INFO - 
+   [4/100] Processing document...
+2026-02-16 02:10:45,662 - INFO - 📄 Scraping document...
+2026-02-16 02:10:47,956 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-11-183.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:48,004 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\LTI_forskrift_2026-02-11-183.xml
+2026-02-16 02:10:48,138 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5ae4d37339ae75a2fdf7049b727f6c40&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:48,452 - INFO - 
+   [5/100] Processing document...
+2026-02-16 02:10:48,452 - INFO - 📄 Scraping document...
+2026-02-16 02:10:50,740 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.DIN_avgjorelse_din-2025-1147.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:50,785 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\DIN_avgjorelse_din-2025-1147.xml
+2026-02-16 02:10:50,899 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3a94c28a794b791073c63faaf0c6d794&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:51,213 - INFO - 
+   [6/100] Processing document...
+2026-02-16 02:10:51,213 - INFO - 📄 Scraping document...
+2026-02-16 02:10:53,579 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.DIN_avgjorelse_din-2025-1100.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:53,618 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\DIN_avgjorelse_din-2025-1100.xml
+2026-02-16 02:10:53,723 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1127c948583be7e951b589aacb13b494&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:54,031 - INFO - 
+   [7/100] Processing document...
+2026-02-16 02:10:54,031 - INFO - 📄 Scraping document...
+2026-02-16 02:10:56,481 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-09-176.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:56,535 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\LTI_forskrift_2026-02-09-176.xml
+2026-02-16 02:10:56,708 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.47e07aa61a946584eb6117500fd5f90b&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:57,025 - INFO - 
+   [8/100] Processing document...
+2026-02-16 02:10:57,026 - INFO - 📄 Scraping document...
+2026-02-16 02:10:59,284 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.ARD_avgjorelse_ar-2026-4.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:59,319 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\ARD_avgjorelse_ar-2026-4.xml
+2026-02-16 02:10:59,455 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d8d4a35ed1a8bae9061ce700cde9a6bb&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:10:59,758 - INFO - 
+   [9/100] Processing document...
+2026-02-16 02:10:59,758 - INFO - 📄 Scraping document...
+2026-02-16 02:11:02,060 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-09-173.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:02,104 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\LTI_forskrift_2026-02-09-173.xml
+2026-02-16 02:11:02,217 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c282ac9e4b09637b399cf998a02f1a29&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:02,530 - INFO - 
+   [10/100] Processing document...
+2026-02-16 02:11:02,530 - INFO - 📄 Scraping document...
+2026-02-16 02:11:04,983 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.DIN_avgjorelse_din-2024-1060.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:05,021 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\DIN_avgjorelse_din-2024-1060.xml
+2026-02-16 02:11:05,195 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.df936162b4ea947192cca651330130a0&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:05,195 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 02:11:05,729 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/HRSIV_avgjorelse_hr-2026-372-a.xml "HTTP/2 200 OK"
+2026-02-16 02:11:05,740 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-16 02:11:05,867 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:05,881 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-16 02:11:06,063 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/DIN_avgjorelse_din-2024-1090.xml "HTTP/2 200 OK"
+2026-02-16 02:11:06,066 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/DIN_avgjorelse_din-2024-1090.xml
+2026-02-16 02:11:06,188 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:06,188 - INFO - 🧾 Metadata inserted: DIN_avgjorelse_din-2024-1090.xml
+2026-02-16 02:11:06,371 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/PROP_forarbeid_prop-35-l-202526.xml "HTTP/2 200 OK"
+2026-02-16 02:11:06,383 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/PROP_forarbeid_prop-35-l-202526.xml
+2026-02-16 02:11:06,500 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:06,500 - INFO - 🧾 Metadata inserted: PROP_forarbeid_prop-35-l-202526.xml
+2026-02-16 02:11:06,685 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/LTI_forskrift_2026-02-11-183.xml "HTTP/2 200 OK"
+2026-02-16 02:11:06,701 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/LTI_forskrift_2026-02-11-183.xml
+2026-02-16 02:11:06,815 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:06,823 - INFO - 🧾 Metadata inserted: LTI_forskrift_2026-02-11-183.xml
+2026-02-16 02:11:07,018 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/DIN_avgjorelse_din-2025-1147.xml "HTTP/2 200 OK"
+2026-02-16 02:11:07,025 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/DIN_avgjorelse_din-2025-1147.xml
+2026-02-16 02:11:07,139 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:07,139 - INFO - 🧾 Metadata inserted: DIN_avgjorelse_din-2025-1147.xml
+2026-02-16 02:11:07,315 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/DIN_avgjorelse_din-2025-1100.xml "HTTP/2 200 OK"
+2026-02-16 02:11:07,319 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/DIN_avgjorelse_din-2025-1100.xml
+2026-02-16 02:11:07,416 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:07,416 - INFO - 🧾 Metadata inserted: DIN_avgjorelse_din-2025-1100.xml
+2026-02-16 02:11:07,632 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/LTI_forskrift_2026-02-09-176.xml "HTTP/2 200 OK"
+2026-02-16 02:11:07,632 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/LTI_forskrift_2026-02-09-176.xml
+2026-02-16 02:11:07,757 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:07,759 - INFO - 🧾 Metadata inserted: LTI_forskrift_2026-02-09-176.xml
+2026-02-16 02:11:07,963 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/ARD_avgjorelse_ar-2026-4.xml "HTTP/2 200 OK"
+2026-02-16 02:11:07,965 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/ARD_avgjorelse_ar-2026-4.xml
+2026-02-16 02:11:08,165 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:08,168 - INFO - 🧾 Metadata inserted: ARD_avgjorelse_ar-2026-4.xml
+2026-02-16 02:11:08,379 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/LTI_forskrift_2026-02-09-173.xml "HTTP/2 200 OK"
+2026-02-16 02:11:08,379 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/LTI_forskrift_2026-02-09-173.xml
+2026-02-16 02:11:08,575 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:08,579 - INFO - 🧾 Metadata inserted: LTI_forskrift_2026-02-09-173.xml
+2026-02-16 02:11:08,986 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/DIN_avgjorelse_din-2024-1060.xml "HTTP/2 200 OK"
+2026-02-16 02:11:08,988 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/DIN_avgjorelse_din-2024-1060.xml
+2026-02-16 02:11:09,592 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:09,592 - INFO - 🧾 Metadata inserted: DIN_avgjorelse_din-2024-1060.xml
+2026-02-16 02:11:09,613 - INFO - ✅ Batch upload complete
+
+2026-02-16 02:11:09,922 - INFO - 
+   [11/100] Processing document...
+2026-02-16 02:11:09,923 - INFO - 📄 Scraping document...
+2026-02-16 02:11:12,362 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2005-06-17-62.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:12,394 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2005-06-17-62.xml
+2026-02-16 02:11:12,570 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d9785627a079356790460b9b1f563138&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:12,872 - INFO - 
+   [12/100] Processing document...
+2026-02-16 02:11:12,872 - INFO - 📄 Scraping document...
+2026-02-16 02:11:15,445 - INFO - ⏭️  Skipping (year 1999 out of range)
+2026-02-16 02:11:15,758 - INFO - 
+   [13/100] Processing document...
+2026-02-16 02:11:15,758 - INFO - 📄 Scraping document...
+2026-02-16 02:11:18,501 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-51.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:18,528 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2017-06-16-51.xml
+2026-02-16 02:11:18,642 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.43a8793868fa559373aca709685e0159&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:18,950 - INFO - 
+   [14/100] Processing document...
+2026-02-16 02:11:18,950 - INFO - 📄 Scraping document...
+2026-02-16 02:11:21,333 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2009-12-18-131.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:21,387 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2009-12-18-131.xml
+2026-02-16 02:11:21,500 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.399f63ee6c9d6ced95f57411cc299f10&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:21,812 - INFO - 
+   [15/100] Processing document...
+2026-02-16 02:11:21,812 - INFO - 📄 Scraping document...
+2026-02-16 02:11:25,733 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-02-16-9.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:25,770 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2007-02-16-9.xml
+2026-02-16 02:11:25,899 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a8ea97ba7ad563e7eb0d715aa9ad7402&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:26,201 - INFO - 
+   [16/100] Processing document...
+2026-02-16 02:11:26,202 - INFO - 📄 Scraping document...
+2026-02-16 02:11:28,856 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2006-06-16-20.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:28,889 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2006-06-16-20.xml
+2026-02-16 02:11:29,056 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3b8c48fedf1e5aaff838f34a6d990114&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:29,372 - INFO - 
+   [17/100] Processing document...
+2026-02-16 02:11:29,372 - INFO - 📄 Scraping document...
+2026-02-16 02:11:31,665 - INFO - ⏭️  Skipping (year 1988 out of range)
+2026-02-16 02:11:31,981 - INFO - 
+   [18/100] Processing document...
+2026-02-16 02:11:31,983 - INFO - 📄 Scraping document...
+2026-02-16 02:11:34,517 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-50.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:34,573 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2017-06-16-50.xml
+2026-02-16 02:11:34,700 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a7d96cdd86055d5da9cbba9ffd79c95f&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:35,011 - INFO - 
+   [19/100] Processing document...
+2026-02-16 02:11:35,011 - INFO - 📄 Scraping document...
+2026-02-16 02:11:37,419 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2004-12-10-76.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:37,453 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2004-12-10-76.xml
+2026-02-16 02:11:37,578 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f909eb41c060ea4447f8b8a77b6d3989&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:37,881 - INFO - 
+   [20/100] Processing document...
+2026-02-16 02:11:37,883 - INFO - 📄 Scraping document...
+2026-02-16 02:11:40,265 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2012-06-22-43.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:40,298 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2012-06-22-43.xml
+2026-02-16 02:11:40,402 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.7d5bae8eceb70496d9a5bc3129064d53&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:40,708 - INFO - 
+   [21/100] Processing document...
+2026-02-16 02:11:40,708 - INFO - 📄 Scraping document...
+2026-02-16 02:11:42,966 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 02:11:43,273 - INFO - 
+   [22/100] Processing document...
+2026-02-16 02:11:43,273 - INFO - 📄 Scraping document...
+2026-02-16 02:11:45,659 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 02:11:45,960 - INFO - 
+   [23/100] Processing document...
+2026-02-16 02:11:45,961 - INFO - 📄 Scraping document...
+2026-02-16 02:11:48,356 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 02:11:48,665 - INFO - 
+   [24/100] Processing document...
+2026-02-16 02:11:48,666 - INFO - 📄 Scraping document...
+2026-02-16 02:11:51,473 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_1995-08-04-53_C2_A716.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:51,519 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_1995-08-04-53_C2_A716.xml
+2026-02-16 02:11:51,684 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.ccd45aaddb8c2290ee17a31fe45c1d97&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:51,995 - INFO - 
+   [25/100] Processing document...
+2026-02-16 02:11:51,995 - INFO - 📄 Scraping document...
+2026-02-16 02:11:54,205 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 02:11:54,509 - INFO - 
+   [26/100] Processing document...
+2026-02-16 02:11:54,509 - INFO - 📄 Scraping document...
+2026-02-16 02:11:57,319 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_1995-08-04-53_C2_A718.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:57,353 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_1995-08-04-53_C2_A718.xml
+2026-02-16 02:11:57,518 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.ce8cd8cb7930ba3e0de7755b257f7fd2&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:11:57,518 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 02:11:58,340 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2005-06-17-62.xml "HTTP/2 200 OK"
+2026-02-16 02:11:58,346 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2005-06-17-62.xml
+2026-02-16 02:11:58,536 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:58,553 - INFO - 🧾 Metadata inserted: NL_lov_2005-06-17-62.xml
+2026-02-16 02:11:58,959 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2017-06-16-51.xml "HTTP/2 200 OK"
+2026-02-16 02:11:58,959 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2017-06-16-51.xml
+2026-02-16 02:11:59,162 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:59,162 - INFO - 🧾 Metadata inserted: NL_lov_2017-06-16-51.xml
+2026-02-16 02:11:59,425 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2009-12-18-131.xml "HTTP/2 200 OK"
+2026-02-16 02:11:59,430 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2009-12-18-131.xml
+2026-02-16 02:11:59,668 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:11:59,668 - INFO - 🧾 Metadata inserted: NL_lov_2009-12-18-131.xml
+2026-02-16 02:12:00,287 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2007-02-16-9.xml "HTTP/2 200 OK"
+2026-02-16 02:12:00,291 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2007-02-16-9.xml
+2026-02-16 02:12:00,593 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:12:00,593 - INFO - 🧾 Metadata inserted: NL_lov_2007-02-16-9.xml
+2026-02-16 02:12:00,821 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2006-06-16-20.xml "HTTP/2 200 OK"
+2026-02-16 02:12:00,823 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2006-06-16-20.xml
+2026-02-16 02:12:01,004 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:12:01,009 - INFO - 🧾 Metadata inserted: NL_lov_2006-06-16-20.xml
+2026-02-16 02:12:01,416 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2017-06-16-50.xml "HTTP/2 200 OK"
+2026-02-16 02:12:01,418 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2017-06-16-50.xml
+2026-02-16 02:12:01,619 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:12:01,619 - INFO - 🧾 Metadata inserted: NL_lov_2017-06-16-50.xml
+2026-02-16 02:12:02,029 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2004-12-10-76.xml "HTTP/2 200 OK"
+2026-02-16 02:12:02,030 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2004-12-10-76.xml
+2026-02-16 02:12:02,233 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:12:02,236 - INFO - 🧾 Metadata inserted: NL_lov_2004-12-10-76.xml
+2026-02-16 02:12:02,459 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2012-06-22-43.xml "HTTP/2 200 OK"
+2026-02-16 02:12:02,459 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2012-06-22-43.xml
+2026-02-16 02:12:02,637 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:12:02,645 - INFO - 🧾 Metadata inserted: NL_lov_2012-06-22-43.xml
+2026-02-16 02:12:03,043 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_1995-08-04-53_C2_A716.xml "HTTP/2 200 OK"
+2026-02-16 02:12:03,044 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_1995-08-04-53_C2_A716.xml
+2026-02-16 02:12:03,258 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:12:03,260 - INFO - 🧾 Metadata inserted: NL_lov_1995-08-04-53_C2_A716.xml
+2026-02-16 02:12:03,468 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_1995-08-04-53_C2_A718.xml "HTTP/2 200 OK"
+2026-02-16 02:12:03,470 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_1995-08-04-53_C2_A718.xml
+2026-02-16 02:12:03,667 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:12:03,670 - INFO - 🧾 Metadata inserted: NL_lov_1995-08-04-53_C2_A718.xml
+2026-02-16 02:12:03,678 - INFO - ✅ Batch upload complete
+
+2026-02-16 02:12:03,987 - INFO - 
+   [27/100] Processing document...
+2026-02-16 02:12:03,987 - INFO - 📄 Scraping document...
+2026-02-16 02:12:06,217 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 02:12:06,521 - INFO - 
+   [28/100] Processing document...
+2026-02-16 02:12:06,522 - INFO - 📄 Scraping document...
+2026-02-16 02:12:09,402 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_1995-08-04-53_C2_A720.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:09,436 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_1995-08-04-53_C2_A720.xml
+2026-02-16 02:12:09,606 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4abcf2c4ba395bd9f9c097b3ec754110&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:09,914 - INFO - 
+   [29/100] Processing document...
+2026-02-16 02:12:09,914 - INFO - 📄 Scraping document...
+2026-02-16 02:12:12,148 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 02:12:12,464 - INFO - 
+   [30/100] Processing document...
+2026-02-16 02:12:12,464 - INFO - 📄 Scraping document...
+2026-02-16 02:12:14,690 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 02:12:14,998 - INFO - 
+   [31/100] Processing document...
+2026-02-16 02:12:14,998 - INFO - 📄 Scraping document...
+2026-02-16 02:12:17,216 - INFO - ⏭️  Skipping (year 1995 out of range)
+2026-02-16 02:12:17,531 - INFO - 
+   [32/100] Processing document...
+2026-02-16 02:12:17,531 - INFO - 📄 Scraping document...
+2026-02-16 02:12:19,825 - INFO - ⏭️  Skipping (year 1999 out of range)
+2026-02-16 02:12:20,132 - INFO - 
+   [33/100] Processing document...
+2026-02-16 02:12:20,132 - INFO - 📄 Scraping document...
+2026-02-16 02:12:22,822 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2011-06-24-30_C2_A71-3.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:22,857 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2011-06-24-30_C2_A71-3.xml
+2026-02-16 02:12:22,941 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9e66cf81008a2e2f487de8c77e120056&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:23,245 - INFO - 
+   [34/100] Processing document...
+2026-02-16 02:12:23,245 - INFO - 📄 Scraping document...
+2026-02-16 02:12:25,558 - INFO - ⏭️  Skipping (year 1999 out of range)
+2026-02-16 02:12:25,862 - INFO - 
+   [35/100] Processing document...
+2026-02-16 02:12:25,862 - INFO - 📄 Scraping document...
+2026-02-16 02:12:28,334 - INFO - ⏭️  Skipping (year 1998 out of range)
+2026-02-16 02:12:28,650 - INFO - 
+   [36/100] Processing document...
+2026-02-16 02:12:28,652 - INFO - 📄 Scraping document...
+2026-02-16 02:12:30,976 - INFO - ⏭️  Skipping (year 1998 out of range)
+2026-02-16 02:12:31,280 - INFO - 
+   [37/100] Processing document...
+2026-02-16 02:12:31,280 - INFO - 📄 Scraping document...
+2026-02-16 02:12:33,601 - INFO - ⏭️  Skipping (year 1985 out of range)
+2026-02-16 02:12:33,907 - INFO - 
+   [38/100] Processing document...
+2026-02-16 02:12:33,907 - INFO - 📄 Scraping document...
+2026-02-16 02:12:36,110 - INFO - ⏭️  Skipping (year 1985 out of range)
+2026-02-16 02:12:36,420 - INFO - 
+   [39/100] Processing document...
+2026-02-16 02:12:36,420 - INFO - 📄 Scraping document...
+2026-02-16 02:12:39,156 - INFO - ⏭️  Skipping (year 1985 out of range)
+2026-02-16 02:12:39,462 - INFO - 
+   [40/100] Processing document...
+2026-02-16 02:12:39,463 - INFO - 📄 Scraping document...
+2026-02-16 02:12:42,169 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2005-04-01-14_C2_A73.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:42,226 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2005-04-01-14_C2_A73.xml
+2026-02-16 02:12:42,338 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.33b269763514d2b45cec8820e18872fe&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:42,649 - INFO - 
+   [41/100] Processing document...
+2026-02-16 02:12:42,649 - INFO - 📄 Scraping document...
+2026-02-16 02:12:44,991 - INFO - ⏭️  Skipping (year 1993 out of range)
+2026-02-16 02:12:45,299 - INFO - 
+   [42/100] Processing document...
+2026-02-16 02:12:45,300 - INFO - 📄 Scraping document...
+2026-02-16 02:12:47,541 - INFO - ⏭️  Skipping (year 1993 out of range)
+2026-02-16 02:12:47,846 - INFO - 
+   [43/100] Processing document...
+2026-02-16 02:12:47,846 - INFO - 📄 Scraping document...
+2026-02-16 02:12:50,110 - INFO - ⏭️  Skipping (year 1993 out of range)
+2026-02-16 02:12:50,414 - INFO - 
+   [44/100] Processing document...
+2026-02-16 02:12:50,416 - INFO - 📄 Scraping document...
+2026-02-16 02:12:52,651 - INFO - ⏭️  Skipping (year 1993 out of range)
+2026-02-16 02:12:52,964 - INFO - 
+   [45/100] Processing document...
+2026-02-16 02:12:52,964 - INFO - 📄 Scraping document...
+2026-02-16 02:12:55,850 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2002-03-08-4_C2_A71a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:55,886 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2002-03-08-4_C2_A71a.xml
+2026-02-16 02:12:56,087 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b4c7d76695badc4235cca889101c1e31&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:56,397 - INFO - 
+   [46/100] Processing document...
+2026-02-16 02:12:56,397 - INFO - 📄 Scraping document...
+2026-02-16 02:12:58,820 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2002-03-08-4_C2_A76.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:58,868 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2002-03-08-4_C2_A76.xml
+2026-02-16 02:12:59,000 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c06b213424fcee46219dc9261760c38c&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:12:59,312 - INFO - 
+   [47/100] Processing document...
+2026-02-16 02:12:59,312 - INFO - 📄 Scraping document...
+2026-02-16 02:13:01,833 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2002-03-08-4_C2_A722.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:01,887 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2002-03-08-4_C2_A722.xml
+2026-02-16 02:13:02,237 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.595f95feb8e8a9753db644db68a20f16&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:02,549 - INFO - 
+   [48/100] Processing document...
+2026-02-16 02:13:02,550 - INFO - 📄 Scraping document...
+2026-02-16 02:13:05,008 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NLO_lov_2005-04-01-15_C2_A76-2.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:05,047 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NLO_lov_2005-04-01-15_C2_A76-2.xml
+2026-02-16 02:13:05,177 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.650ae5c4a03598fc4a7685c1462e6a2c&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:05,484 - INFO - 
+   [49/100] Processing document...
+2026-02-16 02:13:05,484 - INFO - 📄 Scraping document...
+2026-02-16 02:13:08,085 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NLO_lov_2005-04-01-15_C2_A76-3.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:08,118 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NLO_lov_2005-04-01-15_C2_A76-3.xml
+2026-02-16 02:13:08,648 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.24047af071cf124f4ef50ebcb6ca115b&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:08,960 - INFO - 
+   [50/100] Processing document...
+2026-02-16 02:13:08,961 - INFO - 📄 Scraping document...
+2026-02-16 02:13:11,501 - INFO - ⏭️  Skipping (year 1997 out of range)
+2026-02-16 02:13:11,814 - INFO - 
+   [51/100] Processing document...
+2026-02-16 02:13:11,815 - INFO - 📄 Scraping document...
+2026-02-16 02:13:14,151 - INFO - ⏭️  Skipping (year 1997 out of range)
+2026-02-16 02:13:14,458 - INFO - 
+   [52/100] Processing document...
+2026-02-16 02:13:14,458 - INFO - 📄 Scraping document...
+2026-02-16 02:13:17,085 - INFO - ⏭️  Skipping (year 1993 out of range)
+2026-02-16 02:13:17,399 - INFO - 
+   [53/100] Processing document...
+2026-02-16 02:13:17,400 - INFO - 📄 Scraping document...
+2026-02-16 02:13:20,000 - INFO - ⏭️  Skipping (year 1993 out of range)
+2026-02-16 02:13:20,301 - INFO - 
+   [54/100] Processing document...
+2026-02-16 02:13:20,301 - INFO - 📄 Scraping document...
+2026-02-16 02:13:22,691 - INFO - ⏭️  Skipping (year 1993 out of range)
+2026-02-16 02:13:22,994 - INFO - 
+   [55/100] Processing document...
+2026-02-16 02:13:22,996 - INFO - 📄 Scraping document...
+2026-02-16 02:13:25,462 - INFO - ⏭️  Skipping (year 1993 out of range)
+2026-02-16 02:13:25,769 - INFO - 
+   [56/100] Processing document...
+2026-02-16 02:13:25,770 - INFO - 📄 Scraping document...
+2026-02-16 02:13:28,771 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-1.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:28,805 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-1.xml
+2026-02-16 02:13:29,071 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.179a47bda9f839fbe4b567ad1bd6a076&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:29,385 - INFO - 
+   [57/100] Processing document...
+2026-02-16 02:13:29,385 - INFO - 📄 Scraping document...
+2026-02-16 02:13:32,386 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-2.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:32,413 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-2.xml
+2026-02-16 02:13:32,526 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.64d63985b7c0b891099e709e9171558a&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:32,526 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 02:13:33,102 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_1995-08-04-53_C2_A720.xml "HTTP/2 200 OK"
+2026-02-16 02:13:33,106 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_1995-08-04-53_C2_A720.xml
+2026-02-16 02:13:33,255 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:33,269 - INFO - 🧾 Metadata inserted: NL_lov_1995-08-04-53_C2_A720.xml
+2026-02-16 02:13:33,489 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2011-06-24-30_C2_A71-3.xml "HTTP/2 200 OK"
+2026-02-16 02:13:33,492 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2011-06-24-30_C2_A71-3.xml
+2026-02-16 02:13:33,609 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:33,611 - INFO - 🧾 Metadata inserted: NL_lov_2011-06-24-30_C2_A71-3.xml
+2026-02-16 02:13:33,823 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2005-04-01-14_C2_A73.xml "HTTP/2 200 OK"
+2026-02-16 02:13:33,824 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2005-04-01-14_C2_A73.xml
+2026-02-16 02:13:33,941 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:33,944 - INFO - 🧾 Metadata inserted: NL_lov_2005-04-01-14_C2_A73.xml
+2026-02-16 02:13:34,145 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2002-03-08-4_C2_A71a.xml "HTTP/2 200 OK"
+2026-02-16 02:13:34,145 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2002-03-08-4_C2_A71a.xml
+2026-02-16 02:13:34,283 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:34,285 - INFO - 🧾 Metadata inserted: NL_lov_2002-03-08-4_C2_A71a.xml
+2026-02-16 02:13:34,620 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2002-03-08-4_C2_A76.xml "HTTP/2 200 OK"
+2026-02-16 02:13:34,624 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2002-03-08-4_C2_A76.xml
+2026-02-16 02:13:34,749 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:34,753 - INFO - 🧾 Metadata inserted: NL_lov_2002-03-08-4_C2_A76.xml
+2026-02-16 02:13:34,966 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2002-03-08-4_C2_A722.xml "HTTP/2 200 OK"
+2026-02-16 02:13:34,969 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2002-03-08-4_C2_A722.xml
+2026-02-16 02:13:35,070 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:35,072 - INFO - 🧾 Metadata inserted: NL_lov_2002-03-08-4_C2_A722.xml
+2026-02-16 02:13:35,280 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NLO_lov_2005-04-01-15_C2_A76-2.xml "HTTP/2 200 OK"
+2026-02-16 02:13:35,283 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NLO_lov_2005-04-01-15_C2_A76-2.xml
+2026-02-16 02:13:35,382 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:35,385 - INFO - 🧾 Metadata inserted: NLO_lov_2005-04-01-15_C2_A76-2.xml
+2026-02-16 02:13:35,583 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NLO_lov_2005-04-01-15_C2_A76-3.xml "HTTP/2 200 OK"
+2026-02-16 02:13:35,586 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NLO_lov_2005-04-01-15_C2_A76-3.xml
+2026-02-16 02:13:35,702 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:35,705 - INFO - 🧾 Metadata inserted: NLO_lov_2005-04-01-15_C2_A76-3.xml
+2026-02-16 02:13:35,900 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-1.xml "HTTP/2 200 OK"
+2026-02-16 02:13:35,903 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-1.xml
+2026-02-16 02:13:36,019 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:36,023 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-1.xml
+2026-02-16 02:13:36,233 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-2.xml "HTTP/2 200 OK"
+2026-02-16 02:13:36,240 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-2.xml
+2026-02-16 02:13:36,340 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:13:36,340 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-2.xml
+2026-02-16 02:13:36,357 - INFO - ✅ Batch upload complete
+
+2026-02-16 02:13:36,663 - INFO - 
+   [58/100] Processing document...
+2026-02-16 02:13:36,664 - INFO - 📄 Scraping document...
+2026-02-16 02:13:39,204 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-3.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:39,251 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-3.xml
+2026-02-16 02:13:39,408 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d1309496f9254a229fc25c4109b93728&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:39,712 - INFO - 
+   [59/100] Processing document...
+2026-02-16 02:13:39,712 - INFO - 📄 Scraping document...
+2026-02-16 02:13:42,177 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-4.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:42,209 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-4.xml
+2026-02-16 02:13:42,374 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f4f361bc8f317c9d1d5c4e79c48e5fa7&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:42,693 - INFO - 
+   [60/100] Processing document...
+2026-02-16 02:13:42,693 - INFO - 📄 Scraping document...
+2026-02-16 02:13:45,147 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:45,169 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-5.xml
+2026-02-16 02:13:45,352 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.d4d83fb74b1cb9124ebf9f8a1b2157e1&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:45,666 - INFO - 
+   [61/100] Processing document...
+2026-02-16 02:13:45,666 - INFO - 📄 Scraping document...
+2026-02-16 02:13:48,117 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-6.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:48,155 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-6.xml
+2026-02-16 02:13:48,319 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9dd5cd871e1037e3854ed9bf8b4f89e5&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:48,628 - INFO - 
+   [62/100] Processing document...
+2026-02-16 02:13:48,628 - INFO - 📄 Scraping document...
+2026-02-16 02:13:51,100 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-7.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:51,147 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-7.xml
+2026-02-16 02:13:51,290 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9f4061d835e8883b15f58ed6672464a1&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:51,604 - INFO - 
+   [63/100] Processing document...
+2026-02-16 02:13:51,604 - INFO - 📄 Scraping document...
+2026-02-16 02:13:54,056 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-8.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:54,078 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-8.xml
+2026-02-16 02:13:54,364 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8a0fa2ccdc67abef68c6dc919b8cfcc7&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:54,674 - INFO - 
+   [64/100] Processing document...
+2026-02-16 02:13:54,674 - INFO - 📄 Scraping document...
+2026-02-16 02:13:57,129 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-9.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:57,173 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-9.xml
+2026-02-16 02:13:57,333 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.56fbf72ab1e625d4c406295d373a8148&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:13:57,643 - INFO - 
+   [65/100] Processing document...
+2026-02-16 02:13:57,644 - INFO - 📄 Scraping document...
+2026-02-16 02:14:00,097 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2024-03-08-9_C2_A77-10.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:00,131 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2024-03-08-9_C2_A77-10.xml
+2026-02-16 02:14:00,304 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e6210fd7d093f01d21ef82bab548ccf1&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:00,613 - INFO - 
+   [66/100] Processing document...
+2026-02-16 02:14:00,614 - INFO - 📄 Scraping document...
+2026-02-16 02:14:03,273 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2005-06-17-85_C2_A711.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:03,311 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2005-06-17-85_C2_A711.xml
+2026-02-16 02:14:03,476 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.63dcd18140bf58d2e1005702bbd7fbdb&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:03,791 - INFO - 
+   [67/100] Processing document...
+2026-02-16 02:14:03,791 - INFO - 📄 Scraping document...
+2026-02-16 02:14:06,420 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2001-06-15-59_C2_A741.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:06,454 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2001-06-15-59_C2_A741.xml
+2026-02-16 02:14:06,552 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.428046384a82535d5f47627d424e1c74&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:06,556 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-16 02:14:07,069 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-3.xml "HTTP/2 200 OK"
+2026-02-16 02:14:07,073 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-3.xml
+2026-02-16 02:14:07,189 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:07,192 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-3.xml
+2026-02-16 02:14:07,398 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-4.xml "HTTP/2 200 OK"
+2026-02-16 02:14:07,401 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-4.xml
+2026-02-16 02:14:07,501 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:07,502 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-4.xml
+2026-02-16 02:14:07,741 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-5.xml "HTTP/2 200 OK"
+2026-02-16 02:14:07,744 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-5.xml
+2026-02-16 02:14:07,861 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:07,863 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-5.xml
+2026-02-16 02:14:08,071 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-6.xml "HTTP/2 200 OK"
+2026-02-16 02:14:08,074 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-6.xml
+2026-02-16 02:14:08,182 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:08,184 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-6.xml
+2026-02-16 02:14:08,401 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-7.xml "HTTP/2 200 OK"
+2026-02-16 02:14:08,403 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-7.xml
+2026-02-16 02:14:08,506 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:08,508 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-7.xml
+2026-02-16 02:14:08,742 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-8.xml "HTTP/2 200 OK"
+2026-02-16 02:14:08,744 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-8.xml
+2026-02-16 02:14:08,848 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:08,852 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-8.xml
+2026-02-16 02:14:09,046 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-9.xml "HTTP/2 200 OK"
+2026-02-16 02:14:09,048 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-9.xml
+2026-02-16 02:14:09,168 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:09,169 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-9.xml
+2026-02-16 02:14:09,384 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-10.xml "HTTP/2 200 OK"
+2026-02-16 02:14:09,386 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2024-03-08-9_C2_A77-10.xml
+2026-02-16 02:14:09,491 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:09,493 - INFO - 🧾 Metadata inserted: NL_lov_2024-03-08-9_C2_A77-10.xml
+2026-02-16 02:14:09,701 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2005-06-17-85_C2_A711.xml "HTTP/2 200 OK"
+2026-02-16 02:14:09,704 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2005-06-17-85_C2_A711.xml
+2026-02-16 02:14:09,807 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:09,808 - INFO - 🧾 Metadata inserted: NL_lov_2005-06-17-85_C2_A711.xml
+2026-02-16 02:14:09,998 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2001-06-15-59_C2_A741.xml "HTTP/2 200 OK"
+2026-02-16 02:14:10,001 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2001-06-15-59_C2_A741.xml
+2026-02-16 02:14:10,107 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:10,108 - INFO - 🧾 Metadata inserted: NL_lov_2001-06-15-59_C2_A741.xml
+2026-02-16 02:14:10,113 - INFO - ✅ Batch upload complete
+
+2026-02-16 02:14:10,427 - INFO - 
+   [68/100] Processing document...
+2026-02-16 02:14:10,427 - INFO - 📄 Scraping document...
+2026-02-16 02:14:12,806 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2001-06-15-59_C2_A742.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:12,831 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2001-06-15-59_C2_A742.xml
+2026-02-16 02:14:13,001 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4af5f7de7c13a7889a882b3e8a9a6e9f&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:13,313 - INFO - 
+   [69/100] Processing document...
+2026-02-16 02:14:13,313 - INFO - 📄 Scraping document...
+2026-02-16 02:14:16,073 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2016-08-12-77_C2_A757.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:16,103 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\NL_lov_2016-08-12-77_C2_A757.xml
+2026-02-16 02:14:16,277 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.0f179014dca84ee54795e8f0bcf6b1db&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:16,586 - INFO - 
+   [70/100] Processing document...
+2026-02-16 02:14:16,586 - INFO - 📄 Scraping document...
+2026-02-16 02:14:19,090 - INFO - ⏭️  Skipping (year 1814 out of range)
+2026-02-16 02:14:19,404 - INFO - 
+   [71/100] Processing document...
+2026-02-16 02:14:19,404 - INFO - 📄 Scraping document...
+2026-02-16 02:14:21,720 - INFO - ⏭️  Skipping (year 1814 out of range)
+2026-02-16 02:14:22,026 - INFO - 
+   [72/100] Processing document...
+2026-02-16 02:14:22,026 - INFO - 📄 Scraping document...
+2026-02-16 02:14:24,634 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2004-06-01-931.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:24,679 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\SF_forskrift_2004-06-01-931.xml
+2026-02-16 02:14:24,789 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.07173cf15b18e14260b25a9ffeb3c140&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:25,091 - INFO - 
+   [73/100] Processing document...
+2026-02-16 02:14:25,092 - INFO - 📄 Scraping document...
+2026-02-16 02:14:27,645 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2005-12-16-1569.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:27,701 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\SF_forskrift_2005-12-16-1569.xml
+2026-02-16 02:14:27,952 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.b2988508bb045c35ef25d3b86c7c5428&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:28,260 - INFO - 
+   [74/100] Processing document...
+2026-02-16 02:14:28,260 - INFO - 📄 Scraping document...
+2026-02-16 02:14:30,663 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.DEL_forskrift_2007-02-16-171.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:30,720 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\DEL_forskrift_2007-02-16-171.xml
+2026-02-16 02:14:30,868 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.28ea0246bbe464d0888b3722fbb56213&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:31,184 - INFO - 
+   [75/100] Processing document...
+2026-02-16 02:14:31,185 - INFO - 📄 Scraping document...
+2026-02-16 02:14:33,500 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.DEL_forskrift_2007-05-31-590.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:33,543 - INFO - ✓ XML saved: ./scraped_xml\Labor_Law\Unknown\DEL_forskrift_2007-05-31-590.xml
+2026-02-16 02:14:33,675 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f84a98da54c0d0764646d0d6265b5a95&limit=1 "HTTP/1.1 200 OK"
+2026-02-16 02:14:33,981 - INFO - 
+   [76/100] Processing document...
+2026-02-16 02:14:33,982 - INFO - 📄 Scraping document...
+2026-02-16 02:14:34,745 - INFO - 
+⬆️  Uploading batch (6 documents)
+2026-02-16 02:14:35,422 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Labor_Law/Unknown/NL_lov_2001-06-15-59_C2_A742.xml "HTTP/2 200 OK"
+2026-02-16 02:14:35,425 - INFO - ☁️ Uploaded & deleted local: Labor_Law/Unknown/NL_lov_2001-06-15-59_C2_A742.xml
+2026-02-16 02:14:35,551 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-16 02:14:35,556 - INFO - 🧾 Metadata inserted: NL_lov_2001-06-15-59_C2_A742.xml

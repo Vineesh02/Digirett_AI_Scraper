@@ -1,0 +1,795 @@
+2026-02-14 14:28:09,564 - INFO - ✓ Database connected
+2026-02-14 14:28:09,565 - INFO - ====== WebDriver manager ======
+2026-02-14 14:28:13,609 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 14:28:14,284 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 14:28:14,513 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 14:28:14,514 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 14:28:14,515 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 14:28:16,621 - INFO - ✓ Browser started (headless mode)
+2026-02-14 14:28:16,621 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 14:28:17,273 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 14:28:17,274 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 14:28:17,274 - INFO - 🔐 Logging in...
+2026-02-14 14:28:33,380 - INFO - ✓ Login successful
+2026-02-14 14:28:33,381 - INFO - 
+======================================================================
+2026-02-14 14:28:33,381 - INFO - MODE: ALL
+2026-02-14 14:28:33,382 - INFO - ======================================================================
+
+2026-02-14 14:28:33,382 - INFO - 
+📚 SCRAPING SOURCES OF LAW
+2026-02-14 14:28:33,383 - INFO -   Total categories: 16
+2026-02-14 14:28:33,383 - INFO -   Max per category: 150
+
+2026-02-14 14:28:33,384 - INFO - [1/16] Laws and Regulations > Active Laws (NL)
+2026-02-14 14:28:33,385 - INFO -   📁 01_Laws_and_Regulations/Active_Laws_NL
+2026-02-14 14:28:33,385 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 14:28:33,385 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 14:28:33,387 - INFO -   → Checking chronological index...
+2026-02-14 14:28:40,710 - INFO -   ✅ Found 5 documents
+2026-02-14 14:28:40,710 - INFO -     Found 5 documents
+2026-02-14 14:28:40,710 - INFO -   → Checking alphabetical index...
+2026-02-14 14:28:48,826 - INFO -   ✅ Found 70 documents
+2026-02-14 14:28:48,827 - INFO -     Found 70 documents
+2026-02-14 14:28:48,827 - INFO -   📄 Total unique URLs from both indexes: 75
+2026-02-14 14:28:48,827 - INFO -   📄 75 URLs found
+2026-02-14 14:31:52,396 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:31:52,397 - INFO - [2/16] Laws and Regulations > Central Regulations (SF)
+2026-02-14 14:31:52,397 - INFO -   📁 01_Laws_and_Regulations/Central_Regulations_SF
+2026-02-14 14:31:52,398 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 14:31:52,398 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 14:31:52,399 - INFO -   → Checking chronological index...
+2026-02-14 14:32:01,308 - INFO -   ✅ Found 33 documents
+2026-02-14 14:32:01,308 - INFO -     Found 33 documents
+2026-02-14 14:32:01,309 - INFO -   → Checking alphabetical index...
+2026-02-14 14:32:07,328 - INFO -   ✅ Found 181 documents
+2026-02-14 14:32:07,328 - INFO -     Found 181 documents
+2026-02-14 14:32:07,328 - INFO -   📄 Total unique URLs from both indexes: 150
+2026-02-14 14:32:07,328 - INFO -   📄 150 URLs found
+2026-02-14 14:32:21,982 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-c1df0cec29f0.xml
+2026-02-14 14:32:22,594 - INFO - ✓ Saved to DB: doc-c1df0cec29f0.xml
+2026-02-14 14:32:22,594 - INFO -   ✓ [1] 01_Laws_and_Regulations/Central_Regulations_SF/doc-c1df0cec29f0.xml
+2026-02-14 14:33:20,807 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-cac9615db21f.xml
+2026-02-14 14:33:21,096 - INFO - ✓ Saved to DB: doc-cac9615db21f.xml
+2026-02-14 14:33:21,097 - INFO -   ✓ [2] 01_Laws_and_Regulations/Central_Regulations_SF/doc-cac9615db21f.xml
+2026-02-14 14:33:28,263 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-6c610c10ab21.xml
+2026-02-14 14:33:28,646 - INFO - ✓ Saved to DB: doc-6c610c10ab21.xml
+2026-02-14 14:33:28,647 - INFO -   ✓ [3] 01_Laws_and_Regulations/Central_Regulations_SF/doc-6c610c10ab21.xml
+2026-02-14 14:34:05,037 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-920070a7ecd2.xml
+2026-02-14 14:34:05,608 - INFO - ✓ Saved to DB: doc-920070a7ecd2.xml
+2026-02-14 14:34:05,609 - INFO -   ✓ [4] 01_Laws_and_Regulations/Central_Regulations_SF/doc-920070a7ecd2.xml
+2026-02-14 14:36:41,573 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-caaaa40de1bc.xml
+2026-02-14 14:36:41,768 - INFO - ✓ Saved to DB: doc-caaaa40de1bc.xml
+2026-02-14 14:36:41,768 - INFO -   ✓ [5] 01_Laws_and_Regulations/Central_Regulations_SF/doc-caaaa40de1bc.xml
+2026-02-14 14:36:56,967 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-a22838e952f9.xml
+2026-02-14 14:36:57,438 - INFO - ✓ Saved to DB: doc-a22838e952f9.xml
+2026-02-14 14:36:57,439 - INFO -   ✓ [6] 01_Laws_and_Regulations/Central_Regulations_SF/doc-a22838e952f9.xml
+2026-02-14 14:37:37,307 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-ec7e92aa0e61.xml
+2026-02-14 14:37:37,684 - INFO - ✓ Saved to DB: doc-ec7e92aa0e61.xml
+2026-02-14 14:37:37,685 - INFO -   ✓ [7] 01_Laws_and_Regulations/Central_Regulations_SF/doc-ec7e92aa0e61.xml
+2026-02-14 14:38:14,578 - INFO -   ✅ 7 new docs saved
+
+2026-02-14 14:38:14,579 - INFO - [3/16] Laws and Regulations > Local Regulations (LF)
+2026-02-14 14:38:14,579 - INFO -   📁 01_Laws_and_Regulations/Local_Regulations_LF
+2026-02-14 14:38:14,579 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 14:38:14,580 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 14:38:14,581 - INFO -   → Checking chronological index...
+2026-02-14 14:38:24,632 - INFO -   ✅ Found 29 documents
+2026-02-14 14:38:24,633 - INFO -     Found 29 documents
+2026-02-14 14:38:24,640 - INFO -   → Checking alphabetical index...
+2026-02-14 14:38:31,262 - INFO -   ✅ Found 480 documents
+2026-02-14 14:38:31,263 - INFO -     Found 480 documents
+2026-02-14 14:38:31,263 - INFO -   📄 Total unique URLs from both indexes: 150
+2026-02-14 14:38:31,263 - INFO -   📄 150 URLs found
+2026-02-14 14:38:34,590 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-b3f25052c9af.xml
+2026-02-14 14:38:34,819 - INFO - ✓ Saved to DB: doc-b3f25052c9af.xml
+2026-02-14 14:38:34,820 - INFO -   ✓ [8] 01_Laws_and_Regulations/Local_Regulations_LF/doc-b3f25052c9af.xml
+2026-02-14 14:38:37,212 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-a31df7922583.xml
+2026-02-14 14:38:37,482 - INFO - ✓ Saved to DB: doc-a31df7922583.xml
+2026-02-14 14:38:37,483 - INFO -   ✓ [9] 01_Laws_and_Regulations/Local_Regulations_LF/doc-a31df7922583.xml
+2026-02-14 14:38:39,862 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-2b63557efdae.xml
+2026-02-14 14:38:40,451 - INFO - ✓ Saved to DB: doc-2b63557efdae.xml
+2026-02-14 14:38:40,451 - INFO -   ✓ [10] 01_Laws_and_Regulations/Local_Regulations_LF/doc-2b63557efdae.xml
+2026-02-14 14:38:45,094 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-28db01d474ab.xml
+2026-02-14 14:38:45,481 - INFO - ✓ Saved to DB: doc-28db01d474ab.xml
+2026-02-14 14:38:45,482 - INFO -   ✓ [11] 01_Laws_and_Regulations/Local_Regulations_LF/doc-28db01d474ab.xml
+2026-02-14 14:38:52,781 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-c24554d9551c.xml
+2026-02-14 14:38:52,968 - INFO - ✓ Saved to DB: doc-c24554d9551c.xml
+2026-02-14 14:38:52,969 - INFO -   ✓ [12] 01_Laws_and_Regulations/Local_Regulations_LF/doc-c24554d9551c.xml
+2026-02-14 14:38:55,451 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-eaf63af9caba.xml
+2026-02-14 14:38:55,911 - INFO - ✓ Saved to DB: doc-eaf63af9caba.xml
+2026-02-14 14:38:55,912 - INFO -   ✓ [13] 01_Laws_and_Regulations/Local_Regulations_LF/doc-eaf63af9caba.xml
+2026-02-14 14:39:01,886 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-c0929280fc75.xml
+2026-02-14 14:39:02,159 - INFO - ✓ Saved to DB: doc-c0929280fc75.xml
+2026-02-14 14:39:02,160 - INFO -   ✓ [14] 01_Laws_and_Regulations/Local_Regulations_LF/doc-c0929280fc75.xml
+2026-02-14 14:39:04,457 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-dd6886fa8b65.xml
+2026-02-14 14:39:04,856 - INFO - ✓ Saved to DB: doc-dd6886fa8b65.xml
+2026-02-14 14:39:04,856 - INFO -   ✓ [15] 01_Laws_and_Regulations/Local_Regulations_LF/doc-dd6886fa8b65.xml
+2026-02-14 14:39:18,694 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-add91b16c858.xml
+2026-02-14 14:39:19,159 - INFO - ✓ Saved to DB: doc-add91b16c858.xml
+2026-02-14 14:39:19,160 - INFO -   ✓ [16] 01_Laws_and_Regulations/Local_Regulations_LF/doc-add91b16c858.xml
+2026-02-14 14:39:21,329 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-68d160707502.xml
+2026-02-14 14:39:21,620 - INFO - ✓ Saved to DB: doc-68d160707502.xml
+2026-02-14 14:39:21,620 - INFO -   ✓ [17] 01_Laws_and_Regulations/Local_Regulations_LF/doc-68d160707502.xml
+2026-02-14 14:39:23,996 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ad1167a5b72d.xml
+2026-02-14 14:39:24,262 - INFO - ✓ Saved to DB: doc-ad1167a5b72d.xml
+2026-02-14 14:39:24,263 - INFO -   ✓ [18] 01_Laws_and_Regulations/Local_Regulations_LF/doc-ad1167a5b72d.xml
+2026-02-14 14:39:26,442 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-9044fd95bcd7.xml
+2026-02-14 14:39:26,872 - INFO - ✓ Saved to DB: doc-9044fd95bcd7.xml
+2026-02-14 14:39:26,873 - INFO -   ✓ [19] 01_Laws_and_Regulations/Local_Regulations_LF/doc-9044fd95bcd7.xml
+2026-02-14 14:39:48,485 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-90acd89aa2ea.xml
+2026-02-14 14:39:48,854 - INFO - ✓ Saved to DB: doc-90acd89aa2ea.xml
+2026-02-14 14:39:48,855 - INFO -   ✓ [20] 01_Laws_and_Regulations/Local_Regulations_LF/doc-90acd89aa2ea.xml
+2026-02-14 14:39:58,013 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-04f133740b63.xml
+2026-02-14 14:39:58,275 - INFO - ✓ Saved to DB: doc-04f133740b63.xml
+2026-02-14 14:39:58,275 - INFO -   ✓ [21] 01_Laws_and_Regulations/Local_Regulations_LF/doc-04f133740b63.xml
+2026-02-14 14:40:05,412 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-eef74cd79d07.xml
+2026-02-14 14:40:05,853 - INFO - ✓ Saved to DB: doc-eef74cd79d07.xml
+2026-02-14 14:40:05,853 - INFO -   ✓ [22] 01_Laws_and_Regulations/Local_Regulations_LF/doc-eef74cd79d07.xml
+2026-02-14 14:40:12,754 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-546de458fd4c.xml
+2026-02-14 14:40:13,153 - INFO - ✓ Saved to DB: doc-546de458fd4c.xml
+2026-02-14 14:40:13,153 - INFO -   ✓ [23] 01_Laws_and_Regulations/Local_Regulations_LF/doc-546de458fd4c.xml
+2026-02-14 14:40:17,457 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ce32544adb45.xml
+2026-02-14 14:40:17,934 - INFO - ✓ Saved to DB: doc-ce32544adb45.xml
+2026-02-14 14:40:17,935 - INFO -   ✓ [24] 01_Laws_and_Regulations/Local_Regulations_LF/doc-ce32544adb45.xml
+2026-02-14 14:40:27,803 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-8a2f2b313c96.xml
+2026-02-14 14:40:28,688 - INFO - ✓ Saved to DB: doc-8a2f2b313c96.xml
+2026-02-14 14:40:28,689 - INFO -   ✓ [25] 01_Laws_and_Regulations/Local_Regulations_LF/doc-8a2f2b313c96.xml
+2026-02-14 14:40:45,401 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-56115f81e341.xml
+2026-02-14 14:40:45,800 - INFO - ✓ Saved to DB: doc-56115f81e341.xml
+2026-02-14 14:40:45,800 - INFO -   ✓ [26] 01_Laws_and_Regulations/Local_Regulations_LF/doc-56115f81e341.xml
+2026-02-14 14:41:08,158 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-7bddca267a3c.xml
+2026-02-14 14:41:08,528 - INFO - ✓ Saved to DB: doc-7bddca267a3c.xml
+2026-02-14 14:41:08,530 - INFO -   ✓ [27] 01_Laws_and_Regulations/Local_Regulations_LF/doc-7bddca267a3c.xml
+2026-02-14 14:41:16,273 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-b38e6e5f8bdb.xml
+2026-02-14 14:41:16,627 - INFO - ✓ Saved to DB: doc-b38e6e5f8bdb.xml
+2026-02-14 14:41:16,627 - INFO -   ✓ [28] 01_Laws_and_Regulations/Local_Regulations_LF/doc-b38e6e5f8bdb.xml
+2026-02-14 14:41:25,553 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-d0e988c7ed50.xml
+2026-02-14 14:41:26,038 - INFO - ✓ Saved to DB: doc-d0e988c7ed50.xml
+2026-02-14 14:41:26,039 - INFO -   ✓ [29] 01_Laws_and_Regulations/Local_Regulations_LF/doc-d0e988c7ed50.xml
+2026-02-14 14:41:33,254 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-41b576d012ae.xml
+2026-02-14 14:41:34,017 - INFO - ✓ Saved to DB: doc-41b576d012ae.xml
+2026-02-14 14:41:34,018 - INFO -   ✓ [30] 01_Laws_and_Regulations/Local_Regulations_LF/doc-41b576d012ae.xml
+2026-02-14 14:41:38,572 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-7ca555092814.xml
+2026-02-14 14:41:38,877 - INFO - ✓ Saved to DB: doc-7ca555092814.xml
+2026-02-14 14:41:38,878 - INFO -   ✓ [31] 01_Laws_and_Regulations/Local_Regulations_LF/doc-7ca555092814.xml
+2026-02-14 14:41:44,298 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-743c089b4ec6.xml
+2026-02-14 14:41:45,591 - INFO - ✓ Saved to DB: doc-743c089b4ec6.xml
+2026-02-14 14:41:45,591 - INFO -   ✓ [32] 01_Laws_and_Regulations/Local_Regulations_LF/doc-743c089b4ec6.xml
+2026-02-14 14:41:49,009 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-f8a2fdfc7d32.xml
+2026-02-14 14:41:49,999 - INFO - ✓ Saved to DB: doc-f8a2fdfc7d32.xml
+2026-02-14 14:41:50,000 - INFO -   ✓ [33] 01_Laws_and_Regulations/Local_Regulations_LF/doc-f8a2fdfc7d32.xml
+2026-02-14 14:42:03,681 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-34436022329d.xml
+2026-02-14 14:42:04,791 - INFO - ✓ Saved to DB: doc-34436022329d.xml
+2026-02-14 14:42:04,791 - INFO -   ✓ [34] 01_Laws_and_Regulations/Local_Regulations_LF/doc-34436022329d.xml
+2026-02-14 14:42:07,157 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-3e88cbd3a5e4.xml
+2026-02-14 14:42:08,838 - INFO - ✓ Saved to DB: doc-3e88cbd3a5e4.xml
+2026-02-14 14:42:08,838 - INFO -   ✓ [35] 01_Laws_and_Regulations/Local_Regulations_LF/doc-3e88cbd3a5e4.xml
+2026-02-14 14:42:12,646 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-667171a19ac7.xml
+2026-02-14 14:42:13,234 - INFO - ✓ Saved to DB: doc-667171a19ac7.xml
+2026-02-14 14:42:13,234 - INFO -   ✓ [36] 01_Laws_and_Regulations/Local_Regulations_LF/doc-667171a19ac7.xml
+2026-02-14 14:42:17,792 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-a6aebdcf9c64.xml
+2026-02-14 14:42:18,358 - INFO - ✓ Saved to DB: doc-a6aebdcf9c64.xml
+2026-02-14 14:42:18,358 - INFO -   ✓ [37] 01_Laws_and_Regulations/Local_Regulations_LF/doc-a6aebdcf9c64.xml
+2026-02-14 14:42:20,640 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-bd383c628f23.xml
+2026-02-14 14:42:20,937 - INFO - ✓ Saved to DB: doc-bd383c628f23.xml
+2026-02-14 14:42:20,950 - INFO -   ✓ [38] 01_Laws_and_Regulations/Local_Regulations_LF/doc-bd383c628f23.xml
+2026-02-14 14:42:42,238 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-36f64c46ab58.xml
+2026-02-14 14:42:42,934 - INFO - ✓ Saved to DB: doc-36f64c46ab58.xml
+2026-02-14 14:42:42,934 - INFO -   ✓ [39] 01_Laws_and_Regulations/Local_Regulations_LF/doc-36f64c46ab58.xml
+2026-02-14 14:42:45,235 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-fc0d6cad385f.xml
+2026-02-14 14:42:45,903 - INFO - ✓ Saved to DB: doc-fc0d6cad385f.xml
+2026-02-14 14:42:45,903 - INFO -   ✓ [40] 01_Laws_and_Regulations/Local_Regulations_LF/doc-fc0d6cad385f.xml
+2026-02-14 14:42:51,391 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-b6dfd19246f4.xml
+2026-02-14 14:42:51,739 - INFO - ✓ Saved to DB: doc-b6dfd19246f4.xml
+2026-02-14 14:42:51,740 - INFO -   ✓ [41] 01_Laws_and_Regulations/Local_Regulations_LF/doc-b6dfd19246f4.xml
+2026-02-14 14:43:00,586 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-6398851e6dbc.xml
+2026-02-14 14:43:00,876 - INFO - ✓ Saved to DB: doc-6398851e6dbc.xml
+2026-02-14 14:43:00,878 - INFO -   ✓ [42] 01_Laws_and_Regulations/Local_Regulations_LF/doc-6398851e6dbc.xml
+2026-02-14 14:43:15,175 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-e99f32dc249c.xml
+2026-02-14 14:43:15,599 - INFO - ✓ Saved to DB: doc-e99f32dc249c.xml
+2026-02-14 14:43:15,599 - INFO -   ✓ [43] 01_Laws_and_Regulations/Local_Regulations_LF/doc-e99f32dc249c.xml
+2026-02-14 14:43:17,799 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-9e13fa3c6247.xml
+2026-02-14 14:43:18,700 - INFO - ✓ Saved to DB: doc-9e13fa3c6247.xml
+2026-02-14 14:43:18,700 - INFO -   ✓ [44] 01_Laws_and_Regulations/Local_Regulations_LF/doc-9e13fa3c6247.xml
+2026-02-14 14:43:25,961 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ab5dab170702.xml
+2026-02-14 14:43:26,558 - INFO - ✓ Saved to DB: doc-ab5dab170702.xml
+2026-02-14 14:43:26,558 - INFO -   ✓ [45] 01_Laws_and_Regulations/Local_Regulations_LF/doc-ab5dab170702.xml
+2026-02-14 14:43:33,216 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-3e99d6bb06ba.xml
+2026-02-14 14:43:33,436 - INFO - ✓ Saved to DB: doc-3e99d6bb06ba.xml
+2026-02-14 14:43:33,436 - INFO -   ✓ [46] 01_Laws_and_Regulations/Local_Regulations_LF/doc-3e99d6bb06ba.xml
+2026-02-14 14:43:43,070 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-bd2dddc24ad0.xml
+2026-02-14 14:43:43,375 - INFO - ✓ Saved to DB: doc-bd2dddc24ad0.xml
+2026-02-14 14:43:43,376 - INFO -   ✓ [47] 01_Laws_and_Regulations/Local_Regulations_LF/doc-bd2dddc24ad0.xml
+2026-02-14 14:43:59,765 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-5882abb704f2.xml
+2026-02-14 14:44:00,047 - INFO - ✓ Saved to DB: doc-5882abb704f2.xml
+2026-02-14 14:44:00,047 - INFO -   ✓ [48] 01_Laws_and_Regulations/Local_Regulations_LF/doc-5882abb704f2.xml
+2026-02-14 14:44:06,585 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-392a4e5bad3f.xml
+2026-02-14 14:44:07,212 - INFO - ✓ Saved to DB: doc-392a4e5bad3f.xml
+2026-02-14 14:44:07,212 - INFO -   ✓ [49] 01_Laws_and_Regulations/Local_Regulations_LF/doc-392a4e5bad3f.xml
+2026-02-14 14:44:10,219 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ac1a4b6d0bba.xml
+2026-02-14 14:44:10,219 - INFO - 📦 Uploading batch of 50 files...
+2026-02-14 14:44:10,901 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/doc-c1df0cec29f0.xml
+2026-02-14 14:44:10,901 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-c1df0cec29f0.xml
+2026-02-14 14:44:11,411 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/doc-cac9615db21f.xml
+2026-02-14 14:44:11,411 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-cac9615db21f.xml
+2026-02-14 14:44:11,867 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/doc-6c610c10ab21.xml
+2026-02-14 14:44:11,871 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-6c610c10ab21.xml
+2026-02-14 14:44:12,068 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/doc-920070a7ecd2.xml
+2026-02-14 14:44:12,078 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-920070a7ecd2.xml
+2026-02-14 14:44:12,994 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/doc-caaaa40de1bc.xml
+2026-02-14 14:44:12,994 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-caaaa40de1bc.xml
+2026-02-14 14:44:13,273 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/doc-a22838e952f9.xml
+2026-02-14 14:44:13,276 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-a22838e952f9.xml
+2026-02-14 14:44:13,479 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Central_Regulations_SF/doc-ec7e92aa0e61.xml
+2026-02-14 14:44:13,479 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Central_Regulations_SF\doc-ec7e92aa0e61.xml
+2026-02-14 14:44:13,718 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-b3f25052c9af.xml
+2026-02-14 14:44:13,718 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-b3f25052c9af.xml
+2026-02-14 14:44:13,928 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-a31df7922583.xml
+2026-02-14 14:44:13,930 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-a31df7922583.xml
+2026-02-14 14:44:14,128 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-2b63557efdae.xml
+2026-02-14 14:44:14,128 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-2b63557efdae.xml
+2026-02-14 14:44:14,332 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-28db01d474ab.xml
+2026-02-14 14:44:14,332 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-28db01d474ab.xml
+2026-02-14 14:44:14,544 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-c24554d9551c.xml
+2026-02-14 14:44:14,544 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-c24554d9551c.xml
+2026-02-14 14:44:14,784 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-eaf63af9caba.xml
+2026-02-14 14:44:14,784 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-eaf63af9caba.xml
+2026-02-14 14:44:15,051 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-c0929280fc75.xml
+2026-02-14 14:44:15,053 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-c0929280fc75.xml
+2026-02-14 14:44:15,282 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-dd6886fa8b65.xml
+2026-02-14 14:44:15,284 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-dd6886fa8b65.xml
+2026-02-14 14:44:15,485 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-add91b16c858.xml
+2026-02-14 14:44:15,492 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-add91b16c858.xml
+2026-02-14 14:44:15,699 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-68d160707502.xml
+2026-02-14 14:44:15,700 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-68d160707502.xml
+2026-02-14 14:44:16,018 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-ad1167a5b72d.xml
+2026-02-14 14:44:16,018 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ad1167a5b72d.xml
+2026-02-14 14:44:16,221 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-9044fd95bcd7.xml
+2026-02-14 14:44:16,223 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-9044fd95bcd7.xml
+2026-02-14 14:44:16,529 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-90acd89aa2ea.xml
+2026-02-14 14:44:16,529 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-90acd89aa2ea.xml
+2026-02-14 14:44:16,790 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-04f133740b63.xml
+2026-02-14 14:44:16,792 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-04f133740b63.xml
+2026-02-14 14:44:17,144 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-eef74cd79d07.xml
+2026-02-14 14:44:17,144 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-eef74cd79d07.xml
+2026-02-14 14:44:17,552 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-546de458fd4c.xml
+2026-02-14 14:44:17,555 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-546de458fd4c.xml
+2026-02-14 14:44:17,860 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-ce32544adb45.xml
+2026-02-14 14:44:17,860 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ce32544adb45.xml
+2026-02-14 14:44:18,298 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-8a2f2b313c96.xml
+2026-02-14 14:44:18,300 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-8a2f2b313c96.xml
+2026-02-14 14:44:18,679 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-56115f81e341.xml
+2026-02-14 14:44:18,681 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-56115f81e341.xml
+2026-02-14 14:44:18,991 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-7bddca267a3c.xml
+2026-02-14 14:44:18,991 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-7bddca267a3c.xml
+2026-02-14 14:44:19,244 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-b38e6e5f8bdb.xml
+2026-02-14 14:44:19,244 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-b38e6e5f8bdb.xml
+2026-02-14 14:44:19,449 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-d0e988c7ed50.xml
+2026-02-14 14:44:19,449 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-d0e988c7ed50.xml
+2026-02-14 14:44:19,901 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-41b576d012ae.xml
+2026-02-14 14:44:19,902 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-41b576d012ae.xml
+2026-02-14 14:44:20,156 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-7ca555092814.xml
+2026-02-14 14:44:20,156 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-7ca555092814.xml
+2026-02-14 14:44:20,409 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-743c089b4ec6.xml
+2026-02-14 14:44:20,409 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-743c089b4ec6.xml
+2026-02-14 14:44:20,692 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-f8a2fdfc7d32.xml
+2026-02-14 14:44:20,692 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-f8a2fdfc7d32.xml
+2026-02-14 14:44:20,945 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-34436022329d.xml
+2026-02-14 14:44:20,954 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-34436022329d.xml
+2026-02-14 14:44:21,216 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-3e88cbd3a5e4.xml
+2026-02-14 14:44:21,219 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-3e88cbd3a5e4.xml
+2026-02-14 14:44:21,409 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-667171a19ac7.xml
+2026-02-14 14:44:21,415 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-667171a19ac7.xml
+2026-02-14 14:44:21,847 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-a6aebdcf9c64.xml
+2026-02-14 14:44:21,848 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-a6aebdcf9c64.xml
+2026-02-14 14:44:22,039 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-bd383c628f23.xml
+2026-02-14 14:44:22,041 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-bd383c628f23.xml
+2026-02-14 14:44:22,479 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-36f64c46ab58.xml
+2026-02-14 14:44:22,480 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-36f64c46ab58.xml
+2026-02-14 14:44:22,718 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-fc0d6cad385f.xml
+2026-02-14 14:44:22,719 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-fc0d6cad385f.xml
+2026-02-14 14:44:23,106 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-b6dfd19246f4.xml
+2026-02-14 14:44:23,106 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-b6dfd19246f4.xml
+2026-02-14 14:44:23,312 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-6398851e6dbc.xml
+2026-02-14 14:44:23,312 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-6398851e6dbc.xml
+2026-02-14 14:44:23,546 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-e99f32dc249c.xml
+2026-02-14 14:44:23,546 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-e99f32dc249c.xml
+2026-02-14 14:44:23,799 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-9e13fa3c6247.xml
+2026-02-14 14:44:23,801 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-9e13fa3c6247.xml
+2026-02-14 14:44:24,138 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-ab5dab170702.xml
+2026-02-14 14:44:24,139 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ab5dab170702.xml
+2026-02-14 14:44:24,316 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-3e99d6bb06ba.xml
+2026-02-14 14:44:24,316 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-3e99d6bb06ba.xml
+2026-02-14 14:44:24,670 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-bd2dddc24ad0.xml
+2026-02-14 14:44:24,672 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-bd2dddc24ad0.xml
+2026-02-14 14:44:25,367 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-5882abb704f2.xml
+2026-02-14 14:44:25,367 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-5882abb704f2.xml
+2026-02-14 14:44:25,774 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-392a4e5bad3f.xml
+2026-02-14 14:44:25,777 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-392a4e5bad3f.xml
+2026-02-14 14:44:25,948 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-ac1a4b6d0bba.xml
+2026-02-14 14:44:25,949 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ac1a4b6d0bba.xml
+2026-02-14 14:44:25,951 - INFO - ✓ Batch uploaded: 50 files (Total: 50)
+2026-02-14 14:44:26,230 - INFO - ✓ Saved to DB: doc-ac1a4b6d0bba.xml
+2026-02-14 14:44:26,230 - INFO -   ✓ [50] 01_Laws_and_Regulations/Local_Regulations_LF/doc-ac1a4b6d0bba.xml
+2026-02-14 14:44:29,899 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-9ea4529d885a.xml
+2026-02-14 14:44:30,253 - INFO - ✓ Saved to DB: doc-9ea4529d885a.xml
+2026-02-14 14:44:30,253 - INFO -   ✓ [51] 01_Laws_and_Regulations/Local_Regulations_LF/doc-9ea4529d885a.xml
+2026-02-14 14:44:38,680 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-d9292aa93fa7.xml
+2026-02-14 14:44:38,953 - INFO - ✓ Saved to DB: doc-d9292aa93fa7.xml
+2026-02-14 14:44:38,953 - INFO -   ✓ [52] 01_Laws_and_Regulations/Local_Regulations_LF/doc-d9292aa93fa7.xml
+2026-02-14 14:44:48,650 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-a66ff0962184.xml
+2026-02-14 14:44:49,336 - INFO - ✓ Saved to DB: doc-a66ff0962184.xml
+2026-02-14 14:44:49,336 - INFO -   ✓ [53] 01_Laws_and_Regulations/Local_Regulations_LF/doc-a66ff0962184.xml
+2026-02-14 14:44:59,412 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-6b4ad071806d.xml
+2026-02-14 14:44:59,744 - INFO - ✓ Saved to DB: doc-6b4ad071806d.xml
+2026-02-14 14:44:59,744 - INFO -   ✓ [54] 01_Laws_and_Regulations/Local_Regulations_LF/doc-6b4ad071806d.xml
+2026-02-14 14:45:02,686 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-2d7406e78efa.xml
+2026-02-14 14:45:05,294 - INFO - ✓ Saved to DB: doc-2d7406e78efa.xml
+2026-02-14 14:45:05,294 - INFO -   ✓ [55] 01_Laws_and_Regulations/Local_Regulations_LF/doc-2d7406e78efa.xml
+2026-02-14 14:45:18,393 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-8ba6cb0801f5.xml
+2026-02-14 14:45:18,759 - INFO - ✓ Saved to DB: doc-8ba6cb0801f5.xml
+2026-02-14 14:45:18,761 - INFO -   ✓ [56] 01_Laws_and_Regulations/Local_Regulations_LF/doc-8ba6cb0801f5.xml
+2026-02-14 14:45:25,988 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-196981dbf277.xml
+2026-02-14 14:45:26,313 - INFO - ✓ Saved to DB: doc-196981dbf277.xml
+2026-02-14 14:45:26,313 - INFO -   ✓ [57] 01_Laws_and_Regulations/Local_Regulations_LF/doc-196981dbf277.xml
+2026-02-14 14:45:41,616 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-290f41e23c33.xml
+2026-02-14 14:45:42,174 - INFO - ✓ Saved to DB: doc-290f41e23c33.xml
+2026-02-14 14:45:42,182 - INFO -   ✓ [58] 01_Laws_and_Regulations/Local_Regulations_LF/doc-290f41e23c33.xml
+2026-02-14 14:45:50,608 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ba1ac807cdb4.xml
+2026-02-14 14:45:51,078 - INFO - ✓ Saved to DB: doc-ba1ac807cdb4.xml
+2026-02-14 14:45:51,078 - INFO -   ✓ [59] 01_Laws_and_Regulations/Local_Regulations_LF/doc-ba1ac807cdb4.xml
+2026-02-14 14:45:55,095 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-6101c1cf3a5c.xml
+2026-02-14 14:45:55,334 - INFO - ✓ Saved to DB: doc-6101c1cf3a5c.xml
+2026-02-14 14:45:55,334 - INFO -   ✓ [60] 01_Laws_and_Regulations/Local_Regulations_LF/doc-6101c1cf3a5c.xml
+2026-02-14 14:46:08,445 - INFO -   ✅ 53 new docs saved
+
+2026-02-14 14:46:08,445 - INFO - [4/16] Laws and Regulations > Repealed Laws (NLO)
+2026-02-14 14:46:08,447 - INFO -   📁 01_Laws_and_Regulations/Repealed_Laws_NLO
+2026-02-14 14:46:08,447 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 14:46:08,447 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 14:46:08,449 - INFO -   → Checking chronological index...
+2026-02-14 14:46:16,977 - INFO -   ✅ Found 1 documents
+2026-02-14 14:46:16,977 - INFO -     Found 1 documents
+2026-02-14 14:46:16,977 - INFO -   → Checking alphabetical index...
+2026-02-14 14:46:26,015 - INFO -   ✅ Found 109 documents
+2026-02-14 14:46:26,015 - INFO -     Found 109 documents
+2026-02-14 14:46:26,015 - INFO -   📄 Total unique URLs from both indexes: 110
+2026-02-14 14:46:26,015 - INFO -   📄 110 URLs found
+2026-02-14 14:51:14,978 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:51:14,978 - INFO - [5/16] Laws and Regulations > Emergency Laws (NLE)
+2026-02-14 14:51:14,978 - INFO -   📁 01_Laws_and_Regulations/Emergency_Laws_NLE
+2026-02-14 14:51:14,978 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NLE
+2026-02-14 14:51:14,978 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLE
+2026-02-14 14:51:14,978 - INFO -   → Checking chronological index...
+2026-02-14 14:51:23,319 - INFO -   ✅ Found 3 documents
+2026-02-14 14:51:23,319 - INFO -     Found 3 documents
+2026-02-14 14:51:23,319 - INFO -   → Checking alphabetical index...
+2026-02-14 14:51:30,698 - INFO -   ✅ Found 10 documents
+2026-02-14 14:51:30,698 - INFO -     Found 10 documents
+2026-02-14 14:51:30,698 - INFO -   📄 Total unique URLs from both indexes: 13
+2026-02-14 14:51:30,698 - INFO -   📄 13 URLs found
+2026-02-14 14:51:48,654 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Emergency_Laws_NLE\doc-02f3c8ad8ef7.xml
+2026-02-14 14:51:49,011 - INFO - ✓ Saved to DB: doc-02f3c8ad8ef7.xml
+2026-02-14 14:51:49,011 - INFO -   ✓ [61] 01_Laws_and_Regulations/Emergency_Laws_NLE/doc-02f3c8ad8ef7.xml
+2026-02-14 14:52:06,192 - INFO -   ✅ 1 new docs saved
+
+2026-02-14 14:52:06,193 - INFO - [6/16] Laws and Regulations > Repealed Regulations (SFO)
+2026-02-14 14:52:06,194 - INFO -   📁 01_Laws_and_Regulations/Repealed_Regulations_SFO
+2026-02-14 14:52:06,195 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/SFO
+2026-02-14 14:52:06,195 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SFO
+2026-02-14 14:52:06,195 - INFO -   → Checking chronological index...
+2026-02-14 14:52:14,654 - INFO -   ✅ Found 24 documents
+2026-02-14 14:52:14,661 - INFO -     Found 24 documents
+2026-02-14 14:52:14,662 - INFO -   → Checking alphabetical index...
+2026-02-14 14:52:22,223 - INFO -   ✅ Found 918 documents
+2026-02-14 14:52:22,232 - INFO -     Found 918 documents
+2026-02-14 14:52:22,232 - INFO -   📄 Total unique URLs from both indexes: 150
+2026-02-14 14:52:22,234 - INFO -   📄 150 URLs found
+2026-02-14 14:55:55,277 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-d3789831150a.xml
+2026-02-14 14:55:55,492 - INFO - ✓ Saved to DB: doc-d3789831150a.xml
+2026-02-14 14:55:55,495 - INFO -   ✓ [62] 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-d3789831150a.xml
+2026-02-14 14:57:14,285 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-2b8bbda110d8.xml
+2026-02-14 14:57:14,502 - INFO - ✓ Saved to DB: doc-2b8bbda110d8.xml
+2026-02-14 14:57:14,502 - INFO -   ✓ [63] 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-2b8bbda110d8.xml
+2026-02-14 14:57:25,615 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-54a7674c9bb5.xml
+2026-02-14 14:57:25,801 - INFO - ✓ Saved to DB: doc-54a7674c9bb5.xml
+2026-02-14 14:57:25,801 - INFO -   ✓ [64] 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-54a7674c9bb5.xml
+2026-02-14 14:57:32,928 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-76c49ab23264.xml
+2026-02-14 14:57:33,132 - INFO - ✓ Saved to DB: doc-76c49ab23264.xml
+2026-02-14 14:57:33,133 - INFO -   ✓ [65] 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-76c49ab23264.xml
+2026-02-14 14:57:58,343 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-8862c5372f63.xml
+2026-02-14 14:57:58,547 - INFO - ✓ Saved to DB: doc-8862c5372f63.xml
+2026-02-14 14:57:58,547 - INFO -   ✓ [66] 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-8862c5372f63.xml
+2026-02-14 14:58:25,136 - INFO -   ✅ 5 new docs saved
+
+2026-02-14 14:58:25,136 - INFO - [7/16] Laws and Regulations > Repealed Local (LFO)
+2026-02-14 14:58:25,138 - INFO -   📁 01_Laws_and_Regulations/Repealed_Local_LFO
+2026-02-14 14:58:25,139 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LFO
+2026-02-14 14:58:25,139 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LFO
+2026-02-14 14:58:25,140 - INFO -   → Checking chronological index...
+2026-02-14 14:58:33,989 - INFO -   ✅ Found 35 documents
+2026-02-14 14:58:33,989 - INFO -     Found 35 documents
+2026-02-14 14:58:33,994 - INFO -   → Checking alphabetical index...
+2026-02-14 14:58:40,616 - INFO -   ✅ Found 475 documents
+2026-02-14 14:58:40,616 - INFO -     Found 475 documents
+2026-02-14 14:58:40,616 - INFO -   📄 Total unique URLs from both indexes: 150
+2026-02-14 14:58:40,616 - INFO -   📄 150 URLs found
+2026-02-14 14:59:38,277 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-350ce0bd4dab.xml
+2026-02-14 14:59:38,475 - INFO - ✓ Saved to DB: doc-350ce0bd4dab.xml
+2026-02-14 14:59:38,475 - INFO -   ✓ [67] 01_Laws_and_Regulations/Repealed_Local_LFO/doc-350ce0bd4dab.xml
+2026-02-14 15:00:41,649 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-e7503bc50ecb.xml
+2026-02-14 15:00:41,847 - INFO - ✓ Saved to DB: doc-e7503bc50ecb.xml
+2026-02-14 15:00:41,853 - INFO -   ✓ [68] 01_Laws_and_Regulations/Repealed_Local_LFO/doc-e7503bc50ecb.xml
+2026-02-14 15:01:35,770 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-594f018cd7b4.xml
+2026-02-14 15:01:36,025 - INFO - ✓ Saved to DB: doc-594f018cd7b4.xml
+2026-02-14 15:01:36,025 - INFO -   ✓ [69] 01_Laws_and_Regulations/Repealed_Local_LFO/doc-594f018cd7b4.xml
+2026-02-14 15:01:53,527 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-416dd2afc20c.xml
+2026-02-14 15:01:53,727 - INFO - ✓ Saved to DB: doc-416dd2afc20c.xml
+2026-02-14 15:01:53,727 - INFO -   ✓ [70] 01_Laws_and_Regulations/Repealed_Local_LFO/doc-416dd2afc20c.xml
+2026-02-14 15:02:38,108 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-3274dacd65d0.xml
+2026-02-14 15:02:38,557 - INFO - ✓ Saved to DB: doc-3274dacd65d0.xml
+2026-02-14 15:02:38,557 - INFO -   ✓ [71] 01_Laws_and_Regulations/Repealed_Local_LFO/doc-3274dacd65d0.xml
+2026-02-14 15:03:16,985 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-dabe66cd9589.xml
+2026-02-14 15:03:17,197 - INFO - ✓ Saved to DB: doc-dabe66cd9589.xml
+2026-02-14 15:03:17,197 - INFO -   ✓ [72] 01_Laws_and_Regulations/Repealed_Local_LFO/doc-dabe66cd9589.xml
+2026-02-14 15:04:12,224 - INFO -   ✅ 6 new docs saved
+
+2026-02-14 15:04:12,225 - INFO - [8/16] Court Decisions > Supreme Court (HR)
+2026-02-14 15:04:12,225 - INFO -   📁 02_Court_Decisions/Supreme_Court_HR
+2026-02-14 15:04:12,225 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/HR
+2026-02-14 15:04:12,227 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/HR
+2026-02-14 15:04:12,227 - INFO -   → Checking chronological index...
+2026-02-14 15:04:26,494 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:04:26,495 - INFO -     Found 0 documents
+2026-02-14 15:04:26,495 - INFO -   → Checking alphabetical index...
+2026-02-14 15:04:39,879 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:04:39,880 - INFO -     Found 0 documents
+2026-02-14 15:04:39,880 - INFO -   📄 Total unique URLs from both indexes: 0
+2026-02-14 15:04:39,880 - INFO -   📄 0 URLs found
+2026-02-14 15:04:39,880 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 15:04:39,880 - INFO - [9/16] Court Decisions > Appeal Court (LA)
+2026-02-14 15:04:39,882 - INFO -   📁 02_Court_Decisions/Appeal_Court_LA
+2026-02-14 15:04:39,882 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LA
+2026-02-14 15:04:39,883 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LA
+2026-02-14 15:04:39,883 - INFO -   → Checking chronological index...
+2026-02-14 15:04:53,141 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:04:53,141 - INFO -     Found 0 documents
+2026-02-14 15:04:53,141 - INFO -   → Checking alphabetical index...
+2026-02-14 15:05:06,480 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:05:06,482 - INFO -     Found 0 documents
+2026-02-14 15:05:06,482 - INFO -   📄 Total unique URLs from both indexes: 0
+2026-02-14 15:05:06,483 - INFO -   📄 0 URLs found
+2026-02-14 15:05:06,483 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 15:05:06,484 - INFO - [10/16] Court Decisions > Appeal Court (LB)
+2026-02-14 15:05:06,485 - INFO -   📁 02_Court_Decisions/Appeal_Court_LB
+2026-02-14 15:05:06,485 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LB
+2026-02-14 15:05:06,485 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LB
+2026-02-14 15:05:06,487 - INFO -   → Checking chronological index...
+2026-02-14 15:05:19,842 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:05:19,842 - INFO -     Found 0 documents
+2026-02-14 15:05:19,842 - INFO -   → Checking alphabetical index...
+2026-02-14 15:05:33,124 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:05:33,125 - INFO -     Found 0 documents
+2026-02-14 15:05:33,125 - INFO -   📄 Total unique URLs from both indexes: 0
+2026-02-14 15:05:33,126 - INFO -   📄 0 URLs found
+2026-02-14 15:05:33,126 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 15:05:33,127 - INFO - [11/16] Court Decisions > Labor Court (LAR)
+2026-02-14 15:05:33,127 - INFO -   📁 02_Court_Decisions/Labor_Court_LAR
+2026-02-14 15:05:33,127 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LAR
+2026-02-14 15:05:33,129 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LAR
+2026-02-14 15:05:33,129 - INFO -   → Checking chronological index...
+2026-02-14 15:05:46,413 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:05:46,413 - INFO -     Found 0 documents
+2026-02-14 15:05:46,414 - INFO -   → Checking alphabetical index...
+2026-02-14 15:05:59,715 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:05:59,716 - INFO -     Found 0 documents
+2026-02-14 15:05:59,717 - INFO -   📄 Total unique URLs from both indexes: 0
+2026-02-14 15:05:59,717 - INFO -   📄 0 URLs found
+2026-02-14 15:05:59,717 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 15:05:59,717 - INFO - [12/16] Preparatory Works > Propositions (Prop)
+2026-02-14 15:05:59,717 - INFO -   📁 03_Preparatory_Works/Propositions_Prop
+2026-02-14 15:05:59,717 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/PROP
+2026-02-14 15:05:59,717 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/PROP
+2026-02-14 15:05:59,717 - INFO -   → Checking chronological index...
+2026-02-14 15:06:07,754 - INFO -   ✅ Found 53 documents
+2026-02-14 15:06:07,755 - INFO -     Found 53 documents
+2026-02-14 15:06:07,755 - INFO -   → Checking alphabetical index...
+2026-02-14 15:06:14,175 - INFO -   ✅ Found 254 documents
+2026-02-14 15:06:14,175 - INFO -     Found 254 documents
+2026-02-14 15:06:14,175 - INFO -   📄 Total unique URLs from both indexes: 150
+2026-02-14 15:06:14,175 - INFO -   📄 150 URLs found
+2026-02-14 15:06:21,998 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-3c7b34bef682.xml
+2026-02-14 15:06:22,187 - INFO - ✓ Saved to DB: doc-3c7b34bef682.xml
+2026-02-14 15:06:22,187 - INFO -   ✓ [73] 03_Preparatory_Works/Propositions_Prop/doc-3c7b34bef682.xml
+2026-02-14 15:06:39,645 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-401de0e1416c.xml
+2026-02-14 15:06:39,907 - INFO - ✓ Saved to DB: doc-401de0e1416c.xml
+2026-02-14 15:06:39,907 - INFO -   ✓ [74] 03_Preparatory_Works/Propositions_Prop/doc-401de0e1416c.xml
+2026-02-14 15:08:12,784 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-f737a2535711.xml
+2026-02-14 15:08:12,992 - INFO - ✓ Saved to DB: doc-f737a2535711.xml
+2026-02-14 15:08:12,992 - INFO -   ✓ [75] 03_Preparatory_Works/Propositions_Prop/doc-f737a2535711.xml
+2026-02-14 15:09:25,942 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-4b5baecf1d13.xml
+2026-02-14 15:09:26,224 - INFO - ✓ Saved to DB: doc-4b5baecf1d13.xml
+2026-02-14 15:09:26,225 - INFO -   ✓ [76] 03_Preparatory_Works/Propositions_Prop/doc-4b5baecf1d13.xml
+2026-02-14 15:09:42,662 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-dc603c0585ef.xml
+2026-02-14 15:09:42,896 - INFO - ✓ Saved to DB: doc-dc603c0585ef.xml
+2026-02-14 15:09:42,896 - INFO -   ✓ [77] 03_Preparatory_Works/Propositions_Prop/doc-dc603c0585ef.xml
+2026-02-14 15:11:29,303 - INFO -   ✅ 5 new docs saved
+
+2026-02-14 15:11:29,304 - INFO - [13/16] Preparatory Works > Official Reports (NOU)
+2026-02-14 15:11:29,305 - INFO -   📁 03_Preparatory_Works/Official_Reports_NOU
+2026-02-14 15:11:29,305 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NOU
+2026-02-14 15:11:29,305 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NOU
+2026-02-14 15:11:29,305 - INFO -   → Checking chronological index...
+2026-02-14 15:11:37,715 - INFO -   ✅ Found 2 documents
+2026-02-14 15:11:37,715 - INFO -     Found 2 documents
+2026-02-14 15:11:37,715 - INFO -   → Checking alphabetical index...
+2026-02-14 15:11:45,506 - INFO -   ✅ Found 61 documents
+2026-02-14 15:11:45,506 - INFO -     Found 61 documents
+2026-02-14 15:11:45,506 - INFO -   📄 Total unique URLs from both indexes: 63
+2026-02-14 15:11:45,506 - INFO -   📄 63 URLs found
+2026-02-14 15:12:32,555 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Official_Reports_NOU\doc-4174fec9e0fb.xml
+2026-02-14 15:12:32,831 - INFO - ✓ Saved to DB: doc-4174fec9e0fb.xml
+2026-02-14 15:12:32,832 - INFO -   ✓ [78] 03_Preparatory_Works/Official_Reports_NOU/doc-4174fec9e0fb.xml
+2026-02-14 15:13:18,036 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Official_Reports_NOU\doc-a30aed1f5f53.xml
+2026-02-14 15:13:18,609 - INFO - ✓ Saved to DB: doc-a30aed1f5f53.xml
+2026-02-14 15:13:18,609 - INFO -   ✓ [79] 03_Preparatory_Works/Official_Reports_NOU/doc-a30aed1f5f53.xml
+2026-02-14 15:14:03,704 - INFO -   ✅ 2 new docs saved
+
+2026-02-14 15:14:03,705 - INFO - [14/16] Preparatory Works > Recommendations (Innst)
+2026-02-14 15:14:03,706 - INFO -   📁 03_Preparatory_Works/Recommendations_Innst
+2026-02-14 15:14:03,707 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/INNST
+2026-02-14 15:14:03,707 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/INNST
+2026-02-14 15:14:03,707 - INFO -   → Checking chronological index...
+2026-02-14 15:14:18,312 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:14:18,312 - INFO -     Found 0 documents
+2026-02-14 15:14:18,312 - INFO -   → Checking alphabetical index...
+2026-02-14 15:14:25,206 - INFO -   ✅ Found 564 documents
+2026-02-14 15:14:25,206 - INFO -     Found 564 documents
+2026-02-14 15:14:25,206 - INFO -   📄 Total unique URLs from both indexes: 150
+2026-02-14 15:14:25,206 - INFO -   📄 150 URLs found
+2026-02-14 15:14:32,772 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-c34e6a27fc82.xml
+2026-02-14 15:14:33,148 - INFO - ✓ Saved to DB: doc-c34e6a27fc82.xml
+2026-02-14 15:14:33,148 - INFO -   ✓ [80] 03_Preparatory_Works/Recommendations_Innst/doc-c34e6a27fc82.xml
+2026-02-14 15:14:42,246 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-dca640380ca8.xml
+2026-02-14 15:14:42,615 - INFO - ✓ Saved to DB: doc-dca640380ca8.xml
+2026-02-14 15:14:42,617 - INFO -   ✓ [81] 03_Preparatory_Works/Recommendations_Innst/doc-dca640380ca8.xml
+2026-02-14 15:14:44,975 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-0234a165e1ff.xml
+2026-02-14 15:14:45,812 - INFO - ✓ Saved to DB: doc-0234a165e1ff.xml
+2026-02-14 15:14:45,812 - INFO -   ✓ [82] 03_Preparatory_Works/Recommendations_Innst/doc-0234a165e1ff.xml
+2026-02-14 15:14:47,974 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-067f3d1b6888.xml
+2026-02-14 15:14:48,248 - INFO - ✓ Saved to DB: doc-067f3d1b6888.xml
+2026-02-14 15:14:48,248 - INFO -   ✓ [83] 03_Preparatory_Works/Recommendations_Innst/doc-067f3d1b6888.xml
+2026-02-14 15:14:54,660 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-684f0d668f8e.xml
+2026-02-14 15:14:55,195 - INFO - ✓ Saved to DB: doc-684f0d668f8e.xml
+2026-02-14 15:14:55,195 - INFO -   ✓ [84] 03_Preparatory_Works/Recommendations_Innst/doc-684f0d668f8e.xml
+2026-02-14 15:14:57,715 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-5376fcdbd3e8.xml
+2026-02-14 15:14:57,978 - INFO - ✓ Saved to DB: doc-5376fcdbd3e8.xml
+2026-02-14 15:14:57,978 - INFO -   ✓ [85] 03_Preparatory_Works/Recommendations_Innst/doc-5376fcdbd3e8.xml
+2026-02-14 15:15:15,775 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-8aaa8ce33534.xml
+2026-02-14 15:15:16,146 - INFO - ✓ Saved to DB: doc-8aaa8ce33534.xml
+2026-02-14 15:15:16,151 - INFO -   ✓ [86] 03_Preparatory_Works/Recommendations_Innst/doc-8aaa8ce33534.xml
+2026-02-14 15:15:33,221 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-131e79cbde57.xml
+2026-02-14 15:15:33,500 - INFO - ✓ Saved to DB: doc-131e79cbde57.xml
+2026-02-14 15:15:33,505 - INFO -   ✓ [87] 03_Preparatory_Works/Recommendations_Innst/doc-131e79cbde57.xml
+2026-02-14 15:15:47,185 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-0c076211bef6.xml
+2026-02-14 15:15:47,522 - INFO - ✓ Saved to DB: doc-0c076211bef6.xml
+2026-02-14 15:15:47,522 - INFO -   ✓ [88] 03_Preparatory_Works/Recommendations_Innst/doc-0c076211bef6.xml
+2026-02-14 15:15:49,674 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-67d42fcc0cf6.xml
+2026-02-14 15:15:49,894 - INFO - ✓ Saved to DB: doc-67d42fcc0cf6.xml
+2026-02-14 15:15:49,895 - INFO -   ✓ [89] 03_Preparatory_Works/Recommendations_Innst/doc-67d42fcc0cf6.xml
+2026-02-14 15:16:00,955 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-e498dc756480.xml
+2026-02-14 15:16:01,147 - INFO - ✓ Saved to DB: doc-e498dc756480.xml
+2026-02-14 15:16:01,147 - INFO -   ✓ [90] 03_Preparatory_Works/Recommendations_Innst/doc-e498dc756480.xml
+2026-02-14 15:16:12,232 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-9466513abb62.xml
+2026-02-14 15:16:12,497 - INFO - ✓ Saved to DB: doc-9466513abb62.xml
+2026-02-14 15:16:12,497 - INFO -   ✓ [91] 03_Preparatory_Works/Recommendations_Innst/doc-9466513abb62.xml
+2026-02-14 15:16:18,905 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-a534f76e1768.xml
+2026-02-14 15:16:19,144 - INFO - ✓ Saved to DB: doc-a534f76e1768.xml
+2026-02-14 15:16:19,145 - INFO -   ✓ [92] 03_Preparatory_Works/Recommendations_Innst/doc-a534f76e1768.xml
+2026-02-14 15:16:44,457 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-5dfc7fd97c3f.xml
+2026-02-14 15:16:44,635 - INFO - ✓ Saved to DB: doc-5dfc7fd97c3f.xml
+2026-02-14 15:16:44,636 - INFO -   ✓ [93] 03_Preparatory_Works/Recommendations_Innst/doc-5dfc7fd97c3f.xml
+2026-02-14 15:17:02,947 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-4432b2ebf466.xml
+2026-02-14 15:17:03,149 - INFO - ✓ Saved to DB: doc-4432b2ebf466.xml
+2026-02-14 15:17:03,149 - INFO -   ✓ [94] 03_Preparatory_Works/Recommendations_Innst/doc-4432b2ebf466.xml
+2026-02-14 15:17:12,630 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-3700c632bb9c.xml
+2026-02-14 15:17:12,835 - INFO - ✓ Saved to DB: doc-3700c632bb9c.xml
+2026-02-14 15:17:12,836 - INFO -   ✓ [95] 03_Preparatory_Works/Recommendations_Innst/doc-3700c632bb9c.xml
+2026-02-14 15:17:35,245 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-c884f262e6aa.xml
+2026-02-14 15:17:35,464 - INFO - ✓ Saved to DB: doc-c884f262e6aa.xml
+2026-02-14 15:17:35,465 - INFO -   ✓ [96] 03_Preparatory_Works/Recommendations_Innst/doc-c884f262e6aa.xml
+2026-02-14 15:18:14,934 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-e49a3a23e344.xml
+2026-02-14 15:18:15,167 - INFO - ✓ Saved to DB: doc-e49a3a23e344.xml
+2026-02-14 15:18:15,167 - INFO -   ✓ [97] 03_Preparatory_Works/Recommendations_Innst/doc-e49a3a23e344.xml
+2026-02-14 15:18:21,315 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-16db9bcb2f63.xml
+2026-02-14 15:18:21,535 - INFO - ✓ Saved to DB: doc-16db9bcb2f63.xml
+2026-02-14 15:18:21,540 - INFO -   ✓ [98] 03_Preparatory_Works/Recommendations_Innst/doc-16db9bcb2f63.xml
+2026-02-14 15:18:53,238 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-f0dff85fe82f.xml
+2026-02-14 15:18:53,495 - INFO - ✓ Saved to DB: doc-f0dff85fe82f.xml
+2026-02-14 15:18:53,497 - INFO -   ✓ [99] 03_Preparatory_Works/Recommendations_Innst/doc-f0dff85fe82f.xml
+2026-02-14 15:19:27,670 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-42d73774b56f.xml
+2026-02-14 15:19:27,670 - INFO - 📦 Uploading batch of 50 files...
+2026-02-14 15:19:28,311 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-9ea4529d885a.xml
+2026-02-14 15:19:28,311 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-9ea4529d885a.xml
+2026-02-14 15:19:28,516 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-d9292aa93fa7.xml
+2026-02-14 15:19:28,525 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-d9292aa93fa7.xml
+2026-02-14 15:19:28,740 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-a66ff0962184.xml
+2026-02-14 15:19:28,741 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-a66ff0962184.xml
+2026-02-14 15:19:29,055 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-6b4ad071806d.xml
+2026-02-14 15:19:29,056 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-6b4ad071806d.xml
+2026-02-14 15:19:29,260 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-2d7406e78efa.xml
+2026-02-14 15:19:29,262 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-2d7406e78efa.xml
+2026-02-14 15:19:29,441 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-8ba6cb0801f5.xml
+2026-02-14 15:19:29,443 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-8ba6cb0801f5.xml
+2026-02-14 15:19:29,638 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-196981dbf277.xml
+2026-02-14 15:19:29,639 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-196981dbf277.xml
+2026-02-14 15:19:30,002 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-290f41e23c33.xml
+2026-02-14 15:19:30,002 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-290f41e23c33.xml
+2026-02-14 15:19:30,165 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-ba1ac807cdb4.xml
+2026-02-14 15:19:30,166 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-ba1ac807cdb4.xml
+2026-02-14 15:19:30,423 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Local_Regulations_LF/doc-6101c1cf3a5c.xml
+2026-02-14 15:19:30,425 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Local_Regulations_LF\doc-6101c1cf3a5c.xml
+2026-02-14 15:19:31,036 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Emergency_Laws_NLE/doc-02f3c8ad8ef7.xml
+2026-02-14 15:19:31,037 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Emergency_Laws_NLE\doc-02f3c8ad8ef7.xml
+2026-02-14 15:19:31,349 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-d3789831150a.xml
+2026-02-14 15:19:31,349 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-d3789831150a.xml
+2026-02-14 15:19:32,157 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-2b8bbda110d8.xml
+2026-02-14 15:19:32,160 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-2b8bbda110d8.xml
+2026-02-14 15:19:33,177 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-54a7674c9bb5.xml
+2026-02-14 15:19:33,183 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-54a7674c9bb5.xml
+2026-02-14 15:19:33,419 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-76c49ab23264.xml
+2026-02-14 15:19:33,424 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-76c49ab23264.xml
+2026-02-14 15:19:33,663 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Regulations_SFO/doc-8862c5372f63.xml
+2026-02-14 15:19:33,664 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Regulations_SFO\doc-8862c5372f63.xml
+2026-02-14 15:19:33,866 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Local_LFO/doc-350ce0bd4dab.xml
+2026-02-14 15:19:33,868 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-350ce0bd4dab.xml
+2026-02-14 15:19:34,305 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Local_LFO/doc-e7503bc50ecb.xml
+2026-02-14 15:19:34,307 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-e7503bc50ecb.xml
+2026-02-14 15:19:34,558 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Local_LFO/doc-594f018cd7b4.xml
+2026-02-14 15:19:34,558 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-594f018cd7b4.xml
+2026-02-14 15:19:34,746 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Local_LFO/doc-416dd2afc20c.xml
+2026-02-14 15:19:34,747 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-416dd2afc20c.xml
+2026-02-14 15:19:34,927 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Local_LFO/doc-3274dacd65d0.xml
+2026-02-14 15:19:34,928 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-3274dacd65d0.xml
+2026-02-14 15:19:35,140 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Local_LFO/doc-dabe66cd9589.xml
+2026-02-14 15:19:35,141 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\doc-dabe66cd9589.xml
+2026-02-14 15:19:35,320 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Propositions_Prop/doc-3c7b34bef682.xml
+2026-02-14 15:19:35,323 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-3c7b34bef682.xml
+2026-02-14 15:19:35,554 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Propositions_Prop/doc-401de0e1416c.xml
+2026-02-14 15:19:35,555 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-401de0e1416c.xml
+2026-02-14 15:19:35,737 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Propositions_Prop/doc-f737a2535711.xml
+2026-02-14 15:19:35,739 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-f737a2535711.xml
+2026-02-14 15:19:35,938 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Propositions_Prop/doc-4b5baecf1d13.xml
+2026-02-14 15:19:35,938 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-4b5baecf1d13.xml
+2026-02-14 15:19:36,138 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Propositions_Prop/doc-dc603c0585ef.xml
+2026-02-14 15:19:36,142 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\doc-dc603c0585ef.xml
+2026-02-14 15:19:36,886 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Official_Reports_NOU/doc-4174fec9e0fb.xml
+2026-02-14 15:19:36,886 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Official_Reports_NOU\doc-4174fec9e0fb.xml
+2026-02-14 15:19:37,076 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Official_Reports_NOU/doc-a30aed1f5f53.xml
+2026-02-14 15:19:37,078 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Official_Reports_NOU\doc-a30aed1f5f53.xml
+2026-02-14 15:19:37,246 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-c34e6a27fc82.xml
+2026-02-14 15:19:37,246 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-c34e6a27fc82.xml
+2026-02-14 15:19:37,444 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-dca640380ca8.xml
+2026-02-14 15:19:37,445 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-dca640380ca8.xml
+2026-02-14 15:19:37,646 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-0234a165e1ff.xml
+2026-02-14 15:19:37,649 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-0234a165e1ff.xml
+2026-02-14 15:19:37,844 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-067f3d1b6888.xml
+2026-02-14 15:19:37,845 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-067f3d1b6888.xml
+2026-02-14 15:19:38,035 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-684f0d668f8e.xml
+2026-02-14 15:19:38,039 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-684f0d668f8e.xml
+2026-02-14 15:19:38,200 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-5376fcdbd3e8.xml
+2026-02-14 15:19:38,201 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-5376fcdbd3e8.xml
+2026-02-14 15:19:38,361 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-8aaa8ce33534.xml
+2026-02-14 15:19:38,362 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-8aaa8ce33534.xml
+2026-02-14 15:19:38,545 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-131e79cbde57.xml
+2026-02-14 15:19:38,548 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-131e79cbde57.xml
+2026-02-14 15:19:38,723 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-0c076211bef6.xml
+2026-02-14 15:19:38,726 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-0c076211bef6.xml
+2026-02-14 15:19:38,923 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-67d42fcc0cf6.xml
+2026-02-14 15:19:38,925 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-67d42fcc0cf6.xml
+2026-02-14 15:19:39,079 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-e498dc756480.xml
+2026-02-14 15:19:39,082 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-e498dc756480.xml
+2026-02-14 15:19:39,265 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-9466513abb62.xml
+2026-02-14 15:19:39,265 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-9466513abb62.xml
+2026-02-14 15:19:39,469 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-a534f76e1768.xml
+2026-02-14 15:19:39,469 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-a534f76e1768.xml
+2026-02-14 15:19:39,674 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-5dfc7fd97c3f.xml
+2026-02-14 15:19:39,676 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-5dfc7fd97c3f.xml
+2026-02-14 15:19:39,845 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-4432b2ebf466.xml
+2026-02-14 15:19:39,845 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-4432b2ebf466.xml
+2026-02-14 15:19:39,998 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-3700c632bb9c.xml
+2026-02-14 15:19:40,002 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-3700c632bb9c.xml
+2026-02-14 15:19:40,177 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-c884f262e6aa.xml
+2026-02-14 15:19:40,177 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-c884f262e6aa.xml
+2026-02-14 15:19:40,339 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-e49a3a23e344.xml
+2026-02-14 15:19:40,343 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-e49a3a23e344.xml
+2026-02-14 15:19:40,537 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-16db9bcb2f63.xml
+2026-02-14 15:19:40,538 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-16db9bcb2f63.xml
+2026-02-14 15:19:40,702 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-f0dff85fe82f.xml
+2026-02-14 15:19:40,704 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-f0dff85fe82f.xml
+2026-02-14 15:19:40,861 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-42d73774b56f.xml
+2026-02-14 15:19:40,862 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-42d73774b56f.xml
+2026-02-14 15:19:40,863 - INFO - ✓ Batch uploaded: 50 files (Total: 100)
+2026-02-14 15:19:41,248 - INFO - ✓ Saved to DB: doc-42d73774b56f.xml
+2026-02-14 15:19:41,248 - INFO -   ✓ [100] 03_Preparatory_Works/Recommendations_Innst/doc-42d73774b56f.xml
+2026-02-14 15:19:46,442 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-25ed92337f28.xml
+2026-02-14 15:19:46,634 - INFO - ✓ Saved to DB: doc-25ed92337f28.xml
+2026-02-14 15:19:46,635 - INFO -   ✓ [101] 03_Preparatory_Works/Recommendations_Innst/doc-25ed92337f28.xml
+2026-02-14 15:19:51,113 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-138737c3f794.xml
+2026-02-14 15:19:51,302 - INFO - ✓ Saved to DB: doc-138737c3f794.xml
+2026-02-14 15:19:51,302 - INFO -   ✓ [102] 03_Preparatory_Works/Recommendations_Innst/doc-138737c3f794.xml
+2026-02-14 15:20:05,262 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-2a57e8d5314e.xml
+2026-02-14 15:20:05,498 - INFO - ✓ Saved to DB: doc-2a57e8d5314e.xml
+2026-02-14 15:20:05,498 - INFO -   ✓ [103] 03_Preparatory_Works/Recommendations_Innst/doc-2a57e8d5314e.xml
+2026-02-14 15:20:09,850 - INFO -   ✅ 24 new docs saved
+
+2026-02-14 15:20:09,850 - INFO - [15/16] Circulars and Statements > Guidance (RUN)
+2026-02-14 15:20:09,850 - INFO -   📁 05_Circulars_Statements/Guidance_RUN
+2026-02-14 15:20:09,850 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/RUN
+2026-02-14 15:20:09,853 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/RUN
+2026-02-14 15:20:09,853 - INFO -   → Checking chronological index...
+2026-02-14 15:20:24,952 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:20:24,952 - INFO -     Found 0 documents
+2026-02-14 15:20:24,952 - INFO -   → Checking alphabetical index...
+2026-02-14 15:20:38,254 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:20:38,255 - INFO -     Found 0 documents
+2026-02-14 15:20:38,255 - INFO -   📄 Total unique URLs from both indexes: 0
+2026-02-14 15:20:38,255 - INFO -   📄 0 URLs found
+2026-02-14 15:20:38,255 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 15:20:38,260 - INFO - [16/16] International > Treaties (TRAK)
+2026-02-14 15:20:38,260 - INFO -   📁 07_International/Treaties_TRAK
+2026-02-14 15:20:38,260 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/TRAK
+2026-02-14 15:20:38,260 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/TRAK
+2026-02-14 15:20:38,264 - INFO -   → Checking chronological index...
+2026-02-14 15:20:51,589 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:20:51,589 - INFO -     Found 0 documents
+2026-02-14 15:20:51,590 - INFO -   → Checking alphabetical index...
+2026-02-14 15:21:04,859 - WARNING -   ⚠️ No links found on page
+2026-02-14 15:21:04,859 - INFO -     Found 0 documents
+2026-02-14 15:21:04,859 - INFO -   📄 Total unique URLs from both indexes: 0
+2026-02-14 15:21:04,859 - INFO -   📄 0 URLs found
+2026-02-14 15:21:04,859 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 15:21:04,859 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 15:21:04,859 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 15:21:04,859 - INFO - 🔍 Discovering all legal areas...
+2026-02-14 15:21:07,948 - INFO - ✓ Discovered 0 legal areas:
+2026-02-14 15:21:07,955 - WARNING - No legal areas discovered!
+2026-02-14 15:21:07,955 - INFO - 
+📦 Flushing uploads...
+2026-02-14 15:21:07,956 - INFO - 📦 Flushing remaining 3 files...
+2026-02-14 15:21:07,956 - INFO - 📦 Uploading batch of 3 files...
+2026-02-14 15:21:08,537 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-25ed92337f28.xml
+2026-02-14 15:21:08,537 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-25ed92337f28.xml
+2026-02-14 15:21:08,792 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-138737c3f794.xml
+2026-02-14 15:21:08,797 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-138737c3f794.xml
+2026-02-14 15:21:09,023 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Recommendations_Innst/doc-2a57e8d5314e.xml
+2026-02-14 15:21:09,054 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Recommendations_Innst\doc-2a57e8d5314e.xml
+2026-02-14 15:21:09,063 - INFO - ✓ Batch uploaded: 3 files (Total: 103)
+2026-02-14 15:21:09,089 - INFO -   ✓ 3 files flushed
+2026-02-14 15:21:11,717 - INFO - ✓ Browser closed
+2026-02-14 15:21:11,717 - INFO - 
+📊 Exporting Excel...
+2026-02-14 15:21:12,327 - INFO - Retrieved 917 records
+2026-02-14 15:21:13,296 - INFO - ✓ Excel created: ./outputs\lovdata_export_20260214_152112.xlsx
+2026-02-14 15:21:13,296 - INFO -   ✓ Excel saved: ./outputs\lovdata_export_20260214_152112.xlsx
+2026-02-14 15:21:13,302 - INFO - 
+======================================================================
+2026-02-14 15:21:13,302 - INFO - FINAL SUMMARY
+2026-02-14 15:21:13,302 - INFO - ======================================================================
+2026-02-14 15:21:13,302 - INFO -   ✓ Saved   : 103
+2026-02-14 15:21:13,304 - INFO -   ✗ Failed  : 0
+2026-02-14 15:21:13,304 - INFO -   ⊘ Skipped : 1058
+2026-02-14 15:21:13,304 - INFO -   📤 Uploaded: 103
+2026-02-14 15:21:13,305 - INFO -   📝 Total in DB: 103
+2026-02-14 15:21:13,305 - INFO - ======================================================================

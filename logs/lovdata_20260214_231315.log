@@ -1,0 +1,189 @@
+2026-02-14 23:13:23,228 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 23:13:23,228 - INFO - 🔐 Opening Lovdata login page...
+2026-02-14 23:13:27,787 - INFO - ✅ Login successful
+2026-02-14 23:13:27,787 - INFO - ======================================================================
+2026-02-14 23:13:27,788 - INFO - MODE: legal_areas_only
+2026-02-14 23:13:27,788 - INFO - ======================================================================
+2026-02-14 23:13:27,788 - INFO - 
+======================================================================
+2026-02-14 23:13:27,788 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-02-14 23:13:27,789 - INFO -    Using fallback list from config.LEGAL_AREA_TRANSLATIONS
+2026-02-14 23:13:27,789 - INFO - ======================================================================
+2026-02-14 23:13:27,789 - INFO - 📂 Loading legal areas...
+2026-02-14 23:13:27,790 - INFO - 📋 Loaded 56 legal areas
+2026-02-14 23:13:27,790 - INFO - 
+📊 Total legal areas: 56
+
+2026-02-14 23:13:27,790 - INFO - 
+======================================================================
+2026-02-14 23:13:27,790 - INFO - [1/56] Arbeidsrett (Employment Law)
+2026-02-14 23:13:27,790 - INFO - ======================================================================
+2026-02-14 23:13:27,791 - INFO -    Norwegian: arbeidsrett
+2026-02-14 23:13:27,791 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 23:13:27,791 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 23:13:35,811 - INFO -    📜 Scrolling to load documents...
+2026-02-14 23:13:46,780 - INFO -    📎 Found 43 documents
+2026-02-14 23:13:46,780 - INFO - 🚀 Processing 43 documents
+2026-02-14 23:13:46,780 - INFO - 
+   [1/43] Processing document...
+2026-02-14 23:13:46,780 - INFO - 📄 Scraping document...
+2026-02-14 23:14:07,273 - ERROR - ❌ Failed to scrape document https://lovdata.no/pro/#document/NL/lov/2007-06-15-40/%C2%A744?viewNote=427025803: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7f053f3d5
+	0x7ff7f053f430
+	0x7ff7f02e10bd
+	0x7ff7f033c2fe
+	0x7ff7f033c60c
+	0x7ff7f038d187
+	0x7ff7f0389d08
+	0x7ff7f032cb0c
+	0x7ff7f032da53
+	0x7ff7f081b470
+	0x7ff7f081586d
+	0x7ff7f083621a
+	0x7ff7f055b235
+	0x7ff7f0563a5c
+	0x7ff7f0548844
+	0x7ff7f05489f6
+	0x7ff7f052eb87
+	0x7ffa9152259d
+	0x7ffa938caf78
+
+2026-02-14 23:14:07,579 - INFO - 
+   [2/43] Processing document...
+2026-02-14 23:14:07,579 - INFO - 📄 Scraping document...
+2026-02-14 23:14:14,809 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:14:14,913 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Arbeidsrett (Employment Law)\Arbeidsrett (Employment Law)\NL.xml
+2026-02-14 23:14:15,163 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.0e2c29c287950e5a6a357a58f7ee8c0a&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:14:15,478 - INFO - 
+   [3/43] Processing document...
+2026-02-14 23:14:15,479 - INFO - 📄 Scraping document...
+2026-02-14 23:14:17,881 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:14:17,912 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Arbeidsrett (Employment Law)\Arbeidsrett (Employment Law)\NL.xml
+2026-02-14 23:14:18,156 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8758f25e147a31529eb4eedb2810114d&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:14:18,466 - INFO - 
+   [4/43] Processing document...
+2026-02-14 23:14:18,467 - INFO - 📄 Scraping document...
+2026-02-14 23:14:20,900 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:14:20,926 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Arbeidsrett (Employment Law)\Arbeidsrett (Employment Law)\HRSTR.xml
+2026-02-14 23:14:21,161 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.492339a01854d6f53e5ee834192c7551&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 23:14:21,474 - INFO - 
+   [5/43] Processing document...
+2026-02-14 23:14:21,474 - INFO - 📄 Scraping document...
+2026-02-14 23:14:41,762 - ERROR - ❌ Failed to scrape document https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2026-372-a: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7f053f3d5
+	0x7ff7f053f430
+	0x7ff7f02e10bd
+	0x7ff7f033c2fe
+	0x7ff7f033c60c
+	0x7ff7f038d187
+	0x7ff7f0389d08
+	0x7ff7f032cb0c
+	0x7ff7f032da53
+	0x7ff7f081b470
+	0x7ff7f081586d
+	0x7ff7f083621a
+	0x7ff7f055b235
+	0x7ff7f0563a5c
+	0x7ff7f0548844
+	0x7ff7f05489f6
+	0x7ff7f052eb87
+	0x7ffa9152259d
+	0x7ffa938caf78
+
+2026-02-14 23:14:42,078 - INFO - 
+   [6/43] Processing document...
+2026-02-14 23:14:42,079 - INFO - 📄 Scraping document...
+2026-02-14 23:15:02,626 - ERROR - ❌ Failed to scrape document https://lovdata.no/pro/#document/HRSTR/avgjorelse/hr-2026-359-u: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7f053f3d5
+	0x7ff7f053f430
+	0x7ff7f02e10bd
+	0x7ff7f033c2fe
+	0x7ff7f033c60c
+	0x7ff7f038d187
+	0x7ff7f0389d08
+	0x7ff7f032cb0c
+	0x7ff7f032da53
+	0x7ff7f081b470
+	0x7ff7f081586d
+	0x7ff7f083621a
+	0x7ff7f055b235
+	0x7ff7f0563a5c
+	0x7ff7f0548844
+	0x7ff7f05489f6
+	0x7ff7f052eb87
+	0x7ffa9152259d
+	0x7ffa938caf78
+
+2026-02-14 23:15:02,945 - INFO - 
+   [7/43] Processing document...
+2026-02-14 23:15:02,946 - INFO - 📄 Scraping document...
+2026-02-14 23:15:23,175 - ERROR - ❌ Failed to scrape document https://lovdata.no/pro/#document/HRSIV/avgjorelse/hr-2026-346-u: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7f053f3d5
+	0x7ff7f053f430
+	0x7ff7f02e10bd
+	0x7ff7f033c2fe
+	0x7ff7f033c60c
+	0x7ff7f038d187
+	0x7ff7f0389d08
+	0x7ff7f032cb0c
+	0x7ff7f032da53
+	0x7ff7f081b470
+	0x7ff7f081586d
+	0x7ff7f083621a
+	0x7ff7f055b235
+	0x7ff7f0563a5c
+	0x7ff7f0548844
+	0x7ff7f05489f6
+	0x7ff7f052eb87
+	0x7ffa9152259d
+	0x7ffa938caf78
+
+2026-02-14 23:15:23,483 - INFO - 
+   [8/43] Processing document...
+2026-02-14 23:15:23,483 - INFO - 📄 Scraping document...
+2026-02-14 23:15:44,000 - ERROR - ❌ Failed to scrape document https://lovdata.no/pro/#document/HRSTR/avgjorelse/hr-2026-344-u: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7f053f3d5
+	0x7ff7f053f430
+	0x7ff7f02e10bd
+	0x7ff7f033c2fe
+	0x7ff7f033c60c
+	0x7ff7f038d187
+	0x7ff7f0389d08
+	0x7ff7f032cb0c
+	0x7ff7f032da53
+	0x7ff7f081b470
+	0x7ff7f081586d
+	0x7ff7f083621a
+	0x7ff7f055b235
+	0x7ff7f0563a5c
+	0x7ff7f0548844
+	0x7ff7f05489f6
+	0x7ff7f052eb87
+	0x7ffa9152259d
+	0x7ffa938caf78
+
+2026-02-14 23:15:44,312 - INFO - 
+   [9/43] Processing document...
+2026-02-14 23:15:44,313 - INFO - 📄 Scraping document...
+2026-02-14 23:15:58,052 - INFO - 
+⬆️  Uploading batch (3 documents)
+2026-02-14 23:15:58,666 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Arbeidsrett%20(Employment%20Law)/Arbeidsrett%20(Employment%20Law)/NL.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:15:58,666 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:15:58,829 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Arbeidsrett%20(Employment%20Law)/Arbeidsrett%20(Employment%20Law)/NL.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:15:58,847 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:15:59,012 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Arbeidsrett%20(Employment%20Law)/Arbeidsrett%20(Employment%20Law)/HRSTR.xml "HTTP/2 400 Bad Request"
+2026-02-14 23:15:59,015 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Unauthorized', 'message': 'new row violates row-level security policy'}
+2026-02-14 23:15:59,049 - INFO - ✅ Batch upload complete
+
+2026-02-14 23:16:03,112 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=64136): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/ba039dd9e5057438284a9a773c7dc22c
+2026-02-14 23:16:07,174 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=64136): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/ba039dd9e5057438284a9a773c7dc22c

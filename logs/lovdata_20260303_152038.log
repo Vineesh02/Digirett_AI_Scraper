@@ -1,0 +1,83 @@
+2026-03-03 15:20:42,820 - INFO - ✓ Supabase table: legal_area_metadata
+2026-03-03 15:20:42,821 - INFO - ✓ Supabase bucket: legal_area
+2026-03-03 15:20:42,821 - INFO - ✓ Storage handler initialized
+2026-03-03 15:20:42,823 - INFO - ENV/CONFIG CHECK
+2026-03-03 15:20:42,824 - INFO - ✓ SUPABASE_TABLE: legal_area_metadata
+2026-03-03 15:20:42,824 - INFO - ✓ SUPABASE_BUCKET: legal_area
+2026-03-03 15:20:42,824 - INFO - ✓ TIMEOUT: 30
+2026-03-03 15:20:42,825 - INFO - ✓ HEADLESS: False
+2026-03-03 15:20:42,825 - INFO - ✓ YEAR RANGE: 2000–2026
+2026-03-03 15:20:42,826 - INFO - ✓ BATCH_UPLOAD_SIZE: 10
+2026-03-03 15:20:42,826 - INFO - ----------------------------------------------------------------------
+2026-03-03 15:20:42,826 - INFO - 🔐 Opening Lovdata login page...
+2026-03-03 15:20:48,703 - INFO - ✅ Login successful
+2026-03-03 15:20:48,703 - INFO - ======================================================================
+2026-03-03 15:20:48,704 - INFO - MODE: legal_areas_only
+2026-03-03 15:20:48,704 - INFO - ======================================================================
+2026-03-03 15:20:57,472 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 15:20:57,910 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 15:20:57,910 - INFO - 📊 Total ROOT discovered: 35
+2026-03-03 15:21:07,429 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 15:21:07,971 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 15:21:07,972 - INFO - 
+======================================================================
+2026-03-03 15:21:07,972 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 15:21:07,972 - INFO - ======================================================================
+2026-03-03 15:21:12,332 - INFO - 🔗 ROOT docs: 15
+2026-03-03 15:21:12,333 - INFO - ⏭️ Skipping (year out of range): 1918 | https://lovdata.no/pro/#document/NL/lov/1918-05-31-4
+2026-03-03 15:21:14,334 - INFO - ⏭️ Skipping (year out of range): 1989 | https://lovdata.no/pro/#document/NL/lov/1989-06-16-63
+2026-03-03 15:21:16,765 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-65.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:21:18,297 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2017-06-16-65 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:21:20,505 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2016-06-17-73.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:21:22,053 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2016-06-17-73 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:21:24,054 - INFO - ⏭️ Skipping (year out of range): 1997 | https://lovdata.no/pro/#document/NL/lov/1997-06-13-43
+2026-03-03 15:21:26,055 - INFO - ⏭️ Skipping (year out of range): None | https://lovdata.no/pro/#document/NL/lov/1687-04-15
+2026-03-03 15:21:28,292 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2003-06-06-38.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:21:29,851 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2003-06-06-38 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:21:31,852 - INFO - ⏭️ Skipping (year out of range): 1985 | https://lovdata.no/pro/#document/NL/lov/1985-06-21-80
+2026-03-03 15:21:34,104 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2024-06-21-42.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:21:35,698 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2024-06-21-42 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:21:37,892 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2012-05-25-27.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:21:39,439 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2012-05-25-27 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:21:41,630 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2020-04-17-29.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:21:43,181 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2020-04-17-29 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:21:45,182 - INFO - ⏭️ Skipping (year out of range): 1996 | https://lovdata.no/pro/#document/NL/lov/1996-03-22-16
+2026-03-03 15:21:47,431 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2025-12-22-129.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:21:48,981 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2025-12-22-129 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:21:50,982 - INFO - ⏭️ Skipping (year out of range): 1999 | https://lovdata.no/pro/#document/NLO/lov/1999-07-16-69
+2026-03-03 15:21:52,983 - INFO - ⏭️ Skipping (year out of range): 1952 | https://lovdata.no/pro/#document/NLO/lov/1952-06-28-3
+2026-03-03 15:22:04,544 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 15:22:05,110 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 15:22:05,111 - INFO - 
+======================================================================
+2026-03-03 15:22:05,111 - INFO - [2/35] ROOT: Arbeidsrett
+2026-03-03 15:22:05,111 - INFO - ======================================================================
+2026-03-03 15:22:10,053 - INFO - 🔗 ROOT docs: 50
+2026-03-03 15:22:11,053 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2005-06-17-62.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:12,650 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2005-06-17-62 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:14,650 - INFO - ⏭️ Skipping (year out of range): 1999 | https://lovdata.no/pro/#document/NL/lov/1999-07-02-64
+2026-03-03 15:22:17,514 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-51.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:19,089 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2017-06-16-51 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:21,293 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2009-12-18-131.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:22,885 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2009-12-18-131 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:25,053 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2007-02-16-9.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:26,617 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2007-02-16-9 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:28,804 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2006-06-16-20.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:30,382 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2006-06-16-20 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:32,382 - INFO - ⏭️ Skipping (year out of range): 1988 | https://lovdata.no/pro/#document/NL/lov/1988-04-29-21
+2026-03-03 15:22:34,865 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-50.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:36,438 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2017-06-16-50 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:38,617 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2004-12-10-76.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:40,175 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2004-12-10-76 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:42,345 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2012-06-22-43.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:43,916 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2012-06-22-43 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:46,095 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2012-01-27-9.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:47,647 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2012-01-27-9 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:49,818 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-67.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:51,377 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2017-06-16-67 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:53,377 - INFO - ⏭️ Skipping (year out of range): 1993 | https://lovdata.no/pro/#document/NL/lov/1993-06-04-58
+2026-03-03 15:22:55,631 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2013-06-21-102.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:22:57,202 - ERROR - ❌ Error processing doc: https://lovdata.no/pro/#document/NL/lov/2013-06-21-102 | 'LovdataScraper' object has no attribute '_clear_perf_logs'
+2026-03-03 15:22:59,203 - INFO - ⏭️ Skipping (year out of range): 1958 | https://lovdata.no/pro/#document/NL/lov/1958-07-18-2
+2026-03-03 15:23:01,204 - INFO - ⏭️ Skipping (year out of range): 1973 | https://lovdata.no/pro/#document/NL/lov/1973-12-14-61
+2026-03-03 15:23:02,544 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/369c65168c287a2aa073b75933b8953e

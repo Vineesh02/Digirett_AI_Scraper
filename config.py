@@ -38,11 +38,12 @@ HEADLESS               = os.getenv("HEADLESS", "false").lower() in ("1", "true",
 TIMEOUT                = int(os.getenv("TIMEOUT", "30"))
 DELAY_BETWEEN_REQUESTS = float(os.getenv("DELAY_BETWEEN_REQUESTS", "2.0"))
 
-START_YEAR = int(os.getenv("START_YEAR", "1900"))
-END_YEAR   = int(os.getenv("END_YEAR",   "2100"))
+START_YEAR = int(os.getenv("START_YEAR", "2000"))
+END_YEAR   = int(os.getenv("END_YEAR",   "2026"))
 
 MAX_DOCS_PER_LEGAL_AREA = int(os.getenv("MAX_DOCS_PER_LEGAL_AREA", "999999"))
 BATCH_UPLOAD_SIZE       = int(os.getenv("BATCH_UPLOAD_SIZE", "10"))
+
 TARGET_ROOT_CATEGORIES = [
     "Anskaffelser, avtaler, bygg og entrepriser",
     "Arbeidsrett",

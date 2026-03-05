@@ -1,0 +1,127 @@
+2026-03-03 15:37:51,326 - INFO - ✓ Supabase table: legal_area_metadata
+2026-03-03 15:37:51,327 - INFO - ✓ Supabase bucket: legal_area
+2026-03-03 15:37:51,327 - INFO - ✓ Storage handler initialized
+2026-03-03 15:37:57,032 - INFO - ✅ Login successful
+2026-03-03 15:38:03,444 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 15:38:03,675 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 15:38:03,677 - INFO - 📊 Total ROOT discovered: 35
+2026-03-03 15:38:09,665 - INFO - Found 35 total tree nodes (visible+in DOM).
+2026-03-03 15:38:09,946 - INFO - 📋 Total discovered ROOT (by visible nodes): 35
+2026-03-03 15:38:09,947 - INFO - ======================================================================
+2026-03-03 15:38:09,949 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 15:38:09,949 - INFO - ======================================================================
+2026-03-03 15:38:14,284 - INFO -    [Siste dokumenter] URLs found: 188
+2026-03-03 15:38:15,674 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LASIV_avgjorelse_la-2025-118666.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:38:24,889 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/LASIV/avgjorelse/la-2025-118666
+2026-03-03 15:38:24,889 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/LASIV/avgjorelse/la-2025-118666
+2026-03-03 15:38:27,452 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-58098.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:38:36,600 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-58098
+2026-03-03 15:38:36,600 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-58098
+2026-03-03 15:38:39,116 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LASIV_avgjorelse_la-2025-102834.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:38:48,252 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/LASIV/avgjorelse/la-2025-102834
+2026-03-03 15:38:48,252 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/LASIV/avgjorelse/la-2025-102834
+2026-03-03 15:38:50,466 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-03-06.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:38:59,602 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/EUR/eur-2026-03-06
+2026-03-03 15:38:59,602 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/EUR/eur-2026-03-06
+2026-03-03 15:39:01,816 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-26457.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:39:11,049 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-26457
+2026-03-03 15:39:11,049 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/LBSIV/avgjorelse/lb-2025-26457
+2026-03-03 15:39:13,338 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-121712.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:39:22,480 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-121712
+2026-03-03 15:39:22,480 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/TRSIV/avgjorelse/tosl-2025-121712
+2026-03-03 15:39:24,746 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_thrd-2025-155511.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:39:33,975 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/TRSIV/avgjorelse/thrd-2025-155511
+2026-03-03 15:39:33,975 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/TRSIV/avgjorelse/thrd-2025-155511
+2026-03-03 15:39:36,221 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LTII_forskrift_2026-02-12-248.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:39:45,390 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/LTII/forskrift/2026-02-12-248
+2026-03-03 15:39:45,390 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/LTII/forskrift/2026-02-12-248
+2026-03-03 15:39:47,631 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-09-173.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:39:56,835 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/LTI/forskrift/2026-02-09-173
+2026-03-03 15:39:56,835 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/LTI/forskrift/2026-02-09-173
+2026-03-03 15:39:59,082 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-02-04.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:40:08,339 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/EUR/eur-2026-02-04
+2026-03-03 15:40:08,339 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/EUR/eur-2026-02-04
+2026-03-03 15:40:10,340 - INFO - ⏭️ Skipping (year out of range): 1918 | https://lovdata.no/pro/#document/NL/lov/1918-05-31-4
+2026-03-03 15:40:12,341 - INFO - ⏭️ Skipping (year out of range): 1989 | https://lovdata.no/pro/#document/NL/lov/1989-06-16-63
+2026-03-03 15:40:14,559 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2017-06-16-65.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:40:23,732 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2017-06-16-65
+2026-03-03 15:40:23,732 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2017-06-16-65
+2026-03-03 15:40:25,972 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2016-06-17-73.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:40:35,250 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2016-06-17-73
+2026-03-03 15:40:35,250 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2016-06-17-73
+2026-03-03 15:40:37,251 - INFO - ⏭️ Skipping (year out of range): 1997 | https://lovdata.no/pro/#document/NL/lov/1997-06-13-43
+2026-03-03 15:40:39,252 - INFO - ⏭️ Skipping (year out of range): None | https://lovdata.no/pro/#document/NL/lov/1687-04-15
+2026-03-03 15:40:41,462 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2003-06-06-38.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:40:50,810 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2003-06-06-38
+2026-03-03 15:40:50,810 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2003-06-06-38
+2026-03-03 15:40:52,810 - INFO - ⏭️ Skipping (year out of range): 1985 | https://lovdata.no/pro/#document/NL/lov/1985-06-21-80
+2026-03-03 15:40:55,068 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2024-06-21-42.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:41:04,244 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2024-06-21-42
+2026-03-03 15:41:04,246 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2024-06-21-42
+2026-03-03 15:41:06,520 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2012-05-25-27.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:41:15,681 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2012-05-25-27
+2026-03-03 15:41:15,682 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2012-05-25-27
+2026-03-03 15:41:17,931 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2005-06-17-62_%C2%A71-4.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:41:27,040 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2005-06-17-62/%C2%A71-4
+2026-03-03 15:41:27,040 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2005-06-17-62/%C2%A71-4
+2026-03-03 15:41:29,042 - INFO - ⏭️ Skipping (year out of range): 1980 | https://lovdata.no/pro/#document/NL/lov/1980-02-08-2/%C2%A73-8
+2026-03-03 15:41:31,043 - INFO - ⏭️ Skipping (year out of range): 1976 | https://lovdata.no/pro/#document/NL/lov/1976-12-17-100/%C2%A74a
+2026-03-03 15:41:33,286 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-1.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:41:42,444 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-1
+2026-03-03 15:41:42,444 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-1
+2026-03-03 15:41:44,710 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-2.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:41:53,841 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-2
+2026-03-03 15:41:53,841 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-2
+2026-03-03 15:41:56,180 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-3.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:42:05,347 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-3
+2026-03-03 15:42:05,347 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-3
+2026-03-03 15:42:07,855 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-4.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:42:17,066 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-4
+2026-03-03 15:42:17,066 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-4
+2026-03-03 15:42:19,736 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-5.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:42:28,872 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-5
+2026-03-03 15:42:28,872 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-5
+2026-03-03 15:42:31,222 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-6.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:42:40,383 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-6
+2026-03-03 15:42:40,384 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-6
+2026-03-03 15:42:42,792 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-7.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:42:52,011 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-7
+2026-03-03 15:42:52,011 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-7
+2026-03-03 15:42:54,340 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-8.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:43:03,530 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-8
+2026-03-03 15:43:03,531 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-8
+2026-03-03 15:43:06,123 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-9.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:43:15,290 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-9
+2026-03-03 15:43:15,290 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-9
+2026-03-03 15:43:17,618 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A720-10.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:43:26,839 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-10
+2026-03-03 15:43:26,839 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A720-10
+2026-03-03 15:43:29,076 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-1.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:43:38,326 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-1
+2026-03-03 15:43:38,327 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-1
+2026-03-03 15:43:40,752 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-2.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:43:49,952 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-2
+2026-03-03 15:43:49,952 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-2
+2026-03-03 15:43:52,303 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-3.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:44:01,501 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-3
+2026-03-03 15:44:01,501 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-3
+2026-03-03 15:44:03,876 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-4.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:44:13,099 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-4
+2026-03-03 15:44:13,100 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-4
+2026-03-03 15:44:15,368 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-5.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:44:24,591 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-5
+2026-03-03 15:44:24,591 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-5
+2026-03-03 15:44:27,216 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-6.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:44:36,461 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-6
+2026-03-03 15:44:36,461 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-6
+2026-03-03 15:44:38,923 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-7.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:44:48,137 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-7
+2026-03-03 15:44:48,137 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-7
+2026-03-03 15:44:50,670 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-8.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:44:59,899 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-8
+2026-03-03 15:44:59,899 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-8
+2026-03-03 15:45:02,141 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-9.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:45:11,314 - ERROR - ❌ Could not detect printDocument URL from logs for: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-9
+2026-03-03 15:45:11,314 - ERROR - ❌ PDF download failed: https://lovdata.no/pro/#document/NL/lov/2008-06-27-71/%C2%A721-9
+2026-03-03 15:45:13,539 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2008-06-27-71_%C2%A721-10.pdf&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 15:45:18,798 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/e62ffad723d25f3bb6e7705909d94388

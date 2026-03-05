@@ -1,0 +1,56 @@
+2026-02-14 18:13:54,168 - INFO - ✓ Database connected
+2026-02-14 18:13:54,168 - INFO - ====== WebDriver manager ======
+2026-02-14 18:13:55,790 - INFO - [driver] Started: C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 18:13:55,790 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 18:13:56,778 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 18:13:56,778 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 18:13:56,778 - INFO - Logging in…
+2026-02-14 18:14:18,497 - INFO - Login successful
+2026-02-14 18:14:18,497 - INFO - 
+======================================================================
+2026-02-14 18:14:18,497 - INFO - MODE: LEGAL_AREAS_ONLY
+2026-02-14 18:14:18,499 - INFO - ======================================================================
+
+2026-02-14 18:14:18,499 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 18:14:18,499 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 18:14:18,500 - INFO - Ready: 141 legal area subcategories across 35 parent areas
+2026-02-14 18:14:18,500 - INFO - 
+📊 Total legal areas discovered: 141
+2026-02-14 18:14:18,500 - INFO -   Max docs per area: 100
+
+2026-02-14 18:14:18,500 - INFO - 
+======================================================================
+2026-02-14 18:14:18,500 - INFO - [1/141] Procurement_Agreements_Construction / Procurement
+2026-02-14 18:14:18,501 - INFO - ======================================================================
+2026-02-14 18:14:18,501 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/anskaffelser
+2026-02-14 18:14:18,501 - INFO -   Subcategory: Procurement (slug: anskaffelser)
+2026-02-14 18:17:55,567 - INFO -   Categories with docs: 0
+2026-02-14 18:17:55,567 - INFO -   📁 Category: Legal_Areas/Procurement_Agreements_Construction/Procurement
+2026-02-14 18:17:55,567 - INFO -   📂 Found 0 document categories
+
+2026-02-14 18:17:55,567 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 18:17:55,567 - INFO - 
+======================================================================
+2026-02-14 18:17:55,573 - INFO - [2/141] Procurement_Agreements_Construction / Agreements
+2026-02-14 18:17:55,574 - INFO - ======================================================================
+2026-02-14 18:17:55,574 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/avtaler
+2026-02-14 18:17:55,575 - INFO -   Subcategory: Agreements (slug: avtaler)
+2026-02-14 18:21:32,112 - INFO -   Categories with docs: 0
+2026-02-14 18:21:32,114 - INFO -   📁 Category: Legal_Areas/Procurement_Agreements_Construction/Agreements
+2026-02-14 18:21:32,114 - INFO -   📂 Found 0 document categories
+
+2026-02-14 18:21:32,115 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 18:21:32,115 - INFO - 
+======================================================================
+2026-02-14 18:21:32,115 - INFO - [3/141] Procurement_Agreements_Construction / Residential_Law
+2026-02-14 18:21:32,116 - INFO - ======================================================================
+2026-02-14 18:21:32,117 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/boligrett
+2026-02-14 18:21:32,117 - INFO -   Subcategory: Residential_Law (slug: boligrett)
+2026-02-14 18:23:44,156 - WARNING - 
+⚠️ Interrupted by user
+2026-02-14 18:23:44,162 - INFO - 
+📦 Flushing uploads...
+2026-02-14 18:23:44,170 - INFO -   ✓ 0 files flushed
+2026-02-14 18:23:44,272 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/d731c9b1c7a906b99f6b839d0ce17b98

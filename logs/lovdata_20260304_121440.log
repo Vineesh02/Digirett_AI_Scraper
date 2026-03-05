@@ -1,0 +1,326 @@
+2026-03-04 12:14:45,150 - INFO - ✓ Supabase bucket : legal_area
+2026-03-04 12:14:45,151 - INFO - ✓ Supabase table  : legal_area_metadata
+2026-03-04 12:14:45,151 - INFO - ✓ StorageHandler initialized
+2026-03-04 12:14:46,241 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=area_key&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-04 12:14:46,244 - WARNING - ⚠️  scraper_claims table not found — parallel claim tracking disabled. Create it with:  CREATE TABLE scraper_claims (area_key TEXT PRIMARY KEY, claimed_by TEXT, claimed_at TIMESTAMPTZ, status TEXT);
+2026-03-04 12:14:46,245 - INFO - ======================================================================
+2026-03-04 12:14:46,246 - INFO - ENV / CONFIG
+2026-03-04 12:14:46,246 - INFO -   WORKER ID       : 803dae15
+2026-03-04 12:14:46,247 - INFO -   SUPABASE_TABLE  : legal_area_metadata
+2026-03-04 12:14:46,247 - INFO -   SUPABASE_BUCKET : legal_area
+2026-03-04 12:14:46,249 - INFO -   BASE_DIR        : ./scraped_xml
+2026-03-04 12:14:46,249 - INFO -   TIMEOUT         : 30
+2026-03-04 12:14:46,250 - INFO -   HEADLESS        : False
+2026-03-04 12:14:46,250 - INFO -   YEAR RANGE      : 2000 – 2026
+2026-03-04 12:14:46,251 - INFO -   BATCH SIZE      : 10
+2026-03-04 12:14:46,251 - INFO - ======================================================================
+2026-03-04 12:14:50,454 - INFO - ✅ Login successful
+2026-03-04 12:14:55,739 - INFO - ✅ Tree nodes present
+2026-03-04 12:14:56,766 - INFO - Found 35 tree node(s)
+2026-03-04 12:14:57,390 - INFO - 📋 ROOT categories: 35
+2026-03-04 12:14:57,394 - INFO - 📊 Total ROOTs: 35
+2026-03-04 12:15:02,596 - INFO - ✅ Tree nodes present
+2026-03-04 12:15:03,610 - INFO - Found 35 tree node(s)
+2026-03-04 12:15:03,908 - INFO - 📋 ROOT categories: 35
+2026-03-04 12:15:03,909 - INFO - 
+======================================================================
+2026-03-04 12:15:03,909 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-04 12:15:03,909 - INFO - ======================================================================
+2026-03-04 12:15:05,812 - INFO -    Branch count: 5
+2026-03-04 12:15:11,009 - INFO - ✅ Tree nodes present
+2026-03-04 12:15:12,028 - INFO - Found 40 tree node(s)
+2026-03-04 12:15:12,501 - INFO - 📋 ROOT categories: 40
+2026-03-04 12:15:14,017 - INFO -    [1/5] BRANCH: Anskaffelser
+2026-03-04 12:15:15,715 - INFO -       Leaf count: 0
+2026-03-04 12:15:15,716 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-04 12:15:16,437 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=claimed_by%2Cclaimed_at%2Cstatus&area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_ "HTTP/1.1 404 Not Found"
+2026-03-04 12:15:16,439 - WARNING - ⚠️  Claim check failed ({'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}) — proceeding anyway: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_
+2026-03-04 12:15:16,959 - INFO -     ✅ div.legal-area-header present
+2026-03-04 12:15:16,994 - INFO -     Found 11 anchor links in legal-area-header
+2026-03-04 12:15:17,026 - INFO -     ✓ Section: 'Siste dokumenter'  →  LATEST DOCUMENTS  (div#saker)
+2026-03-04 12:15:17,054 - INFO -     ✓ Section: 'Lover'  →  LAWS  (div#lover)
+2026-03-04 12:15:17,080 - INFO -     ✓ Section: 'Forskrifter'  →  REGULATIONS  (div#forskrifter)
+2026-03-04 12:15:17,108 - INFO -     ✓ Section: 'Avgjørelser fra Høyesterett'  →  DECISIONS FROM THE SUPREME COURT  (div#hr)
+2026-03-04 12:15:17,134 - INFO -     ✓ Section: 'Avgjørelser fra lagmannsrettene'  →  DECISIONS FROM THE COURTS OF APPEAL  (div#lr)
+2026-03-04 12:15:17,166 - INFO -     ✓ Section: 'Avgjørelser fra tingrettene'  →  DECISIONS FROM THE DISTRICT COURTS  (div#tr)
+2026-03-04 12:15:17,197 - INFO -     ✓ Section: 'Artikler'  →  ARTICLES  (div#artikler)
+2026-03-04 12:15:17,231 - INFO -     ✓ Section: 'Dokumenter fra Klagenemnda for offentlige anskaffelser'  →  DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  (div#kofa)
+2026-03-04 12:15:17,265 - INFO -     ✓ Section: 'Dokumenter fra Byggebransjens Faglig Juridiske Råd'  →  DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL  (div#bfjr)
+2026-03-04 12:15:17,299 - INFO -     ✓ Section: 'Dokumenter fra Justisdepartementet'  →  DOCUMENTS FROM THE MINISTRY OF JUSTICE  (div#jd)
+2026-03-04 12:15:17,332 - INFO -     ✓ Section: 'Andre dokumenter'  →  OTHER DOCUMENTS  (div#otherBases)
+2026-03-04 12:15:17,332 - INFO - 
+    ════════════════════════════════════════════════
+    11 SECTIONS FOUND — processing one by one
+    ════════════════════════════════════════════════
+2026-03-04 12:15:17,333 - INFO - 
+    ── [1/11] LATEST DOCUMENTS ──
+2026-03-04 12:15:17,562 - INFO -     👆 Clicked section tab: 'Siste dokumenter'
+2026-03-04 12:15:19,119 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:19,159 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:19,177 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:19,179 - INFO -     ✅ COMPLETE 'LATEST DOCUMENTS'  expected=None  collected=0
+2026-03-04 12:15:19,180 - INFO - 
+    ── [2/11] LAWS ──
+2026-03-04 12:15:19,408 - INFO -     👆 Clicked section tab: 'Lover'
+2026-03-04 12:15:20,966 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:21,022 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:21,041 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:21,042 - INFO -     ✅ COMPLETE 'LAWS'  expected=None  collected=0
+2026-03-04 12:15:21,043 - INFO - 
+    ── [3/11] REGULATIONS ──
+2026-03-04 12:15:21,277 - INFO -     👆 Clicked section tab: 'Forskrifter'
+2026-03-04 12:15:22,821 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:22,858 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:22,876 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:22,876 - INFO -     ✅ COMPLETE 'REGULATIONS'  expected=None  collected=0
+2026-03-04 12:15:22,877 - INFO - 
+    ── [4/11] DECISIONS FROM THE SUPREME COURT ──
+2026-03-04 12:15:23,105 - INFO -     👆 Clicked section tab: 'Avgjørelser fra Høyesterett'
+2026-03-04 12:15:24,655 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:24,700 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:24,718 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:24,719 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE SUPREME COURT'  expected=None  collected=0
+2026-03-04 12:15:24,719 - INFO - 
+    ── [5/11] DECISIONS FROM THE COURTS OF APPEAL ──
+2026-03-04 12:15:24,948 - INFO -     👆 Clicked section tab: 'Avgjørelser fra lagmannsrettene'
+2026-03-04 12:15:26,498 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:26,539 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:26,554 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:26,554 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE COURTS OF APPEAL'  expected=None  collected=0
+2026-03-04 12:15:26,555 - INFO - 
+    ── [6/11] DECISIONS FROM THE DISTRICT COURTS ──
+2026-03-04 12:15:26,785 - INFO -     👆 Clicked section tab: 'Avgjørelser fra tingrettene'
+2026-03-04 12:15:28,333 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:28,375 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:28,392 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:28,393 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE DISTRICT COURTS'  expected=None  collected=0
+2026-03-04 12:15:28,393 - INFO - 
+    ── [7/11] ARTICLES ──
+2026-03-04 12:15:28,628 - INFO -     👆 Clicked section tab: 'Artikler'
+2026-03-04 12:15:30,175 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:30,223 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:30,236 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:30,237 - INFO -     ✅ COMPLETE 'ARTICLES'  expected=None  collected=0
+2026-03-04 12:15:30,238 - INFO - 
+    ── [8/11] DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD ──
+2026-03-04 12:15:30,473 - INFO -     👆 Clicked section tab: 'Dokumenter fra Klagenemnda for offentlige anskaffelser'
+2026-03-04 12:15:32,064 - WARNING -     ⚠️  Section div not found for id='kofa'
+2026-03-04 12:15:32,064 - WARNING -     ⚠️  Content div#kofa not found — skipping
+2026-03-04 12:15:32,065 - INFO - 
+    ── [9/11] DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL ──
+2026-03-04 12:15:32,296 - INFO -     👆 Clicked section tab: 'Dokumenter fra Byggebransjens Faglig Juridiske Råd'
+2026-03-04 12:15:33,885 - WARNING -     ⚠️  Section div not found for id='bfjr'
+2026-03-04 12:15:33,886 - WARNING -     ⚠️  Content div#bfjr not found — skipping
+2026-03-04 12:15:33,886 - INFO - 
+    ── [10/11] DOCUMENTS FROM THE MINISTRY OF JUSTICE ──
+2026-03-04 12:15:34,120 - INFO -     👆 Clicked section tab: 'Dokumenter fra Justisdepartementet'
+2026-03-04 12:15:35,708 - WARNING -     ⚠️  Section div not found for id='jd'
+2026-03-04 12:15:35,708 - WARNING -     ⚠️  Content div#jd not found — skipping
+2026-03-04 12:15:35,710 - INFO - 
+    ── [11/11] OTHER DOCUMENTS ──
+2026-03-04 12:15:35,941 - INFO -     👆 Clicked section tab: 'Andre dokumenter'
+2026-03-04 12:15:37,491 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:37,535 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:37,550 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:37,550 - INFO -     ✅ COMPLETE 'OTHER DOCUMENTS'  expected=None  collected=0
+2026-03-04 12:15:37,551 - INFO - 
+    ════════════════════════════════════════════════
+    SECTION COLLECTION COMPLETE
+    sections=11  total_docs=0
+    ════════════════════════════════════════════════
+2026-03-04 12:15:37,552 - INFO -    📊 Total sections=11  total_urls=0
+2026-03-04 12:15:37,552 - INFO -    📂 SECTION | LATEST DOCUMENTS                                        | expected=None  | found=0
+2026-03-04 12:15:37,552 - INFO -    📂 SECTION | LAWS                                                    | expected=None  | found=0
+2026-03-04 12:15:37,554 - INFO -    📂 SECTION | REGULATIONS                                             | expected=None  | found=0
+2026-03-04 12:15:37,554 - INFO -    📂 SECTION | DECISIONS FROM THE SUPREME COURT                        | expected=None  | found=0
+2026-03-04 12:15:37,554 - INFO -    📂 SECTION | DECISIONS FROM THE COURTS OF APPEAL                     | expected=None  | found=0
+2026-03-04 12:15:37,555 - INFO -    📂 SECTION | DECISIONS FROM THE DISTRICT COURTS                      | expected=None  | found=0
+2026-03-04 12:15:37,555 - INFO -    📂 SECTION | ARTICLES                                                | expected=None  | found=0
+2026-03-04 12:15:37,555 - INFO -    📂 SECTION | DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  | expected=None  | found=0
+2026-03-04 12:15:37,556 - INFO -    📂 SECTION | DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL  | expected=None  | found=0
+2026-03-04 12:15:37,556 - INFO -    📂 SECTION | DOCUMENTS FROM THE MINISTRY OF JUSTICE                  | expected=None  | found=0
+2026-03-04 12:15:37,557 - INFO -    📂 SECTION | OTHER DOCUMENTS                                         | expected=None  | found=0
+2026-03-04 12:15:37,859 - INFO - HTTP Request: PATCH https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_ "HTTP/1.1 404 Not Found"
+2026-03-04 12:15:37,861 - WARNING - ⚠️  mark_done failed: {'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}
+2026-03-04 12:15:43,060 - INFO - ✅ Tree nodes present
+2026-03-04 12:15:44,077 - INFO - Found 40 tree node(s)
+2026-03-04 12:15:44,711 - INFO - 📋 ROOT categories: 40
+2026-03-04 12:15:46,221 - INFO -    [2/5] BRANCH: Avtaler
+2026-03-04 12:15:47,903 - INFO -       Leaf count: 0
+2026-03-04 12:15:47,903 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Avtaler'  leaf=''
+2026-03-04 12:15:48,220 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=claimed_by%2Cclaimed_at%2Cstatus&area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Avtaler/_ "HTTP/1.1 404 Not Found"
+2026-03-04 12:15:48,222 - WARNING - ⚠️  Claim check failed ({'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}) — proceeding anyway: Anskaffelser_avtaler_bygg_og_entrepriser/Avtaler/_
+2026-03-04 12:15:48,739 - INFO -     ✅ div.legal-area-header present
+2026-03-04 12:15:48,769 - INFO -     Found 11 anchor links in legal-area-header
+2026-03-04 12:15:48,798 - INFO -     ✓ Section: 'Siste dokumenter'  →  LATEST DOCUMENTS  (div#saker)
+2026-03-04 12:15:48,827 - INFO -     ✓ Section: 'Lover'  →  LAWS  (div#lover)
+2026-03-04 12:15:48,882 - INFO -     ✓ Section: 'Forskrifter'  →  REGULATIONS  (div#forskrifter)
+2026-03-04 12:15:48,907 - INFO -     ✓ Section: 'Avgjørelser fra Høyesterett'  →  DECISIONS FROM THE SUPREME COURT  (div#hr)
+2026-03-04 12:15:48,937 - INFO -     ✓ Section: 'Avgjørelser fra lagmannsrettene'  →  DECISIONS FROM THE COURTS OF APPEAL  (div#lr)
+2026-03-04 12:15:48,966 - INFO -     ✓ Section: 'Avgjørelser fra tingrettene'  →  DECISIONS FROM THE DISTRICT COURTS  (div#tr)
+2026-03-04 12:15:48,992 - INFO -     ✓ Section: 'Artikler'  →  ARTICLES  (div#artikler)
+2026-03-04 12:15:49,020 - INFO -     ✓ Section: 'Dokumenter fra Justisdepartementet'  →  DOCUMENTS FROM THE MINISTRY OF JUSTICE  (div#jd)
+2026-03-04 12:15:49,077 - INFO -     ✓ Section: 'Andre dokumenter'  →  OTHER DOCUMENTS  (div#otherBases)
+2026-03-04 12:15:49,078 - INFO - 
+    ════════════════════════════════════════════════
+    9 SECTIONS FOUND — processing one by one
+    ════════════════════════════════════════════════
+2026-03-04 12:15:49,078 - INFO - 
+    ── [1/9] LATEST DOCUMENTS ──
+2026-03-04 12:15:49,304 - INFO -     👆 Clicked section tab: 'Siste dokumenter'
+2026-03-04 12:15:50,852 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:50,895 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:50,911 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:50,912 - INFO -     ✅ COMPLETE 'LATEST DOCUMENTS'  expected=None  collected=0
+2026-03-04 12:15:50,912 - INFO - 
+    ── [2/9] LAWS ──
+2026-03-04 12:15:51,142 - INFO -     👆 Clicked section tab: 'Lover'
+2026-03-04 12:15:52,686 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:52,728 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:52,744 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:52,747 - INFO -     ✅ COMPLETE 'LAWS'  expected=None  collected=0
+2026-03-04 12:15:52,747 - INFO - 
+    ── [3/9] REGULATIONS ──
+2026-03-04 12:15:52,978 - INFO -     👆 Clicked section tab: 'Forskrifter'
+2026-03-04 12:15:54,523 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:54,561 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:54,576 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:54,577 - INFO -     ✅ COMPLETE 'REGULATIONS'  expected=None  collected=0
+2026-03-04 12:15:54,577 - INFO - 
+    ── [4/9] DECISIONS FROM THE SUPREME COURT ──
+2026-03-04 12:15:54,801 - INFO -     👆 Clicked section tab: 'Avgjørelser fra Høyesterett'
+2026-03-04 12:15:56,349 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:56,389 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:56,406 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:56,406 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE SUPREME COURT'  expected=None  collected=0
+2026-03-04 12:15:56,407 - INFO - 
+    ── [5/9] DECISIONS FROM THE COURTS OF APPEAL ──
+2026-03-04 12:15:56,638 - INFO -     👆 Clicked section tab: 'Avgjørelser fra lagmannsrettene'
+2026-03-04 12:15:58,183 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:15:58,225 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:15:58,242 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:15:58,243 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE COURTS OF APPEAL'  expected=None  collected=0
+2026-03-04 12:15:58,243 - INFO - 
+    ── [6/9] DECISIONS FROM THE DISTRICT COURTS ──
+2026-03-04 12:15:58,475 - INFO -     👆 Clicked section tab: 'Avgjørelser fra tingrettene'
+2026-03-04 12:16:00,022 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:00,057 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:00,077 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:00,077 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE DISTRICT COURTS'  expected=None  collected=0
+2026-03-04 12:16:00,077 - INFO - 
+    ── [7/9] ARTICLES ──
+2026-03-04 12:16:00,313 - INFO -     👆 Clicked section tab: 'Artikler'
+2026-03-04 12:16:01,856 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:01,894 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:01,909 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:01,910 - INFO -     ✅ COMPLETE 'ARTICLES'  expected=None  collected=0
+2026-03-04 12:16:01,910 - INFO - 
+    ── [8/9] DOCUMENTS FROM THE MINISTRY OF JUSTICE ──
+2026-03-04 12:16:02,140 - INFO -     👆 Clicked section tab: 'Dokumenter fra Justisdepartementet'
+2026-03-04 12:16:03,713 - WARNING -     ⚠️  Section div not found for id='jd'
+2026-03-04 12:16:03,715 - WARNING -     ⚠️  Content div#jd not found — skipping
+2026-03-04 12:16:03,716 - INFO - 
+    ── [9/9] OTHER DOCUMENTS ──
+2026-03-04 12:16:03,950 - INFO -     👆 Clicked section tab: 'Andre dokumenter'
+2026-03-04 12:16:05,498 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:05,541 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:05,559 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:05,560 - INFO -     ✅ COMPLETE 'OTHER DOCUMENTS'  expected=None  collected=0
+2026-03-04 12:16:05,560 - INFO - 
+    ════════════════════════════════════════════════
+    SECTION COLLECTION COMPLETE
+    sections=9  total_docs=0
+    ════════════════════════════════════════════════
+2026-03-04 12:16:05,560 - INFO -    📊 Total sections=9  total_urls=0
+2026-03-04 12:16:05,561 - INFO -    📂 SECTION | LATEST DOCUMENTS                                        | expected=None  | found=0
+2026-03-04 12:16:05,561 - INFO -    📂 SECTION | LAWS                                                    | expected=None  | found=0
+2026-03-04 12:16:05,561 - INFO -    📂 SECTION | REGULATIONS                                             | expected=None  | found=0
+2026-03-04 12:16:05,562 - INFO -    📂 SECTION | DECISIONS FROM THE SUPREME COURT                        | expected=None  | found=0
+2026-03-04 12:16:05,562 - INFO -    📂 SECTION | DECISIONS FROM THE COURTS OF APPEAL                     | expected=None  | found=0
+2026-03-04 12:16:05,563 - INFO -    📂 SECTION | DECISIONS FROM THE DISTRICT COURTS                      | expected=None  | found=0
+2026-03-04 12:16:05,563 - INFO -    📂 SECTION | ARTICLES                                                | expected=None  | found=0
+2026-03-04 12:16:05,564 - INFO -    📂 SECTION | DOCUMENTS FROM THE MINISTRY OF JUSTICE                  | expected=None  | found=0
+2026-03-04 12:16:05,565 - INFO -    📂 SECTION | OTHER DOCUMENTS                                         | expected=None  | found=0
+2026-03-04 12:16:05,941 - INFO - HTTP Request: PATCH https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Avtaler/_ "HTTP/1.1 404 Not Found"
+2026-03-04 12:16:05,942 - WARNING - ⚠️  mark_done failed: {'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}
+2026-03-04 12:16:11,152 - INFO - ✅ Tree nodes present
+2026-03-04 12:16:12,171 - INFO - Found 40 tree node(s)
+2026-03-04 12:16:12,827 - INFO - 📋 ROOT categories: 40
+2026-03-04 12:16:14,073 - INFO -    [3/5] BRANCH: Boligoppføring
+2026-03-04 12:16:15,778 - INFO -       Leaf count: 0
+2026-03-04 12:16:15,779 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Boligoppføring'  leaf=''
+2026-03-04 12:16:16,211 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=claimed_by%2Cclaimed_at%2Cstatus&area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Boligoppf%C3%B8ring/_ "HTTP/1.1 404 Not Found"
+2026-03-04 12:16:16,213 - WARNING - ⚠️  Claim check failed ({'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}) — proceeding anyway: Anskaffelser_avtaler_bygg_og_entrepriser/Boligoppføring/_
+2026-03-04 12:16:16,730 - INFO -     ✅ div.legal-area-header present
+2026-03-04 12:16:16,758 - INFO -     Found 10 anchor links in legal-area-header
+2026-03-04 12:16:16,789 - INFO -     ✓ Section: 'Siste dokumenter'  →  LATEST DOCUMENTS  (div#saker)
+2026-03-04 12:16:16,817 - INFO -     ✓ Section: 'Lover'  →  LAWS  (div#lover)
+2026-03-04 12:16:16,848 - INFO -     ✓ Section: 'Forskrifter'  →  REGULATIONS  (div#forskrifter)
+2026-03-04 12:16:16,878 - INFO -     ✓ Section: 'Avgjørelser fra Høyesterett'  →  DECISIONS FROM THE SUPREME COURT  (div#hr)
+2026-03-04 12:16:16,909 - INFO -     ✓ Section: 'Avgjørelser fra lagmannsrettene'  →  DECISIONS FROM THE COURTS OF APPEAL  (div#lr)
+2026-03-04 12:16:16,942 - INFO -     ✓ Section: 'Avgjørelser fra tingrettene'  →  DECISIONS FROM THE DISTRICT COURTS  (div#tr)
+2026-03-04 12:16:16,979 - INFO -     ✓ Section: 'Artikler'  →  ARTICLES  (div#artikler)
+2026-03-04 12:16:17,018 - INFO -     ✓ Section: 'Dokumenter fra Justisdepartementet'  →  DOCUMENTS FROM THE MINISTRY OF JUSTICE  (div#jd)
+2026-03-04 12:16:17,102 - INFO -     ✓ Section: 'Andre dokumenter'  →  OTHER DOCUMENTS  (div#otherBases)
+2026-03-04 12:16:17,104 - INFO - 
+    ════════════════════════════════════════════════
+    9 SECTIONS FOUND — processing one by one
+    ════════════════════════════════════════════════
+2026-03-04 12:16:17,104 - INFO - 
+    ── [1/9] LATEST DOCUMENTS ──
+2026-03-04 12:16:17,329 - INFO -     👆 Clicked section tab: 'Siste dokumenter'
+2026-03-04 12:16:18,874 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:18,914 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:18,927 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:18,928 - INFO -     ✅ COMPLETE 'LATEST DOCUMENTS'  expected=None  collected=0
+2026-03-04 12:16:18,928 - INFO - 
+    ── [2/9] LAWS ──
+2026-03-04 12:16:19,160 - INFO -     👆 Clicked section tab: 'Lover'
+2026-03-04 12:16:20,704 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:20,745 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:20,760 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:20,761 - INFO -     ✅ COMPLETE 'LAWS'  expected=None  collected=0
+2026-03-04 12:16:20,761 - INFO - 
+    ── [3/9] REGULATIONS ──
+2026-03-04 12:16:20,990 - INFO -     👆 Clicked section tab: 'Forskrifter'
+2026-03-04 12:16:22,536 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:22,579 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:22,594 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:22,596 - INFO -     ✅ COMPLETE 'REGULATIONS'  expected=None  collected=0
+2026-03-04 12:16:22,596 - INFO - 
+    ── [4/9] DECISIONS FROM THE SUPREME COURT ──
+2026-03-04 12:16:22,829 - INFO -     👆 Clicked section tab: 'Avgjørelser fra Høyesterett'
+2026-03-04 12:16:24,373 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:24,417 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:24,436 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:24,437 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE SUPREME COURT'  expected=None  collected=0
+2026-03-04 12:16:24,437 - INFO - 
+    ── [5/9] DECISIONS FROM THE COURTS OF APPEAL ──
+2026-03-04 12:16:24,667 - INFO -     👆 Clicked section tab: 'Avgjørelser fra lagmannsrettene'
+2026-03-04 12:16:26,201 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:26,235 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:26,250 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:26,250 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE COURTS OF APPEAL'  expected=None  collected=0
+2026-03-04 12:16:26,250 - INFO - 
+    ── [6/9] DECISIONS FROM THE DISTRICT COURTS ──
+2026-03-04 12:16:26,477 - INFO -     👆 Clicked section tab: 'Avgjørelser fra tingrettene'
+2026-03-04 12:16:28,016 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:28,054 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:28,069 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:28,069 - INFO -     ✅ COMPLETE 'DECISIONS FROM THE DISTRICT COURTS'  expected=None  collected=0
+2026-03-04 12:16:28,069 - INFO - 
+    ── [7/9] ARTICLES ──
+2026-03-04 12:16:28,303 - INFO -     👆 Clicked section tab: 'Artikler'
+2026-03-04 12:16:29,832 - INFO -     ℹ️  No 'Vis alle' button found — section may show all by default
+2026-03-04 12:16:29,855 - INFO -       page 1: +0 new  (total: 0 / expected: ?)
+2026-03-04 12:16:29,869 - INFO -     ⏹  No Next button found — end of section
+2026-03-04 12:16:29,869 - INFO -     ✅ COMPLETE 'ARTICLES'  expected=None  collected=0
+2026-03-04 12:16:29,869 - INFO - 
+    ── [8/9] DOCUMENTS FROM THE MINISTRY OF JUSTICE ──
+2026-03-04 12:16:30,099 - INFO -     👆 Clicked section tab: 'Dokumenter fra Justisdepartementet'
+2026-03-04 12:16:31,660 - WARNING -     ⚠️  Section div not found for id='jd'
+2026-03-04 12:16:31,660 - WARNING -     ⚠️  Content div#jd not found — skipping
+2026-03-04 12:16:31,660 - INFO - 
+    ── [9/9] OTHER DOCUMENTS ──
+2026-03-04 12:16:31,891 - INFO -     👆 Clicked section tab: 'Andre dokumenter'
+2026-03-04 12:16:32,210 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/db386b50ee69d5914a7ce6e3d0680abe

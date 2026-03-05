@@ -1,0 +1,66 @@
+2026-02-14 14:11:53,358 - INFO - ✓ Database connected
+2026-02-14 14:11:53,360 - INFO - ====== WebDriver manager ======
+2026-02-14 14:11:55,193 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 14:11:56,531 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 14:11:57,744 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 14:11:57,745 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 14:11:57,746 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 14:11:58,978 - INFO - ✓ Browser started (headless mode)
+2026-02-14 14:11:58,978 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 14:11:59,635 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 14:11:59,636 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 14:11:59,637 - INFO - 🔐 Logging in...
+2026-02-14 14:12:18,523 - INFO - ✓ Login successful
+2026-02-14 14:12:18,524 - INFO - 
+======================================================================
+2026-02-14 14:12:18,524 - INFO - MODE: ALL
+2026-02-14 14:12:18,524 - INFO - ======================================================================
+
+2026-02-14 14:12:18,525 - INFO - 
+📚 SCRAPING SOURCES OF LAW
+2026-02-14 14:12:18,525 - INFO -   Total categories: 16
+2026-02-14 14:12:18,526 - INFO -   Max per category: 150
+
+2026-02-14 14:12:18,526 - INFO - [1/16] Laws and Regulations > Active Laws (NL)
+2026-02-14 14:12:18,526 - INFO -   📁 01_Laws_and_Regulations/Active_Laws_NL
+2026-02-14 14:12:18,527 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 14:12:18,527 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 14:12:20,597 - INFO -   📑 Found 1 index(es)
+2026-02-14 14:12:20,598 - INFO -   → Checking: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 14:12:24,761 - INFO -   ✅ Found 0 documents
+2026-02-14 14:12:24,762 - INFO -   📄 Total unique URLs from all indexes: 0
+2026-02-14 14:12:24,762 - INFO -   📄 0 URLs found
+2026-02-14 14:12:24,762 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:12:24,763 - INFO - [2/16] Laws and Regulations > Central Regulations (SF)
+2026-02-14 14:12:24,763 - INFO -   📁 01_Laws_and_Regulations/Central_Regulations_SF
+2026-02-14 14:12:24,763 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 14:12:24,763 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 14:12:26,845 - INFO -   📑 Found 1 index(es)
+2026-02-14 14:12:26,845 - INFO -   → Checking: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 14:12:31,684 - INFO -   ✅ Found 33 documents
+2026-02-14 14:12:31,684 - INFO -   📄 Total unique URLs from all indexes: 33
+2026-02-14 14:12:31,684 - INFO -   📄 33 URLs found
+2026-02-14 14:13:48,684 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:13:48,685 - INFO - [3/16] Laws and Regulations > Local Regulations (LF)
+2026-02-14 14:13:48,685 - INFO -   📁 01_Laws_and_Regulations/Local_Regulations_LF
+2026-02-14 14:13:48,685 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 14:13:48,685 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 14:13:51,771 - INFO -   📑 Found 1 index(es)
+2026-02-14 14:13:51,772 - INFO -   → Checking: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 14:13:56,711 - INFO -   ✅ Found 29 documents
+2026-02-14 14:13:56,712 - INFO -   📄 Total unique URLs from all indexes: 29
+2026-02-14 14:13:56,712 - INFO -   📄 29 URLs found
+2026-02-14 14:15:24,851 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 14:15:24,851 - INFO - [4/16] Laws and Regulations > Repealed Laws (NLO)
+2026-02-14 14:15:24,852 - INFO -   📁 01_Laws_and_Regulations/Repealed_Laws_NLO
+2026-02-14 14:15:24,852 - INFO -   🔗 https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 14:15:24,852 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 14:15:31,224 - WARNING - 
+⚠️ Interrupted by user
+2026-02-14 14:15:31,224 - INFO - 
+📦 Flushing uploads...
+2026-02-14 14:15:31,227 - INFO -   ✓ 0 files flushed
+2026-02-14 14:15:31,336 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/8c8def3d8cc458ccf3cfb671e8d72e08

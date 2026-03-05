@@ -1,0 +1,15 @@
+2026-02-14 11:48:49,263 - INFO - ================================================================================
+2026-02-14 11:48:49,264 - INFO - LOVDATA PRO SCRAPER - ULTRA-FAST MODE
+2026-02-14 11:48:49,264 - INFO - Target: 4,000 documents in 3-4 hours
+2026-02-14 11:48:49,264 - INFO - ================================================================================
+2026-02-14 11:48:49,266 - INFO - Year range: 2020-2026
+2026-02-14 11:48:49,266 - INFO - Batch upload: Every 50 files
+2026-02-14 11:48:49,266 - INFO - Parallel processing: True (workers: 3)
+2026-02-14 11:48:49,268 - INFO - Delay: 0.1s
+2026-02-14 11:48:49,268 - INFO - ================================================================================
+2026-02-14 11:48:55,303 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 11:48:55,313 - INFO - ✓ Database connected
+2026-02-14 11:48:55,314 - INFO - ====== WebDriver manager ======
+2026-02-14 11:48:57,362 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 11:49:00,392 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 11:49:01,873 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache

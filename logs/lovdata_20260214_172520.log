@@ -1,0 +1,226 @@
+2026-02-14 17:25:27,322 - INFO - ✓ Database connected
+2026-02-14 17:25:27,322 - INFO - ====== WebDriver manager ======
+2026-02-14 17:25:27,435 - INFO - ✓ ChromeDriver (WDM cache): C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 17:25:27,437 - INFO -   Starting Chrome with explicit driver: C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 17:25:32,689 - INFO - ✓ Browser started (explicit path)
+2026-02-14 17:25:32,691 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 17:25:33,371 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 17:25:33,371 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 17:25:33,371 - INFO - 🔐 Logging in…
+2026-02-14 17:25:48,325 - INFO - ✓ Login successful
+2026-02-14 17:25:48,326 - INFO - 
+======================================================================
+2026-02-14 17:25:48,326 - INFO - MODE: LEGAL_AREAS_ONLY
+2026-02-14 17:25:48,326 - INFO - ======================================================================
+
+2026-02-14 17:25:48,326 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 17:25:48,328 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 17:25:48,328 - INFO - 🔍 Discovering all legal areas…
+2026-02-14 17:25:52,388 - INFO -   JS strategy yielded nothing — trying BeautifulSoup…
+2026-02-14 17:25:52,505 - WARNING -   Both dynamic strategies failed — using config mapping
+2026-02-14 17:25:52,505 - INFO - ✓ Discovered 39 legal areas
+2026-02-14 17:25:52,505 - INFO -   1. Arbeidsrett  →  https://lovdata.no/pro/#rettsomrade/labor-law
+2026-02-14 17:25:52,505 - INFO -   2. Arbeidsmiljø  →  https://lovdata.no/pro/#rettsomrade/work-environment
+2026-02-14 17:25:52,505 - INFO -   3. Trygderett  →  https://lovdata.no/pro/#rettsomrade/social-security
+2026-02-14 17:25:52,505 - INFO -   4. Erstatningsrett  →  https://lovdata.no/pro/#rettsomrade/tort-law
+2026-02-14 17:25:52,505 - INFO -   5. Familierett  →  https://lovdata.no/pro/#rettsomrade/family-law
+2026-02-14 17:25:52,505 - INFO -   6. Arverett  →  https://lovdata.no/pro/#rettsomrade/inheritance-law
+2026-02-14 17:25:52,505 - INFO -   7. Avtalerett  →  https://lovdata.no/pro/#rettsomrade/contract-law
+2026-02-14 17:25:52,505 - INFO -   8. Kjøpsrett  →  https://lovdata.no/pro/#rettsomrade/sales-law
+2026-02-14 17:25:52,508 - INFO -   9. Eiendomsrett  →  https://lovdata.no/pro/#rettsomrade/property-law
+2026-02-14 17:25:52,508 - INFO -   10. Plan- og bygningsrett  →  https://lovdata.no/pro/#rettsomrade/planning-building
+2026-02-14 17:25:52,508 - INFO -   … and 29 more
+2026-02-14 17:25:52,508 - INFO - 
+📊 Total legal areas discovered: 39
+2026-02-14 17:25:52,508 - INFO -   Max docs per area: 100
+
+2026-02-14 17:25:52,508 - INFO - 
+======================================================================
+2026-02-14 17:25:52,508 - INFO - [1/39] Arbeidsrett
+2026-02-14 17:25:52,508 - INFO - ======================================================================
+2026-02-14 17:25:52,508 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/labor-law
+2026-02-14 17:25:52,511 - INFO - ⚖️  Legal area: https://lovdata.no/pro/#rettsomrade/labor-law
+2026-02-14 17:25:56,623 - INFO -   📁 Main area: Legal_Area
+2026-02-14 17:25:56,627 - INFO -   📂 Found 0 potential categories
+2026-02-14 17:25:56,627 - INFO -   📄 No structured categories — scraping entire page
+2026-02-14 17:26:00,017 - INFO -   ✅ Collected 43 document URLs
+2026-02-14 17:26:00,017 - INFO -   📁 Category: Legal_Areas/Legal_Area
+2026-02-14 17:26:00,022 - INFO -   📂 Found 1 document categories
+
+2026-02-14 17:26:00,022 - INFO -   → Main (43 docs)
+2026-02-14 17:26:00,022 - INFO -     Path: Legal_Areas/Legal_Area/Main
+2026-02-14 17:26:07,682 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-9c0f7855ba28.xml
+2026-02-14 17:26:08,298 - INFO - ✓ Saved to DB: doc-9c0f7855ba28.xml
+2026-02-14 17:26:08,298 - INFO -   ✓ [1] Legal_Areas/Legal_Area/Main/doc-9c0f7855ba28.xml
+2026-02-14 17:26:11,401 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-0a67642c651c.xml
+2026-02-14 17:26:12,066 - INFO - ✓ Saved to DB: doc-0a67642c651c.xml
+2026-02-14 17:26:12,067 - INFO -   ✓ [2] Legal_Areas/Legal_Area/Main/doc-0a67642c651c.xml
+2026-02-14 17:26:15,071 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-50318811f99b.xml
+2026-02-14 17:26:15,559 - INFO - ✓ Saved to DB: doc-50318811f99b.xml
+2026-02-14 17:26:15,559 - INFO -   ✓ [3] Legal_Areas/Legal_Area/Main/doc-50318811f99b.xml
+2026-02-14 17:26:17,936 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-013affcbf3a9.xml
+2026-02-14 17:26:18,430 - INFO - ✓ Saved to DB: doc-013affcbf3a9.xml
+2026-02-14 17:26:18,430 - INFO -   ✓ [4] Legal_Areas/Legal_Area/Main/doc-013affcbf3a9.xml
+2026-02-14 17:26:20,605 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-feb2d62062af.xml
+2026-02-14 17:26:21,315 - INFO - ✓ Saved to DB: doc-feb2d62062af.xml
+2026-02-14 17:26:21,315 - INFO -   ✓ [5] Legal_Areas/Legal_Area/Main/doc-feb2d62062af.xml
+2026-02-14 17:26:23,898 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-2ebed3a1ae80.xml
+2026-02-14 17:26:24,364 - INFO - ✓ Saved to DB: doc-2ebed3a1ae80.xml
+2026-02-14 17:26:24,365 - INFO -   ✓ [6] Legal_Areas/Legal_Area/Main/doc-2ebed3a1ae80.xml
+2026-02-14 17:26:26,646 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-fafed1d08527.xml
+2026-02-14 17:26:27,243 - INFO - ✓ Saved to DB: doc-fafed1d08527.xml
+2026-02-14 17:26:27,245 - INFO -   ✓ [7] Legal_Areas/Legal_Area/Main/doc-fafed1d08527.xml
+2026-02-14 17:26:30,444 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-e4500cee49cb.xml
+2026-02-14 17:26:30,902 - INFO - ✓ Saved to DB: doc-e4500cee49cb.xml
+2026-02-14 17:26:30,902 - INFO -   ✓ [8] Legal_Areas/Legal_Area/Main/doc-e4500cee49cb.xml
+2026-02-14 17:26:32,989 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-5e0a026a8d07.xml
+2026-02-14 17:26:33,481 - INFO - ✓ Saved to DB: doc-5e0a026a8d07.xml
+2026-02-14 17:26:33,483 - INFO -   ✓ [9] Legal_Areas/Legal_Area/Main/doc-5e0a026a8d07.xml
+2026-02-14 17:26:36,473 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-e055c7ae3938.xml
+2026-02-14 17:26:36,883 - INFO - ✓ Saved to DB: doc-e055c7ae3938.xml
+2026-02-14 17:26:36,885 - INFO -   ✓ [10] Legal_Areas/Legal_Area/Main/doc-e055c7ae3938.xml
+2026-02-14 17:26:39,121 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-8d821a20c4c5.xml
+2026-02-14 17:26:39,638 - INFO - ✓ Saved to DB: doc-8d821a20c4c5.xml
+2026-02-14 17:26:39,639 - INFO -   ✓ [11] Legal_Areas/Legal_Area/Main/doc-8d821a20c4c5.xml
+2026-02-14 17:26:41,953 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-813d5054068c.xml
+2026-02-14 17:26:42,392 - INFO - ✓ Saved to DB: doc-813d5054068c.xml
+2026-02-14 17:26:42,392 - INFO -   ✓ [12] Legal_Areas/Legal_Area/Main/doc-813d5054068c.xml
+2026-02-14 17:26:46,842 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-9ef742440987.xml
+2026-02-14 17:26:47,497 - INFO - ✓ Saved to DB: doc-9ef742440987.xml
+2026-02-14 17:26:47,498 - INFO -   ✓ [13] Legal_Areas/Legal_Area/Main/doc-9ef742440987.xml
+2026-02-14 17:26:50,515 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-e20502fcf9a2.xml
+2026-02-14 17:26:50,997 - INFO - ✓ Saved to DB: doc-e20502fcf9a2.xml
+2026-02-14 17:26:50,997 - INFO -   ✓ [14] Legal_Areas/Legal_Area/Main/doc-e20502fcf9a2.xml
+2026-02-14 17:26:53,288 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-0112b4f4535e.xml
+2026-02-14 17:26:53,761 - INFO - ✓ Saved to DB: doc-0112b4f4535e.xml
+2026-02-14 17:26:53,763 - INFO -   ✓ [15] Legal_Areas/Legal_Area/Main/doc-0112b4f4535e.xml
+2026-02-14 17:27:00,736 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-8f7b111e24e5.xml
+2026-02-14 17:27:01,317 - INFO - ✓ Saved to DB: doc-8f7b111e24e5.xml
+2026-02-14 17:27:01,317 - INFO -   ✓ [16] Legal_Areas/Legal_Area/Main/doc-8f7b111e24e5.xml
+2026-02-14 17:27:03,524 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-a018f6d1df9a.xml
+2026-02-14 17:27:03,986 - INFO - ✓ Saved to DB: doc-a018f6d1df9a.xml
+2026-02-14 17:27:03,986 - INFO -   ✓ [17] Legal_Areas/Legal_Area/Main/doc-a018f6d1df9a.xml
+2026-02-14 17:27:08,623 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-a9982207148b.xml
+2026-02-14 17:27:09,311 - INFO - ✓ Saved to DB: doc-a9982207148b.xml
+2026-02-14 17:27:09,312 - INFO -   ✓ [18] Legal_Areas/Legal_Area/Main/doc-a9982207148b.xml
+2026-02-14 17:27:12,000 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-c65dfcb037bf.xml
+2026-02-14 17:27:13,200 - INFO - ✓ Saved to DB: doc-c65dfcb037bf.xml
+2026-02-14 17:27:13,200 - INFO -   ✓ [19] Legal_Areas/Legal_Area/Main/doc-c65dfcb037bf.xml
+2026-02-14 17:27:15,937 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-1e1ab91507b6.xml
+2026-02-14 17:27:16,373 - INFO - ✓ Saved to DB: doc-1e1ab91507b6.xml
+2026-02-14 17:27:16,373 - INFO -   ✓ [20] Legal_Areas/Legal_Area/Main/doc-1e1ab91507b6.xml
+2026-02-14 17:27:18,449 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-150d54f1db1b.xml
+2026-02-14 17:27:19,038 - INFO - ✓ Saved to DB: doc-150d54f1db1b.xml
+2026-02-14 17:27:19,039 - INFO -   ✓ [21] Legal_Areas/Legal_Area/Main/doc-150d54f1db1b.xml
+2026-02-14 17:27:23,984 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-5174146d6ec2.xml
+2026-02-14 17:27:24,567 - INFO - ✓ Saved to DB: doc-5174146d6ec2.xml
+2026-02-14 17:27:24,567 - INFO -   ✓ [22] Legal_Areas/Legal_Area/Main/doc-5174146d6ec2.xml
+2026-02-14 17:27:27,057 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-869c71282622.xml
+2026-02-14 17:27:27,554 - INFO - ✓ Saved to DB: doc-869c71282622.xml
+2026-02-14 17:27:27,556 - INFO -   ✓ [23] Legal_Areas/Legal_Area/Main/doc-869c71282622.xml
+2026-02-14 17:27:30,566 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-6af6494b360f.xml
+2026-02-14 17:27:31,120 - INFO - ✓ Saved to DB: doc-6af6494b360f.xml
+2026-02-14 17:27:31,120 - INFO -   ✓ [24] Legal_Areas/Legal_Area/Main/doc-6af6494b360f.xml
+2026-02-14 17:27:33,295 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-c789e6f337b1.xml
+2026-02-14 17:27:34,193 - INFO - ✓ Saved to DB: doc-c789e6f337b1.xml
+2026-02-14 17:27:34,195 - INFO -   ✓ [25] Legal_Areas/Legal_Area/Main/doc-c789e6f337b1.xml
+2026-02-14 17:27:36,913 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-dbe576b547d4.xml
+2026-02-14 17:27:37,571 - INFO - ✓ Saved to DB: doc-dbe576b547d4.xml
+2026-02-14 17:27:37,571 - INFO -   ✓ [26] Legal_Areas/Legal_Area/Main/doc-dbe576b547d4.xml
+2026-02-14 17:27:40,688 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-54089783d529.xml
+2026-02-14 17:27:41,216 - INFO - ✓ Saved to DB: doc-54089783d529.xml
+2026-02-14 17:27:41,216 - INFO -   ✓ [27] Legal_Areas/Legal_Area/Main/doc-54089783d529.xml
+2026-02-14 17:27:43,548 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-130a33b46e88.xml
+2026-02-14 17:27:44,842 - INFO - ✓ Saved to DB: doc-130a33b46e88.xml
+2026-02-14 17:27:44,842 - INFO -   ✓ [28] Legal_Areas/Legal_Area/Main/doc-130a33b46e88.xml
+2026-02-14 17:27:47,063 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-eeabf321f039.xml
+2026-02-14 17:27:47,605 - INFO - ✓ Saved to DB: doc-eeabf321f039.xml
+2026-02-14 17:27:47,608 - INFO -   ✓ [29] Legal_Areas/Legal_Area/Main/doc-eeabf321f039.xml
+2026-02-14 17:27:50,709 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-22a30ade692d.xml
+2026-02-14 17:27:51,090 - INFO - ✓ Saved to DB: doc-22a30ade692d.xml
+2026-02-14 17:27:51,090 - INFO -   ✓ [30] Legal_Areas/Legal_Area/Main/doc-22a30ade692d.xml
+2026-02-14 17:27:55,317 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-b323be65031c.xml
+2026-02-14 17:27:55,799 - INFO - ✓ Saved to DB: doc-b323be65031c.xml
+2026-02-14 17:27:55,799 - INFO -   ✓ [31] Legal_Areas/Legal_Area/Main/doc-b323be65031c.xml
+2026-02-14 17:28:02,377 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-636cd3045713.xml
+2026-02-14 17:28:03,376 - INFO - ✓ Saved to DB: doc-636cd3045713.xml
+2026-02-14 17:28:03,378 - INFO -   ✓ [32] Legal_Areas/Legal_Area/Main/doc-636cd3045713.xml
+2026-02-14 17:28:07,412 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-618cf87b7aa2.xml
+2026-02-14 17:28:07,767 - INFO - ✓ Saved to DB: doc-618cf87b7aa2.xml
+2026-02-14 17:28:07,767 - INFO -   ✓ [33] Legal_Areas/Legal_Area/Main/doc-618cf87b7aa2.xml
+2026-02-14 17:28:10,176 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-b0e97906da36.xml
+2026-02-14 17:28:10,643 - INFO - ✓ Saved to DB: doc-b0e97906da36.xml
+2026-02-14 17:28:10,643 - INFO -   ✓ [34] Legal_Areas/Legal_Area/Main/doc-b0e97906da36.xml
+2026-02-14 17:28:13,242 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-ab84acf130e3.xml
+2026-02-14 17:28:13,719 - INFO - ✓ Saved to DB: doc-ab84acf130e3.xml
+2026-02-14 17:28:13,719 - INFO -   ✓ [35] Legal_Areas/Legal_Area/Main/doc-ab84acf130e3.xml
+2026-02-14 17:28:16,740 - INFO -     ✅ 35 saved
+
+2026-02-14 17:28:16,740 - INFO -   ✅ Area total: 35 documents saved
+2026-02-14 17:28:16,742 - INFO - 
+======================================================================
+2026-02-14 17:28:16,742 - INFO - [2/39] Arbeidsmiljø
+2026-02-14 17:28:16,743 - INFO - ======================================================================
+2026-02-14 17:28:16,743 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/work-environment
+2026-02-14 17:28:16,743 - INFO - ⚖️  Legal area: https://lovdata.no/pro/#rettsomrade/work-environment
+2026-02-14 17:28:22,643 - INFO -   📁 Main area: Legal_Area
+2026-02-14 17:28:22,645 - INFO -   📂 Found 0 potential categories
+2026-02-14 17:28:22,645 - INFO -   📄 No structured categories — scraping entire page
+2026-02-14 17:28:25,988 - INFO -   ✅ Collected 43 document URLs
+2026-02-14 17:28:25,988 - INFO -   📁 Category: Legal_Areas/Legal_Area
+2026-02-14 17:28:25,988 - INFO -   📂 Found 1 document categories
+
+2026-02-14 17:28:25,988 - INFO -   → Main (43 docs)
+2026-02-14 17:28:25,988 - INFO -     Path: Legal_Areas/Legal_Area/Main
+2026-02-14 17:29:51,919 - INFO -     ✅ 0 saved
+
+2026-02-14 17:29:51,919 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 17:29:51,919 - INFO - 
+======================================================================
+2026-02-14 17:29:51,919 - INFO - [3/39] Trygderett
+2026-02-14 17:29:51,919 - INFO - ======================================================================
+2026-02-14 17:29:51,919 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/social-security
+2026-02-14 17:29:51,919 - INFO - ⚖️  Legal area: https://lovdata.no/pro/#rettsomrade/social-security
+2026-02-14 17:29:59,244 - INFO -   📁 Main area: Legal_Area
+2026-02-14 17:29:59,262 - INFO -   📂 Found 0 potential categories
+2026-02-14 17:29:59,262 - INFO -   📄 No structured categories — scraping entire page
+2026-02-14 17:30:02,635 - INFO -   ✅ Collected 43 document URLs
+2026-02-14 17:30:02,635 - INFO -   📁 Category: Legal_Areas/Legal_Area
+2026-02-14 17:30:02,635 - INFO -   📂 Found 1 document categories
+
+2026-02-14 17:30:02,635 - INFO -   → Main (43 docs)
+2026-02-14 17:30:02,635 - INFO -     Path: Legal_Areas/Legal_Area/Main
+2026-02-14 17:31:31,574 - INFO -     ✅ 0 saved
+
+2026-02-14 17:31:31,575 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 17:31:31,576 - INFO - 
+======================================================================
+2026-02-14 17:31:31,577 - INFO - [4/39] Erstatningsrett
+2026-02-14 17:31:31,578 - INFO - ======================================================================
+2026-02-14 17:31:31,578 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/tort-law
+2026-02-14 17:31:31,579 - INFO - ⚖️  Legal area: https://lovdata.no/pro/#rettsomrade/tort-law
+2026-02-14 17:31:37,992 - INFO -   📁 Main area: Legal_Area
+2026-02-14 17:31:38,003 - INFO -   📂 Found 0 potential categories
+2026-02-14 17:31:38,003 - INFO -   📄 No structured categories — scraping entire page
+2026-02-14 17:31:39,124 - WARNING - 
+⚠️ Interrupted by user
+2026-02-14 17:31:39,126 - INFO - 
+📦 Flushing uploads...
+2026-02-14 17:31:39,127 - INFO - 📦 Flushing remaining 35 files...
+2026-02-14 17:31:39,127 - INFO - 📦 Uploading batch of 35 files...
+2026-02-14 17:31:41,284 - INFO - ☁️  Uploaded: Legal_Areas/Legal_Area/Main/doc-9c0f7855ba28.xml
+2026-02-14 17:31:41,286 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-9c0f7855ba28.xml
+2026-02-14 17:31:41,798 - INFO - ☁️  Uploaded: Legal_Areas/Legal_Area/Main/doc-0a67642c651c.xml
+2026-02-14 17:31:41,800 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-0a67642c651c.xml
+2026-02-14 17:31:42,116 - INFO - ☁️  Uploaded: Legal_Areas/Legal_Area/Main/doc-50318811f99b.xml
+2026-02-14 17:31:42,118 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-50318811f99b.xml
+2026-02-14 17:31:42,486 - INFO - ☁️  Uploaded: Legal_Areas/Legal_Area/Main/doc-013affcbf3a9.xml
+2026-02-14 17:31:42,487 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-013affcbf3a9.xml
+2026-02-14 17:31:42,843 - INFO - ☁️  Uploaded: Legal_Areas/Legal_Area/Main/doc-feb2d62062af.xml
+2026-02-14 17:31:42,845 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-feb2d62062af.xml
+2026-02-14 17:31:44,006 - INFO - ☁️  Uploaded: Legal_Areas/Legal_Area/Main/doc-2ebed3a1ae80.xml
+2026-02-14 17:31:44,008 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-2ebed3a1ae80.xml
+2026-02-14 17:31:44,430 - INFO - ☁️  Uploaded: Legal_Areas/Legal_Area/Main/doc-fafed1d08527.xml
+2026-02-14 17:31:44,432 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas/Legal_Area\Main\doc-fafed1d08527.xml

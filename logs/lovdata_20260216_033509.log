@@ -1,0 +1,128 @@
+2026-02-16 03:35:17,046 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-16 03:35:17,051 - INFO - 🔐 Opening Lovdata login page...
+2026-02-16 03:35:21,627 - INFO - ✅ Login successful
+2026-02-16 03:35:21,628 - INFO - ======================================================================
+2026-02-16 03:35:21,628 - INFO - MODE: legal_areas_only
+2026-02-16 03:35:21,628 - INFO - ======================================================================
+2026-02-16 03:35:21,628 - INFO - 
+======================================================================
+2026-02-16 03:35:21,628 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-02-16 03:35:21,628 - INFO -    Discovering ALL categories from Lovdata tree
+2026-02-16 03:35:21,629 - INFO - ======================================================================
+2026-02-16 03:35:21,629 - INFO - 📂 Navigating to Rettsområder section...
+2026-02-16 03:35:27,130 - INFO -    🖱️  Clicking Rettsområder tab...
+2026-02-16 03:35:27,303 - INFO -    ✅ Clicked: Rettsområder
+2026-02-16 03:35:37,304 - INFO -    🌍 Current URL: https://lovdata.no/pro/#rettsomrade
+2026-02-16 03:35:37,304 - INFO -    📜 Loading tree structure...
+2026-02-16 03:35:42,384 - INFO -    🔍 Finding category nodes in tree...
+2026-02-16 03:35:42,400 - INFO -    Found 35 total tree nodes
+2026-02-16 03:35:42,458 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-02-16 03:35:42,503 - INFO -    ✅ Found: Arbeidsrett
+2026-02-16 03:35:42,542 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-02-16 03:35:42,583 - INFO -    ✅ Found: Energirett
+2026-02-16 03:35:42,637 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-02-16 03:35:42,678 - INFO -    ✅ Found: EU/EØS-rett
+2026-02-16 03:35:42,717 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-02-16 03:35:42,754 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-02-16 03:35:42,789 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-02-16 03:35:42,833 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-02-16 03:35:42,870 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-02-16 03:35:42,910 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-02-16 03:35:42,950 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-02-16 03:35:42,990 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-02-16 03:35:43,032 - INFO -    ✅ Found: IKT- og medierett
+2026-02-16 03:35:43,068 - INFO -    ✅ Found: Immaterialrett
+2026-02-16 03:35:43,109 - INFO -    ✅ Found: Internasjonal rett
+2026-02-16 03:35:43,151 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-02-16 03:35:43,192 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-02-16 03:35:43,228 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-02-16 03:35:43,268 - INFO -    ✅ Found: Menneskerettigheter
+2026-02-16 03:35:43,307 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-02-16 03:35:43,347 - INFO -    ✅ Found: Næringsrett
+2026-02-16 03:35:43,383 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-02-16 03:35:43,417 - INFO -    ✅ Found: Samerett
+2026-02-16 03:35:43,457 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-02-16 03:35:43,488 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-02-16 03:35:43,529 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-02-16 03:35:43,568 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-02-16 03:35:43,601 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-02-16 03:35:43,642 - INFO -    ✅ Found: Strafferett
+2026-02-16 03:35:43,681 - INFO -    ✅ Found: Svalbard og biland
+2026-02-16 03:35:43,717 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-02-16 03:35:43,758 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-02-16 03:35:43,794 - INFO -    ✅ Found: Utlendingsrett
+2026-02-16 03:35:43,794 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-02-16 03:35:43,795 - INFO - 
+📊 Total legal areas discovered: 35
+
+2026-02-16 03:35:43,795 - INFO - 
+======================================================================
+2026-02-16 03:35:43,795 - INFO - [1/35] Anskaffelser_Avtaler_Bygg_Og_Entrepriser
+2026-02-16 03:35:43,795 - INFO - ======================================================================
+2026-02-16 03:35:43,795 - INFO -    Norwegian: Anskaffelser, avtaler, bygg og entrepriser
+2026-02-16 03:35:43,795 - INFO -    Slug: anskaffelser_avtaler_bygg_og_entrepriser
+2026-02-16 03:35:43,795 - INFO - 📂 Scraping legal area: anskaffelser_avtaler_bygg_og_entrepriser
+2026-02-16 03:35:43,796 - INFO - 📂 Navigating to Rettsområder section...
+2026-02-16 03:35:50,464 - INFO -    🖱️  Clicking Rettsområder tab...
+2026-02-16 03:35:50,696 - INFO -    ✅ Clicked: Rettsområder
+2026-02-16 03:36:00,705 - INFO -    🌍 Current URL: https://lovdata.no/pro/#rettsomrade
+2026-02-16 03:36:00,705 - INFO -    📜 Loading tree structure...
+2026-02-16 03:36:05,765 - INFO -    🔍 Finding category nodes in tree...
+2026-02-16 03:36:05,779 - INFO -    Found 35 total tree nodes
+2026-02-16 03:36:05,822 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-02-16 03:36:05,874 - INFO -    ✅ Found: Arbeidsrett
+2026-02-16 03:36:05,916 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-02-16 03:36:05,955 - INFO -    ✅ Found: Energirett
+2026-02-16 03:36:05,992 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-02-16 03:36:06,036 - INFO -    ✅ Found: EU/EØS-rett
+2026-02-16 03:36:06,076 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-02-16 03:36:06,122 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-02-16 03:36:06,168 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-02-16 03:36:06,210 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-02-16 03:36:06,254 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-02-16 03:36:06,291 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-02-16 03:36:06,335 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-02-16 03:36:06,378 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-02-16 03:36:06,421 - INFO -    ✅ Found: IKT- og medierett
+2026-02-16 03:36:06,459 - INFO -    ✅ Found: Immaterialrett
+2026-02-16 03:36:06,503 - INFO -    ✅ Found: Internasjonal rett
+2026-02-16 03:36:06,543 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-02-16 03:36:06,584 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-02-16 03:36:06,626 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-02-16 03:36:06,667 - INFO -    ✅ Found: Menneskerettigheter
+2026-02-16 03:36:06,709 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-02-16 03:36:06,748 - INFO -    ✅ Found: Næringsrett
+2026-02-16 03:36:06,787 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-02-16 03:36:06,831 - INFO -    ✅ Found: Samerett
+2026-02-16 03:36:06,871 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-02-16 03:36:06,912 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-02-16 03:36:06,949 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-02-16 03:36:06,988 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-02-16 03:36:07,043 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-02-16 03:36:07,084 - INFO -    ✅ Found: Strafferett
+2026-02-16 03:36:07,128 - INFO -    ✅ Found: Svalbard og biland
+2026-02-16 03:36:07,177 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-02-16 03:36:07,217 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-02-16 03:36:07,256 - INFO -    ✅ Found: Utlendingsrett
+2026-02-16 03:36:07,256 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-02-16 03:36:07,257 - INFO -    🖱️  Clicking main category: Anskaffelser, avtaler, bygg og entrepriser
+2026-02-16 03:36:12,322 - INFO -    🔍 Checking for subcategories...
+2026-02-16 03:36:12,432 - INFO -    📋 Found 5 subcategories
+2026-02-16 03:36:12,434 - INFO - 
+   [1/5] Subcategory: Anskaffelser
+2026-02-16 03:36:17,496 - INFO -    📜 Starting aggressive scroll to load all documents...
+2026-02-16 03:36:17,516 - INFO -    📄 Scroll round 1: 98 docs loaded
+2026-02-16 03:36:20,063 - INFO -    📄 Scroll round 2: 98 docs loaded
+2026-02-16 03:36:22,604 - INFO -    📄 Scroll round 3: 98 docs loaded
+2026-02-16 03:36:25,144 - INFO -    📄 Scroll round 4: 98 docs loaded
+2026-02-16 03:36:27,673 - INFO -    📄 Scroll round 5: 98 docs loaded
+2026-02-16 03:36:32,735 - INFO -    📄 Scroll round 6: 98 docs loaded
+2026-02-16 03:36:32,736 - INFO -    ✅ All documents loaded: 98 total
+2026-02-16 03:36:34,226 - INFO -       Found 98 documents in this subcategory
+2026-02-16 03:36:34,226 - INFO - 
+   [2/5] Subcategory: Avtaler
+2026-02-16 03:36:38,320 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/9589ede22951c798846fbeb2af387b2f

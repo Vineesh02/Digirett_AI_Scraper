@@ -1,0 +1,109 @@
+2026-03-04 22:14:22,394 - INFO - ✓ Supabase bucket : legal_area
+2026-03-04 22:14:22,394 - INFO - ✓ Supabase table  : legal_area_metadata
+2026-03-04 22:14:22,396 - INFO - ✓ StorageHandler initialized
+2026-03-04 22:14:22,689 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=area_key&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-04 22:14:22,689 - WARNING - ⚠️  scraper_claims table not found — parallel claim tracking disabled. Create it with:  CREATE TABLE scraper_claims (area_key TEXT PRIMARY KEY, claimed_by TEXT, claimed_at TIMESTAMPTZ, status TEXT);
+2026-03-04 22:14:22,689 - INFO - ======================================================================
+2026-03-04 22:14:22,705 - INFO - ENV / CONFIG
+2026-03-04 22:14:22,705 - INFO -   WORKER ID       : 70ecb354
+2026-03-04 22:14:22,705 - INFO -   SUPABASE_TABLE  : legal_area_metadata
+2026-03-04 22:14:22,705 - INFO -   SUPABASE_BUCKET : legal_area
+2026-03-04 22:14:22,705 - INFO -   BASE_DIR        : ./scraped_xml
+2026-03-04 22:14:22,711 - INFO -   TIMEOUT         : 30
+2026-03-04 22:14:22,711 - INFO -   HEADLESS        : False
+2026-03-04 22:14:22,711 - INFO -   YEAR RANGE      : 2000 – 2026
+2026-03-04 22:14:22,712 - INFO -   BATCH SIZE      : 10
+2026-03-04 22:14:22,712 - INFO - ======================================================================
+2026-03-04 22:14:27,887 - INFO - ✅ Login successful
+2026-03-04 22:14:33,288 - INFO - ✅ Tree nodes present
+2026-03-04 22:14:34,327 - INFO - Found 35 tree node(s)
+2026-03-04 22:14:34,731 - INFO - 📋 ROOT categories: 35
+2026-03-04 22:14:34,731 - INFO - 📊 Total ROOTs: 35
+2026-03-04 22:14:39,859 - INFO - ✅ Tree nodes present
+2026-03-04 22:14:40,880 - INFO - Found 35 tree node(s)
+2026-03-04 22:14:41,264 - INFO - 📋 ROOT categories: 35
+2026-03-04 22:14:41,268 - INFO - 
+======================================================================
+2026-03-04 22:14:41,268 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-04 22:14:41,268 - INFO - ======================================================================
+2026-03-04 22:14:43,270 - INFO -    Branch count: 5
+2026-03-04 22:14:48,651 - INFO - ✅ Tree nodes present
+2026-03-04 22:14:49,656 - INFO - Found 40 tree node(s)
+2026-03-04 22:14:50,149 - INFO - 📋 ROOT categories: 40
+2026-03-04 22:14:51,316 - INFO -    [1/5] BRANCH: Anskaffelser
+2026-03-04 22:14:52,970 - INFO -       Leaf count: 0
+2026-03-04 22:14:52,973 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-04 22:14:53,663 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=claimed_by%2Cclaimed_at%2Cstatus&area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_ "HTTP/1.1 404 Not Found"
+2026-03-04 22:14:53,663 - WARNING - ⚠️  Claim check failed ({'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}) — proceeding anyway: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_
+2026-03-04 22:14:54,188 - INFO -     ✅ div.legal-area-header present
+2026-03-04 22:14:54,247 - INFO -     Found 11 anchor links in legal-area-header
+2026-03-04 22:14:54,289 - INFO -     ✓ Section: 'Siste dokumenter'  →  LATEST DOCUMENTS  (div#saker)
+2026-03-04 22:14:54,331 - INFO -     ✓ Section: 'Lover'  →  LAWS  (div#lover)
+2026-03-04 22:14:54,365 - INFO -     ✓ Section: 'Forskrifter'  →  REGULATIONS  (div#forskrifter)
+2026-03-04 22:14:54,403 - INFO -     ✓ Section: 'Avgjørelser fra Høyesterett'  →  DECISIONS FROM THE SUPREME COURT  (div#hr)
+2026-03-04 22:14:54,439 - INFO -     ✓ Section: 'Avgjørelser fra lagmannsrettene'  →  DECISIONS FROM THE COURTS OF APPEAL  (div#lr)
+2026-03-04 22:14:54,480 - INFO -     ✓ Section: 'Avgjørelser fra tingrettene'  →  DECISIONS FROM THE DISTRICT COURTS  (div#tr)
+2026-03-04 22:14:54,518 - INFO -     ✓ Section: 'Artikler'  →  ARTICLES  (div#artikler)
+2026-03-04 22:14:54,554 - INFO -     ✓ Section: 'Dokumenter fra Klagenemnda for offentlige anskaffelser'  →  DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  (div#kofa)
+2026-03-04 22:14:54,593 - INFO -     ✓ Section: 'Dokumenter fra Byggebransjens Faglig Juridiske Råd'  →  DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL  (div#bfjr)
+2026-03-04 22:14:54,633 - INFO -     ✓ Section: 'Dokumenter fra Justisdepartementet'  →  DOCUMENTS FROM THE MINISTRY OF JUSTICE  (div#jd)
+2026-03-04 22:14:54,668 - INFO -     ✓ Section: 'Andre dokumenter'  →  OTHER DOCUMENTS  (div#otherBases)
+2026-03-04 22:14:54,669 - INFO - 
+    ════════════════════════════════════════════════
+    11 SECTIONS FOUND — processing one by one
+    ════════════════════════════════════════════════
+2026-03-04 22:14:54,669 - INFO - 
+    ── [1/11] LATEST DOCUMENTS ──
+2026-03-04 22:14:54,983 - INFO -     👆 Clicked section tab: 'Siste dokumenter'
+2026-03-04 22:14:56,507 - INFO -     ✅ Heading div#saker found
+2026-03-04 22:14:56,530 - INFO -     No 'Vis alle' button found for div#saker
+2026-03-04 22:14:56,559 - INFO -     📋 Small section mode — collecting directly
+2026-03-04 22:14:56,594 - INFO -     ✅ Small section div#saker — collected 10 URLs
+2026-03-04 22:14:56,596 - INFO -     ✅ COMPLETE 'LATEST DOCUMENTS'  expected=None  collected=10
+2026-03-04 22:14:56,596 - INFO - 
+    ── [2/11] LAWS ──
+2026-03-04 22:14:56,947 - INFO -     👆 Clicked section tab: 'Lover'
+2026-03-04 22:14:58,477 - INFO -     ✅ Heading div#lover found
+2026-03-04 22:14:58,505 - INFO -     No 'Vis alle' button found for div#lover
+2026-03-04 22:14:58,526 - INFO -     📋 Small section mode — collecting directly
+2026-03-04 22:14:58,547 - INFO -     ✅ Small section div#lover — collected 2 URLs
+2026-03-04 22:14:58,547 - INFO -     ✅ COMPLETE 'LAWS'  expected=None  collected=2
+2026-03-04 22:14:58,548 - INFO - 
+    ── [3/11] REGULATIONS ──
+2026-03-04 22:14:58,886 - INFO -     👆 Clicked section tab: 'Forskrifter'
+2026-03-04 22:15:00,411 - INFO -     ✅ Heading div#forskrifter found
+2026-03-04 22:15:00,465 - INFO -     Vis alle clicked — expected=16
+2026-03-04 22:15:03,510 - INFO -     Advanced Search URL: https://lovdata.no/pro/#result&id=2896
+2026-03-04 22:15:05,547 - INFO -     Advanced Search loaded via driver.get()
+2026-03-04 22:15:05,554 - INFO -     🔍 Advanced Search mode — collecting all pages
+2026-03-04 22:15:05,597 - INFO -     📊 Advanced Search total count: 16
+2026-03-04 22:15:07,609 - INFO -       page 1: +16 new  (total: 16 / expected: 16)
+2026-03-04 22:15:07,609 - INFO -       ✅ All 16 docs collected
+2026-03-04 22:15:07,609 - INFO -     Returning to legal area page
+2026-03-04 22:15:19,982 - WARNING -     ⚠️  Back() failed — navigating directly to legal area
+2026-03-04 22:15:23,006 - INFO -     ✅ COMPLETE 'REGULATIONS'  expected=16  collected=16
+2026-03-04 22:15:23,022 - INFO - 
+    ── [4/11] DECISIONS FROM THE SUPREME COURT ──
+2026-03-04 22:15:23,401 - INFO -     👆 Clicked section tab: 'Avgjørelser fra Høyesterett'
+2026-03-04 22:15:24,930 - INFO -     ✅ Heading div#hr found
+2026-03-04 22:15:24,974 - INFO -     Vis alle clicked — expected=16
+2026-03-04 22:15:27,994 - INFO -     Advanced Search URL: https://lovdata.no/pro/#result&id=3866
+2026-03-04 22:15:30,030 - INFO -     Advanced Search loaded via driver.get()
+2026-03-04 22:15:30,030 - INFO -     🔍 Advanced Search mode — collecting all pages
+2026-03-04 22:15:30,079 - INFO -     📊 Advanced Search total count: 16
+2026-03-04 22:15:32,112 - INFO -       page 1: +0 new  (total: 0 / expected: 16)
+2026-03-04 22:15:32,147 - INFO -     ▶  Next: clicked:idx=5,x=855,y=106
+2026-03-04 22:15:35,159 - WARNING -       ⚠️  Page did not change after Next — stopping. (href=)
+2026-03-04 22:15:35,160 - INFO -     Returning to legal area page
+2026-03-04 22:15:47,507 - WARNING -     ⚠️  Back() failed — navigating directly to legal area
+2026-03-04 22:15:50,541 - WARNING -     Back failed — re-navigating to: https://lovdata.no/pro/#rettsomrade&id=Anskaffelser
+2026-03-04 22:15:53,569 - WARNING -     ⚠️  COUNT MISMATCH 'DECISIONS FROM THE SUPREME COURT': expected=16  collected=0
+2026-03-04 22:15:53,569 - INFO - 
+    ── [5/11] DECISIONS FROM THE COURTS OF APPEAL ──
+2026-03-04 22:15:53,586 - INFO -     ↩️  Not on legal area page — navigating back
+2026-03-04 22:16:05,953 - WARNING -     ⚠️  Back() failed — navigating directly to legal area
+2026-03-04 22:16:08,987 - ERROR -     ❌ Could not return to legal area — skipping 'DECISIONS FROM THE COURTS OF APPEAL'
+2026-03-04 22:16:08,987 - INFO - 
+    ── [6/11] DECISIONS FROM THE DISTRICT COURTS ──
+2026-03-04 22:16:09,003 - INFO -     ↩️  Not on legal area page — navigating back
+2026-03-04 22:16:09,439 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/244d2d40668e306ad22eca8a431345ef

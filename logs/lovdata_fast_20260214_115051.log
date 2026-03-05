@@ -1,0 +1,85 @@
+2026-02-14 11:50:55,288 - INFO - ================================================================================
+2026-02-14 11:50:55,289 - INFO - LOVDATA PRO SCRAPER - ULTRA-FAST MODE
+2026-02-14 11:50:55,290 - INFO - Target: 4,000 documents in 3-4 hours
+2026-02-14 11:50:55,290 - INFO - ================================================================================
+2026-02-14 11:50:55,290 - INFO - Year range: 2020-2026
+2026-02-14 11:50:55,291 - INFO - Batch upload: Every 50 files
+2026-02-14 11:50:55,291 - INFO - Parallel processing: True (workers: 3)
+2026-02-14 11:50:55,292 - INFO - Delay: 0.1s
+2026-02-14 11:50:55,292 - INFO - ================================================================================
+2026-02-14 11:50:56,330 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-14 11:50:56,334 - INFO - ✓ Database connected
+2026-02-14 11:50:56,335 - INFO - ====== WebDriver manager ======
+2026-02-14 11:50:57,828 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 11:50:58,088 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 11:50:58,473 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 11:51:02,135 - INFO - ✓ Browser started (headless mode)
+2026-02-14 11:51:02,135 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 11:51:03,416 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/bucket "HTTP/2 200 OK"
+2026-02-14 11:51:03,420 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 11:51:03,421 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 11:51:03,421 - INFO - 🔐 Logging in...
+2026-02-14 11:51:25,051 - INFO - ✓ Login successful
+2026-02-14 11:51:25,052 - INFO - 📋 MODE: all
+2026-02-14 11:51:25,052 - INFO - 
+2026-02-14 11:51:25,052 - INFO - ================================================================================
+2026-02-14 11:51:25,054 - INFO - SOURCES OF LAW
+2026-02-14 11:51:25,054 - INFO - ================================================================================
+2026-02-14 11:51:25,054 - INFO - ✓ 16 categories enabled
+
+2026-02-14 11:51:25,055 - INFO - 
+[1/16] Laws and Regulations → Active Laws (NL)
+2026-02-14 11:51:25,055 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 11:51:40,315 - INFO -   ✅ Found 5 documents
+2026-02-14 11:51:40,316 - INFO -   📄 5 documents found
+2026-02-14 11:51:56,219 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260123-0001.xml "HTTP/1.1 200 OK"
+2026-02-14 11:51:56,295 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20260123-0001.xml
+2026-02-14 11:51:56,295 - ERROR - ✗ Error: too many values to unpack (expected 3)
+2026-02-14 11:51:59,038 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260213-0006.xml "HTTP/1.1 200 OK"
+2026-02-14 11:51:59,061 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Active_Laws_NL\nl-20260213-0006.xml
+2026-02-14 11:51:59,061 - ERROR - ✗ Error: too many values to unpack (expected 3)
+2026-02-14 11:52:01,090 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0004.xml "HTTP/1.1 200 OK"
+2026-02-14 11:52:03,558 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0003.xml "HTTP/1.1 200 OK"
+2026-02-14 11:52:08,682 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&file_name=eq.nl-20260206-0002.xml "HTTP/1.1 200 OK"
+2026-02-14 11:52:08,790 - INFO - 
+[2/16] Laws and Regulations → Central Regulations (SF)
+2026-02-14 11:52:08,790 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 11:52:31,554 - WARNING -   ⚠️ No links found
+2026-02-14 11:52:31,555 - INFO -   📄 0 documents found
+2026-02-14 11:52:31,555 - INFO - 
+[3/16] Laws and Regulations → Local Regulations (LF)
+2026-02-14 11:52:31,555 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 11:52:54,521 - WARNING -   ⚠️ No links found
+2026-02-14 11:52:54,522 - INFO -   📄 0 documents found
+2026-02-14 11:52:54,522 - INFO - 
+[4/16] Laws and Regulations → Repealed Laws (NLO)
+2026-02-14 11:52:54,522 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 11:53:11,896 - WARNING -   ⚠️ No links found
+2026-02-14 11:53:11,897 - INFO -   📄 0 documents found
+2026-02-14 11:53:11,897 - INFO - 
+[5/16] Laws and Regulations → Emergency Laws (NLE)
+2026-02-14 11:53:11,897 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLE
+2026-02-14 11:53:29,291 - WARNING -   ⚠️ No links found
+2026-02-14 11:53:29,291 - INFO -   📄 0 documents found
+2026-02-14 11:53:29,292 - INFO - 
+[6/16] Laws and Regulations → Repealed Regulations (SFO)
+2026-02-14 11:53:29,292 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SFO
+2026-02-14 11:53:46,475 - WARNING -   ⚠️ No links found
+2026-02-14 11:53:46,477 - INFO -   📄 0 documents found
+2026-02-14 11:53:46,477 - INFO - 
+[7/16] Laws and Regulations → Repealed Local (LFO)
+2026-02-14 11:53:46,477 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LFO
+2026-02-14 11:54:03,987 - WARNING -   ⚠️ No links found
+2026-02-14 11:54:03,988 - INFO -   📄 0 documents found
+2026-02-14 11:54:03,988 - INFO - 
+[8/16] Court Decisions → Supreme Court (HR)
+2026-02-14 11:54:03,988 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/HR
+2026-02-14 11:54:21,457 - WARNING -   ⚠️ No links found
+2026-02-14 11:54:21,457 - INFO -   📄 0 documents found
+2026-02-14 11:54:21,458 - INFO - 
+[9/16] Court Decisions → Appeal Court (LA)
+2026-02-14 11:54:21,459 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LA
+2026-02-14 11:54:25,337 - INFO - 
+2026-02-14 11:54:25,337 - INFO - 📦 Flushing remaining batch...
+2026-02-14 11:54:25,338 - INFO - ✓ Uploaded 0 files
+2026-02-14 11:54:25,417 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/c40c9650b79dcfc12a3fccb8ee4fe566

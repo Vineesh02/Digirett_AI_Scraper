@@ -1,0 +1,1303 @@
+2026-02-15 23:25:42,875 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-15 23:25:42,876 - INFO - 🔐 Opening Lovdata login page...
+2026-02-15 23:26:15,716 - INFO - ✅ Login successful
+2026-02-15 23:26:15,717 - INFO - ======================================================================
+2026-02-15 23:26:15,718 - INFO - MODE: legal_areas_only
+2026-02-15 23:26:15,719 - INFO - ======================================================================
+2026-02-15 23:26:15,719 - INFO - 
+======================================================================
+2026-02-15 23:26:15,721 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-02-15 23:26:15,721 - INFO -    Using fallback list from config.LEGAL_AREA_TRANSLATIONS
+2026-02-15 23:26:15,722 - INFO - ======================================================================
+2026-02-15 23:26:15,723 - INFO - 📂 Loading legal areas from config.py...
+2026-02-15 23:26:15,723 - INFO - 📋 Loaded 38 legal areas
+2026-02-15 23:26:15,724 - INFO - 
+📊 Total legal areas: 38
+
+2026-02-15 23:26:15,725 - INFO - 
+======================================================================
+2026-02-15 23:26:15,725 - INFO - [1/38] Labor_Law
+2026-02-15 23:26:15,725 - INFO - ======================================================================
+2026-02-15 23:26:15,726 - INFO -    Norwegian: arbeidsrett
+2026-02-15 23:26:15,726 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-15 23:26:15,727 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-15 23:26:23,755 - INFO -    📜 Scrolling to load documents...
+2026-02-15 23:26:34,796 - INFO -    📎 Found 43 documents
+2026-02-15 23:26:34,797 - INFO - 🚀 Processing 43 documents
+2026-02-15 23:26:34,797 - INFO - 
+   [1/43] Processing document...
+2026-02-15 23:26:34,797 - INFO - 📄 Scraping document...
+2026-02-15 23:26:42,386 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A744.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:42,449 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:26:44,029 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.43aa678d7f4ef6a29a49d970377f87c3&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:44,342 - INFO - 
+   [2/43] Processing document...
+2026-02-15 23:26:44,342 - INFO - 📄 Scraping document...
+2026-02-15 23:26:46,703 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2025-03-28-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:46,738 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:26:46,892 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2559c6707c190cf3c665e2f6c99f3d86&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:47,208 - INFO - 
+   [3/43] Processing document...
+2026-02-15 23:26:47,208 - INFO - 📄 Scraping document...
+2026-02-15 23:26:49,536 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A79.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:49,570 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:26:49,749 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2aa5b7a99d754ee46ca9ba82c4dec73d&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:50,056 - INFO - 
+   [4/43] Processing document...
+2026-02-15 23:26:50,057 - INFO - 📄 Scraping document...
+2026-02-15 23:26:52,543 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-373-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:52,559 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:26:52,655 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.7084fdd5cb94724b604064af03fc6be6&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:52,965 - INFO - 
+   [5/43] Processing document...
+2026-02-15 23:26:52,965 - INFO - 📄 Scraping document...
+2026-02-15 23:26:55,382 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-372-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:55,406 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:26:55,504 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2f096640efc9749f43240b5edb9d7c1c&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:55,813 - INFO - 
+   [6/43] Processing document...
+2026-02-15 23:26:55,814 - INFO - 📄 Scraping document...
+2026-02-15 23:26:59,090 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-359-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:59,122 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:26:59,217 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.16694d8c4426aa5018786f713fc1c060&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:26:59,524 - INFO - 
+   [7/43] Processing document...
+2026-02-15 23:26:59,524 - INFO - 📄 Scraping document...
+2026-02-15 23:27:01,877 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-346-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:01,895 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:02,006 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1e4afa714dbb4dc2f2d9cc2be4e66cba&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:02,308 - INFO - 
+   [8/43] Processing document...
+2026-02-15 23:27:02,308 - INFO - 📄 Scraping document...
+2026-02-15 23:27:04,597 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-344-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:04,631 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:04,724 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.82dc69042978c13f1a14505eb5ba671f&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:05,032 - INFO - 
+   [9/43] Processing document...
+2026-02-15 23:27:05,034 - INFO - 📄 Scraping document...
+2026-02-15 23:27:07,365 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-339-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:07,395 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:07,488 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.86eb770743d640eda2f0116152b8eb41&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:07,803 - INFO - 
+   [10/43] Processing document...
+2026-02-15 23:27:07,804 - INFO - 📄 Scraping document...
+2026-02-15 23:27:10,099 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-334-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:10,132 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:27:10,232 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.586dbc6f86c1cf1282f069f7ff275381&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:10,232 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-02-15 23:27:11,038 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/NL_lov_2007-06-15-40_C2_A744.xml "HTTP/2 200 OK"
+2026-02-15 23:27:11,049 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:11,337 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-15 23:27:11,338 - ERROR - ✗ Metadata insert exception: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'metadata' column of 'lovdata_metadata' in the schema cache"}
+2026-02-15 23:27:11,338 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:11,649 - INFO - 
+   [11/43] Processing document...
+2026-02-15 23:27:11,650 - INFO - 📄 Scraping document...
+2026-02-15 23:27:14,165 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-333-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:14,197 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:27:14,311 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5e612255b09eca6f34c7cef0678fe161&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:14,313 - INFO - 
+⬆️  Uploading batch (11 documents)
+2026-02-15 23:27:14,314 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:14,516 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/NL_lov_2025-03-28-5.xml "HTTP/2 200 OK"
+2026-02-15 23:27:14,519 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:14,841 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-15 23:27:14,842 - ERROR - ✗ Metadata insert exception: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'metadata' column of 'lovdata_metadata' in the schema cache"}
+2026-02-15 23:27:14,843 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:15,148 - INFO - 
+   [12/43] Processing document...
+2026-02-15 23:27:15,148 - INFO - 📄 Scraping document...
+2026-02-15 23:27:17,575 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-312-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:17,609 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:27:17,726 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.6cacdc97cdfdde17a31cee2a278fccc5&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:17,727 - INFO - 
+⬆️  Uploading batch (12 documents)
+2026-02-15 23:27:17,728 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:17,728 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:18,351 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/NL_lov_2007-06-15-40_C2_A79.xml "HTTP/2 200 OK"
+2026-02-15 23:27:18,354 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:18,693 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-15 23:27:18,695 - ERROR - ✗ Metadata insert exception: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'metadata' column of 'lovdata_metadata' in the schema cache"}
+2026-02-15 23:27:18,696 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:18,999 - INFO - 
+   [13/43] Processing document...
+2026-02-15 23:27:18,999 - INFO - 📄 Scraping document...
+2026-02-15 23:27:21,242 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-296-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:21,272 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:27:21,478 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.f6e98a1bcca98bf7e3dde0861864e8a6&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:21,479 - INFO - 
+⬆️  Uploading batch (13 documents)
+2026-02-15 23:27:21,481 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:21,482 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:21,482 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:21,693 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-373-a.xml "HTTP/2 200 OK"
+2026-02-15 23:27:21,694 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:21,807 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:21,809 - INFO - 🧾 Metadata inserted: HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:21,810 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:22,114 - INFO - 
+   [14/43] Processing document...
+2026-02-15 23:27:22,115 - INFO - 📄 Scraping document...
+2026-02-15 23:27:24,380 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2025-49402.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:24,394 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:27:24,501 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1a1d0154a3009420d3d5af1b74226bdf&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:24,503 - INFO - 
+⬆️  Uploading batch (14 documents)
+2026-02-15 23:27:24,505 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:24,505 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:24,506 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:24,507 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:25,042 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-372-a.xml "HTTP/2 200 OK"
+2026-02-15 23:27:25,045 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:25,184 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:25,185 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:25,186 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:25,496 - INFO - 
+   [15/43] Processing document...
+2026-02-15 23:27:25,497 - INFO - 📄 Scraping document...
+2026-02-15 23:27:27,871 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-18220.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:27,900 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:27:28,003 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.7771d74ccb2e30dc91b82f532efd04e0&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:28,004 - INFO - 
+⬆️  Uploading batch (15 documents)
+2026-02-15 23:27:28,005 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:28,005 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:28,006 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:28,006 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:28,006 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:28,245 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-359-u.xml "HTTP/2 200 OK"
+2026-02-15 23:27:28,247 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:28,341 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:28,342 - INFO - 🧾 Metadata inserted: HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:28,343 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:28,646 - INFO - 
+   [16/43] Processing document...
+2026-02-15 23:27:28,647 - INFO - 📄 Scraping document...
+2026-02-15 23:27:30,929 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-181309.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:30,959 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:27:31,139 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.85598fc2d40ffeb699363277696fb945&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:31,141 - INFO - 
+⬆️  Uploading batch (16 documents)
+2026-02-15 23:27:31,141 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:31,142 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:31,142 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:31,144 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:31,145 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:31,146 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:31,322 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-346-u.xml "HTTP/2 200 OK"
+2026-02-15 23:27:31,379 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:31,494 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:31,494 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:31,496 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:31,801 - INFO - 
+   [17/43] Processing document...
+2026-02-15 23:27:31,802 - INFO - 📄 Scraping document...
+2026-02-15 23:27:34,159 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-103123.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:34,184 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:27:34,314 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.65c154d3206febcab94a41a88163a630&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:34,315 - INFO - 
+⬆️  Uploading batch (17 documents)
+2026-02-15 23:27:34,316 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:34,318 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:34,319 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:34,319 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:34,320 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:34,321 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:34,322 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:34,640 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-344-u.xml "HTTP/2 200 OK"
+2026-02-15 23:27:34,641 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:34,753 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:34,754 - INFO - 🧾 Metadata inserted: HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:34,754 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:35,064 - INFO - 
+   [18/43] Processing document...
+2026-02-15 23:27:35,064 - INFO - 📄 Scraping document...
+2026-02-15 23:27:37,360 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LBSTR_avgjorelse_lb-2025-101938.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:37,384 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:27:37,493 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c2c42793a409eb6fe812ba2289e75681&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:37,494 - INFO - 
+⬆️  Uploading batch (18 documents)
+2026-02-15 23:27:37,495 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:37,495 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:37,496 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:37,496 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:37,497 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:37,497 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:37,498 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:37,499 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:37,725 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-339-u.xml "HTTP/2 200 OK"
+2026-02-15 23:27:37,727 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:37,891 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:37,894 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:37,894 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:38,202 - INFO - 
+   [19/43] Processing document...
+2026-02-15 23:27:38,202 - INFO - 📄 Scraping document...
+2026-02-15 23:27:40,760 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LHSIV_avgjorelse_lh-2026-8272.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:40,790 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:27:40,965 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.76ab3c90381f88e5dffdcd6e1d9446c0&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:40,967 - INFO - 
+⬆️  Uploading batch (19 documents)
+2026-02-15 23:27:40,968 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:40,969 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:40,970 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:40,970 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:40,972 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:40,972 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:40,973 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:40,973 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:40,974 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:41,190 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-334-u.xml "HTTP/2 200 OK"
+2026-02-15 23:27:41,192 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:27:41,476 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:41,477 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:27:41,477 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:41,793 - INFO - 
+   [20/43] Processing document...
+2026-02-15 23:27:41,793 - INFO - 📄 Scraping document...
+2026-02-15 23:27:44,030 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LHSTR_avgjorelse_lh-2025-188441.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:44,048 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:27:44,202 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.772c7b5e2ac828cc1f05c62c95e729b1&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:44,203 - INFO - 
+⬆️  Uploading batch (20 documents)
+2026-02-15 23:27:44,203 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:44,204 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:44,204 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:44,205 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:44,205 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:44,206 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:44,206 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:44,207 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:44,207 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:44,208 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:27:44,405 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-333-u.xml "HTTP/2 200 OK"
+2026-02-15 23:27:44,407 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:27:44,516 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:44,519 - INFO - 🧾 Metadata inserted: HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:27:44,519 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:44,831 - INFO - 
+   [21/43] Processing document...
+2026-02-15 23:27:44,832 - INFO - 📄 Scraping document...
+2026-02-15 23:27:47,176 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-16764.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:47,214 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:27:47,320 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8b6dcf1842908b8c5144f128327a4b75&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:47,321 - INFO - 
+⬆️  Uploading batch (21 documents)
+2026-02-15 23:27:47,322 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:47,323 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:47,323 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:47,324 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:47,325 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:47,326 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:47,326 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:47,328 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:47,328 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:47,329 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:27:47,329 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:27:47,540 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-312-u.xml "HTTP/2 200 OK"
+2026-02-15 23:27:47,542 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:27:47,661 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:47,666 - INFO - 🧾 Metadata inserted: HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:27:47,667 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:47,968 - INFO - 
+   [22/43] Processing document...
+2026-02-15 23:27:47,969 - INFO - 📄 Scraping document...
+2026-02-15 23:27:50,235 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LGSIV_avgjorelse_lg-2026-5180.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:50,267 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:27:50,366 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.ea5577e5d846aa8aa2afe2904601609e&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:50,367 - INFO - 
+⬆️  Uploading batch (22 documents)
+2026-02-15 23:27:50,368 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:50,369 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:50,369 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:50,370 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:50,370 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:50,371 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:50,372 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:50,372 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:50,373 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:50,374 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:27:50,374 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:27:50,375 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:27:50,576 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-296-u.xml "HTTP/2 200 OK"
+2026-02-15 23:27:50,595 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:27:50,724 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:50,725 - INFO - 🧾 Metadata inserted: HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:27:50,726 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:51,029 - INFO - 
+   [23/43] Processing document...
+2026-02-15 23:27:51,029 - INFO - 📄 Scraping document...
+2026-02-15 23:27:54,368 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LESIV_avgjorelse_le-2025-196437.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:54,398 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:27:54,759 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5d687f1ed00051a26fca1ffc825c7c07&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:54,761 - INFO - 
+⬆️  Uploading batch (23 documents)
+2026-02-15 23:27:54,762 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:54,762 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:54,763 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:54,763 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:54,764 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:54,765 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:54,765 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:54,767 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:54,767 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:54,768 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:27:54,768 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:27:54,770 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:27:54,771 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:27:55,123 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2025-49402.xml "HTTP/2 200 OK"
+2026-02-15 23:27:55,126 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:27:55,266 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:55,268 - INFO - 🧾 Metadata inserted: LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:27:55,268 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:55,575 - INFO - 
+   [24/43] Processing document...
+2026-02-15 23:27:55,575 - INFO - 📄 Scraping document...
+2026-02-15 23:27:57,892 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tnet-2025-201859.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:57,916 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:27:58,090 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.cd520d91dd0aaacd3fd9d068e8b13bf0&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:27:58,092 - INFO - 
+⬆️  Uploading batch (24 documents)
+2026-02-15 23:27:58,093 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:27:58,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:27:58,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:27:58,095 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:27:58,096 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:27:58,096 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:27:58,097 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:27:58,098 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:27:58,098 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:27:58,099 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:27:58,100 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:27:58,100 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:27:58,101 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:27:58,102 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:27:58,407 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-18220.xml "HTTP/2 200 OK"
+2026-02-15 23:27:58,410 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:27:58,847 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:27:58,849 - INFO - 🧾 Metadata inserted: LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:27:58,849 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:27:59,161 - INFO - 
+   [25/43] Processing document...
+2026-02-15 23:27:59,166 - INFO - 📄 Scraping document...
+2026-02-15 23:28:01,416 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_thrd-2025-147974.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:01,447 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:01,538 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8b449c017ae770d689045fcad0c1b49c&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:01,539 - INFO - 
+⬆️  Uploading batch (25 documents)
+2026-02-15 23:28:01,539 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:01,540 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:01,541 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:01,542 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:01,542 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:01,542 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:01,544 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:01,545 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:01,546 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:01,546 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:01,547 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:01,547 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:01,548 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:01,548 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:01,549 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:01,757 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LBSIV_avgjorelse_lb-2025-181309.xml "HTTP/2 200 OK"
+2026-02-15 23:28:01,760 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:01,879 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:01,885 - INFO - 🧾 Metadata inserted: LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:01,885 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:02,200 - INFO - 
+   [26/43] Processing document...
+2026-02-15 23:28:02,200 - INFO - 📄 Scraping document...
+2026-02-15 23:28:04,723 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_thrd-2025-179533.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:04,758 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:05,029 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5422a189e4ebbd02c7f013659eff3a39&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:05,031 - INFO - 
+⬆️  Uploading batch (26 documents)
+2026-02-15 23:28:05,031 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:05,032 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:05,034 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:05,034 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:05,035 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:05,035 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:05,035 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:05,037 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:05,038 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:05,038 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:05,039 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:05,039 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:05,041 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:05,041 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:05,042 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:05,043 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:05,337 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LBSIV_avgjorelse_lb-2025-103123.xml "HTTP/2 200 OK"
+2026-02-15 23:28:05,338 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:05,487 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:05,488 - INFO - 🧾 Metadata inserted: LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:05,488 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:05,803 - INFO - 
+   [27/43] Processing document...
+2026-02-15 23:28:05,804 - INFO - 📄 Scraping document...
+2026-02-15 23:28:08,161 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-206996.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:08,199 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:08,315 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.007052059f66e1e4e5ca29847f5ae876&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:08,320 - INFO - 
+⬆️  Uploading batch (27 documents)
+2026-02-15 23:28:08,321 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:08,321 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:08,321 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:08,322 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:08,322 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:08,322 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:08,323 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:08,323 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:08,323 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:08,323 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:08,325 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:08,325 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:08,325 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:08,325 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:08,326 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:08,326 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:08,326 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:08,537 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LBSTR_avgjorelse_lb-2025-101938.xml "HTTP/2 200 OK"
+2026-02-15 23:28:08,539 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:08,654 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:08,660 - INFO - 🧾 Metadata inserted: LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:08,660 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:08,966 - INFO - 
+   [28/43] Processing document...
+2026-02-15 23:28:08,966 - INFO - 📄 Scraping document...
+2026-02-15 23:28:11,286 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tosl-2025-46750.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:11,317 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:28:11,426 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c2dea4351cd0b15899ddac42846cec9d&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:11,428 - INFO - 
+⬆️  Uploading batch (28 documents)
+2026-02-15 23:28:11,429 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:11,430 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:11,430 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:11,431 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:11,432 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:11,432 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:11,433 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:11,434 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:11,434 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:11,435 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:11,436 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:11,436 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:11,437 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:11,437 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:11,439 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:11,439 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:11,440 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:11,440 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:11,761 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LHSIV_avgjorelse_lh-2026-8272.xml "HTTP/2 200 OK"
+2026-02-15 23:28:11,762 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:11,875 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:11,878 - INFO - 🧾 Metadata inserted: LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:11,879 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:12,183 - INFO - 
+   [29/43] Processing document...
+2026-02-15 23:28:12,184 - INFO - 📄 Scraping document...
+2026-02-15 23:28:14,705 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-180124.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:14,737 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:28:15,131 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.33747eae882495702604a931788c27a6&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:15,132 - INFO - 
+⬆️  Uploading batch (29 documents)
+2026-02-15 23:28:15,133 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:15,134 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:15,134 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:15,135 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:15,135 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:15,136 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:15,136 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:15,137 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:15,138 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:15,139 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:15,139 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:15,139 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:15,141 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:15,142 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:15,143 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:15,143 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:15,144 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:15,144 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:15,145 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:15,657 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LHSTR_avgjorelse_lh-2025-188441.xml "HTTP/2 200 OK"
+2026-02-15 23:28:15,660 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:15,752 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:15,756 - INFO - 🧾 Metadata inserted: LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:15,757 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:16,062 - INFO - 
+   [30/43] Processing document...
+2026-02-15 23:28:16,062 - INFO - 📄 Scraping document...
+2026-02-15 23:28:18,342 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-3971.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:18,378 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:28:18,473 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.6ddff361af3e576c2df1e2c9f32b4878&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:18,475 - INFO - 
+⬆️  Uploading batch (30 documents)
+2026-02-15 23:28:18,476 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:18,476 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:18,477 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:18,477 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:18,477 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:18,478 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:18,478 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:18,478 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:18,478 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:18,479 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:18,479 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:18,479 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:18,480 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:18,480 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:18,480 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:18,480 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:18,481 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:18,481 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:18,481 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:18,481 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:18,715 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-16764.xml "HTTP/2 200 OK"
+2026-02-15 23:28:18,719 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:18,822 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:18,823 - INFO - 🧾 Metadata inserted: LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:18,823 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:19,125 - INFO - 
+   [31/43] Processing document...
+2026-02-15 23:28:19,125 - INFO - 📄 Scraping document...
+2026-02-15 23:28:21,491 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tvov-2025-54083.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:21,510 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:28:21,605 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5b6ad3be60e5954b321722699cb7684c&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:21,607 - INFO - 
+⬆️  Uploading batch (31 documents)
+2026-02-15 23:28:21,607 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:21,607 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:21,609 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:21,610 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:21,610 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:21,611 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:21,611 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:21,612 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:21,613 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:21,613 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:21,614 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:21,614 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:21,615 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:21,617 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:21,617 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:21,618 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:21,618 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:21,619 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:21,620 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:21,620 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:21,621 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:21,797 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-5180.xml "HTTP/2 200 OK"
+2026-02-15 23:28:21,803 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:21,910 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:21,912 - INFO - 🧾 Metadata inserted: LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:21,912 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:22,221 - INFO - 
+   [32/43] Processing document...
+2026-02-15 23:28:22,221 - INFO - 📄 Scraping document...
+2026-02-15 23:28:24,525 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-195280.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:24,564 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-15 23:28:24,672 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.115e8e7e851151e2cb59a08691ce0514&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:24,674 - INFO - 
+⬆️  Uploading batch (32 documents)
+2026-02-15 23:28:24,675 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:24,676 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:24,676 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:24,677 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:24,678 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:24,680 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:24,680 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:24,681 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:24,682 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:24,682 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:24,683 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:24,683 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:24,686 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:24,686 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:24,687 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:24,687 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:24,689 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:24,689 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:24,690 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:24,691 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:24,691 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:24,692 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:24,896 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LESIV_avgjorelse_le-2025-196437.xml "HTTP/2 200 OK"
+2026-02-15 23:28:24,898 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:25,009 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:25,011 - INFO - 🧾 Metadata inserted: LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:25,012 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:25,317 - INFO - 
+   [33/43] Processing document...
+2026-02-15 23:28:25,317 - INFO - 📄 Scraping document...
+2026-02-15 23:28:27,580 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.TRSTR_avgjorelse_tgud-2025-196990.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:27,613 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-15 23:28:27,737 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2beac50a1ba8a287eee1c16e57f5bff0&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:27,738 - INFO - 
+⬆️  Uploading batch (33 documents)
+2026-02-15 23:28:27,738 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:27,739 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:27,740 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:27,740 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:27,741 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:27,742 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:27,742 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:27,743 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:27,744 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:27,744 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:27,745 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:27,746 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:27,747 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:27,747 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:27,748 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:27,749 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:27,749 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:27,750 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:27,751 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:27,751 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:27,751 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:27,752 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:27,753 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:28,041 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tnet-2025-201859.xml "HTTP/2 200 OK"
+2026-02-15 23:28:28,047 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:28,175 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:28,177 - INFO - 🧾 Metadata inserted: TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:28,178 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:28,483 - INFO - 
+   [34/43] Processing document...
+2026-02-15 23:28:28,483 - INFO - 📄 Scraping document...
+2026-02-15 23:28:30,799 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-13-200.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:30,822 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-200.xml
+2026-02-15 23:28:31,123 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3a4103628e66e63ea7310b7bb8d65acb&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:31,125 - INFO - 
+⬆️  Uploading batch (34 documents)
+2026-02-15 23:28:31,126 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:31,127 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:31,127 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:31,129 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:31,129 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:31,130 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:31,130 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:31,131 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:31,132 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:31,132 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:31,135 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:31,137 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:31,138 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:31,139 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:31,140 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:31,140 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:31,141 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:31,142 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:31,143 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:31,143 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:31,144 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:31,145 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:31,146 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:31,146 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:31,654 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_thrd-2025-147974.xml "HTTP/2 200 OK"
+2026-02-15 23:28:31,656 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:31,981 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:31,982 - INFO - 🧾 Metadata inserted: TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:31,982 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:32,297 - INFO - 
+   [35/43] Processing document...
+2026-02-15 23:28:32,297 - INFO - 📄 Scraping document...
+2026-02-15 23:28:34,558 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-199.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:34,593 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-199.xml
+2026-02-15 23:28:34,687 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.1efd08c17348fe31d2f833b315584545&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:34,687 - INFO - 
+⬆️  Uploading batch (35 documents)
+2026-02-15 23:28:34,688 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:34,688 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:34,688 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:34,689 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:34,689 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:34,689 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:34,689 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:34,690 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:34,690 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:34,690 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:34,691 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:34,691 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:34,691 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:34,692 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:34,692 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:34,692 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:34,692 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:34,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:34,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:34,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:34,694 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:34,694 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:34,694 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:34,694 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:34,694 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:34,876 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_thrd-2025-179533.xml "HTTP/2 200 OK"
+2026-02-15 23:28:34,877 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:34,956 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:34,958 - INFO - 🧾 Metadata inserted: TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:34,959 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:35,268 - INFO - 
+   [36/43] Processing document...
+2026-02-15 23:28:35,268 - INFO - 📄 Scraping document...
+2026-02-15 23:28:37,544 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-01-21-198.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:37,567 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-01-21-198.xml
+2026-02-15 23:28:37,653 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.a7d2b3c4dbf7beb051cff5e379aa9b42&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:37,654 - INFO - 
+⬆️  Uploading batch (36 documents)
+2026-02-15 23:28:37,654 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:37,654 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:37,656 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:37,656 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:37,656 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:37,656 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:37,657 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:37,659 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:37,659 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:37,659 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:37,659 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:37,661 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:37,661 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:37,661 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:37,661 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:37,850 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-206996.xml "HTTP/2 200 OK"
+2026-02-15 23:28:37,853 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:37,946 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:37,949 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:37,949 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:38,258 - INFO - 
+   [37/43] Processing document...
+2026-02-15 23:28:38,258 - INFO - 📄 Scraping document...
+2026-02-15 23:28:40,574 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-13-197.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:40,609 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-197.xml
+2026-02-15 23:28:40,690 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.3c2392ac4fefc3352e621ee8741a63e2&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:40,690 - INFO - 
+⬆️  Uploading batch (37 documents)
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:40,693 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:40,698 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:40,698 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:40,698 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:40,698 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:40,699 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:40,699 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:40,699 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:40,701 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:40,880 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tosl-2025-46750.xml "HTTP/2 200 OK"
+2026-02-15 23:28:40,882 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:28:40,970 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:40,972 - INFO - 🧾 Metadata inserted: TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:28:40,972 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:41,273 - INFO - 
+   [38/43] Processing document...
+2026-02-15 23:28:41,273 - INFO - 📄 Scraping document...
+2026-02-15 23:28:43,835 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_lov_2026-02-13-6.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:43,869 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_lov_2026-02-13-6.xml
+2026-02-15 23:28:43,941 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c41a55a63cafcdca6a6355e3812f6cc3&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:43,941 - INFO - 
+⬆️  Uploading batch (38 documents)
+2026-02-15 23:28:43,941 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:43,941 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:43,941 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:43,949 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:43,949 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:43,950 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:43,950 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:43,950 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:43,950 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:43,952 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:43,954 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:43,954 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:43,954 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:43,954 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:43,954 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:43,957 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:43,964 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:43,964 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:43,965 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:43,965 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:28:44,237 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-180124.xml "HTTP/2 200 OK"
+2026-02-15 23:28:44,237 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:28:44,343 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:44,343 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:28:44,343 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:44,651 - INFO - 
+   [39/43] Processing document...
+2026-02-15 23:28:44,651 - INFO - 📄 Scraping document...
+2026-02-15 23:28:47,115 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_lov_2026-02-13-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:47,138 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_lov_2026-02-13-5.xml
+2026-02-15 23:28:47,236 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c871c6aa632bf440cb4f2e5793da9804&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:47,237 - INFO - 
+⬆️  Uploading batch (39 documents)
+2026-02-15 23:28:47,238 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:47,238 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:47,239 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:47,239 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:47,240 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:47,240 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:47,241 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:47,241 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:47,242 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:47,242 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:47,243 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:47,243 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:47,244 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:47,244 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:47,244 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:47,245 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:47,245 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:47,246 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:47,246 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:47,246 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:47,247 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:47,247 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:47,247 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:47,248 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:47,248 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:47,249 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:47,249 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:47,250 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:28:47,251 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:28:47,466 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-3971.xml "HTTP/2 200 OK"
+2026-02-15 23:28:47,469 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:28:47,573 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:47,573 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:28:47,573 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:47,879 - INFO - 
+   [40/43] Processing document...
+2026-02-15 23:28:47,879 - INFO - 📄 Scraping document...
+2026-02-15 23:28:50,225 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-196.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:50,257 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-196.xml
+2026-02-15 23:28:50,341 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.28b8b9867e588c8dd31bbec647e1e42a&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:50,356 - INFO - 
+⬆️  Uploading batch (40 documents)
+2026-02-15 23:28:50,356 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:50,356 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:50,359 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:50,359 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:50,359 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:50,359 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:50,361 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:50,361 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:50,361 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:50,361 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:50,361 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:50,361 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:50,361 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:50,361 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:50,366 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:50,366 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:50,366 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:50,366 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:50,366 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:50,366 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:50,366 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:50,371 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:50,371 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:50,371 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:50,371 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:50,374 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:50,374 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:50,374 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:28:50,375 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:28:50,375 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:28:50,597 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tvov-2025-54083.xml "HTTP/2 200 OK"
+2026-02-15 23:28:50,599 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:28:50,712 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:50,723 - INFO - 🧾 Metadata inserted: TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:28:50,724 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:51,027 - INFO - 
+   [41/43] Processing document...
+2026-02-15 23:28:51,027 - INFO - 📄 Scraping document...
+2026-02-15 23:28:53,465 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-12-195.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:53,486 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-195.xml
+2026-02-15 23:28:53,589 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.9eed22a1a0c478c2b57c27e362a45aaf&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:53,589 - INFO - 
+⬆️  Uploading batch (41 documents)
+2026-02-15 23:28:53,589 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:53,589 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:53,589 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:53,589 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:53,597 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:53,597 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:53,597 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:53,597 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:53,597 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:53,597 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:53,597 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:53,597 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:53,602 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:53,602 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:53,602 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:53,602 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:53,603 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:53,603 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:53,603 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:53,605 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:53,606 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:53,606 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:53,606 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:53,607 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:53,607 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:53,607 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:53,607 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:53,607 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:28:53,609 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:28:53,609 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:28:53,609 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:28:53,804 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-195280.xml "HTTP/2 200 OK"
+2026-02-15 23:28:53,804 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-15 23:28:53,981 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-15 23:28:53,982 - ERROR - ✗ Metadata insert exception: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'metadata' column of 'lovdata_metadata' in the schema cache"}
+2026-02-15 23:28:53,982 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:54,283 - INFO - 
+   [42/43] Processing document...
+2026-02-15 23:28:54,283 - INFO - 📄 Scraping document...
+2026-02-15 23:28:56,633 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-11-194.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:56,663 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-11-194.xml
+2026-02-15 23:28:56,759 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.8b11abcc36f5afc09a2831b8d08a9936&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:56,759 - INFO - 
+⬆️  Uploading batch (42 documents)
+2026-02-15 23:28:56,759 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:28:56,759 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:28:56,759 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:28:56,765 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:28:56,765 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:28:56,765 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:28:56,767 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:28:56,767 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:28:56,768 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:28:56,769 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:28:56,769 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:28:56,769 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:28:56,771 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:28:56,771 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:28:56,772 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:28:56,772 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:28:56,772 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:28:56,774 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:28:56,774 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:28:56,775 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:28:56,775 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:28:56,775 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:28:56,775 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:28:56,775 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:28:56,777 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:28:56,777 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:28:56,777 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:28:56,779 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:28:56,779 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:28:56,781 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:28:56,781 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:28:56,781 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-15 23:28:56,977 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tgud-2025-196990.xml "HTTP/2 200 OK"
+2026-02-15 23:28:56,979 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-15 23:28:57,302 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 201 Created"
+2026-02-15 23:28:57,302 - INFO - 🧾 Metadata inserted: TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-15 23:28:57,306 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:28:57,621 - INFO - 
+   [43/43] Processing document...
+2026-02-15 23:28:57,621 - INFO - 📄 Scraping document...
+2026-02-15 23:28:59,943 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.LTI_forskrift_2026-02-09-193.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:28:59,983 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-09-193.xml
+2026-02-15 23:29:00,083 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.155166735de409bff5e47055237e2c85&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:00,083 - INFO - 
+⬆️  Uploading batch (43 documents)
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:29:00,083 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:29:00,094 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:29:00,098 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:29:00,098 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:29:00,099 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:29:00,100 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:29:00,100 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:29:00,100 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:29:00,101 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:29:00,101 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:29:00,102 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-15 23:29:00,103 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-15 23:29:00,325 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-13-200.xml "HTTP/2 200 OK"
+2026-02-15 23:29:00,325 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-13-200.xml
+2026-02-15 23:29:00,436 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-15 23:29:00,437 - ERROR - ✗ Metadata insert exception: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'metadata' column of 'lovdata_metadata' in the schema cache"}
+2026-02-15 23:29:00,438 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:29:00,747 - INFO - 
+✅ Completed area: Labor_Law
+2026-02-15 23:29:00,747 - INFO - 
+======================================================================
+2026-02-15 23:29:00,747 - INFO - [2/38] Work_Environment
+2026-02-15 23:29:00,747 - INFO - ======================================================================
+2026-02-15 23:29:00,750 - INFO -    Norwegian: arbeidsmiljo
+2026-02-15 23:29:00,750 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-15 23:29:00,750 - INFO - 📂 Navigating to: https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-15 23:29:08,770 - INFO -    📜 Scrolling to load documents...
+2026-02-15 23:29:20,834 - INFO -    📎 Found 43 documents
+2026-02-15 23:29:20,834 - INFO - 🚀 Processing 43 documents
+2026-02-15 23:29:20,835 - INFO - 
+   [1/43] Processing document...
+2026-02-15 23:29:20,835 - INFO - 📄 Scraping document...
+2026-02-15 23:29:23,704 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A744.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:23,727 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:29:23,828 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.59d27a20af01fbd1ff051c96a6974fe9&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:23,830 - INFO - 
+⬆️  Uploading batch (44 documents)
+2026-02-15 23:29:23,830 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:29:23,831 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:29:23,831 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:29:23,831 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:29:23,832 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:29:23,832 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:29:23,833 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:29:23,833 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:29:23,834 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:29:23,834 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:29:23,834 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:29:23,836 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:29:23,836 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:29:23,836 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:29:23,837 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:29:23,837 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:29:23,838 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:29:23,838 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:29:23,838 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:29:23,839 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:29:23,839 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:29:23,840 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:29:23,840 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:29:23,841 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:29:23,841 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:29:23,841 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:29:23,842 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:29:23,842 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:29:23,842 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:29:23,843 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:29:23,843 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:29:23,843 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-15 23:29:23,844 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-15 23:29:23,844 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-200.xml
+2026-02-15 23:29:24,316 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-12-199.xml "HTTP/2 200 OK"
+2026-02-15 23:29:24,317 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-12-199.xml
+2026-02-15 23:29:24,430 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-15 23:29:24,431 - ERROR - ✗ Metadata insert exception: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'metadata' column of 'lovdata_metadata' in the schema cache"}
+2026-02-15 23:29:24,432 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:29:24,744 - INFO - 
+   [2/43] Processing document...
+2026-02-15 23:29:24,745 - INFO - 📄 Scraping document...
+2026-02-15 23:29:27,051 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2025-03-28-5.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:27,084 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\NL_lov_2025-03-28-5.xml
+2026-02-15 23:29:27,180 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5f48a93852f85a0e12700500c4ff47c1&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:27,182 - INFO - 
+⬆️  Uploading batch (45 documents)
+2026-02-15 23:29:27,184 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:29:27,184 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:29:27,186 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:29:27,187 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:29:27,188 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:29:27,188 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:29:27,190 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:29:27,190 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:29:27,191 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:29:27,192 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:29:27,192 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:29:27,193 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:29:27,194 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:29:27,195 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:29:27,196 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:29:27,196 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:29:27,197 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:29:27,198 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:29:27,198 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:29:27,201 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:29:27,201 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:29:27,202 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:29:27,203 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:29:27,203 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:29:27,204 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:29:27,205 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:29:27,206 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:29:27,207 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:29:27,208 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:29:27,209 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:29:27,211 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:29:27,212 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-15 23:29:27,213 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-15 23:29:27,214 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-200.xml
+2026-02-15 23:29:27,214 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-199.xml
+2026-02-15 23:29:27,529 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-01-21-198.xml "HTTP/2 200 OK"
+2026-02-15 23:29:27,531 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-01-21-198.xml
+2026-02-15 23:29:27,642 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-15 23:29:27,645 - ERROR - ✗ Metadata insert exception: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'metadata' column of 'lovdata_metadata' in the schema cache"}
+2026-02-15 23:29:27,646 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:29:27,961 - INFO - 
+   [3/43] Processing document...
+2026-02-15 23:29:27,961 - INFO - 📄 Scraping document...
+2026-02-15 23:29:30,288 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.NL_lov_2007-06-15-40_C2_A79.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:30,325 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas/Work_Environment\Work_Environment\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:29:30,424 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.943dc6b719d9e51ab9b215300dfd070a&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:30,426 - INFO - 
+⬆️  Uploading batch (46 documents)
+2026-02-15 23:29:30,427 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:29:30,427 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:29:30,428 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:29:30,428 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:29:30,429 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:29:30,430 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:29:30,430 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:29:30,431 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:29:30,432 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:29:30,432 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:29:30,433 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:29:30,434 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:29:30,434 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:29:30,435 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:29:30,435 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:29:30,437 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:29:30,438 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:29:30,439 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:29:30,439 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:29:30,440 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:29:30,441 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:29:30,441 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:29:30,442 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:29:30,443 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:29:30,444 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:29:30,444 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:29:30,445 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:29:30,445 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:29:30,446 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:29:30,447 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:29:30,447 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:29:30,448 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-15 23:29:30,449 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-15 23:29:30,450 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-200.xml
+2026-02-15 23:29:30,450 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-199.xml
+2026-02-15 23:29:30,451 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-01-21-198.xml
+2026-02-15 23:29:30,686 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/object/lovdata-docs/Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-13-197.xml "HTTP/2 200 OK"
+2026-02-15 23:29:30,688 - INFO - ☁️  Uploaded & deleted local: Legal_Areas/Labor_Law/Labor_Law/LTI_forskrift_2026-02-13-197.xml
+2026-02-15 23:29:30,789 - INFO - HTTP Request: POST https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata "HTTP/1.1 400 Bad Request"
+2026-02-15 23:29:30,790 - ERROR - ✗ Metadata insert exception: {'code': 'PGRST204', 'details': None, 'hint': None, 'message': "Could not find the 'metadata' column of 'lovdata_metadata' in the schema cache"}
+2026-02-15 23:29:30,792 - ERROR - ❌ Error processing document: 'ExcelExporter' object has no attribute 'append_row'
+2026-02-15 23:29:31,108 - INFO - 
+   [4/43] Processing document...
+2026-02-15 23:29:31,108 - INFO - 📄 Scraping document...
+2026-02-15 23:29:33,397 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-373-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:33,401 - INFO - ⏭️  Skipping existing: HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:29:33,702 - INFO - 
+   [5/43] Processing document...
+2026-02-15 23:29:33,703 - INFO - 📄 Scraping document...
+2026-02-15 23:29:36,037 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-372-a.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:36,040 - INFO - ⏭️  Skipping existing: HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:29:36,355 - INFO - 
+   [6/43] Processing document...
+2026-02-15 23:29:36,355 - INFO - 📄 Scraping document...
+2026-02-15 23:29:38,647 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-359-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:38,649 - INFO - ⏭️  Skipping existing: HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:29:38,955 - INFO - 
+   [7/43] Processing document...
+2026-02-15 23:29:38,956 - INFO - 📄 Scraping document...
+2026-02-15 23:29:41,260 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSIV_avgjorelse_hr-2026-346-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:41,264 - INFO - ⏭️  Skipping existing: HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:29:41,568 - INFO - 
+   [8/43] Processing document...
+2026-02-15 23:29:41,568 - INFO - 📄 Scraping document...
+2026-02-15 23:29:43,948 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.HRSTR_avgjorelse_hr-2026-344-u.xml&limit=1 "HTTP/1.1 200 OK"
+2026-02-15 23:29:43,952 - INFO - ⏭️  Skipping existing: HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:29:43,984 - INFO - 
+⬆️  Uploading batch (46 documents)
+2026-02-15 23:29:43,984 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A744.xml
+2026-02-15 23:29:43,986 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2025-03-28-5.xml
+2026-02-15 23:29:43,987 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\NL_lov_2007-06-15-40_C2_A79.xml
+2026-02-15 23:29:43,987 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-373-a.xml
+2026-02-15 23:29:43,988 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-372-a.xml
+2026-02-15 23:29:43,988 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-359-u.xml
+2026-02-15 23:29:43,989 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-346-u.xml
+2026-02-15 23:29:43,990 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-344-u.xml
+2026-02-15 23:29:43,990 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-339-u.xml
+2026-02-15 23:29:43,992 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-334-u.xml
+2026-02-15 23:29:43,992 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-333-u.xml
+2026-02-15 23:29:43,993 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSTR_avgjorelse_hr-2026-312-u.xml
+2026-02-15 23:29:43,994 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\HRSIV_avgjorelse_hr-2026-296-u.xml
+2026-02-15 23:29:43,995 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2025-49402.xml
+2026-02-15 23:29:43,997 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-18220.xml
+2026-02-15 23:29:43,998 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-181309.xml
+2026-02-15 23:29:43,999 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSIV_avgjorelse_lb-2025-103123.xml
+2026-02-15 23:29:44,004 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LBSTR_avgjorelse_lb-2025-101938.xml
+2026-02-15 23:29:44,004 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSIV_avgjorelse_lh-2026-8272.xml
+2026-02-15 23:29:44,010 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LHSTR_avgjorelse_lh-2025-188441.xml
+2026-02-15 23:29:44,011 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-16764.xml
+2026-02-15 23:29:44,011 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LGSIV_avgjorelse_lg-2026-5180.xml
+2026-02-15 23:29:44,012 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LESIV_avgjorelse_le-2025-196437.xml
+2026-02-15 23:29:44,014 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tnet-2025-201859.xml
+2026-02-15 23:29:44,015 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-147974.xml
+2026-02-15 23:29:44,017 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_thrd-2025-179533.xml
+2026-02-15 23:29:44,019 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-206996.xml
+2026-02-15 23:29:44,020 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tosl-2025-46750.xml
+2026-02-15 23:29:44,021 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-180124.xml
+2026-02-15 23:29:44,022 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-3971.xml
+2026-02-15 23:29:44,022 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tvov-2025-54083.xml
+2026-02-15 23:29:44,022 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSIV_avgjorelse_tosl-2025-195280.xml
+2026-02-15 23:29:44,023 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\TRSTR_avgjorelse_tgud-2025-196990.xml
+2026-02-15 23:29:44,023 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-200.xml
+2026-02-15 23:29:44,023 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-12-199.xml
+2026-02-15 23:29:44,023 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-01-21-198.xml
+2026-02-15 23:29:44,024 - ERROR - ✗ Local file not found: ./scraped_xml\Legal_Areas/Labor_Law\Labor_Law\LTI_forskrift_2026-02-13-197.xml

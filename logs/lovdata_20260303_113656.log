@@ -1,0 +1,224 @@
+2026-03-03 11:37:03,414 - INFO - ✓ Supabase table: legal_area_metadata
+2026-03-03 11:37:03,416 - INFO - ✓ Supabase bucket: legal_area
+2026-03-03 11:37:03,417 - INFO - ✓ Storage handler initialized (bucket: legal_area)
+2026-03-03 11:37:03,418 - INFO - 🔐 Opening Lovdata login page...
+2026-03-03 11:37:10,191 - INFO - ✅ Login successful
+2026-03-03 11:37:10,192 - INFO - ======================================================================
+2026-03-03 11:37:10,192 - INFO - MODE: legal_areas_only
+2026-03-03 11:37:10,193 - INFO - ======================================================================
+2026-03-03 11:37:10,193 - INFO - 
+======================================================================
+2026-03-03 11:37:10,196 - INFO - ⚖️  SCRAPING LEGAL AREAS (reliable traversal: root → branch → leaf)
+2026-03-03 11:37:10,197 - INFO - ======================================================================
+2026-03-03 11:37:21,410 - INFO - 📂 Navigating to Rettsområder section...
+2026-03-03 11:37:27,677 - INFO -    ✅ Clicked: Rettsområder
+2026-03-03 11:37:42,792 - INFO -    Found 35 total tree nodes
+2026-03-03 11:37:42,931 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 11:37:43,031 - INFO -    ✅ Found: Arbeidsrett
+2026-03-03 11:37:43,135 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-03-03 11:37:43,218 - INFO -    ✅ Found: Energirett
+2026-03-03 11:37:43,283 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-03-03 11:37:43,382 - INFO -    ✅ Found: EU/EØS-rett
+2026-03-03 11:37:43,471 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-03-03 11:37:43,555 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-03-03 11:37:43,631 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-03-03 11:37:43,710 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-03-03 11:37:43,784 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-03-03 11:37:43,862 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-03-03 11:37:43,938 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-03-03 11:37:44,013 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-03-03 11:37:44,086 - INFO -    ✅ Found: IKT- og medierett
+2026-03-03 11:37:44,163 - INFO -    ✅ Found: Immaterialrett
+2026-03-03 11:37:44,234 - INFO -    ✅ Found: Internasjonal rett
+2026-03-03 11:37:44,288 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-03-03 11:37:44,343 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-03-03 11:37:44,420 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-03-03 11:37:44,501 - INFO -    ✅ Found: Menneskerettigheter
+2026-03-03 11:37:44,580 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-03-03 11:37:44,654 - INFO -    ✅ Found: Næringsrett
+2026-03-03 11:37:44,730 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-03-03 11:37:44,809 - INFO -    ✅ Found: Samerett
+2026-03-03 11:37:44,888 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-03-03 11:37:44,972 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-03-03 11:37:45,063 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-03-03 11:37:45,150 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-03-03 11:37:45,220 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-03-03 11:37:45,276 - INFO -    ✅ Found: Strafferett
+2026-03-03 11:37:45,337 - INFO -    ✅ Found: Svalbard og biland
+2026-03-03 11:37:45,403 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-03-03 11:37:45,488 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-03-03 11:37:45,578 - INFO -    ✅ Found: Utlendingsrett
+2026-03-03 11:37:45,578 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-03-03 11:37:45,578 - INFO - 📊 Total ROOT areas discovered: 35
+2026-03-03 11:37:45,580 - INFO - 
+======================================================================
+2026-03-03 11:37:45,580 - INFO - [1/35] ROOT: Anskaffelser_Avtaler_Bygg_Og_Entrepriser
+2026-03-03 11:37:45,580 - INFO - ======================================================================
+2026-03-03 11:37:47,146 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=id&legal_area_root=eq.Anskaffelser_Avtaler_Bygg_Og_Entrepriser&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 11:51:15,946 - INFO - 🔗 ROOT docs: 15
+2026-03-03 11:51:15,972 - INFO - 🚀 Processing 15 documents
+2026-03-03 11:51:15,973 - INFO - 
+   [1/15] Processing document...
+2026-03-03 11:51:16,456 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:18,461 - INFO - 
+   [2/15] Processing document...
+2026-03-03 11:51:18,732 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:20,734 - INFO - 
+   [3/15] Processing document...
+2026-03-03 11:51:21,046 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:23,048 - INFO - 
+   [4/15] Processing document...
+2026-03-03 11:51:23,337 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:25,340 - INFO - 
+   [5/15] Processing document...
+2026-03-03 11:51:25,594 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:27,596 - INFO - 
+   [6/15] Processing document...
+2026-03-03 11:51:27,828 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:29,829 - INFO - 
+   [7/15] Processing document...
+2026-03-03 11:51:30,921 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:32,928 - INFO - 
+   [8/15] Processing document...
+2026-03-03 11:51:33,130 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:35,133 - INFO - 
+   [9/15] Processing document...
+2026-03-03 11:51:35,375 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:37,378 - INFO - 
+   [10/15] Processing document...
+2026-03-03 11:51:37,641 - ERROR - ❌ Error processing document: 'LovdataScraper' object has no attribute 'scrape_document'
+2026-03-03 11:51:39,643 - INFO - 
+   [11/15] Processing document...
+2026-03-03 11:51:39,655 - ERROR - ❌ Error processing document: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7e9deaa55
+	0x7ff7e9b48630
+	0x7ff7e98dd75d
+	0x7ff7e98c8c72
+	0x7ff7e98ef015
+	0x7ff7e99690e0
+	0x7ff7e9972e50
+	0x7ff7e9929098
+	0x7ff7e9929f83
+	0x7ff7e9e17810
+	0x7ff7e9e11afd
+	0x7ff7e9e32c1a
+	0x7ff7e9b63345
+	0x7ff7e9b6b81c
+	0x7ff7e9b51924
+	0x7ff7e9b51ad6
+	0x7ff7e9b37e47
+	0x7ffe38e2259d
+	0x7ffe3ad0af78
+
+2026-03-03 11:51:41,666 - INFO - 
+   [12/15] Processing document...
+2026-03-03 11:51:41,672 - ERROR - ❌ Error processing document: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7e9deaa55
+	0x7ff7e9b48630
+	0x7ff7e98dd546
+	0x7ff7e9928113
+	0x7ff7e99618e2
+	0x7ff7e995bb11
+	0x7ff7e995adc3
+	0x7ff7e98a6505
+	0x7ff7e9e17810
+	0x7ff7e9e11afd
+	0x7ff7e9e32c1a
+	0x7ff7e9b63345
+	0x7ff7e9b6b81c
+	0x7ff7e98a536a
+	0x7ff7e9f72b08
+	0x7ffe38e2259d
+	0x7ffe3ad0af78
+
+2026-03-03 11:51:43,681 - INFO - 
+   [13/15] Processing document...
+2026-03-03 11:51:43,681 - ERROR - ❌ Error processing document: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7e9deaa55
+	0x7ff7e9b48630
+	0x7ff7e98dd546
+	0x7ff7e9928113
+	0x7ff7e99618e2
+	0x7ff7e995bb11
+	0x7ff7e995adc3
+	0x7ff7e98a6505
+	0x7ff7e9e17810
+	0x7ff7e9e11afd
+	0x7ff7e9e32c1a
+	0x7ff7e9b63345
+	0x7ff7e9b6b81c
+	0x7ff7e98a536a
+	0x7ff7e9f72b08
+	0x7ffe38e2259d
+	0x7ffe3ad0af78
+
+2026-03-03 11:51:45,686 - INFO - 
+   [14/15] Processing document...
+2026-03-03 11:51:45,690 - ERROR - ❌ Error processing document: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7e9deaa55
+	0x7ff7e9b48630
+	0x7ff7e98dd546
+	0x7ff7e9928113
+	0x7ff7e99618e2
+	0x7ff7e995bb11
+	0x7ff7e995adc3
+	0x7ff7e98a6505
+	0x7ff7e9e17810
+	0x7ff7e9e11afd
+	0x7ff7e9e32c1a
+	0x7ff7e9b63345
+	0x7ff7e9b6b81c
+	0x7ff7e98a536a
+	0x7ff7e9f72b08
+	0x7ffe38e2259d
+	0x7ffe3ad0af78
+
+2026-03-03 11:51:47,692 - INFO - 
+   [15/15] Processing document...
+2026-03-03 11:51:47,695 - ERROR - ❌ Error processing document: Message: invalid session id
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7e9deaa55
+	0x7ff7e9b48630
+	0x7ff7e98dd546
+	0x7ff7e9928113
+	0x7ff7e99618e2
+	0x7ff7e995bb11
+	0x7ff7e995adc3
+	0x7ff7e98a6505
+	0x7ff7e9e17810
+	0x7ff7e9e11afd
+	0x7ff7e9e32c1a
+	0x7ff7e9b63345
+	0x7ff7e9b6b81c
+	0x7ff7e98a536a
+	0x7ff7e9f72b08
+	0x7ffe38e2259d
+	0x7ffe3ad0af78
+
+2026-03-03 11:51:49,700 - INFO - 
+======================================================================
+2026-03-03 11:51:49,701 - INFO - [2/35] ROOT: Arbeidsrett
+2026-03-03 11:51:49,703 - INFO - ======================================================================
+2026-03-03 11:51:51,033 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=id&legal_area_root=eq.Arbeidsrett&limit=1 "HTTP/1.1 200 OK"
+2026-03-03 11:51:53,178 - INFO - 
+======================================================================
+2026-03-03 11:51:53,178 - INFO - SCRAPING SUMMARY
+2026-03-03 11:51:53,178 - INFO - ======================================================================
+2026-03-03 11:51:53,178 - INFO - ✅ Success: 0
+2026-03-03 11:51:53,178 - INFO - ❌ Failed: 15
+2026-03-03 11:51:53,182 - INFO - ⏭️  Skipped: 0
+2026-03-03 11:51:53,182 - INFO - ======================================================================
+

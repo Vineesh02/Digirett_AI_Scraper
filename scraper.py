@@ -712,7 +712,7 @@ class LovdataScraper:
                         logger.error("  Could not return to legal area — skipping '%s'", canonical)
                         results.append({"document_type": canonical, "expected_count": None, "urls": []})
                         continue
-                    time.sleep(2.0)
+                    time.sleep(1.0)
 
                 if not self._click_section_tab(label):
                     logger.warning("  Could not click tab '%s' — skipping", label)
@@ -846,89 +846,115 @@ class LovdataScraper:
 
                     self.driver.switch_to.default_content()
                     self.driver.switch_to.frame(iframe)
-                    time.sleep(1.0)
-
-                    # ----------------------------------------------------------
-                    # Title
-                    # ----------------------------------------------------------
-                    title = ""
-                    for sel in ["h1", ".tittel", "[class*='tittel']",
-                                ".navn", "span.bold", "[class*='title']"]:
-                        try:
-                            t = self.driver.find_element(By.CSS_SELECTOR, sel).text.strip()
-                            if t and len(t) > 3:
-                                title = t
-                                break
-                        except Exception:
-                            continue
-
-                    # ----------------------------------------------------------
-                    # Date
-                    # ----------------------------------------------------------
-                    date = ""
-                    for sel in [".dato", "[class*='dato']", ".ikraftdato",
-                                ".kunngjort", "[class*='kunngjort']",
-                                "[class*='date']", "time"]:
-                        try:
-                            el = self.driver.find_element(By.CSS_SELECTOR, sel)
-                            d  = (el.text or el.get_attribute("datetime") or "").strip()
-                            if d:
-                                date = d
-                                break
-                        except Exception:
-                            continue
-
-                    # ----------------------------------------------------------
-                    # Page metadata
-                    # ----------------------------------------------------------
-                    page_meta: dict = {}
-
+                    # Wait for full document content to load.
+                    # Lovdata renders content lazily — wait until the body
+                    # contains at least 3 paragraph markers (§) or stabilizes.
                     try:
-                        labels = self.driver.find_elements(
-                            By.CSS_SELECTOR,
-                            ".metadataLabel, .metadata-label, "
-                            "[class*='metadataLabel'], [class*='metadata-label']"
-                        )
-                        for lbl_el in labels:
+                        def body_has_content(d):
                             try:
-                                key = lbl_el.text.strip().rstrip(":").lower()
-                                key = re.sub(r"\s+", "_", key)
-                                if not key:
-                                    continue
-                                val_el = self.driver.execute_script(
-                                    "return arguments[0].nextElementSibling;", lbl_el
-                                )
-                                val = (val_el.text if val_el else "").strip()
-                                if key and val:
-                                    page_meta[key] = val
+                                t = d.find_element(By.TAG_NAME, "body").text
+                                return t.count('§') >= 3 or len(t) > 3000
                             except Exception:
-                                continue
+                                return False
+                        WebDriverWait(self.driver, 15).until(body_has_content)
                     except Exception:
                         pass
+                    time.sleep(1.0)  # small extra buffer after content detected
 
-                    _FIELD_SELECTORS = {
-                        "korttittel":  [".korttittel", "[class*='korttittel']"],
-                        "fulltittel":  [".fulltittel", "[class*='fulltittel']", "h1"],
-                        "dato":        [".dato", "[class*='dato']"],
-                        "ikraftdato":  [".ikraftdato", "[class*='ikraftdato']"],
-                        "kunngjort":   [".kunngjort", "[class*='kunngjort']"],
-                        "avdeling":    [".avdeling", "[class*='avdeling']"],
-                        "type":        [".dokumenttype", "[class*='dokumenttype']"],
-                        "rettsomrade": [".rettsomrade", "[class*='rettsomrade']",
-                                        ".rettsom", "[class*='rettsom']"],
-                        "myndighet":   [".myndighet", "[class*='myndighet']"],
-                        "status":      [".status", "[class*='dokumentstatus']"],
-                    }
-                    for field, selectors in _FIELD_SELECTORS.items():
-                        if field in page_meta:
-                            continue
-                        for sel in selectors:
+                    # ----------------------------------------------------------
+                    # Read the metadata table — the header info table only.
+                    # Strategy: find the FIRST table whose left cells look like
+                    # short labels (Dato, Departement, etc.) — not body content.
+                    # A label cell is short (<40 chars) and has no § character.
+                    # Stop reading a table once a row fails the label test.
+                    # ----------------------------------------------------------
+                    page_meta: dict = {}
+                    try:
+                        page_meta = self.driver.execute_script("""
+                            var result = {};
+
+                            // h1 = fulltittel (the big title above the table)
+                            var h1 = document.querySelector('h1');
+                            if (h1 && h1.innerText.trim()) {
+                                result['fulltittel'] = h1.innerText.trim();
+                            }
+
+                            var tables = document.querySelectorAll('table');
+                            for (var t = 0; t < tables.length; t++) {
+                                var rows = tables[t].querySelectorAll('tr');
+                                var tableHits = 0;
+                                var tableResult = {};
+
+                                for (var r = 0; r < rows.length; r++) {
+                                    var cells = rows[r].querySelectorAll('td, th');
+                                    if (cells.length < 2) continue;
+
+                                    var label = (cells[0].innerText || '').trim().replace(/:$/, '');
+                                    var value = (cells[1].innerText || '').trim();
+
+                                    // Skip if label looks like body content or navigation:
+                                    if (!label || !value) continue;
+                                    if (label.length > 40) continue;
+                                    if (label.indexOf('§') >= 0) continue;
+                                    if (/^\\d/.test(label)) continue;
+                                    if (/^[a-f]$/.test(label.toLowerCase())) continue;
+                                    // Skip navigation section labels
+                                    var skipLabels = ['historiske versjoner', 'endringer',
+                                        'forskrifter', 'forarbeider', 'rundskriv',
+                                        'avgjørelser', 'lovspeil', 'litteratur',
+                                        'andre henvisninger'];
+                                    var labelLower = label.toLowerCase();
+                                    if (skipLabels.some(function(s){ return labelLower === s; })) continue;
+
+                                    var key = label.toLowerCase()
+                                        .replace(/\\s+/g, '_')
+                                        .replace(/[^a-z0-9_\\u00e6\\u00f8\\u00e5]/g, '');
+                                    // Skip if key starts with _ (means label started with non-alpha char)
+                                    if (!key || key[0] === '_') continue;
+                                    if (key.length >= 60) continue;
+                                    tableResult[key] = value;
+                                    tableHits++;
+                                }
+
+                                // Only use this table if it found real metadata rows
+                                if (tableHits >= 3) {
+                                    for (var k in tableResult) result[k] = tableResult[k];
+                                    break; // use first matching table only
+                                }
+                            }
+
+                            return result;
+                        """) or {}
+                        if page_meta:
+                            logger.debug("  iframe[%s] table meta keys: %s", idx, list(page_meta.keys()))
+                    except Exception as e:
+                        logger.debug("  iframe[%s] table meta failed: %s", idx, e)
+
+                    # ----------------------------------------------------------
+                    # Title — from h1 or table fulltittel
+                    # ----------------------------------------------------------
+                    title = page_meta.get("fulltittel", "") or page_meta.get("korttittel", "")
+                    if not title:
+                        for sel in ["h1", ".tittel", "[class*='tittel']", ".navn"]:
                             try:
-                                val = self.driver.find_element(
-                                    By.CSS_SELECTOR, sel
-                                ).text.strip()
-                                if val:
-                                    page_meta[field] = val
+                                t = self.driver.find_element(By.CSS_SELECTOR, sel).text.strip()
+                                if t and len(t) > 3:
+                                    title = t
+                                    break
+                            except Exception:
+                                continue
+
+                    # ----------------------------------------------------------
+                    # Date — from table dato field or CSS selectors
+                    # ----------------------------------------------------------
+                    date = page_meta.get("dato", "") or page_meta.get("kunngjort", "")
+                    if not date:
+                        for sel in [".dato", "[class*='dato']", ".kunngjort", "time"]:
+                            try:
+                                el = self.driver.find_element(By.CSS_SELECTOR, sel)
+                                d  = (el.text or el.get_attribute("datetime") or "").strip()
+                                if d:
+                                    date = d
                                     break
                             except Exception:
                                 continue
@@ -967,31 +993,49 @@ class LovdataScraper:
                             except Exception:
                                 continue
 
-                    if not content:
-                        try:
-                            t = self.driver.find_element(By.TAG_NAME, "body").text.strip()
-                            # Only accept iframe body if it looks like real content:
-                            # must exceed minimum AND must NOT look like a nav page
-                            # (nav pages contain login/menu text but lack legal keywords)
-                            if len(t) >= _MIN_CONTENT_CHARS:
-                                nav_indicators = [
-                                    "logg inn", "log in", "rettsområder",
-                                    "lovdata pro", "søk i lovdata",
-                                ]
-                                is_nav = any(nav in t.lower() for nav in nav_indicators)
-                                if not is_nav:
-                                    content = t
-                                    source  = "iframe_body"
-                        except Exception:
-                            pass
+                    # Always also try the full body — keep whichever is longer.
+                    # CSS selectors sometimes grab only a partial div while the
+                    # body has the complete document text.
+                    try:
+                        t = self.driver.find_element(By.TAG_NAME, "body").text.strip()
+                        if len(t) >= _MIN_CONTENT_CHARS:
+                            nav_indicators = [
+                                "logg inn", "log in", "rettsområder",
+                                "lovdata pro", "søk i lovdata",
+                            ]
+                            is_nav = any(nav in t.lower() for nav in nav_indicators)
+                            if not is_nav and len(t) > len(content):
+                                content = t
+                                source  = "iframe_body"
+                    except Exception:
+                        pass
 
                     # Only update best if this iframe has more content
+                    logger.info(
+                        "  iframe[%s] content: %s chars (best so far: %s)",
+                        idx, len(content), len(best_content)
+                    )
                     if len(content) > len(best_content):
+                        # --------------------------------------------------
+                        # Strip metadata table text from top of content.
+                        # Find the first line starting with § and keep
+                        # everything from there. Discard everything before.
+                        # --------------------------------------------------
+                        if content:
+                            lines = content.split('\n')
+                            first_para_idx = None
+                            for i, line in enumerate(lines):
+                                if line.strip().startswith('§'):
+                                    first_para_idx = i
+                                    break
+                            if first_para_idx is not None and first_para_idx > 0:
+                                content = '\n'.join(lines[first_para_idx:]).strip()
+
                         best_content = content
-                        best_title   = title
-                        best_date    = date
+                        best_title   = title or best_title
+                        best_date    = date or best_date
                         best_source  = source
-                        best_meta    = page_meta
+                        best_meta    = page_meta if page_meta else best_meta
 
                 except Exception as e:
                     logger.debug("iframe[%s] error: %s", idx, e)

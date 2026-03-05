@@ -1,0 +1,55 @@
+2026-02-24 10:26:11,993 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-24 10:26:11,994 - INFO - 🔐 Opening Lovdata login page...
+2026-02-24 10:26:19,730 - INFO - ✅ Login successful
+2026-02-24 10:26:19,730 - INFO - ======================================================================
+2026-02-24 10:26:19,730 - INFO - MODE: sources_of_law
+2026-02-24 10:26:19,731 - INFO - ======================================================================
+2026-02-24 10:26:19,731 - INFO - 
+======================================================================
+2026-02-24 10:26:19,731 - INFO - ⚖️  SCRAPING SOURCES OF LAW
+2026-02-24 10:26:19,732 - INFO - ======================================================================
+
+2026-02-24 10:26:19,732 - INFO - 
+ Registry: Register: Preparatory Work for Laws (RFA)
+2026-02-24 10:26:19,733 - INFO -    https://lovdata.no/pro/#registry/chronological/RFA
+2026-02-24 10:26:19,733 - INFO -    https://lovdata.no/pro/#registry/chronological/RFA
+2026-02-24 10:26:19,733 - INFO - 📂 Scraping registry index: https://lovdata.no/pro/#registry/chronological/RFA
+2026-02-24 10:26:19,733 - INFO - 📂 Scraping registry index: None
+2026-02-24 10:26:19,733 - INFO - 📂 Scraping registry index: 6286
+2026-02-24 10:26:33,197 - INFO - Found 6 document URLs in chronological order in 2026
+2026-02-24 10:26:50,005 - INFO - Found 136 document URLs in chronological order in 2025
+2026-02-24 10:27:06,372 - INFO - Found 236 document URLs in chronological order in 2024
+2026-02-24 10:27:23,205 - INFO - Found 352 document URLs in chronological order in 2023
+2026-02-24 10:27:39,911 - INFO - Found 474 document URLs in chronological order in 2022
+2026-02-24 10:27:56,882 - INFO - Found 645 document URLs in chronological order in 2021
+2026-02-24 10:28:13,755 - INFO - Found 820 document URLs in chronological order in 2020
+2026-02-24 10:28:30,542 - INFO - Found 931 document URLs in chronological order in 2019
+2026-02-24 10:28:46,556 - INFO - Found 1052 document URLs in chronological order in 2018
+2026-02-24 10:29:02,750 - INFO - Found 1181 document URLs in chronological order in 2017
+2026-02-24 10:29:19,661 - INFO - Found 1305 document URLs in chronological order in 2016
+2026-02-24 10:29:36,650 - INFO - Found 1439 document URLs in chronological order in 2015
+2026-02-24 10:29:52,681 - INFO - Found 1535 document URLs in chronological order in 2014
+2026-02-24 10:30:09,399 - INFO - Found 1668 document URLs in chronological order in 2013
+2026-02-24 10:30:25,788 - INFO - Found 1763 document URLs in chronological order in 2012
+2026-02-24 10:30:42,096 - INFO - Found 1828 document URLs in chronological order in 2011
+2026-02-24 10:30:57,863 - INFO - Found 1923 document URLs in chronological order in 2010
+2026-02-24 10:31:13,866 - INFO - Found 2062 document URLs in chronological order in 2009
+2026-02-24 10:31:29,805 - INFO - Found 2185 document URLs in chronological order in 2008
+2026-02-24 10:31:46,273 - INFO - Found 2320 document URLs in chronological order in 2007
+2026-02-24 10:32:02,121 - INFO - Found 2427 document URLs in chronological order in 2006
+2026-02-24 10:32:18,151 - INFO - Found 2563 document URLs in chronological order in 2005
+2026-02-24 10:32:33,965 - INFO - Found 2665 document URLs in chronological order in 2004
+2026-02-24 10:32:49,978 - INFO - Found 2808 document URLs in chronological order in 2003
+2026-02-24 10:33:06,061 - INFO - Found 2920 document URLs in chronological order in 2002
+2026-02-24 10:33:22,019 - INFO - Found 3039 document URLs in chronological order in 2001
+2026-02-24 10:33:37,952 - INFO - Found 3166 document URLs in chronological order in 2000
+2026-02-24 10:33:39,953 - INFO - Found 3166 document URLs in chronological order
+2026-02-24 10:33:42,373 - INFO - 
+======================================================================
+2026-02-24 10:33:42,374 - INFO - SCRAPING SUMMARY
+2026-02-24 10:33:42,374 - INFO - ======================================================================
+2026-02-24 10:33:42,375 - INFO - ✅ Success: 0
+2026-02-24 10:33:42,376 - INFO - ❌ Failed: 0
+2026-02-24 10:33:42,376 - INFO - ⏭️  Skipped: 0
+2026-02-24 10:33:42,376 - INFO - ======================================================================
+

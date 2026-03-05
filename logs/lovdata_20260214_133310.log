@@ -1,0 +1,411 @@
+2026-02-14 13:33:14,111 - INFO - ======================================================================
+2026-02-14 13:33:14,118 - INFO - LOVDATA PRO SCRAPER
+2026-02-14 13:33:14,119 - INFO - ======================================================================
+2026-02-14 13:33:14,119 - INFO - Year range     : 2020 - 2026
+2026-02-14 13:33:14,120 - INFO - Max per source : 150
+2026-02-14 13:33:14,120 - INFO - Max per area   : 150
+2026-02-14 13:33:14,120 - INFO - Global max     : 4000
+2026-02-14 13:33:14,120 - INFO - Batch upload   : every 50 files
+2026-02-14 13:33:14,121 - INFO - ======================================================================
+2026-02-14 13:33:14,936 - INFO - ✓ Database connected
+2026-02-14 13:33:14,939 - INFO - ====== WebDriver manager ======
+2026-02-14 13:33:18,245 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:33:18,416 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:33:18,584 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 13:33:18,594 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 13:33:18,594 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 13:33:20,458 - INFO - ✓ Browser started (UI visible mode)
+2026-02-14 13:33:20,458 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 13:33:20,695 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 13:33:20,695 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 13:33:20,696 - INFO - 🔐 Logging in...
+2026-02-14 13:33:39,297 - INFO - ✓ Login successful
+2026-02-14 13:33:39,298 - INFO - MODE: all
+
+2026-02-14 13:33:39,298 - INFO - 
+======================================================================
+2026-02-14 13:33:39,299 - INFO - SOURCES OF LAW
+2026-02-14 13:33:39,299 - INFO - ======================================================================
+2026-02-14 13:33:39,299 - INFO - 16 categories
+
+2026-02-14 13:33:39,299 - INFO - [1/16] Laws and Regulations → Active Laws (NL)
+2026-02-14 13:33:39,300 - INFO -   📁 01_Laws_and_Regulations / Active_Laws_NL
+2026-02-14 13:33:39,300 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 13:33:44,159 - INFO -   ✅ Found 5 documents
+2026-02-14 13:33:44,159 - INFO -   📄 5 URLs found
+2026-02-14 13:33:59,816 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:33:59,818 - INFO - [2/16] Laws and Regulations → Central Regulations (SF)
+2026-02-14 13:33:59,818 - INFO -   📁 01_Laws_and_Regulations / Central_Regulations_SF
+2026-02-14 13:33:59,819 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 13:34:07,645 - INFO -   ✅ Found 33 documents
+2026-02-14 13:34:07,645 - INFO -   📄 33 URLs found
+2026-02-14 13:35:36,547 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:35:36,548 - INFO - [3/16] Laws and Regulations → Local Regulations (LF)
+2026-02-14 13:35:36,548 - INFO -   📁 01_Laws_and_Regulations / Local_Regulations_LF
+2026-02-14 13:35:36,549 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 13:35:43,633 - INFO -   ✅ Found 29 documents
+2026-02-14 13:35:43,634 - INFO -   📄 29 URLs found
+2026-02-14 13:36:56,797 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:36:56,797 - INFO - [4/16] Laws and Regulations → Repealed Laws (NLO)
+2026-02-14 13:36:56,798 - INFO -   📁 01_Laws_and_Regulations / Repealed_Laws_NLO
+2026-02-14 13:36:56,798 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 13:37:03,420 - INFO -   ✅ Found 1 documents
+2026-02-14 13:37:03,421 - INFO -   📄 1 URLs found
+2026-02-14 13:37:05,767 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:37:05,768 - INFO - [5/16] Laws and Regulations → Emergency Laws (NLE)
+2026-02-14 13:37:05,769 - INFO -   📁 01_Laws_and_Regulations / Emergency_Laws_NLE
+2026-02-14 13:37:05,769 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLE
+2026-02-14 13:37:13,329 - INFO -   ✅ Found 3 documents
+2026-02-14 13:37:13,329 - INFO -   📄 3 URLs found
+2026-02-14 13:37:21,577 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:37:21,577 - INFO - [6/16] Laws and Regulations → Repealed Regulations (SFO)
+2026-02-14 13:37:21,578 - INFO -   📁 01_Laws_and_Regulations / Repealed_Regulations_SFO
+2026-02-14 13:37:21,578 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SFO
+2026-02-14 13:37:27,767 - INFO -   ✅ Found 24 documents
+2026-02-14 13:37:27,768 - INFO -   📄 24 URLs found
+2026-02-14 13:38:23,070 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:38:23,071 - INFO - [7/16] Laws and Regulations → Repealed Local (LFO)
+2026-02-14 13:38:23,071 - INFO -   📁 01_Laws_and_Regulations / Repealed_Local_LFO
+2026-02-14 13:38:23,072 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LFO
+2026-02-14 13:38:28,976 - INFO -   ✅ Found 35 documents
+2026-02-14 13:38:28,977 - INFO -   📄 35 URLs found
+2026-02-14 13:39:13,989 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\lfo-20250210-0218.xml
+2026-02-14 13:39:14,584 - INFO - ✓ Saved to DB: lfo-20250210-0218.xml
+2026-02-14 13:39:14,585 - INFO -   ✓ [1] 01_Laws_and_Regulations/Repealed_Local_LFO/lfo-20250210-0218.xml
+2026-02-14 13:39:54,264 - INFO -   ✅ 1 new docs saved
+
+2026-02-14 13:39:54,264 - INFO - [8/16] Court Decisions → Supreme Court (HR)
+2026-02-14 13:39:54,264 - INFO -   📁 02_Court_Decisions / Supreme_Court_HR
+2026-02-14 13:39:54,265 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/HR
+2026-02-14 13:40:07,551 - WARNING -   ⚠️ No links found on page
+2026-02-14 13:40:07,551 - INFO -   📄 0 URLs found
+2026-02-14 13:40:07,552 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:40:07,552 - INFO - [9/16] Court Decisions → Appeal Court (LA)
+2026-02-14 13:40:07,553 - INFO -   📁 02_Court_Decisions / Appeal_Court_LA
+2026-02-14 13:40:07,553 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LA
+2026-02-14 13:40:19,804 - WARNING -   ⚠️ No links found on page
+2026-02-14 13:40:19,805 - INFO -   📄 0 URLs found
+2026-02-14 13:40:19,805 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:40:19,806 - INFO - [10/16] Court Decisions → Appeal Court (LB)
+2026-02-14 13:40:19,807 - INFO -   📁 02_Court_Decisions / Appeal_Court_LB
+2026-02-14 13:40:19,807 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LB
+2026-02-14 13:40:31,988 - WARNING -   ⚠️ No links found on page
+2026-02-14 13:40:31,989 - INFO -   📄 0 URLs found
+2026-02-14 13:40:31,989 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:40:31,990 - INFO - [11/16] Court Decisions → Labor Court (LAR)
+2026-02-14 13:40:31,990 - INFO -   📁 02_Court_Decisions / Labor_Court_LAR
+2026-02-14 13:40:31,991 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LAR
+2026-02-14 13:40:44,154 - WARNING -   ⚠️ No links found on page
+2026-02-14 13:40:44,154 - INFO -   📄 0 URLs found
+2026-02-14 13:40:44,155 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:40:44,155 - INFO - [12/16] Preparatory Works → Propositions (Prop)
+2026-02-14 13:40:44,156 - INFO -   📁 03_Preparatory_Works / Propositions_Prop
+2026-02-14 13:40:44,156 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/PROP
+2026-02-14 13:40:49,025 - INFO -   ✅ Found 53 documents
+2026-02-14 13:40:49,026 - INFO -   📄 53 URLs found
+2026-02-14 13:40:53,641 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\prop-prop-3-l-202526.xml
+2026-02-14 13:40:53,874 - INFO - ✓ Saved to DB: prop-prop-3-l-202526.xml
+2026-02-14 13:40:53,874 - INFO -   ✓ [2] 03_Preparatory_Works/Propositions_Prop/prop-prop-3-l-202526.xml
+2026-02-14 13:41:24,948 - INFO - ✓ XML saved: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\prop-prop-13-s-202526.xml
+2026-02-14 13:41:25,152 - INFO - ✓ Saved to DB: prop-prop-13-s-202526.xml
+2026-02-14 13:41:25,152 - INFO -   ✓ [3] 03_Preparatory_Works/Propositions_Prop/prop-prop-13-s-202526.xml
+2026-02-14 13:42:40,590 - INFO -   ✅ 2 new docs saved
+
+2026-02-14 13:42:40,590 - INFO - [13/16] Preparatory Works → Official Reports (NOU)
+2026-02-14 13:42:40,591 - INFO -   📁 03_Preparatory_Works / Official_Reports_NOU
+2026-02-14 13:42:40,591 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NOU
+2026-02-14 13:42:46,886 - INFO -   ✅ Found 2 documents
+2026-02-14 13:42:46,886 - INFO -   📄 2 URLs found
+2026-02-14 13:42:51,741 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:42:51,741 - INFO - [14/16] Preparatory Works → Recommendations (Innst)
+2026-02-14 13:42:51,742 - INFO -   📁 03_Preparatory_Works / Recommendations_Innst
+2026-02-14 13:42:51,742 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/INNST
+2026-02-14 13:43:04,762 - WARNING -   ⚠️ No links found on page
+2026-02-14 13:43:04,763 - INFO -   📄 0 URLs found
+2026-02-14 13:43:04,763 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:43:04,764 - INFO - [15/16] Circulars and Statements → Guidance (RUN)
+2026-02-14 13:43:04,765 - INFO -   📁 05_Circulars_Statements / Guidance_RUN
+2026-02-14 13:43:04,765 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/RUN
+2026-02-14 13:43:16,925 - WARNING -   ⚠️ No links found on page
+2026-02-14 13:43:16,925 - INFO -   📄 0 URLs found
+2026-02-14 13:43:16,926 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:43:16,926 - INFO - [16/16] International → Treaties (TRAK)
+2026-02-14 13:43:16,926 - INFO -   📁 07_International / Treaties_TRAK
+2026-02-14 13:43:16,926 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/TRAK
+2026-02-14 13:43:29,004 - WARNING -   ⚠️ No links found on page
+2026-02-14 13:43:29,004 - INFO -   📄 0 URLs found
+2026-02-14 13:43:29,005 - INFO -   ✅ 0 new docs saved
+
+2026-02-14 13:43:29,005 - INFO - 
+======================================================================
+2026-02-14 13:43:29,005 - INFO - LEGAL AREAS
+2026-02-14 13:43:29,005 - INFO - ======================================================================
+2026-02-14 13:43:29,005 - INFO - 10 areas
+
+2026-02-14 13:43:29,007 - INFO - [1/10] Labor Law
+2026-02-14 13:43:29,007 - INFO -   📁 category    = Legal_Areas
+2026-02-14 13:43:29,007 - INFO -   📂 subcategory = Labor_Law  ← from URL slug
+2026-02-14 13:43:29,007 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 13:43:29,008 - INFO - 📖 Registry: https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 13:43:34,292 - INFO -   ✅ Found 43 documents
+2026-02-14 13:43:34,292 - INFO -   📄 43 URLs found
+2026-02-14 13:43:38,420 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-296-u.xml
+2026-02-14 13:43:38,597 - INFO - ⊘ Already in DB: hrsiv-hr-2026-296-u.xml
+2026-02-14 13:43:40,776 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\lgsiv-lg-2026-16764.xml
+2026-02-14 13:43:40,897 - INFO - ⊘ Already in DB: lgsiv-lg-2026-16764.xml
+2026-02-14 13:43:43,176 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-372-a.xml
+2026-02-14 13:43:43,492 - INFO - ✓ Saved to DB: hrsiv-hr-2026-372-a.xml
+2026-02-14 13:43:43,492 - INFO -   ✓ [4] Legal_Areas/Labor_Law/hrsiv-hr-2026-372-a.xml
+2026-02-14 13:43:45,576 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-359-u.xml
+2026-02-14 13:43:45,706 - INFO - ⊘ Already in DB: hrstr-hr-2026-359-u.xml
+2026-02-14 13:43:49,823 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\trsiv-tvov-2025-54083.xml
+2026-02-14 13:43:49,935 - INFO - ⊘ Already in DB: trsiv-tvov-2025-54083.xml
+2026-02-14 13:43:52,153 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-373-a.xml
+2026-02-14 13:43:52,437 - INFO - ✓ Saved to DB: hrstr-hr-2026-373-a.xml
+2026-02-14 13:43:52,437 - INFO -   ✓ [5] Legal_Areas/Labor_Law/hrstr-hr-2026-373-a.xml
+2026-02-14 13:43:57,096 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-334-u.xml
+2026-02-14 13:43:57,262 - INFO - ⊘ Already in DB: hrsiv-hr-2026-334-u.xml
+2026-02-14 13:43:59,431 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\trstr-tosl-2025-46750.xml
+2026-02-14 13:43:59,568 - INFO - ⊘ Already in DB: trstr-tosl-2025-46750.xml
+2026-02-14 13:44:01,642 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-346-u.xml
+2026-02-14 13:44:01,818 - INFO - ⊘ Already in DB: hrsiv-hr-2026-346-u.xml
+2026-02-14 13:44:04,371 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-a9982207148b.xml
+2026-02-14 13:44:04,638 - INFO - ✓ Saved to DB: doc-a9982207148b.xml
+2026-02-14 13:44:04,639 - INFO -   ✓ [6] Legal_Areas/Labor_Law/doc-a9982207148b.xml
+2026-02-14 13:44:06,824 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-b323be65031c.xml
+2026-02-14 13:44:07,125 - INFO - ✓ Saved to DB: doc-b323be65031c.xml
+2026-02-14 13:44:07,126 - INFO -   ✓ [7] Legal_Areas/Labor_Law/doc-b323be65031c.xml
+2026-02-14 13:44:09,513 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\lbsiv-lb-2025-181309.xml
+2026-02-14 13:44:09,757 - INFO - ✓ Saved to DB: lbsiv-lb-2025-181309.xml
+2026-02-14 13:44:09,757 - INFO -   ✓ [8] Legal_Areas/Labor_Law/lbsiv-lb-2025-181309.xml
+2026-02-14 13:44:13,903 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-339-u.xml
+2026-02-14 13:44:14,014 - INFO - ⊘ Already in DB: hrsiv-hr-2026-339-u.xml
+2026-02-14 13:44:23,521 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\trsiv-tosl-2025-180124.xml
+2026-02-14 13:44:23,696 - INFO - ⊘ Already in DB: trsiv-tosl-2025-180124.xml
+2026-02-14 13:44:25,801 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\lgsiv-lg-2025-49402.xml
+2026-02-14 13:44:25,985 - INFO - ✓ Saved to DB: lgsiv-lg-2025-49402.xml
+2026-02-14 13:44:25,986 - INFO -   ✓ [9] Legal_Areas/Labor_Law/lgsiv-lg-2025-49402.xml
+2026-02-14 13:44:27,900 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-344-u.xml
+2026-02-14 13:44:28,003 - INFO - ⊘ Already in DB: hrstr-hr-2026-344-u.xml
+2026-02-14 13:44:29,933 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\lgsiv-lg-2026-18220.xml
+2026-02-14 13:44:30,177 - INFO - ✓ Saved to DB: lgsiv-lg-2026-18220.xml
+2026-02-14 13:44:30,179 - INFO -   ✓ [10] Legal_Areas/Labor_Law/lgsiv-lg-2026-18220.xml
+2026-02-14 13:44:33,121 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-333-u.xml
+2026-02-14 13:44:33,396 - INFO - ✓ Saved to DB: hrstr-hr-2026-333-u.xml
+2026-02-14 13:44:33,396 - INFO -   ✓ [11] Legal_Areas/Labor_Law/hrstr-hr-2026-333-u.xml
+2026-02-14 13:44:35,809 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\lbsiv-lb-2025-103123.xml
+2026-02-14 13:44:36,016 - INFO - ✓ Saved to DB: lbsiv-lb-2025-103123.xml
+2026-02-14 13:44:36,016 - INFO -   ✓ [12] Legal_Areas/Labor_Law/lbsiv-lb-2025-103123.xml
+2026-02-14 13:44:38,110 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\lbstr-lb-2025-101938.xml
+2026-02-14 13:44:38,306 - INFO - ✓ Saved to DB: lbstr-lb-2025-101938.xml
+2026-02-14 13:44:38,306 - INFO -   ✓ [13] Legal_Areas/Labor_Law/lbstr-lb-2025-101938.xml
+2026-02-14 13:44:43,043 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-130a33b46e88.xml
+2026-02-14 13:44:43,309 - INFO - ✓ Saved to DB: doc-130a33b46e88.xml
+2026-02-14 13:44:43,309 - INFO -   ✓ [14] Legal_Areas/Labor_Law/doc-130a33b46e88.xml
+2026-02-14 13:44:45,571 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-b0e97906da36.xml
+2026-02-14 13:44:46,365 - INFO - ✓ Saved to DB: doc-b0e97906da36.xml
+2026-02-14 13:44:46,365 - INFO -   ✓ [15] Legal_Areas/Labor_Law/doc-b0e97906da36.xml
+2026-02-14 13:44:51,309 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\trstr-thrd-2025-179533.xml
+2026-02-14 13:44:51,432 - INFO - ⊘ Already in DB: trstr-thrd-2025-179533.xml
+2026-02-14 13:44:56,576 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-50318811f99b.xml
+2026-02-14 13:44:56,819 - INFO - ✓ Saved to DB: doc-50318811f99b.xml
+2026-02-14 13:44:56,820 - INFO -   ✓ [16] Legal_Areas/Labor_Law/doc-50318811f99b.xml
+2026-02-14 13:44:58,884 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-312-u.xml
+2026-02-14 13:44:58,984 - INFO - ⊘ Already in DB: hrstr-hr-2026-312-u.xml
+2026-02-14 13:45:01,154 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\lhsiv-lh-2026-8272.xml
+2026-02-14 13:45:01,256 - INFO - ⊘ Already in DB: lhsiv-lh-2026-8272.xml
+2026-02-14 13:45:03,978 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-feb2d62062af.xml
+2026-02-14 13:45:04,197 - INFO - ✓ Saved to DB: doc-feb2d62062af.xml
+2026-02-14 13:45:04,198 - INFO -   ✓ [17] Legal_Areas/Labor_Law/doc-feb2d62062af.xml
+2026-02-14 13:45:06,255 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-5e0a026a8d07.xml
+2026-02-14 13:45:06,460 - INFO - ✓ Saved to DB: doc-5e0a026a8d07.xml
+2026-02-14 13:45:06,460 - INFO -   ✓ [18] Legal_Areas/Labor_Law/doc-5e0a026a8d07.xml
+2026-02-14 13:45:08,585 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-9ef742440987.xml
+2026-02-14 13:45:08,779 - INFO - ✓ Saved to DB: doc-9ef742440987.xml
+2026-02-14 13:45:08,779 - INFO -   ✓ [19] Legal_Areas/Labor_Law/doc-9ef742440987.xml
+2026-02-14 13:45:10,872 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-618cf87b7aa2.xml
+2026-02-14 13:45:11,075 - INFO - ✓ Saved to DB: doc-618cf87b7aa2.xml
+2026-02-14 13:45:11,076 - INFO -   ✓ [20] Legal_Areas/Labor_Law/doc-618cf87b7aa2.xml
+2026-02-14 13:45:14,083 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-e4500cee49cb.xml
+2026-02-14 13:45:14,318 - INFO - ✓ Saved to DB: doc-e4500cee49cb.xml
+2026-02-14 13:45:14,318 - INFO -   ✓ [21] Legal_Areas/Labor_Law/doc-e4500cee49cb.xml
+2026-02-14 13:45:16,368 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\doc-636cd3045713.xml
+2026-02-14 13:45:16,594 - INFO - ✓ Saved to DB: doc-636cd3045713.xml
+2026-02-14 13:45:16,595 - INFO -   ✓ [22] Legal_Areas/Labor_Law/doc-636cd3045713.xml
+2026-02-14 13:45:21,219 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\trsiv-tosl-2025-3971.xml
+2026-02-14 13:45:21,367 - INFO - ⊘ Already in DB: trsiv-tosl-2025-3971.xml
+2026-02-14 13:45:24,422 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\trstr-thrd-2025-147974.xml
+2026-02-14 13:45:24,533 - INFO - ⊘ Already in DB: trstr-thrd-2025-147974.xml
+2026-02-14 13:45:26,592 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Labor_Law\lgsiv-lg-2026-5180.xml
+2026-02-14 13:45:26,794 - INFO - ✓ Saved to DB: lgsiv-lg-2026-5180.xml
+2026-02-14 13:45:26,795 - INFO -   ✓ [23] Legal_Areas/Labor_Law/lgsiv-lg-2026-5180.xml
+2026-02-14 13:45:29,639 - INFO -   ✅ 20 new docs saved
+
+2026-02-14 13:45:29,639 - INFO - [2/10] Corporate Law
+2026-02-14 13:45:29,639 - INFO -   📁 category    = Legal_Areas
+2026-02-14 13:45:29,639 - INFO -   📂 subcategory = Company_Law  ← from URL slug
+2026-02-14 13:45:29,639 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/selskapsrett
+2026-02-14 13:45:29,641 - INFO - 📖 Registry: https://lovdata.no/pro/#rettsomrade/selskapsrett
+2026-02-14 13:45:35,220 - INFO -   ✅ Found 43 documents
+2026-02-14 13:45:35,221 - INFO -   📄 43 URLs found
+2026-02-14 13:45:38,280 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-296-u.xml
+2026-02-14 13:45:38,399 - INFO - ⊘ Already in DB: hrsiv-hr-2026-296-u.xml
+2026-02-14 13:45:40,013 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\lgsiv-lg-2026-16764.xml
+2026-02-14 13:45:40,145 - INFO - ⊘ Already in DB: lgsiv-lg-2026-16764.xml
+2026-02-14 13:45:41,962 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-372-a.xml
+2026-02-14 13:45:42,075 - INFO - ⊘ Already in DB: hrsiv-hr-2026-372-a.xml
+2026-02-14 13:45:43,707 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrstr-hr-2026-359-u.xml
+2026-02-14 13:45:43,808 - INFO - ⊘ Already in DB: hrstr-hr-2026-359-u.xml
+2026-02-14 13:45:46,932 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\trsiv-tvov-2025-54083.xml
+2026-02-14 13:45:47,030 - INFO - ⊘ Already in DB: trsiv-tvov-2025-54083.xml
+2026-02-14 13:45:48,712 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrstr-hr-2026-373-a.xml
+2026-02-14 13:45:48,818 - INFO - ⊘ Already in DB: hrstr-hr-2026-373-a.xml
+2026-02-14 13:45:51,948 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-334-u.xml
+2026-02-14 13:45:52,060 - INFO - ⊘ Already in DB: hrsiv-hr-2026-334-u.xml
+2026-02-14 13:45:53,690 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\trstr-tosl-2025-46750.xml
+2026-02-14 13:45:53,795 - INFO - ⊘ Already in DB: trstr-tosl-2025-46750.xml
+2026-02-14 13:45:55,403 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-346-u.xml
+2026-02-14 13:45:55,576 - INFO - ⊘ Already in DB: hrsiv-hr-2026-346-u.xml
+2026-02-14 13:45:57,224 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\doc-a9982207148b.xml
+2026-02-14 13:45:57,341 - INFO - ⊘ Already in DB: doc-a9982207148b.xml
+2026-02-14 13:45:59,075 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\doc-b323be65031c.xml
+2026-02-14 13:45:59,224 - INFO - ⊘ Already in DB: doc-b323be65031c.xml
+2026-02-14 13:46:00,925 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\lbsiv-lb-2025-181309.xml
+2026-02-14 13:46:00,925 - INFO - 📦 Uploading batch of 50 files...
+2026-02-14 13:46:01,516 - INFO - ☁️  Uploaded: 01_Laws_and_Regulations/Repealed_Local_LFO/lfo-20250210-0218.xml
+2026-02-14 13:46:01,517 - INFO - 🗑️  Deleted local: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\lfo-20250210-0218.xml
+2026-02-14 13:46:01,775 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Propositions_Prop/prop-prop-3-l-202526.xml
+2026-02-14 13:46:01,777 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\prop-prop-3-l-202526.xml
+2026-02-14 13:46:02,046 - INFO - ☁️  Uploaded: 03_Preparatory_Works/Propositions_Prop/prop-prop-13-s-202526.xml
+2026-02-14 13:46:02,046 - INFO - 🗑️  Deleted local: ./scraped_xml\03_Preparatory_Works\Propositions_Prop\prop-prop-13-s-202526.xml
+2026-02-14 13:46:02,420 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrsiv-hr-2026-296-u.xml
+2026-02-14 13:46:02,421 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-296-u.xml
+2026-02-14 13:46:03,104 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/lgsiv-lg-2026-16764.xml
+2026-02-14 13:46:03,105 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\lgsiv-lg-2026-16764.xml
+2026-02-14 13:46:04,169 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrsiv-hr-2026-372-a.xml
+2026-02-14 13:46:04,169 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-372-a.xml
+2026-02-14 13:46:04,530 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrstr-hr-2026-359-u.xml
+2026-02-14 13:46:04,531 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-359-u.xml
+2026-02-14 13:46:04,746 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/trsiv-tvov-2025-54083.xml
+2026-02-14 13:46:04,759 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\trsiv-tvov-2025-54083.xml
+2026-02-14 13:46:05,575 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrstr-hr-2026-373-a.xml
+2026-02-14 13:46:05,577 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-373-a.xml
+2026-02-14 13:46:05,897 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrsiv-hr-2026-334-u.xml
+2026-02-14 13:46:05,898 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-334-u.xml
+2026-02-14 13:46:06,426 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/trstr-tosl-2025-46750.xml
+2026-02-14 13:46:06,426 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\trstr-tosl-2025-46750.xml
+2026-02-14 13:46:06,906 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrsiv-hr-2026-346-u.xml
+2026-02-14 13:46:06,915 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-346-u.xml
+2026-02-14 13:46:07,170 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-a9982207148b.xml
+2026-02-14 13:46:07,174 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-a9982207148b.xml
+2026-02-14 13:46:07,390 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-b323be65031c.xml
+2026-02-14 13:46:07,390 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-b323be65031c.xml
+2026-02-14 13:46:08,919 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/lbsiv-lb-2025-181309.xml
+2026-02-14 13:46:08,919 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\lbsiv-lb-2025-181309.xml
+2026-02-14 13:46:09,193 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrsiv-hr-2026-339-u.xml
+2026-02-14 13:46:09,194 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrsiv-hr-2026-339-u.xml
+2026-02-14 13:46:10,480 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/trsiv-tosl-2025-180124.xml
+2026-02-14 13:46:10,481 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\trsiv-tosl-2025-180124.xml
+2026-02-14 13:46:10,804 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/lgsiv-lg-2025-49402.xml
+2026-02-14 13:46:10,805 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\lgsiv-lg-2025-49402.xml
+2026-02-14 13:46:11,200 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrstr-hr-2026-344-u.xml
+2026-02-14 13:46:11,200 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-344-u.xml
+2026-02-14 13:46:11,823 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/lgsiv-lg-2026-18220.xml
+2026-02-14 13:46:11,824 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\lgsiv-lg-2026-18220.xml
+2026-02-14 13:46:12,069 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrstr-hr-2026-333-u.xml
+2026-02-14 13:46:12,070 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-333-u.xml
+2026-02-14 13:46:13,636 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/lbsiv-lb-2025-103123.xml
+2026-02-14 13:46:13,636 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\lbsiv-lb-2025-103123.xml
+2026-02-14 13:46:14,007 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/lbstr-lb-2025-101938.xml
+2026-02-14 13:46:14,007 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\lbstr-lb-2025-101938.xml
+2026-02-14 13:46:14,249 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-130a33b46e88.xml
+2026-02-14 13:46:14,253 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-130a33b46e88.xml
+2026-02-14 13:46:14,490 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-b0e97906da36.xml
+2026-02-14 13:46:14,492 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-b0e97906da36.xml
+2026-02-14 13:46:14,938 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/trstr-thrd-2025-179533.xml
+2026-02-14 13:46:14,938 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\trstr-thrd-2025-179533.xml
+2026-02-14 13:46:15,184 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-50318811f99b.xml
+2026-02-14 13:46:15,184 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-50318811f99b.xml
+2026-02-14 13:46:15,516 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/hrstr-hr-2026-312-u.xml
+2026-02-14 13:46:15,519 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\hrstr-hr-2026-312-u.xml
+2026-02-14 13:46:16,366 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/lhsiv-lh-2026-8272.xml
+2026-02-14 13:46:16,366 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\lhsiv-lh-2026-8272.xml
+2026-02-14 13:46:16,565 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-feb2d62062af.xml
+2026-02-14 13:46:16,566 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-feb2d62062af.xml
+2026-02-14 13:46:16,838 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-5e0a026a8d07.xml
+2026-02-14 13:46:16,847 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-5e0a026a8d07.xml
+2026-02-14 13:46:17,117 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-9ef742440987.xml
+2026-02-14 13:46:17,117 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-9ef742440987.xml
+2026-02-14 13:46:17,471 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-618cf87b7aa2.xml
+2026-02-14 13:46:17,471 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-618cf87b7aa2.xml
+2026-02-14 13:46:18,201 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-e4500cee49cb.xml
+2026-02-14 13:46:18,201 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-e4500cee49cb.xml
+2026-02-14 13:46:18,391 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/doc-636cd3045713.xml
+2026-02-14 13:46:18,392 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\doc-636cd3045713.xml
+2026-02-14 13:46:18,629 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/trsiv-tosl-2025-3971.xml
+2026-02-14 13:46:18,630 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\trsiv-tosl-2025-3971.xml
+2026-02-14 13:46:19,682 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/trstr-thrd-2025-147974.xml
+2026-02-14 13:46:19,692 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\trstr-thrd-2025-147974.xml
+2026-02-14 13:46:20,414 - INFO - ☁️  Uploaded: Legal_Areas/Labor_Law/lgsiv-lg-2026-5180.xml
+2026-02-14 13:46:20,414 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Labor_Law\lgsiv-lg-2026-5180.xml
+2026-02-14 13:46:20,830 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/hrsiv-hr-2026-296-u.xml
+2026-02-14 13:46:20,832 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-296-u.xml
+2026-02-14 13:46:21,362 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/lgsiv-lg-2026-16764.xml
+2026-02-14 13:46:21,363 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\lgsiv-lg-2026-16764.xml
+2026-02-14 13:46:22,759 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/hrsiv-hr-2026-372-a.xml
+2026-02-14 13:46:22,760 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-372-a.xml
+2026-02-14 13:46:24,776 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/hrstr-hr-2026-359-u.xml
+2026-02-14 13:46:24,777 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\hrstr-hr-2026-359-u.xml
+2026-02-14 13:46:24,994 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/trsiv-tvov-2025-54083.xml
+2026-02-14 13:46:24,995 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\trsiv-tvov-2025-54083.xml
+2026-02-14 13:46:25,789 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/hrstr-hr-2026-373-a.xml
+2026-02-14 13:46:25,790 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\hrstr-hr-2026-373-a.xml
+2026-02-14 13:46:26,047 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/hrsiv-hr-2026-334-u.xml
+2026-02-14 13:46:26,049 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-334-u.xml
+2026-02-14 13:46:26,570 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/trstr-tosl-2025-46750.xml
+2026-02-14 13:46:26,571 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\trstr-tosl-2025-46750.xml
+2026-02-14 13:46:26,889 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/hrsiv-hr-2026-346-u.xml
+2026-02-14 13:46:26,890 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-346-u.xml
+2026-02-14 13:46:27,148 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/doc-a9982207148b.xml
+2026-02-14 13:46:27,149 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\doc-a9982207148b.xml
+2026-02-14 13:46:27,376 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/doc-b323be65031c.xml
+2026-02-14 13:46:27,377 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\doc-b323be65031c.xml
+2026-02-14 13:46:28,267 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/lbsiv-lb-2025-181309.xml
+2026-02-14 13:46:28,268 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\lbsiv-lb-2025-181309.xml
+2026-02-14 13:46:28,268 - INFO - ✓ Batch uploaded: 50 files (Total: 50)
+2026-02-14 13:46:28,564 - INFO - ⊘ Already in DB: lbsiv-lb-2025-181309.xml
+2026-02-14 13:46:31,669 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-339-u.xml
+2026-02-14 13:46:31,766 - INFO - ⊘ Already in DB: hrsiv-hr-2026-339-u.xml
+2026-02-14 13:46:39,507 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\trsiv-tosl-2025-180124.xml
+2026-02-14 13:46:39,607 - INFO - ⊘ Already in DB: trsiv-tosl-2025-180124.xml
+2026-02-14 13:46:41,251 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\lgsiv-lg-2025-49402.xml
+2026-02-14 13:46:41,346 - INFO - ⊘ Already in DB: lgsiv-lg-2025-49402.xml
+2026-02-14 13:46:42,931 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrstr-hr-2026-344-u.xml
+2026-02-14 13:46:43,022 - INFO - ⊘ Already in DB: hrstr-hr-2026-344-u.xml
+2026-02-14 13:46:45,114 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\lgsiv-lg-2026-18220.xml
+2026-02-14 13:46:45,248 - INFO - ⊘ Already in DB: lgsiv-lg-2026-18220.xml
+2026-02-14 13:46:47,592 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\hrstr-hr-2026-333-u.xml
+2026-02-14 13:46:47,698 - INFO - ⊘ Already in DB: hrstr-hr-2026-333-u.xml
+2026-02-14 13:46:49,374 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\lbsiv-lb-2025-103123.xml
+2026-02-14 13:46:49,460 - INFO - ⊘ Already in DB: lbsiv-lb-2025-103123.xml
+2026-02-14 13:46:51,125 - INFO - ✓ XML saved: ./scraped_xml\Legal_Areas\Company_Law\lbstr-lb-2025-101938.xml
+2026-02-14 13:46:51,206 - INFO - ⊘ Already in DB: lbstr-lb-2025-101938.xml
+2026-02-14 13:46:52,830 - INFO - 
+📦 Flushing uploads...
+2026-02-14 13:46:52,830 - INFO - 📦 Flushing remaining 8 files...
+2026-02-14 13:46:52,830 - INFO - 📦 Uploading batch of 8 files...
+2026-02-14 13:46:53,187 - INFO - ☁️  Uploaded: Legal_Areas/Company_Law/hrsiv-hr-2026-339-u.xml
+2026-02-14 13:46:53,188 - INFO - 🗑️  Deleted local: ./scraped_xml\Legal_Areas\Company_Law\hrsiv-hr-2026-339-u.xml

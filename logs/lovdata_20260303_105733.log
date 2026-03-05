@@ -1,0 +1,58 @@
+2026-03-03 10:57:41,244 - INFO - ✓ Storage handler initialized (bucket: legal_area)
+2026-03-03 10:57:41,244 - INFO - 🔐 Opening Lovdata login page...
+2026-03-03 10:57:47,848 - INFO - ✅ Login successful
+2026-03-03 10:57:47,849 - INFO - ======================================================================
+2026-03-03 10:57:47,849 - INFO - MODE: legal_areas_only
+2026-03-03 10:57:47,850 - INFO - ======================================================================
+2026-03-03 10:57:47,850 - INFO - 
+======================================================================
+2026-03-03 10:57:47,850 - INFO - ⚖️  SCRAPING LEGAL AREAS (reliable traversal: root → branch → leaf)
+2026-03-03 10:57:47,852 - INFO - ======================================================================
+2026-03-03 10:57:59,417 - INFO - 📂 Navigating to Rettsområder section...
+2026-03-03 10:58:05,590 - INFO -    ✅ Clicked: Rettsområder
+2026-03-03 10:58:20,825 - INFO -    Found 35 total tree nodes
+2026-03-03 10:58:20,940 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 10:58:21,000 - INFO -    ✅ Found: Arbeidsrett
+2026-03-03 10:58:21,052 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-03-03 10:58:21,103 - INFO -    ✅ Found: Energirett
+2026-03-03 10:58:21,155 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-03-03 10:58:21,198 - INFO -    ✅ Found: EU/EØS-rett
+2026-03-03 10:58:21,242 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-03-03 10:58:21,285 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-03-03 10:58:21,319 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-03-03 10:58:21,354 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-03-03 10:58:21,392 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-03-03 10:58:21,429 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-03-03 10:58:21,460 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-03-03 10:58:21,489 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-03-03 10:58:21,519 - INFO -    ✅ Found: IKT- og medierett
+2026-03-03 10:58:21,554 - INFO -    ✅ Found: Immaterialrett
+2026-03-03 10:58:21,586 - INFO -    ✅ Found: Internasjonal rett
+2026-03-03 10:58:21,626 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-03-03 10:58:21,665 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-03-03 10:58:21,707 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-03-03 10:58:21,748 - INFO -    ✅ Found: Menneskerettigheter
+2026-03-03 10:58:21,791 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-03-03 10:58:21,836 - INFO -    ✅ Found: Næringsrett
+2026-03-03 10:58:21,888 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-03-03 10:58:21,940 - INFO -    ✅ Found: Samerett
+2026-03-03 10:58:21,987 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-03-03 10:58:22,030 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-03-03 10:58:22,073 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-03-03 10:58:22,107 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-03-03 10:58:22,152 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-03-03 10:58:22,205 - INFO -    ✅ Found: Strafferett
+2026-03-03 10:58:22,274 - INFO -    ✅ Found: Svalbard og biland
+2026-03-03 10:58:22,325 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-03-03 10:58:22,376 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-03-03 10:58:22,425 - INFO -    ✅ Found: Utlendingsrett
+2026-03-03 10:58:22,425 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-03-03 10:58:22,426 - INFO - 📊 Total ROOT areas discovered: 35
+2026-03-03 10:58:22,426 - INFO - 
+======================================================================
+2026-03-03 10:58:22,426 - INFO - [1/35] ROOT: Anskaffelser_Avtaler_Bygg_Og_Entrepriser
+2026-03-03 10:58:22,427 - INFO - ======================================================================
+2026-03-03 10:58:23,759 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Anskaffelser_Avtaler_Bygg_Og_Entrepriser&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-03 10:58:23,764 - WARNING -    ⚠️ Could not check category status: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}

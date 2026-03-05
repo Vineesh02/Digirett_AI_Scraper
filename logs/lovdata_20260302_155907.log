@@ -1,0 +1,322 @@
+2026-03-02 15:59:26,627 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-03-02 15:59:26,627 - INFO - 🔐 Opening Lovdata login page...
+2026-03-02 15:59:35,767 - INFO - ✅ Login successful
+2026-03-02 15:59:35,767 - INFO - ======================================================================
+2026-03-02 15:59:35,767 - INFO - MODE: legal_areas_only
+2026-03-02 15:59:35,767 - INFO - ======================================================================
+2026-03-02 15:59:35,767 - INFO - 
+======================================================================
+2026-03-02 15:59:35,767 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-03-02 15:59:35,767 - INFO -    Discovering ALL categories from Lovdata tree (3-level)
+2026-03-02 15:59:35,775 - INFO - ======================================================================
+2026-03-02 15:59:35,775 - INFO - 📂 Navigating to Rettsområder section...
+2026-03-02 15:59:42,371 - INFO -    ✅ Clicked: Rettsområder
+2026-03-02 15:59:57,506 - INFO -    Found 35 total tree nodes
+2026-03-02 15:59:57,606 - INFO -    ✅ Found: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-02 15:59:57,664 - INFO -    ✅ Found: Arbeidsrett
+2026-03-02 15:59:57,722 - INFO -    ✅ Found: Bank, finans og regnskapsrett
+2026-03-02 15:59:57,789 - INFO -    ✅ Found: Energirett
+2026-03-02 15:59:57,871 - INFO -    ✅ Found: Erstatnings- og forsikringsrett
+2026-03-02 15:59:57,974 - INFO -    ✅ Found: EU/EØS-rett
+2026-03-02 15:59:58,070 - INFO -    ✅ Found: Familie-, person- og barnerett
+2026-03-02 15:59:58,146 - INFO -    ✅ Found: Fast eiendoms rettsforhold
+2026-03-02 15:59:58,227 - INFO -    ✅ Found: Fiskeri- og fangstrett og havbruk
+2026-03-02 15:59:58,311 - INFO -    ✅ Found: Forbruker-, kjøps- og konkurranserett
+2026-03-02 15:59:58,391 - INFO -    ✅ Found: Forvaltnings- og kommunalrett
+2026-03-02 15:59:58,479 - INFO -    ✅ Found: Forurensninger, klima og utslipp
+2026-03-02 15:59:58,561 - INFO -    ✅ Found: HMS og beredskaps- og sikkerhetsrett
+2026-03-02 15:59:58,667 - INFO -    ✅ Found: Helse- og omsorgsrett
+2026-03-02 15:59:58,734 - INFO -    ✅ Found: IKT- og medierett
+2026-03-02 15:59:58,772 - INFO -    ✅ Found: Immaterialrett
+2026-03-02 15:59:58,833 - INFO -    ✅ Found: Internasjonal rett
+2026-03-02 15:59:58,898 - INFO -    ✅ Found: Konkurs, gjeld og pant
+2026-03-02 15:59:58,964 - INFO -    ✅ Found: Kultur, idrett og underholdning
+2026-03-02 15:59:59,046 - INFO -    ✅ Found: Landbruk, jakt og skogbruk
+2026-03-02 15:59:59,122 - INFO -    ✅ Found: Menneskerettigheter
+2026-03-02 15:59:59,223 - INFO -    ✅ Found: Miljøvern, natur og friluftsliv
+2026-03-02 15:59:59,297 - INFO -    ✅ Found: Næringsrett
+2026-03-02 15:59:59,378 - INFO -    ✅ Found: Pensjons- og trygderett
+2026-03-02 15:59:59,445 - INFO -    ✅ Found: Samerett
+2026-03-02 15:59:59,528 - INFO -    ✅ Found: Selskaper, fond og foreninger
+2026-03-02 15:59:59,606 - INFO -    ✅ Found: Skatte- og avgiftsrett
+2026-03-02 15:59:59,663 - INFO -    ✅ Found: Skoler, universiteter og forskning
+2026-03-02 15:59:59,712 - INFO -    ✅ Found: Stats-, statsforfatnings- og statsborgerrett
+2026-03-02 15:59:59,799 - INFO -    ✅ Found: Sivil- og straffeprosess
+2026-03-02 15:59:59,879 - INFO -    ✅ Found: Strafferett
+2026-03-02 15:59:59,962 - INFO -    ✅ Found: Svalbard og biland
+2026-03-02 16:00:00,057 - INFO -    ✅ Found: Transport og kommunikasjoner
+2026-03-02 16:00:00,107 - INFO -    ✅ Found: Tvangsfullbyrdelse
+2026-03-02 16:00:00,159 - INFO -    ✅ Found: Utlendingsrett
+2026-03-02 16:00:00,159 - INFO - 
+   📋 Total discovered: 35 legal areas
+
+2026-03-02 16:00:00,160 - INFO - 
+📊 Total legal areas discovered: 35
+
+2026-03-02 16:00:00,160 - INFO - 
+======================================================================
+2026-03-02 16:00:00,162 - INFO - [1/35] ROOT: Anskaffelser_Avtaler_Bygg_Og_Entrepriser
+2026-03-02 16:00:00,162 - INFO - ======================================================================
+2026-03-02 16:00:00,162 - INFO -    Norwegian: Anskaffelser, avtaler, bygg og entrepriser  |  Slug: anskaffelser_avtaler_bygg_og_entrepriser
+2026-03-02 16:00:01,172 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=id&category=eq.Anskaffelser_Avtaler_Bygg_Og_Entrepriser&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:00:01,177 - WARNING -    ⚠️ Could not check category status: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:00:06,728 - INFO -    📋 5 branch(es) found under root
+2026-03-02 16:00:06,737 - INFO - 
+   [1/5] BRANCH: Anskaffelser
+2026-03-02 16:00:12,021 - INFO -    🖱️ Clicking 'Show all': Vis alle 16 forskriftene
+2026-03-02 16:00:15,059 - INFO -    📜 Scrolling to load all documents...
+2026-03-02 16:00:15,106 - INFO -    📄 Round 1: 16 docs
+2026-03-02 16:00:17,659 - INFO -    📄 Round 2: 16 docs
+2026-03-02 16:00:20,200 - INFO -    📄 Round 3: 16 docs
+2026-03-02 16:00:22,762 - INFO -    📄 Round 4: 16 docs
+2026-03-02 16:00:25,305 - INFO -    📄 Round 5: 16 docs
+2026-03-02 16:00:30,384 - INFO -    📄 Round 6: 16 docs
+2026-03-02 16:00:30,384 - INFO -    ✅ Loaded 16 documents total
+2026-03-02 16:00:30,465 - INFO -    📜 Scrolling to load all documents...
+2026-03-02 16:00:30,472 - INFO -    📄 Round 1: 16 docs
+2026-03-02 16:00:33,025 - INFO -    📄 Round 2: 16 docs
+2026-03-02 16:00:35,574 - INFO -    📄 Round 3: 16 docs
+2026-03-02 16:00:38,124 - INFO -    📄 Round 4: 16 docs
+2026-03-02 16:00:40,674 - INFO -    📄 Round 5: 16 docs
+2026-03-02 16:00:45,758 - INFO -    📄 Round 6: 16 docs
+2026-03-02 16:00:45,758 - INFO -    ✅ Loaded 16 documents total
+2026-03-02 16:00:46,084 - INFO -    📄 Page 1: 16 total URLs
+2026-03-02 16:00:46,219 - INFO -       🔗 16 document URLs (no leaves)
+2026-03-02 16:00:46,219 - INFO - 🚀 Processing 16 documents
+2026-03-02 16:00:46,219 - INFO - 
+   [1/16] Processing document...
+2026-03-02 16:00:46,224 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2002-11-15-1288
+2026-03-02 16:00:46,224 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2002-11-15-1288
+2026-03-02 16:00:52,221 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:00:54,376 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:00:56,669 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:00:57,219 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2002-11-15-1288.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:00:57,222 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:00:57,470 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2002-11-15-1288.xml  (14453 bytes, source=html)
+2026-03-02 16:00:57,685 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.7d5538e7b07d16c8042d434bd2e6a20c&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:00:57,685 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:00:57,991 - INFO - 
+   [2/16] Processing document...
+2026-03-02 16:00:57,991 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-974
+2026-03-02 16:00:57,991 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-974
+2026-03-02 16:01:01,097 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:01:03,163 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:01:05,313 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:01:05,655 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-974.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:05,657 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:05,717 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2016-08-12-974.xml  (2764 bytes, source=html)
+2026-03-02 16:01:05,914 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.2816d78c2c6cc7f70fc66e7c2e6201bf&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:05,914 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:06,219 - INFO - 
+   [3/16] Processing document...
+2026-03-02 16:01:06,220 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-975
+2026-03-02 16:01:06,220 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-975
+2026-03-02 16:01:10,460 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:01:12,556 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:01:15,624 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:01:16,462 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-975.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:16,478 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:16,548 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2016-08-12-975.xml  (186910 bytes, source=html)
+2026-03-02 16:01:16,884 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.6695d76cca8ae42cf0eb1788a919d66f&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:16,886 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:17,189 - INFO - 
+   [4/16] Processing document...
+2026-03-02 16:01:17,189 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2008-02-08-112
+2026-03-02 16:01:17,189 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2008-02-08-112
+2026-03-02 16:01:20,354 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:01:22,442 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:01:24,725 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:01:25,582 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2008-02-08-112.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:25,583 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:25,733 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2008-02-08-112.xml  (8037 bytes, source=html)
+2026-03-02 16:01:25,979 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.15e04d8776b34521ff16833bc8a58c57&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:25,979 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:26,290 - INFO - 
+   [5/16] Processing document...
+2026-03-02 16:01:26,291 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2013-10-04-1185
+2026-03-02 16:01:26,291 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2013-10-04-1185
+2026-03-02 16:01:30,236 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:01:32,375 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:01:35,583 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:01:36,431 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2013-10-04-1185.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:36,432 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:36,493 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2013-10-04-1185.xml  (128564 bytes, source=html)
+2026-03-02 16:01:36,833 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.372804f96c08a5d4f3a03449a42f86bf&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:36,833 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:37,144 - INFO - 
+   [6/16] Processing document...
+2026-03-02 16:01:37,144 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2016-12-17-1708
+2026-03-02 16:01:37,145 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2016-12-17-1708
+2026-03-02 16:01:40,265 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:01:42,350 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:01:44,585 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:01:45,083 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2016-12-17-1708.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:45,083 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:45,142 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2016-12-17-1708.xml  (6859 bytes, source=html)
+2026-03-02 16:01:45,435 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.74c9a7bf91635c77cac8e81ea5d54b8f&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:01:45,443 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:01:45,746 - INFO - 
+   [7/16] Processing document...
+2026-03-02 16:01:45,746 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/1992-12-04-910
+2026-03-02 16:01:45,747 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/1992-12-04-910
+2026-03-02 16:01:48,828 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:01:50,932 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:01:53,123 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:01:53,137 - INFO - ⏭️  Skipping (year 1994 out of range 2000–2026)
+2026-03-02 16:01:53,440 - INFO - 
+   [8/16] Processing document...
+2026-03-02 16:01:53,440 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2019-04-01-444
+2026-03-02 16:01:53,441 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2019-04-01-444
+2026-03-02 16:01:56,545 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:01:58,611 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:02:00,733 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:02:01,022 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2019-04-01-444.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:01,026 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:01,064 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2019-04-01-444.xml  (5037 bytes, source=html)
+2026-03-02 16:02:01,317 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.6a6f6eb22296c2af13f1a357d2b8171e&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:01,330 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:01,638 - INFO - 
+   [9/16] Processing document...
+2026-03-02 16:02:01,638 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2022-12-20-2384
+2026-03-02 16:02:01,638 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2022-12-20-2384
+2026-03-02 16:02:04,729 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:02:06,782 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:02:08,944 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:02:09,222 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2022-12-20-2384.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:09,223 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:09,263 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2022-12-20-2384.xml  (6648 bytes, source=html)
+2026-03-02 16:02:09,507 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.245307f0b8149d927d28d4d83b3f9bf6&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:09,507 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:09,810 - INFO - 
+   [10/16] Processing document...
+2026-03-02 16:02:09,810 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-978
+2026-03-02 16:02:09,811 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2016-08-12-978
+2026-03-02 16:02:12,929 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:02:15,087 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:02:17,283 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:02:17,542 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2016-08-12-978.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:17,547 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:17,581 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2016-08-12-978.xml  (2317 bytes, source=html)
+2026-03-02 16:02:17,750 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.5756d2ea692692db347d55b4bc30f5ee&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:17,754 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:18,056 - INFO - 
+   [11/16] Processing document...
+2026-03-02 16:02:18,057 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/DEL/forskrift/2011-02-11-150
+2026-03-02 16:02:18,058 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/DEL/forskrift/2011-02-11-150
+2026-03-02 16:02:21,185 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:02:23,309 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:02:25,462 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:02:25,725 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.DEL_forskrift_2011-02-11-150.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:25,726 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:25,818 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\DEL_forskrift_2011-02-11-150.xml  (2002 bytes, source=html)
+2026-03-02 16:02:26,102 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.563edaf4a1717550d955ab67c41ee8f1&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:26,102 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:26,105 - INFO - 
+⬆️  Uploading batch (10 documents)
+2026-03-02 16:02:27,019 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2002-11-15-1288.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:27,022 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:27,311 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2016-08-12-974.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:27,320 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:27,663 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2016-08-12-975.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:27,663 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:27,940 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2008-02-08-112.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:27,940 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:28,182 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2013-10-04-1185.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:28,182 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:28,361 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2016-12-17-1708.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:28,361 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:28,549 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2019-04-01-444.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:28,564 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:28,752 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2022-12-20-2384.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:28,752 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:28,976 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2016-08-12-978.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:28,976 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:29,157 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/DEL_forskrift_2011-02-11-150.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:02:29,158 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:02:29,211 - INFO - ✅ Batch upload complete
+
+2026-03-02 16:02:29,513 - INFO - 
+   [12/16] Processing document...
+2026-03-02 16:02:29,513 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2024-11-13-3329
+2026-03-02 16:02:29,515 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2024-11-13-3329
+2026-03-02 16:02:32,621 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:02:34,715 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:02:36,908 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:02:37,290 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2024-11-13-3329.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:37,296 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:37,340 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2024-11-13-3329.xml  (4589 bytes, source=html)
+2026-03-02 16:02:37,560 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.ce5b8eb3394ac561ef7aa131bb3768ca&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:37,560 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:37,871 - INFO - 
+   [13/16] Processing document...
+2026-03-02 16:02:37,872 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2016-12-22-1842
+2026-03-02 16:02:37,872 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2016-12-22-1842
+2026-03-02 16:02:40,991 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:02:43,097 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:02:45,292 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:02:45,743 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2016-12-22-1842.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:45,759 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:45,804 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2016-12-22-1842.xml  (3731 bytes, source=html)
+2026-03-02 16:02:46,063 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.90ebfc95f24b8a016be88c6a611590c0&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:46,065 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:46,367 - INFO - 
+   [14/16] Processing document...
+2026-03-02 16:02:46,367 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2025-06-21-1437
+2026-03-02 16:02:46,368 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2025-06-21-1437
+2026-03-02 16:02:49,446 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:02:51,529 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:02:53,688 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:02:54,122 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2025-06-21-1437.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:54,122 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:54,202 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2025-06-21-1437.xml  (2534 bytes, source=html)
+2026-03-02 16:02:54,396 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.c90fe171bb2741473dc711416906e86b&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:02:54,397 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:02:54,699 - INFO - 
+   [15/16] Processing document...
+2026-03-02 16:02:54,699 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/DEL/forskrift/2018-10-26-1616
+2026-03-02 16:02:54,699 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/DEL/forskrift/2018-10-26-1616
+2026-03-02 16:02:57,830 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:02:59,916 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:03:02,083 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:03:02,364 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.DEL_forskrift_2018-10-26-1616.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:03:02,364 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:03:02,414 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\DEL_forskrift_2018-10-26-1616.xml  (2115 bytes, source=html)
+2026-03-02 16:03:02,648 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.e40d7a9f49908a4bc0aec55d68ee37ae&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:03:02,648 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:03:02,958 - INFO - 
+   [16/16] Processing document...
+2026-03-02 16:03:02,958 - INFO - 📄 Scraping: https://lovdata.no/pro/#document/SF/forskrift/2012-06-08-499
+2026-03-02 16:03:02,958 - INFO -    🖨️  Print→PDF pipeline for: https://lovdata.no/pro/#document/SF/forskrift/2012-06-08-499
+2026-03-02 16:03:06,060 - INFO -    ✅ Switched into documentFrame iframe
+2026-03-02 16:03:08,155 - WARNING -    ⚠️  Print button not found — falling back to page source
+2026-03-02 16:03:10,346 - INFO -    ℹ️  Using HTML fallback content
+2026-03-02 16:03:10,661 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_name&file_name=eq.SF_forskrift_2012-06-08-499.xml&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:03:10,661 - ERROR - Metadata exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:03:10,706 - INFO - ✓ XML saved: ./scraped_xml\Anskaffelser_Avtaler_Bygg_Og_Entrepriser\Anskaffelser\SF_forskrift_2012-06-08-499.xml  (2890 bytes, source=html)
+2026-03-02 16:03:10,955 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/lovdata_metadata?select=file_hash&file_hash=eq.4dee76a6d4db4dd45b36472579cf6b7b&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-02 16:03:10,957 - ERROR - Hash exists check failed: {'code': 'PGRST205', 'details': None, 'hint': "Perhaps you meant the table 'public.legal_area_metadata'", 'message': "Could not find the table 'public.lovdata_metadata' in the schema cache"}
+2026-03-02 16:03:11,258 - INFO - 
+   [2/5] BRANCH: Avtaler
+2026-03-02 16:03:11,294 - INFO - 
+⬆️  Uploading batch (5 documents)
+2026-03-02 16:03:12,074 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2024-11-13-3329.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:03:12,077 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:03:12,347 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2016-12-22-1842.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:03:12,347 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:03:12,609 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2025-06-21-1437.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:03:12,612 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:03:12,888 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/DEL_forskrift_2018-10-26-1616.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:03:12,888 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:03:13,227 - INFO - HTTP Request: POST https://exeklzgcqykkutjfikei.supabase.co/storage/v1/object/lovdata-docs/Anskaffelser_Avtaler_Bygg_Og_Entrepriser/Anskaffelser/SF_forskrift_2012-06-08-499.xml "HTTP/2 400 Bad Request"
+2026-03-02 16:03:13,230 - ERROR - ✗ Bucket upload failed: {'statusCode': 400, 'error': 'Bucket not found', 'message': 'Bucket not found'}
+2026-03-02 16:03:13,248 - INFO - ✅ Batch upload complete
+
+2026-03-02 16:03:16,300 - INFO - 
+======================================================================
+2026-03-02 16:03:16,300 - INFO - SCRAPING SUMMARY
+2026-03-02 16:03:16,300 - INFO - ======================================================================
+2026-03-02 16:03:16,300 - INFO - ✅ Success: 15
+2026-03-02 16:03:16,300 - INFO - ❌ Failed: 0
+2026-03-02 16:03:16,303 - INFO - ⏭️  Skipped: 1
+2026-03-02 16:03:16,303 - INFO - ======================================================================
+

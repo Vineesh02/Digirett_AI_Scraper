@@ -1,0 +1,256 @@
+2026-02-13 17:21:22,331 - INFO - ================================================================================
+2026-02-13 17:21:22,331 - INFO - LOVDATA PRO SCRAPER - COMPLETE VERSION WITH BATCH UPLOAD
+2026-02-13 17:21:22,333 - INFO - ================================================================================
+2026-02-13 17:21:22,333 - INFO - Batch upload size: 30 files
+2026-02-13 17:21:22,333 - INFO - Year range: 2000 - 2026
+2026-02-13 17:21:22,333 - INFO - ================================================================================
+2026-02-13 17:21:23,039 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/rest/v1/lovdata_metadata?select=id&limit=1 "HTTP/1.1 200 OK"
+2026-02-13 17:21:23,051 - INFO - ✓ Database connected
+2026-02-13 17:21:23,052 - INFO - ====== WebDriver manager ======
+2026-02-13 17:21:26,373 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-13 17:21:26,854 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-13 17:21:27,244 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-13 17:21:30,053 - INFO - ✓ Selenium browser started
+2026-02-13 17:21:30,053 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-13 17:21:30,276 - INFO - HTTP Request: GET https://vegzmiigjvetbaqqcukd.supabase.co/storage/v1/bucket "HTTP/2 200 OK"
+2026-02-13 17:21:30,277 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-13 17:21:30,277 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-13 17:21:30,277 - INFO - 🔐 Logging in to Lovdata Pro...
+2026-02-13 17:21:38,272 - INFO -   Login URL   : https://lovdata.no/pro/auth/login
+2026-02-13 17:21:38,287 - INFO -   Login title : Lovdata
+2026-02-13 17:21:38,324 - INFO -   ✓ Found field: j_username
+2026-02-13 17:21:38,519 - INFO -   ✓ Username entered: katrine.lund.digirett@gmail.com
+2026-02-13 17:21:38,604 - INFO -   ✓ Password entered
+2026-02-13 17:21:41,614 - INFO -   ✓ Submit clicked – waiting for redirect...
+2026-02-13 17:21:47,638 - INFO -   URL after submit : https://lovdata.no/pro/#myPage
+2026-02-13 17:21:47,653 - INFO -   Title after submit: Min side - Lovdata Pro
+2026-02-13 17:21:47,654 - INFO - ✓ Login successful – navigating to Pro #myPage...
+2026-02-13 17:21:51,689 - INFO -   Final URL: https://lovdata.no/pro/#myPage
+2026-02-13 17:21:51,690 - INFO - ✓ READY: Lovdata Pro #myPage loaded
+2026-02-13 17:21:51,690 - INFO - 📋 MODE SELECTED: all
+2026-02-13 17:21:51,691 - INFO - ================================================================================
+2026-02-13 17:21:51,691 - INFO - SCRAPING SOURCES OF LAW
+2026-02-13 17:21:51,692 - INFO - ================================================================================
+2026-02-13 17:21:51,692 - INFO - 
+📁 Category: Laws and Regulations
+2026-02-13 17:21:51,692 - INFO -   📂 Subcategory: Active Laws (NL)
+2026-02-13 17:21:51,694 - INFO - 📄 Opening registry index: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-13 17:21:51,716 - INFO -   Waiting for SPA to render sidebar...
+2026-02-13 17:21:57,738 - INFO -   Sidebar years (0): []
+2026-02-13 17:21:57,740 - INFO -   Sidebar years not found – trying all 213 years as fallback
+2026-02-13 17:22:00,772 - INFO -   📅 2026: 4 new links (total: 4)
+2026-02-13 17:22:03,878 - INFO -   📅 2025: 48 new links (total: 52)
+2026-02-13 17:22:03,878 - INFO - ✓ Total unique URLs collected: 40
+2026-02-13 17:22:03,878 - INFO -   ✓ Found 40 documents
+2026-02-13 17:22:03,878 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:03,881 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:04,190 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:04,191 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:04,505 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:04,509 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:04,810 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:04,813 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:05,123 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:05,129 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:05,433 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:05,433 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:05,740 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:05,742 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:06,055 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:06,057 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:06,391 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:06,391 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:06,705 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:06,709 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:07,020 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:07,022 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:07,327 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:07,329 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:07,640 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:07,643 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:07,949 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:07,949 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:08,256 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:08,263 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:08,574 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:08,576 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:08,883 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:08,884 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:09,190 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:09,196 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:09,500 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:09,502 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:09,818 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:09,821 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:10,132 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:10,134 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:10,448 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:10,450 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:10,756 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:10,758 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:11,068 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:11,068 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:11,374 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:11,378 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:11,688 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:11,690 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:11,997 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:11,998 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:12,299 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:12,302 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:12,610 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:12,613 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:12,926 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:12,926 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:13,234 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:13,234 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:13,554 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:13,557 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:13,866 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:13,867 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:14,176 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:14,180 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:14,490 - ERROR - ✗ Error processing document: 'LovdataProScraper' object has no attribute 'scrape_document'
+2026-02-13 17:22:14,490 - ERROR - Traceback (most recent call last):
+  File "D:\axtrlabs\lovadata_pro\main.py", line 1139, in _process_document
+    document = self.scraper.scrape_document(url)
+AttributeError: 'LovdataProScraper' object has no attribute 'scrape_document'
+
+2026-02-13 17:22:14,707 - INFO - 📦 Flushing remaining files in batch...
+2026-02-13 17:22:14,710 - INFO - ✓ Uploaded 0 remaining files

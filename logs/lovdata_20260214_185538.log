@@ -1,0 +1,426 @@
+2026-02-14 18:55:43,023 - INFO - ✓ Database connected
+2026-02-14 18:55:43,029 - INFO - ====== WebDriver manager ======
+2026-02-14 18:55:46,669 - INFO - [driver] Started with: C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 18:55:46,669 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 18:55:47,409 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 18:55:47,409 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 18:55:47,409 - INFO - Logging in…
+2026-02-14 18:56:08,752 - INFO - Login successful
+2026-02-14 18:56:08,754 - INFO - 
+======================================================================
+2026-02-14 18:56:08,755 - INFO - MODE: LEGAL_AREAS_ONLY
+2026-02-14 18:56:08,755 - INFO - ======================================================================
+
+2026-02-14 18:56:08,755 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 18:56:08,755 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 18:56:08,755 - INFO - Ready to scrape 39 legal areas (English names)
+2026-02-14 18:56:08,755 - INFO -   1. Labor_Law (slug: arbeidsrett)
+2026-02-14 18:56:08,755 - INFO -   2. Work_Environment (slug: arbeidsmiljo)
+2026-02-14 18:56:08,755 - INFO -   3. Social_Security_Law (slug: trygderett)
+2026-02-14 18:56:08,758 - INFO -   4. Tort_Law (slug: erstatningsrett)
+2026-02-14 18:56:08,758 - INFO -   5. Family_Law (slug: familierett)
+2026-02-14 18:56:08,758 - INFO -   … and 34 more
+2026-02-14 18:56:08,759 - INFO - 
+📊 Total legal areas discovered: 39
+2026-02-14 18:56:08,759 - INFO -   Max docs per area: 100
+
+2026-02-14 18:56:08,759 - INFO - 
+======================================================================
+2026-02-14 18:56:08,760 - INFO - [1/39] Labor_Law / Labor_Law
+2026-02-14 18:56:08,760 - INFO - ======================================================================
+2026-02-14 18:56:08,760 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 18:56:08,761 - INFO -   Area: Labor_Law (slug: arbeidsrett)
+2026-02-14 19:00:59,921 - INFO -   📁 Category: Legal_Areas/Labor_Law/Labor_Law
+2026-02-14 19:00:59,922 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:00:59,923 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:00:59,923 - INFO - 
+======================================================================
+2026-02-14 19:00:59,923 - INFO - [2/39] Work_Environment / Work_Environment
+2026-02-14 19:00:59,923 - INFO - ======================================================================
+2026-02-14 19:00:59,924 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 19:00:59,924 - INFO -   Area: Work_Environment (slug: arbeidsmiljo)
+2026-02-14 19:00:59,976 - INFO -   📁 Category: Legal_Areas/Work_Environment/Work_Environment
+2026-02-14 19:00:59,976 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:00:59,977 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:00:59,978 - INFO - 
+======================================================================
+2026-02-14 19:00:59,978 - INFO - [3/39] Social_Security_Law / Social_Security_Law
+2026-02-14 19:00:59,979 - INFO - ======================================================================
+2026-02-14 19:00:59,979 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/trygderett
+2026-02-14 19:00:59,979 - INFO -   Area: Social_Security_Law (slug: trygderett)
+2026-02-14 19:01:00,064 - INFO -   📁 Category: Legal_Areas/Social_Security_Law/Social_Security_Law
+2026-02-14 19:01:00,064 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,064 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,065 - INFO - 
+======================================================================
+2026-02-14 19:01:00,065 - INFO - [4/39] Tort_Law / Tort_Law
+2026-02-14 19:01:00,066 - INFO - ======================================================================
+2026-02-14 19:01:00,066 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/erstatningsrett
+2026-02-14 19:01:00,067 - INFO -   Area: Tort_Law (slug: erstatningsrett)
+2026-02-14 19:01:00,115 - INFO -   📁 Category: Legal_Areas/Tort_Law/Tort_Law
+2026-02-14 19:01:00,115 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,115 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,115 - INFO - 
+======================================================================
+2026-02-14 19:01:00,117 - INFO - [5/39] Family_Law / Family_Law
+2026-02-14 19:01:00,117 - INFO - ======================================================================
+2026-02-14 19:01:00,118 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/familierett
+2026-02-14 19:01:00,118 - INFO -   Area: Family_Law (slug: familierett)
+2026-02-14 19:01:00,163 - INFO -   📁 Category: Legal_Areas/Family_Law/Family_Law
+2026-02-14 19:01:00,164 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,164 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,164 - INFO - 
+======================================================================
+2026-02-14 19:01:00,165 - INFO - [6/39] Inheritance_Law / Inheritance_Law
+2026-02-14 19:01:00,165 - INFO - ======================================================================
+2026-02-14 19:01:00,165 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arverett
+2026-02-14 19:01:00,166 - INFO -   Area: Inheritance_Law (slug: arverett)
+2026-02-14 19:01:00,221 - INFO -   📁 Category: Legal_Areas/Inheritance_Law/Inheritance_Law
+2026-02-14 19:01:00,222 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,222 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,224 - INFO - 
+======================================================================
+2026-02-14 19:01:00,224 - INFO - [7/39] Contract_Law / Contract_Law
+2026-02-14 19:01:00,224 - INFO - ======================================================================
+2026-02-14 19:01:00,225 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/avtalerett
+2026-02-14 19:01:00,225 - INFO -   Area: Contract_Law (slug: avtalerett)
+2026-02-14 19:01:00,271 - INFO -   📁 Category: Legal_Areas/Contract_Law/Contract_Law
+2026-02-14 19:01:00,271 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,272 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,272 - INFO - 
+======================================================================
+2026-02-14 19:01:00,272 - INFO - [8/39] Sales_Law / Sales_Law
+2026-02-14 19:01:00,272 - INFO - ======================================================================
+2026-02-14 19:01:00,272 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/kjopsrett
+2026-02-14 19:01:00,272 - INFO -   Area: Sales_Law (slug: kjopsrett)
+2026-02-14 19:01:00,321 - INFO -   📁 Category: Legal_Areas/Sales_Law/Sales_Law
+2026-02-14 19:01:00,322 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,322 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,323 - INFO - 
+======================================================================
+2026-02-14 19:01:00,323 - INFO - [9/39] Property_Law / Property_Law
+2026-02-14 19:01:00,324 - INFO - ======================================================================
+2026-02-14 19:01:00,324 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/eiendomsrett
+2026-02-14 19:01:00,324 - INFO -   Area: Property_Law (slug: eiendomsrett)
+2026-02-14 19:01:00,482 - INFO -   📁 Category: Legal_Areas/Property_Law/Property_Law
+2026-02-14 19:01:00,484 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,516 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,517 - INFO - 
+======================================================================
+2026-02-14 19:01:00,519 - INFO - [10/39] Planning_and_Building_Law / Planning_and_Building_Law
+2026-02-14 19:01:00,520 - INFO - ======================================================================
+2026-02-14 19:01:00,522 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/plan-og-bygningsrett
+2026-02-14 19:01:00,523 - INFO -   Area: Planning_and_Building_Law (slug: plan-og-bygningsrett)
+2026-02-14 19:01:00,593 - INFO -   📁 Category: Legal_Areas/Planning_and_Building_Law/Planning_and_Building_Law
+2026-02-14 19:01:00,594 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,594 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,595 - INFO - 
+======================================================================
+2026-02-14 19:01:00,595 - INFO - [11/39] Construction_Law / Construction_Law
+2026-02-14 19:01:00,595 - INFO - ======================================================================
+2026-02-14 19:01:00,597 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/entreprise
+2026-02-14 19:01:00,597 - INFO -   Area: Construction_Law (slug: entreprise)
+2026-02-14 19:01:00,660 - INFO -   📁 Category: Legal_Areas/Construction_Law/Construction_Law
+2026-02-14 19:01:00,661 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,662 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,662 - INFO - 
+======================================================================
+2026-02-14 19:01:00,663 - INFO - [12/39] Administrative_Law / Administrative_Law
+2026-02-14 19:01:00,663 - INFO - ======================================================================
+2026-02-14 19:01:00,663 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/forvaltningsrett
+2026-02-14 19:01:00,663 - INFO -   Area: Administrative_Law (slug: forvaltningsrett)
+2026-02-14 19:01:00,741 - INFO -   📁 Category: Legal_Areas/Administrative_Law/Administrative_Law
+2026-02-14 19:01:00,743 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,744 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,745 - INFO - 
+======================================================================
+2026-02-14 19:01:00,745 - INFO - [13/39] Public_Procurement / Public_Procurement
+2026-02-14 19:01:00,746 - INFO - ======================================================================
+2026-02-14 19:01:00,746 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/offentlige-anskaffelser
+2026-02-14 19:01:00,747 - INFO -   Area: Public_Procurement (slug: offentlige-anskaffelser)
+2026-02-14 19:01:00,810 - INFO -   📁 Category: Legal_Areas/Public_Procurement/Public_Procurement
+2026-02-14 19:01:00,810 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,811 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,811 - INFO - 
+======================================================================
+2026-02-14 19:01:00,812 - INFO - [14/39] Competition_Law / Competition_Law
+2026-02-14 19:01:00,812 - INFO - ======================================================================
+2026-02-14 19:01:00,812 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/konkurranserett
+2026-02-14 19:01:00,813 - INFO -   Area: Competition_Law (slug: konkurranserett)
+2026-02-14 19:01:00,867 - INFO -   📁 Category: Legal_Areas/Competition_Law/Competition_Law
+2026-02-14 19:01:00,867 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,867 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,868 - INFO - 
+======================================================================
+2026-02-14 19:01:00,868 - INFO - [15/39] Company_Law / Company_Law
+2026-02-14 19:01:00,868 - INFO - ======================================================================
+2026-02-14 19:01:00,868 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/selskapsrett
+2026-02-14 19:01:00,869 - INFO -   Area: Company_Law (slug: selskapsrett)
+2026-02-14 19:01:00,926 - INFO -   📁 Category: Legal_Areas/Company_Law/Company_Law
+2026-02-14 19:01:00,926 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,926 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,927 - INFO - 
+======================================================================
+2026-02-14 19:01:00,927 - INFO - [16/39] Financial_Regulation / Financial_Regulation
+2026-02-14 19:01:00,927 - INFO - ======================================================================
+2026-02-14 19:01:00,927 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/finansmarkedsrett
+2026-02-14 19:01:00,927 - INFO -   Area: Financial_Regulation (slug: finansmarkedsrett)
+2026-02-14 19:01:00,985 - INFO -   📁 Category: Legal_Areas/Financial_Regulation/Financial_Regulation
+2026-02-14 19:01:00,986 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:00,986 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:00,986 - INFO - 
+======================================================================
+2026-02-14 19:01:00,987 - INFO - [17/39] Banking_and_Finance_Law / Banking_and_Finance_Law
+2026-02-14 19:01:00,987 - INFO - ======================================================================
+2026-02-14 19:01:00,987 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/bank-finans-og-regnskapsrett
+2026-02-14 19:01:00,988 - INFO -   Area: Banking_and_Finance_Law (slug: bank-finans-og-regnskapsrett)
+2026-02-14 19:01:01,041 - INFO -   📁 Category: Legal_Areas/Banking_and_Finance_Law/Banking_and_Finance_Law
+2026-02-14 19:01:01,042 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,042 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,042 - INFO - 
+======================================================================
+2026-02-14 19:01:01,042 - INFO - [18/39] Accounting_Law / Accounting_Law
+2026-02-14 19:01:01,043 - INFO - ======================================================================
+2026-02-14 19:01:01,043 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/regnskapsrett
+2026-02-14 19:01:01,043 - INFO -   Area: Accounting_Law (slug: regnskapsrett)
+2026-02-14 19:01:01,096 - INFO -   📁 Category: Legal_Areas/Accounting_Law/Accounting_Law
+2026-02-14 19:01:01,096 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,096 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,097 - INFO - 
+======================================================================
+2026-02-14 19:01:01,097 - INFO - [19/39] Privacy_and_GDPR / Privacy_and_GDPR
+2026-02-14 19:01:01,097 - INFO - ======================================================================
+2026-02-14 19:01:01,098 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/personvernrett
+2026-02-14 19:01:01,098 - INFO -   Area: Privacy_and_GDPR (slug: personvernrett)
+2026-02-14 19:01:01,151 - INFO -   📁 Category: Legal_Areas/Privacy_and_GDPR/Privacy_and_GDPR
+2026-02-14 19:01:01,152 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,152 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,153 - INFO - 
+======================================================================
+2026-02-14 19:01:01,153 - INFO - [20/39] Intellectual_Property_Law / Intellectual_Property_Law
+2026-02-14 19:01:01,153 - INFO - ======================================================================
+2026-02-14 19:01:01,154 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/immaterialrett
+2026-02-14 19:01:01,154 - INFO -   Area: Intellectual_Property_Law (slug: immaterialrett)
+2026-02-14 19:01:01,203 - INFO -   📁 Category: Legal_Areas/Intellectual_Property_Law/Intellectual_Property_Law
+2026-02-14 19:01:01,203 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,204 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,204 - INFO - 
+======================================================================
+2026-02-14 19:01:01,205 - INFO - [21/39] Criminal_Law / Criminal_Law
+2026-02-14 19:01:01,205 - INFO - ======================================================================
+2026-02-14 19:01:01,205 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/strafferett
+2026-02-14 19:01:01,205 - INFO -   Area: Criminal_Law (slug: strafferett)
+2026-02-14 19:01:01,255 - INFO -   📁 Category: Legal_Areas/Criminal_Law/Criminal_Law
+2026-02-14 19:01:01,256 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,256 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,257 - INFO - 
+======================================================================
+2026-02-14 19:01:01,257 - INFO - [22/39] Criminal_Procedure / Criminal_Procedure
+2026-02-14 19:01:01,257 - INFO - ======================================================================
+2026-02-14 19:01:01,258 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/straffeprosess
+2026-02-14 19:01:01,258 - INFO -   Area: Criminal_Procedure (slug: straffeprosess)
+2026-02-14 19:01:01,308 - INFO -   📁 Category: Legal_Areas/Criminal_Procedure/Criminal_Procedure
+2026-02-14 19:01:01,309 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,309 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,310 - INFO - 
+======================================================================
+2026-02-14 19:01:01,310 - INFO - [23/39] Civil_Procedure / Civil_Procedure
+2026-02-14 19:01:01,310 - INFO - ======================================================================
+2026-02-14 19:01:01,311 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/sivilprosess
+2026-02-14 19:01:01,311 - INFO -   Area: Civil_Procedure (slug: sivilprosess)
+2026-02-14 19:01:01,365 - INFO -   📁 Category: Legal_Areas/Civil_Procedure/Civil_Procedure
+2026-02-14 19:01:01,365 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,366 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,366 - INFO - 
+======================================================================
+2026-02-14 19:01:01,367 - INFO - [24/39] Tax_Law / Tax_Law
+2026-02-14 19:01:01,367 - INFO - ======================================================================
+2026-02-14 19:01:01,367 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/skatterett
+2026-02-14 19:01:01,367 - INFO -   Area: Tax_Law (slug: skatterett)
+2026-02-14 19:01:01,421 - INFO -   📁 Category: Legal_Areas/Tax_Law/Tax_Law
+2026-02-14 19:01:01,421 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,422 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,422 - INFO - 
+======================================================================
+2026-02-14 19:01:01,423 - INFO - [25/39] VAT_Law / VAT_Law
+2026-02-14 19:01:01,423 - INFO - ======================================================================
+2026-02-14 19:01:01,424 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/merverdiavgift
+2026-02-14 19:01:01,424 - INFO -   Area: VAT_Law (slug: merverdiavgift)
+2026-02-14 19:01:01,478 - INFO -   📁 Category: Legal_Areas/VAT_Law/VAT_Law
+2026-02-14 19:01:01,479 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,479 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,479 - INFO - 
+======================================================================
+2026-02-14 19:01:01,480 - INFO - [26/39] Customs_Law / Customs_Law
+2026-02-14 19:01:01,480 - INFO - ======================================================================
+2026-02-14 19:01:01,481 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/tollrett
+2026-02-14 19:01:01,481 - INFO -   Area: Customs_Law (slug: tollrett)
+2026-02-14 19:01:01,532 - INFO -   📁 Category: Legal_Areas/Customs_Law/Customs_Law
+2026-02-14 19:01:01,533 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,533 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,533 - INFO - 
+======================================================================
+2026-02-14 19:01:01,534 - INFO - [27/39] Environmental_Law / Environmental_Law
+2026-02-14 19:01:01,534 - INFO - ======================================================================
+2026-02-14 19:01:01,535 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/miljorett
+2026-02-14 19:01:01,535 - INFO -   Area: Environmental_Law (slug: miljorett)
+2026-02-14 19:01:01,587 - INFO -   📁 Category: Legal_Areas/Environmental_Law/Environmental_Law
+2026-02-14 19:01:01,588 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,589 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,589 - INFO - 
+======================================================================
+2026-02-14 19:01:01,590 - INFO - [28/39] Health_Law / Health_Law
+2026-02-14 19:01:01,590 - INFO - ======================================================================
+2026-02-14 19:01:01,590 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/helserett
+2026-02-14 19:01:01,591 - INFO -   Area: Health_Law (slug: helserett)
+2026-02-14 19:01:01,640 - INFO -   📁 Category: Legal_Areas/Health_Law/Health_Law
+2026-02-14 19:01:01,642 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,642 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,642 - INFO - 
+======================================================================
+2026-02-14 19:01:01,642 - INFO - [29/39] Social_Law / Social_Law
+2026-02-14 19:01:01,642 - INFO - ======================================================================
+2026-02-14 19:01:01,644 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/sosialrett
+2026-02-14 19:01:01,644 - INFO -   Area: Social_Law (slug: sosialrett)
+2026-02-14 19:01:01,695 - INFO -   📁 Category: Legal_Areas/Social_Law/Social_Law
+2026-02-14 19:01:01,696 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,697 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,697 - INFO - 
+======================================================================
+2026-02-14 19:01:01,698 - INFO - [30/39] Immigration_Law / Immigration_Law
+2026-02-14 19:01:01,698 - INFO - ======================================================================
+2026-02-14 19:01:01,698 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/utlendingsrett
+2026-02-14 19:01:01,699 - INFO -   Area: Immigration_Law (slug: utlendingsrett)
+2026-02-14 19:01:01,752 - INFO -   📁 Category: Legal_Areas/Immigration_Law/Immigration_Law
+2026-02-14 19:01:01,752 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,753 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,753 - INFO - 
+======================================================================
+2026-02-14 19:01:01,754 - INFO - [31/39] Municipal_Law / Municipal_Law
+2026-02-14 19:01:01,754 - INFO - ======================================================================
+2026-02-14 19:01:01,755 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/kommunalrett
+2026-02-14 19:01:01,755 - INFO -   Area: Municipal_Law (slug: kommunalrett)
+2026-02-14 19:01:01,813 - INFO -   📁 Category: Legal_Areas/Municipal_Law/Municipal_Law
+2026-02-14 19:01:01,813 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,813 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,813 - INFO - 
+======================================================================
+2026-02-14 19:01:01,815 - INFO - [32/39] Maritime_Law / Maritime_Law
+2026-02-14 19:01:01,815 - INFO - ======================================================================
+2026-02-14 19:01:01,816 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/sjorett
+2026-02-14 19:01:01,816 - INFO -   Area: Maritime_Law (slug: sjorett)
+2026-02-14 19:01:01,872 - INFO -   📁 Category: Legal_Areas/Maritime_Law/Maritime_Law
+2026-02-14 19:01:01,872 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,873 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,873 - INFO - 
+======================================================================
+2026-02-14 19:01:01,874 - INFO - [33/39] Aviation_Law / Aviation_Law
+2026-02-14 19:01:01,874 - INFO - ======================================================================
+2026-02-14 19:01:01,874 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/luftrett
+2026-02-14 19:01:01,875 - INFO -   Area: Aviation_Law (slug: luftrett)
+2026-02-14 19:01:01,927 - INFO -   📁 Category: Legal_Areas/Aviation_Law/Aviation_Law
+2026-02-14 19:01:01,927 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,928 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,928 - INFO - 
+======================================================================
+2026-02-14 19:01:01,928 - INFO - [34/39] Energy_Law / Energy_Law
+2026-02-14 19:01:01,929 - INFO - ======================================================================
+2026-02-14 19:01:01,929 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/energirett
+2026-02-14 19:01:01,929 - INFO -   Area: Energy_Law (slug: energirett)
+2026-02-14 19:01:01,978 - INFO -   📁 Category: Legal_Areas/Energy_Law/Energy_Law
+2026-02-14 19:01:01,979 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:01,979 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:01,979 - INFO - 
+======================================================================
+2026-02-14 19:01:01,980 - INFO - [35/39] Telecom_Law / Telecom_Law
+2026-02-14 19:01:01,980 - INFO - ======================================================================
+2026-02-14 19:01:01,981 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/telekommunikasjonsrett
+2026-02-14 19:01:01,981 - INFO -   Area: Telecom_Law (slug: telekommunikasjonsrett)
+2026-02-14 19:01:02,029 - INFO -   📁 Category: Legal_Areas/Telecom_Law/Telecom_Law
+2026-02-14 19:01:02,030 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:02,030 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:02,030 - INFO - 
+======================================================================
+2026-02-14 19:01:02,030 - INFO - [36/39] EU_EEA_Law / EU_EEA_Law
+2026-02-14 19:01:02,032 - INFO - ======================================================================
+2026-02-14 19:01:02,032 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/eu-eos-rett
+2026-02-14 19:01:02,032 - INFO -   Area: EU_EEA_Law (slug: eu-eos-rett)
+2026-02-14 19:01:02,088 - INFO -   📁 Category: Legal_Areas/EU_EEA_Law/EU_EEA_Law
+2026-02-14 19:01:02,089 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:02,089 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:02,090 - INFO - 
+======================================================================
+2026-02-14 19:01:02,090 - INFO - [37/39] Private_International_Law / Private_International_Law
+2026-02-14 19:01:02,090 - INFO - ======================================================================
+2026-02-14 19:01:02,091 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/internasjonal-privatrett
+2026-02-14 19:01:02,091 - INFO -   Area: Private_International_Law (slug: internasjonal-privatrett)
+2026-02-14 19:01:02,145 - INFO -   📁 Category: Legal_Areas/Private_International_Law/Private_International_Law
+2026-02-14 19:01:02,145 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:02,146 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:02,146 - INFO - 
+======================================================================
+2026-02-14 19:01:02,146 - INFO - [38/39] Human_Rights_Law / Human_Rights_Law
+2026-02-14 19:01:02,147 - INFO - ======================================================================
+2026-02-14 19:01:02,147 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/menneskerettigheter
+2026-02-14 19:01:02,147 - INFO -   Area: Human_Rights_Law (slug: menneskerettigheter)
+2026-02-14 19:01:02,196 - INFO -   📁 Category: Legal_Areas/Human_Rights_Law/Human_Rights_Law
+2026-02-14 19:01:02,197 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:02,197 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:02,197 - INFO - 
+======================================================================
+2026-02-14 19:01:02,197 - INFO - [39/39] Constitutional_Law / Constitutional_Law
+2026-02-14 19:01:02,198 - INFO - ======================================================================
+2026-02-14 19:01:02,198 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/statsrett
+2026-02-14 19:01:02,198 - INFO -   Area: Constitutional_Law (slug: statsrett)
+2026-02-14 19:01:02,251 - INFO -   📁 Category: Legal_Areas/Constitutional_Law/Constitutional_Law
+2026-02-14 19:01:02,251 - INFO -   📂 Found 0 document categories
+
+2026-02-14 19:01:02,251 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 19:01:02,253 - INFO - 
+📦 Flushing uploads...
+2026-02-14 19:01:02,253 - INFO -   ✓ 0 files flushed
+2026-02-14 19:01:04,290 - INFO - Browser closed
+2026-02-14 19:01:04,291 - INFO - 
+📊 Exporting Excel...
+2026-02-14 19:01:05,301 - INFO - Retrieved 952 records
+2026-02-14 19:01:05,323 - INFO - 📊 Processing 952 documents for Excel...

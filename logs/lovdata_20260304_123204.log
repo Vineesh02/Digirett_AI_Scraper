@@ -1,0 +1,462 @@
+2026-03-04 12:32:08,890 - INFO - ✓ Supabase bucket : legal_area
+2026-03-04 12:32:08,890 - INFO - ✓ Supabase table  : legal_area_metadata
+2026-03-04 12:32:08,890 - INFO - ✓ StorageHandler initialized
+2026-03-04 12:32:09,434 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=area_key&limit=1 "HTTP/1.1 404 Not Found"
+2026-03-04 12:32:09,435 - WARNING - ⚠️  scraper_claims table not found — parallel claim tracking disabled. Create it with:  CREATE TABLE scraper_claims (area_key TEXT PRIMARY KEY, claimed_by TEXT, claimed_at TIMESTAMPTZ, status TEXT);
+2026-03-04 12:32:09,436 - INFO - ======================================================================
+2026-03-04 12:32:09,436 - INFO - ENV / CONFIG
+2026-03-04 12:32:09,437 - INFO -   WORKER ID       : e73ef861
+2026-03-04 12:32:09,437 - INFO -   SUPABASE_TABLE  : legal_area_metadata
+2026-03-04 12:32:09,437 - INFO -   SUPABASE_BUCKET : legal_area
+2026-03-04 12:32:09,438 - INFO -   BASE_DIR        : ./scraped_xml
+2026-03-04 12:32:09,438 - INFO -   TIMEOUT         : 30
+2026-03-04 12:32:09,440 - INFO -   HEADLESS        : False
+2026-03-04 12:32:09,440 - INFO -   YEAR RANGE      : 2000 – 2026
+2026-03-04 12:32:09,440 - INFO -   BATCH SIZE      : 10
+2026-03-04 12:32:09,440 - INFO - ======================================================================
+2026-03-04 12:32:14,138 - INFO - ✅ Login successful
+2026-03-04 12:32:19,370 - INFO - ✅ Tree nodes present
+2026-03-04 12:32:20,399 - INFO - Found 35 tree node(s)
+2026-03-04 12:32:20,756 - INFO - 📋 ROOT categories: 35
+2026-03-04 12:32:20,756 - INFO - 📊 Total ROOTs: 35
+2026-03-04 12:32:25,914 - INFO - ✅ Tree nodes present
+2026-03-04 12:32:26,930 - INFO - Found 35 tree node(s)
+2026-03-04 12:32:27,256 - INFO - 📋 ROOT categories: 35
+2026-03-04 12:32:27,256 - INFO - 
+======================================================================
+2026-03-04 12:32:27,256 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-04 12:32:27,256 - INFO - ======================================================================
+2026-03-04 12:32:29,059 - INFO -    Branch count: 5
+2026-03-04 12:32:34,257 - INFO - ✅ Tree nodes present
+2026-03-04 12:32:35,276 - INFO - Found 40 tree node(s)
+2026-03-04 12:32:36,073 - INFO - 📋 ROOT categories: 40
+2026-03-04 12:32:37,326 - INFO -    [1/5] BRANCH: Anskaffelser
+2026-03-04 12:32:39,323 - INFO -       Leaf count: 0
+2026-03-04 12:32:39,324 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-04 12:32:39,690 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?select=claimed_by%2Cclaimed_at%2Cstatus&area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_ "HTTP/1.1 404 Not Found"
+2026-03-04 12:32:39,697 - WARNING - ⚠️  Claim check failed ({'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}) — proceeding anyway: Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_
+2026-03-04 12:32:40,210 - INFO -     ✅ div.legal-area-header present
+2026-03-04 12:32:40,250 - INFO -     Found 11 anchor links in legal-area-header
+2026-03-04 12:32:40,292 - INFO -     ✓ Section: 'Siste dokumenter'  →  LATEST DOCUMENTS  (div#saker)
+2026-03-04 12:32:40,325 - INFO -     ✓ Section: 'Lover'  →  LAWS  (div#lover)
+2026-03-04 12:32:40,353 - INFO -     ✓ Section: 'Forskrifter'  →  REGULATIONS  (div#forskrifter)
+2026-03-04 12:32:40,383 - INFO -     ✓ Section: 'Avgjørelser fra Høyesterett'  →  DECISIONS FROM THE SUPREME COURT  (div#hr)
+2026-03-04 12:32:40,427 - INFO -     ✓ Section: 'Avgjørelser fra lagmannsrettene'  →  DECISIONS FROM THE COURTS OF APPEAL  (div#lr)
+2026-03-04 12:32:40,462 - INFO -     ✓ Section: 'Avgjørelser fra tingrettene'  →  DECISIONS FROM THE DISTRICT COURTS  (div#tr)
+2026-03-04 12:32:40,501 - INFO -     ✓ Section: 'Artikler'  →  ARTICLES  (div#artikler)
+2026-03-04 12:32:40,544 - INFO -     ✓ Section: 'Dokumenter fra Klagenemnda for offentlige anskaffelser'  →  DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  (div#kofa)
+2026-03-04 12:32:40,571 - INFO -     ✓ Section: 'Dokumenter fra Byggebransjens Faglig Juridiske Råd'  →  DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL  (div#bfjr)
+2026-03-04 12:32:40,603 - INFO -     ✓ Section: 'Dokumenter fra Justisdepartementet'  →  DOCUMENTS FROM THE MINISTRY OF JUSTICE  (div#jd)
+2026-03-04 12:32:40,625 - INFO -     ✓ Section: 'Andre dokumenter'  →  OTHER DOCUMENTS  (div#otherBases)
+2026-03-04 12:32:40,626 - INFO - 
+    ════════════════════════════════════════════════
+    11 SECTIONS FOUND — processing one by one
+    ════════════════════════════════════════════════
+2026-03-04 12:32:40,626 - INFO - 
+    ── [1/11] LATEST DOCUMENTS ──
+2026-03-04 12:32:40,896 - INFO -     👆 Clicked section tab: 'Siste dokumenter'
+2026-03-04 12:32:42,417 - INFO -     ✅ Heading div#saker found
+2026-03-04 12:32:42,447 - INFO -     ℹ️  No 'Vis alle' button found for div#saker
+2026-03-04 12:32:42,474 - INFO -       page 1: +10 new  (total: 10 / expected: ?)
+2026-03-04 12:32:42,503 - INFO -     ⏹  No Next button for div#saker (no_toolbar)
+2026-03-04 12:32:42,503 - INFO -     ✅ COMPLETE 'LATEST DOCUMENTS'  expected=None  collected=10
+2026-03-04 12:32:42,503 - INFO - 
+    ── [2/11] LAWS ──
+2026-03-04 12:32:42,835 - INFO -     👆 Clicked section tab: 'Lover'
+2026-03-04 12:32:44,366 - INFO -     ✅ Heading div#lover found
+2026-03-04 12:32:44,394 - INFO -     ℹ️  No 'Vis alle' button found for div#lover
+2026-03-04 12:32:44,424 - INFO -       page 1: +2 new  (total: 2 / expected: ?)
+2026-03-04 12:32:44,449 - INFO -     ⏹  No Next button for div#lover (no_toolbar)
+2026-03-04 12:32:44,449 - INFO -     ✅ COMPLETE 'LAWS'  expected=None  collected=2
+2026-03-04 12:32:44,451 - INFO - 
+    ── [3/11] REGULATIONS ──
+2026-03-04 12:32:44,801 - INFO -     👆 Clicked section tab: 'Forskrifter'
+2026-03-04 12:32:46,322 - INFO -     ✅ Heading div#forskrifter found
+2026-03-04 12:32:46,369 - INFO -     ✅ Vis alle clicked — expected=16
+2026-03-04 12:32:48,975 - INFO -       page 1: +0 new  (total: 0 / expected: 16)
+2026-03-04 12:32:49,058 - INFO -     ⏹  No toolbar found for div#forskrifter
+2026-03-04 12:32:49,059 - WARNING -     ⚠️  COUNT MISMATCH 'REGULATIONS': expected=16  collected=0
+2026-03-04 12:32:49,060 - INFO - 
+    ── [4/11] DECISIONS FROM THE SUPREME COURT ──
+2026-03-04 12:32:49,076 - WARNING -     ⚠️  Could not find section tab: 'Avgjørelser fra Høyesterett'
+2026-03-04 12:32:49,076 - WARNING -     ⚠️  Could not click tab 'Avgjørelser fra Høyesterett' — skipping
+2026-03-04 12:32:49,077 - INFO - 
+    ── [5/11] DECISIONS FROM THE COURTS OF APPEAL ──
+2026-03-04 12:32:49,093 - WARNING -     ⚠️  Could not find section tab: 'Avgjørelser fra lagmannsrettene'
+2026-03-04 12:32:49,093 - WARNING -     ⚠️  Could not click tab 'Avgjørelser fra lagmannsrettene' — skipping
+2026-03-04 12:32:49,093 - INFO - 
+    ── [6/11] DECISIONS FROM THE DISTRICT COURTS ──
+2026-03-04 12:32:49,111 - WARNING -     ⚠️  Could not find section tab: 'Avgjørelser fra tingrettene'
+2026-03-04 12:32:49,111 - WARNING -     ⚠️  Could not click tab 'Avgjørelser fra tingrettene' — skipping
+2026-03-04 12:32:49,112 - INFO - 
+    ── [7/11] ARTICLES ──
+2026-03-04 12:32:49,127 - WARNING -     ⚠️  Could not find section tab: 'Artikler'
+2026-03-04 12:32:49,129 - WARNING -     ⚠️  Could not click tab 'Artikler' — skipping
+2026-03-04 12:32:49,129 - INFO - 
+    ── [8/11] DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD ──
+2026-03-04 12:32:49,138 - WARNING -     ⚠️  Could not find section tab: 'Dokumenter fra Klagenemnda for offentlige anskaffelser'
+2026-03-04 12:32:49,146 - WARNING -     ⚠️  Could not click tab 'Dokumenter fra Klagenemnda for offentlige anskaffelser' — skipping
+2026-03-04 12:32:49,146 - INFO - 
+    ── [9/11] DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL ──
+2026-03-04 12:32:49,156 - WARNING -     ⚠️  Could not find section tab: 'Dokumenter fra Byggebransjens Faglig Juridiske Råd'
+2026-03-04 12:32:49,161 - WARNING -     ⚠️  Could not click tab 'Dokumenter fra Byggebransjens Faglig Juridiske Råd' — skipping
+2026-03-04 12:32:49,161 - INFO - 
+    ── [10/11] DOCUMENTS FROM THE MINISTRY OF JUSTICE ──
+2026-03-04 12:32:49,179 - WARNING -     ⚠️  Could not find section tab: 'Dokumenter fra Justisdepartementet'
+2026-03-04 12:32:49,180 - WARNING -     ⚠️  Could not click tab 'Dokumenter fra Justisdepartementet' — skipping
+2026-03-04 12:32:49,180 - INFO - 
+    ── [11/11] OTHER DOCUMENTS ──
+2026-03-04 12:32:49,194 - WARNING -     ⚠️  Could not find section tab: 'Andre dokumenter'
+2026-03-04 12:32:49,194 - WARNING -     ⚠️  Could not click tab 'Andre dokumenter' — skipping
+2026-03-04 12:32:49,197 - INFO - 
+    ════════════════════════════════════════════════
+    SECTION COLLECTION COMPLETE
+    sections=11  total_docs=12
+    ════════════════════════════════════════════════
+2026-03-04 12:32:49,197 - INFO -    📊 Total sections=11  total_urls=12
+2026-03-04 12:32:49,198 - INFO -    📂 SECTION | LATEST DOCUMENTS                                        | expected=None  | found=10
+2026-03-04 12:32:49,561 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-03-06.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:32:49,572 - INFO - 🌐 Visiting: #document/EUR/eur-2026-03-06
+2026-03-04 12:32:49,588 - ERROR - ❌ scrape_content_from_url [#document/EUR/eur-2026-03-06]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:32:49,588 - WARNING - ⚠️  Empty content — skip: #document/EUR/eur-2026-03-06
+2026-03-04 12:32:51,814 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-198508.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:32:51,814 - INFO - 🌐 Visiting: #document/TRSIV/avgjorelse/tosl-2025-198508
+2026-03-04 12:32:51,834 - ERROR - ❌ scrape_content_from_url [#document/TRSIV/avgjorelse/tosl-2025-198508]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:32:51,834 - WARNING - ⚠️  Empty content — skip: #document/TRSIV/avgjorelse/tosl-2025-198508
+2026-03-04 12:32:54,029 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tosl-2025-180124.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:32:54,029 - INFO - 🌐 Visiting: #document/TRSIV/avgjorelse/tosl-2025-180124
+2026-03-04 12:32:54,050 - ERROR - ❌ scrape_content_from_url [#document/TRSIV/avgjorelse/tosl-2025-180124]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:32:54,051 - WARNING - ⚠️  Empty content — skip: #document/TRSIV/avgjorelse/tosl-2025-180124
+2026-03-04 12:32:56,274 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2026-01-02.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:32:56,280 - INFO - 🌐 Visiting: #document/EUR/eur-2026-01-02
+2026-03-04 12:32:56,294 - ERROR - ❌ scrape_content_from_url [#document/EUR/eur-2026-01-02]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:32:56,296 - WARNING - ⚠️  Empty content — skip: #document/EUR/eur-2026-01-02
+2026-03-04 12:32:58,498 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.ROO_rundskriv_is-2026-9001.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:32:58,498 - INFO - 🌐 Visiting: #document/ROO/rundskriv/is-2026-9001
+2026-03-04 12:32:58,516 - ERROR - ❌ scrape_content_from_url [#document/ROO/rundskriv/is-2026-9001]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:32:58,517 - WARNING - ⚠️  Empty content — skip: #document/ROO/rundskriv/is-2026-9001
+2026-03-04 12:33:00,731 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-171257.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:33:00,732 - INFO - 🌐 Visiting: #document/LBSIV/avgjorelse/lb-2025-171257
+2026-03-04 12:33:00,748 - ERROR - ❌ scrape_content_from_url [#document/LBSIV/avgjorelse/lb-2025-171257]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:33:00,750 - WARNING - ⚠️  Empty content — skip: #document/LBSIV/avgjorelse/lb-2025-171257
+2026-03-04 12:33:02,943 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.INNST_forarbeid_inns-38-l-202526.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:33:02,945 - INFO - 🌐 Visiting: #document/INNST/forarbeid/inns-38-l-202526
+2026-03-04 12:33:02,960 - ERROR - ❌ scrape_content_from_url [#document/INNST/forarbeid/inns-38-l-202526]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:33:02,963 - WARNING - ⚠️  Empty content — skip: #document/INNST/forarbeid/inns-38-l-202526
+2026-03-04 12:33:05,186 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.TRSIV_avgjorelse_tsol-2025-181219.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:33:05,187 - INFO - 🌐 Visiting: #document/TRSIV/avgjorelse/tsol-2025-181219
+2026-03-04 12:33:05,202 - ERROR - ❌ scrape_content_from_url [#document/TRSIV/avgjorelse/tsol-2025-181219]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:33:05,203 - WARNING - ⚠️  Empty content — skip: #document/TRSIV/avgjorelse/tsol-2025-181219
+2026-03-04 12:33:07,418 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.EUR_eur-2025-20-04.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:33:07,419 - INFO - 🌐 Visiting: #document/EUR/eur-2025-20-04
+2026-03-04 12:33:07,437 - ERROR - ❌ scrape_content_from_url [#document/EUR/eur-2025-20-04]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:33:07,437 - WARNING - ⚠️  Empty content — skip: #document/EUR/eur-2025-20-04
+2026-03-04 12:33:09,660 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.LBSIV_avgjorelse_lb-2025-26330.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:33:09,660 - INFO - 🌐 Visiting: #document/LBSIV/avgjorelse/lb-2025-26330
+2026-03-04 12:33:09,680 - ERROR - ❌ scrape_content_from_url [#document/LBSIV/avgjorelse/lb-2025-26330]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:33:09,681 - WARNING - ⚠️  Empty content — skip: #document/LBSIV/avgjorelse/lb-2025-26330
+2026-03-04 12:33:11,683 - INFO -    📂 SECTION | LAWS                                                    | expected=None  | found=2
+2026-03-04 12:33:11,879 - INFO - HTTP Request: GET https://exeklzgcqykkutjfikei.supabase.co/rest/v1/legal_area_metadata?select=file_name&file_name=eq.NL_lov_2016-06-17-73.xml&limit=1 "HTTP/1.1 200 OK"
+2026-03-04 12:33:11,879 - INFO - 🌐 Visiting: #document/NL/lov/2016-06-17-73
+2026-03-04 12:33:11,897 - ERROR - ❌ scrape_content_from_url [#document/NL/lov/2016-06-17-73]: Message: invalid argument
+  (Session info: chrome=145.0.7632.117)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c3faa55
+	0x7ff65c158630
+	0x7ff65beed546
+	0x7ff65bed9b24
+	0x7ff65bed7eff
+	0x7ff65bed8452
+	0x7ff65bef1a06
+	0x7ff65bf96734
+	0x7ff65bf719da
+	0x7ff65bf9591c
+	0x7ff65bf39098
+	0x7ff65bf39f83
+	0x7ff65c427810
+	0x7ff65c421afd
+	0x7ff65c442c1a
+	0x7ff65c173345
+	0x7ff65c17b81c
+	0x7ff65c161924
+	0x7ff65c161ad6
+	0x7ff65c147e47
+	0x7ff8152b259d
+	0x7ff81702af78
+
+2026-03-04 12:33:11,897 - WARNING - ⚠️  Empty content — skip: #document/NL/lov/2016-06-17-73
+2026-03-04 12:33:13,903 - INFO - ⏭️  Year 1999 out of range — skip: #document/NLO/lov/1999-07-16-69
+2026-03-04 12:33:15,904 - INFO -    📂 SECTION | REGULATIONS                                             | expected=16    | found=0
+2026-03-04 12:33:15,904 - WARNING -    ⚠️  COUNT MISMATCH: expected 16, found 0 for section 'REGULATIONS'
+2026-03-04 12:33:15,904 - INFO -    📂 SECTION | DECISIONS FROM THE SUPREME COURT                        | expected=None  | found=0
+2026-03-04 12:33:15,904 - INFO -    📂 SECTION | DECISIONS FROM THE COURTS OF APPEAL                     | expected=None  | found=0
+2026-03-04 12:33:15,906 - INFO -    📂 SECTION | DECISIONS FROM THE DISTRICT COURTS                      | expected=None  | found=0
+2026-03-04 12:33:15,906 - INFO -    📂 SECTION | ARTICLES                                                | expected=None  | found=0
+2026-03-04 12:33:15,907 - INFO -    📂 SECTION | DOCUMENTS FROM THE PUBLIC PROCUREMENT COMPLAINTS BOARD  | expected=None  | found=0
+2026-03-04 12:33:15,907 - INFO -    📂 SECTION | DOCUMENTS FROM THE CONSTRUCTION INDUSTRY LEGAL COUNCIL  | expected=None  | found=0
+2026-03-04 12:33:15,908 - INFO -    📂 SECTION | DOCUMENTS FROM THE MINISTRY OF JUSTICE                  | expected=None  | found=0
+2026-03-04 12:33:15,908 - INFO -    📂 SECTION | OTHER DOCUMENTS                                         | expected=None  | found=0
+2026-03-04 12:33:16,110 - INFO - HTTP Request: PATCH https://exeklzgcqykkutjfikei.supabase.co/rest/v1/scraper_claims?area_key=eq.Anskaffelser_avtaler_bygg_og_entrepriser/Anskaffelser/_ "HTTP/1.1 404 Not Found"
+2026-03-04 12:33:16,111 - WARNING - ⚠️  mark_done failed: {'code': 'PGRST205', 'details': None, 'hint': None, 'message': "Could not find the table 'public.scraper_claims' in the schema cache"}
+2026-03-04 12:33:21,363 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/4bc838875677002d45ffc965c4cdcbb9

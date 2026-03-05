@@ -1,0 +1,39 @@
+2026-03-03 17:11:53,964 - INFO - ✓ Supabase bucket : legal_area
+2026-03-03 17:11:53,964 - INFO - ✓ Supabase table  : legal_area_metadata
+2026-03-03 17:11:53,964 - INFO - ✓ StorageHandler initialized
+2026-03-03 17:11:53,964 - INFO - ======================================================================
+2026-03-03 17:11:53,964 - INFO - ENV / CONFIG
+2026-03-03 17:11:53,968 - INFO -   SUPABASE_TABLE  : legal_area_metadata
+2026-03-03 17:11:53,968 - INFO -   SUPABASE_BUCKET : legal_area
+2026-03-03 17:11:53,968 - INFO -   BASE_DIR        : ./scraped_xml
+2026-03-03 17:11:53,968 - INFO -   TIMEOUT         : 30
+2026-03-03 17:11:53,968 - INFO -   HEADLESS        : False
+2026-03-03 17:11:53,968 - INFO -   YEAR RANGE      : 2000 – 2026
+2026-03-03 17:11:53,968 - INFO -   BATCH SIZE      : 10
+2026-03-03 17:11:53,968 - INFO - ======================================================================
+2026-03-03 17:11:59,204 - INFO - ✅ Login successful
+2026-03-03 17:12:34,597 - WARNING - ⚠️ Tree container not found by ID, falling back to CSS
+2026-03-03 17:12:35,656 - INFO - Found 35 tree node(s)
+2026-03-03 17:12:35,866 - INFO - 📋 ROOT categories discovered: 35
+2026-03-03 17:12:35,871 - INFO - 📊 Total ROOTs: 35
+2026-03-03 17:13:11,363 - WARNING - ⚠️ Tree container not found by ID, falling back to CSS
+2026-03-03 17:13:12,397 - INFO - Found 35 tree node(s)
+2026-03-03 17:13:12,609 - INFO - 📋 ROOT categories discovered: 35
+2026-03-03 17:13:12,609 - INFO - 
+======================================================================
+2026-03-03 17:13:12,610 - INFO - [1/35] ROOT: Anskaffelser, avtaler, bygg og entrepriser
+2026-03-03 17:13:12,610 - INFO - ======================================================================
+2026-03-03 17:13:13,974 - INFO -    Branch count: 5
+2026-03-03 17:13:49,440 - WARNING - ⚠️ Tree container not found by ID, falling back to CSS
+2026-03-03 17:13:50,470 - INFO - Found 40 tree node(s)
+2026-03-03 17:13:50,722 - INFO - 📋 ROOT categories discovered: 40
+2026-03-03 17:13:51,817 - INFO -    [1/5] BRANCH: Anskaffelser
+2026-03-03 17:13:52,910 - INFO -       Leaf count: 0
+2026-03-03 17:13:52,910 - INFO - 🔍 Scraping  root='Anskaffelser, avtaler, bygg og entrepriser'  branch='Anskaffelser'  leaf=''
+2026-03-03 17:13:55,113 - INFO - 
+======================================================================
+2026-03-03 17:13:55,113 - INFO - SCRAPING SUMMARY
+2026-03-03 17:13:55,113 - INFO -   ✅ Success : 0
+2026-03-03 17:13:55,113 - INFO -   ❌ Failed  : 0
+2026-03-03 17:13:55,113 - INFO -   ⏭️  Skipped : 0
+2026-03-03 17:13:55,113 - INFO - ======================================================================

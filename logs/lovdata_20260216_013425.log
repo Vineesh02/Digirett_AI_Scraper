@@ -1,0 +1,39 @@
+2026-02-16 01:34:31,460 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-16 01:34:31,460 - INFO - 🔐 Opening Lovdata login page...
+2026-02-16 01:34:36,117 - INFO - ✅ Login successful
+2026-02-16 01:34:36,118 - INFO - ======================================================================
+2026-02-16 01:34:36,118 - INFO - MODE: legal_areas_only
+2026-02-16 01:34:36,118 - INFO - ======================================================================
+2026-02-16 01:34:36,118 - INFO - 
+======================================================================
+2026-02-16 01:34:36,118 - INFO - ⚖️  SCRAPING LEGAL AREAS
+2026-02-16 01:34:36,118 - INFO -    Using fallback list from config.LEGAL_AREA_TRANSLATIONS
+2026-02-16 01:34:36,120 - INFO - ======================================================================
+2026-02-16 01:34:36,120 - INFO - 📂 Loading legal areas from config.py...
+2026-02-16 01:34:36,120 - INFO - 📋 Loaded 38 legal areas
+2026-02-16 01:34:36,120 - INFO - 
+📊 Total legal areas: 38
+
+2026-02-16 01:34:36,120 - INFO - 
+======================================================================
+2026-02-16 01:34:36,120 - INFO - [1/38] Labor_Law
+2026-02-16 01:34:36,120 - INFO - ======================================================================
+2026-02-16 01:34:36,120 - INFO -    Norwegian: arbeidsrett
+2026-02-16 01:34:36,122 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-16 01:34:36,122 - INFO - 📂 Scraping legal area: arbeidsrett
+2026-02-16 01:34:36,122 - INFO - 📂 Navigating to legal areas index page...
+2026-02-16 01:34:44,134 - INFO -    Current URL: https://lovdata.no/pro/#rettsomrade
+2026-02-16 01:34:46,177 - INFO - 
+   📋 Total discovered: 0 legal areas
+
+2026-02-16 01:34:46,178 - ERROR -    ❌ No categories found on index page
+2026-02-16 01:34:46,178 - WARNING - ⚠️  No documents found
+2026-02-16 01:34:46,178 - INFO - 
+======================================================================
+2026-02-16 01:34:46,178 - INFO - [2/38] Work_Environment
+2026-02-16 01:34:46,178 - INFO - ======================================================================
+2026-02-16 01:34:46,178 - INFO -    Norwegian: arbeidsmiljo
+2026-02-16 01:34:46,178 - INFO -    🔗 https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-16 01:34:46,178 - INFO - 📂 Scraping legal area: arbeidsmiljo
+2026-02-16 01:34:46,178 - INFO - 📂 Navigating to legal areas index page...
+2026-02-16 01:34:54,199 - INFO -    Current URL: https://lovdata.no/pro/#rettsomrade

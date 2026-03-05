@@ -1,0 +1,187 @@
+2026-02-14 13:06:14,944 - INFO - ================================================================================
+2026-02-14 13:06:14,944 - INFO - LOVDATA PRO SCRAPER - ULTRA-FAST MODE
+2026-02-14 13:06:14,945 - INFO - ================================================================================
+2026-02-14 13:06:14,945 - INFO - Year range:   2020-2026
+2026-02-14 13:06:14,946 - INFO - Batch upload: Every 50 files
+2026-02-14 13:06:14,946 - INFO - Delay:        0.1s
+2026-02-14 13:06:14,946 - INFO - ================================================================================
+2026-02-14 13:06:15,199 - INFO - ✓ Database connected
+2026-02-14 13:06:15,200 - INFO - ====== WebDriver manager ======
+2026-02-14 13:06:17,412 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:06:17,567 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-14 13:06:17,689 - INFO - Driver [C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2026-02-14 13:06:17,690 - INFO -   Raw driver path: C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2026-02-14 13:06:17,690 - INFO - ✓ ChromeDriver (sibling): C:\Users\ranja\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32\chromedriver.exe
+2026-02-14 13:06:18,963 - INFO - ✓ Browser started (UI visible mode)
+2026-02-14 13:06:18,964 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 13:06:19,186 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 13:06:19,186 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 13:06:19,187 - INFO - 🔐 Logging in...
+2026-02-14 13:06:36,742 - INFO - ✓ Login successful
+2026-02-14 13:06:36,743 - INFO - 📋 MODE: all
+
+2026-02-14 13:06:36,743 - INFO - ================================================================================
+2026-02-14 13:06:36,744 - INFO - SOURCES OF LAW
+2026-02-14 13:06:36,744 - INFO - ================================================================================
+2026-02-14 13:06:36,745 - INFO - ✓ 16 categories enabled
+
+2026-02-14 13:06:36,746 - INFO - 
+[1/16] Laws and Regulations → Active Laws (NL)
+2026-02-14 13:06:36,746 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NL
+2026-02-14 13:06:42,104 - INFO -   ✅ Found 5 documents
+2026-02-14 13:06:42,105 - INFO -   📄 5 documents found
+2026-02-14 13:06:58,592 - INFO - 
+[2/16] Laws and Regulations → Central Regulations (SF)
+2026-02-14 13:06:58,592 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SF
+2026-02-14 13:07:04,555 - INFO -   ✅ Found 33 documents
+2026-02-14 13:07:04,555 - INFO -   📄 30 documents found
+2026-02-14 13:07:07,259 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:07,850 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:08,878 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:08,928 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:10,573 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:11,920 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:12,708 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:13,404 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:14,319 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:15,803 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:16,628 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:17,451 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:18,732 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:19,411 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:20,066 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:20,952 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:22,545 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:22,558 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:23,232 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:23,901 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:24,608 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:25,279 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:26,077 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:26,813 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:27,518 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:28,218 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:29,382 - INFO - 
+[3/16] Laws and Regulations → Local Regulations (LF)
+2026-02-14 13:07:29,384 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LF
+2026-02-14 13:07:35,726 - INFO -   ✅ Found 29 documents
+2026-02-14 13:07:35,727 - INFO -   📄 29 documents found
+2026-02-14 13:07:37,639 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:38,206 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:39,048 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:40,428 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:41,150 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:41,840 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:42,530 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:43,315 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:44,090 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:44,782 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:45,497 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:46,170 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:46,969 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:47,685 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:48,346 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:49,031 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:49,725 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:50,427 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:51,086 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:51,752 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:52,498 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:53,263 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:54,154 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:55,580 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:56,356 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:57,137 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:07:58,283 - INFO - 
+[4/16] Laws and Regulations → Repealed Laws (NLO)
+2026-02-14 13:07:58,283 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLO
+2026-02-14 13:08:03,851 - INFO -   ✅ Found 1 documents
+2026-02-14 13:08:03,852 - INFO -   📄 1 documents found
+2026-02-14 13:08:06,287 - INFO - 
+[5/16] Laws and Regulations → Emergency Laws (NLE)
+2026-02-14 13:08:06,287 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/NLE
+2026-02-14 13:08:12,002 - INFO -   ✅ Found 3 documents
+2026-02-14 13:08:12,003 - INFO -   📄 3 documents found
+2026-02-14 13:08:19,560 - INFO - 
+[6/16] Laws and Regulations → Repealed Regulations (SFO)
+2026-02-14 13:08:19,560 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/SFO
+2026-02-14 13:08:25,617 - INFO -   ✅ Found 24 documents
+2026-02-14 13:08:25,617 - INFO -   📄 24 documents found
+2026-02-14 13:08:26,773 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:27,334 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:28,155 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:28,831 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:29,500 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:30,166 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:31,028 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:32,403 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:33,305 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:34,978 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:34,987 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:35,749 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:36,415 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:37,077 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:37,779 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:38,776 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:40,165 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:40,886 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:41,588 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:42,267 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:42,972 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:44,136 - INFO - 
+[7/16] Laws and Regulations → Repealed Local (LFO)
+2026-02-14 13:08:44,137 - INFO - 📖 Registry: https://lovdata.no/pro/#registry/chronological/LFO
+2026-02-14 13:08:49,240 - INFO -   ✅ Found 35 documents
+2026-02-14 13:08:49,241 - INFO -   📄 30 documents found
+2026-02-14 13:08:51,486 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:52,021 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:52,908 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:53,176 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\lfo-20250220-0261.xml
+2026-02-14 13:08:53,372 - INFO - ✓ Saved to DB: lfo-20250220-0261.xml
+2026-02-14 13:08:53,373 - INFO -   ✓ Saved: 01_Laws_and_Regulations/Repealed_Local_LFO/lfo-20250220-0261.xml
+2026-02-14 13:08:56,576 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:56,630 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:57,760 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:58,414 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:59,054 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:08:59,668 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:00,315 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:00,998 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:01,668 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:02,438 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:02,615 - INFO - ✓ XML saved: ./scraped_xml\01_Laws_and_Regulations\Repealed_Local_LFO\lfo-20250108-0014.xml
+2026-02-14 13:09:02,841 - INFO - ✓ Saved to DB: lfo-20250108-0014.xml
+2026-02-14 13:09:02,842 - INFO -   ✓ Saved: 01_Laws_and_Regulations/Repealed_Local_LFO/lfo-20250108-0014.xml
+2026-02-14 13:09:03,465 - ERROR - ✗ Doc error https://lovdata.no/dokument/LFO/forskrift/2025-02-04-153: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-02-14 13:09:03,465 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:03,467 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/fe47000ca869fa01b1b4236340b38f4d/source
+2026-02-14 13:09:07,528 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/source
+2026-02-14 13:09:07,528 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:07,528 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:08,476 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/source
+2026-02-14 13:09:11,593 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:11,620 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/source
+2026-02-14 13:09:12,545 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/source
+2026-02-14 13:09:15,629 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:15,676 - ERROR - ✗ Doc error https://lovdata.no/dokument/LFO/forskrift/2025-02-18-369: HTTPConnectionPool(host='localhost', port=60149): Max retries exceeded with url: /session/fe47000ca869fa01b1b4236340b38f4d/source (Caused by NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-02-14 13:09:16,609 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/source
+2026-02-14 13:09:19,689 - ERROR - ✗ Doc error https://lovdata.no/dokument/LFO/forskrift/2025-06-17-1051: HTTPConnectionPool(host='localhost', port=60149): Max retries exceeded with url: /session/fe47000ca869fa01b1b4236340b38f4d/url (Caused by NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-02-14 13:09:19,746 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:20,660 - ERROR - ✗ Doc error https://lovdata.no/dokument/LFO/forskrift/2025-08-22-1700: HTTPConnectionPool(host='localhost', port=60149): Max retries exceeded with url: /session/fe47000ca869fa01b1b4236340b38f4d/source (Caused by NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-02-14 13:09:23,735 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:23,810 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:24,677 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:27,814 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:27,843 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:28,757 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:31,901 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:31,901 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:31,901 - ERROR - ✗ Doc error https://lovdata.no/dokument/LFO/forskrift/2025-06-20-1177: HTTPConnectionPool(host='localhost', port=60149): Max retries exceeded with url: /session/fe47000ca869fa01b1b4236340b38f4d/url (Caused by NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-02-14 13:09:32,809 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:35,957 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:35,957 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:35,957 - ERROR - ✗ Doc error https://lovdata.no/dokument/LFO/forskrift/2025-08-25-1711: HTTPConnectionPool(host='localhost', port=60149): Max retries exceeded with url: /session/fe47000ca869fa01b1b4236340b38f4d/url (Caused by NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-02-14 13:09:36,874 - ERROR - ✗ Doc error https://lovdata.no/dokument/LFO/forskrift/2025-10-15-2041: HTTPConnectionPool(host='localhost', port=60149): Max retries exceeded with url: /session/fe47000ca869fa01b1b4236340b38f4d/url (Caused by NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-02-14 13:09:40,008 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url
+2026-02-14 13:09:40,009 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2026-02-14 13:09:40,010 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60149): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/fe47000ca869fa01b1b4236340b38f4d/url

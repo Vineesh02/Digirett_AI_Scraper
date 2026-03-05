@@ -1,0 +1,60 @@
+2026-02-14 17:53:46,146 - INFO - ✓ Database connected
+2026-02-14 17:53:46,146 - INFO - ====== WebDriver manager ======
+2026-02-14 17:53:46,204 - INFO - [driver] ChromeDriver (WDM cache): C:\Users\ranja\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32\chromedriver.exe
+2026-02-14 17:53:49,102 - INFO - [driver] Browser started (explicit path)
+2026-02-14 17:53:49,102 - INFO - ✓ Using service role key for storage (bypasses RLS)
+2026-02-14 17:53:50,025 - INFO - ✓ Bucket exists: lovdata-docs
+2026-02-14 17:53:50,025 - INFO - ✓ Storage handler initialized (bucket: lovdata-docs)
+2026-02-14 17:53:50,025 - INFO - 🔐 Logging in…
+2026-02-14 17:54:11,084 - INFO - ✓ Login successful — SPA initialised
+2026-02-14 17:54:11,085 - INFO - 
+======================================================================
+2026-02-14 17:54:11,085 - INFO - MODE: LEGAL_AREAS_ONLY
+2026-02-14 17:54:11,086 - INFO - ======================================================================
+
+2026-02-14 17:54:11,086 - INFO - 
+⚖️ SCRAPING LEGAL AREAS (DYNAMIC DISCOVERY)
+2026-02-14 17:54:11,087 - INFO -   Discovering from: https://lovdata.no/pro/#rettsomrade
+
+2026-02-14 17:54:11,087 - INFO - ✓ 40 legal areas ready (Norwegian slug table)
+2026-02-14 17:54:11,088 - INFO - 
+📊 Total legal areas discovered: 40
+2026-02-14 17:54:11,088 - INFO -   Max docs per area: 100
+
+2026-02-14 17:54:11,089 - INFO - 
+======================================================================
+2026-02-14 17:54:11,089 - INFO - [1/40] Arbeidsrett
+2026-02-14 17:54:11,090 - INFO - ======================================================================
+2026-02-14 17:54:11,090 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsrett
+2026-02-14 17:54:11,102 - INFO -   Scraping categories for slug: 'arbeidsrett'
+2026-02-14 17:56:22,857 - INFO -   No registry categories found — using search page
+2026-02-14 17:56:31,338 - INFO -   Search page: 43 docs
+2026-02-14 17:56:31,338 - INFO -   Total categories with docs: 1
+2026-02-14 17:56:31,338 - INFO -   📁 Category: Legal_Areas/Labor_Law
+2026-02-14 17:56:31,339 - INFO -   📂 Found 1 document categories
+
+2026-02-14 17:56:31,339 - INFO -   → All_Documents (43 docs)
+2026-02-14 17:56:31,339 - INFO -     Path: Legal_Areas/Labor_Law/All_Documents
+2026-02-14 17:58:52,756 - INFO -     ✅ 0 saved
+
+2026-02-14 17:58:52,757 - INFO -   ✅ Area total: 0 documents saved
+2026-02-14 17:58:52,757 - INFO - 
+======================================================================
+2026-02-14 17:58:52,758 - INFO - [2/40] Arbeidsmiljø
+2026-02-14 17:58:52,758 - INFO - ======================================================================
+2026-02-14 17:58:52,759 - INFO -   🔗 https://lovdata.no/pro/#rettsomrade/arbeidsmiljo
+2026-02-14 17:58:52,769 - INFO -   Scraping categories for slug: 'arbeidsmiljo'
+2026-02-14 18:01:10,011 - INFO -   No registry categories found — using search page
+2026-02-14 18:01:18,409 - INFO -   Search page: 43 docs
+2026-02-14 18:01:18,410 - INFO -   Total categories with docs: 1
+2026-02-14 18:01:18,410 - INFO -   📁 Category: Legal_Areas/Work_Environment
+2026-02-14 18:01:18,410 - INFO -   📂 Found 1 document categories
+
+2026-02-14 18:01:18,411 - INFO -   → All_Documents (43 docs)
+2026-02-14 18:01:18,411 - INFO -     Path: Legal_Areas/Work_Environment/All_Documents
+2026-02-14 18:01:32,558 - WARNING - 
+⚠️ Interrupted by user
+2026-02-14 18:01:32,559 - INFO - 
+📦 Flushing uploads...
+2026-02-14 18:01:32,559 - INFO -   ✓ 0 files flushed
+2026-02-14 18:01:32,655 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/88e26a6062b601e658df891232183681

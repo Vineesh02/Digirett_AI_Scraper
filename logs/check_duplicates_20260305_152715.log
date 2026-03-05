@@ -1,0 +1,19 @@
+2026-03-05 15:27:15,518 - INFO - ======================================================================
+2026-03-05 15:27:15,518 - INFO - URL COLLECTION + DUPLICATE CHECKER
+2026-03-05 15:27:15,518 - INFO -   Root   : Anskaffelser, avtaler, bygg og entrepriser
+2026-03-05 15:27:15,525 - INFO -   Branch : Anskaffelser
+2026-03-05 15:27:15,525 - INFO -   Leaf   : (branch level)
+2026-03-05 15:27:15,526 - INFO - ======================================================================
+2026-03-05 15:27:27,553 - INFO - Login successful
+2026-03-05 15:27:27,553 - INFO - Navigating to: https://lovdata.no/pro/#rettsomrade&id=Anskaffelser
+2026-03-05 15:27:30,581 - INFO - Using tree navigation...
+2026-03-05 15:27:36,125 - INFO - Tree nodes loaded
+2026-03-05 15:27:37,157 - INFO - Found 40 tree nodes
+2026-03-05 15:27:37,893 - INFO - Root categories: 40
+2026-03-05 15:27:37,893 - INFO - Found root: 'Anskaffelser, avtaler, bygg og entrepriser'  slug='Anskaffelser_avtaler_bygg_og_entrepriser'
+2026-03-05 15:27:39,734 - INFO - Found branch: 'Anskaffelser'
+2026-03-05 15:27:40,908 - INFO - 
+2026-03-05 15:27:40,908 - INFO - Collecting URLs from all sections...
+2026-03-05 15:27:41,815 - INFO -   Section tab links found: 12
+2026-03-05 15:27:41,994 - WARNING - No section links found
+2026-03-05 15:27:41,995 - ERROR - No sections found — aborting
