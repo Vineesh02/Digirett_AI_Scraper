@@ -86,13 +86,14 @@ class LovdataScraperApp:
 
         # ── Detailed stats — every skip reason tracked separately ─────────────
         self.stats = {
-            "success":            0,
-            "failed_no_id":       0,   # could not extract doc ID from URL
-            "failed_empty":       0,   # page loaded but no content extracted
-            "failed_xml":         0,   # XMLHandler.save() returned no path
-            "failed_other":       0,   # unexpected exception
-            "skip_in_supabase":   0,   # file_name already exists in DB
-            "skip_duplicate_hash":0,   # identical content hash already in DB
+            "success":              0,
+            "failed_no_id":         0,   # could not extract doc ID from URL
+            "failed_empty":         0,   # page loaded but no content extracted
+            "failed_xml":           0,   # XMLHandler.save() returned no path
+            "failed_other":         0,   # unexpected exception
+            "skip_in_supabase":     0,   # file_name already exists in DB
+            "skip_duplicate_hash":  0,   # identical content hash already in DB
+            "skip_year_out_of_range": 0, # URL year outside START_YEAR–END_YEAR
         }
 
         logger.info("=" * 70)
@@ -231,6 +232,19 @@ class LovdataScraperApp:
         doc_total:     int,
     ):
         try:
+            # ── Skip: year out of range (check URL before anything else) ─────
+            url_year = _extract_year_from_doc_url(doc_url)
+            if url_year is not None:
+                if url_year < config.START_YEAR or url_year > config.END_YEAR:
+                    logger.info(
+                        "  [%s/%s] SKIP year=%s out of range %s-%s: %s",
+                        doc_index, doc_total, url_year,
+                        config.START_YEAR, config.END_YEAR, doc_url,
+                    )
+                    self.stats["skip_year_out_of_range"] += 1
+                    return
+            # ─────────────────────────────────────────────────────────────────
+
             doc_id = _extract_doc_id(doc_url)
             if not doc_id:
                 logger.warning(
@@ -452,6 +466,46 @@ class LovdataScraperApp:
             time.sleep(config.DELAY_BETWEEN_REQUESTS)
 
     # -------------------------------------------------------------------------
+    # Branch summary helpers (Fix 3)
+    # -------------------------------------------------------------------------
+
+    def _snapshot_stats(self) -> dict:
+        """Return a shallow copy of current stats for before/after diff."""
+        return dict(self.stats)
+
+    def _log_branch_summary(self, root: str, branch: str, leaf: str, before: dict):
+        """
+        Log a compact summary box for one branch/leaf showing counts since
+        `before` snapshot was taken — so each branch shows its OWN numbers
+        not the cumulative total.
+        """
+        s   = self.stats
+        b   = before
+        label = " / ".join(filter(None, [root, branch, leaf]))
+
+        success   = s["success"]            - b["success"]
+        supabase  = s["skip_in_supabase"]   - b["skip_in_supabase"]
+        dup_hash  = s["skip_duplicate_hash"]- b["skip_duplicate_hash"]
+        year_skip = s["skip_year_out_of_range"] - b["skip_year_out_of_range"]
+        empty     = s["failed_empty"]       - b["failed_empty"]
+        other_fail= (
+            (s["failed_no_id"]  - b["failed_no_id"]) +
+            (s["failed_xml"]    - b["failed_xml"])    +
+            (s["failed_other"]  - b["failed_other"])
+        )
+
+        logger.info("")
+        logger.info("  ┌─ Branch summary: %s", label)
+        logger.info("  │  ✓ Uploaded (success)          : %s", success)
+        logger.info("  │  — Already in Supabase         : %s", supabase)
+        logger.info("  │  — Duplicate hash (skipped)    : %s", dup_hash)
+        logger.info("  │  — Year out of range (skipped) : %s", year_skip)
+        logger.info("  │  ✗ Empty content (failed)      : %s", empty)
+        logger.info("  │  ✗ Other failures              : %s", other_fail)
+        logger.info("  └─────────────────────────────────────────────")
+        logger.info("")
+
+    # -------------------------------------------------------------------------
     # Tree navigation
     # -------------------------------------------------------------------------
 
@@ -496,7 +550,9 @@ class LovdataScraperApp:
             logger.info("  Branches: %s", len(branches))
 
             if not branches:
+                _before = self._snapshot_stats()
                 self._scrape_current_area(root_name, "", "")
+                self._log_branch_summary(root_name, "", "", _before)
                 continue
 
             for b_idx in range(len(branches)):
@@ -531,7 +587,9 @@ class LovdataScraperApp:
                 logger.info("    Leaves: %s", len(leaves))
 
                 if not leaves:
+                    _before = self._snapshot_stats()
                     self._scrape_current_area(root_name, branch_name, "")
+                    self._log_branch_summary(root_name, branch_name, "", _before)
                     continue
 
                 for l_idx in range(len(leaves)):
@@ -569,7 +627,9 @@ class LovdataScraperApp:
                     self.scraper._click_node(l_el)
                     time.sleep(1.5)
 
+                    _before = self._snapshot_stats()
                     self._scrape_current_area(root_name, branch_name, leaf_name)
+                    self._log_branch_summary(root_name, branch_name, leaf_name, _before)
 
         logger.info("All assigned legal areas processed")
 
@@ -594,20 +654,25 @@ class LovdataScraperApp:
                 pass
             self._print_summary()
 
-    def _print_summary(self):
-        s = self.stats
-        total_skipped = s["skip_in_supabase"] + s["skip_duplicate_hash"]
+    def _print_summary(self, stats_override=None):
+        s = stats_override if stats_override is not None else self.stats
+        total_skipped = (
+            s["skip_in_supabase"]
+            + s["skip_duplicate_hash"]
+            + s["skip_year_out_of_range"]
+        )
         total_failed  = s["failed_no_id"] + s["failed_empty"] + s["failed_xml"] + s["failed_other"]
         total         = s["success"] + total_skipped + total_failed
 
         logger.info("")
         logger.info("=" * 70)
         logger.info("SCRAPING SUMMARY")
-        logger.info("  ✓ Success                  : %s", s["success"])
+        logger.info("  ✓ Uploaded (success)       : %s", s["success"])
         logger.info("")
         logger.info("  — Skipped (not an error) —")
         logger.info("    Already in Supabase      : %s", s["skip_in_supabase"])
         logger.info("    Duplicate content hash   : %s", s["skip_duplicate_hash"])
+        logger.info("    Year out of range        : %s", s["skip_year_out_of_range"])
         logger.info("    Subtotal skipped         : %s", total_skipped)
         logger.info("")
         logger.info("  — Failed (investigate) —")

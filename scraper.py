@@ -50,10 +50,28 @@ _DIV_ID_TO_DEF      = {d[2]: d       for d in SECTION_DEFS}
 _LABEL_TO_DEF: Dict[str, tuple] = {d[0].upper(): d for d in SECTION_DEFS}
 
 # Minimum characters for content to be considered real document text.
-# The Lovdata Pro navigation/header/sidebar is ~800-1200 chars.
-# Real documents are typically 500+ chars of actual legal text.
-# We set this high enough to reject nav-only body fallback.
 _MIN_CONTENT_CHARS = 300
+
+# CSS selectors for Lovdata document content, ordered by specificity.
+# #documentBody is confirmed correct from DevTools screenshot.
+_CONTENT_SELECTORS = [
+    "#documentBody",                  # ← confirmed by DevTools (forarbeid, artikler, etc.)
+    "div#documentBody",
+    "#lovdataDocument",               # wrapper around documentBody
+    "#maincolOneColumn",              # outer column, last resort before body
+    "div.lov-content",
+    "div.lovtekst",
+    "div.paragraf",
+    "div.avsnitt",
+    "div#document",
+    "div.document",
+    "div[class*='lovtekst']",
+    "div[class*='dokument']",
+    "div[class*='document']",
+    "article",
+    "main",
+    "#content",
+]
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -80,6 +98,53 @@ def _extract_year_from_doc_url(url: str) -> Optional[int]:
         if m:
             return int(m.group(1))
     return None
+
+
+def _strip_metadata_header(content: str) -> str:
+    """
+    Strip the metadata table text from the top of extracted content.
+
+    Lovdata documents begin with a metadata block (Dato, Departement, etc.)
+    before the actual legal text. We find the first line that looks like
+    real document content and discard everything before it.
+
+    Handles all document types:
+      - Lover/Forskrifter: start with '§ 1'
+      - Forarbeid/Proposisjoner: start with numbered headings '1. Sammendrag'
+      - Court decisions: start with 'TOSL-', 'HR-', 'LG-', or 'Saken gjelder'
+      - 'Til Stortinget' / 'Til Kongen' preambles
+    """
+    if not content:
+        return content
+
+    lines = content.split('\n')
+    first_content_idx = None
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        # § paragraph marker (lover, forskrifter)
+        if stripped.startswith('§'):
+            first_content_idx = i
+            break
+        # Preamble lines (proposisjoner, meldinger)
+        if stripped.startswith('Til Stortinget') or stripped.startswith('Til Kongen'):
+            first_content_idx = i
+            break
+        # Numbered chapter headings like "1. Sammendrag" or "1.1 Bakgrunn"
+        if re.match(r'^\d+[\.\d]*\s+\S', stripped) and len(stripped) > 10:
+            first_content_idx = i
+            break
+        # Court decision body text patterns
+        if re.match(r'^(Saken gjelder|Ankende part|Saksforhold|A\s+anfører)', stripped):
+            first_content_idx = i
+            break
+
+    if first_content_idx is not None and first_content_idx > 0:
+        return '\n'.join(lines[first_content_idx:]).strip()
+
+    return content
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -791,6 +856,53 @@ class LovdataScraper:
         return results
 
     # =========================================================================
+    # IFRAME CONTENT WAIT
+    # =========================================================================
+
+    def _wait_for_iframe_content(self, timeout: int = 20) -> None:
+        """
+        Wait until the iframe body has loaded real document content.
+
+        FIX: The old condition only checked for '§' symbols or len>3000.
+        This fails for forarbeid/proposisjoner/artikler which use numbered
+        headings ('1. Sammendrag') with no § at all, causing premature
+        timeout and 0-char reads.
+
+        New strategy (any condition satisfies):
+          1. Body text has ≥3 § symbols        (lover, forskrifter)
+          2. Body text length > 3000            (any long document)
+          3. #documentBody element exists and has >500 chars  (forarbeid, artikler)
+          4. #lovdataDocument element exists and has >500 chars
+        """
+        try:
+            def body_has_content(d):
+                try:
+                    body_text = d.find_element(By.TAG_NAME, "body").text
+                    # Condition 1: paragraph law markers
+                    if body_text.count('§') >= 3:
+                        return True
+                    # Condition 2: document is long enough
+                    if len(body_text) > 3000:
+                        return True
+                    # Condition 3 & 4: known content divs are present and populated
+                    for sel in ("#documentBody", "#lovdataDocument", "#maincolOneColumn"):
+                        try:
+                            el = d.find_element(By.CSS_SELECTOR, sel)
+                            if len(el.text) > 500:
+                                return True
+                        except Exception:
+                            continue
+                    return False
+                except Exception:
+                    return False
+
+            WebDriverWait(self.driver, timeout).until(body_has_content)
+        except TimeoutException:
+            # Content may still be partially loaded — proceed anyway
+            pass
+        time.sleep(1.0)
+
+    # =========================================================================
     # CONTENT SCRAPING
     # =========================================================================
 
@@ -798,13 +910,23 @@ class LovdataScraper:
         """
         Visit a Lovdata Pro document URL and extract content + metadata from iframe.
 
-        KEY FIX: We no longer fall back to page body text.
-        The page body contains the navigation/sidebar/header which is IDENTICAL
-        on every page — causing the same MD5 hash for thousands of documents
-        and triggering hash_exists() → skip.
+        Confirmed DOM structure (from DevTools screenshot):
+          iframe[name="documentFrame", src="about:blank"]
+            └── body.lovdata-document
+                  └── div#maincolOneColumn
+                        └── div#lovdataDocument
+                              ├── div#documentMeta  (metadata table)
+                              └── div#documentBody  ← PRIMARY CONTENT TARGET
 
-        Content is only accepted from iframes, and only if it exceeds
-        _MIN_CONTENT_CHARS characters to filter out empty/nav-only frames.
+        KEY FIXES in this version:
+          1. _wait_for_iframe_content() now handles all document types,
+             not just §-based laws. Forarbeid/artikler use numbered headings.
+          2. Content selectors now prioritise #documentBody first.
+          3. _strip_metadata_header() handles §, numbered headings, and
+             court decision patterns — not just § lines.
+          4. SPA fallback no longer applies nav_indicators check to specific
+             CSS selectors (#documentBody etc.) — those selectors already
+             target only document content, not the page shell.
         """
         result = {
             "title":          "",
@@ -846,28 +968,12 @@ class LovdataScraper:
 
                     self.driver.switch_to.default_content()
                     self.driver.switch_to.frame(iframe)
-                    # Wait for full document content to load.
-                    # Lovdata renders content lazily — wait until the body
-                    # contains at least 3 paragraph markers (§) or stabilizes.
-                    try:
-                        def body_has_content(d):
-                            try:
-                                t = d.find_element(By.TAG_NAME, "body").text
-                                return t.count('§') >= 3 or len(t) > 3000
-                            except Exception:
-                                return False
-                        WebDriverWait(self.driver, 15).until(body_has_content)
-                    except Exception:
-                        pass
-                    time.sleep(1.0)  # small extra buffer after content detected
 
-                    # ----------------------------------------------------------
-                    # Read the metadata table — the header info table only.
-                    # Strategy: find the FIRST table whose left cells look like
-                    # short labels (Dato, Departement, etc.) — not body content.
-                    # A label cell is short (<40 chars) and has no § character.
-                    # Stop reading a table once a row fails the label test.
-                    # ----------------------------------------------------------
+                    # ── Wait for content to load ──────────────────────────
+                    # Uses multi-condition wait that handles all document types.
+                    self._wait_for_iframe_content(timeout=20)
+
+                    # ── Metadata table ────────────────────────────────────
                     page_meta: dict = {}
                     try:
                         page_meta = self.driver.execute_script("""
@@ -892,13 +998,11 @@ class LovdataScraper:
                                     var label = (cells[0].innerText || '').trim().replace(/:$/, '');
                                     var value = (cells[1].innerText || '').trim();
 
-                                    // Skip if label looks like body content or navigation:
                                     if (!label || !value) continue;
                                     if (label.length > 40) continue;
                                     if (label.indexOf('§') >= 0) continue;
                                     if (/^\\d/.test(label)) continue;
                                     if (/^[a-f]$/.test(label.toLowerCase())) continue;
-                                    // Skip navigation section labels
                                     var skipLabels = ['historiske versjoner', 'endringer',
                                         'forskrifter', 'forarbeider', 'rundskriv',
                                         'avgjørelser', 'lovspeil', 'litteratur',
@@ -909,17 +1013,15 @@ class LovdataScraper:
                                     var key = label.toLowerCase()
                                         .replace(/\\s+/g, '_')
                                         .replace(/[^a-z0-9_\\u00e6\\u00f8\\u00e5]/g, '');
-                                    // Skip if key starts with _ (means label started with non-alpha char)
                                     if (!key || key[0] === '_') continue;
                                     if (key.length >= 60) continue;
                                     tableResult[key] = value;
                                     tableHits++;
                                 }
 
-                                // Only use this table if it found real metadata rows
                                 if (tableHits >= 3) {
                                     for (var k in tableResult) result[k] = tableResult[k];
-                                    break; // use first matching table only
+                                    break;
                                 }
                             }
 
@@ -930,9 +1032,7 @@ class LovdataScraper:
                     except Exception as e:
                         logger.debug("  iframe[%s] table meta failed: %s", idx, e)
 
-                    # ----------------------------------------------------------
-                    # Title — from h1 or table fulltittel
-                    # ----------------------------------------------------------
+                    # ── Title ─────────────────────────────────────────────
                     title = page_meta.get("fulltittel", "") or page_meta.get("korttittel", "")
                     if not title:
                         for sel in ["h1", ".tittel", "[class*='tittel']", ".navn"]:
@@ -944,9 +1044,7 @@ class LovdataScraper:
                             except Exception:
                                 continue
 
-                    # ----------------------------------------------------------
-                    # Date — from table dato field or CSS selectors
-                    # ----------------------------------------------------------
+                    # ── Date ──────────────────────────────────────────────
                     date = page_meta.get("dato", "") or page_meta.get("kunngjort", "")
                     if not date:
                         for sel in [".dato", "[class*='dato']", ".kunngjort", "time"]:
@@ -959,12 +1057,11 @@ class LovdataScraper:
                             except Exception:
                                 continue
 
-                    # ----------------------------------------------------------
-                    # Content — iframe only, minimum length enforced
-                    # ----------------------------------------------------------
+                    # ── Content extraction ────────────────────────────────
                     content = ""
                     source  = ""
 
+                    # Priority 0: raw XML/pre content (some old documents)
                     for tag in ("pre", "code"):
                         try:
                             t = self.driver.find_element(By.TAG_NAME, tag).text.strip()
@@ -975,27 +1072,24 @@ class LovdataScraper:
                         except Exception:
                             continue
 
+                    # Priority 1: specific content divs — ordered by specificity.
+                    # #documentBody is the confirmed correct element from DevTools.
+                    # No nav_indicators check needed: these selectors already
+                    # target only the document content div, not the page shell.
                     if not content:
-                        for sel in [
-                            "div.lov-content", "div.lovtekst",
-                            "div.paragraf",     "div.avsnitt",
-                            "div#document",     "div.document",
-                            "div[class*='lovtekst']", "div[class*='dokument']",
-                            "div[class*='document']",
-                            "article", "main", "#content",
-                        ]:
+                        for sel in _CONTENT_SELECTORS:
                             try:
                                 t = self.driver.find_element(By.CSS_SELECTOR, sel).text.strip()
                                 if len(t) >= _MIN_CONTENT_CHARS:
                                     content = t
-                                    source  = "iframe_content"
+                                    source  = "iframe_" + sel.strip("#.")
                                     break
                             except Exception:
                                 continue
 
-                    # Always also try the full body — keep whichever is longer.
-                    # CSS selectors sometimes grab only a partial div while the
-                    # body has the complete document text.
+                    # Priority 2: full iframe body — only if longer than above,
+                    # and only if it doesn't look like the outer page shell.
+                    # (Inside an iframe, the body IS the document — but check anyway.)
                     try:
                         t = self.driver.find_element(By.TAG_NAME, "body").text.strip()
                         if len(t) >= _MIN_CONTENT_CHARS:
@@ -1010,26 +1104,16 @@ class LovdataScraper:
                     except Exception:
                         pass
 
-                    # Only update best if this iframe has more content
                     logger.info(
                         "  iframe[%s] content: %s chars (best so far: %s)",
                         idx, len(content), len(best_content)
                     )
+
                     if len(content) > len(best_content):
-                        # --------------------------------------------------
-                        # Strip metadata table text from top of content.
-                        # Find the first line starting with § and keep
-                        # everything from there. Discard everything before.
-                        # --------------------------------------------------
-                        if content:
-                            lines = content.split('\n')
-                            first_para_idx = None
-                            for i, line in enumerate(lines):
-                                if line.strip().startswith('§'):
-                                    first_para_idx = i
-                                    break
-                            if first_para_idx is not None and first_para_idx > 0:
-                                content = '\n'.join(lines[first_para_idx:]).strip()
+                        # Strip metadata header before the real document text.
+                        # Works for §-based laws, numbered forarbeid headings,
+                        # court decisions, and preamble lines.
+                        content = _strip_metadata_header(content)
 
                         best_content = content
                         best_title   = title or best_title
@@ -1042,15 +1126,162 @@ class LovdataScraper:
                 finally:
                     self.driver.switch_to.default_content()
 
-            # ── NO body fallback here ─────────────────────────────────────────
-            # The old code fell back to driver.find_element(body).text which
-            # returns the full page shell (nav + sidebar) — identical on every
-            # page — causing duplicate hash skips for thousands of documents.
-            # If no iframe yielded content, we return empty and the caller logs
-            # it as "failed_empty" (not a skip — it gets retried next run).
-            # ─────────────────────────────────────────────────────────────────
+            # ══════════════════════════════════════════════════════════════════
+            # SPA FALLBACK
+            # For URLs like: https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+            # The iframe src=about:blank means content loads via JS into the iframe DOM.
+            # If the iframe read above yielded nothing, navigate directly to the
+            # document URL and read content from known div selectors.
+            #
+            # IMPORTANT: nav_indicators check is SKIPPED for specific CSS selectors
+            # (#documentBody, #lovdataDocument etc.) because those divs contain only
+            # document text. The nav_indicators check only applies to full body reads
+            # where page chrome ("Lovdata Pro", navigation) may be included.
+            # ══════════════════════════════════════════════════════════════════
+            if not best_content and "#document/" in doc_url:
+                m_spa = re.search(r"#document/(.+)", doc_url)
+                if m_spa:
+                    doc_path = m_spa.group(1).split("?")[0].split("#")[0]
+                    candidate_urls = [
+                        "https://lovdata.no/pro/document/" + doc_path,
+                        "https://lovdata.no/pro/document/" + doc_path + "?showmarkings=true",
+                    ]
+                    nav_indicators = [
+                        "logg inn", "log in", "rettsområder",
+                        "lovdata pro", "søk i lovdata",
+                    ]
 
-            # Extract year
+                    # Selectors that target ONLY document content — no nav check needed.
+                    CONTENT_ONLY_SELECTORS = [
+                        "#documentBody",
+                        "div#documentBody",
+                        "#lovdataDocument",
+                        "#maincolOneColumn",
+                        "div.lovdata-document",
+                        "div.document-content",
+                        "article",
+                        "main",
+                    ]
+
+                    for direct_url in candidate_urls:
+                        if best_content:
+                            break
+                        logger.info("  SPA fallback — trying: %s", direct_url)
+                        try:
+                            self.driver.switch_to.default_content()
+                            self.driver.get(direct_url)
+                            try:
+                                self.wait.until(
+                                    EC.presence_of_element_located((By.TAG_NAME, "body"))
+                                )
+                            except Exception:
+                                pass
+                            time.sleep(4)
+
+                            # Strategy A: specific content elements — NO nav check.
+                            for sel in CONTENT_ONLY_SELECTORS:
+                                try:
+                                    el = self.driver.find_element(By.CSS_SELECTOR, sel)
+                                    t  = el.text.strip()
+                                    logger.info("  direct[css:%s] %s chars", sel, len(t))
+                                    if len(t) >= _MIN_CONTENT_CHARS:
+                                        t = _strip_metadata_header(t)
+                                        best_content = t
+                                        best_source  = "direct_css_" + sel.strip("#.")
+                                        logger.info(
+                                            "  SPA fallback SUCCEEDED via CSS: %s chars", len(t)
+                                        )
+                                        break
+                                except Exception:
+                                    continue
+
+                            # Strategy B: JS strip nav/header/footer then read body.
+                            if not best_content:
+                                try:
+                                    t = self.driver.execute_script("""
+                                        var cloneBody = document.body.cloneNode(true);
+                                        var skipTags = cloneBody.querySelectorAll(
+                                            'nav, header, footer, aside, ' +
+                                            '[class*="nav"], [class*="menu"], [class*="sidebar"], ' +
+                                            '[class*="header"], [class*="footer"], ' +
+                                            '[id*="nav"], [id*="menu"], [id*="sidebar"], ' +
+                                            '[id*="header"], [id*="footer"]'
+                                        );
+                                        skipTags.forEach(function(el) { el.remove(); });
+                                        return cloneBody.innerText;
+                                    """) or ""
+                                    t = t.strip()
+                                    logger.info("  direct[js_strip_nav] %s chars", len(t))
+                                    if len(t) >= _MIN_CONTENT_CHARS:
+                                        best_content = _strip_metadata_header(t)
+                                        best_source  = "direct_js_strip_nav"
+                                except Exception:
+                                    pass
+
+                            # Strategy C: full body — with nav check (last resort).
+                            if not best_content:
+                                try:
+                                    t = self.driver.find_element(
+                                        By.TAG_NAME, "body"
+                                    ).text.strip()
+                                    is_nav = any(n in t.lower() for n in nav_indicators)
+                                    logger.info(
+                                        "  direct[body_text] %s chars  is_nav=%s", len(t), is_nav
+                                    )
+                                    if not is_nav and len(t) >= _MIN_CONTENT_CHARS:
+                                        best_content = _strip_metadata_header(t)
+                                        best_source  = "direct_body"
+                                except Exception:
+                                    pass
+
+                            # Strategy D: page_source parse (strip nav tags too).
+                            if not best_content:
+                                try:
+                                    raw   = self.driver.page_source or ""
+                                    logger.info(
+                                        "  direct[page_source] len=%s  head: %s",
+                                        len(raw), raw[:200].replace("\n", " ")
+                                    )
+                                    clean = re.sub(
+                                        r"<(script|style|nav|header|footer|aside)[^>]*>"
+                                        r".*?</(script|style|nav|header|footer|aside)>",
+                                        " ", raw, flags=re.DOTALL | re.IGNORECASE
+                                    )
+                                    clean = re.sub(r"<[^>]+>", " ", clean)
+                                    clean = re.sub(r"[ \t]+", " ", clean)
+                                    clean = re.sub(r"\n{3,}", "\n\n", clean).strip()
+                                    clean = (clean
+                                        .replace("&amp;", "&").replace("&lt;", "<")
+                                        .replace("&gt;", ">").replace("&nbsp;", " ")
+                                    )
+                                    logger.info(
+                                        "  direct[page_source parsed] %s chars", len(clean)
+                                    )
+                                    if len(clean) >= _MIN_CONTENT_CHARS:
+                                        best_content = _strip_metadata_header(clean)
+                                        best_source  = "direct_page_source"
+                                except Exception:
+                                    pass
+
+                            if best_content:
+                                logger.info(
+                                    "  SPA fallback SUCCEEDED: %s chars  source=%s  url=%s",
+                                    len(best_content), best_source, direct_url
+                                )
+                            else:
+                                logger.warning("  SPA fallback empty for: %s", direct_url)
+
+                        except Exception as _e:
+                            logger.error("  SPA direct URL error [%s]: %s", direct_url, _e)
+                        finally:
+                            self.driver.switch_to.default_content()
+
+                    if not best_content:
+                        logger.warning(
+                            "  SPA fallback exhausted — all strategies empty for: %s", doc_url
+                        )
+
+            # ── Extract year ──────────────────────────────────────────────────
             year = None
             if best_date:
                 m = re.search(r"(19\d{2}|20\d{2})", best_date)

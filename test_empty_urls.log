@@ -1,0 +1,281 @@
+2026-03-06 12:05:03,021 - INFO - ============================================================
+2026-03-06 12:05:03,021 - INFO - Logging in...
+2026-03-06 12:05:09,407 - INFO - Login successful
+2026-03-06 12:05:09,407 - INFO - Login OK
+2026-03-06 12:05:09,407 - INFO - 
+2026-03-06 12:05:09,407 - INFO - ============================================================
+2026-03-06 12:05:09,407 - INFO - [1/2] Testing URL: https://lovdata.no/pro/#document/INNST/forarbeid/inns-244-l-201516
+2026-03-06 12:05:09,407 - INFO - ============================================================
+2026-03-06 12:05:17,441 - INFO -   iframe[0] content: 125293 chars (best so far: 0)
+2026-03-06 12:05:17,518 - INFO -   Scraped: title='Innst. 244 L (2015–2016) Innstilling fra familie- og kulturk'  date='2016-04-26'  year=2016  chars=29644  source=iframe_body  meta_fields=['antall_sider', 'dato', 'eøseuschengen', 'fulltittel', 'henvisninger_i_teksten', 'kildedok', 'komite', 'korttittel', 'tittel']
+2026-03-06 12:05:17,521 - INFO - 
+2026-03-06 12:05:17,521 - INFO -   Result   : PASS ✓
+2026-03-06 12:05:17,521 - INFO -   Title    : Innst. 244 L (2015–2016) Innstilling fra familie- og kulturkomiteen om Lov om kl
+2026-03-06 12:05:17,521 - INFO -   Date     : 2016-04-26
+2026-03-06 12:05:17,523 - INFO -   Year     : 2016
+2026-03-06 12:05:17,523 - INFO -   Source   : iframe_body
+2026-03-06 12:05:17,523 - INFO -   Meta keys: ['antall_sider', 'dato', 'eøseuschengen', 'fulltittel', 'henvisninger_i_teksten', 'kildedok', 'komite', 'korttittel', 'tittel']
+2026-03-06 12:05:17,523 - INFO -   Content  : 29644 chars
+2026-03-06 12:05:17,523 - INFO -   Preview  : § 1.Virkeområde Loven gjelder klageorganer som behandler forbrukersaker, og som søker om godkjenning eller som er godkjent i medhold av denne loven. Loven gjelder også Forbrukerrådet, med mindre annet
+2026-03-06 12:05:18,524 - INFO - 
+2026-03-06 12:05:18,524 - INFO - ============================================================
+2026-03-06 12:05:18,524 - INFO - [2/2] Testing URL: https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:05:18,525 - INFO - ============================================================
+2026-03-06 12:05:23,817 - INFO -   iframe[0] content: 0 chars (best so far: 0)
+2026-03-06 12:05:23,934 - WARNING -   No content extracted from any iframe: https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:05:23,937 - INFO - 
+2026-03-06 12:05:23,937 - INFO -   Result   : FAIL ✗
+2026-03-06 12:05:23,937 - INFO -   Title    : (no title)
+2026-03-06 12:05:23,937 - INFO -   Date     : (no date)
+2026-03-06 12:05:23,937 - INFO -   Year     : 1975
+2026-03-06 12:05:23,937 - INFO -   Source   : (none)
+2026-03-06 12:05:23,938 - INFO -   Meta keys: []
+2026-03-06 12:05:23,938 - INFO -   Content  : 0 chars
+2026-03-06 12:05:23,938 - WARNING -   *** EMPTY — direct URL fallback did NOT help ***
+2026-03-06 12:05:24,940 - INFO - 
+2026-03-06 12:05:24,940 - INFO - ============================================================
+2026-03-06 12:05:24,940 - INFO - TEST SUMMARY
+2026-03-06 12:05:24,942 - INFO - ============================================================
+2026-03-06 12:05:24,942 - INFO -   PASS ✓  [29644 chars | source=iframe_body]  https://lovdata.no/pro/#document/INNST/forarbeid/inns-244-l-201516
+2026-03-06 12:05:24,943 - INFO -   FAIL ✗  [0 chars | source=(none)]  https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:05:24,944 - INFO - 
+2026-03-06 12:05:24,944 - INFO -   1 / 2 URLs returned content
+2026-03-06 12:05:24,944 - INFO - ============================================================
+2026-03-06 12:05:24,944 - WARNING - PARTIAL — 1 still empty, needs investigation
+2026-03-06 12:05:27,230 - INFO - Browser closed. Log saved to test_empty_urls.log
+2026-03-06 12:17:41,389 - INFO - ============================================================
+2026-03-06 12:17:41,389 - INFO - Logging in...
+2026-03-06 12:17:47,549 - INFO - Login successful
+2026-03-06 12:17:47,549 - INFO - Login OK
+2026-03-06 12:17:47,550 - INFO - 
+2026-03-06 12:17:47,550 - INFO - ============================================================
+2026-03-06 12:17:47,550 - INFO - [1/2] https://lovdata.no/pro/#document/INNST/forarbeid/inns-244-l-201516
+2026-03-06 12:17:47,551 - INFO - ============================================================
+2026-03-06 12:17:56,130 - INFO -   iframe[0] content: 125293 chars (best so far: 0)
+2026-03-06 12:17:56,199 - INFO -   Scraped: title='Innst. 244 L (2015–2016) Innstilling fra familie- og kulturk'  date='2016-04-26'  year=2016  chars=29644  source=iframe_body  meta_fields=['antall_sider', 'dato', 'eøseuschengen', 'fulltittel', 'henvisninger_i_teksten', 'kildedok', 'komite', 'korttittel', 'tittel']
+2026-03-06 12:17:56,200 - INFO - 
+2026-03-06 12:17:56,201 - INFO -   RESULT  : PASS ✓
+2026-03-06 12:17:56,201 - INFO -   Title   : Innst. 244 L (2015–2016) Innstilling fra familie- og kulturkomiteen om Lov om kl
+2026-03-06 12:17:56,202 - INFO -   Date    : 2016-04-26  Year: 2016
+2026-03-06 12:17:56,202 - INFO -   Source  : iframe_body
+2026-03-06 12:17:56,202 - INFO -   Content : 29644 chars
+2026-03-06 12:17:56,202 - INFO -   Preview : § 1.Virkeområde Loven gjelder klageorganer som behandler forbrukersaker, og som søker om godkjenning eller som er godkjent i medhold av denne loven. Loven gjelder også Forbrukerrådet, med mindre annet er bestemt i eller i medhold av loven. Loven § 27 gjelder også klageorganer som er opprettet med hj
+2026-03-06 12:17:56,207 - INFO -   XML saved → test_xml_output\INNST_forarbeid_inns-244-l-201516.xml  (32374 bytes)
+2026-03-06 12:17:57,209 - INFO - 
+2026-03-06 12:17:57,209 - INFO - ============================================================
+2026-03-06 12:17:57,210 - INFO - [2/2] https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:17:57,210 - INFO - ============================================================
+2026-03-06 12:18:02,543 - INFO -   iframe[0] content: 0 chars (best so far: 0)
+2026-03-06 12:18:02,613 - WARNING -   No content extracted from any iframe: https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:18:02,613 - INFO - 
+2026-03-06 12:18:02,614 - INFO -   RESULT  : FAIL ✗
+2026-03-06 12:18:02,614 - INFO -   Title   : (none)
+2026-03-06 12:18:02,614 - INFO -   Date    : (none)  Year: 1975
+2026-03-06 12:18:02,615 - INFO -   Source  : (none)
+2026-03-06 12:18:02,615 - INFO -   Content : 0 chars
+2026-03-06 12:18:02,615 - ERROR -   STILL EMPTY — page_source fallback did not help.
+  This document may be an image/scan with no extractable text.
+2026-03-06 12:18:03,617 - INFO - 
+2026-03-06 12:18:03,617 - INFO - ============================================================
+2026-03-06 12:18:03,617 - INFO - TEST SUMMARY
+2026-03-06 12:18:03,617 - INFO - ============================================================
+2026-03-06 12:18:03,617 - INFO -   PASS ✓  [29644 chars | source=iframe_body              ]  https://lovdata.no/pro/#document/INNST/forarbeid/inns-244-l-201516
+2026-03-06 12:18:03,619 - INFO -        XML → test_xml_output\INNST_forarbeid_inns-244-l-201516.xml
+2026-03-06 12:18:03,619 - INFO -   FAIL ✗  [0 chars | source=                         ]  https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:18:03,619 - INFO - 
+2026-03-06 12:18:03,619 - INFO -   1 / 2 returned content
+2026-03-06 12:18:03,619 - INFO -   XMLs saved to: test_xml_output/
+2026-03-06 12:18:03,620 - INFO - ============================================================
+2026-03-06 12:18:03,620 - WARNING - PARTIAL — 1 still empty.
+  The remaining URL likely serves content as a scanned image/PDF
+  with no machine-readable text. No scraper can extract text from images.
+  Recommended: mark these as 'skip_image_only' in your pipeline.
+2026-03-06 12:18:05,872 - INFO - Browser closed. Log → test_empty_urls.log  |  XMLs → test_xml_output/
+2026-03-06 12:36:32,106 - INFO - =================================================================
+2026-03-06 12:36:32,181 - INFO - Logging in to Lovdata Pro...
+2026-03-06 12:36:38,851 - INFO - Login successful
+2026-03-06 12:36:38,851 - INFO - Login OK
+2026-03-06 12:36:38,851 - INFO - 
+2026-03-06 12:36:38,851 - INFO - =================================================================
+2026-03-06 12:36:38,851 - INFO - [1/2] Innst. 244 L (2015-2016) — normal modern document
+2026-03-06 12:36:38,853 - INFO -         https://lovdata.no/pro/#document/INNST/forarbeid/inns-244-l-201516
+2026-03-06 12:36:38,853 - INFO - =================================================================
+2026-03-06 12:36:46,005 - INFO -   iframe[0] content: 125293 chars (best so far: 0)
+2026-03-06 12:36:46,062 - INFO -   Scraped: title='Innst. 244 L (2015–2016) Innstilling fra familie- og kulturk'  date='2016-04-26'  year=2016  chars=29644  source=iframe_body  meta_fields=['antall_sider', 'dato', 'eøseuschengen', 'fulltittel', 'henvisninger_i_teksten', 'kildedok', 'komite', 'korttittel', 'tittel']
+2026-03-06 12:36:46,062 - INFO - 
+2026-03-06 12:36:46,062 - INFO -   Result   : PASS ✓  [✓ expected]
+2026-03-06 12:36:46,062 - INFO -   Title    : Innst. 244 L (2015–2016) Innstilling fra familie- og kulturkomiteen om Lov om kl
+2026-03-06 12:36:46,062 - INFO -   Date     : 2016-04-26   Year: 2016
+2026-03-06 12:36:46,063 - INFO -   Source   : iframe_body
+2026-03-06 12:36:46,063 - INFO -   Content  : 29644 chars
+2026-03-06 12:36:46,063 - INFO -   Preview  : § 1.Virkeområde Loven gjelder klageorganer som behandler forbrukersaker, og som søker om godkjenning eller som er godkjent i medhold av denne loven. Loven gjelder også Forbrukerrådet, med mindre annet er bestemt i eller i medhold av loven. Loven § 27 gjelder også klageorganer som er opprettet med hj
+2026-03-06 12:36:46,063 - INFO -   XML      : test_xml_output\INNST_forarbeid_inns-244-l-201516.xml  (32374 bytes)
+2026-03-06 12:36:47,068 - INFO - 
+2026-03-06 12:36:47,068 - INFO - =================================================================
+2026-03-06 12:36:47,068 - INFO - [2/2] Ot.prp.nr.55 (1975-1976) — old document, iframe=about:blank
+2026-03-06 12:36:47,068 - INFO -         https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:36:47,068 - INFO - =================================================================
+2026-03-06 12:36:51,951 - INFO -   iframe[0] content: 0 chars (best so far: 0)
+2026-03-06 12:36:52,040 - WARNING -   No content extracted from any iframe: https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:36:52,040 - INFO - 
+2026-03-06 12:36:52,040 - INFO -   Result   : FAIL ✗  [✗ UNEXPECTED]
+2026-03-06 12:36:52,040 - INFO -   Title    : (none)
+2026-03-06 12:36:52,041 - INFO -   Date     : (none)   Year: 1975
+2026-03-06 12:36:52,041 - INFO -   Source   : (none)
+2026-03-06 12:36:52,041 - INFO -   Content  : 0 chars
+2026-03-06 12:36:52,041 - ERROR -   EMPTY — scraper returned no content.
+  Check above logs for:
+    - 'SPA fallback — trying:' lines
+    - 'direct[body_text] N chars' lines
+    - 'direct page_src len=N head:' to see raw HTML
+  The iframe src=about:blank fix should have triggered.
+2026-03-06 12:36:53,043 - INFO - 
+2026-03-06 12:36:53,043 - INFO - =================================================================
+2026-03-06 12:36:53,043 - INFO - FINAL SUMMARY
+2026-03-06 12:36:53,043 - INFO - =================================================================
+2026-03-06 12:36:53,043 - INFO -   PASS ✓ [29644 chars | iframe_body            | Innst. 244 L (2015-2016) — normal modern document]
+2026-03-06 12:36:53,043 - INFO -        XML → test_xml_output\INNST_forarbeid_inns-244-l-201516.xml
+2026-03-06 12:36:53,045 - INFO -   FAIL ✗ [0 chars |                        | Ot.prp.nr.55 (1975-1976) — old document, iframe=about:blank]
+2026-03-06 12:36:53,045 - INFO - 
+2026-03-06 12:36:53,045 - WARNING - 1 / 2 URLs still empty:
+2026-03-06 12:36:53,045 - WARNING -   → https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:36:53,046 - WARNING - 
+To debug: look in the logs above for the SPA fallback section.
+The key log lines to check:
+  'SPA fallback — trying: https://lovdata.no/pro/document/...'
+  'direct[body_text] N chars  is_nav=False'  ← should be >1000
+  'direct page_src len=N head: ...'          ← check if page has content
+
+2026-03-06 12:36:53,046 - INFO - =================================================================
+2026-03-06 12:36:53,046 - INFO - Full log saved to: test_empty_urls.log
+2026-03-06 12:43:50,943 - INFO - =================================================================
+2026-03-06 12:43:50,943 - INFO - Logging in to Lovdata Pro...
+2026-03-06 12:43:57,169 - INFO - Login successful
+2026-03-06 12:43:57,169 - INFO - Login OK
+2026-03-06 12:43:57,170 - INFO - 
+2026-03-06 12:43:57,170 - INFO - =================================================================
+2026-03-06 12:43:57,170 - INFO - [1/2] Innst. 244 L (2015-2016) — normal modern document
+2026-03-06 12:43:57,170 - INFO -         https://lovdata.no/pro/#document/INNST/forarbeid/inns-244-l-201516
+2026-03-06 12:43:57,172 - INFO - =================================================================
+2026-03-06 12:44:04,701 - INFO -   iframe[0] content: 125293 chars (best so far: 0)
+2026-03-06 12:44:04,787 - INFO -   Scraped: title='Innst. 244 L (2015–2016) Innstilling fra familie- og kulturk'  date='2016-04-26'  year=2016  chars=29644  source=iframe_body  meta_fields=['antall_sider', 'dato', 'eøseuschengen', 'fulltittel', 'henvisninger_i_teksten', 'kildedok', 'komite', 'korttittel', 'tittel']
+2026-03-06 12:44:04,789 - INFO - 
+2026-03-06 12:44:04,789 - INFO -   Result   : PASS ✓  [✓ expected]
+2026-03-06 12:44:04,789 - INFO -   Title    : Innst. 244 L (2015–2016) Innstilling fra familie- og kulturkomiteen om Lov om kl
+2026-03-06 12:44:04,790 - INFO -   Date     : 2016-04-26   Year: 2016
+2026-03-06 12:44:04,790 - INFO -   Source   : iframe_body
+2026-03-06 12:44:04,790 - INFO -   Content  : 29644 chars
+2026-03-06 12:44:04,790 - INFO -   Preview  : § 1.Virkeområde Loven gjelder klageorganer som behandler forbrukersaker, og som søker om godkjenning eller som er godkjent i medhold av denne loven. Loven gjelder også Forbrukerrådet, med mindre annet er bestemt i eller i medhold av loven. Loven § 27 gjelder også klageorganer som er opprettet med hj
+2026-03-06 12:44:04,795 - INFO -   XML      : test_xml_output\INNST_forarbeid_inns-244-l-201516.xml  (32374 bytes)
+2026-03-06 12:44:05,797 - INFO - 
+2026-03-06 12:44:05,797 - INFO - =================================================================
+2026-03-06 12:44:05,798 - INFO - [2/2] Ot.prp.nr.55 (1975-1976) — old document, iframe=about:blank
+2026-03-06 12:44:05,798 - INFO -         https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:44:05,798 - INFO - =================================================================
+2026-03-06 12:44:10,630 - INFO -   iframe[0] content: 0 chars (best so far: 0)
+2026-03-06 12:44:10,689 - INFO -   SPA fallback — trying: https://lovdata.no/pro/document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:44:15,942 - INFO -   direct[css:#documentBody] 162020 chars  is_nav=True
+2026-03-06 12:44:16,104 - INFO -   direct[css:div#documentBody] 162020 chars  is_nav=True
+2026-03-06 12:44:16,312 - INFO -   direct[css:#lovdataDocument] 162990 chars  is_nav=True
+2026-03-06 12:44:16,460 - INFO -   direct[css:#maincolOneColumn] 162990 chars  is_nav=True
+2026-03-06 12:44:16,650 - INFO -   direct[body_text] 162990 chars  is_nav=True
+2026-03-06 12:44:16,682 - INFO -   direct[js_innerText] 163603 chars  is_nav=True
+2026-03-06 12:44:16,711 - INFO -   direct[page_source] len=293347  head: <html lang="no"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="stylesheet" type="text/css" href="/pro/resources/css/lovdata.document.tables.css?2026-02-28-1713"><l
+2026-03-06 12:44:16,926 - INFO -   direct[page_source parsed] 163100 chars  is_nav=True
+2026-03-06 12:44:16,926 - WARNING -   SPA fallback empty for: https://lovdata.no/pro/document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:44:16,937 - INFO -   SPA fallback — trying: https://lovdata.no/pro/document/PROP/forarbeid/otprp-55-197576?showmarkings=true
+2026-03-06 12:44:22,421 - INFO -   direct[css:#documentBody] 162020 chars  is_nav=True
+2026-03-06 12:44:22,587 - INFO -   direct[css:div#documentBody] 162020 chars  is_nav=True
+2026-03-06 12:44:22,760 - INFO -   direct[css:#lovdataDocument] 162990 chars  is_nav=True
+2026-03-06 12:44:22,941 - INFO -   direct[css:#maincolOneColumn] 162990 chars  is_nav=True
+2026-03-06 12:44:23,122 - INFO -   direct[body_text] 162990 chars  is_nav=True
+2026-03-06 12:44:23,164 - INFO -   direct[js_innerText] 163603 chars  is_nav=True
+2026-03-06 12:44:23,211 - INFO -   direct[page_source] len=293347  head: <html lang="no"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link rel="stylesheet" type="text/css" href="/pro/resources/css/lovdata.document.tables.css?2026-02-28-1713"><l
+2026-03-06 12:44:23,420 - INFO -   direct[page_source parsed] 163100 chars  is_nav=True
+2026-03-06 12:44:23,420 - WARNING -   SPA fallback empty for: https://lovdata.no/pro/document/PROP/forarbeid/otprp-55-197576?showmarkings=true
+2026-03-06 12:44:23,420 - INFO -   SPA fallback — trying: https://lovdata.no/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:44:29,817 - INFO -   direct[body_text] 1122 chars  is_nav=True
+2026-03-06 12:44:29,830 - INFO -   direct[js_innerText] 1163 chars  is_nav=True
+2026-03-06 12:44:29,846 - INFO -   direct[page_source] len=39028  head: <html lang="no" class=" js csstransforms csstransforms3d csstransitions" style=""><head>    	<!-- Le styles --> 	<link href="/resources/css/bootstrap.css?26-02-20-1705" rel="stylesheet"> 	<link href="
+2026-03-06 12:44:29,859 - INFO -   direct[page_source parsed] 2876 chars  is_nav=True
+2026-03-06 12:44:29,863 - WARNING -   SPA fallback empty for: https://lovdata.no/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:44:29,870 - WARNING -   SPA fallback exhausted — all strategies empty for: https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:44:29,871 - WARNING -   No content extracted from any iframe: https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:44:29,872 - INFO - 
+2026-03-06 12:44:29,873 - INFO -   Result   : FAIL ✗  [✗ UNEXPECTED]
+2026-03-06 12:44:29,873 - INFO -   Title    : (none)
+2026-03-06 12:44:29,874 - INFO -   Date     : (none)   Year: 1975
+2026-03-06 12:44:29,874 - INFO -   Source   : (none)
+2026-03-06 12:44:29,874 - INFO -   Content  : 0 chars
+2026-03-06 12:44:29,874 - ERROR -   EMPTY — scraper returned no content.
+  Check above logs for:
+    - 'SPA fallback — trying:' lines
+    - 'direct[body_text] N chars' lines
+    - 'direct page_src len=N head:' to see raw HTML
+  The iframe src=about:blank fix should have triggered.
+2026-03-06 12:44:30,877 - INFO - 
+2026-03-06 12:44:30,878 - INFO - =================================================================
+2026-03-06 12:44:30,878 - INFO - FINAL SUMMARY
+2026-03-06 12:44:30,878 - INFO - =================================================================
+2026-03-06 12:44:30,879 - INFO -   PASS ✓ [29644 chars | iframe_body            | Innst. 244 L (2015-2016) — normal modern document]
+2026-03-06 12:44:30,879 - INFO -        XML → test_xml_output\INNST_forarbeid_inns-244-l-201516.xml
+2026-03-06 12:44:30,879 - INFO -   FAIL ✗ [0 chars |                        | Ot.prp.nr.55 (1975-1976) — old document, iframe=about:blank]
+2026-03-06 12:44:30,879 - INFO - 
+2026-03-06 12:44:30,881 - WARNING - 1 / 2 URLs still empty:
+2026-03-06 12:44:30,881 - WARNING -   → https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:44:30,881 - WARNING - 
+To debug: look in the logs above for the SPA fallback section.
+The key log lines to check:
+  'SPA fallback — trying: https://lovdata.no/pro/document/...'
+  'direct[body_text] N chars  is_nav=False'  ← should be >1000
+  'direct page_src len=N head: ...'          ← check if page has content
+
+2026-03-06 12:44:30,881 - INFO - =================================================================
+2026-03-06 12:44:30,881 - INFO - Full log saved to: test_empty_urls.log
+2026-03-06 12:56:46,583 - INFO - =================================================================
+2026-03-06 12:56:46,585 - INFO - Logging in to Lovdata Pro...
+2026-03-06 12:56:54,196 - INFO - Login successful
+2026-03-06 12:56:54,197 - INFO - Login OK
+2026-03-06 12:56:54,198 - INFO - 
+2026-03-06 12:56:54,198 - INFO - =================================================================
+2026-03-06 12:56:54,199 - INFO - [1/2] Innst. 244 L (2015-2016) — normal modern document
+2026-03-06 12:56:54,213 - INFO -         https://lovdata.no/pro/#document/INNST/forarbeid/inns-244-l-201516
+2026-03-06 12:56:54,214 - INFO - =================================================================
+2026-03-06 12:57:03,235 - INFO -   iframe[0] content: 125293 chars (best so far: 0)
+2026-03-06 12:57:03,298 - INFO -   Scraped: title='Innst. 244 L (2015–2016) Innstilling fra familie- og kulturk'  date='2016-04-26'  year=2016  chars=124180  source=iframe_body  meta_fields=['antall_sider', 'dato', 'eøseuschengen', 'fulltittel', 'henvisninger_i_teksten', 'kildedok', 'komite', 'korttittel', 'tittel']
+2026-03-06 12:57:03,301 - INFO - 
+2026-03-06 12:57:03,301 - INFO -   Result   : PASS ✓  [✓ expected]
+2026-03-06 12:57:03,301 - INFO -   Title    : Innst. 244 L (2015–2016) Innstilling fra familie- og kulturkomiteen om Lov om kl
+2026-03-06 12:57:03,302 - INFO -   Date     : 2016-04-26   Year: 2016
+2026-03-06 12:57:03,302 - INFO -   Source   : iframe_body
+2026-03-06 12:57:03,302 - INFO -   Content  : 124180 chars
+2026-03-06 12:57:03,302 - INFO -   Preview  : Til Stortinget     1. Sammendrag     1.1 Proposisjonens hovedinnhold Barne-, likestillings- og inkluderingsdepartementet legger med dette frem forslag til ny lov om klageorganer for forbrukersaker. Departementet legger også frem forslag til endringer i markedsføringsloven, pakkereiseloven, busta
+2026-03-06 12:57:03,319 - INFO -   XML      : test_xml_output\INNST_forarbeid_inns-244-l-201516.xml  (130246 bytes)
+2026-03-06 12:57:04,320 - INFO - 
+2026-03-06 12:57:04,320 - INFO - =================================================================
+2026-03-06 12:57:04,320 - INFO - [2/2] Ot.prp.nr.55 (1975-1976) — old document, iframe=about:blank
+2026-03-06 12:57:04,320 - INFO -         https://lovdata.no/pro/#document/PROP/forarbeid/otprp-55-197576
+2026-03-06 12:57:04,320 - INFO - =================================================================
+2026-03-06 12:57:09,793 - INFO -   iframe[0] content: 162020 chars (best so far: 0)
+2026-03-06 12:57:09,894 - INFO -   Scraped: title='Ot.prp.nr.55 (1975–1976) Om lov om renter ved forsinket beta'  date='1976-04-02'  year=1976  chars=160761  source=iframe_documentBody  meta_fields=['antall_sider', 'dato', 'fulltittel', 'henvisninger_i_teksten', 'kildedok', 'korttittel', 'tittel', 'utgiver']
+2026-03-06 12:57:09,894 - INFO - 
+2026-03-06 12:57:09,895 - INFO -   Result   : PASS ✓  [✓ expected]
+2026-03-06 12:57:09,895 - INFO -   Title    : Ot.prp.nr.55 (1975–1976) Om lov om renter ved forsinket betaling m.m.
+2026-03-06 12:57:09,896 - INFO -   Date     : 1976-04-02   Year: 1976
+2026-03-06 12:57:09,896 - INFO -   Source   : iframe_documentBody
+2026-03-06 12:57:09,897 - INFO -   Content  : 160761 chars
+2026-03-06 12:57:09,898 - INFO -   Preview  : 1. Utvalgets oppnevning, mandat og arbeid Den 22 oktober 1970 oppnevnte Justisdepartementet dette utvalg til å utrede spørsmålet om en revisjon av bestemmelsene om morarente: 1. Professor, dr. jur. Carsten Smith, formann. 2. høyesterettsadvokat Fredrik H. Moe. 3. høyesterettsadvokat Hans Stenberg-Ni
+2026-03-06 12:57:09,903 - INFO -   XML      : test_xml_output\PROP_forarbeid_otprp-55-197576.xml  (166900 bytes)
+2026-03-06 12:57:10,904 - INFO - 
+2026-03-06 12:57:10,904 - INFO - =================================================================
+2026-03-06 12:57:10,905 - INFO - FINAL SUMMARY
+2026-03-06 12:57:10,905 - INFO - =================================================================
+2026-03-06 12:57:10,908 - INFO -   PASS ✓ [124180 chars | iframe_body            | Innst. 244 L (2015-2016) — normal modern document]
+2026-03-06 12:57:10,909 - INFO -        XML → test_xml_output\INNST_forarbeid_inns-244-l-201516.xml
+2026-03-06 12:57:10,910 - INFO -   PASS ✓ [160761 chars | iframe_documentBody    | Ot.prp.nr.55 (1975-1976) — old document, iframe=about:blank]
+2026-03-06 12:57:10,910 - INFO -        XML → test_xml_output\PROP_forarbeid_otprp-55-197576.xml
+2026-03-06 12:57:10,911 - INFO - 
+2026-03-06 12:57:10,911 - INFO - ALL PASS — fix is working correctly
+2026-03-06 12:57:10,912 - INFO - XMLs saved to: test_xml_output/
+2026-03-06 12:57:10,913 - INFO - =================================================================
+2026-03-06 12:57:10,913 - INFO - Full log saved to: test_empty_urls.log
